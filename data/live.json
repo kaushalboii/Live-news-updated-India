@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T14:05:28.312Z",
-  "lastGdeltFile": "20261101141500",
+  "generatedAt": "2026-11-01T14:29:00.963Z",
+  "lastGdeltFile": "20261101143000",
   "source": "GDELT 2.0 Global News Event Database",
   "windowDays": 7,
   "clusters": [
@@ -11,7 +11,7 @@
       "lng": 77.2167,
       "geoType": 4,
       "place": "Delhi, Delhi",
-      "articles": 2483,
+      "articles": 2536,
       "outlets": 40,
       "type": "141",
       "movement": "protest",
@@ -35,7 +35,7 @@
         "japanherald.com",
         "watoday.com.au"
       ],
-      "lastSeen": "20261101131500"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_28_6_77_2",
@@ -44,7 +44,7 @@
       "lng": 77.2,
       "geoType": 4,
       "place": "New Delhi, Delhi",
-      "articles": 1554,
+      "articles": 1560,
       "outlets": 40,
       "type": "010",
       "movement": "protest",
@@ -68,7 +68,7 @@
         "japanherald.com",
         "atlantaleader.com"
       ],
-      "lastSeen": "20261101131500"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_19_0_72_8",
@@ -77,7 +77,7 @@
       "lng": 72.8258,
       "geoType": 4,
       "place": "Mumbai, Maharashtra",
-      "articles": 584,
+      "articles": 626,
       "outlets": 31,
       "type": "051",
       "movement": "climate",
@@ -101,7 +101,7 @@
         "mid-day.com",
         "timesofindia.indiatimes.com"
       ],
-      "lastSeen": "20261101123000"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_13_0_77_6",
@@ -143,8 +143,8 @@
       "lng": 76.9806,
       "geoType": 4,
       "place": "Haryana, Haryana",
-      "articles": 309,
-      "outlets": 16,
+      "articles": 319,
+      "outlets": 17,
       "type": "020",
       "movement": "protest",
       "category": "protest",
@@ -167,7 +167,40 @@
         "hindustantimes.com",
         "rediff.com"
       ],
-      "lastSeen": "20261101131500"
+      "lastSeen": "20261101143000"
+    },
+    {
+      "id": "2026_11_01_27_3_80_8",
+      "date": "2026-11-01",
+      "lat": 27.25,
+      "lng": 80.75,
+      "geoType": 5,
+      "place": "Uttar Pradesh, Uttar Pradesh",
+      "articles": 297,
+      "outlets": 20,
+      "type": "112",
+      "movement": "protest",
+      "category": "protest",
+      "title": "Ed Apprehends Samajwadi Party Leader Azam Khan In Money Laundering Case",
+      "urls": [
+        "http://www.japanherald.com/news/279405980/ed-apprehends-samajwadi-party-leader-azam-khan-in-money-laundering-case",
+        "https://www.siasat.com/musalmaan-rehne-ki-saza-hai-sp-leader-azam-khan-after-getting-arrested-3567833/",
+        "https://www.dailymirror.lk/international/India-lifts-496-million-out-of-poverty-in-12-years-extreme-poverty-plunges-to-2-6-World-Bank/107-353881",
+        "https://www.thehindu.com/newsletter/editors-pick-india-bloc-holds-symbolic-public-impeachment-of-cec-on-six-charges/article71650591.ece"
+      ],
+      "domains": [
+        "japanherald.com",
+        "siasat.com",
+        "dailymirror.lk",
+        "thehindu.com",
+        "dailypioneer.com",
+        "indiankanoon.org",
+        "bignewsnetwork.com",
+        "asiabulletin.com",
+        "aljazeera.com",
+        "economictimes.indiatimes.com"
+      ],
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_13_5_76_0",
@@ -209,8 +242,8 @@
       "lng": 79.5,
       "geoType": 4,
       "place": "Telangana, Andhra Pradesh",
-      "articles": 285,
-      "outlets": 13,
+      "articles": 286,
+      "outlets": 14,
       "type": "010",
       "movement": "protest",
       "category": "protest",
@@ -233,40 +266,7 @@
         "aninews.in",
         "thehindu.com"
       ],
-      "lastSeen": "20261101114500"
-    },
-    {
-      "id": "2026_11_01_27_3_80_8",
-      "date": "2026-11-01",
-      "lat": 27.25,
-      "lng": 80.75,
-      "geoType": 5,
-      "place": "Uttar Pradesh, Uttar Pradesh",
-      "articles": 277,
-      "outlets": 19,
-      "type": "112",
-      "movement": "protest",
-      "category": "protest",
-      "title": "Ed Apprehends Samajwadi Party Leader Azam Khan In Money Laundering Case",
-      "urls": [
-        "http://www.japanherald.com/news/279405980/ed-apprehends-samajwadi-party-leader-azam-khan-in-money-laundering-case",
-        "https://www.siasat.com/musalmaan-rehne-ki-saza-hai-sp-leader-azam-khan-after-getting-arrested-3567833/",
-        "https://www.dailymirror.lk/international/India-lifts-496-million-out-of-poverty-in-12-years-extreme-poverty-plunges-to-2-6-World-Bank/107-353881",
-        "https://www.thehindu.com/newsletter/editors-pick-india-bloc-holds-symbolic-public-impeachment-of-cec-on-six-charges/article71650591.ece"
-      ],
-      "domains": [
-        "japanherald.com",
-        "siasat.com",
-        "dailymirror.lk",
-        "thehindu.com",
-        "dailypioneer.com",
-        "indiankanoon.org",
-        "bignewsnetwork.com",
-        "asiabulletin.com",
-        "aljazeera.com",
-        "economictimes.indiatimes.com"
-      ],
-      "lastSeen": "20261101124500"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_10_0_76_5",
@@ -275,7 +275,7 @@
       "lng": 76.5,
       "geoType": 5,
       "place": "Kerala, Kerala",
-      "articles": 265,
+      "articles": 275,
       "outlets": 10,
       "type": "040",
       "movement": "protest",
@@ -299,7 +299,7 @@
         "rediff.com",
         "hindustantimes.com"
       ],
-      "lastSeen": "20261101130000"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_13_1_80_3",
@@ -308,8 +308,8 @@
       "lng": 80.2833,
       "geoType": 4,
       "place": "Chennai, Tamil Nadu",
-      "articles": 241,
-      "outlets": 7,
+      "articles": 243,
+      "outlets": 8,
       "type": "043",
       "movement": "economy",
       "category": "economy",
@@ -327,9 +327,43 @@
         "bignewsnetwork.com",
         "timesofindia.indiatimes.com",
         "khaama.com",
-        "economictimes.indiatimes.com"
+        "economictimes.indiatimes.com",
+        "prokerala.com"
       ],
-      "lastSeen": "20261101131500"
+      "lastSeen": "20261101143000"
+    },
+    {
+      "id": "2026_11_01_25_2_85_5",
+      "date": "2026-11-01",
+      "lat": 25.1833,
+      "lng": 85.5167,
+      "geoType": 4,
+      "place": "Bihar, Bihar",
+      "articles": 223,
+      "outlets": 17,
+      "type": "010",
+      "movement": "protest",
+      "category": "protest",
+      "title": "India Readies A New Soft Power Playbook",
+      "urls": [
+        "https://www.livemint.com/news/india/india-readies-a-new-soft-power-playbook-11793348974780.html",
+        "https://www.tribuneindia.com/news/india/pm-nod-to-north-corridor-for-bullet-train-delhi-varanasi-in-3-5-hours-soon-vaishnaw/",
+        "https://www.telugupeople.com/news/news.asp?newsId=109161",
+        "https://www.thehindu.com/news/national/bihar/two-newly-elected-bihar-independent-mlcs-now-support-bjp/article71652125.ece"
+      ],
+      "domains": [
+        "livemint.com",
+        "tribuneindia.com",
+        "telugupeople.com",
+        "thehindu.com",
+        "indiankanoon.org",
+        "bignewsnetwork.com",
+        "countercurrents.org",
+        "radio.gov.pk",
+        "indiagazette.com",
+        "timesofindia.indiatimes.com"
+      ],
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_11_0_78_0",
@@ -362,39 +396,6 @@
         "digit.in"
       ],
       "lastSeen": "20261101113000"
-    },
-    {
-      "id": "2026_11_01_25_2_85_5",
-      "date": "2026-11-01",
-      "lat": 25.1833,
-      "lng": 85.5167,
-      "geoType": 4,
-      "place": "Bihar, Bihar",
-      "articles": 218,
-      "outlets": 17,
-      "type": "010",
-      "movement": "protest",
-      "category": "protest",
-      "title": "India Readies A New Soft Power Playbook",
-      "urls": [
-        "https://www.livemint.com/news/india/india-readies-a-new-soft-power-playbook-11793348974780.html",
-        "https://www.tribuneindia.com/news/india/pm-nod-to-north-corridor-for-bullet-train-delhi-varanasi-in-3-5-hours-soon-vaishnaw/",
-        "https://www.telugupeople.com/news/news.asp?newsId=109161",
-        "https://www.thehindu.com/news/national/bihar/two-newly-elected-bihar-independent-mlcs-now-support-bjp/article71652125.ece"
-      ],
-      "domains": [
-        "livemint.com",
-        "tribuneindia.com",
-        "telugupeople.com",
-        "thehindu.com",
-        "indiankanoon.org",
-        "bignewsnetwork.com",
-        "countercurrents.org",
-        "radio.gov.pk",
-        "indiagazette.com",
-        "timesofindia.indiatimes.com"
-      ],
-      "lastSeen": "20261101131500"
     },
     {
       "id": "2026_11_01_20_5_84_4",
@@ -459,6 +460,35 @@
       "lastSeen": "20261101124500"
     },
     {
+      "id": "2026_11_01_18_5_73_9",
+      "date": "2026-11-01",
+      "lat": 18.5333,
+      "lng": 73.8667,
+      "geoType": 4,
+      "place": "Pune, Maharashtra",
+      "articles": 177,
+      "outlets": 6,
+      "type": "173",
+      "movement": "climate",
+      "category": "climate",
+      "title": "Leaving Flat Stop Coming For Work Pune Woman Who Secretly Returned From Uk Told Domestic Help Before Being Found Dead",
+      "urls": [
+        "https://timesofindia.indiatimes.com/city/pune/leaving-flat-stop-coming-for-work-pune-woman-who-secretly-returned-from-uk-told-domestic-help-before-being-found-dead/articleshow/135415824.cms",
+        "https://www.outinperth.com/attacks-on-gay-men-via-dating-apps-continue-around-the-globe/",
+        "https://www.freepressjournal.in/pune/pune-26-year-old-bank-employee-dies-by-suicide-at-kharadi-hotel-after-girlfriend-marries-another-man",
+        "https://www.freepressjournal.in/pune/fda-seizes-28000-quintals-of-oil-20000-quintals-of-spices-in-maharashtra-ahead-of-diwali-says-tukaram-mundhe"
+      ],
+      "domains": [
+        "timesofindia.indiatimes.com",
+        "outinperth.com",
+        "freepressjournal.in",
+        "jagranjosh.com",
+        "westhawaiitoday.com",
+        "desiblitz.com"
+      ],
+      "lastSeen": "20261101143000"
+    },
+    {
       "id": "2026_11_01_23_5_78_5",
       "date": "2026-11-01",
       "lat": 23.5,
@@ -492,33 +522,37 @@
       "lastSeen": "20261101131500"
     },
     {
-      "id": "2026_11_01_18_5_73_9",
+      "id": "2026_11_01_22_6_88_4",
       "date": "2026-11-01",
-      "lat": 18.5333,
-      "lng": 73.8667,
+      "lat": 22.5697,
+      "lng": 88.3697,
       "geoType": 4,
-      "place": "Pune, Maharashtra",
-      "articles": 154,
-      "outlets": 6,
-      "type": "173",
-      "movement": "climate",
-      "category": "climate",
-      "title": "Leaving Flat Stop Coming For Work Pune Woman Who Secretly Returned From Uk Told Domestic Help Before Being Found Dead",
+      "place": "Kolkata, West Bengal",
+      "articles": 117,
+      "outlets": 11,
+      "type": "010",
+      "movement": "protest",
+      "category": "protest",
+      "title": "Journalists From 11 Countries Attend International Media Training Programme In India",
       "urls": [
-        "https://timesofindia.indiatimes.com/city/pune/leaving-flat-stop-coming-for-work-pune-woman-who-secretly-returned-from-uk-told-domestic-help-before-being-found-dead/articleshow/135415824.cms",
-        "https://www.outinperth.com/attacks-on-gay-men-via-dating-apps-continue-around-the-globe/",
-        "https://www.freepressjournal.in/pune/pune-26-year-old-bank-employee-dies-by-suicide-at-kharadi-hotel-after-girlfriend-marries-another-man",
-        "https://www.freepressjournal.in/pune/fda-seizes-28000-quintals-of-oil-20000-quintals-of-spices-in-maharashtra-ahead-of-diwali-says-tukaram-mundhe"
+        "https://slguardian.org/journalists-from-11-countries-attend-international-media-training-programme-in-india/",
+        "https://www.thehindubusinessline.com/economy/logistics/delhi-to-agra-in-59-minutes-pm-modi-approves-north-corridor-of-bullet-train-project/article71651891.ece",
+        "https://www.oneindia.com/india/cjps-abhijeet-dipke-meets-mamata-banerjee-ahead-of-india-bloc-rally-says-wont-join-protest-8247557.html",
+        "https://scroll.in/article/1096776/cant-watch-the-modi-adani-documentary-read-these-reports-instead"
       ],
       "domains": [
-        "timesofindia.indiatimes.com",
-        "outinperth.com",
-        "freepressjournal.in",
-        "jagranjosh.com",
-        "westhawaiitoday.com",
-        "desiblitz.com"
+        "slguardian.org",
+        "thehindubusinessline.com",
+        "oneindia.com",
+        "scroll.in",
+        "aninews.in",
+        "indiankanoon.org",
+        "countercurrents.org",
+        "livelaw.in",
+        "legallyindia.com",
+        "timesofindia.indiatimes.com"
       ],
-      "lastSeen": "20261101123000"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_12_7_80_0",
@@ -629,6 +663,65 @@
       "lastSeen": "20261101111500"
     },
     {
+      "id": "2026_11_01_26_2_71_3",
+      "date": "2026-11-01",
+      "lat": 26.1833,
+      "lng": 71.25,
+      "geoType": 4,
+      "place": "Shiv, Rajasthan",
+      "articles": 103,
+      "outlets": 8,
+      "type": "112",
+      "movement": "protest",
+      "category": "protest",
+      "title": "Only Two Traders In Losses Are Modi And Shah Sanjay Raut At India Bloc Rally",
+      "urls": [
+        "http://www.cambodiantimes.com/news/279406349/only-two-traders-in-losses-are-modi-and-shah-sanjay-raut-at-india-bloc-rally",
+        "https://aninews.in/news/national/politics/bjp-starts-counter-protest-with-mumbai-holds-lokshahi-bachao-anarajakta-hatao-padyatra-alongside-mahayuti-allies-ahead-of-nitin-nabins-march-in-rohtak20261101113406/",
+        "https://openthemagazine.com/politics/bjp-starts-counter-protest-in-mumbai-with-lokshahi-bachao-anarajakta-hatao-padyatra",
+        "https://www.thedailystar.net/news/world/news/protesters-gather-ramlila-maidan-rahul-gandhi-calls-march-4312656"
+      ],
+      "domains": [
+        "cambodiantimes.com",
+        "aninews.in",
+        "openthemagazine.com",
+        "thedailystar.net",
+        "deccanchronicle.com",
+        "prokerala.com",
+        "moneycontrol.com",
+        "freepressjournal.in"
+      ],
+      "lastSeen": "20261101143000"
+    },
+    {
+      "id": "2026_11_01_26_2_91_7",
+      "date": "2026-11-01",
+      "lat": 26.1833,
+      "lng": 91.7333,
+      "geoType": 4,
+      "place": "Guwahati, Assam",
+      "articles": 102,
+      "outlets": 5,
+      "type": "046",
+      "movement": "economy",
+      "category": "economy",
+      "title": "Assam Takes Giant Leap In Cancer Care As Guwahati To Get India First State Govt Established Proton Therapy Centre",
+      "urls": [
+        "http://www.southeastasiapost.com/news/279405935/assam-takes-giant-leap-in-cancer-care-as-guwahati-to-get-india-first-state-govt-established-proton-therapy-centre",
+        "https://aninews.in/news/national/general-news/isiliye-modi-kahin-nahi-jayega-assam-cm-himanta-sarma-hails-approval-of-delhi8211siliguri-bullet-train-corridor-extension-to-guwahati20261101104951/",
+        "https://www.sentinelassam.com/topheadlines/centre-approves-lgbi-airport-as-export-point-for-agarwood-chips-oil",
+        "https://ianslive.in/india-and-myanmar-hold-army-staff-talks-discuss-enhancing-military-cooperation--20261101141928"
+      ],
+      "domains": [
+        "southeastasiapost.com",
+        "aninews.in",
+        "sentinelassam.com",
+        "ianslive.in",
+        "econotimes.com"
+      ],
+      "lastSeen": "20261101143000"
+    },
+    {
       "id": "2026_11_01_10_8_78_7",
       "date": "2026-11-01",
       "lat": 10.805,
@@ -679,39 +772,6 @@
         "moneycontrol.com"
       ],
       "lastSeen": "20261101120000"
-    },
-    {
-      "id": "2026_11_01_22_6_88_4",
-      "date": "2026-11-01",
-      "lat": 22.5697,
-      "lng": 88.3697,
-      "geoType": 4,
-      "place": "Kolkata, West Bengal",
-      "articles": 97,
-      "outlets": 10,
-      "type": "042",
-      "movement": "protest",
-      "category": "protest",
-      "title": "Journalists From 11 Countries Attend International Media Training Programme In India",
-      "urls": [
-        "https://slguardian.org/journalists-from-11-countries-attend-international-media-training-programme-in-india/",
-        "https://www.thehindubusinessline.com/economy/logistics/delhi-to-agra-in-59-minutes-pm-modi-approves-north-corridor-of-bullet-train-project/article71651891.ece",
-        "https://www.oneindia.com/india/cjps-abhijeet-dipke-meets-mamata-banerjee-ahead-of-india-bloc-rally-says-wont-join-protest-8247557.html",
-        "https://scroll.in/article/1096776/cant-watch-the-modi-adani-documentary-read-these-reports-instead"
-      ],
-      "domains": [
-        "slguardian.org",
-        "thehindubusinessline.com",
-        "oneindia.com",
-        "scroll.in",
-        "aninews.in",
-        "indiankanoon.org",
-        "countercurrents.org",
-        "livelaw.in",
-        "legallyindia.com",
-        "timesofindia.indiatimes.com"
-      ],
-      "lastSeen": "20261101111500"
     },
     {
       "id": "2026_11_01_23_0_72_6",
@@ -767,40 +827,13 @@
       "lastSeen": "20261101130000"
     },
     {
-      "id": "2026_11_01_26_2_91_7",
-      "date": "2026-11-01",
-      "lat": 26.1833,
-      "lng": 91.7333,
-      "geoType": 4,
-      "place": "Guwahati, Assam",
-      "articles": 90,
-      "outlets": 4,
-      "type": "046",
-      "movement": "economy",
-      "category": "economy",
-      "title": "Assam Takes Giant Leap In Cancer Care As Guwahati To Get India First State Govt Established Proton Therapy Centre",
-      "urls": [
-        "http://www.southeastasiapost.com/news/279405935/assam-takes-giant-leap-in-cancer-care-as-guwahati-to-get-india-first-state-govt-established-proton-therapy-centre",
-        "https://aninews.in/news/national/general-news/isiliye-modi-kahin-nahi-jayega-assam-cm-himanta-sarma-hails-approval-of-delhi8211siliguri-bullet-train-corridor-extension-to-guwahati20261101104951/",
-        "https://www.sentinelassam.com/topheadlines/centre-approves-lgbi-airport-as-export-point-for-agarwood-chips-oil",
-        "https://ianslive.in/india-and-myanmar-hold-army-staff-talks-discuss-enhancing-military-cooperation--20261101141928"
-      ],
-      "domains": [
-        "southeastasiapost.com",
-        "aninews.in",
-        "sentinelassam.com",
-        "ianslive.in"
-      ],
-      "lastSeen": "20261101094500"
-    },
-    {
       "id": "2026_11_01_22_7_75_8",
       "date": "2026-11-01",
       "lat": 22.7167,
       "lng": 75.8333,
       "geoType": 4,
       "place": "Indore, Madhya Pradesh",
-      "articles": 87,
+      "articles": 92,
       "outlets": 1,
       "type": "036",
       "movement": "security",
@@ -809,12 +842,13 @@
       "urls": [
         "https://www.freepressjournal.in/indore/indore-to-host-rss-all-india-executive-council-meeting-from-november-2-mohan-bhagwat-and-408-functionaries-to-discuss-global-and-domestic-outreach",
         "https://www.freepressjournal.in/indore/indore-liquor-contractor-jagdish-lakhwani-accuses-elder-brother-of-assault-over-mothers-will-and-property-dispute-police-register-ncrs",
-        "https://www.freepressjournal.in/indore/24-year-old-man-dies-by-suicide-at-de-addiction-centre-in-indore-around-50-inmates-flee-in-panic-police-probe-alleged-negligence"
+        "https://www.freepressjournal.in/indore/24-year-old-man-dies-by-suicide-at-de-addiction-centre-in-indore-around-50-inmates-flee-in-panic-police-probe-alleged-negligence",
+        "https://www.freepressjournal.in/indore/over-70-patients-escape-de-addiction-centre-indore-after-youth-found-dead-in-washroom"
       ],
       "domains": [
         "freepressjournal.in"
       ],
-      "lastSeen": "20261101054500"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_28_0_76_0",
@@ -823,11 +857,11 @@
       "lng": 76,
       "geoType": 4,
       "place": "Hindustan, India (general)",
-      "articles": 86,
-      "outlets": 7,
+      "articles": 91,
+      "outlets": 8,
       "type": "111",
-      "movement": "economy",
-      "category": "economy",
+      "movement": "protest",
+      "category": "protest",
       "title": "Rafale M Conducts Trials Aboard Ins Vikrant",
       "urls": [
         "https://theaviationist.com/2026/10/31/rafale-m-conducts-trials-aboard-ins-vikrant/",
@@ -842,9 +876,10 @@
         "moneycontrol.com",
         "dailypioneer.com",
         "econotimes.com",
-        "livemint.com"
+        "livemint.com",
+        "newindianexpress.com"
       ],
-      "lastSeen": "20261101131500"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_26_0_74_0",
@@ -907,8 +942,8 @@
       "lng": 74.8667,
       "geoType": 4,
       "place": "Jammu, Jammu and Kashmir",
-      "articles": 81,
-      "outlets": 5,
+      "articles": 82,
+      "outlets": 6,
       "type": "043",
       "movement": "protest",
       "category": "protest",
@@ -924,9 +959,10 @@
         "dailyexcelsior.com",
         "moneycontrol.com",
         "prokerala.com",
-        "ibtimes.co.in"
+        "ibtimes.co.in",
+        "newindianexpress.com"
       ],
-      "lastSeen": "20261101130000"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_21_1_79_1",
@@ -1004,14 +1040,46 @@
       "lastSeen": "20261101124500"
     },
     {
+      "id": "2026_11_01_25_3_83_0",
+      "date": "2026-11-01",
+      "lat": 25.3333,
+      "lng": 83,
+      "geoType": 4,
+      "place": "Banaras, Uttar Pradesh",
+      "articles": 69,
+      "outlets": 9,
+      "type": "036",
+      "movement": "economy",
+      "category": "economy",
+      "title": "Delhi To Agra In 59 Minutes Pm Modi Approves North Corridor Of Bullet Train Project",
+      "urls": [
+        "https://www.thehindubusinessline.com/economy/logistics/delhi-to-agra-in-59-minutes-pm-modi-approves-north-corridor-of-bullet-train-project/article71651891.ece",
+        "https://timesofindia.indiatimes.com/life-style/travel/news/delhi-to-agra-in-59-minutes-lucknow-in-2-hours-and-varanasi-in-3-5-hours-pm-modi-approves-bullet-train-corridor-that-could-bring-north-indias-top-destinations-closer/articleshow/135417577.cms",
+        "https://aninews.in/news/national/general-news/inauguration-day-bengaluru8211mumbai-vande-bharat-sleeper-train-takes-to-the-tracks-today20261101085211/",
+        "https://ianslive.in/varanasi-to-host-aristotleconfucius-symposium-from-nov-2-to-4--20261031161731"
+      ],
+      "domains": [
+        "thehindubusinessline.com",
+        "timesofindia.indiatimes.com",
+        "aninews.in",
+        "ianslive.in",
+        "businesstoday.in",
+        "livemint.com",
+        "indoamerican-news.com",
+        "economictimes.indiatimes.com",
+        "newindianexpress.com"
+      ],
+      "lastSeen": "20261101143000"
+    },
+    {
       "id": "2026_11_01_30_3_79_3",
       "date": "2026-11-01",
       "lat": 30.25,
       "lng": 79.25,
       "geoType": 5,
       "place": "Uttarakhand, Uttaranchal",
-      "articles": 60,
-      "outlets": 4,
+      "articles": 65,
+      "outlets": 5,
       "type": "043",
       "movement": "protest",
       "category": "protest",
@@ -1026,9 +1094,10 @@
         "aninews.in",
         "timesofindia.indiatimes.com",
         "economictimes.indiatimes.com",
-        "prokerala.com"
+        "prokerala.com",
+        "newindianexpress.com"
       ],
-      "lastSeen": "20261101121500"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_31_6_74_9",
@@ -1098,36 +1167,6 @@
         "rediff.com"
       ],
       "lastSeen": "20261101124500"
-    },
-    {
-      "id": "2026_11_01_26_2_71_3",
-      "date": "2026-11-01",
-      "lat": 26.1833,
-      "lng": 71.25,
-      "geoType": 4,
-      "place": "Shiv, Rajasthan",
-      "articles": 53,
-      "outlets": 7,
-      "type": "112",
-      "movement": "protest",
-      "category": "protest",
-      "title": "Only Two Traders In Losses Are Modi And Shah Sanjay Raut At India Bloc Rally",
-      "urls": [
-        "http://www.cambodiantimes.com/news/279406349/only-two-traders-in-losses-are-modi-and-shah-sanjay-raut-at-india-bloc-rally",
-        "https://aninews.in/news/national/politics/bjp-starts-counter-protest-with-mumbai-holds-lokshahi-bachao-anarajakta-hatao-padyatra-alongside-mahayuti-allies-ahead-of-nitin-nabins-march-in-rohtak20261101113406/",
-        "https://openthemagazine.com/politics/bjp-starts-counter-protest-in-mumbai-with-lokshahi-bachao-anarajakta-hatao-padyatra",
-        "https://www.thedailystar.net/news/world/news/protesters-gather-ramlila-maidan-rahul-gandhi-calls-march-4312656"
-      ],
-      "domains": [
-        "cambodiantimes.com",
-        "aninews.in",
-        "openthemagazine.com",
-        "thedailystar.net",
-        "deccanchronicle.com",
-        "prokerala.com",
-        "moneycontrol.com"
-      ],
-      "lastSeen": "20261101104500"
     },
     {
       "id": "2026_11_01_22_3_73_2",
@@ -1700,6 +1739,33 @@
       "lastSeen": "20261101080000"
     },
     {
+      "id": "2026_11_01_14_5_78_8",
+      "date": "2026-11-01",
+      "lat": 14.4667,
+      "lng": 78.8167,
+      "geoType": 4,
+      "place": "Kadapa, Andhra Pradesh",
+      "articles": 35,
+      "outlets": 4,
+      "type": "110",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Andhra Pradesh Civic Polls Emerge As First Major Midterm Test For Chandrababu Naidu Led Nda Government20261101094543",
+      "urls": [
+        "https://aninews.in/news/national/politics/andhra-pradesh-civic-polls-emerge-as-first-major-midterm-test-for-chandrababu-naidu-led-nda-government20261101094543/",
+        "https://www.hindustantimes.com/india-news/local-body-polls-underway-in-andhra-pradesh-tdp-ysrcp-workers-clash-in-pulivendula-101793517207032.html",
+        "https://timesofindia.indiatimes.com/city/vijayawada/jammalamadugu-leads-polling-with-60-92-smaller-towns-outpace-major-cities/articleshow/135420448.cms",
+        "https://timesofindia.indiatimes.com/city/amaravati/mob-attacks-tv-news-crew-covering-polling-in-pulivendula-camera-smashed/articleshow/135421849.cms"
+      ],
+      "domains": [
+        "aninews.in",
+        "hindustantimes.com",
+        "timesofindia.indiatimes.com",
+        "newindianexpress.com"
+      ],
+      "lastSeen": "20261101143000"
+    },
+    {
       "id": "2026_11_01_20_2_85_8",
       "date": "2026-11-01",
       "lat": 20.2333,
@@ -1754,34 +1820,29 @@
       "lastSeen": "20261101104500"
     },
     {
-      "id": "2026_11_01_25_3_83_0",
+      "id": "2026_11_01_14_8_78_4",
       "date": "2026-11-01",
-      "lat": 25.3333,
-      "lng": 83,
+      "lat": 14.8333,
+      "lng": 78.4,
       "geoType": 4,
-      "place": "Banaras, Uttar Pradesh",
-      "articles": 34,
-      "outlets": 7,
-      "type": "036",
-      "movement": "economy",
-      "category": "economy",
-      "title": "Delhi To Agra In 59 Minutes Pm Modi Approves North Corridor Of Bullet Train Project",
+      "place": "Jammalamadugu, Andhra Pradesh",
+      "articles": 33,
+      "outlets": 3,
+      "type": "120",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Jammalamadugu Leads Polling With 60 92 Smaller Towns Outpace Major Cities",
       "urls": [
-        "https://www.thehindubusinessline.com/economy/logistics/delhi-to-agra-in-59-minutes-pm-modi-approves-north-corridor-of-bullet-train-project/article71651891.ece",
-        "https://timesofindia.indiatimes.com/life-style/travel/news/delhi-to-agra-in-59-minutes-lucknow-in-2-hours-and-varanasi-in-3-5-hours-pm-modi-approves-bullet-train-corridor-that-could-bring-north-indias-top-destinations-closer/articleshow/135417577.cms",
-        "https://aninews.in/news/national/general-news/inauguration-day-bengaluru8211mumbai-vande-bharat-sleeper-train-takes-to-the-tracks-today20261101085211/",
-        "https://ianslive.in/varanasi-to-host-aristotleconfucius-symposium-from-nov-2-to-4--20261031161731"
+        "https://timesofindia.indiatimes.com/city/vijayawada/jammalamadugu-leads-polling-with-60-92-smaller-towns-outpace-major-cities/articleshow/135420448.cms",
+        "https://aninews.in/news/national/general-news/andhra-pradesh-ys-jagan-mohan-reddy-demands-repolling-in-pulivendula-alleges-booth-capturing-and-voter-intimidation20261101133853/",
+        "https://www.newindianexpress.com/states/andhra-pradesh/2026/Nov/01/andhra-civic-polls-see-clashes-in-kadapa-journalists-attacked-ysrcp-alleges-booth-capturing"
       ],
       "domains": [
-        "thehindubusinessline.com",
         "timesofindia.indiatimes.com",
         "aninews.in",
-        "ianslive.in",
-        "businesstoday.in",
-        "livemint.com",
-        "indoamerican-news.com"
+        "newindianexpress.com"
       ],
-      "lastSeen": "20261101124500"
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_34_5_77_5",
@@ -1850,32 +1911,6 @@
         "aninews.in"
       ],
       "lastSeen": "20261101110000"
-    },
-    {
-      "id": "2026_11_01_14_5_78_8",
-      "date": "2026-11-01",
-      "lat": 14.4667,
-      "lng": 78.8167,
-      "geoType": 4,
-      "place": "Kadapa, Andhra Pradesh",
-      "articles": 31,
-      "outlets": 3,
-      "type": "110",
-      "movement": "politics",
-      "category": "politics",
-      "title": "Andhra Pradesh Civic Polls Emerge As First Major Midterm Test For Chandrababu Naidu Led Nda Government20261101094543",
-      "urls": [
-        "https://aninews.in/news/national/politics/andhra-pradesh-civic-polls-emerge-as-first-major-midterm-test-for-chandrababu-naidu-led-nda-government20261101094543/",
-        "https://www.hindustantimes.com/india-news/local-body-polls-underway-in-andhra-pradesh-tdp-ysrcp-workers-clash-in-pulivendula-101793517207032.html",
-        "https://timesofindia.indiatimes.com/city/vijayawada/jammalamadugu-leads-polling-with-60-92-smaller-towns-outpace-major-cities/articleshow/135420448.cms",
-        "https://timesofindia.indiatimes.com/city/amaravati/mob-attacks-tv-news-crew-covering-polling-in-pulivendula-camera-smashed/articleshow/135421849.cms"
-      ],
-      "domains": [
-        "aninews.in",
-        "hindustantimes.com",
-        "timesofindia.indiatimes.com"
-      ],
-      "lastSeen": "20261101093000"
     },
     {
       "id": "2026_11_01_24_2_86_8",
@@ -2004,6 +2039,27 @@
         "rediff.com"
       ],
       "lastSeen": "20261101104500"
+    },
+    {
+      "id": "2026_11_01_25_9_72_7",
+      "date": "2026-11-01",
+      "lat": 25.85,
+      "lng": 72.6833,
+      "geoType": 4,
+      "place": "Ajit, Rajasthan",
+      "articles": 30,
+      "outlets": 1,
+      "type": "043",
+      "movement": "politics",
+      "category": "politics",
+      "title": "News reported in Ajit",
+      "urls": [
+        "https://www.prokerala.com/news/articles/a1831685.html"
+      ],
+      "domains": [
+        "prokerala.com"
+      ],
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_24_1_88_0",
@@ -2825,6 +2881,27 @@
       "lastSeen": "20261101113000"
     },
     {
+      "id": "2026_11_01_13_6_78_5",
+      "date": "2026-11-01",
+      "lat": 13.55,
+      "lng": 78.5,
+      "geoType": 4,
+      "place": "Madanapalle, Andhra Pradesh",
+      "articles": 15,
+      "outlets": 1,
+      "type": "112",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Andhra Civic Polls See Clashes In Kadapa Journalists Attacked Ysrcp Alleges Booth Capturing",
+      "urls": [
+        "https://www.newindianexpress.com/states/andhra-pradesh/2026/Nov/01/andhra-civic-polls-see-clashes-in-kadapa-journalists-attacked-ysrcp-alleges-booth-capturing"
+      ],
+      "domains": [
+        "newindianexpress.com"
+      ],
+      "lastSeen": "20261101143000"
+    },
+    {
       "id": "2026_11_01_24_9_79_5",
       "date": "2026-11-01",
       "lat": 24.9256,
@@ -2974,29 +3051,6 @@
       "lastSeen": "20261101131500"
     },
     {
-      "id": "2026_11_01_14_8_78_4",
-      "date": "2026-11-01",
-      "lat": 14.8333,
-      "lng": 78.4,
-      "geoType": 4,
-      "place": "Jammalamadugu, Andhra Pradesh",
-      "articles": 13,
-      "outlets": 2,
-      "type": "171",
-      "movement": "security",
-      "category": "security",
-      "title": "Jammalamadugu Leads Polling With 60 92 Smaller Towns Outpace Major Cities",
-      "urls": [
-        "https://timesofindia.indiatimes.com/city/vijayawada/jammalamadugu-leads-polling-with-60-92-smaller-towns-outpace-major-cities/articleshow/135420448.cms",
-        "https://aninews.in/news/national/general-news/andhra-pradesh-ys-jagan-mohan-reddy-demands-repolling-in-pulivendula-alleges-booth-capturing-and-voter-intimidation20261101133853/"
-      ],
-      "domains": [
-        "timesofindia.indiatimes.com",
-        "aninews.in"
-      ],
-      "lastSeen": "20261101083000"
-    },
-    {
       "id": "2026_11_01_12_9_80_1",
       "date": "2026-11-01",
       "lat": 12.9272,
@@ -3102,6 +3156,33 @@
         "indiagazette.com"
       ],
       "lastSeen": "20261101121500"
+    },
+    {
+      "id": "2026_11_01_26_7_88_4",
+      "date": "2026-11-01",
+      "lat": 26.7161,
+      "lng": 88.4236,
+      "geoType": 4,
+      "place": "Siliguri, West Bengal",
+      "articles": 11,
+      "outlets": 4,
+      "type": "110",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Isiliye Modi Kahin Nahi Jayega Assam Cm Himanta Sarma Hails Approval Of Delhi8211siliguri Bullet Train Corridor Extension To Guwahati20261101104951",
+      "urls": [
+        "https://aninews.in/news/national/general-news/isiliye-modi-kahin-nahi-jayega-assam-cm-himanta-sarma-hails-approval-of-delhi8211siliguri-bullet-train-corridor-extension-to-guwahati20261101104951/",
+        "https://economictimes.indiatimes.com/news/new-updates/delhi-lucknow-bullet-train-journey-in-2-hours-12-minutes-compared-to-6-hours-25-minutes-by-vande-bharat-what-the-northern-corridor-proposes/articleshow/135419807.cms",
+        "https://www.businesstoday.in/india/story/guwahati-delhi-in-under-8-hours-himanta-biswa-sarma-confirms-bullet-train-extension-to-assam-564977-2026-11-01",
+        "https://econotimes.com/Assam-Says-Proposed-Bullet-Train-Route-Will-Reach-Guwahati-1768114"
+      ],
+      "domains": [
+        "aninews.in",
+        "economictimes.indiatimes.com",
+        "businesstoday.in",
+        "econotimes.com"
+      ],
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_27_6_79_6",
@@ -3650,6 +3731,27 @@
       "lastSeen": "20261101124500"
     },
     {
+      "id": "2026_11_01_19_6_72_7",
+      "date": "2026-11-01",
+      "lat": 19.65,
+      "lng": 72.7333,
+      "geoType": 4,
+      "place": "Mahim, Maharashtra",
+      "articles": 10,
+      "outlets": 1,
+      "type": "051",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Mumbai Churches Urge Eco Friendly All Souls Day On November 2 Encourage Potted Plants Instead Of Candles And Wreaths",
+      "urls": [
+        "https://www.freepressjournal.in/mumbai/mumbai-churches-urge-eco-friendly-all-souls-day-on-november-2-encourage-potted-plants-instead-of-candles-and-wreaths"
+      ],
+      "domains": [
+        "freepressjournal.in"
+      ],
+      "lastSeen": "20261101143000"
+    },
+    {
       "id": "2026_11_01_26_4_74_6",
       "date": "2026-11-01",
       "lat": 26.45,
@@ -4078,31 +4180,6 @@
       "lastSeen": "20261101064500"
     },
     {
-      "id": "2026_11_01_26_7_88_4",
-      "date": "2026-11-01",
-      "lat": 26.7161,
-      "lng": 88.4236,
-      "geoType": 4,
-      "place": "Siliguri, West Bengal",
-      "articles": 7,
-      "outlets": 3,
-      "type": "110",
-      "movement": "politics",
-      "category": "politics",
-      "title": "Isiliye Modi Kahin Nahi Jayega Assam Cm Himanta Sarma Hails Approval Of Delhi8211siliguri Bullet Train Corridor Extension To Guwahati20261101104951",
-      "urls": [
-        "https://aninews.in/news/national/general-news/isiliye-modi-kahin-nahi-jayega-assam-cm-himanta-sarma-hails-approval-of-delhi8211siliguri-bullet-train-corridor-extension-to-guwahati20261101104951/",
-        "https://economictimes.indiatimes.com/news/new-updates/delhi-lucknow-bullet-train-journey-in-2-hours-12-minutes-compared-to-6-hours-25-minutes-by-vande-bharat-what-the-northern-corridor-proposes/articleshow/135419807.cms",
-        "https://www.businesstoday.in/india/story/guwahati-delhi-in-under-8-hours-himanta-biswa-sarma-confirms-bullet-train-extension-to-assam-564977-2026-11-01"
-      ],
-      "domains": [
-        "aninews.in",
-        "economictimes.indiatimes.com",
-        "businesstoday.in"
-      ],
-      "lastSeen": "20261101090000"
-    },
-    {
       "id": "2026_11_01_19_9_75_4",
       "date": "2026-11-01",
       "lat": 19.85,
@@ -4399,6 +4476,27 @@
       "lastSeen": "20261101104500"
     },
     {
+      "id": "2026_11_01_19_1_72_8",
+      "date": "2026-11-01",
+      "lat": 19.0667,
+      "lng": 72.8333,
+      "geoType": 4,
+      "place": "Bandra, Maharashtra",
+      "articles": 6,
+      "outlets": 1,
+      "type": "020",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Mumbai Churches Urge Eco Friendly All Souls Day On November 2 Encourage Potted Plants Instead Of Candles And Wreaths",
+      "urls": [
+        "https://www.freepressjournal.in/mumbai/mumbai-churches-urge-eco-friendly-all-souls-day-on-november-2-encourage-potted-plants-instead-of-candles-and-wreaths"
+      ],
+      "domains": [
+        "freepressjournal.in"
+      ],
+      "lastSeen": "20261101143000"
+    },
+    {
       "id": "2026_11_01_28_1_96_7",
       "date": "2026-11-01",
       "lat": 28.1333,
@@ -4565,6 +4663,48 @@
         "business-standard.com"
       ],
       "lastSeen": "20261101123000"
+    },
+    {
+      "id": "2026_11_01_21_9_84_0",
+      "date": "2026-11-01",
+      "lat": 21.85,
+      "lng": 84.0333,
+      "geoType": 4,
+      "place": "Jharsuguda, Orissa",
+      "articles": 5,
+      "outlets": 1,
+      "type": "070",
+      "movement": "economy",
+      "category": "economy",
+      "title": "Vaml Concludes Sustainability Month 2026 Reaching Over People Across Operations",
+      "urls": [
+        "https://orissadiary.com/vaml-concludes-sustainability-month-2026-reaching-over-14600-people-across-operations/"
+      ],
+      "domains": [
+        "orissadiary.com"
+      ],
+      "lastSeen": "20261101143000"
+    },
+    {
+      "id": "2026_11_01_29_9_73_9",
+      "date": "2026-11-01",
+      "lat": 29.9167,
+      "lng": 73.8833,
+      "geoType": 4,
+      "place": "Sri Ganganagar, Rajasthan",
+      "articles": 5,
+      "outlets": 1,
+      "type": "190",
+      "movement": "security",
+      "category": "security",
+      "title": "Rajasthan 22 000 Litres Of Adulterated Ghee Seized 3 Arrested",
+      "urls": [
+        "https://www.hindustantimes.com/cities/others/rajasthan-22-000-litres-of-adulterated-ghee-seized-3-arrested-101793540591910.html"
+      ],
+      "domains": [
+        "hindustantimes.com"
+      ],
+      "lastSeen": "20261101143000"
     },
     {
       "id": "2026_11_01_25_5_75_6",
