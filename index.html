@@ -4,28 +4,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Where India is in the news: live news tracker across India</title>
+  <title>India News Radar — Real-Time Live Intelligence & News Tracker</title>
   <meta name="description"
-    content="A live map of news reports, events, and hyper-local updates across India, updated every 30 minutes. Every pin links to its source.">
+    content="Real-time interactive news tracker and intelligence map across India. Live dispatches from YouTube broadcasts, X dispatches, and local district press refreshed every 30 minutes.">
   <meta name="author" content="Kaushal (@kaushalboii)">
   <link rel="canonical" href="__SITE_URL__">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#EDF0F3" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#111823" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#070b14">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Live News Updated India">
-  <meta property="og:title" content="Where India is in the news">
+  <meta property="og:site_name" content="India News Radar">
+  <meta property="og:title" content="India News Radar — Real-Time Live Intelligence & News Tracker">
   <meta property="og:description"
-    content="A live map of news reports across India, updated every 30 minutes. Every pin links to its source.">
+    content="Real-time interactive news tracker and intelligence map across India. Every pin links directly to verified sources.">
   <meta property="og:url" content="__SITE_URL__">
   <meta property="og:image" content="__SITE_URL__og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Map of India with pins marking recent news reports">
+  <meta property="og:image:alt" content="Interactive Live News Map of India">
   <meta property="og:locale" content="en_IN">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Where India is in the news">
-  <meta name="twitter:description" content="A live map of news reports across India, updated every 30 minutes.">
+  <meta name="twitter:title" content="India News Radar — Real-Time Live Intelligence">
+  <meta name="twitter:description" content="Real-time news tracker and intelligence map across India.">
   <meta name="twitter:image" content="__SITE_URL__og.png">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -33,398 +32,461 @@
   <script type="application/ld+json">__JSONLD__</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700;800&family=Hind:wght@400;600&display=swap"
-    rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root {
       box-sizing: border-box;
       padding-top: env(safe-area-inset-top, 0px);
       padding-bottom: env(safe-area-inset-bottom, 0px);
-      --bg: #EDF0F3;
-      --panel: #FFFFFF;
-      --ink: #16233A;
-      --muted: #5E6B7D;
-      --line: #D5DCE4;
-      --land: #D3DBE4;
-      --land-hover: #C3CEDA;
-      --border: #F6F8FA;
-      --sea: #E4E9EE;
-      --m-politics: #D98A00;
-      --m-protest: #8A4F9E;
-      --m-economy: #1E8574;
-      --m-climate: #2B6CB0;
-      --m-security: #C05621;
-      --m-other: #6B7A8C;
-      --focus: #3F5BA9;
-      --chip: #E3E8EE;
-      --display: "Anek Latin", "Arial Narrow", system-ui, sans-serif;
-      --body: "Hind", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+      /* Modern Sleek Intelligence Palette */
+      --bg: #070b14;
+      --bg-gradient: radial-gradient(circle at 15% 15%, rgba(30, 58, 138, 0.22) 0%, transparent 45%),
+                     radial-gradient(circle at 85% 85%, rgba(13, 148, 136, 0.16) 0%, transparent 45%),
+                     #070b14;
+      --panel: rgba(15, 23, 42, 0.75);
+      --panel-solid: #0f172a;
+      --panel-card: rgba(18, 28, 51, 0.7);
+      --panel-card-hover: rgba(28, 44, 76, 0.9);
+      --ink: #f8fafc;
+      --ink-sub: #cbd5e1;
+      --muted: #8494ab;
+      --line: rgba(255, 255, 255, 0.08);
+      --line-bright: rgba(255, 255, 255, 0.16);
+      --land: #131e33;
+      --land-hover: #1e2e4d;
+      --border: #0a0f1d;
+      --sea: #070b14;
+      --glow-blue: rgba(56, 189, 248, 0.35);
+
+      /* Category Colors */
+      --m-politics: #f59e0b;
+      --m-protest: #a855f7;
+      --m-economy: #10b981;
+      --m-climate: #38bdf8;
+      --m-security: #f43f5e;
+      --m-other: #94a3b8;
+
+      --focus: #38bdf8;
+      --chip: rgba(255, 255, 255, 0.06);
+      --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+      --font-body: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+      --font-mono: "JetBrains Mono", monospace;
     }
 
-    @media (prefers-color-scheme:dark) {
-      :root:not([data-theme="light"]) {
-        --bg: #111823;
-        --panel: #18212E;
-        --ink: #E7ECF2;
-        --muted: #9AA7B8;
-        --line: #2A3646;
-        --land: #26334A;
-        --land-hover: #30405A;
-        --border: #111823;
-        --sea: #141C28;
-        --m-politics: #F2A93B;
-        --m-protest: #C08AD2;
-        --m-economy: #3FB8A3;
-        --m-climate: #7C95E0;
-        --m-security: #F6AD55;
-        --m-other: #93A2B4;
-        --focus: #7C95E0;
-        --chip: #222D3C;
-      }
+    *, *::before, *::after {
+      box-sizing: inherit;
     }
 
-    :root[data-theme="dark"] {
-      --bg: #111823;
-      --panel: #18212E;
-      --ink: #E7ECF2;
-      --muted: #9AA7B8;
-      --line: #2A3646;
-      --land: #26334A;
-      --land-hover: #30405A;
-      --border: #111823;
-      --sea: #141C28;
-      --m-politics: #F2A93B;
-      --m-protest: #C08AD2;
-      --m-economy: #3FB8A3;
-      --m-climate: #7C95E0;
-      --m-security: #F6AD55;
-      --m-other: #93A2B4;
-      --focus: #7C95E0;
-      --chip: #222D3C;
-    }
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: inherit
-    }
-
-    html {
-      height: 100%;
-      scroll-padding-top: env(safe-area-inset-top, 0px)
-    }
-
-    body {
+    html, body {
       height: 100%;
       margin: 0;
-      background: var(--bg);
+      background: var(--bg-gradient);
       color: var(--ink);
-      font-family: var(--body);
-      font-size: 16px;
-      line-height: 1.5
+      font-family: var(--font-body);
+      font-size: 14px;
+      line-height: 1.5;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
     }
 
-    button,
-    input,
-    select,
-    textarea {
+    button, input, select, textarea {
       font: inherit;
-      color: inherit
+      color: inherit;
     }
 
     :focus-visible {
       outline: 2px solid var(--focus);
-      outline-offset: 2px
+      outline-offset: 2px;
     }
 
-    .app {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 400px;
-      height: 100%
-    }
-
-    .mapwrap {
-      position: relative;
+    .dash-app {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      max-width: 1920px;
+      margin: 0 auto;
       overflow: hidden;
-      background: var(--sea);
-      min-height: 0
     }
 
-    #map {
+    /* ---------- Header ---------- */
+    .dash-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 10px 20px;
+      background: rgba(11, 18, 33, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+      z-index: 50;
+      flex-shrink: 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+      flex-shrink: 0;
+    }
+
+    .radar-icon {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .radar-pulse {
+      position: absolute;
       width: 100%;
       height: 100%;
-      display: block;
-      touch-action: none;
-      cursor: grab
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.25);
+      animation: radar-ping 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
     }
 
-    #map:active {
-      cursor: grabbing
+    .radar-core {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 10px #10b981;
     }
 
-    .state {
-      fill: var(--land);
-      stroke: var(--border);
-      stroke-width: .8;
-      vector-effect: non-scaling-stroke;
-      transition: fill .15s
-    }
-
-    .state:hover {
-      fill: var(--land-hover)
-    }
-
-    .title {
-      position: absolute;
-      left: 24px;
-      top: 20px;
-      max-width: min(440px, calc(100% - 48px));
-      pointer-events: none
-    }
-
-    .title h1 {
-      font-family: var(--display);
-      font-weight: 800;
-      font-stretch: condensed;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height: .95;
-      letter-spacing: -.01em;
-      margin: 0
-    }
-
-    .title p {
-      margin: .5rem 0 0;
-      color: var(--muted);
-      font-size: .95rem;
-      max-width: 36ch
-    }
-
-    .zoom {
-      position: absolute;
-      right: 16px;
-      bottom: 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px
-    }
-
-    .zoom button {
-      width: 38px;
-      height: 38px;
-      border-radius: 8px;
-      border: 1px solid var(--line);
-      background: var(--panel);
-      cursor: pointer;
-      font-size: 1.2rem;
-      line-height: 1
-    }
-
-    .legend {
-      position: absolute;
-      left: 24px;
-      bottom: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      max-width: calc(100% - 100px)
-    }
-
-    .legend button {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      border: 1px solid var(--line);
-      background: var(--panel);
-      border-radius: 999px;
-      padding: 4px 12px 4px 8px;
-      cursor: pointer;
-      font-size: .85rem
-    }
-
-    .legend button[aria-pressed="false"] {
-      opacity: .45
-    }
-
-    .legend .dot {
-      width: 11px;
-      height: 11px;
-      border-radius: 50%
-    }
-
-    .marker {
-      cursor: pointer;
-      outline: none
-    }
-
-    .marker:focus-visible .core {
-      stroke: var(--focus);
-      stroke-width: 3
-    }
-
-    .marker .core {
-      stroke: var(--panel);
-      stroke-width: 1.5;
-      vector-effect: non-scaling-stroke
-    }
-
-    .marker.live .core {
-      fill-opacity: .72;
-      stroke-width: 1
-    }
-
-    .marker.live.weak .core {
-      fill-opacity: .4
-    }
-
-    .marker.old .core {
-      fill-opacity: .55
-    }
-
-    .marker.sel .core {
-      stroke: var(--ink);
-      stroke-width: 2.5;
-      fill-opacity: 1
-    }
-
-    .marker:hover .core {
-      fill-opacity: 1
-    }
-
-    .marker .n {
-      fill: #fff;
-      font-family: var(--body);
-      font-weight: 600;
-      text-anchor: middle;
-      pointer-events: none
-    }
-
-    .place {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 20px;
-      border-bottom: 1px solid var(--line);
-      font-size: .9rem;
-      position: sticky;
-      top: 0;
-      background: var(--panel);
-      z-index: 1
-    }
-
-    .place button {
-      border: 1px solid var(--line);
-      background: transparent;
-      border-radius: 6px;
-      padding: 3px 10px;
-      cursor: pointer;
-      font-size: .82rem;
-      flex: none
-    }
-
-    .pulse {
-      fill: none;
-      stroke-width: 2;
-      vector-effect: non-scaling-stroke;
-      opacity: 0;
-      animation: pulse 2.4s ease-out infinite
-    }
-
-    @keyframes pulse {
-      0% {
-        opacity: .7;
-        transform: scale(1)
-      }
-
-      100% {
+    @keyframes radar-ping {
+      75%, 100% {
+        transform: scale(2.2);
         opacity: 0;
-        transform: scale(2.4)
       }
     }
 
-    @media (prefers-reduced-motion:reduce) {
-      .pulse {
-        animation: none;
-        display: none
-      }
-    }
-
-    .tip {
-      position: absolute;
-      pointer-events: none;
-      background: var(--ink);
-      color: var(--bg);
-      font-size: .8rem;
-      padding: 3px 8px;
-      border-radius: 4px;
-      white-space: nowrap;
-      transform: translate(-50%, calc(-100% - 12px));
-      display: none
-    }
-
-    aside {
-      background: var(--panel);
-      border-left: 1px solid var(--line);
+    .brand-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: .03em;
+      color: var(--ink);
       display: flex;
       flex-direction: column;
-      min-height: 0
+      line-height: 1.1;
     }
 
-    .ctrl {
-      padding: 18px 20px 12px;
-      border-bottom: 1px solid var(--line)
+    .brand-sub {
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .09em;
+      color: #38bdf8;
+      text-transform: uppercase;
+    }
+
+    /* ---------- Breaking Ticker ---------- */
+    .ticker-bar {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 4px 12px;
+      overflow: hidden;
+      min-width: 0;
+      height: 36px;
+    }
+
+    .ticker-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      color: #f43f5e;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .ticker-pulse-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #f43f5e;
+      box-shadow: 0 0 8px #f43f5e;
+      animation: blink 1.2s ease-in-out infinite alternate;
+    }
+
+    @keyframes blink {
+      from { opacity: 0.3; }
+      to { opacity: 1; }
+    }
+
+    .ticker-window {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+      mask-image: linear-gradient(to right, transparent, black 16px, black calc(100% - 16px), transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 16px, black calc(100% - 16px), transparent);
+    }
+
+    .ticker-track {
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      will-change: transform;
+      animation: scrollTicker 60s linear infinite;
+    }
+
+    .ticker-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes scrollTicker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0 16px;
+      font-size: .82rem;
+      color: var(--ink-sub);
+      cursor: pointer;
+      transition: color .15s;
+    }
+
+    .ticker-item:hover {
+      color: #38bdf8;
+      text-decoration: underline;
+    }
+
+    .ticker-bullet {
+      color: #38bdf8;
+      font-size: .65rem;
+    }
+
+    .ticker-loc {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    /* ---------- Header Actions ---------- */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0 10px;
+      height: 36px;
+      transition: border-color .15s, box-shadow .15s;
+    }
+
+    .search-box:focus-within {
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+    }
+
+    .search-icon {
+      color: var(--muted);
+      margin-right: 6px;
+      flex-shrink: 0;
+    }
+
+    .search-box input {
+      background: transparent;
+      border: 0;
+      outline: 0;
+      color: var(--ink);
+      font-size: .82rem;
+      width: 160px;
+      transition: width .2s;
+    }
+
+    .search-box input:focus {
+      width: 220px;
+    }
+
+    .search-box input::placeholder {
+      color: var(--muted);
+    }
+
+    .clear-search {
+      background: transparent;
+      border: 0;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0 2px;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .clear-search:hover {
+      color: var(--ink);
     }
 
     .seg {
       display: flex;
-      background: var(--chip);
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 3px
+      padding: 2px;
+      height: 36px;
     }
 
     .seg button {
-      flex: 1;
       border: 0;
       background: transparent;
-      padding: 6px 4px;
+      color: var(--muted);
+      padding: 0 11px;
       border-radius: 6px;
+      font-size: .8rem;
+      font-weight: 600;
       cursor: pointer;
-      font-size: .88rem;
-      color: var(--muted)
+      transition: all .15s;
     }
 
     .seg button[aria-pressed="true"] {
-      background: var(--panel);
-      color: var(--ink);
+      background: #1e293b;
+      color: #38bdf8;
+      box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    }
+
+    .live-clock-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0 10px;
+      height: 36px;
+      font-size: .78rem;
+      font-family: var(--font-mono);
       font-weight: 600;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, .08)
+      color: var(--ink-sub);
+      white-space: nowrap;
+    }
+
+    .clock-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 6px #10b981;
+    }
+
+    /* ---------- Stats Metrics Bar ---------- */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      padding: 10px 20px 0;
+      flex-shrink: 0;
+    }
+
+    .stat-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 8px 14px;
+      backdrop-filter: blur(12px);
+      transition: border-color .2s, transform .2s;
+    }
+
+    .stat-card:hover {
+      border-color: var(--line-bright);
+      transform: translateY(-1px);
+    }
+
+    .stat-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .stat-icon.blue { background: rgba(56, 189, 248, 0.12); color: #38bdf8; }
+    .stat-icon.purple { background: rgba(168, 85, 247, 0.12); color: #a855f7; }
+    .stat-icon.green { background: rgba(16, 185, 129, 0.12); color: #10b981; }
+    .stat-icon.amber { background: rgba(245, 158, 11, 0.12); color: #f59e0b; }
+
+    .stat-data {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .stat-val {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.1;
+      letter-spacing: -.02em;
+    }
+
+    .stat-desc {
+      font-size: .72rem;
+      color: var(--muted);
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ---------- Category Navigation ---------- */
+    .category-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 20px;
+      flex-shrink: 0;
     }
 
     .topic-tabs {
       display: flex;
-      gap: 6px;
+      align-items: center;
+      gap: 8px;
       overflow-x: auto;
-      padding: 10px 0 2px;
-      margin-top: 10px;
       scrollbar-width: none;
       -webkit-overflow-scrolling: touch;
+      flex: 1;
+      min-width: 0;
     }
 
-    .topic-tabs::-webkit-scrollbar {
-      display: none;
-    }
+    .topic-tabs::-webkit-scrollbar { display: none; }
 
     .topic-tab {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: var(--panel);
+      gap: 7px;
+      background: rgba(15, 23, 42, 0.75);
       border: 1px solid var(--line);
-      color: var(--ink);
-      padding: 5px 11px 5px 9px;
+      color: var(--ink-sub);
+      padding: 5px 12px 5px 10px;
       border-radius: 999px;
       font-size: .8rem;
-      font-weight: 500;
+      font-weight: 600;
       cursor: pointer;
       white-space: nowrap;
       transition: all .15s ease;
@@ -432,273 +494,797 @@
     }
 
     .topic-tab:hover {
-      border-color: var(--focus);
+      border-color: #38bdf8;
+      color: var(--ink);
     }
 
     .topic-tab[aria-selected="true"] {
-      background: var(--ink);
-      color: var(--bg);
-      border-color: var(--ink);
+      background: #1e293b;
+      color: var(--ink);
+      border-color: #38bdf8;
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
     }
 
-    .topic-tab .tab-dot {
+    .tab-dot {
       width: 8px;
       height: 8px;
       border-radius: 50%;
       flex-shrink: 0;
     }
 
-    .topic-tab .tab-count {
-      background: var(--chip);
+    .tab-count {
+      background: rgba(255, 255, 255, 0.08);
       color: var(--muted);
       font-size: .72rem;
-      padding: 1px 6px;
+      padding: 1px 7px;
       border-radius: 999px;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .topic-tab[aria-selected="true"] .tab-count {
-      background: rgba(255, 255, 255, .2);
-      color: var(--bg);
+      background: rgba(56, 189, 248, 0.2);
+      color: #38bdf8;
     }
 
-    @media (prefers-color-scheme: dark) {
-      :root:not([data-theme="light"]) .topic-tab[aria-selected="true"] {
-        background: #E7ECF2;
-        color: #111823;
-        border-color: #E7ECF2;
-      }
-      :root:not([data-theme="light"]) .topic-tab[aria-selected="true"] .tab-count {
-        background: rgba(0, 0, 0, .25);
-        color: #111823;
-      }
-    }
-
-    .count {
-      margin: 12px 0 0;
-      font-size: .88rem;
-      color: var(--muted)
-    }
-
-    .count b {
-      color: var(--ink);
-      font-weight: 600
-    }
-
-    .list {
-      overflow-y: auto;
-      flex: 1;
-      padding: 4px 0 24px
-    }
-
-    .item {
-      display: grid;
-      grid-template-columns: 12px 1fr;
+    .category-toggles {
+      display: flex;
+      align-items: center;
       gap: 12px;
-      padding: 14px 20px;
-      border-bottom: 1px solid var(--line);
-      cursor: pointer;
-      background: none;
-      border-left: 0;
-      border-right: 0;
-      border-top: 0;
-      width: 100%;
-      text-align: left
+      flex-shrink: 0;
     }
 
-    .item:hover {
-      background: var(--chip)
-    }
-
-    .item[aria-expanded="true"] {
-      background: var(--chip)
-    }
-
-    .item .bar {
-      width: 4px;
-      border-radius: 2px;
-      justify-self: center
-    }
-
-    .item .h {
-      display: block;
-      margin: 0;
-      font-family: var(--display);
-      font-weight: 700;
-      font-size: 1.12rem;
-      line-height: 1.2
-    }
-
-    .item .meta {
-      display: block;
-      font-size: .84rem;
+    .toggle-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .76rem;
       color: var(--muted);
-      margin-top: 2px
+      cursor: pointer;
+      user-select: none;
     }
 
-    .item .tag {
-      display: inline-block;
-      font-size: .75rem;
+    .toggle-pill input {
+      accent-color: #38bdf8;
+      cursor: pointer;
+    }
+
+    /* ---------- Main Dashboard ---------- */
+    .dash-main {
+      flex: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 460px;
+      gap: 14px;
+      padding: 0 20px 16px;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    /* Left Map Panel */
+    .map-panel {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: rgba(13, 20, 36, 0.7);
       border: 1px solid var(--line);
-      border-radius: 4px;
-      padding: 0 6px;
-      margin-left: 6px;
-      vertical-align: 1px
+      border-radius: 12px;
+      overflow: hidden;
+      min-height: 0;
     }
 
-    .detail {
-      grid-column: 2;
-      margin-top: 8px;
-      font-size: .93rem;
-      display: none
+    .map-header {
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      right: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      pointer-events: none;
+      z-index: 10;
     }
 
-    .item[aria-expanded="true"] .detail {
-      display: block
+    .map-header > * {
+      pointer-events: auto;
     }
 
-    .detail p {
-      margin: 0 0 8px
+    .map-title-box {
+      background: rgba(11, 18, 33, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 6px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .detail a {
-      color: var(--focus);
-      text-underline-offset: 2px
+    .map-dot-pulse {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #38bdf8;
+      box-shadow: 0 0 8px #38bdf8;
     }
 
-    .detail .src {
-      font-size: .85rem
+    .map-title-text {
+      font-size: .74rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      color: var(--ink-sub);
+      text-transform: uppercase;
     }
 
-    .empty {
-      padding: 28px 20px;
-      color: var(--muted)
+    .active-place-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #38bdf8;
+      font-size: .75rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 6px;
+      cursor: pointer;
     }
 
-    .foot {
-      padding: 12px 20px;
-      border-top: 1px solid var(--line);
-      font-size: .78rem;
-      color: var(--muted)
+    .active-place-chip:hover {
+      background: rgba(56, 189, 248, 0.25);
     }
 
-    @media (max-width:860px) {
-      .app {
-        grid-template-columns: 1fr;
-        grid-template-rows: 58vh auto;
-        height: auto;
-        min-height: 100%
-      }
-
-      aside {
-        border-left: 0;
-        border-top: 1px solid var(--line)
-      }
-
-      .list {
-        overflow: visible
-      }
-
-      .title {
-        left: 16px;
-        top: 14px
-      }
-
-      .title p {
-        display: none
-      }
-
-      .legend {
-        left: 12px;
-        right: 62px;
-        bottom: 12px;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        max-width: none;
-        scrollbar-width: none
-      }
-
-      .legend button {
-        flex: none
-      }
+    .map-controls {
+      display: flex;
+      gap: 6px;
     }
 
-    .toggles {
+    .map-btn {
+      width: 32px;
+      height: 32px;
+      background: rgba(11, 18, 33, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: all .15s;
+    }
+
+    .map-btn:hover {
+      border-color: #38bdf8;
+      color: #38bdf8;
+    }
+
+    .map-canvas-wrap {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      min-height: 0;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+      display: block;
+      touch-action: none;
+      cursor: grab;
+    }
+
+    #map:active { cursor: grabbing; }
+
+    .state {
+      fill: var(--land);
+      stroke: var(--border);
+      stroke-width: .8;
+      vector-effect: non-scaling-stroke;
+      transition: fill .15s;
+    }
+
+    .state:hover {
+      fill: var(--land-hover);
+    }
+
+    .legend {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
       display: flex;
       flex-wrap: wrap;
-      gap: 6px 16px;
-      margin-top: 12px;
-      font-size: .88rem
+      gap: 6px;
+      max-width: calc(100% - 24px);
+      z-index: 10;
     }
 
-    .toggles label {
+    .legend button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(11, 18, 33, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--line);
+      color: var(--ink-sub);
+      font-size: .72rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s;
+    }
+
+    .legend button:hover {
+      border-color: #38bdf8;
+      color: var(--ink);
+    }
+
+    .legend button[aria-pressed="true"] {
+      border-color: #38bdf8;
+      color: var(--ink);
+      background: #1e293b;
+    }
+
+    .legend .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+
+    .tip {
+      position: absolute;
+      display: none;
+      background: rgba(11, 18, 33, 0.95);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--line-bright);
+      color: var(--ink);
+      font-size: .8rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      pointer-events: none;
+      transform: translate(-50%, -130%);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      white-space: nowrap;
+    }
+
+    /* Markers */
+    .marker { cursor: pointer; }
+    .marker .pulse {
+      fill: none;
+      stroke-width: 1.5;
+      opacity: .6;
+      animation: marker-pulse 2.2s cubic-bezier(.2, .8, .2, 1) infinite;
+      transform-origin: center;
+      vector-effect: non-scaling-stroke;
+    }
+    @keyframes marker-pulse {
+      0% { r: 5px; opacity: .8; stroke-width: 2; }
+      100% { r: 18px; opacity: 0; stroke-width: 0.5; }
+    }
+    .marker .core {
+      stroke: rgba(0, 0, 0, 0.4);
+      stroke-width: 1.2;
+      transition: transform .15s;
+    }
+    .marker:hover .core {
+      transform: scale(1.25);
+    }
+    .marker.sel .core {
+      stroke: #ffffff;
+      stroke-width: 2.5;
+      filter: drop-shadow(0 0 8px #ffffff);
+    }
+    .marker .n {
+      fill: #ffffff;
+      font-family: var(--font-display);
+      font-weight: 800;
+      text-anchor: middle;
+      pointer-events: none;
+    }
+
+    /* Right Feed Panel */
+    .feed-panel {
+      display: flex;
+      flex-direction: column;
+      background: rgba(13, 20, 36, 0.7);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      min-height: 0;
+    }
+
+    .feed-top-bar {
+      padding: 12px 16px 10px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(11, 18, 33, 0.5);
+      flex-shrink: 0;
+    }
+
+    .feed-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .feed-title {
+      font-size: .88rem;
+      font-weight: 800;
+      letter-spacing: .06em;
+      color: var(--ink);
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+    }
+
+    .feed-badge {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      font-size: .72rem;
+      font-weight: 700;
+      padding: 1px 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .feed-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .suggest-link {
+      font-size: .75rem;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .suggest-link:hover { text-decoration: underline; }
+
+    .status-text {
       display: flex;
       align-items: center;
       gap: 6px;
-      cursor: pointer
-    }
-
-    .toggles input {
-      accent-color: var(--ink);
-      width: 15px;
-      height: 15px
-    }
-
-    .status {
-      margin: 8px 0 0;
-      font-size: .82rem;
+      font-size: .74rem;
       color: var(--muted);
+      margin: 0;
+    }
+
+    .live-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 6px #10b981;
+    }
+
+    .status-text.stale .live-dot {
+      background: #f59e0b;
+      box-shadow: 0 0 6px #f59e0b;
+    }
+
+    .feed-count-summary {
+      font-size: .82rem;
+      color: var(--ink-sub);
+      margin: 4px 0 0;
+    }
+
+    .feed-count-summary b {
+      color: var(--ink);
+    }
+
+    .list {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 0;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+    }
+
+    .list::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .list::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+    }
+
+    /* Cards */
+    .item-card, .item {
+      position: relative;
+      background: var(--panel-card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 11px 14px 11px 16px;
+      cursor: pointer;
+      transition: all .2s ease;
+      overflow: hidden;
+      display: block;
+      text-align: left;
+      width: 100%;
+    }
+
+    .item-card:hover, .item:hover {
+      background: var(--panel-card-hover);
+      border-color: var(--line-bright);
+      transform: translateY(-1px);
+    }
+
+    .item-card[aria-expanded="true"], .item[aria-expanded="true"] {
+      border-color: #38bdf8;
+      background: rgba(24, 38, 70, 0.95);
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.15);
+    }
+
+    .card-edge-glow, .item .bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .card-meta-top {
       display: flex;
       align-items: center;
-      gap: 6px
+      gap: 6px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
     }
 
-    .status .live-dot {
-      width: 8px;
-      height: 8px;
+    .media-badge, .tag {
+      display: inline-flex;
+      align-items: center;
+      font-size: .68rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 4px;
+      letter-spacing: .02em;
+    }
+
+    .badge-yt, .tag.yt { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+    .badge-soc, .tag.soc { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.3); }
+    .badge-local, .tag.local { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-auto { background: rgba(56, 189, 248, 0.12); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.25); }
+
+    .cat-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: .68rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .cat-dot {
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
-      background: var(--m-economy);
-      flex: none
     }
 
-    .status.stale .live-dot {
-      background: var(--m-other)
+    .time-chip, .item .meta time {
+      margin-left: auto;
+      font-size: .68rem;
+      color: var(--muted);
     }
 
-    .suggest[hidden] {
-      display: none
+    .card-title, .item .h {
+      font-size: .95rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--ink);
+      margin: 0 0 4px;
+      display: block;
+      transition: color .15s;
     }
 
-    .suggest {
-      display: inline-block;
-      margin-top: 10px;
-      font-size: .88rem;
-      color: var(--focus);
-      text-underline-offset: 2px
+    .item-card:hover .card-title, .item:hover .h {
+      color: #38bdf8;
+    }
+
+    .card-loc, .item .meta {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: .75rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .card-detail, .item .detail {
+      font-size: .82rem;
+      color: var(--ink-sub);
+      line-height: 1.45;
+      margin-top: 4px;
+      border-top: 1px solid var(--line);
+      padding-top: 6px;
+    }
+
+    .card-detail p, .item .detail p {
+      margin: 0 0 6px;
+    }
+
+    .card-sources, .item .detail .src {
+      font-size: .75rem;
+      color: var(--muted);
+    }
+
+    .card-sources a, .item .meta a, .item .detail a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card-sources a:hover, .item .meta a:hover, .item .detail a:hover {
+      text-decoration: underline;
+    }
+
+    .feed-footer {
+      padding: 10px 14px;
+      background: rgba(11, 18, 33, 0.7);
+      border-top: 1px solid var(--line);
+      font-size: .72rem;
+      color: var(--muted);
+      flex-shrink: 0;
     }
 
     .keys {
       display: flex;
-      gap: 14px;
-      align-items: center;
-      font-size: .78rem;
-      color: var(--muted);
-      margin-bottom: 6px
+      gap: 12px;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
     }
 
-    .keys svg {
-      vertical-align: -2px;
-      margin-right: 4px
+    .keys span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .dot-key {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+    .dot-checked { background: #38bdf8; }
+    .dot-live { background: rgba(56, 189, 248, 0.5); }
+    .dot-yt { background: #f87171; }
+
+    .foot-note {
+      margin: 0;
+      line-height: 1.35;
+    }
+
+    .empty {
+      padding: 30px 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    .place {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    .place span {
+      font-weight: 700;
+      color: #38bdf8;
+      font-size: .85rem;
+    }
+
+    .place button {
+      background: transparent;
+      border: 0;
+      color: var(--ink);
+      cursor: pointer;
+      font-size: .78rem;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1024px) {
+      .dash-app {
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+      }
+      body {
+        overflow: auto;
+      }
+      .dash-header {
+        flex-wrap: wrap;
+        padding: 10px 14px;
+      }
+      .ticker-bar {
+        order: 3;
+        width: 100%;
+        flex-basis: 100%;
+      }
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px 14px 0;
+      }
+      .category-nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 14px;
+      }
+      .dash-main {
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: 0;
+        padding: 0 14px 14px;
+        overflow: visible;
+      }
+      .map-panel {
+        height: 52vh;
+        min-height: 400px;
+      }
+      .feed-panel {
+        height: 72vh;
+        min-height: 520px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="app">
-    <div class="mapwrap">
-      <svg id="map" role="img" aria-label="Map of India with news event locations" viewBox="-30 -90 1060 1284"
-        preserveAspectRatio="xMidYMid meet">
-        <g id="states"><!--MAP-->
+  <div class="dash-app">
+    <!-- Top Navigation Bar -->
+    <header class="dash-header">
+      <a href="./" class="brand">
+        <div class="radar-icon">
+          <div class="radar-pulse"></div>
+          <div class="radar-core"></div>
+        </div>
+        <div class="brand-title">
+          <span>INDIA NEWS RADAR</span>
+          <span class="brand-sub">LIVE INTELLIGENCE STREAM</span>
+        </div>
+      </a>
+
+      <!-- Breaking News Ticker Marquee -->
+      <div class="ticker-bar" id="tickerWrap">
+        <div class="ticker-tag"><span class="ticker-pulse-dot"></span> BREAKING:</div>
+        <div class="ticker-window">
+          <div class="ticker-track" id="tickerTrack">
+            <span class="ticker-item"><span class="ticker-bullet">●</span> Streaming live dispatches across India…</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Search Input -->
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor" width="15" height="15">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+          </svg>
+          <input type="text" id="newsSearch" placeholder="Search places, keywords…" autocomplete="off" spellcheck="false">
+          <button id="clearSearch" class="clear-search" aria-label="Clear search" hidden>×</button>
+        </div>
+
+        <!-- Range Switcher -->
+        <div class="seg" role="group" aria-label="Time range">
+          <button data-range="1" aria-pressed="true">Today</button>
+          <button data-range="7" aria-pressed="false">7d</button>
+          <button data-range="30" aria-pressed="false">30d</button>
+          <button data-range="all" aria-pressed="false">2026</button>
+        </div>
+
+        <!-- Live Clock -->
+        <div class="live-clock-pill">
+          <span class="clock-dot"></span>
+          <span id="clockTime">--:-- IST</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Key Metrics Stats Bar -->
+    <section class="stats-bar" id="statsBar">
+      <div class="stat-card">
+        <div class="stat-icon blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <circle cx="12" cy="12" r="2"/>
+            <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/>
+          </svg>
+        </div>
+        <div class="stat-data">
+          <span class="stat-val" id="statTotal">--</span>
+          <span class="stat-desc">Live Stories Recorded</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="stat-data">
+          <span class="stat-val" id="statPlaces">--</span>
+          <span class="stat-desc">Active Hotspots Mapped</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+        </div>
+        <div class="stat-data">
+          <span class="stat-val" id="statClimate">--</span>
+          <span class="stat-desc">Climate & AQI Alerts</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <div class="stat-data">
+          <span class="stat-val" id="statFocus">Politics</span>
+          <span class="stat-desc">Leading Topic Stream</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Tabs Navigation Bar -->
+    <nav class="category-nav">
+      <div class="topic-tabs" id="topicTabs" role="tablist" aria-label="News categories"></div>
+      <div class="category-toggles">
+        <label class="toggle-pill"><input type="checkbox" id="tLive" checked> <span>Live detections</span></label>
+        <label class="toggle-pill"><input type="checkbox" id="tWeak" checked> <span>Include hyper-local reports</span></label>
+      </div>
+    </nav>
+
+    <!-- Main Dashboard Area -->
+    <main class="dash-main">
+      <!-- Geospatial Intelligence Map Panel -->
+      <div class="map-panel">
+        <div class="map-header">
+          <div class="map-title-box">
+            <span class="map-dot-pulse"></span>
+            <span class="map-title-text">GEOSPATIAL INTELLIGENCE MAP</span>
+            <span class="active-place-chip" id="activePlaceTag" hidden></span>
+          </div>
+          <div class="map-controls">
+            <button id="zin" class="map-btn" aria-label="Zoom in" title="Zoom in">+</button>
+            <button id="zout" class="map-btn" aria-label="Zoom out" title="Zoom out">−</button>
+            <button id="zreset" class="map-btn" aria-label="Reset view" title="Reset view">⟲</button>
+          </div>
+        </div>
+
+        <div class="map-canvas-wrap">
+          <svg id="map" role="img" aria-label="Map of India with news event locations" viewBox="-30 -90 1060 1284"
+            preserveAspectRatio="xMidYMid meet">
+            <g id="states"><!--MAP-->
           <path class="state" data-name="Arunachal Pradesh"
             d="M926.2,419L924.5,412.1L924.8,405.6L933.7,401.8L934.1,399.1L951.1,394.9L951.5,390.3L945.3,383.7L945,377.9L951.5,369.8L939.2,370.2L935.8,372.9L928.9,373.3L913.2,378.7L901.3,384.5L896.5,384.9L890.7,387.9L877.7,401L878.7,404.1L872.6,407.9L860.9,408.3L850.7,410.2L846.3,406.8L838.7,405.6L835.7,408.3L819.6,411L816.9,403.7L818.2,396L816.5,388.3L804.2,388.3L800.8,384.5L804.6,373.7L810,375.6L811.8,379.1L825.1,373.7L826.4,376.8L835,375.2L841.1,368.6L839.4,363.2L846.6,360.5L851,356.6L856.9,355.9L861.6,343.4L882.8,341.1L884.2,335.6L889.6,331.3L891.7,326.3L898.9,320.4L903.3,320.4L906,315.7L911.5,321.2L918.3,323.9L926.9,325.1L932.4,328.2L938.5,320.8L948.4,314.1L955.2,311.4L960.7,320.4L957.6,327.4L961.1,331.7L964.5,328.2L970.3,330.6L972.3,340.3L961.4,352.4L965.2,353.1L975.1,350.4L986.3,356.2L989.8,354.3L996.2,357.8L1000,367.1L987.4,378.3L982.9,383.3L985.3,391.4L992.1,401.4L988.7,402.9L979.8,393.3L973.4,392.6L970.3,395.6L963.1,395.6L953.2,399.9L950.8,404.9L945.7,406L942.9,411.4L936.8,412.9L933,418.3L926.2,419Z">
             <title>Arunachal Pradesh</title>
@@ -845,59 +1431,43 @@
             <title>Jammu & Kashmir</title>
           </path><!--/MAP-->
         </g>
-        <g id="marks"></g>
-      </svg>
-      <div class="title">
-        <h1>Where India is<br>in the news</h1>
-        <p>News reported across India, pinned to where they happened and refreshed every 30 minutes. Every entry links
-          to its source.</p>
+            <g id="marks"></g>
+          </svg>
+          <div class="legend" id="legend" aria-label="Filter by topic"></div>
+          <div class="tip" id="tip"></div>
+        </div>
       </div>
-      <div class="legend" id="legend" aria-label="Filter by topic"></div>
-      <div class="zoom">
-        <button id="zin" aria-label="Zoom in">+</button>
-        <button id="zout" aria-label="Zoom out">−</button>
-        <button id="zreset" aria-label="Reset view" style="font-size:.9rem">⟲</button>
-      </div>
-      <div class="tip" id="tip"></div>
-    </div>
-    <aside>
-      <div class="ctrl">
-        <div class="seg" role="group" aria-label="Time range">
-          <button data-range="1" aria-pressed="true">Today</button>
-          <button data-range="7" aria-pressed="false">7 days</button>
-          <button data-range="30" aria-pressed="false">30 days</button>
-          <button data-range="all" aria-pressed="false">2026</button>
+
+      <!-- Live Intelligence Feed Panel -->
+      <aside class="feed-panel">
+        <div class="feed-top-bar">
+          <div class="feed-header-row">
+            <h2 class="feed-title">
+              <span>ACTIVE DISPATCHES</span>
+              <span class="feed-badge" id="feedCountBadge">0</span>
+            </h2>
+            <div class="feed-actions">
+              <a class="suggest-link" id="suggest" hidden target="_blank" rel="noopener">Suggest story</a>
+            </div>
+          </div>
+          <p class="status-text status" id="status"><span class="live-dot"></span><span>Loading live data…</span></p>
+          <p class="feed-count-summary count" id="count"><!--COUNT--></p>
         </div>
 
-        <div class="topic-tabs" id="topicTabs" role="tablist" aria-label="News categories"></div>
+        <div class="list" id="list"><!--LIST--></div>
 
-        <div class="toggles">
-          <label><input type="checkbox" id="tLive" checked> Live news detections</label>
-          <label><input type="checkbox" id="tWeak" checked> Include hyper-local & single-source reports</label>
+        <div class="feed-footer">
+          <div class="keys">
+            <span><span class="dot-key dot-checked"></span>Checked report</span>
+            <span><span class="dot-key dot-live"></span>Live detected</span>
+            <span><span class="dot-key dot-yt"></span>YouTube broadcast</span>
+          </div>
+          <p class="foot-note">Multi-source verification from YouTube 24/7 channels, X dispatches, and local Indian press.</p>
         </div>
-
-        <p class="status" id="status"><span class="live-dot"></span><span>Loading live data…</span></p>
-        <p class="count" id="count"><!--COUNT--></p>
-        <a class="suggest" id="suggest" hidden target="_blank" rel="noopener">Suggest a news story we've missed</a>
-      </div>
-
-      <div class="list" id="list"><!--LIST--></div>
-
-      <div class="foot">
-        <div class="keys">
-          <span><svg width="12" height="12" viewBox="-6 -6 12 12">
-              <circle r="5" fill="currentColor" />
-            </svg>Checked entry</span>
-          <span><svg width="12" height="12" viewBox="-6 -6 12 12">
-              <circle r="5" fill="currentColor" fill-opacity=".55" />
-            </svg>Auto-detected from news</span>
-        </div>
-        Checked entries are researched by hand. News detections come from the GDELT event database, YouTube broadcasts,
-        X dispatches, and local Indian press. They can include duplicates, wrong locations or stories about older
-        events, so open the sources before sharing.
-      </div>
-    </aside>
+      </aside>
+    </main>
   </div>
+
   <script id="boot" type="application/json">__BOOT__</script>
   <script>
     const REPO_OVERRIDE = "kaushalboii/Live-news-updated-India";
@@ -925,13 +1495,14 @@
     const DAY = 864e5;
     const fmtDate = d => new Date(d + "T00:00:00").toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
     const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-    const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : null;
-    const hostOf = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (_) { return "News Wire"; } };
+    const safeUrl = u => /^https?:///i.test(u || "") ? u : null;
+    const hostOf = u => { try { return new URL(u).hostname.replace(/^www./, ""); } catch (_) { return "News Wire"; } };
     const ageDays = d => (Date.now() - new Date(d + "T00:00:00").getTime()) / DAY;
     const todayISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
 
     let curated = [], live = [], liveMeta = null;
     let range = "1", selected = null, showLive = true, showWeak = true, activeTopic = "all";
+    let searchQuery = "";
     const hidden = new Set();
 
     /* ---------- Map Geometry & Projection ---------- */
@@ -940,7 +1511,7 @@
     const NS = "http://www.w3.org/2000/svg";
     const svg = document.getElementById("map"), gMarks = document.getElementById("marks");
     const VB0 = { x: -30, y: -90, w: 1060, h: 1284 }, MAXZ = 60;
-    let vb = { ...VB0 }, anim = 0;
+    let vb = { ...VB0 }, anim = 0, dragMoved = false;
     const zoomK = () => VB0.w / vb.w;
     const unitsPerPx = () => Math.max(vb.w / (svg.clientWidth || 1), vb.h / (svg.clientHeight || 1));
 
@@ -1018,6 +1589,7 @@
     }
 
     let latestLiveDate = "";
+
     function setLive(j) {
       liveMeta = j;
       const clusters = j?.clusters || [];
@@ -1040,14 +1612,15 @@
 
     function renderStatus() {
       const st = document.getElementById("status");
+      if (!st) return;
       if (!liveMeta || !liveMeta.generatedAt) {
-        st.className = "status stale";
-        st.lastElementChild.textContent = "Live news data hasn't been generated yet.";
+        st.className = "status-text status stale";
+        st.lastElementChild.textContent = "Live news data initializing…";
         return;
       }
       const mins = Math.round((Date.now() - new Date(liveMeta.generatedAt)) / 6e4);
       const ago = mins < 1 ? "just now" : mins < 60 ? `${mins} min ago` : mins < 1440 ? `${Math.round(mins / 60)} h ago` : `${Math.round(mins / 1440)} days ago`;
-      st.className = "status" + (mins > 180 ? " stale" : "");
+      st.className = "status-text status" + (mins > 180 ? " stale" : "");
       st.lastElementChild.textContent = `News detections updated ${ago}` + (mins > 180 ? ". Updates may be paused." : "");
     }
 
@@ -1068,14 +1641,19 @@
       const pool = curated.concat(showLive ? live.filter(e => showWeak || !e.weak) : []);
       return pool.filter(e => {
         if (!inRange(e)) return false;
-        if (activeTopic !== "all") return e.movement === activeTopic;
-        return !hidden.has(e.movement);
+        if (activeTopic !== "all" && e.movement !== activeTopic) return false;
+        if (hidden.has(e.movement)) return false;
+        if (searchQuery) {
+          const txt = `${e.title} ${e.city} ${e.venue || ""} ${e.summary} ${e.movement}`.toLowerCase();
+          if (!txt.includes(searchQuery)) return false;
+        }
+        return true;
       }).sort((a, b) => b.date.localeCompare(a.date) || (b.articles || 0) - (a.articles || 0));
     }
 
     const isRecent = e => !e.ongoing && ageDays(e.date) <= 2;
 
-    /* ---------- Render ---------- */
+    /* ---------- Render & Stats ---------- */
     const tip = document.getElementById("tip");
     let placeFilter = null, groups = new Map();
 
@@ -1124,6 +1702,47 @@
 
     const markerEls = new Map();
 
+    function updateStats(pool) {
+      const elTotal = document.getElementById("statTotal");
+      const elPlaces = document.getElementById("statPlaces");
+      const elClimate = document.getElementById("statClimate");
+      const elFocus = document.getElementById("statFocus");
+      if (!elTotal) return;
+
+      elTotal.textContent = pool.length.toLocaleString("en-IN");
+      const places = new Set(pool.filter(e => !e.ongoing).map(e => e.city.split(",")[0])).size;
+      elPlaces.textContent = places.toLocaleString("en-IN");
+      const climateCount = pool.filter(e => e.movement === "climate").length;
+      elClimate.textContent = climateCount.toLocaleString("en-IN");
+
+      const topicCounts = {};
+      for (const e of pool) {
+        if (e.movement !== "other") topicCounts[e.movement] = (topicCounts[e.movement] || 0) + 1;
+      }
+      let topTopic = "Politics & Governance", maxC = -1;
+      for (const [k, v] of Object.entries(topicCounts)) {
+        if (v > maxC) { maxC = v; topTopic = MOVEMENTS[k]?.label || k; }
+      }
+      elFocus.textContent = topTopic.split("&")[0].trim();
+    }
+
+    function renderTicker(pool) {
+      const track = document.getElementById("tickerTrack");
+      if (!track) return;
+      if (!pool.length) {
+        track.innerHTML = `<span class="ticker-item"><span class="ticker-bullet">●</span> No dispatches matching current filter.</span>`;
+        return;
+      }
+      const topItems = pool.slice(0, 16);
+      const itemsHtml = topItems.map(e => `
+        <span class="ticker-item" data-id="${esc(e.id)}">
+          <span class="ticker-bullet">●</span>
+          <span class="ticker-loc">${esc(e.city.split(",")[0])}</span>: ${esc(e.title)}
+        </span>
+      `).join("");
+      track.innerHTML = itemsHtml + itemsHtml;
+    }
+
     function renderTopicTabs() {
       const tabsEl = document.getElementById("topicTabs");
       if (!tabsEl) return;
@@ -1152,7 +1771,26 @@
 
     function render() {
       const ev = visible();
+      const pool = curated.concat(showLive ? live.filter(e => showWeak || !e.weak) : []).filter(inRange);
+
       renderTopicTabs();
+      updateStats(pool);
+      renderTicker(pool);
+
+      const badge = document.getElementById("feedCountBadge");
+      if (badge) badge.textContent = ev.length;
+
+      const activePlaceTag = document.getElementById("activePlaceTag");
+      if (activePlaceTag) {
+        if (placeFilter && groups.has(placeFilter)) {
+          activePlaceTag.textContent = "📍 " + groupLabel(groups.get(placeFilter)) + " ×";
+          activePlaceTag.hidden = false;
+          activePlaceTag.onclick = clearPlace;
+        } else {
+          activePlaceTag.hidden = true;
+        }
+      }
+
       groups = groupEvents(ev);
       if (placeFilter && !groups.has(placeFilter)) placeFilter = null;
       const selGroup = placeFilter || ev.find(e => e.id === selected)?._g;
@@ -1201,8 +1839,8 @@
 
       if (!ev.length) {
         list.innerHTML = activeTopic !== "all"
-          ? `<div class="empty">No news stories found in <b>${esc(MOVEMENTS[activeTopic]?.label || activeTopic)}</b> for this time range. Try selecting "All News" or widening the range.</div>`
-          : `<div class="empty">Nothing matches. Widen the time range or turn a topic back on.</div>`;
+          ? `<div class="empty">No news stories found in <b>${esc(MOVEMENTS[activeTopic]?.label || activeTopic)}</b> for this view. Try selecting "All News" or clearing search.</div>`
+          : `<div class="empty">Nothing matches. Widen the time range or clear search filter.</div>`;
         return;
       }
 
@@ -1216,14 +1854,33 @@
         const isToday = e.date === todayISO() || ageDays(e.date) <= 1;
         const when = e.ongoing ? ("Since " + fmtDate(e.date)) : (isToday ? "Today, " + fmtDate(e.date) : fmtDate(e.date));
 
-        return `<div class="item" role="button" tabindex="0" id="it-${esc(e.id)}" data-id="${esc(e.id)}" aria-expanded="${e.id === selected}">
-      <span class="bar" style="background:${colorOf(e.movement)}"></span>
-      <span><span class="h">${esc(e.title)}</span>
-      <span class="meta">${esc(e.city)}${e.venue ? ", " + esc(e.venue) : ""} · ${when}${e.ongoing ? '<span class="tag">Ongoing</span>' : ""}${e.tag ? `<span class="tag">${esc(e.tag)}</span>` : ""}</span></span>
-      <span class="detail">
-        <p>${esc(e.summary)}</p>
-        <p class="src">Source${(e.sources || []).length > 1 ? "s" : ""}: ${srcs || "none given"}</p>
-      </span></div>`;
+        const isYt = (e.tag || "").includes("YouTube");
+        const isSoc = (e.tag || "").includes("Social");
+        const isLoc = (e.tag || "").includes("Local");
+        const tagClass = isYt ? "badge-yt" : isSoc ? "badge-soc" : isLoc ? "badge-local" : "badge-auto";
+        const catLabel = MOVEMENTS[e.movement]?.label || e.movement;
+
+        return `<div class="item-card item" role="button" tabindex="0" id="it-${esc(e.id)}" data-id="${esc(e.id)}" aria-expanded="${e.id === selected}">
+          <div class="card-edge-glow bar" style="background:${colorOf(e.movement)}"></div>
+          <div class="card-inner">
+            <div class="card-meta-top">
+              <span class="media-badge tag ${tagClass}">${esc(e.tag || "⚡ Auto-detected")}</span>
+              <span class="cat-chip"><span class="cat-dot" style="background:${colorOf(e.movement)}"></span>${esc(catLabel)}</span>
+              <span class="time-chip"><time datetime="${e.date}">${when}</time></span>
+            </div>
+            <h3 class="card-title h">${esc(e.title)}</h3>
+            <div class="card-loc meta">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>${esc(e.city)}${e.venue && e.venue !== "Nationwide" ? ", " + esc(e.venue) : ""}</span>
+            </div>
+            <div class="card-detail detail">
+              <p>${esc(e.summary)}</p>
+              <div class="card-sources src"><span>Sources:</span> ${srcs || "Wire report"}</div>
+            </div>
+          </div>
+        </div>`;
       }).join("") + (ev.length > 400 ? `<div class="empty">Showing the 400 most recent of ${ev.length}. Narrow the range or topics to see the rest.</div>` : "");
     }
 
@@ -1242,7 +1899,7 @@
       render();
       const el = placeFilter ? document.getElementById("list") : document.getElementById("it-" + selected);
       if (placeFilter) el.scrollTop = 0; else el?.scrollIntoView({ block: "nearest", behavior: "smooth" });
-      if (matchMedia("(max-width:860px)").matches) document.querySelector("aside").scrollIntoView({ behavior: "smooth" });
+      if (matchMedia("(max-width:1024px)").matches) document.querySelector(".feed-panel").scrollIntoView({ behavior: "smooth" });
     }
 
     function clearPlace() { placeFilter = null; render(); }
@@ -1257,7 +1914,7 @@
       }
     }
 
-    /* ---------- UI ---------- */
+    /* ---------- UI Event Listeners ---------- */
     document.querySelector(".seg").addEventListener("click", e => {
       const b = e.target.closest("button"); if (!b) return;
       range = b.dataset.range; document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b)); render();
@@ -1288,6 +1945,33 @@
       activeTabBtn?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
     });
 
+    const searchInput = document.getElementById("newsSearch");
+    const clearSearchBtn = document.getElementById("clearSearch");
+    if (searchInput) {
+      searchInput.addEventListener("input", e => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        if (clearSearchBtn) clearSearchBtn.hidden = !searchQuery;
+        render();
+      });
+    }
+    if (clearSearchBtn) {
+      clearSearchBtn.addEventListener("click", () => {
+        searchInput.value = "";
+        searchQuery = "";
+        clearSearchBtn.hidden = true;
+        render();
+      });
+    }
+
+    const tickerWrap = document.getElementById("tickerWrap");
+    if (tickerWrap) {
+      tickerWrap.addEventListener("click", e => {
+        const item = e.target.closest(".ticker-item");
+        if (!item || !item.dataset.id) return;
+        select(item.dataset.id);
+      });
+    }
+
     document.getElementById("tLive").onchange = e => { showLive = e.target.checked; document.getElementById("tWeak").disabled = !showLive; render(); };
     document.getElementById("tWeak").onchange = e => { showWeak = e.target.checked; render(); };
 
@@ -1301,15 +1985,29 @@
     document.getElementById("zout").onclick = () => zoomCenter(1 / 1.6);
     document.getElementById("zreset").onclick = () => animateTo(VB0);
     window.addEventListener("resize", () => { clearTimeout(window._rt); window._rt = setTimeout(render, 120); });
-    matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+
+    function updateClock() {
+      const el = document.getElementById("clockTime");
+      if (!el) return;
+      try {
+        const now = new Date();
+        const str = now.toLocaleTimeString("en-IN", { timeZone: "Asia/Kolkata", hour: "2-digit", minute: "2-digit", hour12: false });
+        el.textContent = `${str} IST`;
+      } catch (_) {}
+    }
+    setInterval(updateClock, 10000);
+    updateClock();
 
     (function suggestLink() {
       let repo = REPO_OVERRIDE;
-      const m = location.hostname.match(/^([^.]+)\.github\.io$/i);
+      const m = location.hostname.match(/^([^.]+).github.io$/i);
       if (!repo && m) { const seg = location.pathname.split("/").filter(Boolean)[0]; repo = m[1] + "/" + (seg || m[1] + ".github.io"); }
       if (!repo) return;
       const a = document.getElementById("suggest");
-      a.href = `https://github.com/${repo}/issues/new?template=suggest-news.yml`; a.hidden = false;
+      if (a) {
+        a.href = `https://github.com/${repo}/issues/new?template=suggest-news.yml`;
+        a.hidden = false;
+      }
     })();
 
     (async () => {

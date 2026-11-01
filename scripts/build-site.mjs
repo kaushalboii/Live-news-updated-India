@@ -48,10 +48,12 @@ const items = (todayItems.length > 0 ? todayItems.concat(otherItems) : otherItem
   };
 });
 
-const listHTML = items.map((e) => `<article class="item" data-id="${esc(e.id)}"><span class="bar"></span><span><h2 class="h">${esc(e.title)}</h2>`
-  + `<span class="meta">${esc(e.place)} · <time datetime="${e.date}">${fmtDate(e.date)}</time>${e.tag ? `<span class="tag ${e.tagClass}">${esc(e.tag)}</span>` : ""}</span>`
-  + (e.summary ? `<span class="detail" style="display:block"><p>${esc(e.summary)}</p></span>` : "")
-  + `<span class="meta">${e.sources.filter((s) => /^https?:/.test(s.u)).map((s) => `<a href="${esc(s.u)}" target="_blank" rel="noopener nofollow">${esc(s.n)}</a>`).join(", ")}</span></span></article>`).join("");
+const listHTML = items.map((e) => `<article class="item-card item" data-id="${esc(e.id)}"><div class="card-edge-glow bar"></div><div class="card-inner">`
+  + `<div class="card-meta-top"><span class="media-badge tag ${e.tagClass}">${esc(e.tag)}</span><span class="time-chip"><time datetime="${e.date}">${fmtDate(e.date)}</time></span></div>`
+  + `<h2 class="card-title h">${esc(e.title)}</h2>`
+  + `<div class="card-loc meta"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> <span>${esc(e.place)}</span></div>`
+  + (e.summary ? `<div class="card-detail detail" style="display:block"><p>${esc(e.summary)}</p>` : "")
+  + `<div class="card-sources src"><span>Sources:</span> ${e.sources.filter((s) => /^https?:/.test(s.u)).map((s) => `<a href="${esc(s.u)}" target="_blank" rel="noopener nofollow">${esc(s.n)}</a>`).join(", ")}</div></div></div></article>`).join("");
 
 const jsonld = {
   "@context": "https://schema.org",
