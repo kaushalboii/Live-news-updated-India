@@ -400,6 +400,80 @@
       box-shadow: 0 1px 2px rgba(0, 0, 0, .08)
     }
 
+    .topic-tabs {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 10px 0 2px;
+      margin-top: 10px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .topic-tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .topic-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      padding: 5px 11px 5px 9px;
+      border-radius: 999px;
+      font-size: .8rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all .15s ease;
+      flex: none;
+    }
+
+    .topic-tab:hover {
+      border-color: var(--focus);
+    }
+
+    .topic-tab[aria-selected="true"] {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
+
+    .topic-tab .tab-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .topic-tab .tab-count {
+      background: var(--chip);
+      color: var(--muted);
+      font-size: .72rem;
+      padding: 1px 6px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .topic-tab[aria-selected="true"] .tab-count {
+      background: rgba(255, 255, 255, .2);
+      color: var(--bg);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .topic-tab[aria-selected="true"] {
+        background: #E7ECF2;
+        color: #111823;
+        border-color: #E7ECF2;
+      }
+      :root:not([data-theme="light"]) .topic-tab[aria-selected="true"] .tab-count {
+        background: rgba(0, 0, 0, .25);
+        color: #111823;
+      }
+    }
+
     .count {
       margin: 12px 0 0;
       font-size: .88rem;
@@ -795,6 +869,8 @@
           <button data-range="all" aria-pressed="false">2026</button>
         </div>
 
+        <div class="topic-tabs" id="topicTabs" role="tablist" aria-label="News categories"></div>
+
         <div class="toggles">
           <label><input type="checkbox" id="tLive" checked> Live news detections</label>
           <label><input type="checkbox" id="tWeak" checked> Include hyper-local & single-source reports</label>
@@ -855,7 +931,7 @@
     const todayISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
 
     let curated = [], live = [], liveMeta = null;
-    let range = "1", selected = null, showLive = true, showWeak = true;
+    let range = "1", selected = null, showLive = true, showWeak = true, activeTopic = "all";
     const hidden = new Set();
 
     /* ---------- Map Geometry & Projection ---------- */
@@ -990,8 +1066,11 @@
 
     function visible() {
       const pool = curated.concat(showLive ? live.filter(e => showWeak || !e.weak) : []);
-      return pool.filter(e => !hidden.has(e.movement) && inRange(e))
-        .sort((a, b) => b.date.localeCompare(a.date) || (b.articles || 0) - (a.articles || 0));
+      return pool.filter(e => {
+        if (!inRange(e)) return false;
+        if (activeTopic !== "all") return e.movement === activeTopic;
+        return !hidden.has(e.movement);
+      }).sort((a, b) => b.date.localeCompare(a.date) || (b.articles || 0) - (a.articles || 0));
     }
 
     const isRecent = e => !e.ongoing && ageDays(e.date) <= 2;
@@ -1045,8 +1124,35 @@
 
     const markerEls = new Map();
 
+    function renderTopicTabs() {
+      const tabsEl = document.getElementById("topicTabs");
+      if (!tabsEl) return;
+      const pool = curated.concat(showLive ? live.filter(e => showWeak || !e.weak) : []).filter(inRange);
+      const counts = { all: pool.length };
+      for (const e of pool) counts[e.movement] = (counts[e.movement] || 0) + 1;
+
+      const tabs = [
+        { id: "all", label: "All News", color: "var(--muted)", count: counts.all || 0 },
+        { id: "climate", label: "Climate & AQI", color: colorOf("climate"), count: counts.climate || 0 },
+        { id: "politics", label: "Politics", color: colorOf("politics"), count: counts.politics || 0 },
+        { id: "security", label: "Security", color: colorOf("security"), count: counts.security || 0 },
+        { id: "protest", label: "Protests", color: colorOf("protest"), count: counts.protest || 0 },
+        { id: "economy", label: "Economy", color: colorOf("economy"), count: counts.economy || 0 },
+        { id: "other", label: "Other", color: colorOf("other"), count: counts.other || 0 }
+      ].filter(t => t.id === "all" || t.count > 0);
+
+      tabsEl.innerHTML = tabs.map(t => `
+        <button class="topic-tab" role="tab" data-topic="${t.id}" aria-selected="${activeTopic === t.id}">
+          ${t.id !== "all" ? `<span class="tab-dot" style="background:${t.color}"></span>` : ""}
+          <span>${t.label}</span>
+          <span class="tab-count">${t.count}</span>
+        </button>
+      `).join("");
+    }
+
     function render() {
       const ev = visible();
+      renderTopicTabs();
       groups = groupEvents(ev);
       if (placeFilter && !groups.has(placeFilter)) placeFilter = null;
       const selGroup = placeFilter || ev.find(e => e.id === selected)?._g;
@@ -1075,7 +1181,12 @@
       const checked = all.filter(e => !e.ongoing && !e.live).length, det = all.filter(e => e.live).length, ong = all.filter(e => e.ongoing).length;
       const places = new Set(all.filter(e => !e.ongoing).map(e => e.city.split(",")[0])).size;
 
-      if (range === "1") {
+      if (activeTopic !== "all") {
+        const catLabel = MOVEMENTS[activeTopic]?.label || activeTopic;
+        document.getElementById("count").innerHTML = ev.length
+          ? `<b>${ev.length}</b> stor${ev.length > 1 ? "ies" : "y"} in <b>${catLabel}</b> across <b>${places}</b> place${places > 1 ? "s" : ""}`
+          : `No ${catLabel} reports recorded for this period.`;
+      } else if (range === "1") {
         document.getElementById("count").innerHTML = ev.length
           ? `<b>${ev.length}</b> live news detection${ev.length > 1 ? "s" : ""} today across <b>${places}</b> place${places > 1 ? "s" : ""}`
           : "No live reports recorded today yet.";
@@ -1089,7 +1200,9 @@
       }
 
       if (!ev.length) {
-        list.innerHTML = `<div class="empty">Nothing matches. Widen the time range or turn a topic back on.</div>`;
+        list.innerHTML = activeTopic !== "all"
+          ? `<div class="empty">No news stories found in <b>${esc(MOVEMENTS[activeTopic]?.label || activeTopic)}</b> for this time range. Try selecting "All News" or widening the range.</div>`
+          : `<div class="empty">Nothing matches. Widen the time range or turn a topic back on.</div>`;
         return;
       }
 
@@ -1116,8 +1229,10 @@
 
     function renderLegend() {
       const used = new Set(curated.concat(live).map(e => e.movement));
-      document.getElementById("legend").innerHTML = Object.entries(MOVEMENTS).filter(([k]) => used.has(k)).map(([k, m]) =>
-        `<button data-mov="${k}" aria-pressed="${!hidden.has(k)}"><span class="dot" style="background:${colorOf(k)}"></span>${m.label}</button>`).join("");
+      document.getElementById("legend").innerHTML = Object.entries(MOVEMENTS).filter(([k]) => used.has(k)).map(([k, m]) => {
+        const isSel = activeTopic === "all" ? !hidden.has(k) : activeTopic === k;
+        return `<button data-mov="${k}" aria-pressed="${isSel}"><span class="dot" style="background:${colorOf(k)}"></span>${m.label}</button>`;
+      }).join("");
     }
 
     function openGroup(key) {
@@ -1148,9 +1263,29 @@
       range = b.dataset.range; document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b)); render();
     });
 
+    const topicTabsEl = document.getElementById("topicTabs");
+    if (topicTabsEl) {
+      topicTabsEl.addEventListener("click", e => {
+        const b = e.target.closest("button"); if (!b) return;
+        const t = b.dataset.topic; if (!t) return;
+        activeTopic = t;
+        hidden.clear();
+        placeFilter = null;
+        selected = null;
+        render();
+        b.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      });
+    }
+
     document.getElementById("legend").addEventListener("click", e => {
-      const b = e.target.closest("button"); if (!b) return; const m = b.dataset.mov;
-      hidden.has(m) ? hidden.delete(m) : hidden.add(m); render();
+      const b = e.target.closest("button"); if (!b) return; const m = b.dataset.mov; if (!m) return;
+      activeTopic = (activeTopic === m) ? "all" : m;
+      hidden.clear();
+      placeFilter = null;
+      selected = null;
+      render();
+      const activeTabBtn = document.querySelector(`.topic-tab[data-topic="${activeTopic}"]`);
+      activeTabBtn?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
     });
 
     document.getElementById("tLive").onchange = e => { showLive = e.target.checked; document.getElementById("tWeak").disabled = !showLive; render(); };
