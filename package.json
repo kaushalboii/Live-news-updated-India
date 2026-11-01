@@ -1,0 +1,17 @@
+{
+  "name": "live-news-updated-india",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A live, real-time interactive geotagged news map and tracker across India, updated from news reports and GDELT 2.0.",
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/fetch-gdelt.mjs",
+    "map": "node scripts/build-map.mjs",
+    "build": "node scripts/build-site.mjs",
+    "dev": "npm run build && npx --yes serve _site -l 3000",
+    "start": "npx --yes serve _site"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
