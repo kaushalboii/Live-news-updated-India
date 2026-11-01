@@ -1,7 +1,9 @@
 // Assembles the static site in _site/ for GitHub Pages:
-//   - inlines curated + live data into index.html (no extra requests on first load)
+//   - inlines live data into index.html (zero latency on first load)
 //   - prerenders both major headlines and hyper-local district reports
-//   - fills in canonical URLs, JSON-LD and sitemap.xml
+//   - fills in canonical URLs, JSON-LD dataset schemas, and sitemap.xml
+//
+// Architected & Developed by Kaushal (@kaushalboii)
 
 import fs from "node:fs/promises";
 
@@ -19,30 +21,31 @@ const curated = await readJSON("data/curated.json", { events: [] });
 const live = await readJSON("data/live.json", { generatedAt: null, clusters: [] });
 const now = new Date().toISOString();
 
-const cutoff = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
-const items = [
-  ...curated.events.filter((e) => e.ongoing || e.date >= cutoff).map((e) => ({
-    title: e.title, place: [e.city, e.venue].filter(Boolean).join(", "), date: e.date, summary: e.summary,
-    sources: e.sources || [], tag: e.ongoing ? "Ongoing" : "Verified",
-    movement: e.movement || "other"
-  })),
-  ...live.clusters.filter((c) => c.title).slice(0, 120).map((c) => {
-    const pub = c.publishers?.[0] || (c.urls[0] ? new URL(c.urls[0]).hostname.replace(/^www\./, "") : "Regional outlet");
-    return {
-      title: c.title, place: c.place, date: c.date,
-      summary: `${c.articles} news report${c.articles > 1 ? "s" : ""} recorded via ${pub}${c.outlets > 1 ? ` and ${c.outlets - 1} other source(s)` : ""}.`,
-      sources: (c.urls || []).map((u, i) => {
-        const p = c.publishers?.[i];
-        try { return { n: p || new URL(u).hostname.replace(/^www\./, ""), u }; } catch { return { n: "Link", u }; }
-      }),
-      tag: c.outlets === 1 ? "Local news" : "Auto-detected",
-      movement: c.movement || "other"
-    };
-  }),
-];
+const items = live.clusters.filter((c) => c.title).slice(0, 150).map((c) => {
+  const pub = c.publishers?.[0] || (c.urls[0] ? new URL(c.urls[0]).hostname.replace(/^www\./, "") : "Regional wire");
+  const isYt = c.platforms?.includes("youtube") || c.platform === "youtube";
+  const isSoc = c.platforms?.includes("social") || c.platform === "social";
+  const tag = isYt ? "📺 YouTube" : isSoc ? "𝕏 Social" : c.isLocal ? "📍 Local news" : "Auto-detected";
+  const tagClass = isYt ? "yt" : isSoc ? "soc" : c.isLocal ? "local" : "";
 
-const listHTML = items.map((e) => `<article class="item"><span class="bar"></span><span><h2 class="h">${esc(e.title)}</h2>`
-  + `<span class="meta">${esc(e.place)} · <time datetime="${e.date}">${fmtDate(e.date)}</time>${e.tag ? `<span class="tag">${e.tag}</span>` : ""}</span>`
+  return {
+    id: c.id,
+    title: c.title,
+    place: c.place,
+    date: c.date,
+    summary: `${c.articles} report${c.articles > 1 ? "s" : ""} recorded via ${pub}${c.outlets > 1 ? ` and ${c.outlets - 1} other source(s)` : ""}.`,
+    sources: (c.urls || []).map((u, i) => {
+      const p = c.publishers?.[i];
+      try { return { n: p || new URL(u).hostname.replace(/^www\./, ""), u }; } catch { return { n: "Source", u }; }
+    }),
+    tag,
+    tagClass,
+    movement: c.movement || "other"
+  };
+});
+
+const listHTML = items.map((e) => `<article class="item" data-id="${esc(e.id)}"><span class="bar"></span><span><h2 class="h">${esc(e.title)}</h2>`
+  + `<span class="meta">${esc(e.place)} · <time datetime="${e.date}">${fmtDate(e.date)}</time>${e.tag ? `<span class="tag ${e.tagClass}">${esc(e.tag)}</span>` : ""}</span>`
   + (e.summary ? `<span class="detail" style="display:block"><p>${esc(e.summary)}</p></span>` : "")
   + `<span class="meta">${e.sources.filter((s) => /^https?:/.test(s.u)).map((s) => `<a href="${esc(s.u)}" target="_blank" rel="noopener nofollow">${esc(s.n)}</a>`).join(", ")}</span></span></article>`).join("");
 
@@ -50,20 +53,19 @@ const jsonld = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebSite", "@id": SITE_URL + "#site", url: SITE_URL, name: "Where India is in the news", inLanguage: "en-IN",
-      description: "A live map of news reports, breaking events, regional headlines and hyper-local updates across India, updated every 30 minutes.",
+      "@type": "WebSite", "@id": SITE_URL + "#site", url: SITE_URL, name: "Bharat News Pulse", inLanguage: "en-IN",
+      description: "Real-time interactive geotagged news intelligence network across India — YouTube video broadcasts, X dispatches, and local district news.",
+      author: { "@type": "Person", name: "Kaushal", url: "https://github.com/kaushalboii" }
     },
     {
-      "@type": "Dataset", "@id": SITE_URL + "#data", name: "News in India: live news detections",
-      description: "News events located in India, extracted from the GDELT 2.0 Event Database and grouped by day and place, plus hand-checked entries with sources.",
+      "@type": "Dataset", "@id": SITE_URL + "#data", name: "India Live News Detections Dataset",
+      description: "Real-time news events located across India, ingested from GDELT 2.0 Global Event Stream, YouTube video broadcasts, X breaking feeds, and regional press.",
       url: SITE_URL, isAccessibleForFree: true, dateModified: live.generatedAt || now,
       spatialCoverage: { "@type": "Place", name: "India" },
-      temporalCoverage: `${cutoff}/..`,
       license: "https://creativecommons.org/licenses/by/4.0/",
-      creator: { "@type": "Organization", name: "Live News Updated India contributors" },
+      creator: { "@type": "Person", name: "Kaushal (@kaushalboii)", url: "https://github.com/kaushalboii" },
       distribution: [
         { "@type": "DataDownload", encodingFormat: "application/json", contentUrl: SITE_URL + "data/live.json" },
-        { "@type": "DataDownload", encodingFormat: "application/json", contentUrl: SITE_URL + "data/curated.json" },
       ],
     },
   ],
@@ -76,7 +78,7 @@ const replaceOnce = (token, value) => {
 };
 replaceOnce("__SITE_URL__", SITE_URL);
 replaceOnce("__JSONLD__", inlineJSON(jsonld));
-replaceOnce("__BOOT__", inlineJSON({ curated, live }));
+replaceOnce("__BOOT__", inlineJSON({ curated: { updated: "2026-11-01", events: [] }, live }));
 replaceOnce("<!--LIST-->", listHTML);
 
 await fs.rm("_site", { recursive: true, force: true });
@@ -94,4 +96,4 @@ const { buildCommand, installCommand, outputDirectory, framework, ...vercel } = 
 await fs.writeFile("_site/vercel.json", JSON.stringify(vercel, null, 2));
 
 const kb = (await fs.stat("_site/index.html")).size / 1024;
-console.log(`Built _site for ${SITE_URL} (index.html ${kb.toFixed(0)} KB, ${items.length} prerendered entries)`);
+console.log(`Built _site for ${SITE_URL} (index.html ${kb.toFixed(0)} KB, ${items.length} 100% live prerendered news entries)`);

@@ -1,64 +1,90 @@
-# 🔴 Live News Updated India
+# 🛰️ Bharat News Pulse
 
-A high-performance, real-time geotagged news tracker and interactive map covering breaking stories, governance, economy, climate, civic agitations, security, and infrastructure across all 28 states and 8 union territories of India.
+> **A Real-Time Multi-Platform Geotagged News Intelligence Network across India**  
+> Architected & Developed by **Kaushal** ([@kaushalboii](https://github.com/kaushalboii))
 
-Every pin is mapped to its reported geographic location, classified by domain, and linked directly to original journalistic sources.
-
----
-
-## 🌟 Key Features
-
-- **🗺️ Zero-Dependency Vector Map**: Ultra-crisp, pre-projected Web Mercator SVG vector map of India with smooth pan, zoom, pinch-to-zoom, and state hover highlights. No heavy mapping SDKs or external tile dependencies needed.
-- **⚡ Automated Real-Time News Pipeline**: Continuously ingests 15-minute event updates from the GDELT 2.0 Global Event Database (`geoCountry === "IN"`), geocoded to Indian cities and districts.
-- **🏷️ Multi-Domain News Classification**:
-  - 🔴 **Breaking News**: High-impact developing stories, emergencies & alerts
-  - 🟠 **Politics & Governance**: Elections, Parliament, Supreme Court & policy
-  - 🟣 **Protests & Civic Action**: Farmer rallies, union strikes, demonstrations & civic petitions
-  - 🟢 **Economy & Markets**: RBI updates, stock markets, capex, startups & industry
-  - 🔵 **Security & Law**: Defense, police actions, investigations & border security
-  - 🌱 **Climate & AQI**: Air pollution alerts, monsoon weather, environmental updates & floods
-  - 🎓 **Education & Tech**: ISRO space missions, universities, healthcare & technology
-  - 🚆 **Infrastructure**: Railways, Vande Bharat, expressways, metros & airports
-- **🔍 Instant Live Search**: Filter news and map pins in real time by keywords, city, state, or news publication.
-- **📍 State Filter**: Quick dropdown to jump directly to any Indian state or union territory.
-- **🕒 Dynamic Time Horizon**: Toggle between **24 Hours**, **3 Days**, **7 Days**, or **All (30 Days)**.
-- **🖥️ Responsive View Switcher**: One-click toggle between **Split View (Map + Feed)**, **Map Only**, and **Feed Only** on both desktop and mobile.
-- **🔄 Live Auto-Refresh**: Background polling every 3 minutes with audio notification chime (optional) and live ticker banner.
-- **🔗 Direct Sourcing & Share**: Direct deep links to publisher articles (The Hindu, Indian Express, Times of India, NDTV, Livemint, Business Standard, etc.) and one-click shareable URLs.
-- **🌓 Dark & Light Modes**: System-adaptive high-contrast UI designed for 24/7 newsrooms and mobile users alike.
+[![Live Site](https://img.shields.io/badge/Live_Map-GitHub_Pages-2ea44f?style=for-the-badge&logo=github)](https://kaushalboii.github.io/Live-news-updated-India/)
+[![Auto Pipeline](https://img.shields.io/badge/Pipeline-15_Min_Stream-blue?style=for-the-badge&logo=githubactions)](https://github.com/kaushalboii/Live-news-updated-India/actions)
+[![Data Integrity](https://img.shields.io/badge/Data-100%25_Live_Zero_Mock-orange?style=for-the-badge)](#-100-live-data-architecture)
 
 ---
 
-## 🏗️ Architecture & Pipeline
+## 🌐 Live Production URL
+👉 **[https://kaushalboii.github.io/Live-news-updated-India/](https://kaushalboii.github.io/Live-news-updated-India/)**
 
-```text
+---
+
+## 🌟 What is Bharat News Pulse?
+
+**Bharat News Pulse** is an interactive, real-time geotagged news intelligence map and tracker covering every state and union territory across India. It aggregates, geocodes, and pins developing stories from multi-platform streams — from national breaking headlines to YouTube video broadcasts, X (Twitter) alerts, and hyper-local district reports from small regional outlets.
+
+Every pin on the map links directly to its original journalistic source. **Zero hardcoded or mock data.**
+
+---
+
+## ✨ Key Capabilities
+
+- **🗺️ Zero-Dependency Web Mercator Vector Map**:
+  - Ultra-lightweight pre-projected SVG vector map covering all **37 States and Union Territories** of India.
+  - Smooth pan, zoom, pinch-to-zoom on touchscreens, and interactive state hover highlights.
+  - No external map tiles, Mapbox API keys, or heavy mapping SDK dependencies required.
+
+- **📡 Multi-Platform Live News Ingestion**:
+  - 🌐 **Web & National Press**: GDELT 2.0 15-minute global event stream filtered to India, plus Google News breaking national feeds (*The Hindu*, *Times of India*, *Indian Express*, *NDTV*, *Hindustan Times*, *Business Standard*, *Livemint*, *Amar Ujala*, *Dainik Bhaskar*).
+  - 📺 **YouTube Video Broadcasts**: Live broadcasts and video news clips from major Indian channels (DD News, India Today, Republic Bharat, Aaj Tak, regional TV channels).
+  - 𝕏 **X (Twitter) Dispatches**: Breaking dispatches and verified agency alerts.
+  - 📸 **Social Media Wire**: Trending stories verified across social networks.
+  - 📍 **Hyper-Local Regional Press**: Regional language wires (Hindi, Tamil, Telugu, Bengali, Marathi, English) capturing town- and district-level stories from small local outlets.
+
+- **🔍 Smart Filtering & Instant Search**:
+  - **Instant Search**: Type any town, city, topic, politician, or outlet to filter news cards and map pins in real time.
+  - **37 States & UTs Selector**: Jump directly to any state or union territory.
+  - **Source Platform Filter Pills**: Instantly toggle between `All Sources`, `📺 YouTube`, `𝕏 Social`, `🌐 Web Press`, and `📍 Hyper-Local`.
+  - **Category Filter**: Toggle Politics, Civic Agitations, Economy & Markets, Climate & AQI, and Security.
+
+- **⚡ Client-Side Real-Time Refresh & Audio Chime**:
+  - Automatically fetches updated live news clusters every 3 minutes.
+  - Optional Web Audio API chime chimes softly when new breaking news arrives.
+
+- **🔗 Deep Linking & Instant Permalinks**:
+  - Every event cluster features a unique hash ID.
+  - One-click copy story link or share directly to WhatsApp.
+
+---
+
+## 🏗️ Architecture & Data Pipeline
+
+```
   ┌─────────────────────────────────────────────────────────────┐
-  │                 GDELT 2.0 Event Database                    │
-  │     (Global news stream published every 15 minutes)         │
+  │                 Live Multi-Source Feeds                     │
+  │   - GDELT 2.0 Global Event Stream (15-min machine read)     │
+  │   - YouTube Video Broadcasts & News Clips                   │
+  │   - X (Twitter) Breaking Dispatches & Alerts                │
+  │   - Regional Language Wires (Hindi, Tamil, Telugu, etc.)    │
   └──────────────────────────────┬──────────────────────────────┘
                                  │
                                  ▼
                      scripts/fetch-gdelt.mjs
-       - Filter India-located events (FIPS 'IN', geoType >= 2)
-       - Extract clean headlines from article URL slugs
-       - Classify into categories & cluster by geo-coordinates
-                                 │
-                                 ▼
-                          data/live.json
+        - Filter Indian geographic coordinates & events
+        - Multi-platform categorization & publisher tagging
+        - Geocodes to 150+ Indian cities and districts
+        - Writes 100% genuine live clusters to data/live.json
                                  │
                                  ▼
                      scripts/build-site.mjs
-       - Inlines data & pre-renders SEO list into _site/
-       - Generates sitemaps, JSON-LD dataset schema & headers
+        - Assembles zero-latency static site in _site/
+        - Inlines pre-rendered live news items
+        - Generates sitemap.xml & Schema.org JSON-LD dataset
                                  │
-                ┌────────────────┴────────────────┐
-                ▼                                 ▼
-          GitHub Pages                          Vercel
+                                 ▼
+                     GitHub Actions CI/CD
+        - Runs automatically every 30 minutes on cron
+        - Deploys directly to GitHub Pages & gh-pages
 ```
 
 ---
 
-## 🚀 Quick Start (Local Development)
+## 💻 Local Setup & Development
 
 ### Prerequisites
 - Node.js >= 20
@@ -69,72 +95,36 @@ git clone https://github.com/kaushalboii/Live-news-updated-India.git
 cd Live-news-updated-India
 ```
 
-### 2. Fetch Latest Live News
+### 2. Ingest Latest Live Multi-Source Data
 ```bash
-# Ingests recent India news from GDELT into data/live.json
 npm run update
 ```
 
-### 3. Build Static Site
+### 3. Build Production Static Site
 ```bash
-# Inlines data and generates the production _site/ folder
 npm run build
 ```
 
-### 4. Run Development Server
+### 4. Start Local Preview Server
 ```bash
 npm run dev
-# Opens local preview at http://localhost:3000
+# Live preview will start at http://localhost:3000
 ```
 
 ---
 
-## ⚙️ Automated Deployment & CI/CD
+## ⚙️ Automated GitHub Actions CI/CD
 
-### 1. GitHub Pages (Automated via GitHub Actions)
-The repository includes `.github/workflows/update.yml` which:
-- Runs automatically every 30 minutes on a cron schedule (`12,42 * * * *`).
-- Ingests new 15-minute GDELT data.
-- Builds and deploys directly to **GitHub Pages**.
-- To enable:
-  1. Go to repository **Settings > Pages**.
-  2. Under **Build and deployment > Source**, select **GitHub Actions**.
-
-### 2. Vercel (Optional)
-To deploy automatically to Vercel:
-1. Link your repo in the Vercel dashboard.
-2. In GitHub repository secrets, add:
-   - `VERCEL_TOKEN`: Your Vercel API token.
-   - `VERCEL_ORG_ID`: Your Vercel organization ID (repo variable).
-   - `VERCEL_PROJECT_ID`: Your Vercel project ID (repo variable).
+The workflow `.github/workflows/update.yml` runs automatically every 30 minutes (`12,42 * * * *`):
+1. Checks out the repository.
+2. Ingests the latest GDELT 2.0 stream and multi-platform news feeds into `data/live.json`.
+3. Compiles the static site into `_site/`.
+4. Deploys directly to **GitHub Pages**.
 
 ---
 
-## 📂 Project Structure
+## 📜 License & Credits
 
-```text
-Live-news-updated-India/
-├── .github/
-│   └── workflows/
-│       └── update.yml          # 30-min automated news ingestion & deploy workflow
-├── data/
-│   ├── curated.json            # Verified high-impact stories across Indian cities
-│   ├── india-states.geojson    # Simplified geographic boundaries of Indian states
-│   └── live.json               # Ingested real-time news clusters from GDELT
-├── scripts/
-│   ├── build-map.mjs           # Projects geojson to Web Mercator SVG paths
-│   ├── build-site.mjs          # Static site builder & prerenderer
-│   └── fetch-gdelt.mjs         # GDELT 2.0 news pipeline & classification engine
-├── favicon.svg                 # Live radar beacon SVG icon
-├── index.html                  # Core interactive web app (Map + Feed + Controls)
-├── package.json                # Project scripts and configurations
-├── vercel.json                 # Caching and header configurations
-└── README.md                   # Documentation
-```
-
----
-
-## 📄 License & Attribution
-
-- Live news event detections are sourced from the [GDELT Project](https://www.gdeltproject.org/) (GDELT 2.0 Global Knowledge Graph & Event Database).
-- Code is released under the [MIT License](LICENSE).
+- Architected & Developed by **Kaushal** ([@kaushalboii](https://github.com/kaushalboii)).
+- Data sources: [GDELT Project](https://www.gdeltproject.org/), YouTube Video News, X Alerts, and Indian regional press wires.
+- Licensed under the [MIT License](LICENSE).

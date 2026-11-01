@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping keep **Live News Updated India** accurate and complete!
+        Thanks for helping keep **Bharat News Pulse** accurate and complete!
   - type: input
     id: title
     attributes:

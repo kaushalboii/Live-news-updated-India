@@ -1,8 +1,9 @@
 {
-  "name": "live-news-updated-india",
+  "name": "bharat-news-pulse",
   "version": "1.0.0",
   "private": true,
-  "description": "A live, real-time interactive geotagged news map and tracker across India, updated from news reports and GDELT 2.0.",
+  "description": "Bharat News Pulse: Real-time multi-platform geotagged news intelligence network across India — YouTube video broadcasts, X dispatches, national breaking news, and hyper-local district press. Architected & developed by Kaushal (@kaushalboii).",
+  "author": "Kaushal (@kaushalboii)",
   "type": "module",
   "scripts": {
     "update": "node scripts/fetch-gdelt.mjs",
