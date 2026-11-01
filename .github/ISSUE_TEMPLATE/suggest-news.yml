@@ -1,0 +1,57 @@
+name: Suggest a news story
+description: Report a verified news event or breaking story to add to the map
+title: "News: [City, State] - [Headline]"
+labels: ["curated-news"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep **Live News Updated India** accurate and complete!
+  - type: input
+    id: title
+    attributes:
+      label: Headline / Title
+      description: A concise, neutral summary of the event
+      placeholder: "e.g. Metro Phase 2 operations commence in Pune"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Breaking News
+        - Politics & Governance
+        - Protests & Civic Agitation
+        - Economy & Markets
+        - Security & Law
+        - Climate, Weather & AQI
+        - Education, Health & Tech
+        - Infrastructure & Transport
+        - General News
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: City and State
+      placeholder: "e.g. Pune, Maharashtra"
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: News Source URLs
+      description: Links to reporting in established outlets
+      placeholder: |
+        https://timesofindia.indiatimes.com/...
+        https://www.thehindu.com/...
+    validations:
+      required: true
