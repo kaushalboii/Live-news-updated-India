@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T19:00:32.491Z",
-  "lastGdeltFile": "20261101190000",
+  "generatedAt": "2026-11-01T19:13:58.578Z",
+  "lastGdeltFile": "20261101191500",
   "source": "Live News Updated India: Multi-Platform Real-Time Intelligence (GDELT 2.0 + Climate Wire + Tamil 24/7 + YouTube Video Wire + X Dispatches + Regional News)",
   "windowDays": 7,
   "clusters": [
@@ -11,7 +11,7 @@
       "lng": 77.209,
       "geoType": 4,
       "place": "Delhi",
-      "articles": 498,
+      "articles": 625,
       "outlets": 37,
       "type": "010",
       "movement": "climate",
@@ -25,11 +25,11 @@
       ],
       "title": "दिल्ली-ncr में कल होगी बारिश या बढ़ेगा तापमान? जानिए मौसम को लेकर क्या है imd का अपडेट",
       "urls": [
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE02UEZmczZ3RGg4SnlNMXhvcS1GdXNaTUdUUEc1bHRFZTRHYWMyUDNVN2MtTWsxa3VKUGZ0TVN0dFg4MWN3b0FTUDAxX3FCLXZkZmlvVkd3?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5Q25KUVNldkFCMUFJWnhaOHY1d29GcWFXR180cFFoRGxQOVpYZFRyYnpva1pETElPUmxnOWw0RExuSm5QRVY4SVBvYk1iaXZkVkVKMm5B?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5senVqZW1zckpzMm5GOE9kd0VpM2RHWW5uMk5CZjQ1M3NDMV9Dc2dIZFNjcXhVZ2tOZ0diMTczME83RHQ1YUxFVzUtMGkzNmpKNXhHcE93?oc=5",
         "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVDZHUjdWYjU2S0RSZ1dCalR5VGxpOV9YNzhaMEg3aTNyTHZLc2xuVHdXS0pMc21oWTcxR1VhV0xPdkoxb3p0Wm1rS21OX1pGQkpYRlktRlVqR1hPTVJzamIyQnZsN0E3R0Fad0tCal9kRTc1eWUyQzZHVzBoUmJ6dlpMSEktS2p0LV9hZDFaNEJIQ3ZUemlwQ1RaaXdUbVVTNXZPMGI0ei0?oc=5",
-        "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQamZkbjZHbHl1ZW5jQmlyTWJmVE82WGJGcmFqX1BZZ0lWc2JKY3o3dTcxMUx4SDFEc3JqdEtsd0NIOFN0QWM5R1hIeHoxY0ZWMkpuM09nV1pOODdOb3ZoOHkxSGhkOWdTTkdRQnlqaDJCamxYbkl2VlFDU0piMzZOOUZicEliWkFmQVA3amRhVFd3LW1LeWF1UzNsMlBybldEb2VmUFBfMU0xd21jLWx3dTREQktUc2dfbDUxT3lXZXhIUGZNbjcxajlGNGpwZGt4NGgyOU9ldDNnZFFKbGfSAeYBQVVfeXFMTVFiWFBhN0pOcWRNZmpVWDNYSktOWE9jSEhsX1N4Q3VCMFRCaDdlOWstb1hmNlJHY2VaMWMyWG1nUkZqdGMtVlMtbFRyZ2VaUmlpVFVFdUxrMTc1M3EzYS1oSnNlYmZXQmw0OTEwaTJDbDQzSFB5WlU4M1o1OU8zUmlUOEs4T2Y2OGVfX3EwVGlPdGJMRzVRUGRIOC1XeFNiZE5fZUxQc3A3QXUzdjdhSElqOWxJRW1RLWV0M2RTaC1aZV8wTFJla3pDbkFfYW5wa1hLSm1YX2x4Wlc4U1RkVGlvZTV3VVE?oc=5",
-        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbmlRT1I2WURYTXl4bW5PWXktd1I5YVJTMUY2QmdkYndSeHg0SUljQXBZMXhkeU1oYXRrTTlmZGFLQ08wdTVfMGxXY0FPT2pScGZvMFZSUndleEo0TER4ZVowSzVEVXl2a0VWbko3Nkp5R3JpbjdqZzI1eGoydWpIS282M0loRjk5T2Q3SjZTbmFpb3hPVUZzNTVKWlNlZVpyN1FsOG5HbzByTC1NQkZweUVVSnd0ZFM5bHNVMGxBc0xuY0xKazdkR2REZnhFT2k0dUpLendCb2Roa1lQYVZlNw?oc=5",
-        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8zRVkyVmxJcDhjV0pRSzI1NUtKa1VPMGp5LXJtSUpqbW8zQnhqVmlvQWNEdFFFUHEzUUFMZFlNaV8zNmxLRVNmVGQ4X1ZLSTNPT2Z4Qm53?oc=5",
-        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPUHlXOGRDa3l4OE93NTNCLWpWQWM5d3Qtd19tNk5LTEFFXzZtODY3bmU1SWs2V3oycTNLdVNEWTN5Ty10S3dDRE1xN3l2Rm9JM1JCSHd3TFJhWktJRHVDQVlwUXJpUUpZQWg2MHNMN1I3SW50NkJONFVmUDdQQ1BuMmZLWW10cVVwZlloXzVISGNNMDBBdTFnTkd5clZqazJSY3FvUG5VVWV2OVBkdU42aEFFVEFkZFhXY0Z2X2xOVkQxX3pmSFYxcU1kRzVsRURiaUZsMVZtSms?oc=5"
+        "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQamZkbjZHbHl1ZW5jQmlyTWJmVE82WGJGcmFqX1BZZ0lWc2JKY3o3dTcxMUx4SDFEc3JqdEtsd0NIOFN0QWM5R1hIeHoxY0ZWMkpuM09nV1pOODdOb3ZoOHkxSGhkOWdTTkdRQnlqaDJCamxYbkl2VlFDU0piMzZOOUZicEliWkFmQVA3amRhVFd3LW1LeWF1UzNsMlBybldEb2VmUFBfMU0xd21jLWx3dTREQktUc2dfbDUxT3lXZXhIUGZNbjcxajlGNGpwZGt4NGgyOU9ldDNnZFFKbGfSAeYBQVVfeXFMTVFiWFBhN0pOcWRNZmpVWDNYSktOWE9jSEhsX1N4Q3VCMFRCaDdlOWstb1hmNlJHY2VaMWMyWG1nUkZqdGMtVlMtbFRyZ2VaUmlpVFVFdUxrMTc1M3EzYS1oSnNlYmZXQmw0OTEwaTJDbDQzSFB5WlU4M1o1OU8zUmlUOEs4T2Y2OGVfX3EwVGlPdGJMRzVRUGRIOC1XeFNiZE5fZUxQc3A3QXUzdjdhSElqOWxJRW1RLWV0M2RTaC1aZV8wTFJla3pDbkFfYW5wa1hLSm1YX2x4Wlc4U1RkVGlvZTV3VVE?oc=5"
       ],
       "domains": [
         "Business Standard",
@@ -60,7 +60,7 @@
       "lng": 80.2707,
       "geoType": 4,
       "place": "Chennai, Tamil Nadu",
-      "articles": 429,
+      "articles": 537,
       "outlets": 38,
       "type": "010",
       "movement": "climate",
@@ -73,11 +73,11 @@
       ],
       "title": "முரசு புயல் அலெர்ட்.. சென்னை, திருவள்ளூருக்கு மிக கனமழைக்கான எச்சரிக்கை.. வானிலை அப்டேட்",
       "urls": [
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE92OVBjYVhxS2R4bnBKRi1GcHZsRlZYSnRHTUdOR01aLWRVY1FRYmFTc3NuM1pyRVlhOXU4Nzl3dTBNYTViMUNibEN0alkxSWtpdVZnemNR?oc=5",
         "https://news.google.com/rss/articles/CBMi6wJBVV95cUxOSGF0VWxnSEJpVGwxTWZfQXpSdERXNVhqR2gzN2owYTBnSHNxMllseEdlckppUjNnUTNNckV0dWh2NlNGckZUOWYwc044UmdqTXV1XzJQeEVIRXVhdHQycXAzczZha1JVMk9TbVNVTUZnNzEwUF9WUXR3WWVNc1dFNVlCdjZHS25ranQtWVJNVXk4ek5uanNaaVlEaTFWYm9va3JsREJoeVRGQ1dYQUt2YXZuNFZBdlJsUlNpMXVPUVZCeE5MaFROdjY3Q2ZtTkF2M3hvVldhcnEtazhUVlg2eXlVY3RZcVlNcjJ1SDJGSDRHMDhKalhUTkRnbzMxNVBUNnN2andHT1F0Mnc1VkQxMGF4TG9kWFI0a0JPYmtZblVNSVNCaW4wM01rNy02YTlEUUxra2JMWlMwLUJlWlRsS3VsRnhnc3R5bG12WkthM3g0ODkwbFp3aUpHMmpId0lKQlB4MlFJWHMyejjSAfgCQVVfeXFMTUtnNmFwZTJmRU9INFg1M2tOSTRqM0pDSE9UUFRJczBPZEhpd2RxbXkyTlVYWHFsTFBzSWhuMG92S2FoaG9EZlpEZjZic2NoMXpWYjhRZ1hocjdDcnlyNWduRmk3cjNpNHVfcVJQVkxJXzlBSlZPd0psZm1mYWVpQ1BUTWZZeFRHU3A2UXR1cUxObVVVMnBMMWNFMS1BcV9BUnhmal9pTUFOU2pOcVRKcGIzc1pEV25oQ29YWlVsN2YxVmVMZDZrcU9zajdMWVJwc0t0RWtJS1NzTzBzeGRLeHZCNWQ0Z3dBWlB1bGZGY24zVzYzTWFETDdENnREUEFXQkpQdlRLSzdyLVlJQUpiMXg5OTA4RHlKS2gxX3JSTUc3YXkzTW5URkxnYVUxdlVWSExGdkp4V3F3Y2NLMUo1c1FieWhPbjZwbnJsU1JWdUVERzNqVHJZb2dWSHRCUUhINms0N0VoTDd4c3EyYUMtOHJJeWdQWGhrTA?oc=5",
         "https://news.google.com/rss/articles/CBMivgJBVV95cUxNWlk1eVNhT0hVNmFXMHgxbGQ0ZG1lbmNyS0FnNHZKX2xRNkhDdUhSclR2dElzeFlJWnhoZ1FaZkJfX1l6V01nRHFBalBVa1dYVnc1WGlwb0ZoLV9pWml3Q2pMR3FubklPNDJETnQzd09EamxsWTNYdjkxMEVqQ1FLcjBQQkU4dUYtb2lITFNWZ1pWRG1XaVdkWlNrcS1hNWNDemlYOW5tVU1VV0dwQzlfN3cxUlhZcjQ0clh2M1E4WVI0eWpFVk5rcThjY0lHb0hpTjlORGlfbEtwVVpLOWRRWDJlNWhUUGo5N1hHYmprYVMxaTdxQ1I4MkxveXNic2MzdkM2V1lHbXdGODJZREpCQkdNVlh5MGtoNUxfSFNjOXBWQzNTZjhTQjIwZjhXZm5Oa0wtWUhSWWJIT0hJRXc?oc=5",
         "https://news.google.com/rss/articles/CBMiyAJBVV95cUxOOGpPS05uUkg2M2tlOHltVl9aMFpMRDBuNFE0VndmMkloMzBoZE5KT1VpcE9zbVF6SzdlYkdzWlQzeUdYcnoyUnpxRzR6TkQweERVT3lRX0JIX3ZlV20ydXRLczlHYlRKT2JiN1Rnc0NzdFZpVThUckhRdGFkcWM0QVRoOXJzeHNjaWlHSWc4ZTBScENHUUlPdHhOUmltQWllWVYzbGtnUnktLUluN0VJcGlQWkp0S240MmlKOW9NaHhUS0U5RDR2TFNhMm1BZnpqRzFITDJuYjVFdUlHZUc0VmZicFl5OVZDbmJTTlk0LXRydklma1dNMTVKV25lUkVHWWpxYkRFeS1CSklmSnJOWGZ1QXlFSjBLZUszNHFMcldXaWl1aDZsVlJTd1FHeWFnRjFCMGtwdnRHQ3VlamxhN3Z1WGZTZWxK?oc=5",
-        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZVFqTlhLa19yTC01RFdFUXZ1eE9wb2lOc183S1VhaDRhMEpJcjAxYWEzSTZndWNudlR4aFAtYWlIdWZoclFfRW1MT1lkbXhnQjhoMXFhV0dxRmJVVUN6Z0RISWJnRkt4OXpDVzNWTjlBYTlmbFVYWlV5TzRxZXhCOVlidlVmOFI2MElzaDluSHNnUjNpbENRQ0JMTXNXSVRCTHVfWE9KTnlyZ1N1Qll6SFpkeXRocmpyeEg4eVpJWC03VVplRHctUmM4aERyMGVD0gHXAUFVX3lxTE0wLUJXVFJldlhMR1FYTGRtRkk2ZWJUM0owTVAyUVl0Y3h6dWN6UmpwRE9zdVdrTllpWFJhaHgxbUJoSkFWOWltOHBLZnI3a2hnOERkLTJGRVZYTzZfQ0lJS0Nic09lVVBhWVRUTkNDYWM2RGh2ODFZYnVtUjdZWGdWeDFpM1J0YzdoRlFrNGRfYUVFVWVQZnlQTVlaRjR2TUozUkV4RkJrMUttU0c5ZFI4X1AzT2VaN2o3V1oyWnRfSmFhTGFudWxIcHkxdjkyZXY2OEppZFVr?oc=5",
-        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcGF4RGFuRVBUa2JTbFNKaXRVLW1tenF5aW1mVTlIaTRUaV9KekszOGRvLV9pSDhzakYzcWk0YzhMY0FRdE9NUGlOVmZwMl9pRGxLZ2Vnc2lkTC15azFsaE41VmNCYWM2MGZlTWRPUTV6T2xuMEUwYURtUHRFakszME8tS2xwUU0zZExtSUE3blZPZ1RnalpKZXNaZFNtVUpVaEZrZG44NnFzTWt5clJQUmxwUVRCOXFI0gG4AUFVX3lxTFBwYXhEYW5FUFRrYlNsU0ppdFUtbW16cXlpbWZVOUhpNFRpX0p6SzM4ZG8tX2lIOHNqRjNxaTRjOExjQVF0T01QaU5WZnAyX2lEbEtnZWdzaWRMLXlrMWxoTjVWY0JhYzYwZmVNZE9RNXpPbG4wRTBhRG1QdEVqSzMwTy1LbHBRTTNkTG1JQTduVk9nVGdqWkplc1pkU21VSlVoRmtkbjg2cXNNa3lyUlBSbHBRVEI5cUg?oc=5"
+        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZVFqTlhLa19yTC01RFdFUXZ1eE9wb2lOc183S1VhaDRhMEpJcjAxYWEzSTZndWNudlR4aFAtYWlIdWZoclFfRW1MT1lkbXhnQjhoMXFhV0dxRmJVVUN6Z0RISWJnRkt4OXpDVzNWTjlBYTlmbFVYWlV5TzRxZXhCOVlidlVmOFI2MElzaDluSHNnUjNpbENRQ0JMTXNXSVRCTHVfWE9KTnlyZ1N1Qll6SFpkeXRocmpyeEg4eVpJWC03VVplRHctUmM4aERyMGVD0gHXAUFVX3lxTE0wLUJXVFJldlhMR1FYTGRtRkk2ZWJUM0owTVAyUVl0Y3h6dWN6UmpwRE9zdVdrTllpWFJhaHgxbUJoSkFWOWltOHBLZnI3a2hnOERkLTJGRVZYTzZfQ0lJS0Nic09lVVBhWVRUTkNDYWM2RGh2ODFZYnVtUjdZWGdWeDFpM1J0YzdoRlFrNGRfYUVFVWVQZnlQTVlaRjR2TUozUkV4RkJrMUttU0c5ZFI4X1AzT2VaN2o3V1oyWnRfSmFhTGFudWxIcHkxdjkyZXY2OEppZFVr?oc=5"
       ],
       "domains": [
         "India Today",
@@ -108,8 +108,8 @@
       "lng": 78.6569,
       "geoType": 4,
       "place": "Tamil Nadu",
-      "articles": 309,
-      "outlets": 39,
+      "articles": 377,
+      "outlets": 40,
       "type": "010",
       "movement": "politics",
       "category": "politics",
@@ -121,11 +121,11 @@
       ],
       "title": "Tvk minister revives demand for tamil nadu flag, bjp slams separatist mindset",
       "urls": [
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5rWjdtWWNFZ3ZfRzI0ZVBpZkltaHc3Z0hvX29jRmVTclN0TmlyV1V4SmtiZHVaU2VzQ3BjLWJyZndZVmdtY0tYTEZaMnRrMVNBZ1pyZ2RR?oc=5",
+        "https://news.google.com/rss/articles/CBMihAJBVV95cUxPWENTUVNzaW40UHlKRXVybGFxalJHV2kwM01QTE5PODNYa2JjQk5XZzRDLTNRUURuaWVBSHdmSlk2cUhqa3lMeXhUZTg1TjFxcXdCMWJJVS1IUGdiZHpVZHhQSGd0RTFrcFduZkVKdkV5eHdmdkhvZ2FXMGtYT2JsSmQySkZZY3cta3AzUHkwbFJlS2tnNDhlNjd6ZTFBR3lsNDgxa2ZWVHpWa2tGUFhGeXQwY0FMUW1qOW1uV2pBYzZlRmE1VUtHZ1VfNzhJamJzclljYjZadFdjZ2xRTFg2XzFxLTdvN1MzN0l6ME9QYTg1aTVhQi04NVVMcnJsdURDcm9iadIBigJBVV95cUxObU1EZk1tVmhkOVV4YlpHeXdpdi13S2VsTzdONUxNdGpMSkt5Nzkyc3JvYUh1TUpDZU95WGp6MVlRTlprYUtPYXp4YVMwUGtOaGcyV0hkX1JiVGFSUHZ0VTZBU3gtT01RU3RoS1QxRUZuSHV0Rk1RUzNvTEF0QWQtbjRtc2ZHOVFZVVVpdk5RbU10LXFfb3F5RzhJSFJfZVV4REpEY1g4TFBnWEpEVmFicVdGN21GMmg3TGJUTm5WdHI3VXp3X0RLbUthVFFVcU1JYXExQkg0dVVOV0t6amNsOW9iOW1LcnU4ZS1uQTNkbDc5TFNjRmRVMGVpTFNZVzY4SE02Q2tjT3ZMZw?oc=5",
         "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQZ1Y0V2p5S29scTZobjYzcVU3bWl5R0YtQ0YwdGV4dTg4dnljc1JBLW1zYmh6Y1NpaU9INFVNLU1JUURSUy1UdjZZRVVLVFMtUnBwOGtsOURucDJyaUNwTi1qUVJjUF9jNl9Ha0hLeUQzbHNCQ28yY3UzN3lDM2tBY0RVVmxIY0xQU040RUVTaG1HbXBXbGVoRFhCU3UyU3BuNTNkVmpKX1pYTDB2dktJRlJRZUNSRHZna0ZVbGxaUUhya1NSM2NDekt0WnhIdGtpbHFTcDc5UnJtRXFH?oc=5",
         "https://news.google.com/rss/articles/CBMizAFBVV95cUxNc3dxVW1LY1gyTTZvZER6SVFlOHo4Q2xNM0hONEhLbV9aQ0k4Z09aa2llZXEtcV90Y3pETHl5THk3aHZYbmxFM1JKZncxM0I4dV9IZzhsLXZGRHZvMVlVTHZhUEk0Z3RhZ1d2QTUxU1VpSUktV1ltRWpQWkxTeHNsYWZUYUlaY1JGdjBaTnFQbzRvcWFoX0RwODJuaEw4Sm1ZYjNJMnQ5eEtZdGxLaUZSdVpjVzFNNGhqREhHN2ozSFUwamgwVktwU1hERjQ?oc=5",
-        "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcWt4bC1YTkF3UkdLTHJ5WTA0UnJaQUhoVGltcFhscTF5Qjc3aW8wQXRRUU8yWXMtNFhlOUhhLTFHVVB1VWRzQ3FjRHpvYU1RQnRlSFZ1bWViVW5jNFlsRDdqckdFLWEtNkJEV2d1bEtmNnB5UnIwT1RITEF1Q0xhX0tLY3hOV2NXT2laa3ZidjVZbGlIN1N3Z3dBUlJteHRpeVlyQVdMa1RKOF9rMlNJWQ?oc=5",
-        "https://news.google.com/rss/articles/CBMibkFVX3lxTE12MDFLQ3R2Y2pBeGQwWi10LW9QdnJHMF9oM1lvUlZDSVNRdFFxVDVMRG8zXzBxTHpYQ3F3c2lFa0ZtSWM0WHZCQjAyVUJlWnhQTlJpTnFjMUpvUi1XaVVNdnk0TFROMGdSSVJqU3J3?oc=5",
-        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1UblF2TjVnVEZrV28xc0JkNzd0Skl6clpQTURXUDF1Nk5YZS1jN3o5cXRHaFlvbnl2cnJrZm40TVExczdaQkpiaUVxZF83ajVrcWpsSkF3?oc=5"
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcWt4bC1YTkF3UkdLTHJ5WTA0UnJaQUhoVGltcFhscTF5Qjc3aW8wQXRRUU8yWXMtNFhlOUhhLTFHVVB1VWRzQ3FjRHpvYU1RQnRlSFZ1bWViVW5jNFlsRDdqckdFLWEtNkJEV2d1bEtmNnB5UnIwT1RITEF1Q0xhX0tLY3hOV2NXT2laa3ZidjVZbGlIN1N3Z3dBUlJteHRpeVlyQVdMa1RKOF9rMlNJWQ?oc=5"
       ],
       "domains": [
         "The Times of India",
@@ -156,8 +156,8 @@
       "lng": 79.74,
       "geoType": 4,
       "place": "Andhra Pradesh",
-      "articles": 153,
-      "outlets": 31,
+      "articles": 186,
+      "outlets": 32,
       "type": "010",
       "movement": "climate",
       "category": "climate",
@@ -170,11 +170,11 @@
       ],
       "title": "Deep depression intensifies into severe cyclone murasu; imd issues yellow alert for coastal andhra",
       "urls": [
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUXNDejBMeFBkdFlxVEZ6ejRBNDY0dzdaOEx4LU84XzNxbm1qeWVBWUg1WUxKZExvNXFncGViMlBnUjZ4Zk03YlZtTllxY043Z2FvMmpBa0g2MHpyT3pxdE4yaFJMWDN2ZlRVSWtGX2pUczVNS09Nbjd4dDFTcDlBaGQ0MUU4OUZpdnRUejhrQ2dEX0kteWVJWG5ubGZiRDYtbjlUWkRmb1Yyb3AyTkQzOUZTV3BzdV9nN20tcE9RTjMwZk5LdVh1eENPQ29OSjRNZy1Ka2YyVW1hMEXSAeABQVVfeXFMTW9OSnllM0MtdFNUZXN6aC14eUZuelBxVm1XRHZEREtMWi1wYU81V0thRHV0WHE1MEVuYV9sMWthV2FBWFI0a050b28ybHRobk1RMVQ5Ym1ObXJHTDhwWVl6aXRRV3g2Mk41bkpvUG1ZdndDX2ZCTXBzcUhWb3pIWXJBWldIelk0aFNWcXp5a3U0ZUJkYnNKTTlkWU5sZ3ZUMXl6RWhJRzZBOFRRSklpSUNsRF9GaWJ2aXltQjZPaER1V0U2ZWx4Y1BWU0V5M21PX0o3WDEtOS1zc3RWUUNMU2E?oc=5",
         "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pdFhFZDZxZlNJME9oYXM4bk9Dck14dmhPekNJRkMyUVptSE5IbEZGcElHdmVzRUNqMzhsaWl4OGtqczZ3Y25WdDUxYi12Ym51Q0QyVkVsc09ONHFnZ0JZQXlNWElMZw?oc=5",
         "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZQ2ZybjBROXJZYUtPeHVsYXBLeEpZeWdOaUlwdWVXSGhGSEg2SHhTaXp6ZWloaUxHdUloZEc2ZXJwSy1tV0FXYlFUeUE2bVphbmwydzBB?oc=5",
         "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQmtrZ0FCUWh5X2RCVnhPWWY4WUl5MGJYcTgyYW85M05hTjBRT2d4SlBOWlZCN3dULXhUNTJEZWN6cnpBNWlwOHFPUm10bjBPVTBMeUVVZy1qTmJzYk84NmxlX2Y3ZGhGOEd0cnp1VExBMWRGZ2V5a0c3T0lVYUhhQm1sbkxkZ0lfMEtSRjVNMlZZc1lwazdXYXJnUFp3UjVWRXBaODJKaHNkUG84RGNPdlp6QUNXckplX3Mw?oc=5",
-        "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQ3FfVnZ0UE1Jd09CdENGWjR4VW9YSWxFUTZKcm5fRUJScXMtQjZXWmtWeGxmdDkzUGhKUTRsQzE3aUZjbmhrdEdfYktkcmtpR09LRE9UTjBvV293TkRWRGQyYUZCMzJlN0xHcDlmT2ttb1ZKZGNodVJtZHFSX2s1SXVHRUQtQ3daTEdMSTdyeGQyX3RHZ0JmcjVaem11SUNYM2RzSFpqMGptNlA5UHhndXIwd0JKU0toUHpBUmZpRFg3SXVLY2NpVGl6QQ?oc=5",
-        "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSy1GTkk2SER6RVZUZmtPdV83Y0FYcWJLVGhrUmxvRGNJR3YwWWJZVjl4VmtLM3RhQXRPRFpobEE5OEN1M0NDaTVaeTU2UDFnb3RSOVBhYU1hSjU0NTdnNDgtdW5hWmJpa1VFNDlCZUNwUVgyR1pJNEE2aUhVRUtIaVlhQl8xV3BSVDBNUUhEYVpKOTVEUlM5YXk1M3VzcjdyU1RoOFYxc2Z3YmtESEZVVlVNMGl2bk13c1AzTkt30gHDAUFVX3lxTFBRc09oOWRfa1h1OXFTV2lyT0w2ZDI3V2FHX0kwLWJ2NTdtTnd4cEtibmoyLWZ1MHRUUkkxa1RRWkpTQkdZVVd5bDNmdm8yaG5LWThPcm5XN0RGRVR3T29mblNqdHYtRU9SS2ZBVVdCWkxJRzhneG9Gc1pOdGpLY2I1WFQ2czhfQmZ2VndHQWJ5RWVxUUhSakFUdFFpeTMxM2tCdmZ6bS1CZGNaTGlsY1Q4eGliNmJ3bzhwWmVPWnRSbUpMYw?oc=5"
+        "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQ3FfVnZ0UE1Jd09CdENGWjR4VW9YSWxFUTZKcm5fRUJScXMtQjZXWmtWeGxmdDkzUGhKUTRsQzE3aUZjbmhrdEdfYktkcmtpR09LRE9UTjBvV293TkRWRGQyYUZCMzJlN0xHcDlmT2ttb1ZKZGNodVJtZHFSX2s1SXVHRUQtQ3daTEdMSTdyeGQyX3RHZ0JmcjVaem11SUNYM2RzSFpqMGptNlA5UHhndXIwd0JKU0toUHpBUmZpRFg3SXVLY2NpVGl6QQ?oc=5"
       ],
       "domains": [
         "The Indian Express",
@@ -205,7 +205,7 @@
       "lng": 85,
       "geoType": 4,
       "place": "Bay of Bengal",
-      "articles": 128,
+      "articles": 158,
       "outlets": 27,
       "type": "010",
       "movement": "climate",
@@ -218,11 +218,11 @@
       ],
       "title": "🔷cyclone murasu in bay of bengal | வங்கக்கடலில் உருவானது \"முரசு\" புயல்",
       "urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE9VOWtPd0o3aUxrQThjaVFyd2JmY3N5aTg1X28zQTA2UTRtYmUwbEF1cWxmU2ptTkg5M0RZOG1JZkFYcGh3bFRSaXh3elVDcFdGdkUyYTN4V3oyZHpnMTI3M0ZFOS1SNV9ia0dqbnFR?oc=5",
         "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9RWk81T1lkMzdCcFZ4WWtxT0lvOERaRjdHOE5RTU8xeEhKbVVjTG1hRzREcFBfdU9RTmRfWTlUZnlXXzJObmUwREE1dDhwVk5DSmxjck80ZjRmdlhpemEtMmRiQQ?oc=5",
         "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9kTXU0UG83SE1LSHVUNzZsemZFcVM0YWRDRFFqbkxZSGZYdnoydlBTZzk2bE9EdWNLNTA0c2JMay1KLW1ud0J4SFlxSEZPQ0JOVEZOa293?oc=5",
         "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTGxfd2VlMHF1Z1NMdTNLZnljRWYwTGU1N05ReHVUTGJzZGxtVUx0Nkh1dURzalRWcm42b3pCUk9tZGhGN2RsY0JnWXQyTEhVSlFRZE9RNnpMLVFUQnhKejB5Z043LWlTVGVFbW80YTBBanI5QlVfTzhNSVFycUNBNkZGTWdkTEdMRV9NWXFOYUY5MHVkRG53WWl6cVR6Nkk1NTYzUERRT3dpcms?oc=5",
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVVJMM2RzOFg0eDJhaEdZUk12NEZwX3B5dm00RE9mdXNId0o1S05MWW45cTVVZW5lUWJqdms1QVlHT0Q4STQ2VC1BS25TQUJuQmJ5SE5zWFNBdUVJbWwweVFKdHFTV0lldjU4YTk2RVo3dlZlcVd5YjkwV2E2Vm5uQWpaMXBxRlNjSVJLeU8zU1JOZVNJcG10ajBwT1VmVVl4eUZhNmcwMHB6NUHSAbgBQVVfeXFMTTV0SVp0WjVPQ0ZMQUVjN2dEVC1wWDZZdWl3V3VnSFBfYm42REVnd3pLRU5WZU0zbk5vTUlzOGdlOVNMYllqU0hTVXJCZHFWajhvaGgtLTdKNlFDWl9UTURNY0lwNk1uWHFEeVBmdGtaa1RXQjAxM0pQRzlYczktYzZSVjg2UXc1WWVvOVF0VElYbjh3dEhzc1VsMGJKTTZmd05SUTRhUkQyMVlBcW9yNzE3bXFiSXR6SQ?oc=5",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSXBBYkVhRnNkV05CVkFpeElqd1hENjNYZlp4SF9laGR0NVQ4ejNZQUJ3dm50RTcxT29ubHZqVnJKSXFNdTJ6Zko1c1RZSTh6TFVic2I0UU13ai1rWDBZODFDT05ZcVFSU2pFNVRhdWtaQXlVbGJmU2Q5RHRneEtDWjhFbw?oc=5"
+        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVVJMM2RzOFg0eDJhaEdZUk12NEZwX3B5dm00RE9mdXNId0o1S05MWW45cTVVZW5lUWJqdms1QVlHT0Q4STQ2VC1BS25TQUJuQmJ5SE5zWFNBdUVJbWwweVFKdHFTV0lldjU4YTk2RVo3dlZlcVd5YjkwV2E2Vm5uQWpaMXBxRlNjSVJLeU8zU1JOZVNJcG10ajBwT1VmVVl4eUZhNmcwMHB6NUHSAbgBQVVfeXFMTTV0SVp0WjVPQ0ZMQUVjN2dEVC1wWDZZdWl3V3VnSFBfYm42REVnd3pLRU5WZU0zbk5vTUlzOGdlOVNMYllqU0hTVXJCZHFWajhvaGgtLTdKNlFDWl9UTURNY0lwNk1uWHFEeVBmdGtaa1RXQjAxM0pQRzlYczktYzZSVjg2UXc1WWVvOVF0VElYbjh3dEhzc1VsMGJKTTZmd05SUTRhUkQyMVlBcW9yNzE3bXFiSXR6SQ?oc=5"
       ],
       "domains": [
         "News On AIR",
@@ -253,8 +253,8 @@
       "lng": 78.1198,
       "geoType": 4,
       "place": "Madurai, Tamil Nadu",
-      "articles": 48,
-      "outlets": 10,
+      "articles": 62,
+      "outlets": 11,
       "type": "010",
       "movement": "security",
       "category": "security",
@@ -265,11 +265,11 @@
       ],
       "title": "Surprise raid at madurai prison follows major administrative overhaul",
       "urls": [
+        "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNNHRjTnQ4WnZ0a3dIdENDWUtzQ05HMWVSQlQ2bVBkRV9kN0xnbU1PcTVPZ1Q4NWFJbnc3ZkhqeFJ3al9hWVUzbTgyd0l3ZzJLczhpMXZad1JOTWdteVFjMlJBUVE4OFh2VjA5eXA1MnZJWHdtRXBEYlJjTjZZZHJjWjlKUjZnd3dHem1USmlaRXlxbE1UTFVRRnZnSEhuRHdoR1YzMkFBdUwxVVlyZEhkcWE5djBFRWNuY2pnamd5UUdhR3NPa1Q1RzJwS0xWZFJpQ2FQbWJ5cWlaUW1MUFAtSzZnNmpCMUHSAewBQVVfeXFMT01BVlUwVHpUbHNmeUZfbEpTRlZLTW5oWWtPS3hVRzN0Vl81TGtUdUlQTVJ0NlMtN3RfaWhTWXNaNU1BaDFRdG1XMzN6MkwyWElIemtPRmpZc3ZhNXhrZEQ0SEhveEVjWGFqM1p1MVlhZzdneU9vNFJ2NHl4eU0xRWVHQnhKWHhfT2RMOW9jdEpvM3drZWlHbHV0N2RLSjg2TjA5cGxxS3F3V3ozQngxV2o1NkVKVXlrRDlzQTNwQmphT0pCV2pnZkwtak9IVk4zZEZTYnJvTldDbnlnemlsLXRUelJ5S2tXSTF1R3o?oc=5",
+        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVTRDcW1qSFdWS2M1WjBobXp4OWJQVG5Yb2RXMGNfNTVNdzZCRkhLaFdUWnppaW4tSXdZcFZNcXhTS0l2cElIeVZxaVlqa1VaaG1tOVV6WG9xUV9pV0Q1QjdsYU90Qllzd25CZkdneHpXeHRjdU1aSXFLUnZNM0ZwdVR1d2R3c0RSZFNTd09rWVgyZHNnVS1pM1drUldaWF9wZ21jaXoxcE9UQmhFNjljcXNkT0FVZjNrRkVMSk5hYWVjZHZaSkdXXzNUV1NtQzQtNnfSAdcBQVVfeXFMUFF6Sl82OThQSmhyNjREUVF3b291cFF1bGtLN1NKQkNSVkN1aGtUMlUyTHljTXhVOGpFVFluOFRhY1pHM24yZm9tVzVjTF9nM0dOMjFxRDhSSEh3dXJJTVVFSXR3WjJseTZGM1Fmc2FXa21iTnJWTTZCZFZtaDRfWUppNmdiUlk1OGQxeWNDOWV2ZkNLQTZjUDBkMGg4V1FCUlBEYWhkWHRBZnRiUzJSdWVBWTZ5WjZYOXVsWmprMTFldEJhMko3VXFEakI1eXZYTnFSNlI3dzA?oc=5",
+        "https://news.google.com/rss/articles/CBMiywFBVV95cUxPb3R1Q09TNzFNSnlCUUI0eEZWTVMxUjRuUEpXR2RZQ0RFRThSaEwtYWVEdU5oanpYTGhtenhpcDAtOVhuaHhQUzFKR2lzRE1tRTIxTFFwUWFielJkUlZKVDJDb0dmUElGQWRVaTJmSlZDUmhwLXJXWGV3Q2prbUlWSU9CVlMwQzhpMGh4d01oMEROLWlGMU0tMGNkZDVsSWpMTTRfYnY2RXpqQllxeFpUVzdQTDUzd2pzcVJseFFfOEdqbnktQW9lUkZHVdIB0AFBVV95cUxONlJfS2ZHenUzbnhhU0lKUm4wNVlOLS1RZUo4d2VvT1lGRjhfZm42TnN0Mm1oSW9pTGRWOFE0REMzQXdqOURxdmF6S2JrVzh2dWdXNDJwaE4xQzZVOFZiNC13OENCZWlvYTBxNTZfOXVlQmJFSWtycXlqY2tBWTFoZlZ1bGx0UVZyQkJUT0pZWWxtanRrdlVDUUpWbC00WDk2cDkzLW10MVJzZ3puaHkybVl4Z0VYZG01eFpFV0I3bDhic0MwcEstbmxKR1VGVHV4?oc=5",
         "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTHlpQmlBRXpCOXFrREdpOEhzRTBBYzA4bGlrMVhWZzZfc1dDSEM0QnpNSzJTQ05BVEdIekVKczZRTWpGZ1FOd2NsbGotLVdFVGllRzZXTnN5VTJrUFFMZmh3SEhOWUpjcHBxX2ZrdjExZmxfS2l4UWtsb1RjLWYyVFJNTHZuUjRxNXNhM3dpbjFpYmJMdk9ZMXJYWXpJUFHSAawBQVVfeXFMUC1WdlJmSWtFNEFkemFzLUgwXzhjRWVmTmo2MERSODNpdUJITzRLLXBqZlEwNnV2OURoQVJYM0J3ODBib3lCY0RpZmpKSzB6UzZKanBSeHZUdF9QcXNWT2d6TmdwcWhMS2JlNWl2QnVIYV9jQ1I0MmxUTW5lQnZaSUo5a3IwbWRqMzg2R1hOVFhsenJsZ29DU2tydUxFWXJPbmdQbWRKWG1kd3dCNA?oc=5",
-        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9rRG5TekxjMXVRT0hQdW53VzkyNEhrYUpjMTdNSVpGaTd2akVmUGhJN092em9VUmhPaFVENzBLb2t3NGtBamI5cF9aQXhISTQ0QUUySmdB?oc=5",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeHplQ3hpMVc1Z0NHY1lwMU45QmR6ZEswWFBWekg5RGdWRkJJMzFPSF9VMDJVLVphZ2pNczB3RG56a3plSXN1MWhBb0NWeWlUQ3RlQ0JwbEQ5N0hKZGNBenJDZHItSkVZWUJCSHJqNlhKS0V6RHlHeGowTjNtZVJDSjNaakhvdVMtWWVGUjdmaG9WUXQxREHSAZYBQVVfeXFMT3h6ZUN4aTFXNWdDR2NZcDFOOUJkemRLMFhQVnpIOURnVkZCSTMxT0hfVTAyVS1aYWdqTXMwd0Ruemt6ZUlzdTFoQW9DVnlpVEN0ZUNCcGxEOTdISmRjQXpyQ2RyLUpFWVlCQkhyajZYSktFekR5R3hqME4zbWVSQ0ozWmpIb3VTLVllRlI3ZmhvVlF0MURB?oc=5",
-        "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRHMtbC1GOGVmTmw3SzVMaU1mQW5VczRCemMwWGxlMFJyT2pjcERzdXBFcXFadzRCdnM5X0hxREd6Q1B6QVFBa1BCYk5ETjRBT1ppdUxCV2FJSnIyYXp2Sk5OTV84SHVESTdpSC1PZU82YV9XQjBlb0tMWlhaMFB4RFpfQTV0U0h5ZUVhZ1RzSHJxN0xYdGZ2RXhYWHNNRGgwQXd2LXQxWkxKM2swelcwOEMwci1COUtfZEFDU1JJWFJHenVSa2lTMFFSUndyQ0lRTFowYkhSYXJ0WVo4ZC1rTmVmUmZqbGhnMDlFWTlHUUJhOUFSMmZrYXpicm5zelZuTmdOMUtNam7SAY4CQVVfeXFMT0MzVmpGWGEyNUVLdlRzbDg1N21TWjlVQlRNd3VFczhYNmhVNVBid0lCVmR1OEZGTldjTk41b1VrY3U3em5rQ1c4dTJySjNmU1lqUWdMRlFjbTBmZnN2UmdYT19DWDFfNjdWMmY4LU5HUmVBSnBfNnQ5VF9Zd1ZuUU9PSTlYS0phWnAycEVGYjZzaDFWMmFsa2pRaExTMzB0NWJ0ZVlUbHlicFUwdEllTHF1ZlMyZE9Bb1B4QnhDbUZZU215NUE5OEIxMEtoM2pPOWc2WE1NSzczaFczY1Q3VW5OX3ZmQzdjRVh1Qi1aa04tb3hLNXdsUkY4Q0FILTVSQktyRHRtVnQ4eHNtYU5R?oc=5",
-        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRVdLYThaUU85SUt2WnQwZDF2bU9veHY3WEpSWHZMaHdLYVM0ZVp4VWVUb3pkcmxFb0FVWXpvbjZMa1cwOFNCQ0Q5QlFEbDBjQXY0bW9Sa3JmNDgzYzA0UmZxWmQtT0JDMjFlY2ktVjhJUTd5STdxQWd0ZjZ6b1M5MTV2emZGQ01uQ1VyUGVjVnU1NzZjR2JJUFBpZ2Mtd1dqVmNtb29YNXhnWFlScHRTZVY0OUo4dWw0SlQ3VnVGVHdRWGVwX0xHVVYwU2hvTlYxNVlv0gHTAUFVX3lxTE1FV0thOFpRTzlJS3ZadDBkMXZtT294djdYSlJYdkxod0thUzRlWnhVZVRvemRybEVvQVVZem9uNkxrVzA4U0JDRDlCUURsMGNBdjRtb1JrcmY0ODNjMDRSZnFaZC1PQkMyMWVjaS1WOElRN3lJN3FBZ3RmNnpvUzkxNXZ6ZkZDTW5DVXJQZWNWdTU3NmNHYklQUGlnYy13V2pWY21vb1g1eGdYWVJwdFNlVjQ5Sjh1bDRKVDdWdUZUd1FYZXBfTEdVVjBTaG9OVjE1WW8?oc=5"
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9rRG5TekxjMXVRT0hQdW53VzkyNEhrYUpjMTdNSVpGaTd2akVmUGhJN092em9VUmhPaFVENzBLb2t3NGtBamI5cF9aQXhISTQ0QUUySmdB?oc=5"
       ],
       "domains": [
         "The Hindu",
@@ -300,7 +300,7 @@
       "lng": 85.0985,
       "geoType": 4,
       "place": "Odisha",
-      "articles": 47,
+      "articles": 57,
       "outlets": 11,
       "type": "010",
       "movement": "climate",
@@ -347,7 +347,7 @@
       "lng": 72.8777,
       "geoType": 4,
       "place": "Mumbai, Maharashtra",
-      "articles": 39,
+      "articles": 48,
       "outlets": 6,
       "type": "010",
       "movement": "climate",
@@ -392,8 +392,8 @@
       "lng": 76.7794,
       "geoType": 4,
       "place": "Chandigarh",
-      "articles": 28,
-      "outlets": 4,
+      "articles": 36,
+      "outlets": 5,
       "type": "010",
       "movement": "security",
       "category": "security",
@@ -404,23 +404,25 @@
       ],
       "title": "Union Home Minister Amit Shah shared a post on social media, \"Today, at the Diamond Jubilee celebrations of the Chandigarh Police, medals were awarded to police personnel who have played a pivotal role in making this region secure and peaceful. At the - X",
       "urls": [
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNHlWaWVuNUt6Y3NqaXlaRnNUOURDSTk2TzRNTWZtV2ZyY18xQnZUcGdIZ25WMVBCZU9mT1pEWXJsOVV5d044cXFSeHBESkNYcHVPaWZyVFVsdExvVGp2NUxCTGh3MDhWbUZLdU1rMG1iRmt1amtXUEFRalNIelVYRnhhdmRqMDZnSXV6QlBiUVhuVWtTdE5IWHlLOUExMjFIc1dRSDB0NnJDS2Y1djh0QUJPd21LT09Ndm4xQ1ZyWFpOd9IBzwFBVV95cUxOSXhOVm8xMzYxSHBDUEZJTTdac2VVTFhUa3dEU19iSFd0YlktdThKMWJMNTB2OEJ1VExjTmRPLUp0aVpXNmpWSFlkRldOdzNLb1RNdjlldmx5R0RweFI0dFFRVWgtNmg3Nlh1b01VaWJnaDRsX09vbURIUTNBUUlqam5FTi1WNFZzamJLcnUxamZBRFhiNmtRMUVSbUtBY0dTZGI5Tjhnc3RYZHJScm14dXdHWlFjU2E3ZUsxbEt1VTVZZTV2TDJQa29WaUdvaGs?oc=5",
         "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOc19TbzAxWWdJdVVWTDBmaUZiaVFmOE9WTmdMdkRuYUctZ1h5NlhSc3dtZFRZWmNfU08xWGJSWFpaaUFJQnh3dC0xMUlqTFJwc1kzek1CWmM1d19TRnhDbnU0NldUNWZLT0xVNUNGTlpYU1Y2X0twcUREQldQcl95am1RU2Z6bnhJYmZhdjlhY1ZwMFBac3gybEs0Q2xyMHZhTXBERVMwbndrd3p4a3o3YWtWS2wwdmxXcDdjVnhGTloyNm5odGRsRlpTdy1JMWNHWlFxbFJVeTlZZ9IB3wFBVV95cUxQYU9LWTRxNWpKMDhBaDZFUjgtR1l0dU5jWEtYVmlyZVNVUFc3c21LbTdQZ1FvWmtLdF9SRjFQYmNGcldlSW90R2RjUjJUR1pNUHB0N3JuN0FuNmdYSk5ZQng2R1pPOERiVzZKQnpCbV9uS2JIYzlfUVAwakhHY2JMcGl2dmhERC05bU5fVXcwZU56Wkx6ZUwyenVwaW5KVkxQOF9KcDJ3TjJBMk5pd2ZmOHN2b2luWWxURTdDR1BfR1VBSlQ1OWZKUURWeDA4XzFQbFF2bWFFZHh1VWVjbUdN?oc=5",
         "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbzRnd000NElRMExPQnpnUkpHQ0VjcDVtRWdiZm1KWGtFaEZYdS1lVVpPQkpyOXdGTGlMMkpxV1RDcjdkLTVocjdZMW4xTlFMWkdpb1BWYnMxdl80OGtlc29haGZMUXRLaHBGSXRXUEpxRkxTVFJlMXkxMFJ2QlFqYWNPelN3MjQ2RDJXS1E4aUIwb1VMYjNQUUh3VlpJODFmRGZ3MEpZZjh4X0JGQmRRM3pKWGhDSmlzLWdNaXpWNVB6VnNqUExYelpmdDJoYWtBekdOaU9HOW5VMlFH?oc=5",
         "https://news.google.com/rss/articles/CBMib0FVX3lxTFBzUlN0TXBEVlEtSGVERFhMX2lMREVoV0g3a0RnZTVub1A0VXRpR0YtVWRyQ1ZvMXM5QlY3SU9ENWh4cTVlclh1dGtySk1YX3hsNS15THhyUVFWY2ptaEx4TVVrNDZrZjBHUzdjZmJOQQ?oc=5",
-        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5uMkg2WFVoREZzOFFOZ0lxMk40alhCRGlwN1dPaDFGSHVhWEJQRk1rRXBEU0J4MmlJaFVyQ1IzVkNYVC1nYnJ3MWF0V1hQdVpiMkRMMWdQUmlnQUdIQUE?oc=5",
-        "https://news.google.com/rss/articles/CBMibkFVX3lxTE0yOEJYRVVncnNUR24xM0JZRXBVcEtYRXlMaFB6Z3VoTjBfZ2hRMVJNX0JJc19sY0dEcGxsekVYY3ZVVmJUN0RTUmRfdmZMNENFaUU3bGtmSVdTaVA0QlBZLUF3OVNEbkdhbUNBMUp3?oc=5"
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5uMkg2WFVoREZzOFFOZ0lxMk40alhCRGlwN1dPaDFGSHVhWEJQRk1rRXBEU0J4MmlJaFVyQ1IzVkNYVC1nYnJ3MWF0V1hQdVpiMkRMMWdQUmlnQUdIQUE?oc=5"
       ],
       "domains": [
         "DT Next",
         "Sportstar",
         "Social Wire",
-        "India Today"
+        "India Today",
+        "The New Indian Express"
       ],
       "publishers": [
         "Dt next",
         "Sportstar",
         "Social wire",
-        "India today"
+        "India today",
+        "The new indian express"
       ],
       "lastSeen": "2026-11-01T18:36:33.378Z",
       "isLocal": false
@@ -432,7 +434,7 @@
       "lng": 76.9558,
       "geoType": 4,
       "place": "Coimbatore, Tamil Nadu",
-      "articles": 27,
+      "articles": 34,
       "outlets": 7,
       "type": "010",
       "movement": "other",
@@ -475,7 +477,7 @@
       "lng": 79.0193,
       "geoType": 4,
       "place": "Telangana",
-      "articles": 26,
+      "articles": 32,
       "outlets": 5,
       "type": "010",
       "movement": "climate",
@@ -518,7 +520,7 @@
       "lng": 75.7139,
       "geoType": 4,
       "place": "Maharashtra",
-      "articles": 22,
+      "articles": 27,
       "outlets": 4,
       "type": "010",
       "movement": "climate",
@@ -559,7 +561,7 @@
       "lng": 76.2711,
       "geoType": 4,
       "place": "Kerala",
-      "articles": 22,
+      "articles": 26,
       "outlets": 3,
       "type": "010",
       "movement": "climate",
@@ -597,7 +599,7 @@
       "lng": 77.5946,
       "geoType": 4,
       "place": "Bengaluru, Karnataka",
-      "articles": 21,
+      "articles": 26,
       "outlets": 4,
       "type": "010",
       "movement": "climate",
@@ -638,7 +640,7 @@
       "lng": 74.124,
       "geoType": 4,
       "place": "Goa",
-      "articles": 19,
+      "articles": 23,
       "outlets": 4,
       "type": "010",
       "movement": "politics",
@@ -678,7 +680,7 @@
       "lng": 71.1924,
       "geoType": 4,
       "place": "Gujarat",
-      "articles": 17,
+      "articles": 18,
       "outlets": 2,
       "type": "010",
       "movement": "politics",
@@ -714,7 +716,7 @@
       "lng": 78.7047,
       "geoType": 4,
       "place": "Tiruchirappalli, Tamil Nadu",
-      "articles": 15,
+      "articles": 18,
       "outlets": 4,
       "type": "010",
       "movement": "politics",
@@ -753,7 +755,7 @@
       "lng": 76.9182,
       "geoType": 4,
       "place": "Mandi, Himachal Pradesh",
-      "articles": 12,
+      "articles": 16,
       "outlets": 3,
       "type": "010",
       "movement": "politics",
@@ -791,7 +793,7 @@
       "lng": 75.3412,
       "geoType": 4,
       "place": "Punjab",
-      "articles": 12,
+      "articles": 16,
       "outlets": 4,
       "type": "010",
       "movement": "politics",
@@ -803,11 +805,11 @@
       ],
       "title": "Analysis: rural punjab's shifting mood is redrawing electoral map for aap",
       "urls": [
+        "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMkFsRDNORGRyaEFnYXBvejJsS1dKdXcxRDlIVnlZYmczMEI5MkswazktUk9icnNoQ1NCSVVrOUlOSDgtMHdCWGlvblR1V2Z2ck1BMElUYjlEUmhfYnlFeFlwbkg5SjRDRzhlRzM0ckh4bHJiSlk3YXRNTEJicS1XZE44Yl8zOTJYU1NWUVk3T1liNGc0MGNhTWxFLXRJX0tPRTlVZzNTMGZBMi1pVVBEVXBFYW1pUQ?oc=5",
         "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOXd4bFFJZkRHb2UyVVpxeFR0S0VQYmpiTmU0akI1VHFRa1BYZm8yQWlFWU10TUp0MVpTLVRoWlhYMjljY3RPcEJPY2NTdV9mRlZ1cW51NnozWXpoZXhDb1d2TUh4RmJUTnhQNkR1bjVyMTYzQzBhZ0JxbGNIVU03cTI3ZklsVUROT2pfVkFnY3pNTDZMUnkza2kxb1NFeXB3OFlWejdlb0ZBcVJT?oc=5",
         "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdS1hU2lySXNjUXg0cE4yM1pTZ3FDczAyaXBaVkV0eGgwYmtKWEdNaGxiOEhndWFHelk3MExBZG45T0lQb2pEVFpkSEh5cnJPSVNyNnozRjBIcXpmOUdyaHlFclltUG4tajVOdUJXMU5aUEV5Tm05N0xTeVlRRlVMcnhNN3VPbGxVOGRVcjgxRHZzbnNQM1JzbEYzZ0RycE1nN0JpWU1GTEtNWkNSZXY1RmhoN2d2M1FKalBuazgxMA?oc=5",
         "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPWHVFUm9tVDRKT0w0NkZGelIxNWM3c3BLMWRqYmM3WGhHZkliZllkVWRPdnlKQmNjSDdObE55X1FNd0hramhSZ2FENFpVb0ZkbFlOODdnYTdROVVDanNsM1dKb1lvSXpzMzZCeWVPeDB0NHFobUk3ZS1KZ0w5VEJncl8wXzQ3ckFJYUkyODhyRnZTY2gtVW9ENDZsVWM1cENaZjdybEowMldrOHNMaGZ1TGN3UDNJN1QxZDdlVl9Qd0RfTWtiMHNMYUYyZGM1V3ZUTEFXazc1OUZPa3k2U1JnNVBSVHY3RFRMeXk4UVVaM3RqRkR0c0tlVWpn?oc=5",
-        "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeEh6SVFFQ2hmazdmUU9wVGFHbmhJYk9HS3Rnc3dIZjExLTIwM0JKa1NqcE1KVHo2dnMxd24tVEhXUjJuSEFsUW5GZXRTQlF2SG93U05qeURRTDdwUzQ0aHdEN0ZCbk1LTTRkT0RwT0IyaTgyd2xKN2pwSkVNMnA2elV5RlVmVlhkSklMczFjVzhBSzFYRW5aVlJXZmstazJ3SXdHN0xmZGh1RXp2ZnViZV9R0gG6AUFVX3lxTE1HQ0FVSzVGS1JySzRrUkRtbUlCTVk2c0I3TFJ1SjYycDVWdDdDQThfTGlGdVJLdlZ0OTVKSHJHUEdRczJPc1dzekNVYVpSaHNOeUE0c3NPN0gzNmZPcXZZM1JGTUJnTHV2RXNHVExqTlplUEdXVFpuWFhkX0U3SWVhSG9jZHlXZDY1NzNWTEJKTW9WaTJERTgwOC1mRS10d0RGVlJ6NDBQcXV1aHpoOU9RNUZ2dU9uTHN4QQ?oc=5",
-        "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcVA1ZHBPM19mcGVvMEx6TkRSX2VUMHZNekFaUjJRY0pnWFBkU1NmOTRLZjNLcWhJa0NnbGNiQXQ3czhuZGNOdmxZN3BmTjZVWWN2ZFJvbFN2c1JTTlloeXJTZV9NWlNCbXZZc2FFRFJtbFNkUzMxNXhrMlBWNVFRQVF6UXNrT1BTelc4M3c5Qm5sdm9fT3NTcGJkV2F4ZkFWbVlMOGpjWlhCbnk1YzZHV2F3U1NCQXZxbXfSAb4BQVVfeXFMTl9vcTlYc3RVOEp6cDlTY1I1N3V5MkJDMXZTZXlDdWc3Y2N5Y1B0VjROZjk3Vi0yOE9LUXBWUTJvVUFWMnVfeWtycXd5NDV1VlVvT2todm1zbU9MYWNFWkJYSGhPR3h4elBsaFB2aFg5OWpHb05vRHBKcUJzSDg5QkIwcVotLTBaQXVLSzlKQklsaUlKRTRYVWk1WXdNY2UtUDZDazJ5WGN3ckh3ZDhtLXpGYW9tTmVfMFJpYVRHQQ?oc=5"
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeEh6SVFFQ2hmazdmUU9wVGFHbmhJYk9HS3Rnc3dIZjExLTIwM0JKa1NqcE1KVHo2dnMxd24tVEhXUjJuSEFsUW5GZXRTQlF2SG93U05qeURRTDdwUzQ0aHdEN0ZCbk1LTTRkT0RwT0IyaTgyd2xKN2pwSkVNMnA2elV5RlVmVlhkSklMczFjVzhBSzFYRW5aVlJXZmstazJ3SXdHN0xmZGh1RXp2ZnViZV9R0gG6AUFVX3lxTE1HQ0FVSzVGS1JySzRrUkRtbUlCTVk2c0I3TFJ1SjYycDVWdDdDQThfTGlGdVJLdlZ0OTVKSHJHUEdRczJPc1dzekNVYVpSaHNOeUE0c3NPN0gzNmZPcXZZM1JGTUJnTHV2RXNHVExqTlplUEdXVFpuWFhkX0U3SWVhSG9jZHlXZDY1NzNWTEJKTW9WaTJERTgwOC1mRS10d0RGVlJ6NDBQcXV1aHpoOU9RNUZ2dU9uTHN4QQ?oc=5"
       ],
       "domains": [
         "The Tribune",
@@ -825,13 +827,117 @@
       "isLocal": false
     },
     {
+      "id": "soc_2026_11_02_10_0_77_5",
+      "date": "2026-11-02",
+      "lat": 10.0104,
+      "lng": 77.4768,
+      "geoType": 4,
+      "place": "Theni, Tamil Nadu",
+      "articles": 15,
+      "outlets": 3,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social",
+        "web"
+      ],
+      "title": "Tamil nadu prisons transfers officials after theni jailbreak",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcV9BM2hBTlZIODFxMGs0NkJqY1hSN2dXWWdQazBwTFI3ZHNrUlFkd0g1b04yQ3Y2RXpFX1ZtNzBocllLblMzbnduakJpWG96WGhqdmE1ODB3ZmRTNDZTREd2YTUzaW5hd0x4ZGRvRlFuVGZLNzcwczJBb1BQalZGS2ZMbF9Vc19BNHFhZ1c0aWNsSGtLN1BCNXlZYkJGbjZTcDRDSFhPc0JnaHY3WG9VdGxtVms5U3dBSGVLcXk4MzhHX3d6QVVzUnRFSS0yTVhtaGfSAdcBQVVfeXFMTmkyS2JOZjdySjBWQmszLXJjWDFGRnlXN0dRREtuZWd1VDBIY2RicGhWMnBBdDlnWll4TjR3QzFheTFQaXdKdHhZeDdMcHRsM0pDdWJQaEh5VlVGeDNVd2QzVnZzT0Z0MDNJVzJPLXNkendEdDdmdW5UM1lRanBoZ3RCalFST1dPVzk2ak5mcHJPOV9rYmVlRFZMdDJOLXJNZXhSLWdXRTdCWmVGVVdqNWRwRThoWFQxZjkxTWdCUHNTbHZFUElnZ3FzeXNlejVYTXFYejJ1MWs?oc=5",
+        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOM3c2V0xrbTQzZ01SbnE3bmR5cWhyQnZVckszTVBiV3A0V1FDeG1NcjlUMGtkUDNPN0g5TDVveHJySk10NUVyNU8zLU5pd0t6akFUWTZNRWdUVkpwZkxwYnA2Wkw1Z2ViZzJkcGdtdEhuWkFxbDZieHlaaDI4bDZON1V1YXNSN21QeTJ2MWQ3VDMxSEMtMnFobEw4ZFFVUmxDNk5aR2FBb1JlblRScW1veExzWHFXNTFxcVlUd043bldLc1lMZjV2Y3lRd2trX0FsOVJ1eDZ3SVpENXZ1UUk00gHkAUFVX3lxTE5ua0IxdjE5elVMb3FCRUNBejdyM09YVkVEeTlvb1RpLU9qcHRRY0pYNXpfQmxPd3hVUy1oLXlGZldDaVhmQ0JVZVlUWm9MVW91a2ZLSEZyMGpJNnA5c2UwUDQ4alZmTGIyNXBNX2plQ1dTU05FMktheFNwaWhOVjBXV19pamd2OC1naWZSdjFURVY4bG84LUFfRUJjcDNwcXF0WWxUdmNvLUhfTW5wN0NNQzQ4ZlVPMzlpcTFmLVN3dWVpdXVwNDE5d2pqQVFjSncydFpSYUV2aU9zY0xKaHU4Yll0UA?oc=5",
+        "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZEZfNnl0N1NKN2U5RWxHTDE3YnpsOS1oWVNVYzQ3dW9DQ3FvZjNzc0JLY1R0UVZmUkFBTUJOVWZuSU8wVF94OXFFdkcyVTBLMnBLSVZtYXpjV2RtMEFYV2x1Y1BlVWZGX201T1oxNWJtbTFCOW1QMG9Qb0dnSVdsQ1B0b3JVTnFhWlkyUl9fem5BSmRSeUt3azRaYkppd0FNWDNJdHp0d0VncFVpdDFoSVJqYVJPN1BMaGFMOW9UcHFzTElERGYtcUZnd2JFZ2x4TGhiQUNjbDVvSDBLNk9lZ0dKdWfSAeoBQVVfeXFMT3IyUU1URkh1ZW1NSldkRnBaM1ZCTWpBT1lia25DX1pzRUFZMWp0S2U0YzVFRlU3RkxFR0lNZDByZE1NMjB2RS1LVGczM2NnemFGaWxCMFJVZV9rOE1qRjdvVE1KdmdRTWhyak1Rb3EtdXNlRXdOR2dHQ3c3MGVGajZ0dHJHRVVRSVJ4cGhMNGZ6Sy1kSVRvdjd1LXJnOWVtbXBHa1RmNC1iYVF6WXRpUU9OZGVXWDJNb1JmRFdSVUtGS2xIM2xsNDhOTnRLMktlclpzTFBWRzJKYWRJUEVXN2dabl9HRW4zTFRn?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE5fTEZGZFUyR2RHVDFaYkRORF9SVzRjUnJsa2J0c0VNT09fUGdaY1JnaXZ0c2VMbXNfUmJ5ZEZFVlg4bjFvYmdwQ0JUVGU1YlVuQVJTS3kwVTJrRkYzb0JKX3FsWGx2ZWpzQmwtM1pOalpxNC05bmc?oc=5",
+        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTHBTV0tnU19ZR0F1VjMyRUNmUS1TZ1JSX0V1bGJ3RGVTWjl5V3BHcTYyTTN5Mk5Yb0NJN3ZkYjhPbFRpaV81Y2pZSjdoUlVUM1hHQ2J4RU1SaXNxUHZiN0JMdXF2b1dQTXAxUjNsUS1GMXhwOV9RcEhiWHEwYXJBRkI0aXVtZF9ScDFydjBvN0UtUEY1MEVIc0J4WjdQcDRmWm9HTUJneUtKcnpOYnYwN3FGY1F2SFlkdUl5b0JBZTA2MHZ2RVltcDdnREJJbG940gHWAUFVX3lxTFA1QWt5alUtX2pMb0xHNnFoTHhuUzJyR1dvN2VLVTlrVlo4cHFiZUVlejdJQndMVm9zVVZXbFhaYWowTVQ5SWdXNXk2aFdJQ2NrVEw4bUhoSHFfV1U3STlicXVzbHJqcHhOem96V2ZlQng4bGNiM3czbk02NkpZa21iakI5TmFCbmtZaHZ6QlFIeDhFRTh3UnhnQU9ra1dFdUFGbzlaMFpjNWZ6eXFjc2JQcDhsQzJvS0ZGWlVsekhzd1g1UlE3WS14d0ZBQnViV1hPOTZ2VHc?oc=5"
+      ],
+      "domains": [
+        "Social Wire",
+        "The Times of India",
+        "www.pib.gov.in"
+      ],
+      "publishers": [
+        "Social wire",
+        "The times of india",
+        "Pib"
+      ],
+      "lastSeen": "2026-11-01T18:36:37.830Z",
+      "isLocal": false
+    },
+    {
+      "id": "clim_2026_11_02_25_3_83_0",
+      "date": "2026-11-02",
+      "lat": 25.3176,
+      "lng": 82.9739,
+      "geoType": 4,
+      "place": "Varanasi, Uttar Pradesh",
+      "articles": 11,
+      "outlets": 2,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "वाराणसी: मैदागिन क्षेत्र में रविवार रात हुई बारिश से सड़कें हुईं तरबतर",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTHExSWhHUFVyZ1F4OFhUREp1ZERpbGZfeTNqYWFhMEE3NUc0c0ZvMnpxdVg2VFhONEhQdmo3U3Jyd3BtN3ktMGFHcHhqYzFUcnRNbDh4aDlSMktncmJZbjRvRlZIbmhsZHVSWERKVzRGdWRjNWhuOVNKVUxBbmFZdHA1VjRVZnlWZkJYUXNVbElJVkMxd3lYQjBzNGRXaC1XVXg2OXNlelEyWm9JaGdFcUh0NG5LWFlFVkg5TWhaY2dZWkpGUmdnaWJaWlVGai0yeWVRcjlXdkdINmNVdzJCR1hkTi1EXzDSAewBQVVfeXFMTmE5bU9XMktNNGxfMkF3aDI4OXY1cXF6V2ZmUWZINV9JN2thdS1KU3NSSkRYTERROFRBZFhJRUdyc0VidEVvelJvV0o0WG5USjBWYWdLVTc1LTVrTTU2WFJ2VUpQdlZGcmtQXzBrNDhhdU80ZlZYeEVGb0FMZnZrQTdQU01vUnRGZkJvTVVxbzJ3QW41VFV0dlZjWG5LRmFaOXI4Y1lPUTNZZGVvdUhRSXVVb1ZRT1NocmNIcS1IQU5mRTFQTlV1akQya2N3T0plaWFyRzdiNG9ZaWUtYlpzY29kNmh0cHhwa2hCVWc?oc=5",
+        "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbUFsUWtWdmozLS1vV0xQMU15eGFpR0taV1NqWW4yMDZKUWdNczFCWGpvRFg1d0VUWkh4LVRrSDhFU3RjMVhGZmpfR3pCeVZUWDRlRnJVRmR5ZXZLRmlzZWN3Z1p0Y1hBNFdXQy10YkJVR1VJS0QtV3lSenROS2ZwcG8zSFNRNl94bE9qeXl4RXVWWW5BZkdLZC0xaDNLSEppWG5IWTZNRDFSUjBLeXlidV9pMElwQndvSTQ3bnMzdGhoenMyRjZqdUhpMkVsUFXSAdQBQVVfeXFMT3JMek5tcnJBZDlVelFmWjNzRDZ6dmh0ZUVqMVNDZ1VkbXhUcElTV3c3dlc2cGxJbDJOSjJEOTRMdWg3czhDYUJnMDktdnRwcHczaHBaQ0l5d1BlbUNfVTlWd0R3RlBrWU9PbFh1dUtiTHZfYlVLTEJCc3ZqSmhKeVhlQlpRTklCeThZbTNVc185LV9UQXRENi1GX0ZKNThGWllybUIxR0FLVWZGYnFuaHRyYUZYRTI3UlljelZRRDRCc0pzeG8tMHZfTU5PVThjN2JydGI?oc=5",
+        "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOT1ZDdUhpVjNnLXprc1VLUkszc0w4YS1oX2RHeVpKaG02TlB5OEVUZ2ZqSmFyYUdlaEZUaTh4eU10enlIVzJzWXNpZFk2ZXdfSlVrRTdBZVJiV3lJa0tGcU5SMlNMWXVpdWpPZjdxRXZIRUp6ZXhHWVpWSVRPV0VOUTQ3QV83M19UUU1jTTJCX2RFeGx4LVR2bTEwSXh1Mk1VUWtZS3VUVFF5Y0REOVZyNThxMTkzbjZrY3NUUVVvNU9VVWtRc1I0Zi1NbVNHMk9LbXM1VlAzMzRFazZWWFJleWNGUGJWTkJXU2NrT2dR0gHzAUFVX3lxTFB6czl4bVRGVDFRcXpDSE5FbGZNU2t3dGJSMk9UWmJFcHlLMUk0OG9WTzEzUVhYMVktOXozcmhoODhmbWNYRXBMeDdtZTRoTGFnc1hIZzFvY1lTTC1vQ3p4b3NfUWduN0RzcjIySTR1VjlRSmJPQXdSMHVZeXV3U0dXWW5KTVh4ZGh2N3JoQ3ZJaTFkSkx6V29KNFdvX3ZFd1N6Q0xpYlhYNjZVclY0TTBicDRid2xrZjRYZTJxNHFsUXF6WFh6bHhLRENSWGVsN280eG9BeEYwWDRhYTl0WjdrM3FkTGhXYmZPdnp2ME9ERm9nSQ?oc=5"
+      ],
+      "domains": [
+        "Amar Ujala",
+        "Hindustan"
+      ],
+      "publishers": [
+        "Amar ujala",
+        "Hindustan Times"
+      ],
+      "lastSeen": "2026-11-01T18:36:32.749Z",
+      "isLocal": false
+    },
+    {
+      "id": "live_2026_11_02_11_7_78_1",
+      "date": "2026-11-02",
+      "lat": 11.6643,
+      "lng": 78.146,
+      "geoType": 4,
+      "place": "Salem, Tamil Nadu",
+      "articles": 11,
+      "outlets": 2,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Minister inaugurates sale of ₹200 grocery kits in salem",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi4wZBVV95cUxOMlc2WGs1Ym9BbDRudnZaYUNSRUVpZ1BzZnJMblRLZHNxWm12ZFphR1BRUjJkemtiU3YycnBiRTBQRFA5a0k1UmFSekZvazgxWnRxWHRsRW5WbmdfSTh0eDVBYVBja1YwazBtLVNCbG14UDlYeGVXelVyWC1RWmZOSGRVeDNiWlU5RllyMkw2bFhYbHhoeEFTWXBwUmlrMTk3akduLUoyOTI3RXgwSDRlR0kyRlBzOE5wd3NvUGppSkh5dlBkVENUMkpHdmFSVGtleDZlVm54RmxsbTIySVpWU3VXcGRIRkNKaUhrbFczdUxrOXhlc0NuQ09JZEFQbVU3ZEZHUnh6aVZOc2VxMlQ1aGtEWmVkb0tjQUI2NHZIc2hLbjlBSmJsZGJzRTRydVR0ZmEyMjVLRVZMRGg5S1NqMzlIUmZqTGpoNG8tLTE4RDEwTm9LeExfMzMyRWJmSnQ1OEdmbnJaVlNQLUdJajZyVVZKTERaZms1SndKVVRNaV9SZzBUNWtoZFVlZkZLTjJXVXdPcWRVZlFMR21CZzVsS0ZkVmJDUUI2Yk4tZUh2dVdFdWFXT0MwaE5kM0lxakN0Vy13RExkcHpvXzN0SGRqZjNjaW03RElpVjlzRzA0UkV3ZU9UR2pPTlBfblg0eVE3eDk4Nmg4UkxmdmloNEpSQnZHTm5LZlIycGNWQkRuVDRtMFdPU0ZTMHlXbm94MG02U3BvNzcwTW8yRU45UXhzaDNKRGZCUVJKZ3BPUU9WU2MxOG5leE1rU283Znp6Xy1kRU03NkxRdDlSaDNJZy01aHp1alBhZTdwTE81RTBZeEUzQVdsWXhCeVVwSGl3aTJCMFdlcWZCeGpGUnhObE45N1h3Y2hKSVNpTDlwNktqTE5PTjNwOThsS2ZkaU00QWNGRVNweFA3UFdWVlJiSzl0T0VCV3RtQk5NU0J3QzMwZ1lIQ2FfRzk1TXo4QzNsZzlBQ1RYVGF5WHZmS3d5UlltVzdJMVBNRWg4R2lnTFhkV3FTMFQ0dHN4TG9HRWY2ZmFrUUY0N2ZVQlZHOGM1dzIycDJZd25mYng2cnlLREF0ODVBS3UtUHp2VHdHc2dBcjlBbERrOGRCQWViSm9hZlFDMWxGYXJJSnlFTzF2NkdJTU10Q1HSAfAGQVVfeXFMUEdXTjdWYlVraUZ6MWU1Tm5lTDdPRXVlOTJnQWFDSDBhSE1kbkk2THlDa0lUV0Vub2sxVkVUYlR5YUVZZkI3bDJ6NzQtN0dreHQ1WnU4WVMzSFVBYU1idHp5YnFySmlQV2U1X0pRYi1VbGFhTDZHUUh3WDZOOEdoTEhINjFfdlFsOFZzSDFkbng3S0lkQkEwNjI1czdHYXRIYnY0MzlHSnNwRkFmU2txMkFXMWdBVTZBcmhFS0dYMXpib2p1U0NHSUdoMFVRSnMzSjlrNmhOUW5pQkFUaGJQdkpaZzVvSXFwc2JLbWkxUzd1aERnUFZnU0VzaHc2ekR6eFh0VjM0UFROb01vQzFrMjdmUUN0Ny1yYWUweEczanROSjNOeDU4bExTQmMtcGp4bmhwWnR4UGhiZ1dVRHFfbHR5ZVRLbFlhbG04S0tSTGVCZWgySWg4T0Rueksxc2RfRy1YZzc1SEd2OWU3eE9vQzJEOXpoeFNUTExxZVNzN1F2QlZxUEhfUnVMclc5anVmQ2R0emxBUFZBYjNnYVRaZmNCN3k0N1hyck1WeUpURVpxNVU3djNnb2twLUhQZU5UQ2tCWWZ6czVMb09vaDVPWTJ4MGxUOUltaFV5N0dhdjktYkV5aS1Qc0I1X3pZMTVuenBEU0Y1NVpzQ2FUZXlKUFFLX0xYN3hxZ2dmM2VpTENETnNXcmlkZTlsZm5icU11LXM0ZHZnNlFlX0ZIZWpQbjVscE9NU2dZSlVSOUtVQmE4SlVMY0N5T1drbnBWLWRUVlVXUDhqSFk3VVFHelJzalZFZ3lyeWpfU295S0Rjc1psb2Z5Sm9VWFRmb0tncnVweUloZk42dmRSODFJQTZFMDlwdDhRR1M1UlNEUVc0T1RGa2dZZXlubEhKcWMzbkpsNWVYRkt1VjFtYW1pTjFtU05JdjRsem02dGxVMWJMV3dLOEF3TEpyZXMwVE5GNkQtUXB6UmVTcVFqNHZzUzVDTkttd0s3NFB1MkxZZXVYMDlRbWltSlZKeXJqYmNfU0QtWGh4N28xNUpXc3pjVGhabGlCSlZCRmtYVWF5MmxDQTNncTBOUURiVnBMOGxiRExUZmhQSUFnei1BTmg0Q0NMNG8wcTFISUF4dXcxTmVNZUJOYVNwenBmd1h3ZnpxOEpWYg?oc=5",
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxOLUhTRERGZW02RGNraF9zdi1xN29zRmZyNkN1Um9FQUhlQnNkWGlLd2phcnJNaE15TEsxNndRclNaUzFSdjlrVmVjYUhwTGRYZDk3Wmkwa0FwRXU3bzlvdlFuWDRlY1h3bTFINXIyU2g2NU92V0Q1eWtOV2JKOXI0Z0p5dWtWa2J5bVV5NmNTRkxxdmNOS0ZxQ3NkdndVUk5ZSXRSSDYxM3hpQkdldllWeEplZmlIbnh2b2stM1JKNNIBxgFBVV95cUxQdjlmYlpySUJVbTdYM3o0UHBnMDNVc0RQZndyZURjWDc2MVpYOTdKczd4UzAwTGJKSkJuMjh0NHpDMWhBN0Nadm4ydk1QazNPYTIwRm5EdFR3bmFrQWxsSml1eXpMbjB3TWw2SmZvWlpwMldDNU9SaU01NHpWLW9LOUxmRy10OXM0R053Z25yUDhfM1E4dVphTFpzTzhQY2R5cTZzNHRLTng0S0xYYkJncVlIeVRLd2N2UTdUYzAwdm91TzFpcVE?oc=5",
+        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdWhEUVRDSkRIR2cxd0J0ZFJJdXBYdGE1Nm01TkdRNWVZSmo5MjNwMThIWG93ZE1EV0c2YlJ2ZXFqZ1hiN2FWR25lUUtjMUhFSU1mWnY1Y2VRd0NqYXR0T2Mzem9FZ1pLZkFBOFBpR1F0RlpLbUF6VnNlSURtZGZFZzU0QWlJYXVBeG9QMFRfTWtaSFNMb0pCNUlpaHRQMmtwREZTODNGYWdOaHBUc25na3piVGhEZHFuTjFQRHhRMjBOdE1JVmlZWnhOMTBmYzNMZ2fSAdgBQVVfeXFMTjN5SmJpT25tV2p1dF9kMmw0YUdydXJReGJ6UTUzS2RvdFBJZVc3d2pWNFJacHhBN3JKQVNRNUR4Um8zZmdxVkNVYzhJOUN2SU1JSVFHLWVpNG13NGd2ZFlQZEpGZi1BcF9yS1VwVVdNc3dhQVhTSWZTbkluY2xZZ0tsYkNLLV9lcDRBOUNHNmtVQWtUUHVldHIyTk9wQUNOV2RmNWdUNzZFY0xBdndUcFF3c1NEZzl1WjE4b0tFNHA1Rl9hdU9lRFRneTV4RWJMcDJRN1dVaFRh?oc=5"
+      ],
+      "domains": [
+        "The Hindu",
+        "DinaMani"
+      ],
+      "publishers": [
+        "The hindu",
+        "Dinamani"
+      ],
+      "lastSeen": "2026-11-01T18:36:33.376Z",
+      "isLocal": false
+    },
+    {
       "id": "clim_2026_11_02_25_1_85_3",
       "date": "2026-11-02",
       "lat": 25.0961,
       "lng": 85.3131,
       "geoType": 4,
       "place": "Bihar",
-      "articles": 9,
+      "articles": 10,
       "outlets": 3,
       "type": "010",
       "movement": "climate",
@@ -861,49 +967,13 @@
       "isLocal": false
     },
     {
-      "id": "soc_2026_11_02_10_0_77_5",
-      "date": "2026-11-02",
-      "lat": 10.0104,
-      "lng": 77.4768,
-      "geoType": 4,
-      "place": "Theni, Tamil Nadu",
-      "articles": 9,
-      "outlets": 3,
-      "type": "010",
-      "movement": "other",
-      "category": "other",
-      "platform": "social",
-      "platforms": [
-        "social",
-        "web"
-      ],
-      "title": "Tamil nadu prisons transfers officials after theni jailbreak",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMidkFVX3lxTE5fTEZGZFUyR2RHVDFaYkRORF9SVzRjUnJsa2J0c0VNT09fUGdaY1JnaXZ0c2VMbXNfUmJ5ZEZFVlg4bjFvYmdwQ0JUVGU1YlVuQVJTS3kwVTJrRkYzb0JKX3FsWGx2ZWpzQmwtM1pOalpxNC05bmc?oc=5",
-        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTHBTV0tnU19ZR0F1VjMyRUNmUS1TZ1JSX0V1bGJ3RGVTWjl5V3BHcTYyTTN5Mk5Yb0NJN3ZkYjhPbFRpaV81Y2pZSjdoUlVUM1hHQ2J4RU1SaXNxUHZiN0JMdXF2b1dQTXAxUjNsUS1GMXhwOV9RcEhiWHEwYXJBRkI0aXVtZF9ScDFydjBvN0UtUEY1MEVIc0J4WjdQcDRmWm9HTUJneUtKcnpOYnYwN3FGY1F2SFlkdUl5b0JBZTA2MHZ2RVltcDdnREJJbG940gHWAUFVX3lxTFA1QWt5alUtX2pMb0xHNnFoTHhuUzJyR1dvN2VLVTlrVlo4cHFiZUVlejdJQndMVm9zVVZXbFhaYWowTVQ5SWdXNXk2aFdJQ2NrVEw4bUhoSHFfV1U3STlicXVzbHJqcHhOem96V2ZlQng4bGNiM3czbk02NkpZa21iakI5TmFCbmtZaHZ6QlFIeDhFRTh3UnhnQU9ra1dFdUFGbzlaMFpjNWZ6eXFjc2JQcDhsQzJvS0ZGWlVsekhzd1g1UlE3WS14d0ZBQnViV1hPOTZ2VHc?oc=5",
-        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVHY5aXZHT2pKR2RGaTVvVjZPS284RDJqbFVxeVpta1pISGN0TWtOUktJcW9FdWxrLVlJTWMwWDgwT3FYT2txNGtTOVB0cEJQdi1EQ3ozaWNXZ0lzeTV4cTd1Snl1Qk5DNi0zZFNrMldNdlIyWldPRmNrTUwtaXNzNF82UHZ6YlVNZkxUTlI3cGMzQU9IMmk4ODNwT3Frb2k0cTl5a2NRTDU3RDdIdkcxcVI4YlRUajZfbG5tNE1raC1WY19MTXZYbHdBR0MwMlRRdDdRLUI0LTRaZw?oc=5"
-      ],
-      "domains": [
-        "Social Wire",
-        "The Times of India",
-        "www.pib.gov.in"
-      ],
-      "publishers": [
-        "Social wire",
-        "The times of india",
-        "Pib"
-      ],
-      "lastSeen": "2026-11-01T18:36:37.830Z",
-      "isLocal": false
-    },
-    {
       "id": "clim_2026_11_02_12_8_79_7",
       "date": "2026-11-02",
       "lat": 12.8342,
       "lng": 79.7036,
       "geoType": 4,
       "place": "Kanchipuram, Tamil Nadu",
-      "articles": 8,
+      "articles": 10,
       "outlets": 1,
       "type": "010",
       "movement": "climate",
@@ -933,7 +1003,7 @@
       "lng": 76.695,
       "geoType": 4,
       "place": "Nilgiris (Ooty), Tamil Nadu",
-      "articles": 8,
+      "articles": 10,
       "outlets": 2,
       "type": "010",
       "movement": "climate",
@@ -965,7 +1035,7 @@
       "lng": 86.9842,
       "geoType": 4,
       "place": "Bhagalpur, Bihar",
-      "articles": 8,
+      "articles": 10,
       "outlets": 1,
       "type": "010",
       "movement": "climate",
@@ -989,73 +1059,13 @@
       "isLocal": true
     },
     {
-      "id": "clim_2026_11_02_25_3_83_0",
-      "date": "2026-11-02",
-      "lat": 25.3176,
-      "lng": 82.9739,
-      "geoType": 4,
-      "place": "Varanasi, Uttar Pradesh",
-      "articles": 8,
-      "outlets": 1,
-      "type": "010",
-      "movement": "climate",
-      "category": "climate",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "वाराणसी: मैदागिन क्षेत्र में रविवार रात हुई बारिश से सड़कें हुईं तरबतर",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbUFsUWtWdmozLS1vV0xQMU15eGFpR0taV1NqWW4yMDZKUWdNczFCWGpvRFg1d0VUWkh4LVRrSDhFU3RjMVhGZmpfR3pCeVZUWDRlRnJVRmR5ZXZLRmlzZWN3Z1p0Y1hBNFdXQy10YkJVR1VJS0QtV3lSenROS2ZwcG8zSFNRNl94bE9qeXl4RXVWWW5BZkdLZC0xaDNLSEppWG5IWTZNRDFSUjBLeXlidV9pMElwQndvSTQ3bnMzdGhoenMyRjZqdUhpMkVsUFXSAdQBQVVfeXFMT3JMek5tcnJBZDlVelFmWjNzRDZ6dmh0ZUVqMVNDZ1VkbXhUcElTV3c3dlc2cGxJbDJOSjJEOTRMdWg3czhDYUJnMDktdnRwcHczaHBaQ0l5d1BlbUNfVTlWd0R3RlBrWU9PbFh1dUtiTHZfYlVLTEJCc3ZqSmhKeVhlQlpRTklCeThZbTNVc185LV9UQXRENi1GX0ZKNThGWllybUIxR0FLVWZGYnFuaHRyYUZYRTI3UlljelZRRDRCc0pzeG8tMHZfTU5PVThjN2JydGI?oc=5",
-        "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOT1ZDdUhpVjNnLXprc1VLUkszc0w4YS1oX2RHeVpKaG02TlB5OEVUZ2ZqSmFyYUdlaEZUaTh4eU10enlIVzJzWXNpZFk2ZXdfSlVrRTdBZVJiV3lJa0tGcU5SMlNMWXVpdWpPZjdxRXZIRUp6ZXhHWVpWSVRPV0VOUTQ3QV83M19UUU1jTTJCX2RFeGx4LVR2bTEwSXh1Mk1VUWtZS3VUVFF5Y0REOVZyNThxMTkzbjZrY3NUUVVvNU9VVWtRc1I0Zi1NbVNHMk9LbXM1VlAzMzRFazZWWFJleWNGUGJWTkJXU2NrT2dR0gHzAUFVX3lxTFB6czl4bVRGVDFRcXpDSE5FbGZNU2t3dGJSMk9UWmJFcHlLMUk0OG9WTzEzUVhYMVktOXozcmhoODhmbWNYRXBMeDdtZTRoTGFnc1hIZzFvY1lTTC1vQ3p4b3NfUWduN0RzcjIySTR1VjlRSmJPQXdSMHVZeXV3U0dXWW5KTVh4ZGh2N3JoQ3ZJaTFkSkx6V29KNFdvX3ZFd1N6Q0xpYlhYNjZVclY0TTBicDRid2xrZjRYZTJxNHFsUXF6WFh6bHhLRENSWGVsN280eG9BeEYwWDRhYTl0WjdrM3FkTGhXYmZPdnp2ME9ERm9nSQ?oc=5"
-      ],
-      "domains": [
-        "Amar Ujala"
-      ],
-      "publishers": [
-        "Amar ujala"
-      ],
-      "lastSeen": "2026-11-01T18:36:32.749Z",
-      "isLocal": true
-    },
-    {
-      "id": "live_2026_11_02_11_7_78_1",
-      "date": "2026-11-02",
-      "lat": 11.6643,
-      "lng": 78.146,
-      "geoType": 4,
-      "place": "Salem, Tamil Nadu",
-      "articles": 8,
-      "outlets": 1,
-      "type": "010",
-      "movement": "politics",
-      "category": "politics",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Minister inaugurates sale of ₹200 grocery kits in salem",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMivwFBVV95cUxOLUhTRERGZW02RGNraF9zdi1xN29zRmZyNkN1Um9FQUhlQnNkWGlLd2phcnJNaE15TEsxNndRclNaUzFSdjlrVmVjYUhwTGRYZDk3Wmkwa0FwRXU3bzlvdlFuWDRlY1h3bTFINXIyU2g2NU92V0Q1eWtOV2JKOXI0Z0p5dWtWa2J5bVV5NmNTRkxxdmNOS0ZxQ3NkdndVUk5ZSXRSSDYxM3hpQkdldllWeEplZmlIbnh2b2stM1JKNNIBxgFBVV95cUxQdjlmYlpySUJVbTdYM3o0UHBnMDNVc0RQZndyZURjWDc2MVpYOTdKczd4UzAwTGJKSkJuMjh0NHpDMWhBN0Nadm4ydk1QazNPYTIwRm5EdFR3bmFrQWxsSml1eXpMbjB3TWw2SmZvWlpwMldDNU9SaU01NHpWLW9LOUxmRy10OXM0R053Z25yUDhfM1E4dVphTFpzTzhQY2R5cTZzNHRLTng0S0xYYkJncVlIeVRLd2N2UTdUYzAwdm91TzFpcVE?oc=5",
-        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdWhEUVRDSkRIR2cxd0J0ZFJJdXBYdGE1Nm01TkdRNWVZSmo5MjNwMThIWG93ZE1EV0c2YlJ2ZXFqZ1hiN2FWR25lUUtjMUhFSU1mWnY1Y2VRd0NqYXR0T2Mzem9FZ1pLZkFBOFBpR1F0RlpLbUF6VnNlSURtZGZFZzU0QWlJYXVBeG9QMFRfTWtaSFNMb0pCNUlpaHRQMmtwREZTODNGYWdOaHBUc25na3piVGhEZHFuTjFQRHhRMjBOdE1JVmlZWnhOMTBmYzNMZ2fSAdgBQVVfeXFMTjN5SmJpT25tV2p1dF9kMmw0YUdydXJReGJ6UTUzS2RvdFBJZVc3d2pWNFJacHhBN3JKQVNRNUR4Um8zZmdxVkNVYzhJOUN2SU1JSVFHLWVpNG13NGd2ZFlQZEpGZi1BcF9yS1VwVVdNc3dhQVhTSWZTbkluY2xZZ0tsYkNLLV9lcDRBOUNHNmtVQWtUUHVldHIyTk9wQUNOV2RmNWdUNzZFY0xBdndUcFF3c1NEZzl1WjE4b0tFNHA1Rl9hdU9lRFRneTV4RWJMcDJRN1dVaFRh?oc=5"
-      ],
-      "domains": [
-        "The Hindu"
-      ],
-      "publishers": [
-        "The hindu"
-      ],
-      "lastSeen": "2026-11-01T18:36:33.376Z",
-      "isLocal": true
-    },
-    {
       "id": "live_2026_11_02_8_7_77_8",
       "date": "2026-11-02",
       "lat": 8.7139,
       "lng": 77.7567,
       "geoType": 4,
       "place": "Tirunelveli, Tamil Nadu",
-      "articles": 8,
+      "articles": 10,
       "outlets": 2,
       "type": "010",
       "movement": "economy",
@@ -1081,13 +1091,43 @@
       "isLocal": false
     },
     {
+      "id": "live_2026_11_02_8_8_78_1",
+      "date": "2026-11-02",
+      "lat": 8.7642,
+      "lng": 78.1348,
+      "geoType": 4,
+      "place": "Thoothukudi, Tamil Nadu",
+      "articles": 7,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Study says Solar-BESS plan can save TN ₹31,000 crore over new Tuticorin coal plant'",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOTWZkTG9yODNnZWhkbEh4VW12OHNNb1VDRW5XRGlkSEFUVEQ0b0F1TUNHNThiR2IySlFCVm12dGVCSDZkd2VVUnQwaTV3eFFmV3Mwc3I5ZVpLa1JLeURPNUJaemRhRFNtUXBwcWg3UVpuM2ltRnZwSjhLRVRXZ045eVVTTjd2cUxTTUU2ZWtJUzdIaGlnQktaZENzV1Y3QlIxM1NRajFKREVUNXFIUWx1UUk2bE1YNzZsbW9GSmJhNl81dVVxd3VCejIzdS0tSmtsb083c0dnejZPVExWeWpPT3JwZzRRQ2RiNElz0gHwAUFVX3lxTFBqNUhmRERHeWZkSEx3UkFUMlUwUE13bmtxQllmTXBpZWgwYU1Gb2lpOERCVU5zTk1WTVVibkt3ME4zTl94TlhSRUM5UVh0dmwxYVZ6TnA0UXpFekV0T2tNTlk1a0xydUd3NzM5ai00aGw2TFRVY18tQ2E5MG1QVThtOXpvMFJPa3BzbUtzLXMzUUFjRVhxWkpKUXI2TzNhb1FuaWp1ajlaUDY5ajh6VTZYUHhkcGQ4MkZEdTAydXVKeUFyNGthenlqcWFteGNmcWhnNWxvM1gxX1dnNG1UUzZ4c05ZZGl3U3lvVTBYRk44UA?oc=5",
+        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMDQyT2dsRVpvTGVtVzZnOS1kTmVtZ25wb0NfOGZiZ2F5UGxpSnJyTGxnTnFBUC03MnRKd3hZT0hwZ1lkdDJQTVlUM2tjMThUYVNicFhqVUR5c0ZUZzZsOGpFSV9mOHZmRU9WNkN0MzhvX1VFOEpLMG8zd21CcUFEXzZEZHJNQVVhTkFQdWdaelFULW9TRmdvUk1HMmUxTGo1blpnRjZQUDg3LTRjdkxPb3NpbGhmRVFYbXJMeVoxRjlpNHBmZ3pReFFMRVlyU2ZRSG9vQjM1NkjSAd4BQVVfeXFMT2VVRXAwRkIyT3BuSUoxU1VfSnhHNWFfUHdlNEdiZzBVY3BOX1ZEU2FvSlNJZ0hyZ3NXYlp3MndwVnRWcm1aN0wzYUZuMVhuZExsZ2gwZWxlbEI4eHRDd212Vzl2d1NlMDE5c3pHM0UwQ2JVZmJlcWU1ZjlrM3llWkZUNUtMTmdaYkFMay1KWFdSX1JjdUp5MzhiLWk2U2I5bEVtM1B6RlRTd0J1bzB3OWR0NGtEZzdlci1jaVhtQjIzMHNOb1JsNGlLN21aWDF5MEZKVkJLZ1FDaWkzUEp3?oc=5"
+      ],
+      "domains": [
+        "The Times of India"
+      ],
+      "publishers": [
+        "The times of india"
+      ],
+      "lastSeen": "2026-11-01T18:36:33.378Z",
+      "isLocal": true
+    },
+    {
       "id": "clim_2026_11_02_18_5_73_9",
       "date": "2026-11-02",
       "lat": 18.5204,
       "lng": 73.8567,
       "geoType": 4,
       "place": "Pune, Maharashtra",
-      "articles": 5,
+      "articles": 6,
       "outlets": 3,
       "type": "010",
       "movement": "protest",
@@ -1123,7 +1163,7 @@
       "lng": 80.9462,
       "geoType": 4,
       "place": "Lucknow, Uttar Pradesh",
-      "articles": 5,
+      "articles": 6,
       "outlets": 2,
       "type": "010",
       "movement": "climate",
@@ -1156,7 +1196,7 @@
       "lng": 93.9368,
       "geoType": 4,
       "place": "Imphal, Manipur",
-      "articles": 5,
+      "articles": 6,
       "outlets": 1,
       "type": "010",
       "movement": "politics",
@@ -1180,34 +1220,37 @@
       "isLocal": true
     },
     {
-      "id": "live_2026_11_02_8_8_78_1",
+      "id": "soc_2026_11_02_23_0_72_6",
       "date": "2026-11-02",
-      "lat": 8.7642,
-      "lng": 78.1348,
+      "lat": 23.0225,
+      "lng": 72.5714,
       "geoType": 4,
-      "place": "Thoothukudi, Tamil Nadu",
-      "articles": 5,
-      "outlets": 1,
+      "place": "Ahmedabad, Gujarat",
+      "articles": 6,
+      "outlets": 2,
       "type": "010",
-      "movement": "other",
-      "category": "other",
-      "platform": "web",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "social",
       "platforms": [
+        "social",
         "web"
       ],
-      "title": "Study says Solar-BESS plan can save TN ₹31,000 crore over new Tuticorin coal plant'",
+      "title": "Air India Plane Crashes into Ahmedabad's BJ Medical College Hostel #AhmedabadPlaneCrash #Ahmedabad - X",
       "urls": [
-        "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOTWZkTG9yODNnZWhkbEh4VW12OHNNb1VDRW5XRGlkSEFUVEQ0b0F1TUNHNThiR2IySlFCVm12dGVCSDZkd2VVUnQwaTV3eFFmV3Mwc3I5ZVpLa1JLeURPNUJaemRhRFNtUXBwcWg3UVpuM2ltRnZwSjhLRVRXZ045eVVTTjd2cUxTTUU2ZWtJUzdIaGlnQktaZENzV1Y3QlIxM1NRajFKREVUNXFIUWx1UUk2bE1YNzZsbW9GSmJhNl81dVVxd3VCejIzdS0tSmtsb083c0dnejZPVExWeWpPT3JwZzRRQ2RiNElz0gHwAUFVX3lxTFBqNUhmRERHeWZkSEx3UkFUMlUwUE13bmtxQllmTXBpZWgwYU1Gb2lpOERCVU5zTk1WTVVibkt3ME4zTl94TlhSRUM5UVh0dmwxYVZ6TnA0UXpFekV0T2tNTlk1a0xydUd3NzM5ai00aGw2TFRVY18tQ2E5MG1QVThtOXpvMFJPa3BzbUtzLXMzUUFjRVhxWkpKUXI2TzNhb1FuaWp1ajlaUDY5ajh6VTZYUHhkcGQ4MkZEdTAydXVKeUFyNGthenlqcWFteGNmcWhnNWxvM1gxX1dnNG1UUzZ4c05ZZGl3U3lvVTBYRk44UA?oc=5",
-        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMDQyT2dsRVpvTGVtVzZnOS1kTmVtZ25wb0NfOGZiZ2F5UGxpSnJyTGxnTnFBUC03MnRKd3hZT0hwZ1lkdDJQTVlUM2tjMThUYVNicFhqVUR5c0ZUZzZsOGpFSV9mOHZmRU9WNkN0MzhvX1VFOEpLMG8zd21CcUFEXzZEZHJNQVVhTkFQdWdaelFULW9TRmdvUk1HMmUxTGo1blpnRjZQUDg3LTRjdkxPb3NpbGhmRVFYbXJMeVoxRjlpNHBmZ3pReFFMRVlyU2ZRSG9vQjM1NkjSAd4BQVVfeXFMT2VVRXAwRkIyT3BuSUoxU1VfSnhHNWFfUHdlNEdiZzBVY3BOX1ZEU2FvSlNJZ0hyZ3NXYlp3MndwVnRWcm1aN0wzYUZuMVhuZExsZ2gwZWxlbEI4eHRDd212Vzl2d1NlMDE5c3pHM0UwQ2JVZmJlcWU1ZjlrM3llWkZUNUtMTmdaYkFMay1KWFdSX1JjdUp5MzhiLWk2U2I5bEVtM1B6RlRTd0J1bzB3OWR0NGtEZzdlci1jaVhtQjIzMHNOb1JsNGlLN21aWDF5MEZKVkJLZ1FDaWkzUEp3?oc=5"
+        "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTjhzVFlQUHNjRGZBRVRJblBGRk5POTRyRUdqQ2RnYk9MVnAzZ0hPN0NTMmszSmx0aEJfd3p1UWYyRWJod0NtY3ZONnE1UHBvNDFmTmtGc0ZYY1BYNGEtQUxDVlJ0RE00VlpKRDNCVl9XMW9nOFRrVDdTMzlYQjVqSG5feThEbmFVTy1BVTFSYU51bFI1MmVMeElRbFlSUzFGamVoLWp5MTdiYjVkd3MxYlFMcE9hT25FMDNDeF90ODdVVzl5Y1HSAcsBQVVfeXFMUGdnSC1KVmlDUFdRZkFicGZ1U3pzaXBtUExDanZsSVRUTVRlOHhrQnRvVmZabklXUFlTc21mZGp2N2dHMDBDVzRNYjhGNU1wT0ZtTFVxYnhMNEdBand5b1lIRXZMdDZTdkpIY1VzUGtPVEQzbThrN2xhcWgxdGF4UXJ0U1hfSmRXN0pSOWVEQ1k1aUNKWnRSU29xemZzYlM0TGFBMF9ZNHNaZ3VyZHBOOV82Y2JSdUtXaW5lS1hOdnMwZ1B0NlBKdWtZNTA?oc=5",
+        "https://news.google.com/rss/articles/CBMiekFVX3lxTE11SDJ4NHJ6aUR3c0tib25BMDN1SjdUa29UaFRtbXJ6bjRkRGxYbEVqTUNfVjdtOWhFaHBjQnRIREp2bktPREFtUzZHT1BIT3RPcEx4bG1kN0xOT1gwVlFBWVNxZjhwb1lud3Y2UGlMbWR5S0VQMHRjWEFR?oc=5"
       ],
       "domains": [
+        "Social Wire",
         "The Times of India"
       ],
       "publishers": [
+        "Social wire",
         "The times of india"
       ],
-      "lastSeen": "2026-11-01T18:36:33.378Z",
-      "isLocal": true
+      "lastSeen": "2026-11-01T18:36:37.386Z",
+      "isLocal": false
     },
     {
       "id": "clim_2026_11_02_23_0_78_7",
@@ -1216,7 +1259,7 @@
       "lng": 78.6569,
       "geoType": 4,
       "place": "Madhya Pradesh",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "climate",
@@ -1245,7 +1288,7 @@
       "lng": 77.3178,
       "geoType": 4,
       "place": "Faridabad, Haryana",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "politics",
@@ -1274,7 +1317,7 @@
       "lng": 78.4809,
       "geoType": 4,
       "place": "Sivaganga, Tamil Nadu",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "other",
@@ -1304,7 +1347,7 @@
       "lng": 80.3319,
       "geoType": 4,
       "place": "Kanpur, Uttar Pradesh",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "climate",
@@ -1333,7 +1376,7 @@
       "lng": 74.2179,
       "geoType": 4,
       "place": "Rajasthan",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "climate",
@@ -1362,7 +1405,7 @@
       "lng": 77.391,
       "geoType": 4,
       "place": "Noida, Uttar Pradesh",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "climate",
@@ -1391,7 +1434,7 @@
       "lng": 77.4538,
       "geoType": 4,
       "place": "Ghaziabad, Uttar Pradesh",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "climate",
@@ -1420,7 +1463,7 @@
       "lng": 80.4365,
       "geoType": 4,
       "place": "Guntur, Andhra Pradesh",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "other",
@@ -1449,7 +1492,7 @@
       "lng": 76.6066,
       "geoType": 4,
       "place": "Rohtak, Haryana",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "protest",
@@ -1478,7 +1521,7 @@
       "lng": 87.855,
       "geoType": 4,
       "place": "West Bengal",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "climate",
@@ -1502,46 +1545,13 @@
       "isLocal": true
     },
     {
-      "id": "soc_2026_11_02_23_0_72_6",
-      "date": "2026-11-02",
-      "lat": 23.0225,
-      "lng": 72.5714,
-      "geoType": 4,
-      "place": "Ahmedabad, Gujarat",
-      "articles": 4,
-      "outlets": 2,
-      "type": "010",
-      "movement": "climate",
-      "category": "climate",
-      "platform": "social",
-      "platforms": [
-        "social",
-        "web"
-      ],
-      "title": "Air India Plane Crashes into Ahmedabad's BJ Medical College Hostel #AhmedabadPlaneCrash #Ahmedabad - X",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTjhzVFlQUHNjRGZBRVRJblBGRk5POTRyRUdqQ2RnYk9MVnAzZ0hPN0NTMmszSmx0aEJfd3p1UWYyRWJod0NtY3ZONnE1UHBvNDFmTmtGc0ZYY1BYNGEtQUxDVlJ0RE00VlpKRDNCVl9XMW9nOFRrVDdTMzlYQjVqSG5feThEbmFVTy1BVTFSYU51bFI1MmVMeElRbFlSUzFGamVoLWp5MTdiYjVkd3MxYlFMcE9hT25FMDNDeF90ODdVVzl5Y1HSAcsBQVVfeXFMUGdnSC1KVmlDUFdRZkFicGZ1U3pzaXBtUExDanZsSVRUTVRlOHhrQnRvVmZabklXUFlTc21mZGp2N2dHMDBDVzRNYjhGNU1wT0ZtTFVxYnhMNEdBand5b1lIRXZMdDZTdkpIY1VzUGtPVEQzbThrN2xhcWgxdGF4UXJ0U1hfSmRXN0pSOWVEQ1k1aUNKWnRSU29xemZzYlM0TGFBMF9ZNHNaZ3VyZHBOOV82Y2JSdUtXaW5lS1hOdnMwZ1B0NlBKdWtZNTA?oc=5",
-        "https://news.google.com/rss/articles/CBMiekFVX3lxTE11SDJ4NHJ6aUR3c0tib25BMDN1SjdUa29UaFRtbXJ6bjRkRGxYbEVqTUNfVjdtOWhFaHBjQnRIREp2bktPREFtUzZHT1BIT3RPcEx4bG1kN0xOT1gwVlFBWVNxZjhwb1lud3Y2UGlMbWR5S0VQMHRjWEFR?oc=5"
-      ],
-      "domains": [
-        "Social Wire",
-        "The Times of India"
-      ],
-      "publishers": [
-        "Social wire",
-        "The times of india"
-      ],
-      "lastSeen": "2026-11-01T18:36:37.386Z",
-      "isLocal": false
-    },
-    {
       "id": "soc_2026_11_02_21_2_81_3",
       "date": "2026-11-02",
       "lat": 21.1904,
       "lng": 81.2849,
       "geoType": 4,
       "place": "Durg, Chhattisgarh",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "other",
@@ -1570,7 +1580,7 @@
       "lng": 78.0322,
       "geoType": 4,
       "place": "Dehradun, Uttarakhand",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "security",
@@ -1599,7 +1609,7 @@
       "lng": 85.1376,
       "geoType": 4,
       "place": "Patna, Bihar",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "politics",
@@ -1628,7 +1638,7 @@
       "lng": 79.0193,
       "geoType": 4,
       "place": "Uttarakhand",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "security",
@@ -1657,7 +1667,7 @@
       "lng": 75.7139,
       "geoType": 4,
       "place": "Karnataka",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "protest",
@@ -1686,7 +1696,7 @@
       "lng": 76.9366,
       "geoType": 4,
       "place": "Thiruvananthapuram, Kerala",
-      "articles": 4,
+      "articles": 5,
       "outlets": 1,
       "type": "010",
       "movement": "security",
@@ -1707,6 +1717,97 @@
       ],
       "lastSeen": "2026-11-01T18:36:37.829Z",
       "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_02_30_4_76_8",
+      "date": "2026-11-02",
+      "lat": 30.3782,
+      "lng": 76.7767,
+      "geoType": 4,
+      "place": "Ambala, Haryana",
+      "articles": 5,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Watch | President Droupadi Murmu said, \"Kanshi Ram ji from Ambala, counted among the first martyrs from Haryana in the twentieth century, was one of the founders of the Ghadar Party in San Francisco, alongside Lala Har Dayal. Upon his return to India, he",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdlE5WVQ0bF9IclZrcHM1QWwwN1BYY1RTT2YyQ1JDYklUc3pMQVpZUm91UEx2VjBMU3owLXFJVVUzanBvcnlwTnMwZlBnWlhOcFZfUG16SV80cnlNTmxuTTFyZGNoaVFYUi1mRVkwZG5uWnpwWlZESmNtcXRSaFZOb3AwVjYyWmJtektxY3JiZzBMMlB2V3JfYnlpRnBzQjVnS19hcE9rQllhMUY2dl8xU181SEFLckFJUVJ1OV9EUnI1VE44N0lGSHctZzVrR0ZZMU55VDFQbTNhRjN1?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-01T18:36:37.832Z",
+      "isLocal": true
+    },
+    {
+      "id": "live_2026_11_02_16_7_74_2",
+      "date": "2026-11-02",
+      "lat": 16.705,
+      "lng": 74.2433,
+      "geoType": 4,
+      "place": "Kolhapur, Maharashtra",
+      "articles": 5,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Kolhapur-Gokul Dudh Sangh: गोकुळ दूध संघावर सुप्रिया सुळेंचा डोळा, चित्रा वाघ यांची टीका",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMingFBVV95cUxOZ3dBYnFPOTVYQ3g3U3Q5Q3hpZWRGaGhaZFFLZThiQjFqUU43a1dLeVlmcU03MV9EZmtTa2loYTE2Qmg5ZnBUQ24xb09iOVVacWRIUVEzR05GOE9yOEpxb1daLUJUcUxWWlJ4c01mNUltYVNsUThWU3lWanhnckU1S2FWR3A0SkJvb1hka0R0MHRPMk5aeXZLUng4dDJ6QdIBowFBVV95cUxQdlRLV1pzX2dUMnB4bi16d3czU2kwYXd2MlZoMUxqM2ZHMzlFWEZ1OG1fdDZIUzU4bnhjYlNlZ0lOb3RKbDU3enpLM3pRYVBhWENCUWwwREM3a1lDdjdhQTVQX0FSSWlhUFhqTW9ubkFlNnVOS01vQk9jclU3cDg5RFhIdXhySWlYTWFnblJ0SlZob2ZwR1NKb001MllDRGJPQ1M0?oc=5"
+      ],
+      "domains": [
+        "Lokmat.com"
+      ],
+      "publishers": [
+        "Lokmat"
+      ],
+      "lastSeen": "2026-11-01T18:36:40.616Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_02_23_3_77_4",
+      "date": "2026-11-02",
+      "lat": 23.2599,
+      "lng": 77.4126,
+      "geoType": 4,
+      "place": "Bhopal, Madhya Pradesh",
+      "articles": 5,
+      "outlets": 2,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "social",
+      "platforms": [
+        "social",
+        "web"
+      ],
+      "title": "IMD issues orange alert for heavy to very heavy rainfall in 33 districts of Madhya Pradesh, including Bhopal, Indore, and Jabalpur - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRmxyUGNQNlJEVlBtVWNSZGZfMGluRnBRSUZlak1UNVZKSGp1YjYtMkZLUDhweFkxUFRyVVVIRzVxb3pIUjFEUEpzWmpIUjFqWmtldnZVSGNYclVuME5iOG90N3gxTUFwakVHZDE3YmFHZlRUNWEtaWlLYktpOVpINW1KalBwV1NxZXdhRWx1cFpDcDZMSkpiM0M2ZFF6N2dMUjFTRnEzRVJkRklmelk1Vl9JbVpRck9QaTBhUzJxc9IBxAFBVV95cUxQNmJCQlFORE9NR241cUtJYnYtRFpTSG1aNG9jNm1ZN1RhMGt1Sk9Kcm1rOFlSaXJDaHpxblQ1OUtsMHNYcF9ydVRpbG5oeUc2VVFkb1ZreUF3c1RnS2RVZTJOd012LVBVZ2Y4QXo2a0d1MnhJSGFmQkVLQnNQNjg4OEhtZVJOYnJMLW1lck9yLXhndk02YWQ2R1Z1cGpucFZXcy16TlNKQmZ1ellFYUdPa1BkYy1yUjhaZ3dYZ0ljN0JtWGg1?oc=5",
+        "https://news.google.com/rss/articles/CBMigAFBVV95cUxQU3hubDlDS1ZDYVJFRUxYbVJBVXNXNGN5NkRVaFN2VzFlR3M3T3BvdHZHYnBaN2NOc3NRM1hHQXZLM3RHcHEybFpyaEllZHNEWUhmcjV2YWhUdzk3a21YNF9NSmxCd2k0cW1STTZ3eTlHOUlMbDI1NzAzYTd0LTVlbg?oc=5"
+      ],
+      "domains": [
+        "Social Wire",
+        "Dainik Bhaskar"
+      ],
+      "publishers": [
+        "Social wire",
+        "Dainik bhaskar"
+      ],
+      "lastSeen": "2026-11-01T18:36:37.389Z",
+      "isLocal": false
     },
     {
       "id": "soc_2026_11_02_28_5_77_0",
@@ -1738,41 +1839,41 @@
       "isLocal": true
     },
     {
-      "id": "soc_2026_11_02_30_4_76_8",
+      "id": "clim_2026_11_02_13_1_79_9",
       "date": "2026-11-02",
-      "lat": 30.3782,
-      "lng": 76.7767,
+      "lat": 13.1231,
+      "lng": 79.912,
       "geoType": 4,
-      "place": "Ambala, Haryana",
+      "place": "Tiruvallur, Tamil Nadu",
       "articles": 4,
       "outlets": 1,
       "type": "010",
-      "movement": "other",
-      "category": "other",
-      "platform": "social",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
       "platforms": [
-        "social"
+        "web"
       ],
-      "title": "Watch | President Droupadi Murmu said, \"Kanshi Ram ji from Ambala, counted among the first martyrs from Haryana in the twentieth century, was one of the founders of the Ghadar Party in San Francisco, alongside Lala Har Dayal. Upon his return to India, he",
+      "title": "வங்கக் கடலில் மையம் கொண்டிருந்த ஆழ்ந்த காற்றழுத்த தாழ்வு மண்டலம் முரசு புயலாக வலுப்பெற்றது: திருவள்ளூர் மாவட்டத்திற்கு இன்று ஆரஞ்ச",
       "urls": [
-        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdlE5WVQ0bF9IclZrcHM1QWwwN1BYY1RTT2YyQ1JDYklUc3pMQVpZUm91UEx2VjBMU3owLXFJVVUzanBvcnlwTnMwZlBnWlhOcFZfUG16SV80cnlNTmxuTTFyZGNoaVFYUi1mRVkwZG5uWnpwWlZESmNtcXRSaFZOb3AwVjYyWmJtektxY3JiZzBMMlB2V3JfYnlpRnBzQjVnS19hcE9rQllhMUY2dl8xU181SEFLckFJUVJ1OV9EUnI1VE44N0lGSHctZzVrR0ZZMU55VDFQbTNhRjN1?oc=5"
+        "https://news.google.com/rss/articles/CBMikwFBVV95cUxQOWg2UVFyU0liVnZ0WmZDR1oxY1BpYjVmSXo0UnlzVDZKM3lsZFkydVE2ZE14cEJ2SWE0MkFSeXUzMzc4a1YyaXdQN3dyb29fTGxISjFDSTFEZ21EZGIwaUZmMWZYMzh3ZDJCLVoyZklwMkRqdmtTRFlVZ3VTcnNqNVlxU2l1QjNXTThFQ3RvZmd3WTDSAZcBQVVfeXFMT0RwNWJ6OHMwRkJaVGE1QV9md1NwNzFNLW5MblJaby05dllZU0NNVWN6OE5PbFp1V3I3N3lQSzYwbzlMMHJmV2pnUEJ1WDViUHV5V3FWQVBSdjhnVElCaWZ1ZWFXWnR0U0VydmVyWS1tbnhiUWhGbFpiM2pRaGN1YjA5eWdQMlhpanJtOXhhcHpKTGNUeWFIZw?oc=5"
       ],
       "domains": [
-        "Social Wire"
+        "Dinakaran"
       ],
       "publishers": [
-        "Social wire"
+        "Dinakaran"
       ],
-      "lastSeen": "2026-11-01T18:36:37.832Z",
+      "lastSeen": "2026-11-01T18:36:32.175Z",
       "isLocal": true
     },
     {
-      "id": "live_2026_11_02_16_7_74_2",
+      "id": "live_2026_11_02_25_4_78_6",
       "date": "2026-11-02",
-      "lat": 16.705,
-      "lng": 74.2433,
+      "lat": 25.4484,
+      "lng": 78.5685,
       "geoType": 4,
-      "place": "Kolhapur, Maharashtra",
+      "place": "Jhansi, Uttar Pradesh",
       "articles": 4,
       "outlets": 1,
       "type": "010",
@@ -1782,51 +1883,18 @@
       "platforms": [
         "web"
       ],
-      "title": "Kolhapur-Gokul Dudh Sangh: गोकुळ दूध संघावर सुप्रिया सुळेंचा डोळा, चित्रा वाघ यांची टीका",
+      "title": "Singer Jhansi Remuneration: సింగర్‌ ఝాన్సీ బిగ్‌ బాస్‌ పారితోషికం.. 8 వారాలకు ఇంతేనా?",
       "urls": [
-        "https://news.google.com/rss/articles/CBMingFBVV95cUxOZ3dBYnFPOTVYQ3g3U3Q5Q3hpZWRGaGhaZFFLZThiQjFqUU43a1dLeVlmcU03MV9EZmtTa2loYTE2Qmg5ZnBUQ24xb09iOVVacWRIUVEzR05GOE9yOEpxb1daLUJUcUxWWlJ4c01mNUltYVNsUThWU3lWanhnckU1S2FWR3A0SkJvb1hka0R0MHRPMk5aeXZLUng4dDJ6QdIBowFBVV95cUxQdlRLV1pzX2dUMnB4bi16d3czU2kwYXd2MlZoMUxqM2ZHMzlFWEZ1OG1fdDZIUzU4bnhjYlNlZ0lOb3RKbDU3enpLM3pRYVBhWENCUWwwREM3a1lDdjdhQTVQX0FSSWlhUFhqTW9ubkFlNnVOS01vQk9jclU3cDg5RFhIdXhySWlYTWFnblJ0SlZob2ZwR1NKb001MllDRGJPQ1M0?oc=5"
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcUlZYnlBQ0RZN3dVWGV5bnh4aHVjdzFhcDE0eUh3andHUDdXb0xLdEpUNmZ3QUFpRW4zdTRuWjNCM1IwMFVsdC01ak4zVW1OUllfSlNKcWJfNDNsR2JyWGd2Y1pLTWF3V0pOYUJ3TkFBQzdOSHdpaVM3TzZic3BTcTJWVFprZ09rQ3EwdkpfTGdWOWxNSmZ5T3paVkhlZVljVHJKVXdCZGppdERVRUVEbk1qUS1HaUJGUUZUTHJ3YnhzbllyS2Vj0gHMAUFVX3lxTE9nSnUxV0tkcXJIeXNaVTNBdW1oSVdMbmpvWTdfVjRRZkVBREo3b3F6NFpBMC1pSGhTOGFnbEY0NlZSRmU5QVRvQjhZTE9CVkljQ2JZZm8ybzMyMEcxUnJLcE84S1JVeEdSREdkalNYMWR2UGRoWXJQM3RyaURQNXhCUlR1ckFjZUdKZ3pxclZ4NnFIckdEbjFNY1RxNGxYMFBiMzJUNDBDeG1GcUtFS2dZamdMdnk1Y2NLWEc0NWxqOUJPanZaaXpJQ2pLUA?oc=5"
       ],
       "domains": [
-        "Lokmat.com"
+        "Asianet News Telugu"
       ],
       "publishers": [
-        "Lokmat"
+        "Asianet news telugu"
       ],
-      "lastSeen": "2026-11-01T18:36:40.616Z",
+      "lastSeen": "2026-11-01T18:50:02.606Z",
       "isLocal": true
-    },
-    {
-      "id": "soc_2026_11_02_23_3_77_4",
-      "date": "2026-11-02",
-      "lat": 23.2599,
-      "lng": 77.4126,
-      "geoType": 4,
-      "place": "Bhopal, Madhya Pradesh",
-      "articles": 4,
-      "outlets": 2,
-      "type": "010",
-      "movement": "climate",
-      "category": "climate",
-      "platform": "social",
-      "platforms": [
-        "social",
-        "web"
-      ],
-      "title": "IMD issues orange alert for heavy to very heavy rainfall in 33 districts of Madhya Pradesh, including Bhopal, Indore, and Jabalpur - X",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRmxyUGNQNlJEVlBtVWNSZGZfMGluRnBRSUZlak1UNVZKSGp1YjYtMkZLUDhweFkxUFRyVVVIRzVxb3pIUjFEUEpzWmpIUjFqWmtldnZVSGNYclVuME5iOG90N3gxTUFwakVHZDE3YmFHZlRUNWEtaWlLYktpOVpINW1KalBwV1NxZXdhRWx1cFpDcDZMSkpiM0M2ZFF6N2dMUjFTRnEzRVJkRklmelk1Vl9JbVpRck9QaTBhUzJxc9IBxAFBVV95cUxQNmJCQlFORE9NR241cUtJYnYtRFpTSG1aNG9jNm1ZN1RhMGt1Sk9Kcm1rOFlSaXJDaHpxblQ1OUtsMHNYcF9ydVRpbG5oeUc2VVFkb1ZreUF3c1RnS2RVZTJOd012LVBVZ2Y4QXo2a0d1MnhJSGFmQkVLQnNQNjg4OEhtZVJOYnJMLW1lck9yLXhndk02YWQ2R1Z1cGpucFZXcy16TlNKQmZ1ellFYUdPa1BkYy1yUjhaZ3dYZ0ljN0JtWGg1?oc=5",
-        "https://news.google.com/rss/articles/CBMigAFBVV95cUxQU3hubDlDS1ZDYVJFRUxYbVJBVXNXNGN5NkRVaFN2VzFlR3M3T3BvdHZHYnBaN2NOc3NRM1hHQXZLM3RHcHEybFpyaEllZHNEWUhmcjV2YWhUdzk3a21YNF9NSmxCd2k0cW1STTZ3eTlHOUlMbDI1NzAzYTd0LTVlbg?oc=5"
-      ],
-      "domains": [
-        "Social Wire",
-        "Dainik Bhaskar"
-      ],
-      "publishers": [
-        "Social wire",
-        "Dainik bhaskar"
-      ],
-      "lastSeen": "2026-11-01T18:36:37.389Z",
-      "isLocal": false
     },
     {
       "id": "soc_2026_11_02_26_2_73_0",
@@ -1858,71 +1926,13 @@
       "isLocal": true
     },
     {
-      "id": "clim_2026_11_02_13_1_79_9",
-      "date": "2026-11-02",
-      "lat": 13.1231,
-      "lng": 79.912,
-      "geoType": 4,
-      "place": "Tiruvallur, Tamil Nadu",
-      "articles": 3,
-      "outlets": 1,
-      "type": "010",
-      "movement": "climate",
-      "category": "climate",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "வங்கக் கடலில் மையம் கொண்டிருந்த ஆழ்ந்த காற்றழுத்த தாழ்வு மண்டலம் முரசு புயலாக வலுப்பெற்றது: திருவள்ளூர் மாவட்டத்திற்கு இன்று ஆரஞ்ச",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMikwFBVV95cUxQOWg2UVFyU0liVnZ0WmZDR1oxY1BpYjVmSXo0UnlzVDZKM3lsZFkydVE2ZE14cEJ2SWE0MkFSeXUzMzc4a1YyaXdQN3dyb29fTGxISjFDSTFEZ21EZGIwaUZmMWZYMzh3ZDJCLVoyZklwMkRqdmtTRFlVZ3VTcnNqNVlxU2l1QjNXTThFQ3RvZmd3WTDSAZcBQVVfeXFMT0RwNWJ6OHMwRkJaVGE1QV9md1NwNzFNLW5MblJaby05dllZU0NNVWN6OE5PbFp1V3I3N3lQSzYwbzlMMHJmV2pnUEJ1WDViUHV5V3FWQVBSdjhnVElCaWZ1ZWFXWnR0U0VydmVyWS1tbnhiUWhGbFpiM2pRaGN1YjA5eWdQMlhpanJtOXhhcHpKTGNUeWFIZw?oc=5"
-      ],
-      "domains": [
-        "Dinakaran"
-      ],
-      "publishers": [
-        "Dinakaran"
-      ],
-      "lastSeen": "2026-11-01T18:36:32.175Z",
-      "isLocal": true
-    },
-    {
-      "id": "live_2026_11_02_25_4_78_6",
-      "date": "2026-11-02",
-      "lat": 25.4484,
-      "lng": 78.5685,
-      "geoType": 4,
-      "place": "Jhansi, Uttar Pradesh",
-      "articles": 3,
-      "outlets": 1,
-      "type": "010",
-      "movement": "other",
-      "category": "other",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Singer Jhansi Remuneration: సింగర్‌ ఝాన్సీ బిగ్‌ బాస్‌ పారితోషికం.. 8 వారాలకు ఇంతేనా?",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcUlZYnlBQ0RZN3dVWGV5bnh4aHVjdzFhcDE0eUh3andHUDdXb0xLdEpUNmZ3QUFpRW4zdTRuWjNCM1IwMFVsdC01ak4zVW1OUllfSlNKcWJfNDNsR2JyWGd2Y1pLTWF3V0pOYUJ3TkFBQzdOSHdpaVM3TzZic3BTcTJWVFprZ09rQ3EwdkpfTGdWOWxNSmZ5T3paVkhlZVljVHJKVXdCZGppdERVRUVEbk1qUS1HaUJGUUZUTHJ3YnhzbllyS2Vj0gHMAUFVX3lxTE9nSnUxV0tkcXJIeXNaVTNBdW1oSVdMbmpvWTdfVjRRZkVBREo3b3F6NFpBMC1pSGhTOGFnbEY0NlZSRmU5QVRvQjhZTE9CVkljQ2JZZm8ybzMyMEcxUnJLcE84S1JVeEdSREdkalNYMWR2UGRoWXJQM3RyaURQNXhCUlR1ckFjZUdKZ3pxclZ4NnFIckdEbjFNY1RxNGxYMFBiMzJUNDBDeG1GcUtFS2dZamdMdnk1Y2NLWEc0NWxqOUJPanZaaXpJQ2pLUA?oc=5"
-      ],
-      "domains": [
-        "Asianet News Telugu"
-      ],
-      "publishers": [
-        "Asianet news telugu"
-      ],
-      "lastSeen": "2026-11-01T18:50:02.606Z",
-      "isLocal": true
-    },
-    {
       "id": "live_2026_11_02_34_2_77_6",
       "date": "2026-11-02",
       "lat": 34.1526,
       "lng": 77.5771,
       "geoType": 4,
       "place": "Ladakh",
-      "articles": 2,
+      "articles": 3,
       "outlets": 1,
       "type": "010",
       "movement": "protest",
@@ -1951,8 +1961,8 @@
       "lng": 76.0856,
       "geoType": 4,
       "place": "Haryana",
-      "articles": 2,
-      "outlets": 1,
+      "articles": 3,
+      "outlets": 2,
       "type": "010",
       "movement": "other",
       "category": "other",
@@ -1960,18 +1970,21 @@
       "platforms": [
         "web"
       ],
-      "title": "Aiming to make Haryana India’s 1st developed state, says Saini",
+      "title": "PRESIDENT OF INDIA GRACES THE ‘HIRAK JAYANTI’ CELEBRATION ON THE 60TH YEAR OF FORMATION OF THE STATE OF HARYANA AT KURUKSHETRA",
       "urls": [
+        "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Ec2ZMT3JUMWpITWVLanY2NW83R2RMTVRqdmlOZ3IyYzc1RGIxWk1aZmZOalRQc05CRGh1SlgwMzJ3VjZKckFGVkhXRlNMMWlIMDUzY3lJdU0wT2NXZ0RSX1JjQzlaWlZzUXRUOUhZSVlNbEtQYlhSUy04YXg?oc=5",
         "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVUxGXy1hMndoWWhWbjRUWWZ1TFk4UFpHcnBCRkFQN2dGd212MWpIOVhCRm1WLWs0Zi04b1hWS1plNnpPSzQyemVydGRGY0Mxek1ZMmpmbnFDWkJ4akpTWHRPdmpoZ0t4VmZXbGkwRVVOOVE0SFpkOFU3eHR3X1REMzdZVUZqaGtUVlptRlJqeVlaSlBIRjByWkVxTTVLTzg4NWxmdDJkaWRjRVVOeUFFYmd2dndKREtudkFBelB3MzhUWUlIZFByRk91OWJGSG5waFJSONIB2gFBVV95cUxQbHBnVnZmbGNuU0FtR1lUeTJTYXBfUVpGbkJ2MnRDc1dRbHFGNFZrMW5GREQ1bjNJTTJqeHROcS1kRjZxUmJFdmpnWkNUOWRmOWZWNVpkLVUyTndodFpRN3E5c3d1OC1ySW1OX3lsaHVQRG03czJSaVFuSGNjVW5BT1IydVF2d05QMmVCdUQwVFhzcE1LSlNJNU9YNmlWV19IMW5vN2hZcmRWMUNIWnp5UkRpdDZJREJxX29kSlFSa0k3aWdtZ2xabW0zdnFnd01XWDk4VG5JMEwzdw?oc=5"
       ],
       "domains": [
-        "The Times of India"
+        "The Times of India",
+        "www.pib.gov.in"
       ],
       "publishers": [
-        "The times of india"
+        "The times of india",
+        "Pib"
       ],
       "lastSeen": "2026-11-01T18:36:38.599Z",
-      "isLocal": true
+      "isLocal": false
     },
     {
       "id": "live_2026_11_02_25_2_75_9",
@@ -2003,6 +2016,35 @@
       "isLocal": true
     },
     {
+      "id": "yt_2026_11_02_11_7_79_0",
+      "date": "2026-11-02",
+      "lat": 11.7384,
+      "lng": 78.9639,
+      "geoType": 4,
+      "place": "Kallakurichi, Tamil Nadu",
+      "articles": 2,
+      "outlets": 1,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "youtube",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "கள்ளக்குறிச்சி மக்களவை தொகுதியில் 5வது இடத்தில் நோட்டா இருக்கிறது | Lok Sabha Election Results 2019",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE9EdnlmbGlUVDdfeC1iN3JzZVQ4RU9XY0o4ejNaTUFoM1BjVzVPV3VwaGd0ZzVTWmxlenhFdDBrRnZiNFFZdmVtNGtLdmZZN0Z6RlUwYTdFOWo4NDdoQV94ZzRuQ3Via1NMdEpZQVhR?oc=5"
+      ],
+      "domains": [
+        "YouTube"
+      ],
+      "publishers": [
+        "YouTube Broadcast"
+      ],
+      "lastSeen": "2026-11-01T18:36:34.352Z",
+      "isLocal": true
+    },
+    {
       "id": "clim_2026_11_02_29_1_75_7",
       "date": "2026-11-02",
       "lat": 29.1492,
@@ -2029,35 +2071,6 @@
         "Hindustan Times"
       ],
       "lastSeen": "2026-11-01T18:36:32.750Z",
-      "isLocal": true
-    },
-    {
-      "id": "yt_2026_11_02_11_7_79_0",
-      "date": "2026-11-02",
-      "lat": 11.7384,
-      "lng": 78.9639,
-      "geoType": 4,
-      "place": "Kallakurichi, Tamil Nadu",
-      "articles": 1,
-      "outlets": 1,
-      "type": "010",
-      "movement": "politics",
-      "category": "politics",
-      "platform": "youtube",
-      "platforms": [
-        "youtube"
-      ],
-      "title": "கள்ளக்குறிச்சி மக்களவை தொகுதியில் 5வது இடத்தில் நோட்டா இருக்கிறது | Lok Sabha Election Results 2019",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMibkFVX3lxTE9EdnlmbGlUVDdfeC1iN3JzZVQ4RU9XY0o4ejNaTUFoM1BjVzVPV3VwaGd0ZzVTWmxlenhFdDBrRnZiNFFZdmVtNGtLdmZZN0Z6RlUwYTdFOWo4NDdoQV94ZzRuQ3Via1NMdEpZQVhR?oc=5"
-      ],
-      "domains": [
-        "YouTube"
-      ],
-      "publishers": [
-        "YouTube Broadcast"
-      ],
-      "lastSeen": "2026-11-01T18:36:34.352Z",
       "isLocal": true
     },
     {
@@ -2206,13 +2219,71 @@
       "isLocal": true
     },
     {
+      "id": "soc_2026_11_02_34_1_74_8",
+      "date": "2026-11-02",
+      "lat": 34.0837,
+      "lng": 74.7973,
+      "geoType": 4,
+      "place": "Srinagar, Jammu & Kashmir",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "#WATCH | Cold waves continue in Jammu & Kashmir's winter capital, Srinagar, as winter's chill intensifies in Northern India Visuals from Dal Lake - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiekFVX3lxTE1nbVBLbmxUZ09OZHZ2akxkWXZVcURHTmxNUVNraUdrQjI4ckx4aTVNOVRtVHY0cG01TkFzemFocDlnQ1hWMDVBWGExQ1hOZzNTSDJKRG5nUWxoeFdjdFQ3MlVka19wRmhILTc4dmVhUlFucXl1Qk80RWtB?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-01T19:13:55.417Z",
+      "isLocal": true
+    },
+    {
+      "id": "live_2026_11_02_20_5_85_9",
+      "date": "2026-11-02",
+      "lat": 20.4625,
+      "lng": 85.8828,
+      "geoType": 4,
+      "place": "Cuttack, Odisha",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "2nd T20I (N), Sri Lanka tour of India at Cuttack, Dec 24 2026",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQanplaGJOZGt6dXRSenBmbkFuYXdvMVU4Y3ZOX0NTSTF6WXhIM2ZVUEZGeTVwN28wc3FQOVFDLWV3REwzcGUyanlTQWhicnZ3eXJrNzJuY0tvVGxiMGJzUWlTbGJfS3h4M1N2Yzh5Ykk3YjZEZ3FXejRZZ2kxZlFITUdHdTRleFk1c2EyZXZ6RGhNUQ?oc=5"
+      ],
+      "domains": [
+        "ESPN"
+      ],
+      "publishers": [
+        "Espn"
+      ],
+      "lastSeen": "2026-11-01T19:13:56.464Z",
+      "isLocal": true
+    },
+    {
       "id": "2026_11_01_28_7_77_2",
       "date": "2026-11-01",
       "lat": 28.6667,
       "lng": 77.2167,
       "geoType": 4,
       "place": "Delhi, Delhi",
-      "articles": 2866,
+      "articles": 2886,
       "outlets": 40,
       "type": "141",
       "movement": "politics",
@@ -2248,7 +2319,7 @@
         "Wcpo",
         "Dailypioneer"
       ],
-      "lastSeen": "20261101184500",
+      "lastSeen": "20261101191500",
       "isLocal": false
     },
     {
@@ -2258,7 +2329,7 @@
       "lng": 77.2,
       "geoType": 4,
       "place": "New Delhi, Delhi",
-      "articles": 2567,
+      "articles": 2583,
       "outlets": 84,
       "type": "010",
       "movement": "climate",
@@ -2297,7 +2368,7 @@
         "Azerbaijannews",
         "Myanmarnews"
       ],
-      "lastSeen": "20261101190000",
+      "lastSeen": "20261101191500",
       "isLocal": false
     },
     {
@@ -2307,8 +2378,8 @@
       "lng": 72.8258,
       "geoType": 4,
       "place": "Mumbai, Maharashtra",
-      "articles": 777,
-      "outlets": 36,
+      "articles": 789,
+      "outlets": 37,
       "type": "010",
       "movement": "economy",
       "category": "economy",
@@ -2343,7 +2414,7 @@
         "Free Press Journal",
         "Theshillongtimes"
       ],
-      "lastSeen": "20261101190000",
+      "lastSeen": "20261101191500",
       "isLocal": false
     },
     {
@@ -2401,7 +2472,7 @@
       "lng": 77.5833,
       "geoType": 4,
       "place": "Bengaluru, Karnataka",
-      "articles": 677,
+      "articles": 682,
       "outlets": 32,
       "type": "042",
       "movement": "climate",
@@ -2439,7 +2510,7 @@
         "Bangaloremirror",
         "The Hindu"
       ],
-      "lastSeen": "20261101190000",
+      "lastSeen": "20261101191500",
       "isLocal": false
     },
     {
@@ -2541,9 +2612,9 @@
       "lng": 79.5,
       "geoType": 4,
       "place": "Telangana, Andhra Pradesh",
-      "articles": 381,
+      "articles": 388,
       "outlets": 15,
-      "type": "043",
+      "type": "010",
       "movement": "politics",
       "category": "politics",
       "platform": "web",
@@ -2577,7 +2648,7 @@
         "Siasat",
         "Telugupeople"
       ],
-      "lastSeen": "20261101183000",
+      "lastSeen": "20261101191500",
       "isLocal": false
     },
     {
@@ -2721,6 +2792,52 @@
       "isLocal": false
     },
     {
+      "id": "2026_11_01_25_2_85_5",
+      "date": "2026-11-01",
+      "lat": 25.1833,
+      "lng": 85.5167,
+      "geoType": 4,
+      "place": "Bihar, Bihar",
+      "articles": 303,
+      "outlets": 21,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "India if pm modi goes then only democracy can be saved kharge urges united fight against bjp at india bloc rally 14065490",
+      "urls": [
+        "https://www.livemint.com/news/india/india-readies-a-new-soft-power-playbook-11793348974780.html",
+        "https://www.tribuneindia.com/news/india/pm-nod-to-north-corridor-for-bullet-train-delhi-varanasi-in-3-5-hours-soon-vaishnaw/",
+        "https://www.telugupeople.com/news/news.asp?newsId=109161",
+        "https://www.thehindu.com/news/national/bihar/two-newly-elected-bihar-independent-mlcs-now-support-bjp/article71652125.ece",
+        "https://indiankanoon.org/doc/114867621/"
+      ],
+      "domains": [
+        "livemint.com",
+        "tribuneindia.com",
+        "telugupeople.com",
+        "thehindu.com",
+        "indiankanoon.org",
+        "bignewsnetwork.com",
+        "countercurrents.org",
+        "radio.gov.pk",
+        "indiagazette.com",
+        "timesofindia.indiatimes.com"
+      ],
+      "publishers": [
+        "Livemint",
+        "The Tribune",
+        "Telugupeople",
+        "The Hindu",
+        "Indiankanoon"
+      ],
+      "lastSeen": "20261101191500",
+      "isLocal": false
+    },
+    {
       "id": "2026_11_01_11_0_78_0",
       "date": "2026-11-01",
       "lat": 11,
@@ -2764,52 +2881,6 @@
         "Economic Times"
       ],
       "lastSeen": "20261101183000",
-      "isLocal": false
-    },
-    {
-      "id": "2026_11_01_25_2_85_5",
-      "date": "2026-11-01",
-      "lat": 25.1833,
-      "lng": 85.5167,
-      "geoType": 4,
-      "place": "Bihar, Bihar",
-      "articles": 265,
-      "outlets": 20,
-      "type": "010",
-      "movement": "politics",
-      "category": "politics",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "India if pm modi goes then only democracy can be saved kharge urges united fight against bjp at india bloc rally 14065490",
-      "urls": [
-        "https://www.livemint.com/news/india/india-readies-a-new-soft-power-playbook-11793348974780.html",
-        "https://www.tribuneindia.com/news/india/pm-nod-to-north-corridor-for-bullet-train-delhi-varanasi-in-3-5-hours-soon-vaishnaw/",
-        "https://www.telugupeople.com/news/news.asp?newsId=109161",
-        "https://www.thehindu.com/news/national/bihar/two-newly-elected-bihar-independent-mlcs-now-support-bjp/article71652125.ece",
-        "https://indiankanoon.org/doc/114867621/"
-      ],
-      "domains": [
-        "livemint.com",
-        "tribuneindia.com",
-        "telugupeople.com",
-        "thehindu.com",
-        "indiankanoon.org",
-        "bignewsnetwork.com",
-        "countercurrents.org",
-        "radio.gov.pk",
-        "indiagazette.com",
-        "timesofindia.indiatimes.com"
-      ],
-      "publishers": [
-        "Livemint",
-        "The Tribune",
-        "Telugupeople",
-        "The Hindu",
-        "Indiankanoon"
-      ],
-      "lastSeen": "20261101190000",
       "isLocal": false
     },
     {
@@ -3003,7 +3074,7 @@
       "lng": 73.8667,
       "geoType": 4,
       "place": "Pune, Maharashtra",
-      "articles": 215,
+      "articles": 225,
       "outlets": 11,
       "type": "173",
       "movement": "climate",
@@ -3040,7 +3111,7 @@
         "Jagranjosh",
         "Westhawaiitoday"
       ],
-      "lastSeen": "20261101161500",
+      "lastSeen": "20261101191500",
       "isLocal": false
     },
     {
@@ -3085,6 +3156,49 @@
         "Ibtimes"
       ],
       "lastSeen": "20261101183000",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_01_27_1_79_4",
+      "date": "2026-11-01",
+      "lat": 27.0529,
+      "lng": 79.3583,
+      "geoType": 4,
+      "place": "Manipur, Uttar Pradesh",
+      "articles": 164,
+      "outlets": 7,
+      "type": "190",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Drugs Worth Rs 4625 Crore Seized In Assam Mizoram Five Arrested",
+      "urls": [
+        "https://ksevradio.com/five-killed-in-fresh-ethnic-violence-in-indias-manipur-state/",
+        "https://organiser.org/2026/11/01/422985/bharat/fulfilling-duties-towards-society-with-dedication-is-true-karmayoga-alok-kumar-of-vhp-at-karmayogi-award-ceremony/",
+        "https://www.rediff.com/news/report/rift-in-manipur-bjp-as-attacks-on-cong-mp-backfire/20261101.htm",
+        "https://morungexpress.com/drugs-worth-rs-4625-crore-seized-in-assam-mizoram-five-arrested",
+        "https://www.independent.co.uk/asia/india/manipur-ethnic-violence-kuki-naga-b3077062.html"
+      ],
+      "domains": [
+        "ksevradio.com",
+        "organiser.org",
+        "rediff.com",
+        "morungexpress.com",
+        "independent.co.uk",
+        "pakistantoday.com.pk",
+        "thesangaiexpress.com"
+      ],
+      "publishers": [
+        "Ksevradio",
+        "Organiser",
+        "Rediff",
+        "Morungexpress",
+        "Independent"
+      ],
+      "lastSeen": "20261101191500",
       "isLocal": false
     },
     {
@@ -3267,6 +3381,52 @@
       "isLocal": false
     },
     {
+      "id": "2026_11_01_17_4_78_5",
+      "date": "2026-11-01",
+      "lat": 17.3753,
+      "lng": 78.4744,
+      "geoType": 4,
+      "place": "Hyderabad, Andhra Pradesh",
+      "articles": 140,
+      "outlets": 11,
+      "type": "020",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Central team visits odisha for cyclone arnab damage assessment",
+      "urls": [
+        "https://www.deccanchronicle.com/southern-states/telangana/taj-falaknuma-golkonda-hotel-get-notices-2000707",
+        "https://www.siasat.com/20-hate-crimes-in-telangana-in-q3-2026-3567666/",
+        "https://www.telugupeople.com/news/news.asp?newsID=109164",
+        "https://economictimes.indiatimes.com/news/new-updates/karnataka-rajyotsava-2026-why-it-is-celebrated-on-november-1-history-wishes-and-whatsapp-status-messages-to-share-with-loved-ones/articleshow/135416332.cms",
+        "https://www.freepressjournal.in/business/zen-technologies-q2-fy27-profit-jumps-51-to-895-crore-revenue-surges-99-to-345-crore"
+      ],
+      "domains": [
+        "deccanchronicle.com",
+        "siasat.com",
+        "telugupeople.com",
+        "economictimes.indiatimes.com",
+        "freepressjournal.in",
+        "educationtimes.com",
+        "gulte.com",
+        "timesofindia.indiatimes.com",
+        "econotimes.com",
+        "pragativadi.com"
+      ],
+      "publishers": [
+        "Deccanchronicle",
+        "Siasat",
+        "Telugupeople",
+        "Economic Times",
+        "Free Press Journal"
+      ],
+      "lastSeen": "20261101191500",
+      "isLocal": false
+    },
+    {
       "id": "clim_2026_11_01_14_0_85_0",
       "date": "2026-11-01",
       "lat": 14,
@@ -3359,94 +3519,6 @@
         "Biospectrumindia"
       ],
       "lastSeen": "20261101173000",
-      "isLocal": false
-    },
-    {
-      "id": "2026_11_01_17_4_78_5",
-      "date": "2026-11-01",
-      "lat": 17.3753,
-      "lng": 78.4744,
-      "geoType": 4,
-      "place": "Hyderabad, Andhra Pradesh",
-      "articles": 130,
-      "outlets": 11,
-      "type": "020",
-      "movement": "climate",
-      "category": "climate",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Central team visits odisha for cyclone arnab damage assessment",
-      "urls": [
-        "https://www.deccanchronicle.com/southern-states/telangana/taj-falaknuma-golkonda-hotel-get-notices-2000707",
-        "https://www.siasat.com/20-hate-crimes-in-telangana-in-q3-2026-3567666/",
-        "https://www.telugupeople.com/news/news.asp?newsID=109164",
-        "https://economictimes.indiatimes.com/news/new-updates/karnataka-rajyotsava-2026-why-it-is-celebrated-on-november-1-history-wishes-and-whatsapp-status-messages-to-share-with-loved-ones/articleshow/135416332.cms",
-        "https://www.freepressjournal.in/business/zen-technologies-q2-fy27-profit-jumps-51-to-895-crore-revenue-surges-99-to-345-crore"
-      ],
-      "domains": [
-        "deccanchronicle.com",
-        "siasat.com",
-        "telugupeople.com",
-        "economictimes.indiatimes.com",
-        "freepressjournal.in",
-        "educationtimes.com",
-        "gulte.com",
-        "timesofindia.indiatimes.com",
-        "econotimes.com",
-        "pragativadi.com"
-      ],
-      "publishers": [
-        "Deccanchronicle",
-        "Siasat",
-        "Telugupeople",
-        "Economic Times",
-        "Free Press Journal"
-      ],
-      "lastSeen": "20261101183000",
-      "isLocal": false
-    },
-    {
-      "id": "2026_11_01_27_1_79_4",
-      "date": "2026-11-01",
-      "lat": 27.0529,
-      "lng": 79.3583,
-      "geoType": 4,
-      "place": "Manipur, Uttar Pradesh",
-      "articles": 128,
-      "outlets": 6,
-      "type": "190",
-      "movement": "security",
-      "category": "security",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Drugs Worth Rs 4625 Crore Seized In Assam Mizoram Five Arrested",
-      "urls": [
-        "https://ksevradio.com/five-killed-in-fresh-ethnic-violence-in-indias-manipur-state/",
-        "https://organiser.org/2026/11/01/422985/bharat/fulfilling-duties-towards-society-with-dedication-is-true-karmayoga-alok-kumar-of-vhp-at-karmayogi-award-ceremony/",
-        "https://www.rediff.com/news/report/rift-in-manipur-bjp-as-attacks-on-cong-mp-backfire/20261101.htm",
-        "https://morungexpress.com/drugs-worth-rs-4625-crore-seized-in-assam-mizoram-five-arrested",
-        "https://www.independent.co.uk/asia/india/manipur-ethnic-violence-kuki-naga-b3077062.html"
-      ],
-      "domains": [
-        "ksevradio.com",
-        "organiser.org",
-        "rediff.com",
-        "morungexpress.com",
-        "independent.co.uk",
-        "pakistantoday.com.pk"
-      ],
-      "publishers": [
-        "Ksevradio",
-        "Organiser",
-        "Rediff",
-        "Morungexpress",
-        "Independent"
-      ],
-      "lastSeen": "20261101171500",
       "isLocal": false
     },
     {
@@ -3612,6 +3684,49 @@
       ],
       "lastSeen": "20261101064500",
       "isLocal": true
+    },
+    {
+      "id": "2026_11_01_23_0_72_6",
+      "date": "2026-11-01",
+      "lat": 23.0333,
+      "lng": 72.6167,
+      "geoType": 4,
+      "place": "Ahmedabad, Gujarat",
+      "articles": 112,
+      "outlets": 6,
+      "type": "111",
+      "movement": "economy",
+      "category": "economy",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "social"
+      ],
+      "title": "Investing Abroad Via Mfs Cap The Investor Not The Industry",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiekFVX3lxTE11SDJ4NHJ6aUR3c0tib25BMDN1SjdUa29UaFRtbXJ6bjRkRGxYbEVqTUNfVjdtOWhFaHBjQnRIREp2bktPREFtUzZHT1BIT3RPcEx4bG1kN0xOT1gwVlFBWVNxZjhwb1lud3Y2UGlMbWR5S0VQMHRjWEFR?oc=5",
+        "https://www.livemint.com/money/personal-finance/investing-abroad-via-mfs-cap-the-investor-not-the-industry-11793354134899.html",
+        "https://timesofindia.indiatimes.com/life-style/people/no-paintbrush-just-nails-and-white-cotton-thread-ahmedabad-artist-recreates-rani-ki-vav-on-a-56-by-38-inch-black-panel-and-earns-india-book-of-records-recognition/articleshow/135416552.cms",
+        "https://timesofindia.indiatimes.com/city/ahmedabad/when-home-trumps-the-american-dream/articleshow/135417637.cms",
+        "https://timesofindia.indiatimes.com/speaking-tree/conscious-circle/mukesh-for-whom-the-bells-chime/articleshow/135420806.cms"
+      ],
+      "domains": [
+        "livemint.com",
+        "timesofindia.indiatimes.com",
+        "business-standard.com",
+        "freepressjournal.in",
+        "Social Wire",
+        "rediff.com"
+      ],
+      "publishers": [
+        "Livemint",
+        "Times of India",
+        "Business Standard",
+        "Free Press Journal",
+        "Social wire"
+      ],
+      "lastSeen": "20261101191500",
+      "isLocal": false
     },
     {
       "id": "2026_11_01_26_2_91_7",
@@ -3794,58 +3909,15 @@
       "isLocal": false
     },
     {
-      "id": "2026_11_01_23_0_72_6",
-      "date": "2026-11-01",
-      "lat": 23.0333,
-      "lng": 72.6167,
-      "geoType": 4,
-      "place": "Ahmedabad, Gujarat",
-      "articles": 102,
-      "outlets": 6,
-      "type": "111",
-      "movement": "economy",
-      "category": "economy",
-      "platform": "web",
-      "platforms": [
-        "web",
-        "social"
-      ],
-      "title": "Investing Abroad Via Mfs Cap The Investor Not The Industry",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiekFVX3lxTE11SDJ4NHJ6aUR3c0tib25BMDN1SjdUa29UaFRtbXJ6bjRkRGxYbEVqTUNfVjdtOWhFaHBjQnRIREp2bktPREFtUzZHT1BIT3RPcEx4bG1kN0xOT1gwVlFBWVNxZjhwb1lud3Y2UGlMbWR5S0VQMHRjWEFR?oc=5",
-        "https://www.livemint.com/money/personal-finance/investing-abroad-via-mfs-cap-the-investor-not-the-industry-11793354134899.html",
-        "https://timesofindia.indiatimes.com/life-style/people/no-paintbrush-just-nails-and-white-cotton-thread-ahmedabad-artist-recreates-rani-ki-vav-on-a-56-by-38-inch-black-panel-and-earns-india-book-of-records-recognition/articleshow/135416552.cms",
-        "https://timesofindia.indiatimes.com/city/ahmedabad/when-home-trumps-the-american-dream/articleshow/135417637.cms",
-        "https://timesofindia.indiatimes.com/speaking-tree/conscious-circle/mukesh-for-whom-the-bells-chime/articleshow/135420806.cms"
-      ],
-      "domains": [
-        "livemint.com",
-        "timesofindia.indiatimes.com",
-        "business-standard.com",
-        "freepressjournal.in",
-        "Social Wire",
-        "rediff.com"
-      ],
-      "publishers": [
-        "Livemint",
-        "Times of India",
-        "Business Standard",
-        "Free Press Journal",
-        "Social wire"
-      ],
-      "lastSeen": "20261101184500",
-      "isLocal": false
-    },
-    {
       "id": "2026_11_01_26_0_94_3",
       "date": "2026-11-01",
       "lat": 26,
       "lng": 94.25,
       "geoType": 5,
       "place": "Nagaland, Nagaland",
-      "articles": 93,
-      "outlets": 3,
-      "type": "040",
+      "articles": 105,
+      "outlets": 4,
+      "type": "020",
       "movement": "politics",
       "category": "politics",
       "platform": "web",
@@ -3863,14 +3935,16 @@
       "domains": [
         "calcuttanews.net",
         "organiser.org",
-        "morungexpress.com"
+        "morungexpress.com",
+        "thesangaiexpress.com"
       ],
       "publishers": [
         "Calcuttanews",
         "Organiser",
-        "Morungexpress"
+        "Morungexpress",
+        "Thesangaiexpress"
       ],
-      "lastSeen": "20261101161500",
+      "lastSeen": "20261101191500",
       "isLocal": false
     },
     {
