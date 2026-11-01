@@ -757,7 +757,9 @@ async function fetchMultiPlatformStreams(clusters) {
     { url: "https://news.google.com/rss?hl=mr&gl=IN&ceid=IN:mr", platform: "web" }
   ];
 
-  const today = new Date().toISOString().slice(0, 10);
+  // Current date in Indian Standard Time (IST = UTC+5:30)
+  const istNow = new Date(Date.now() + 5.5 * 3600 * 1000);
+  const today = istNow.toISOString().slice(0, 10);
   console.log(`Ingesting ${feeds.length} live multi-platform streams (Climate, Tamil 24/7, YouTube, X, Social, Regional)...`);
 
   for (const { url, platform } of feeds) {

@@ -941,9 +941,12 @@
       };
     }
 
+    let latestLiveDate = "";
     function setLive(j) {
       liveMeta = j;
-      live = (j?.clusters || []).filter(c => Number.isFinite(c.lat) && Number.isFinite(c.lng)).map(liveToEvent);
+      const clusters = j?.clusters || [];
+      latestLiveDate = clusters.reduce((max, c) => (c.date > max ? c.date : max), "");
+      live = clusters.filter(c => Number.isFinite(c.lat) && Number.isFinite(c.lng)).map(liveToEvent);
     }
 
     async function loadJSON(u, bust) {
@@ -975,7 +978,9 @@
     /* ---------- Filtering ---------- */
     function inRange(e) {
       if (range === "1") {
-        return !e.ongoing && (e.date === todayISO() || ageDays(e.date) <= 1);
+        if (e.ongoing) return false;
+        const a = ageDays(e.date);
+        return a <= 1.5 || e.date === todayISO() || (latestLiveDate && e.date >= latestLiveDate);
       }
       if (e.ongoing) return true;
       if (range === "all") return e.date >= "2026-01-01";

@@ -21,10 +21,10 @@ const curated = await readJSON("data/curated.json", { events: [] });
 const live = await readJSON("data/live.json", { generatedAt: null, clusters: [] });
 const now = new Date().toISOString();
 
-const today = now.slice(0, 10);
 const allClean = live.clusters.filter((c) => c.title && !/^cbmi/i.test(c.title));
-const todayItems = allClean.filter((c) => c.date === today);
-const otherItems = allClean.filter((c) => c.date !== today);
+const latestDate = live.clusters.reduce((max, c) => (c.date > max ? c.date : max), "");
+const todayItems = allClean.filter((c) => c.date >= latestDate);
+const otherItems = allClean.filter((c) => c.date < latestDate);
 const items = (todayItems.length > 0 ? todayItems.concat(otherItems) : otherItems).slice(0, 150).map((c) => {
   const pub = c.publishers?.[0] || (c.urls[0] ? new URL(c.urls[0]).hostname.replace(/^www\./, "") : "Regional wire");
   const isYt = c.platforms?.includes("youtube") || c.platform === "youtube";
