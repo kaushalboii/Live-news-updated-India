@@ -59,10 +59,11 @@ jobs:
       - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
+        continue-on-error: true
 
       - name: Build production site
         env:
-          SITE_URL: ${{ vars.SITE_URL || format('{0}/', steps.pages.outputs.base_url) }}
+          SITE_URL: ${{ vars.SITE_URL || steps.pages.outputs.base_url || 'https://kaushalboii.github.io/Live-news-updated-India/' }}
         run: node scripts/build-site.mjs
 
       - name: Upload GitHub Pages artifact
