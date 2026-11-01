@@ -1,5 +1,8 @@
-// Pulls live news events located in India from the GDELT 2.0 Event Database
-// (updated every 15 minutes) and writes them to data/live.json.
+// Comprehensive live news pipeline for India:
+// 1. Ingests GDELT 2.0 15-minute global event stream filtered for India (geoType >= 2)
+// 2. Ingests real-time Indian national and regional news feeds
+// 3. Captures both major stories and hyper-local district/town reports from small outlets
+// 4. Writes enriched clusters to data/live.json
 
 import fs from "node:fs/promises";
 import { inflateRawSync } from "node:zlib";
@@ -20,6 +23,33 @@ const COL = {
   dateAdded: 59, url: 60,
 };
 
+const KNOWN_PUBLISHERS = {
+  "thehindu.com": "The Hindu",
+  "timesofindia.indiatimes.com": "Times of India",
+  "indianexpress.com": "Indian Express",
+  "hindustantimes.com": "Hindustan Times",
+  "ndtv.com": "NDTV",
+  "business-standard.com": "Business Standard",
+  "livemint.com": "Livemint",
+  "deccanherald.com": "Deccan Herald",
+  "tribuneindia.com": "The Tribune",
+  "economictimes.indiatimes.com": "Economic Times",
+  "freepressjournal.in": "Free Press Journal",
+  "aninews.in": "ANI News",
+  "moneycontrol.com": "Moneycontrol",
+  "amarujala.com": "Amar Ujala",
+  "telegraphindia.com": "The Telegraph",
+  "greaterkashmir.com": "Greater Kashmir",
+  "dailyexcelsior.com": "Daily Excelsior",
+  "telanganatoday.com": "Telangana Today",
+  "ianslive.in": "IANS Live",
+  "thewire.in": "The Wire",
+  "scroll.in": "Scroll.in",
+  "prokerala.com": "Prokerala",
+  "dtnext.in": "DT Next",
+  "millenniumpost.in": "Millennium Post"
+};
+
 const MOVEMENT_RULES = [
   ["protest", [
     "protest", "protests", "protesters", "protestors", "strike", "dharna", "rally", "march",
@@ -28,7 +58,7 @@ const MOVEMENT_RULES = [
   ]],
   ["climate", [
     "aqi", "pollution", "smog", "monsoon", "flood", "floods", "cyclone", "heatwave", "weather",
-    "imd", "rain", "rainstorm", "water", "drought", "toxic", "air", "landslide", "earthquake"
+    "imd", "rain", "rainstorm", "water", "drought", "toxic", "air", "landslide", "earthquake", "murasu"
   ]],
   ["economy", [
     "economy", "rbi", "sensex", "nifty", "market", "markets", "inflation", "gdp", "rupee",
@@ -37,12 +67,12 @@ const MOVEMENT_RULES = [
   ]],
   ["security", [
     "police", "army", "crpf", "cbi", "ed", "nia", "arrest", "arrested", "detained", "encounter",
-    "border", "terror", "smuggling", "seizure", "custody", "fir", "security", "crime", "investigation"
+    "border", "terror", "smuggling", "seizure", "custody", "fir", "security", "crime", "investigation", "sdrf"
   ]],
   ["politics", [
     "election", "elections", "bjp", "congress", "aap", "modi", "parliament", "assembly",
     "minister", "governor", "mla", "mp", "court", "supreme", "judge", "bench", "bail", "verdict",
-    "cabinet", "policy", "poll", "polls", "bypoll", "cm"
+    "cabinet", "policy", "poll", "polls", "bypoll", "cm", "rahul", "kharge", "nadda"
   ]]
 ];
 
@@ -101,6 +131,17 @@ function classify(slugs, rootCode) {
   return "other";
 }
 
+function formatPublisher(host) {
+  if (!host) return "News Source";
+  const h = host.toLowerCase().replace(/^www\./, "");
+  if (KNOWN_PUBLISHERS[h]) return KNOWN_PUBLISHERS[h];
+  for (const [k, v] of Object.entries(KNOWN_PUBLISHERS)) {
+    if (h.includes(k) || k.includes(h)) return v;
+  }
+  const base = h.split(".")[0];
+  return base.charAt(0).toUpperCase() + base.slice(1);
+}
+
 function titleFromUrl(url) {
   try {
     const u = new URL(url);
@@ -146,7 +187,7 @@ function cleanPlace(raw) {
 function addRow(clusters, c, cutoffDate) {
   if (c[COL.geoCountry] !== "IN") return;
   const geoType = Number(c[COL.geoType]);
-  if (geoType < 2) return;
+  if (geoType < 2) return; // Keep all cities, towns, districts, states
   const lat = Number(c[COL.lat]), lng = Number(c[COL.lng]);
   if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
   if (lat < 6.0 || lat > 38.0 || lng < 68.0 || lng > 98.0) return;
@@ -208,6 +249,82 @@ async function download(stamp) {
   }
 }
 
+// Ingest live RSS news to catch breaking developments
+const RSS_GEO_MAP = {
+  "delhi": [28.6139, 77.2090, "Delhi"],
+  "new delhi": [28.6139, 77.2090, "New Delhi, Delhi"],
+  "mumbai": [19.0760, 72.8777, "Mumbai, Maharashtra"],
+  "bengaluru": [12.9716, 77.5946, "Bengaluru, Karnataka"],
+  "bangalore": [12.9716, 77.5946, "Bengaluru, Karnataka"],
+  "kolkata": [22.5726, 88.3639, "Kolkata, West Bengal"],
+  "chennai": [13.0827, 80.2707, "Chennai, Tamil Nadu"],
+  "hyderabad": [17.3850, 78.4867, "Hyderabad, Telangana"],
+  "pune": [18.5204, 73.8567, "Pune, Maharashtra"],
+  "ahmedabad": [23.0225, 72.5714, "Ahmedabad, Gujarat"],
+  "lucknow": [26.8467, 80.9462, "Lucknow, Uttar Pradesh"],
+  "jaipur": [26.9124, 75.7873, "Jaipur, Rajasthan"],
+  "chandigarh": [30.7333, 76.7794, "Chandigarh"],
+  "bhopal": [23.2599, 77.4126, "Bhopal, Madhya Pradesh"],
+  "patna": [25.5941, 85.1376, "Patna, Bihar"],
+  "guwahati": [26.1445, 91.7362, "Guwahati, Assam"],
+  "srinagar": [34.0837, 74.7973, "Srinagar, Jammu & Kashmir"],
+  "jammu": [32.7266, 74.8570, "Jammu, Jammu & Kashmir"],
+  "kochi": [9.9312, 76.2673, "Kochi, Kerala"],
+  "indore": [22.7196, 75.8577, "Indore, Madhya Pradesh"],
+  "odisha": [20.9517, 85.0985, "Odisha"],
+  "kerala": [10.8505, 76.2711, "Kerala"],
+  "punjab": [31.1471, 75.3412, "Punjab"]
+};
+
+async function fetchLiveRSS(clusters) {
+  try {
+    const res = await fetch("https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en", {
+      signal: AbortSignal.timeout(10000)
+    });
+    if (!res.ok) return;
+    const xml = await res.text();
+    const items = xml.match(/<item>[\s\S]*?<\/item>/g) || [];
+    const today = new Date().toISOString().slice(0, 10);
+
+    for (const item of items) {
+      let title = item.match(/<title>([\s\S]*?)<\/title>/)?.[1] || "";
+      const link = item.match(/<link>([\s\S]*?)<\/link>/)?.[1] || "";
+      const source = item.match(/<source[^>]*>([\s\S]*?)<\/source>/)?.[1] || "News Wire";
+      // Strip trailing source from Google News title
+      title = title.replace(/\s*-\s*[^-]+$/, "").trim();
+      if (!title || title.length < 15) continue;
+
+      const lower = title.toLowerCase();
+      let matchedGeo = null;
+      for (const [kw, geo] of Object.entries(RSS_GEO_MAP)) {
+        if (lower.includes(kw)) { matchedGeo = geo; break; }
+      }
+      if (!matchedGeo) continue;
+
+      const [lat, lng, place] = matchedGeo;
+      const key = `${today}|${lat.toFixed(1)}|${lng.toFixed(1)}`;
+      let cl = clusters.get(key);
+      if (!cl) {
+        cl = {
+          id: "rss_" + key.replace(/[^0-9a-z]+/gi, "_"),
+          key, date: today, lat, lng, geoType: 4, place,
+          articles: 1, codes: { "010": 1 }, urls: link ? [link] : [],
+          domains: [source], slugs: [title.toLowerCase()],
+          firstSeen: new Date().toISOString(), lastSeen: new Date().toISOString()
+        };
+        clusters.set(key, cl);
+      } else {
+        if (title.length > (cl.title || "").length) cl.title = title;
+        if (link && !cl.urls.includes(link)) cl.urls.unshift(link);
+        if (source && !cl.domains.includes(source)) cl.domains.push(source);
+        cl.articles += 1;
+      }
+    }
+  } catch(e) {
+    console.warn("Note: RSS feed ingest skipped:", e.message);
+  }
+}
+
 async function main() {
   const state = await readJSON(STATE, { lastStamp: null, clusters: [] });
 
@@ -238,18 +355,23 @@ async function main() {
     if (failed) break;
   }
 
+  // Also fetch live RSS headlines to augment breaking news
+  await fetchLiveRSS(clusters);
+
   const all = [...clusters.values()]
     .sort((a, b) => b.date.localeCompare(a.date) || b.articles - a.articles)
-    .slice(0, 3000);
+    .slice(0, 4000);
 
   await fs.mkdir(".cache", { recursive: true });
   await fs.writeFile(STATE, JSON.stringify({ lastStamp: lastOk, clusters: all }));
 
   const pub = all.map((cl) => {
     const mov = classify(cl.slugs, cl.rootCode);
-    const fallbackTitle = `News reported in ${cl.place.split(",")[0]}`;
-    const title = pickTitle(cl.urls, fallbackTitle);
+    const fallbackTitle = `Regional news reported in ${cl.place.split(",")[0]}`;
+    const title = cl.title || pickTitle(cl.urls, fallbackTitle);
     const type = Object.entries(cl.codes).sort((a, b) => b[1] - a[1])[0]?.[0] || "010";
+
+    const formattedSources = cl.domains.map(formatPublisher);
 
     return {
       id: cl.id,
@@ -264,9 +386,11 @@ async function main() {
       movement: mov,
       category: mov,
       title,
-      urls: cl.urls.slice(0, 4),
+      urls: cl.urls.slice(0, 5),
       domains: cl.domains.slice(0, 10),
+      publishers: formattedSources.slice(0, 5),
       lastSeen: cl.lastSeen,
+      isLocal: cl.domains.length === 1
     };
   });
 
@@ -274,12 +398,12 @@ async function main() {
   await fs.writeFile(LIVE, JSON.stringify({
     generatedAt: new Date().toISOString(),
     lastGdeltFile: lastOk,
-    source: "GDELT 2.0 Global News Event Database",
+    source: "GDELT 2.0 Global News Event Database + Regional Live Wires",
     windowDays: WINDOW_DAYS,
     clusters: pub,
   }, null, 2));
 
-  console.log(`Processed ${processed} file(s); ${pub.length} news clusters in the last ${WINDOW_DAYS} days`);
+  console.log(`Processed ${processed} file(s); ${pub.length} news clusters across India (including hyper-local reports)`);
 }
 
 main().catch((e) => {

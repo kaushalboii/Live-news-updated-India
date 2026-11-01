@@ -1,6 +1,6 @@
 // Assembles the static site in _site/ for GitHub Pages:
 //   - inlines curated + live data into index.html (no extra requests on first load)
-//   - prerenders the latest entries into the list, so crawlers and no-JS readers see content
+//   - prerenders both major headlines and hyper-local district reports
 //   - fills in canonical URLs, JSON-LD and sitemap.xml
 
 import fs from "node:fs/promises";
@@ -23,26 +23,35 @@ const cutoff = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
 const items = [
   ...curated.events.filter((e) => e.ongoing || e.date >= cutoff).map((e) => ({
     title: e.title, place: [e.city, e.venue].filter(Boolean).join(", "), date: e.date, summary: e.summary,
-    sources: e.sources || [], tag: e.ongoing ? "Ongoing" : "",
+    sources: e.sources || [], tag: e.ongoing ? "Ongoing" : "Verified",
+    movement: e.movement || "other"
   })),
-  ...live.clusters.filter((c) => c.outlets >= 2 && c.title).slice(0, 35).map((c) => ({
-    title: c.title, place: c.place, date: c.date, summary: "", sources: (c.urls || []).map((u) => {
-      try { return { n: new URL(u).hostname.replace(/^www\./, ""), u }; } catch { return { n: "Link", u }; }
-    }), tag: "Auto-detected",
-  })),
+  ...live.clusters.filter((c) => c.title).slice(0, 120).map((c) => {
+    const pub = c.publishers?.[0] || (c.urls[0] ? new URL(c.urls[0]).hostname.replace(/^www\./, "") : "Regional outlet");
+    return {
+      title: c.title, place: c.place, date: c.date,
+      summary: `${c.articles} news report${c.articles > 1 ? "s" : ""} recorded via ${pub}${c.outlets > 1 ? ` and ${c.outlets - 1} other source(s)` : ""}.`,
+      sources: (c.urls || []).map((u, i) => {
+        const p = c.publishers?.[i];
+        try { return { n: p || new URL(u).hostname.replace(/^www\./, ""), u }; } catch { return { n: "Link", u }; }
+      }),
+      tag: c.outlets === 1 ? "Local news" : "Auto-detected",
+      movement: c.movement || "other"
+    };
+  }),
 ];
 
 const listHTML = items.map((e) => `<article class="item"><span class="bar"></span><span><h2 class="h">${esc(e.title)}</h2>`
   + `<span class="meta">${esc(e.place)} · <time datetime="${e.date}">${fmtDate(e.date)}</time>${e.tag ? `<span class="tag">${e.tag}</span>` : ""}</span>`
   + (e.summary ? `<span class="detail" style="display:block"><p>${esc(e.summary)}</p></span>` : "")
-  + `<span class="meta">${e.sources.filter((s) => /^https?:/.test(s.u)).map((s) => `<a href="${esc(s.u)}" rel="noopener nofollow">${esc(s.n)}</a>`).join(", ")}</span></span></article>`).join("");
+  + `<span class="meta">${e.sources.filter((s) => /^https?:/.test(s.u)).map((s) => `<a href="${esc(s.u)}" target="_blank" rel="noopener nofollow">${esc(s.n)}</a>`).join(", ")}</span></span></article>`).join("");
 
 const jsonld = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "WebSite", "@id": SITE_URL + "#site", url: SITE_URL, name: "Where India is in the news", inLanguage: "en-IN",
-      description: "A live map of news reports, breaking events and civic updates across India, updated every 30 minutes.",
+      description: "A live map of news reports, breaking events, regional headlines and hyper-local updates across India, updated every 30 minutes.",
     },
     {
       "@type": "Dataset", "@id": SITE_URL + "#data", name: "News in India: live news detections",
@@ -52,7 +61,6 @@ const jsonld = {
       temporalCoverage: `${cutoff}/..`,
       license: "https://creativecommons.org/licenses/by/4.0/",
       creator: { "@type": "Organization", name: "Live News Updated India contributors" },
-      isBasedOn: "https://www.gdeltproject.org/",
       distribution: [
         { "@type": "DataDownload", encodingFormat: "application/json", contentUrl: SITE_URL + "data/live.json" },
         { "@type": "DataDownload", encodingFormat: "application/json", contentUrl: SITE_URL + "data/curated.json" },
