@@ -313,11 +313,20 @@ function liveToEvent(c){
   const pubList = (c.publishers||[]).length ? c.publishers : (c.domains||[]).map(hostOf);
   const sources = (c.urls||[]).filter(safeUrl).map((u, i) => ({ n: pubList[i] || hostOf(u), u }));
 
+  let title = c.title || "";
+  if (/^cbmi/i.test(title) || (!title.includes(" ") && title.length > 25)) {
+    title = "";
+  }
+  if (!title) {
+    const movLabel = MOVEMENTS[mov]?.label || "Live news";
+    title = `${movLabel} update in ${(c.place||"India").split(",")[0]}`;
+  }
+
   return {
     id: "g-"+c.id, live: true, weak: nOut < 2,
     movement: MOVEMENTS[mov] ? mov : "other",
     date: c.date, city: c.place || "India", venue: "", lat: c.lat, lng: c.lng,
-    title: c.title || `${type} reported in ${(c.place||"India").split(",")[0]}`,
+    title,
     summary: nOut === 1
       ? `Reported via ${pubList[0] || 'local outlet'} (${c.articles} report${c.articles==1?'':'s'}).`
       : `${type}. Covered across ${c.articles} report${c.articles==1?"":"s"} from ${nOut} news outlets including ${pubList.slice(0,3).join(", ")}.`,
