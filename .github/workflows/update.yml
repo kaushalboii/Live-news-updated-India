@@ -26,6 +26,9 @@ jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -55,7 +58,6 @@ jobs:
       - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
-        continue-on-error: true
 
       - name: Build site
         env:
@@ -64,17 +66,16 @@ jobs:
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
-        continue-on-error: true
         with:
           path: _site
 
       - name: Deploy to GitHub Pages (Actions mode)
         id: deploy
         uses: actions/deploy-pages@v4
-        continue-on-error: true
 
       - name: Deploy to gh-pages branch (Branch mode)
         uses: peaceiris/actions-gh-pages@v4
+        continue-on-error: true
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
