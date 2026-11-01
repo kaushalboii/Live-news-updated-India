@@ -68,9 +68,21 @@ const items = (todayItems.length > 0 ? todayItems.concat(otherItems) : otherItem
 
   const pub = pubList[0] || (urls[0] ? new URL(urls[0]).hostname.replace(/^www\./, "") : "Regional wire");
 
+  const isTamilSource = (c.place || "").includes("Tamil Nadu") ||
+    (c.publishers || []).some((p) => /dinamalar|dinamani|thanthi|tamil|polimer|puthiya|vikatan|sun news/i.test(p)) ||
+    (c.domains || []).some((d) => /dinamalar|dinamani|thanthi|tamil|polimer|puthiya|vikatan|sun news/i.test(d));
+
+  let title = c.title || "";
+  if (/^cbmi/i.test(title) || (!title.includes(" ") && title.length > 25)) title = "";
+  if (/[\u0900-\u097F\u0C00-\u0C7F\u0980-\u09FF\u0A80-\u0AFF]/.test(title)) title = "";
+  if (/[\u0B80-\u0BFF]/.test(title) && !isTamilSource) title = "";
+  if (!title) {
+    title = `Live news update in ${(c.place || "India").split(",")[0]}`;
+  }
+
   return {
     id: c.id,
-    title: c.title,
+    title,
     place: c.place,
     date: c.date,
     summary: nOut === 1

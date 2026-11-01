@@ -122,13 +122,156 @@
       accent-color: var(--focus);
     }
 
+    /* Top Header Bar */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 52px;
+      padding: 0 20px;
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      flex-shrink: 0;
+      z-index: 50;
+      gap: 16px;
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .radar-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      border-radius: 999px;
+      padding: 3px 9px 3px 7px;
+      font-size: .72rem;
+      font-weight: 800;
+      color: #4ade80;
+      letter-spacing: .06em;
+    }
+
+    .live-pulse {
+      width: 7px;
+      height: 7px;
+      background: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #22c55e;
+      animation: liveBlink 1.8s infinite;
+    }
+
+    @keyframes liveBlink {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .4; transform: scale(.75); }
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--display);
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin: 0;
+      line-height: 1.1;
+      color: var(--ink);
+    }
+
+    .brand-sub {
+      font-size: .68rem;
+      color: var(--muted);
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .topbar-center {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+      max-width: 680px;
+    }
+
+    .ticker-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 14px 4px 6px;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .ticker-label {
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      font-size: .65rem;
+      font-weight: 800;
+      padding: 1px 7px;
+      border-radius: 999px;
+      letter-spacing: .05em;
+      flex-shrink: 0;
+    }
+
+    .ticker-text {
+      font-size: .8rem;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 500;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .clock-chip {
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--muted);
+      background: var(--chip);
+      border: 1px solid var(--line);
+      padding: 4px 9px;
+      border-radius: 6px;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
     .app {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 420px;
+      height: calc(100% - 52px);
+      overflow: hidden;
+    }
+
+    .map-container {
+      display: flex;
+      flex-direction: column;
       height: 100%;
+      min-height: 0;
+      position: relative;
     }
 
     .mapwrap {
+      flex: 1;
       position: relative;
       overflow: hidden;
       background: var(--sea);
@@ -158,33 +301,6 @@
 
     .state:hover {
       fill: var(--land-hover);
-    }
-
-    .title {
-      position: absolute;
-      left: 28px;
-      top: 24px;
-      max-width: min(440px, calc(100% - 56px));
-      pointer-events: none;
-      z-index: 10;
-    }
-
-    .title h1 {
-      font-family: var(--display);
-      font-weight: 800;
-      font-size: clamp(2rem, 3.8vw, 3.2rem);
-      line-height: .98;
-      letter-spacing: -.02em;
-      margin: 0;
-      color: var(--ink);
-    }
-
-    .title p {
-      margin: .6rem 0 0;
-      color: var(--muted);
-      font-size: .92rem;
-      line-height: 1.45;
-      max-width: 36ch;
     }
 
     .zoom {
@@ -220,49 +336,63 @@
       color: var(--focus);
     }
 
-    .legend {
-      position: absolute;
-      left: 28px;
-      bottom: 18px;
+    /* Horizontal Topic Filter Bar (Cleanly Outside Map) */
+    .topic-bar {
       display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      max-width: calc(100% - 100px);
-      z-index: 10;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 20px;
+      background: var(--panel);
+      border-top: 1px solid var(--line);
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      flex-shrink: 0;
     }
 
-    .legend button {
+    .topic-bar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .topic-bar button {
       display: inline-flex;
       align-items: center;
       gap: 7px;
       border: 1px solid var(--line);
-      background: var(--panel);
+      background: var(--chip);
       border-radius: 999px;
       padding: 5px 12px 5px 9px;
       cursor: pointer;
-      font-size: .82rem;
+      font-size: .8rem;
       font-weight: 600;
       color: var(--muted);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+      white-space: nowrap;
+      flex-shrink: 0;
       transition: all .15s ease;
     }
 
-    .legend button:hover {
+    .topic-bar button:hover {
       border-color: var(--focus);
       color: var(--ink);
     }
 
-    .legend button[aria-pressed="true"] {
+    .topic-bar button[aria-pressed="true"] {
       border-color: var(--focus);
       color: var(--ink);
-      background: var(--chip);
+      background: var(--chip-hover);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     }
 
-    .legend button[aria-pressed="false"] {
+    .topic-bar button[aria-pressed="false"] {
       opacity: .4;
     }
 
-    .legend .dot {
+    .topic-bar .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
       width: 9px;
       height: 9px;
       border-radius: 50%;
@@ -776,11 +906,51 @@
     }
 
     @media (max-width:860px) {
+      .topbar {
+        height: 46px;
+        padding: 0 12px;
+        gap: 8px;
+      }
+
+      .topbar-center {
+        display: none;
+      }
+
+      .brand-title {
+        font-size: .92rem;
+      }
+
+      .brand-sub {
+        display: none;
+      }
+
+      .clock-chip {
+        display: none;
+      }
+
       .app {
         grid-template-columns: 1fr;
-        grid-template-rows: 52vh auto;
+        grid-template-rows: auto auto 1fr;
         height: auto;
-        min-height: 100%;
+        min-height: calc(100% - 46px);
+        overflow: visible;
+      }
+
+      .map-container {
+        height: auto;
+      }
+
+      .mapwrap {
+        height: 48vh;
+        min-height: 300px;
+        flex: none;
+      }
+
+      .topic-bar {
+        padding: 8px 12px;
+        position: sticky;
+        top: 0;
+        z-index: 20;
       }
 
       aside {
@@ -792,11 +962,37 @@
 </head>
 
 <body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="radar-badge">
+        <span class="live-pulse"></span>
+        <span class="radar-label">LIVE</span>
+      </div>
+      <div class="brand">
+        <h1 class="brand-title">INDIA NEWS RADAR</h1>
+        <span class="brand-sub">Real-Time Geotagged Intelligence</span>
+      </div>
+    </div>
+
+    <div class="topbar-center" id="topbarTicker">
+      <div class="ticker-pill">
+        <span class="ticker-label">LATEST</span>
+        <span class="ticker-text" id="tickerText">Connecting live intelligence stream across India…</span>
+      </div>
+    </div>
+
+    <div class="topbar-right">
+      <span class="clock-chip" id="clockDisplay">01:30 IST</span>
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">☀️ Light</button>
+    </div>
+  </header>
+
   <div class="app">
-    <div class="mapwrap">
-      <svg id="map" role="img" aria-label="Map of India with news event locations" viewBox="-30 -90 1060 1284"
-        preserveAspectRatio="xMidYMid meet">
-        <g id="states"><!--MAP-->
+    <div class="map-container">
+      <div class="mapwrap">
+        <svg id="map" role="img" aria-label="Map of India with news event locations" viewBox="-30 -90 1060 1284"
+          preserveAspectRatio="xMidYMid meet">
+          <g id="states"><!--MAP-->
           <path class="state" data-name="Arunachal Pradesh"
             d="M926.2,419L924.5,412.1L924.8,405.6L933.7,401.8L934.1,399.1L951.1,394.9L951.5,390.3L945.3,383.7L945,377.9L951.5,369.8L939.2,370.2L935.8,372.9L928.9,373.3L913.2,378.7L901.3,384.5L896.5,384.9L890.7,387.9L877.7,401L878.7,404.1L872.6,407.9L860.9,408.3L850.7,410.2L846.3,406.8L838.7,405.6L835.7,408.3L819.6,411L816.9,403.7L818.2,396L816.5,388.3L804.2,388.3L800.8,384.5L804.6,373.7L810,375.6L811.8,379.1L825.1,373.7L826.4,376.8L835,375.2L841.1,368.6L839.4,363.2L846.6,360.5L851,356.6L856.9,355.9L861.6,343.4L882.8,341.1L884.2,335.6L889.6,331.3L891.7,326.3L898.9,320.4L903.3,320.4L906,315.7L911.5,321.2L918.3,323.9L926.9,325.1L932.4,328.2L938.5,320.8L948.4,314.1L955.2,311.4L960.7,320.4L957.6,327.4L961.1,331.7L964.5,328.2L970.3,330.6L972.3,340.3L961.4,352.4L965.2,353.1L975.1,350.4L986.3,356.2L989.8,354.3L996.2,357.8L1000,367.1L987.4,378.3L982.9,383.3L985.3,391.4L992.1,401.4L988.7,402.9L979.8,393.3L973.4,392.6L970.3,395.6L963.1,395.6L953.2,399.9L950.8,404.9L945.7,406L942.9,411.4L936.8,412.9L933,418.3L926.2,419Z">
             <title>Arunachal Pradesh</title>
@@ -945,18 +1141,14 @@
         </g>
         <g id="marks"></g>
       </svg>
-      <div class="title">
-        <h1>Where India is<br>in the news</h1>
-        <p>News reported across India, pinned to where they happened and refreshed every 30 minutes. Every entry links
-          to its source.</p>
+        <div class="zoom">
+          <button id="zin" aria-label="Zoom in">+</button>
+          <button id="zout" aria-label="Zoom out">−</button>
+          <button id="zreset" aria-label="Reset view" style="font-size:.9rem">⟲</button>
+        </div>
+        <div class="tip" id="tip"></div>
       </div>
-      <div class="legend" id="legend" aria-label="Filter by topic"></div>
-      <div class="zoom">
-        <button id="zin" aria-label="Zoom in">+</button>
-        <button id="zout" aria-label="Zoom out">−</button>
-        <button id="zreset" aria-label="Reset view" style="font-size:.9rem">⟲</button>
-      </div>
-      <div class="tip" id="tip"></div>
+      <div class="topic-bar" id="legend" aria-label="Filter by topic"></div>
     </div>
     <aside>
       <div class="ctrl">
@@ -982,7 +1174,6 @@
 
         <div class="status-row">
           <p class="status" id="status"><span class="live-dot"></span><span>Loading live data…</span></p>
-          <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">☀️ Light</button>
         </div>
         <p class="count" id="count"><!--COUNT--></p>
         <a class="suggest" id="suggest" hidden target="_blank" rel="noopener">Suggest a news story we've missed</a>
@@ -1112,6 +1303,17 @@
 
       let title = c.title || "";
       if (/^cbmi/i.test(title) || (!title.includes(" ") && title.length > 25)) {
+        title = "";
+      }
+      // "only if in tamil show tamil and if from anyother source where i got that exact same only i need ot. get here"
+      const isTamilSource = (c.place || "").includes("Tamil Nadu") ||
+        (c.publishers || []).some(p => /dinamalar|dinamani|thanthi|tamil|polimer|puthiya|vikatan|sun news/i.test(p)) ||
+        (c.domains || []).some(d => /dinamalar|dinamani|thanthi|tamil|polimer|puthiya|vikatan|sun news/i.test(d));
+
+      if (/[\u0900-\u097F\u0C00-\u0C7F\u0980-\u09FF\u0A80-\u0AFF]/.test(title)) {
+        title = "";
+      }
+      if (/[\u0B80-\u0BFF]/.test(title) && !isTamilSource) {
         title = "";
       }
       if (!title) {
@@ -1253,10 +1455,11 @@
     function makeMarker() {
       const m = document.createElementNS(NS, "g");
       m.setAttribute("tabindex", 0); m.setAttribute("role", "button");
+      const hit = document.createElementNS(NS, "circle"); hit.setAttribute("r", 18); hit.setAttribute("fill", "transparent"); hit.style.cursor = "pointer";
       const pulse = document.createElementNS(NS, "circle"); pulse.setAttribute("class", "pulse"); pulse.setAttribute("r", 6);
       const core = document.createElementNS(NS, "circle"); core.setAttribute("class", "core");
       const label = document.createElementNS(NS, "text"); label.setAttribute("class", "n"); label.setAttribute("dy", ".35em");
-      m.append(pulse, core, label);
+      m.append(hit, pulse, core, label);
       m.addEventListener("click", e => { e.stopPropagation(); if (!dragMoved) openGroup(m.__g.key); });
       m.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openGroup(m.__g.key); } });
       m.addEventListener("pointerenter", e => { if (e.pointerType !== "mouse") return; tip.textContent = groupLabel(m.__g); tip.style.display = "block"; });
@@ -1271,6 +1474,26 @@
     }
 
     const markerEls = new Map();
+
+    function updateTicker(ev) {
+      const el = document.getElementById("tickerText");
+      if (!el || !ev || !ev.length) return;
+      const top = ev.find(e => e.title && e.city && e.live) || ev[0];
+      if (top && top.title) {
+        el.textContent = `${top.city.split(",")[0]}: ${top.title}`;
+      }
+    }
+
+    function updateClock() {
+      const el = document.getElementById("clockDisplay");
+      if (!el) return;
+      const d = new Date();
+      const utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+      const ist = new Date(utc + (5.5 * 3600000));
+      const h = String(ist.getHours()).padStart(2, "0");
+      const m = String(ist.getMinutes()).padStart(2, "0");
+      el.textContent = `${h}:${m} IST`;
+    }
 
     function render() {
       const ev = visible();
@@ -1287,7 +1510,7 @@
         const color = colorOf(g.lead.movement), r = dotR(g), n = g.events.length;
         m.setAttribute("class", "marker" + (g.ongoing ? " ongoing" : "") + (g.checked ? " checked" : " live") + (g.weak ? " weak" : "") + (g.old && g.checked ? " old" : "") + (g.key === selGroup ? " sel" : ""));
         m.setAttribute("aria-label", groupLabel(g));
-        const [pulse, core, label] = m.children;
+        const [hit, pulse, core, label] = m.children;
         core.setAttribute("r", r); core.setAttribute("fill", color); core.style.stroke = g.ongoing ? color : "";
         pulse.setAttribute("stroke", color); pulse.setAttribute("r", r); pulse.style.display = g.recent ? "" : "none";
         label.textContent = n > 1 && r >= 8 ? n : ""; label.style.fontSize = Math.max(8, r * .95) + "px";
@@ -1295,6 +1518,7 @@
       for (const [k, m] of markerEls) if (!keep.has(k)) { m.remove(); markerEls.delete(k); }
       gMarks.replaceChildren(...frag);
       scaleMarks(); renderList(placeFilter ? groups.get(placeFilter).events : ev, ev); renderLegend();
+      updateTicker(ev);
     }
 
     function renderList(ev, all) {
@@ -1459,6 +1683,8 @@
 
     (async () => {
       initTheme();
+      updateClock();
+      setInterval(updateClock, 30000);
       let boot = null;
       try { boot = JSON.parse(document.getElementById("boot").textContent); } catch (_) { }
       try {

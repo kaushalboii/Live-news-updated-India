@@ -592,6 +592,10 @@ function cleanCandidateTitle(t) {
 }
 
 function selectBestTitle(cl, mov) {
+  const isTamil = (cl.place || "").includes("Tamil Nadu") ||
+    (cl.domains || []).some(d => /dinamalar|dinamani|dailythanthi|thanthitv|hindutamil|polimer|puthiyathalaimurai|news7tamil|news18tamil|vikatan|sunnews/i.test(d)) ||
+    (cl.publishers || []).some(p => /dinamalar|dinamani|thanthi|tamil|polimer|puthiya|vikatan|sun news/i.test(p));
+
   const candidates = [];
   if (cl.title && !/^cbmi/i.test(cl.title) && !(!cl.title.includes(" ") && cl.title.length > 25)) {
     candidates.push(cleanCandidateTitle(cl.title));
@@ -607,19 +611,29 @@ function selectBestTitle(cl, mov) {
     }
   }
 
-  if (candidates.length === 0) return "";
+  // Strictly enforce language rule: only Tamil sources show Tamil; all other sources show exact original English
+  const filtered = candidates.filter(cand => {
+    // Reject Hindi / Devanagari and other non-Tamil Indic scripts
+    if (/[\u0900-\u097F\u0C00-\u0C7F\u0980-\u09FF\u0A80-\u0AFF]/.test(cand)) return false;
+    // For Tamil script, only keep if the story originates from a Tamil source or region
+    if (/[\u0B80-\u0BFF]/.test(cand)) return isTamil;
+    return true;
+  });
+
+  const pool = filtered.length > 0 ? filtered : candidates.filter(cand => !/[\u0900-\u097F]/.test(cand));
+  if (pool.length === 0) return "";
 
   const rules = MOVEMENT_RULES.find(([m]) => m === mov)?.[1] || [];
-  let best = candidates[0];
+  let best = pool[0];
   let maxScore = -1;
 
-  for (const cand of candidates) {
+  for (const cand of pool) {
     const text = " " + cand.toLowerCase() + " ";
     let score = 0;
     for (const w of rules) {
       const wl = w.toLowerCase().trim();
       if (!wl) continue;
-      if (/[\u0B80-\u0BFF\u0900-\u097F]/.test(wl)) {
+      if (isTamil && /[\u0B80-\u0BFF]/.test(wl)) {
         if (text.includes(wl)) score += 6;
       } else {
         const pattern = new RegExp(`(?:^|\\s)${wl.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\$&")}(?:\\s|$)`, "i");
@@ -727,7 +741,6 @@ async function fetchMultiPlatformStreams(clusters) {
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Delhi AQI OR smog OR GRAP OR toxic air OR stubble burning) when:24h")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "climate" },
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Cyclone Murasu OR Bay of Bengal depression OR heavy rain alert OR flood warning) when:24h")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "climate" },
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(மழை OR புயல் OR வானிலை OR வெள்ளம் OR காற்று) when:24h")}&hl=ta&gl=IN&ceid=IN:ta`, platform: "climate" },
-    { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(प्रदूषण OR मौसम OR बारिश OR चक्रवात OR स्मॉग) when:24h")}&hl=hi&gl=IN&ceid=IN:hi`, platform: "climate" },
 
     // 2. Tamil Nadu 24/7 Live News (Top Live News Channels & Regional Papers)
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Tamil Nadu OR Chennai OR Madurai OR Coimbatore OR Tiruchirappalli OR Salem OR Tirunelveli) when:24h")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "tamil" },
@@ -746,15 +759,9 @@ async function fetchMultiPlatformStreams(clusters) {
     // 5. Instagram / Facebook Social Media Updates
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(site:instagram.com OR site:facebook.com) india news")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "social" },
 
-    // 6. Mainstream National Breaking Wire
+    // 6. Mainstream National Breaking Wire (English)
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("when:24h india")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "web" },
-    { url: "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en", platform: "wire" },
-
-    // 7. Regional Language & Local District Press
-    { url: "https://news.google.com/rss?hl=hi&gl=IN&ceid=IN:hi", platform: "web" },
-    { url: "https://news.google.com/rss?hl=te&gl=IN&ceid=IN:te", platform: "web" },
-    { url: "https://news.google.com/rss?hl=bn&gl=IN&ceid=IN:bn", platform: "web" },
-    { url: "https://news.google.com/rss?hl=mr&gl=IN&ceid=IN:mr", platform: "web" }
+    { url: "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en", platform: "wire" }
   ];
 
   // Current date in Indian Standard Time (IST = UTC+5:30)
@@ -836,6 +843,10 @@ async function main() {
   for (const cl of state.clusters || []) {
     // Purge any corrupted Cbmi title from cache
     if (cl.title && /^cbmi/i.test(cl.title)) {
+      cl.title = undefined;
+    }
+    // Purge Hindi titles so English sources show exact English titles
+    if (cl.title && /[\u0900-\u097F]/.test(cl.title)) {
       cl.title = undefined;
     }
     if (cl.date >= cutoff && cl.key) clusters.set(cl.key, cl);
