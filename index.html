@@ -10,8 +10,7 @@
   <meta name="author" content="Kaushal (@kaushalboii)">
   <link rel="canonical" href="__SITE_URL__">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#000000">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0b0f17">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Live News Updated India">
   <meta property="og:title" content="Where India is in the news">
@@ -33,87 +32,63 @@
   <script type="application/ld+json">__JSONLD__</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700;800&family=Hind:wght@400;600&display=swap"
-    rel="stylesheet" media="print" onload="this.media='all'">
-    <style>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
     :root {
       box-sizing: border-box;
       padding-top: env(safe-area-inset-top, 0px);
       padding-bottom: env(safe-area-inset-bottom, 0px);
 
-      /* Pure Black and White Theme */
-      --bg: #000000;
-      --panel: #0a0a0a;
-      --ink: #ffffff;
-      --muted: #8e8e8e;
-      --line: #222222;
-      --land: #121212;
-      --land-hover: #1e1e1e;
-      --border: #242424;
-      --sea: #000000;
-      --focus: #ffffff;
-      --chip: #141414;
-      --chip-hover: #222222;
+      /* Soft Luxury Graphite / Slate Dark Palette (Default) */
+      --bg: #0b0f17;
+      --panel: #111722;
+      --ink: #f8fafc;
+      --muted: #8b9bb4;
+      --line: #1e2838;
+      --land: #18202e;
+      --land-hover: #222d40;
+      --border: #28354b;
+      --sea: #0b0f17;
+      --focus: #38bdf8;
+      --chip: #18202d;
+      --chip-hover: #202a3b;
 
-      /* High-contrast Monochrome Category Accents */
-      --m-politics: #ffffff;
-      --m-protest: #e5e5e5;
-      --m-economy: #cccccc;
-      --m-climate: #b3b3b3;
-      --m-security: #999999;
-      --m-other: #808080;
+      /* Tasteful Muted Gem-Tone Category Colors */
+      --m-politics: #f59e0b;
+      --m-protest: #a78bfa;
+      --m-economy: #34d399;
+      --m-climate: #38bdf8;
+      --m-security: #fb7185;
+      --m-other: #94a3b8;
 
-      --display: "Anek Latin", "Arial Narrow", system-ui, -apple-system, sans-serif;
+      --display: "Plus Jakarta Sans", "Anek Latin", system-ui, -apple-system, sans-serif;
       --body: "Hind", system-ui, -apple-system, "Segoe UI", sans-serif;
     }
 
-    @media (prefers-color-scheme:dark) {
-      :root:not([data-theme="light"]) {
-        --bg: #000000;
-        --panel: #0a0a0a;
-        --ink: #ffffff;
-        --muted: #8e8e8e;
-        --line: #222222;
-        --land: #121212;
-        --land-hover: #1e1e1e;
-        --border: #242424;
-        --sea: #000000;
-        --focus: #ffffff;
-        --chip: #141414;
-        --chip-hover: #222222;
-        --m-politics: #ffffff;
-        --m-protest: #e5e5e5;
-        --m-economy: #cccccc;
-        --m-climate: #b3b3b3;
-        --m-security: #999999;
-        --m-other: #808080;
-      }
+    /* Editorial Light Palette */
+    :root[data-theme="light"] {
+      --bg: #edf2f7;
+      --panel: #ffffff;
+      --ink: #0f172a;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --land: #e2e8f0;
+      --land-hover: #cbd5e1;
+      --border: #cbd5e1;
+      --sea: #edf2f7;
+      --focus: #0284c7;
+      --chip: #f1f5f9;
+      --chip-hover: #e2e8f0;
+
+      --m-politics: #d97706;
+      --m-protest: #7c3aed;
+      --m-economy: #059669;
+      --m-climate: #0284c7;
+      --m-security: #e11d48;
+      --m-other: #64748b;
     }
 
-    :root[data-theme="dark"] {
-      --bg: #000000;
-      --panel: #0a0a0a;
-      --ink: #ffffff;
-      --muted: #8e8e8e;
-      --line: #222222;
-      --land: #121212;
-      --land-hover: #1e1e1e;
-      --border: #242424;
-      --sea: #000000;
-      --focus: #ffffff;
-      --chip: #141414;
-      --chip-hover: #222222;
-      --m-politics: #ffffff;
-      --m-protest: #e5e5e5;
-      --m-economy: #cccccc;
-      --m-climate: #b3b3b3;
-      --m-security: #999999;
-      --m-other: #808080;
-    }
-
-    *,
-    *::before,
-    *::after {
+    *, *::before, *::after {
       box-sizing: inherit;
     }
 
@@ -130,12 +105,10 @@
       font-family: var(--body);
       font-size: 15px;
       line-height: 1.5;
+      transition: background .2s ease, color .2s ease;
     }
 
-    button,
-    input,
-    select,
-    textarea {
+    button, input, select, textarea {
       font: inherit;
       color: inherit;
     }
@@ -146,7 +119,7 @@
     }
 
     input[type="checkbox"] {
-      accent-color: #ffffff;
+      accent-color: var(--focus);
     }
 
     .app {
@@ -160,6 +133,7 @@
       overflow: hidden;
       background: var(--sea);
       min-height: 0;
+      transition: background .2s ease;
     }
 
     #map {
@@ -177,9 +151,9 @@
     .state {
       fill: var(--land);
       stroke: var(--border);
-      stroke-width: .8;
+      stroke-width: .85;
       vector-effect: non-scaling-stroke;
-      transition: fill .15s;
+      transition: fill .15s ease, stroke .15s ease;
     }
 
     .state:hover {
@@ -198,19 +172,18 @@
     .title h1 {
       font-family: var(--display);
       font-weight: 800;
-      font-stretch: condensed;
       font-size: clamp(2rem, 3.8vw, 3.2rem);
       line-height: .98;
-      letter-spacing: -.01em;
+      letter-spacing: -.02em;
       margin: 0;
-      color: #ffffff;
+      color: var(--ink);
     }
 
     .title p {
       margin: .6rem 0 0;
       color: var(--muted);
       font-size: .92rem;
-      line-height: 1.4;
+      line-height: 1.45;
       max-width: 36ch;
     }
 
@@ -225,24 +198,26 @@
     }
 
     .zoom button {
-      width: 38px;
-      height: 38px;
+      width: 36px;
+      height: 36px;
       border-radius: 8px;
       border: 1px solid var(--line);
       background: var(--panel);
-      color: #ffffff;
+      color: var(--ink);
       cursor: pointer;
       font-size: 1.2rem;
       line-height: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all .15s;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+      transition: all .15s ease;
     }
 
     .zoom button:hover {
-      border-color: #ffffff;
-      background: #161616;
+      border-color: var(--focus);
+      background: var(--chip);
+      color: var(--focus);
     }
 
     .legend {
@@ -257,7 +232,7 @@
     }
 
     .legend button {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 7px;
       border: 1px solid var(--line);
@@ -268,22 +243,23 @@
       font-size: .82rem;
       font-weight: 600;
       color: var(--muted);
-      transition: all .15s;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+      transition: all .15s ease;
     }
 
     .legend button:hover {
-      border-color: #ffffff;
-      color: #ffffff;
+      border-color: var(--focus);
+      color: var(--ink);
     }
 
     .legend button[aria-pressed="true"] {
-      border-color: #ffffff;
-      color: #ffffff;
-      background: #181818;
+      border-color: var(--focus);
+      color: var(--ink);
+      background: var(--chip);
     }
 
     .legend button[aria-pressed="false"] {
-      opacity: .35;
+      opacity: .4;
     }
 
     .legend .dot {
@@ -304,10 +280,10 @@
     }
 
     .marker .core {
-      stroke: #000000;
+      stroke: var(--panel);
       stroke-width: 1.2;
       vector-effect: non-scaling-stroke;
-      transition: transform .15s;
+      transition: transform .15s ease;
     }
 
     .marker.live .core {
@@ -315,7 +291,7 @@
     }
 
     .marker.live.weak .core {
-      fill-opacity: .6;
+      fill-opacity: .65;
     }
 
     .marker.old .core {
@@ -323,10 +299,10 @@
     }
 
     .marker.sel .core {
-      stroke: #ffffff;
+      stroke: var(--ink);
       stroke-width: 2.5;
       fill-opacity: 1;
-      filter: drop-shadow(0 0 8px #ffffff);
+      filter: drop-shadow(0 0 8px var(--focus));
     }
 
     .marker:hover .core {
@@ -342,11 +318,12 @@
     }
 
     .marker .n {
-      fill: #000000;
+      fill: #ffffff;
       font-family: var(--display);
       font-weight: 800;
       text-anchor: middle;
       pointer-events: none;
+      filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9));
     }
 
     .place {
@@ -363,20 +340,26 @@
       z-index: 2;
     }
 
+    .place span {
+      font-weight: 700;
+      color: var(--focus);
+    }
+
     .place button {
       border: 1px solid var(--line);
       background: transparent;
       border-radius: 6px;
-      padding: 4px 10px;
+      padding: 3px 10px;
       cursor: pointer;
       font-size: .8rem;
-      color: #ffffff;
+      color: var(--ink);
       flex: none;
-      transition: border-color .15s;
+      transition: all .15s ease;
     }
 
     .place button:hover {
-      border-color: #ffffff;
+      border-color: var(--focus);
+      color: var(--focus);
     }
 
     @keyframes pulse {
@@ -400,17 +383,17 @@
     .tip {
       position: absolute;
       pointer-events: none;
-      background: #000000;
-      border: 1px solid #ffffff;
-      color: #ffffff;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      color: var(--ink);
       font-size: .82rem;
-      font-weight: 600;
-      padding: 4px 10px;
+      font-weight: 700;
+      padding: 5px 11px;
       border-radius: 6px;
       white-space: nowrap;
       transform: translate(-50%, calc(-100% - 12px));
       display: none;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, .8);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
       z-index: 100;
     }
 
@@ -420,17 +403,18 @@
       display: flex;
       flex-direction: column;
       min-height: 0;
+      transition: background .2s ease, border-color .2s ease;
     }
 
     .ctrl {
-      padding: 20px 20px 14px;
+      padding: 18px 20px 14px;
       border-bottom: 1px solid var(--line);
       flex-shrink: 0;
     }
 
     .seg {
       display: flex;
-      background: #141414;
+      background: var(--chip);
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 3px;
@@ -440,7 +424,7 @@
       flex: 1;
       border: 0;
       background: transparent;
-      padding: 7px 4px;
+      padding: 6px 4px;
       border-radius: 6px;
       cursor: pointer;
       font-size: .86rem;
@@ -450,17 +434,69 @@
     }
 
     .seg button[aria-pressed="true"] {
-      background: #ffffff;
-      color: #000000;
+      background: var(--panel);
+      color: var(--ink);
       font-weight: 700;
-      box-shadow: 0 1px 3px rgba(255, 255, 255, .15);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Quick Search Input */
+    .quick-search {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0 10px;
+      margin-top: 10px;
+      height: 35px;
+      transition: border-color .15s ease, box-shadow .15s ease;
+    }
+
+    .quick-search:focus-within {
+      border-color: var(--focus);
+      box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.15);
+    }
+
+    .search-icon {
+      color: var(--muted);
+      margin-right: 6px;
+      flex-shrink: 0;
+    }
+
+    .quick-search input {
+      background: transparent;
+      border: 0;
+      outline: 0;
+      color: var(--ink);
+      font-size: .84rem;
+      width: 100%;
+    }
+
+    .quick-search input::placeholder {
+      color: var(--muted);
+    }
+
+    .clear-search-btn {
+      background: transparent;
+      border: 0;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0 4px;
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    .clear-search-btn:hover {
+      color: var(--ink);
     }
 
     .toggles {
-      margin-top: 14px;
+      margin-top: 12px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 7px;
       font-size: .84rem;
       color: var(--muted);
     }
@@ -473,12 +509,20 @@
       user-select: none;
     }
 
+    .status-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+      gap: 8px;
+    }
+
     .status {
       display: flex;
       align-items: center;
       font-size: .8rem;
       color: var(--muted);
-      margin: 14px 0 0;
+      margin: 0;
     }
 
     .live-dot {
@@ -486,15 +530,36 @@
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: #ffffff;
-      box-shadow: 0 0 6px #ffffff;
+      background: #10b981;
+      box-shadow: 0 0 6px #10b981;
       margin-right: 8px;
       flex-shrink: 0;
     }
 
     .status.stale .live-dot {
-      background: #888888;
+      background: #f59e0b;
       box-shadow: none;
+    }
+
+    .theme-btn {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      border-radius: 6px;
+      padding: 3px 9px;
+      font-size: .75rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+      transition: all .15s ease;
+    }
+
+    .theme-btn:hover {
+      border-color: var(--focus);
+      background: var(--chip-hover);
     }
 
     .count {
@@ -504,15 +569,15 @@
     }
 
     .count b {
-      color: #ffffff;
+      color: var(--ink);
       font-weight: 600;
     }
 
     .suggest {
       display: inline-block;
-      margin-top: 8px;
+      margin-top: 6px;
       font-size: .82rem;
-      color: #ffffff;
+      color: var(--focus);
       text-decoration: underline;
       text-underline-offset: 2px;
       cursor: pointer;
@@ -524,22 +589,22 @@
       padding: 4px 0 24px;
       min-height: 0;
       scrollbar-width: thin;
-      scrollbar-color: #333333 transparent;
+      scrollbar-color: var(--line) transparent;
     }
 
     .list::-webkit-scrollbar {
       width: 6px;
     }
     .list::-webkit-scrollbar-thumb {
-      background: #333333;
+      background: var(--line);
       border-radius: 4px;
     }
 
     .item {
       display: grid;
-      grid-template-columns: 12px 1fr;
+      grid-template-columns: 10px 1fr;
       gap: 12px;
-      padding: 14px 20px;
+      padding: 13px 18px;
       border-bottom: 1px solid var(--line);
       cursor: pointer;
       background: none;
@@ -548,22 +613,27 @@
       border-top: 0;
       width: 100%;
       text-align: left;
-      transition: background .15s;
+      transition: background .15s ease, transform .15s ease;
     }
 
     .item:hover {
-      background: #141414;
+      background: var(--chip);
+      transform: translateX(2px);
     }
 
     .item[aria-expanded="true"] {
-      background: #161616;
+      background: var(--chip);
     }
 
     .item .bar {
-      width: 3px;
+      width: 3.5px;
       border-radius: 2px;
       justify-self: center;
-      background: #ffffff;
+      transition: transform .15s ease;
+    }
+
+    .item:hover .bar {
+      transform: scaleY(1.15);
     }
 
     .item .h {
@@ -571,14 +641,14 @@
       margin: 0;
       font-family: var(--display);
       font-weight: 700;
-      font-size: 1.08rem;
-      line-height: 1.3;
-      color: #ffffff;
-      transition: color .15s;
+      font-size: 1.05rem;
+      line-height: 1.35;
+      color: var(--ink);
+      transition: color .15s ease;
     }
 
     .item:hover .h {
-      color: #ffffff;
+      color: var(--focus);
     }
 
     .item .meta {
@@ -590,12 +660,13 @@
 
     .item .tag {
       display: inline-block;
-      font-size: .75rem;
+      font-size: .72rem;
+      font-weight: 600;
       border: 1px solid var(--line);
-      background: #141414;
-      color: #cccccc;
+      background: var(--chip);
+      color: var(--ink);
       border-radius: 4px;
-      padding: 0 6px;
+      padding: 1px 6px;
       margin-left: 6px;
       vertical-align: 1px;
     }
@@ -604,7 +675,7 @@
       grid-column: 2;
       margin-top: 8px;
       font-size: .88rem;
-      color: #cccccc;
+      color: var(--ink);
       line-height: 1.45;
       display: none;
     }
@@ -618,7 +689,7 @@
     }
 
     .detail a {
-      color: #ffffff;
+      color: var(--focus);
       text-decoration: underline;
       text-underline-offset: 2px;
     }
@@ -659,7 +730,7 @@
     @media (max-width:860px) {
       .app {
         grid-template-columns: 1fr;
-        grid-template-rows: 55vh auto;
+        grid-template-rows: 52vh auto;
         height: auto;
         min-height: 100%;
       }
@@ -848,12 +919,23 @@
           <button data-range="all" aria-pressed="false">2026</button>
         </div>
 
+        <div class="quick-search">
+          <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+          </svg>
+          <input type="text" id="newsSearch" placeholder="Search city, district, or keyword…" autocomplete="off" spellcheck="false">
+          <button id="clearSearch" class="clear-search-btn" aria-label="Clear search" hidden>×</button>
+        </div>
+
         <div class="toggles">
           <label><input type="checkbox" id="tLive" checked> Live news detections</label>
           <label><input type="checkbox" id="tWeak" checked> Include hyper-local & single-source reports</label>
         </div>
 
-        <p class="status" id="status"><span class="live-dot"></span><span>Loading live data…</span></p>
+        <div class="status-row">
+          <p class="status" id="status"><span class="live-dot"></span><span>Loading live data…</span></p>
+          <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">☀️ Light</button>
+        </div>
         <p class="count" id="count"><!--COUNT--></p>
         <a class="suggest" id="suggest" hidden target="_blank" rel="noopener">Suggest a news story we've missed</a>
       </div>
@@ -902,13 +984,14 @@
     const DAY = 864e5;
     const fmtDate = d => new Date(d + "T00:00:00").toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
     const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-    const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : null;
-    const hostOf = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (_) { return "News Wire"; } };
+    const safeUrl = u => /^https?:///i.test(u || "") ? u : null;
+    const hostOf = u => { try { return new URL(u).hostname.replace(/^www./, ""); } catch (_) { return "News Wire"; } };
     const ageDays = d => (Date.now() - new Date(d + "T00:00:00").getTime()) / DAY;
     const todayISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
 
     let curated = [], live = [], liveMeta = null;
     let range = "1", selected = null, showLive = true, showWeak = true;
+    let searchQuery = "";
     const hidden = new Set();
 
     /* ---------- Map Geometry & Projection ---------- */
@@ -917,7 +1000,7 @@
     const NS = "http://www.w3.org/2000/svg";
     const svg = document.getElementById("map"), gMarks = document.getElementById("marks");
     const VB0 = { x: -30, y: -90, w: 1060, h: 1284 }, MAXZ = 60;
-    let vb = { ...VB0 }, anim = 0;
+    let vb = { ...VB0 }, anim = 0, dragMoved = false;
     const zoomK = () => VB0.w / vb.w;
     const unitsPerPx = () => Math.max(vb.w / (svg.clientWidth || 1), vb.h / (svg.clientHeight || 1));
 
@@ -1017,6 +1100,7 @@
 
     function renderStatus() {
       const st = document.getElementById("status");
+      if (!st) return;
       if (!liveMeta || !liveMeta.generatedAt) {
         st.className = "status stale";
         st.lastElementChild.textContent = "Live news data hasn't been generated yet.";
@@ -1043,8 +1127,15 @@
 
     function visible() {
       const pool = curated.concat(showLive ? live.filter(e => showWeak || !e.weak) : []);
-      return pool.filter(e => !hidden.has(e.movement) && inRange(e))
-        .sort((a, b) => b.date.localeCompare(a.date) || (b.articles || 0) - (a.articles || 0));
+      return pool.filter(e => {
+        if (!inRange(e)) return false;
+        if (hidden.has(e.movement)) return false;
+        if (searchQuery) {
+          const txt = `${e.title} ${e.city} ${e.venue || ""} ${e.summary} ${e.movement}`.toLowerCase();
+          if (!txt.includes(searchQuery)) return false;
+        }
+        return true;
+      }).sort((a, b) => b.date.localeCompare(a.date) || (b.articles || 0) - (a.articles || 0));
     }
 
     const isRecent = e => !e.ongoing && ageDays(e.date) <= 2;
@@ -1128,7 +1219,11 @@
       const checked = all.filter(e => !e.ongoing && !e.live).length, det = all.filter(e => e.live).length, ong = all.filter(e => e.ongoing).length;
       const places = new Set(all.filter(e => !e.ongoing).map(e => e.city.split(",")[0])).size;
 
-      if (range === "1") {
+      if (searchQuery) {
+        document.getElementById("count").innerHTML = ev.length
+          ? `<b>${ev.length}</b> result${ev.length > 1 ? "s" : ""} matching "${esc(searchQuery)}" across <b>${places}</b> place${places > 1 ? "s" : ""}`
+          : `No stories found matching "${esc(searchQuery)}".`;
+      } else if (range === "1") {
         document.getElementById("count").innerHTML = ev.length
           ? `<b>${ev.length}</b> live news detection${ev.length > 1 ? "s" : ""} today across <b>${places}</b> place${places > 1 ? "s" : ""}`
           : "No live reports recorded today yet.";
@@ -1142,7 +1237,9 @@
       }
 
       if (!ev.length) {
-        list.innerHTML = `<div class="empty">Nothing matches. Widen the time range or turn a topic back on.</div>`;
+        list.innerHTML = searchQuery
+          ? `<div class="empty">No news stories found matching "<b>${esc(searchQuery)}</b>". Try clearing search.</div>`
+          : `<div class="empty">Nothing matches. Widen the time range or turn a topic back on.</div>`;
         return;
       }
 
@@ -1195,7 +1292,29 @@
       }
     }
 
-    /* ---------- UI ---------- */
+    /* ---------- Theme Switching ---------- */
+    function setTheme(th) {
+      document.documentElement.setAttribute("data-theme", th);
+      localStorage.setItem("news-theme", th);
+      const btn = document.getElementById("themeToggle");
+      if (btn) {
+        btn.textContent = th === "light" ? "🌙 Dark" : "☀️ Light";
+        btn.setAttribute("aria-label", `Switch to ${th === "light" ? "dark" : "light"} mode`);
+      }
+      render();
+    }
+
+    function initTheme() {
+      const saved = localStorage.getItem("news-theme");
+      if (saved) {
+        setTheme(saved);
+      } else {
+        const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        setTheme(isDark ? "dark" : "light");
+      }
+    }
+
+    /* ---------- UI Listeners ---------- */
     document.querySelector(".seg").addEventListener("click", e => {
       const b = e.target.closest("button"); if (!b) return;
       range = b.dataset.range; document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b)); render();
@@ -1209,6 +1328,32 @@
     document.getElementById("tLive").onchange = e => { showLive = e.target.checked; document.getElementById("tWeak").disabled = !showLive; render(); };
     document.getElementById("tWeak").onchange = e => { showWeak = e.target.checked; render(); };
 
+    const searchInput = document.getElementById("newsSearch");
+    const clearSearchBtn = document.getElementById("clearSearch");
+    if (searchInput) {
+      searchInput.addEventListener("input", e => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        if (clearSearchBtn) clearSearchBtn.hidden = !searchQuery;
+        render();
+      });
+    }
+    if (clearSearchBtn) {
+      clearSearchBtn.addEventListener("click", () => {
+        searchInput.value = "";
+        searchQuery = "";
+        clearSearchBtn.hidden = true;
+        render();
+      });
+    }
+
+    const themeToggleBtn = document.getElementById("themeToggle");
+    if (themeToggleBtn) {
+      themeToggleBtn.addEventListener("click", () => {
+        const cur = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+        setTheme(cur);
+      });
+    }
+
     const list = document.getElementById("list");
     list.addEventListener("click", e => { if (e.target.closest("a")) return; if (e.target.id === "clearPlace") return clearPlace(); const it = e.target.closest(".item"); if (it) select(it.dataset.id); });
     list.addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && e.target.classList.contains("item")) { e.preventDefault(); select(e.target.dataset.id); } });
@@ -1219,11 +1364,10 @@
     document.getElementById("zout").onclick = () => zoomCenter(1 / 1.6);
     document.getElementById("zreset").onclick = () => animateTo(VB0);
     window.addEventListener("resize", () => { clearTimeout(window._rt); window._rt = setTimeout(render, 120); });
-    matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
 
     (function suggestLink() {
       let repo = REPO_OVERRIDE;
-      const m = location.hostname.match(/^([^.]+)\.github\.io$/i);
+      const m = location.hostname.match(/^([^.]+).github.io$/i);
       if (!repo && m) { const seg = location.pathname.split("/").filter(Boolean)[0]; repo = m[1] + "/" + (seg || m[1] + ".github.io"); }
       if (!repo) return;
       const a = document.getElementById("suggest");
@@ -1231,6 +1375,7 @@
     })();
 
     (async () => {
+      initTheme();
       let boot = null;
       try { boot = JSON.parse(document.getElementById("boot").textContent); } catch (_) { }
       try {
