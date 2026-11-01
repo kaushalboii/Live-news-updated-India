@@ -1,34 +1,31 @@
-name: Live News Ingestion & Deploy
+name: Update and deploy
 
 on:
   schedule:
-    - cron: "12,42 * * * *"   # runs every 30 min, off the peak hour
+    - cron: "7,37 * * * *"   # every 30 min, off the hour
   push:
     branches: [main]
   workflow_dispatch:
     inputs:
       reset:
-        description: "Discard cached pipeline state and perform full 48-hour backfill"
+        description: "Discard cached state and re-fetch the full window"
         type: boolean
         default: false
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
   actions: write
 
 concurrency:
-  group: live-news-update
+  group: update-and-deploy
   cancel-in-progress: false
 
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -38,8 +35,7 @@ jobs:
         with:
           node-version: 22
 
-      # Pipeline cache: preserves bookmark and clusters between runs
-      - name: Restore GDELT state cache
+      - name: Restore pipeline state
         if: ${{ !inputs.reset }}
         uses: actions/cache/restore@v4
         with:
@@ -47,10 +43,10 @@ jobs:
           key: gdelt-news-state-${{ github.run_id }}
           restore-keys: gdelt-news-state-
 
-      - name: Ingest live India news from GDELT
+      - name: Fetch news from GDELT
         run: node scripts/fetch-gdelt.mjs
 
-      - name: Save GDELT state cache
+      - name: Save pipeline state
         uses: actions/cache/save@v4
         with:
           path: .cache
@@ -61,28 +57,35 @@ jobs:
         uses: actions/configure-pages@v5
         continue-on-error: true
 
-      - name: Build production site
+      - name: Build site
         env:
           SITE_URL: ${{ vars.SITE_URL || steps.pages.outputs.base_url || 'https://kaushalboii.github.io/Live-news-updated-India/' }}
         run: node scripts/build-site.mjs
 
-      - name: Upload GitHub Pages artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
+        continue-on-error: true
         with:
           path: _site
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages (Actions mode)
         id: deploy
         uses: actions/deploy-pages@v4
+        continue-on-error: true
 
-      # Optional Vercel production deployment if VERCEL_TOKEN secret is present
+      - name: Deploy to gh-pages branch (Branch mode)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+
       - name: Deploy to Vercel (optional)
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID }}
         run: |
-          if [ -z "$VERCEL_TOKEN" ]; then echo "No VERCEL_TOKEN secret configured; skipping Vercel deploy"; exit 0; fi
+          if [ -z "$VERCEL_TOKEN" ]; then echo "No VERCEL_TOKEN secret; skipping Vercel"; exit 0; fi
           npx --yes vercel@latest deploy _site --prod --yes --token "$VERCEL_TOKEN"
 
       - name: Keep schedule alive
@@ -91,5 +94,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           if [ "$(date -u +%H)" = "00" ]; then
-            gh api -X PUT "repos/${{ github.repository }}/actions/workflows/update.yml/enable" && echo "Schedule kept active"
+            gh api -X PUT "repos/${{ github.repository }}/actions/workflows/update.yml/enable" && echo "Schedule kept alive"
           fi

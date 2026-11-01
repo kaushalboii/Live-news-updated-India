@@ -1,20 +1,11 @@
-// Pulls live news and events located in India from the GDELT 2.0 Event Database
+// Pulls live news events located in India from the GDELT 2.0 Event Database
 // (updated every 15 minutes) and writes them to data/live.json.
-//
-// Ingests events whose action happened in India (FIPS country code "IN") and
-// that GDELT geocoded to at least state/city level (geoType >= 2),
-// categorizes them, extracts readable headlines from news URLs,
-// and clusters them by day and location.
-//
-// Outputs:
-//   .cache/gdelt-state.json  full working state (bookmark + clusters with URL slugs)
-//   data/live.json           the public slim file the site loads
 
 import fs from "node:fs/promises";
 import { inflateRawSync } from "node:zlib";
 
 const WINDOW_DAYS = Number(process.env.WINDOW_DAYS || 7);
-const BACKFILL_HOURS = Number(process.env.BACKFILL_HOURS || 48); // 48h covers substantial live news
+const BACKFILL_HOURS = Number(process.env.BACKFILL_HOURS || 48);
 const MAX_FILES = Number(process.env.MAX_FILES || BACKFILL_HOURS * 4);
 const CONCURRENCY = Number(process.env.CONCURRENCY || 8);
 const BASE = process.env.GDELT_BASE || "http://data.gdeltproject.org/gdeltv2/";
@@ -29,46 +20,29 @@ const COL = {
   dateAdded: 59, url: 60,
 };
 
-// Priority category classification rules based on URL slugs and text tokens
-const CATEGORY_RULES = [
-  ["breaking", [
-    "breaking", "blast", "explosion", "crash", "stampede", "tragedy", "fatal", "massive-fire",
-    "emergency", "terror-attack", "casualty", "casualties"
-  ]],
+const MOVEMENT_RULES = [
   ["protest", [
     "protest", "protests", "protesters", "protestors", "strike", "dharna", "rally", "march",
     "kisan", "farmers", "bandh", "blockade", "gherao", "agitation", "boycott", "slogan",
-    "chakka-jam", "hunger-strike", "demonstration", "sit-in", "demonstrators", "hartal"
+    "chakka", "jam", "hunger", "demonstration", "sit-in", "demonstrators", "hartal", "ladakh", "sir"
   ]],
   ["climate", [
     "aqi", "pollution", "smog", "monsoon", "flood", "floods", "cyclone", "heatwave", "weather",
-    "imd", "rain", "rainstorm", "water-crisis", "drought", "toxic-air", "air-quality",
-    "wildfire", "landslide", "earthquake", "environment"
-  ]],
-  ["infrastructure", [
-    "railway", "railways", "train", "expressway", "highway", "metro", "airport", "flight",
-    "aviation", "vande-bharat", "bridge", "flyover", "bullet-train", "power-grid", "port",
-    "tunnel", "corridor"
+    "imd", "rain", "rainstorm", "water", "drought", "toxic", "air", "landslide", "earthquake"
   ]],
   ["economy", [
     "economy", "rbi", "sensex", "nifty", "market", "markets", "inflation", "gdp", "rupee",
     "bank", "banks", "banking", "tax", "gst", "capex", "startup", "investment", "shares",
-    "stock", "trade", "budget", "export", "import", "industry", "revenue", "fiscal"
+    "stock", "trade", "budget", "export", "import", "industry", "revenue"
   ]],
   ["security", [
     "police", "army", "crpf", "cbi", "ed", "nia", "arrest", "arrested", "detained", "encounter",
-    "border", "terror", "smuggling", "seizure", "custody", "fir", "security", "crime",
-    "investigation", "busted", "raid", "raids", "accused", "contraband"
+    "border", "terror", "smuggling", "seizure", "custody", "fir", "security", "crime", "investigation"
   ]],
   ["politics", [
     "election", "elections", "bjp", "congress", "aap", "modi", "parliament", "assembly",
-    "minister", "governor", "mla", "mp", "court", "supreme-court", "high-court", "judge",
-    "bench", "bail", "verdict", "cabinet", "policy", "poll", "polls", "bypoll", "cm"
-  ]],
-  ["education", [
-    "exam", "exams", "neet", "jee", "upsc", "paper-leak", "university", "college", "school",
-    "students", "isro", "space", "hospital", "health", "doctor", "doctors", "medical", "vaccine",
-    "ai", "science"
+    "minister", "governor", "mla", "mp", "court", "supreme", "judge", "bench", "bail", "verdict",
+    "cabinet", "policy", "poll", "polls", "bypoll", "cm"
   ]]
 ];
 
@@ -102,7 +76,7 @@ function stampsToProcess(latest, lastDone) {
   for (let t = fromStamp(latest).getTime(); t > stop && out.length < MAX_FILES; t -= 15 * 60e3) {
     out.push(toStamp(new Date(t)));
   }
-  return out.reverse(); // oldest first
+  return out.reverse();
 }
 
 function tokens(url) {
@@ -112,26 +86,19 @@ function tokens(url) {
   } catch { return ""; }
 }
 
-// Classify event category using text tokens and CAMEO codes
-function classifyEvent(slugs, rootCode, baseCode) {
-  const fullText = " " + slugs.join(" ") + " ";
-  for (const [cat, words] of CATEGORY_RULES) {
+function classify(slugs, rootCode) {
+  const full = " " + slugs.join(" ") + " ";
+  for (const [mov, words] of MOVEMENT_RULES) {
     for (const w of words) {
-      if (fullText.includes(" " + w + " ") || fullText.includes("-" + w + "-")) {
-        return cat;
-      }
+      if (full.includes(" " + w + " ") || full.includes("-" + w + "-")) return mov;
     }
   }
-
-  // Fallback to CAMEO Root Code
   const root = String(rootCode || "");
   if (root === "14") return "protest";
-  if (["15", "18", "19", "20"].includes(root)) return "security";
-  if (["09", "17"].includes(root)) return "security";
+  if (["15", "18", "19", "20", "09", "17"].includes(root)) return "security";
   if (["06", "07"].includes(root)) return "economy";
   if (["01", "02", "03", "04", "05", "10", "11", "12", "13"].includes(root)) return "politics";
-
-  return "general";
+  return "other";
 }
 
 function titleFromUrl(url) {
@@ -143,10 +110,7 @@ function titleFromUrl(url) {
       let s = segs[i].replace(/\.[a-z0-9]+$/i, "");
       if (/^(articleshow|article\d*|news|story|storyid|\d+)$/i.test(s)) continue;
       s = s.replace(/[-_]\d+([-_]\d+)*$/i, "");
-      if (s.length > 5) {
-        titleSlug = s;
-        break;
-      }
+      if (s.length > 5) { titleSlug = s; break; }
     }
     if (!titleSlug && segs.length > 0) {
       titleSlug = segs[segs.length - 1].replace(/\.[a-z0-9]+$/i, "");
@@ -159,17 +123,15 @@ function titleFromUrl(url) {
       .join(" ");
 
     return clean.length >= 8 ? clean : "";
-  } catch {
-    return "";
-  }
+  } catch { return ""; }
 }
 
-function pickTitle(urls, defaultTitle = "") {
+function pickTitle(urls, fallback = "") {
   for (const u of urls) {
     const t = titleFromUrl(u);
     if (t && t.length > 10) return t;
   }
-  return defaultTitle;
+  return fallback;
 }
 
 function hostOf(url) {
@@ -178,19 +140,15 @@ function hostOf(url) {
 
 function cleanPlace(raw) {
   if (!raw) return "India";
-  return raw
-    .replace(/, India$/, "")
-    .replace(/, Republic of India$/, "")
-    .trim();
+  return raw.replace(/, India$/, "").replace(/, Republic of India$/, "").trim();
 }
 
 function addRow(clusters, c, cutoffDate) {
   if (c[COL.geoCountry] !== "IN") return;
   const geoType = Number(c[COL.geoType]);
-  if (geoType < 2) return; // ignore country centroid only
+  if (geoType < 2) return;
   const lat = Number(c[COL.lat]), lng = Number(c[COL.lng]);
   if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
-  // Bounding box filter for India geographic coordinates
   if (lat < 6.0 || lat > 38.0 || lng < 68.0 || lng > 98.0) return;
 
   const date = isoDate(c[COL.sqlDate]);
@@ -206,24 +164,14 @@ function addRow(clusters, c, cutoffDate) {
   if (!cl) {
     cl = {
       id: key.replace(/[^0-9a-z]+/gi, "_"),
-      key,
-      date,
-      lat,
-      lng,
-      geoType,
+      key, date, lat, lng, geoType,
       place: cleanPlace(c[COL.geoName]),
-      articles: 0,
-      codes: {},
-      urls: [],
-      domains: [],
-      slugs: [],
-      firstSeen: c[COL.dateAdded],
-      lastSeen: c[COL.dateAdded],
+      articles: 0, codes: {}, urls: [], domains: [], slugs: [],
+      firstSeen: c[COL.dateAdded], lastSeen: c[COL.dateAdded],
     };
     clusters.set(key, cl);
   }
 
-  // prefer the most precise location seen for this cluster
   if (geoType > cl.geoType && geoType !== 5) {
     Object.assign(cl, { lat, lng, geoType, place: cleanPlace(c[COL.geoName]) });
   }
@@ -240,7 +188,6 @@ function addRow(clusters, c, cutoffDate) {
   if (c[COL.dateAdded] > cl.lastSeen) cl.lastSeen = c[COL.dateAdded];
 }
 
-// GDELT zips hold a single CSV. Read it via the central directory.
 function unzipSingle(buf) {
   let eocd = buf.length - 22;
   while (eocd >= 0 && buf.readUInt32LE(eocd) !== 0x06054b50) eocd--;
@@ -283,31 +230,26 @@ async function main() {
       const r = results[j];
       if (r.status === "rejected") {
         console.warn(`Stopping at ${batch[j]}: ${r.reason.message}. Will retry next run.`);
-        failed = true;
-        break;
+        failed = true; break;
       }
-      for (const line of r.value.split("\n")) {
-        if (line) addRow(clusters, line.split("\t"), cutoff);
-      }
-      lastOk = batch[j];
-      processed++;
+      for (const line of r.value.split("\n")) if (line) addRow(clusters, line.split("\t"), cutoff);
+      lastOk = batch[j]; processed++;
     }
     if (failed) break;
   }
 
   const all = [...clusters.values()]
     .sort((a, b) => b.date.localeCompare(a.date) || b.articles - a.articles)
-    .slice(0, 4000);
+    .slice(0, 3000);
 
   await fs.mkdir(".cache", { recursive: true });
   await fs.writeFile(STATE, JSON.stringify({ lastStamp: lastOk, clusters: all }));
 
-  // Slim public file: only what the page renders
   const pub = all.map((cl) => {
-    const cat = classifyEvent(cl.slugs, cl.rootCode, Object.keys(cl.codes)[0]);
-    const placeHead = cl.place.split(",")[0];
-    const defaultTitle = `${cat.charAt(0).toUpperCase() + cat.slice(1)} report in ${placeHead}`;
-    const title = pickTitle(cl.urls, defaultTitle);
+    const mov = classify(cl.slugs, cl.rootCode);
+    const fallbackTitle = `News reported in ${cl.place.split(",")[0]}`;
+    const title = pickTitle(cl.urls, fallbackTitle);
+    const type = Object.entries(cl.codes).sort((a, b) => b[1] - a[1])[0]?.[0] || "010";
 
     return {
       id: cl.id,
@@ -318,9 +260,11 @@ async function main() {
       place: cl.place,
       articles: cl.articles,
       outlets: cl.domains.length,
-      category: cat,
+      type,
+      movement: mov,
+      category: mov,
       title,
-      urls: cl.urls.slice(0, 5),
+      urls: cl.urls.slice(0, 4),
       domains: cl.domains.slice(0, 10),
       lastSeen: cl.lastSeen,
     };

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T12:32:01.826Z",
-  "lastGdeltFile": "20261101123000",
+  "generatedAt": "2026-11-01T13:11:07.765Z",
+  "lastGdeltFile": "20261101131500",
   "source": "GDELT 2.0 Global News Event Database",
   "windowDays": 7,
   "clusters": [
@@ -11,16 +11,17 @@
       "lng": 77.2167,
       "geoType": 4,
       "place": "Delhi, Delhi",
-      "articles": 818,
-      "outlets": 28,
+      "articles": 1030,
+      "outlets": 32,
+      "type": "141",
+      "movement": "protest",
       "category": "protest",
       "title": "India Bloc Leaders Converge At Ramlila Maidan For Chalo Delhi Rally",
       "urls": [
         "http://www.bignewsnetwork.com/news/279406466/india-bloc-leaders-converge-at-ramlila-maidan-for-chalo-delhi-rally",
         "https://www.tribuneindia.com/news/gurugram/delhi-bs-iv-ban-60000-gurugram-commercial-vehicles-hit/",
         "https://www.omanobserver.om/article/1198909/world/asia/mass-protest-planned-in-new-delhi-over-voters-list-changes",
-        "http://www.calcuttanews.net/news/279406482/calculated-conspiracy-to-plunge-nation-into-anarchy-jp-nadda-slams-rahul-gandhi-over-india-bloc-ramlila-maidan-rally",
-        "https://www.tribuneindia.com/news/delhi/congress-workers-allegedly-tear-bjp-hoardings-on-1984-anti-sikh-riots-ahead-of-parallel-marches-in-delhi/"
+        "http://www.calcuttanews.net/news/279406482/calculated-conspiracy-to-plunge-nation-into-anarchy-jp-nadda-slams-rahul-gandhi-over-india-bloc-ramlila-maidan-rally"
       ],
       "domains": [
         "bignewsnetwork.com",
@@ -34,7 +35,7 @@
         "deccanchronicle.com",
         "thedailystar.net"
       ],
-      "lastSeen": "20261101123000"
+      "lastSeen": "20261101131500"
     },
     {
       "id": "2026_11_01_28_6_77_2",
@@ -43,16 +44,17 @@
       "lng": 77.2,
       "geoType": 4,
       "place": "New Delhi, Delhi",
-      "articles": 343,
-      "outlets": 21,
+      "articles": 444,
+      "outlets": 23,
+      "type": "112",
+      "movement": "protest",
       "category": "protest",
       "title": "Khalilzad Sushant Sareen India Military Aid Afghanistan Taliban",
       "urls": [
         "https://idrw.org/khalilzad-sushant-sareen-india-military-aid-afghanistan-taliban/",
         "https://www.heraldgoa.in/globe-nation/cjp-to-skip-india-bloc-rally-despite-backing-protest-says-abhijeet-dipke/494124/",
         "https://www.tribuneindia.com/news/haryana/vote-chori-haryana-congress-slams-bjps-save-democracy-campaign/",
-        "http://www.calcuttanews.net/news/279406418/gyanesh-kumar-must-vacate-his-post-tmc-sagarika-ghose-reiterates-demand-for-cec-removal-ahead-of-india-bloc-rally",
-        "https://www.heraldgoa.in/goa/delhi-traders-warn-india-bloc-rally-could-shut-80-of-shops-flag-festive-season-losses/494109/"
+        "http://www.calcuttanews.net/news/279406418/gyanesh-kumar-must-vacate-his-post-tmc-sagarika-ghose-reiterates-demand-for-cec-removal-ahead-of-india-bloc-rally"
       ],
       "domains": [
         "idrw.org",
@@ -66,7 +68,7 @@
         "rediff.com",
         "aninews.in"
       ],
-      "lastSeen": "20261101121500"
+      "lastSeen": "20261101131500"
     },
     {
       "id": "2026_11_01_19_0_72_8",
@@ -77,14 +79,15 @@
       "place": "Mumbai, Maharashtra",
       "articles": 311,
       "outlets": 18,
+      "type": "110",
+      "movement": "protest",
       "category": "protest",
       "title": "Indian Films Releasing In November",
       "urls": [
         "https://www.indianlink.com.au/indian-films-releasing-in-november-2026/",
         "https://www.heraldgoa.in/globe-nation/bjp-attacks-rahul-gandhi-over-india-bloc-rally-alleges-bid-to-create-unrest/494106/",
         "https://www.moneycontrol.com/entertainment/when-aishwarya-rai-spoke-about-divorce-with-abhishek-bachchan-said-we-don-t-even-try-and-entertain-article-14065401.html",
-        "https://ianslive.in/vivek-oberoi-shares-why-sanjay-guptas-demise-feels-deeply-personal--20261101145102",
-        "https://www.livemint.com/mint-lounge/akka-series-review-keerthy-suresh-radhika-apte-anshuman-pushkar-monika-panwar-11793511547800.html"
+        "https://ianslive.in/vivek-oberoi-shares-why-sanjay-guptas-demise-feels-deeply-personal--20261101145102"
       ],
       "domains": [
         "indianlink.com.au",
@@ -107,16 +110,17 @@
       "lng": 77.5833,
       "geoType": 4,
       "place": "Bangalore, Karnataka",
-      "articles": 146,
-      "outlets": 7,
+      "articles": 248,
+      "outlets": 10,
+      "type": "020",
+      "movement": "economy",
       "category": "economy",
       "title": "India Is Running Out Of Time On Fifth Generation Fighter",
       "urls": [
         "http://www.calcuttanews.net/news/279406476/india-is-running-out-of-time-on-fifth-generation-fighter",
         "https://www.jagranjosh.com/articles/career-scope-for-mba-in-india-vs-abroad-average-salaries-top-sectors-specializationwise-pay-1800018480-1",
         "https://www.biospectrumindia.com/features/20/28733/indias-neurotech-startups-take-brain-science-from-lab-to-market-.html",
-        "https://www.biospectrumindia.com/features/18/28731/india-2030-who-supplies-the-next-10-million.html",
-        "https://dailypioneer.com/andhra-pradesh/andhra-chainsaw-attack-girl-stable-after-bleeding-controlled-undergoes-surgery-in-bengaluru"
+        "https://www.biospectrumindia.com/features/18/28731/india-2030-who-supplies-the-next-10-million.html"
       ],
       "domains": [
         "calcuttanews.net",
@@ -125,9 +129,12 @@
         "dailypioneer.com",
         "siasat.com",
         "ianslive.in",
-        "economictimes.indiatimes.com"
+        "economictimes.indiatimes.com",
+        "oneindia.com",
+        "prokerala.com",
+        "aninews.in"
       ],
-      "lastSeen": "20261101121500"
+      "lastSeen": "20261101130000"
     },
     {
       "id": "2026_11_01_29_6_77_0",
@@ -136,16 +143,17 @@
       "lng": 76.9806,
       "geoType": 4,
       "place": "Haryana, Haryana",
-      "articles": 136,
-      "outlets": 7,
+      "articles": 155,
+      "outlets": 9,
+      "type": "141",
+      "movement": "protest",
       "category": "protest",
       "title": "Delhigurugram Border Clogged As Capitals Bs Vi Curbs Take Effect Air Pollution",
       "urls": [
         "https://www.hindustantimes.com/cities/delhi-news/delhigurugram-border-clogged-as-capitals-bs-vi-curbs-take-effect-air-pollution-101793520761425.html",
         "https://www.rediff.com/news/report/mcoca-chargesheet-filed-against-irani-gang-chief/20261101.htm",
         "https://www.deccanchronicle.com/nation/bjp-rally-nitin-nabin-leads-loktantra-bachao-march-in-rohtak-2000810",
-        "https://www.moneycontrol.com/news/india/amit-shah-slams-rahul-gandhi-over-india-bloc-rally-on-1984-anti-sikh-riots-anniversary-says-it-rubs-salt-into-victims-wounds-14065488.html",
-        "https://www.union-bulletin.com/news/world/indian-opposition-parties-stage-new-protest-against-the-elections-chief/article_9626d6fc-aff6-5b63-ac1f-e95046c86f70.html"
+        "https://www.moneycontrol.com/news/india/amit-shah-slams-rahul-gandhi-over-india-bloc-rally-on-1984-anti-sikh-riots-anniversary-says-it-rubs-salt-into-victims-wounds-14065488.html"
       ],
       "domains": [
         "hindustantimes.com",
@@ -154,9 +162,11 @@
         "moneycontrol.com",
         "union-bulletin.com",
         "newsx.com",
-        "tribuneindia.com"
+        "tribuneindia.com",
+        "oneindia.com",
+        "timesofindia.indiatimes.com"
       ],
-      "lastSeen": "20261101120000"
+      "lastSeen": "20261101131500"
     },
     {
       "id": "2026_11_01_18_0_79_5",
@@ -167,14 +177,15 @@
       "place": "Telangana, Andhra Pradesh",
       "articles": 136,
       "outlets": 6,
+      "type": "043",
+      "movement": "protest",
       "category": "protest",
       "title": "Telangana Cm Revanth Reddy Likens Pm Modi To Ravana And Congress To Vanara Sena",
       "urls": [
         "https://www.thehindu.com/news/national/telangana/telangana-cm-revanth-reddy-likens-pm-modi-to-ravana-and-congress-to-vanara-sena/article71652391.ece",
         "https://aninews.in/news/national/politics/beginning-of-the-end-kapil-sibal-attacks-bjp-at-india-blocs-anti-cec-rally16020261101150022/",
         "https://aninews.in/news/national/general-news/ought-to-resign-take-responsibility-tmc-mp-kalyan-banerjee-targets-ec-over-alleged-corruption20261101141753/",
-        "http://www.bignewsnetwork.com/news/279406522/this-will-be-a-historic-rally-sp-mp-awadhesh-prasad-says-india-bloc-march-aims-to-protect-democracy-right-to-vote",
-        "https://www.siasat.com/telangana-high-court-stays-new-fee-on-bars-restaurants-3568041/"
+        "http://www.bignewsnetwork.com/news/279406522/this-will-be-a-historic-rally-sp-mp-awadhesh-prasad-says-india-bloc-march-aims-to-protect-democracy-right-to-vote"
       ],
       "domains": [
         "thehindu.com",
@@ -187,6 +198,67 @@
       "lastSeen": "20261101114500"
     },
     {
+      "id": "2026_11_01_13_5_76_0",
+      "date": "2026-11-01",
+      "lat": 13.5,
+      "lng": 76,
+      "geoType": 5,
+      "place": "Karnataka, Karnataka",
+      "articles": 135,
+      "outlets": 8,
+      "type": "051",
+      "movement": "protest",
+      "category": "protest",
+      "title": "Andhra Chainsaw Attack Victim Undergoes Surgeries Classmates Given Counselling",
+      "urls": [
+        "https://www.thenewsminute.com/andhra-pradesh/andhra-chainsaw-attack-victim-undergoes-surgeries-classmates-given-counselling",
+        "https://www.livemint.com/news/india/bengaluru-nandini-milk-price-hiked-by-rs-8-will-your-daily-cup-of-tea-or-coffee-cost-more-what-hotel-associations-say-11793518247145.html",
+        "https://aninews.in/news/national/politics/govt-contemplating-giving-official-status-to-state-flag-karnataka-cm-dk-shivakumar20261101144607/",
+        "https://www.mangalorean.com/meeting-on-november-3-in-bengaluru-to-discuss-inauguration-of-new-udupi-district-hospital-minister-rizwan-arshad/"
+      ],
+      "domains": [
+        "thenewsminute.com",
+        "livemint.com",
+        "aninews.in",
+        "mangalorean.com",
+        "economictimes.indiatimes.com",
+        "timesofindia.indiatimes.com",
+        "deccanchronicle.com",
+        "idrw.org"
+      ],
+      "lastSeen": "20261101131500"
+    },
+    {
+      "id": "2026_11_01_10_0_76_5",
+      "date": "2026-11-01",
+      "lat": 10,
+      "lng": 76.5,
+      "geoType": 5,
+      "place": "Kerala, Kerala",
+      "articles": 120,
+      "outlets": 7,
+      "type": "010",
+      "movement": "protest",
+      "category": "protest",
+      "title": "At Cop17 The Fight Is To Give Women More Than A Seat At The Biodiversity Table",
+      "urls": [
+        "https://www.thenewsminute.com/kerala/at-cop17-the-fight-is-to-give-women-more-than-a-seat-at-the-biodiversity-table",
+        "https://aninews.in/news/world/asia/india-australia-joint-validation-exercise-austrahind-2026-culminates-in-keralam20261101141035/",
+        "https://www.deccanchronicle.com/southern-states/kerala/shailaja-teacher-condemns-online-attack-on-maharajas-college-student-2000804",
+        "https://organiser.org/2026/11/01/422976/bharat/fact-check-six-fake-allegations-against-cec-gyanesh-kumar-debunked/"
+      ],
+      "domains": [
+        "thenewsminute.com",
+        "aninews.in",
+        "deccanchronicle.com",
+        "organiser.org",
+        "rediff.com",
+        "hindustantimes.com",
+        "thehindu.com"
+      ],
+      "lastSeen": "20261101130000"
+    },
+    {
       "id": "2026_11_01_18_5_73_9",
       "date": "2026-11-01",
       "lat": 18.5333,
@@ -195,14 +267,15 @@
       "place": "Pune, Maharashtra",
       "articles": 107,
       "outlets": 4,
-      "category": "politics",
+      "type": "020",
+      "movement": "climate",
+      "category": "climate",
       "title": "Maharashtra Rto Code List Complete List Of All Mh Vehicle Registration Codes Mh01 To Mh61",
       "urls": [
         "https://www.jagranjosh.com/general-knowledge/maharashtra-rto-code-list-complete-list-of-all-mh-vehicle-registration-codes-mh01-to-mh61-1820013513-1",
         "https://www.freepressjournal.in/pune/pune-79-year-old-woman-dies-after-falling-under-rear-wheels-of-moving-electric-bus",
         "https://www.freepressjournal.in/pune/pune-pmc-plans-100-foot-saffron-flag-at-sinhagad-fort-sets-aside-1-crore-for-project",
-        "https://www.freepressjournal.in/pune/pune-may-face-alternate-day-water-supply-after-diwali",
-        "https://www.westhawaiitoday.com/2026/11/01/hawaii-news/fema-denies-individual-aid-to-hurricane-victims/"
+        "https://www.freepressjournal.in/pune/pune-may-face-alternate-day-water-supply-after-diwali"
       ],
       "domains": [
         "jagranjosh.com",
@@ -213,86 +286,32 @@
       "lastSeen": "20261101123000"
     },
     {
-      "id": "2026_11_01_13_5_76_0",
-      "date": "2026-11-01",
-      "lat": 13.5,
-      "lng": 76,
-      "geoType": 5,
-      "place": "Karnataka, Karnataka",
-      "articles": 105,
-      "outlets": 6,
-      "category": "breaking",
-      "title": "Andhra Chainsaw Attack Victim Undergoes Surgeries Classmates Given Counselling",
-      "urls": [
-        "https://www.thenewsminute.com/andhra-pradesh/andhra-chainsaw-attack-victim-undergoes-surgeries-classmates-given-counselling",
-        "https://www.livemint.com/news/india/bengaluru-nandini-milk-price-hiked-by-rs-8-will-your-daily-cup-of-tea-or-coffee-cost-more-what-hotel-associations-say-11793518247145.html",
-        "https://aninews.in/news/national/politics/govt-contemplating-giving-official-status-to-state-flag-karnataka-cm-dk-shivakumar20261101144607/",
-        "https://www.mangalorean.com/meeting-on-november-3-in-bengaluru-to-discuss-inauguration-of-new-udupi-district-hospital-minister-rizwan-arshad/",
-        "https://aninews.in/news/national/general-news/bodies-of-helicopter-crash-victims-in-uttarakhand-airlifted-to-aiims-rishikesh-bengaluru-cop-arun-solanki-among-6-killed20261101145239/"
-      ],
-      "domains": [
-        "thenewsminute.com",
-        "livemint.com",
-        "aninews.in",
-        "mangalorean.com",
-        "economictimes.indiatimes.com",
-        "timesofindia.indiatimes.com"
-      ],
-      "lastSeen": "20261101123000"
-    },
-    {
-      "id": "2026_11_01_10_0_76_5",
-      "date": "2026-11-01",
-      "lat": 10,
-      "lng": 76.5,
-      "geoType": 5,
-      "place": "Kerala, Kerala",
-      "articles": 100,
-      "outlets": 6,
-      "category": "protest",
-      "title": "At Cop17 The Fight Is To Give Women More Than A Seat At The Biodiversity Table",
-      "urls": [
-        "https://www.thenewsminute.com/kerala/at-cop17-the-fight-is-to-give-women-more-than-a-seat-at-the-biodiversity-table",
-        "https://aninews.in/news/world/asia/india-australia-joint-validation-exercise-austrahind-2026-culminates-in-keralam20261101141035/",
-        "https://www.deccanchronicle.com/southern-states/kerala/shailaja-teacher-condemns-online-attack-on-maharajas-college-student-2000804",
-        "https://organiser.org/2026/11/01/422976/bharat/fact-check-six-fake-allegations-against-cec-gyanesh-kumar-debunked/",
-        "https://www.rediff.com/news/report/congs-stern-warning-to-modi-govt-ahead-of-mega-rally-in-delhi/20261101.htm"
-      ],
-      "domains": [
-        "thenewsminute.com",
-        "aninews.in",
-        "deccanchronicle.com",
-        "organiser.org",
-        "rediff.com",
-        "hindustantimes.com"
-      ],
-      "lastSeen": "20261101121500"
-    },
-    {
       "id": "2026_11_01_29_9_78_6",
       "date": "2026-11-01",
       "lat": 29.8675,
       "lng": 78.5822,
       "geoType": 4,
       "place": "Nadda, Uttaranchal",
-      "articles": 93,
-      "outlets": 4,
+      "articles": 106,
+      "outlets": 5,
+      "type": "112",
+      "movement": "protest",
       "category": "protest",
       "title": "India Bloc Holds Mega Rally In Delhi Demands Cec Gyanesh Kumars Resignation",
       "urls": [
         "https://www.heraldgoa.in/globe-nation/india-bloc-holds-mega-rally-in-delhi-demands-cec-gyanesh-kumars-resignation/494091/",
         "https://ianslive.in/chalo-dilli-march-will-prove-to-be-final-nail-in-coffin-of-congs-political-decline-jp-nadda--20261101124834",
         "https://www.hindustantimes.com/india-news/bjp-slams-india-bloc-rally-ramlila-maidan-congress-small-businesses-sikh-sentiments-1984-anti-sikh-riots-jp-nadda-rahul-gandhi-101793521044796.html",
-        "https://www.moneycontrol.com/news/india/if-pm-modi-goes-then-only-democracy-can-be-saved-kharge-urges-united-fight-against-bjp-at-india-bloc-rally-14065490.html",
-        "https://www.moneycontrol.com/news/india/modi-kahin-nahi-ja-sakte-rahul-gandhi-warns-gyanesh-kumar-will-be-removed-says-modi-shah-next-in-line-14065507.html"
+        "https://www.moneycontrol.com/news/india/if-pm-modi-goes-then-only-democracy-can-be-saved-kharge-urges-united-fight-against-bjp-at-india-bloc-rally-14065490.html"
       ],
       "domains": [
         "heraldgoa.in",
         "ianslive.in",
         "hindustantimes.com",
-        "moneycontrol.com"
+        "moneycontrol.com",
+        "business-standard.com"
       ],
-      "lastSeen": "20261101120000"
+      "lastSeen": "20261101124500"
     },
     {
       "id": "2026_11_01_25_2_85_5",
@@ -301,16 +320,17 @@
       "lng": 85.5167,
       "geoType": 4,
       "place": "Bihar, Bihar",
-      "articles": 76,
-      "outlets": 7,
+      "articles": 98,
+      "outlets": 8,
+      "type": "010",
+      "movement": "protest",
       "category": "protest",
       "title": "Azam Khan Sent To 14 Day Judicial Custody To Be Lodged In Dasna Jail In Ghaziabad",
       "urls": [
         "https://timesofindia.indiatimes.com/city/lucknow/azam-khan-sent-to-14-day-judicial-custody-to-be-lodged-in-dasna-jail-in-ghaziabad/articleshow/135421383.cms",
         "https://timesofindia.indiatimes.com/india/gyanesh-kumar-can-no-longer-remain-in-his-position-tmcs-sagarika-ghose-demands-cecs-removal/articleshow/135421182.cms",
         "https://www.livelaw.in/top-stories/accused-not-produced-before-trial-court-for-nearly-14-months-supreme-court-seeks-explanation-from-bihar-police-gaya-court-556799",
-        "https://econotimes.com/Kashmir-Association-Leader-Reports-Scab-Damage-as-Diwali-Demand-Favors-Grade-A-Apples-1768035",
-        "https://www.moneycontrol.com/news/india/if-pm-modi-goes-then-only-democracy-can-be-saved-kharge-urges-united-fight-against-bjp-at-india-bloc-rally-14065490.html"
+        "https://econotimes.com/Kashmir-Association-Leader-Reports-Scab-Damage-as-Diwali-Demand-Favors-Grade-A-Apples-1768035"
       ],
       "domains": [
         "timesofindia.indiatimes.com",
@@ -319,30 +339,31 @@
         "moneycontrol.com",
         "prokerala.com",
         "ibtimes.co.in",
-        "hindustantimes.com"
+        "hindustantimes.com",
+        "oneindia.com"
       ],
-      "lastSeen": "20261101121500"
+      "lastSeen": "20261101131500"
     },
     {
-      "id": "2026_11_01_13_3_74_8",
+      "id": "2026_11_01_10_8_78_7",
       "date": "2026-11-01",
-      "lat": 13.35,
-      "lng": 74.75,
+      "lat": 10.805,
+      "lng": 78.6856,
       "geoType": 4,
-      "place": "Udupi, Karnataka",
-      "articles": 57,
-      "outlets": 2,
-      "category": "politics",
-      "title": "Meeting On November 3 In Bengaluru To Discuss Inauguration Of New Udupi District Hospital Minister Rizwan Arshad",
+      "place": "Tiruchi, Tamil Nadu",
+      "articles": 89,
+      "outlets": 1,
+      "type": "042",
+      "movement": "security",
+      "category": "security",
+      "title": "Pudukottai Brought Under Heavy Security Cover For Cms Visit On Monday",
       "urls": [
-        "https://www.mangalorean.com/meeting-on-november-3-in-bengaluru-to-discuss-inauguration-of-new-udupi-district-hospital-minister-rizwan-arshad/",
-        "https://www.gulte.com/political-news/439197/next-48-hours-crucial-pray-for-her-irrespective-of-religion"
+        "https://www.thehindu.com/news/national/tamil-nadu/pudukottai-brought-under-heavy-security-cover-for-cms-visit-on-monday/article71652676.ece"
       ],
       "domains": [
-        "mangalorean.com",
-        "gulte.com"
+        "thehindu.com"
       ],
-      "lastSeen": "20261101120000"
+      "lastSeen": "20261101130000"
     },
     {
       "id": "2026_11_01_20_5_84_4",
@@ -351,23 +372,237 @@
       "lng": 84.4167,
       "geoType": 5,
       "place": "Orissa, Orissa",
-      "articles": 53,
-      "outlets": 3,
+      "articles": 77,
+      "outlets": 4,
+      "type": "100",
+      "movement": "protest",
       "category": "protest",
       "title": "Cheetah Shot Dead In Kuno National Park Six Forest Employees Suspended",
       "urls": [
         "https://www.orissapost.com/cheetah-shot-dead-in-kuno-national-park-six-forest-employees-suspended/",
         "https://www.orissapost.com/india-bloc-leaders-move-towards-ramlila-maidan-in-open-canter-with-crowds-marching-alongside/",
         "https://dailypioneer.com/india/depression-over-bay-of-bengal-may-intensify-into-cyclone-murasu-andhra-coast-on-alert",
-        "https://www.orissapost.com/india-bloc-rally-aims-to-protect-constitutional-rights-not-parties-tharoor/",
-        "https://www.newindianexpress.com/states/andhra-pradesh/2026/Nov/01/cyclone-murasu-intensifies-over-bay-of-bengal-likely-to-cross-andhra-coast-on-november-3"
+        "https://www.orissapost.com/india-bloc-rally-aims-to-protect-constitutional-rights-not-parties-tharoor/"
       ],
       "domains": [
         "orissapost.com",
         "dailypioneer.com",
-        "newindianexpress.com"
+        "newindianexpress.com",
+        "idrw.org"
       ],
-      "lastSeen": "20261101111500"
+      "lastSeen": "20261101131500"
+    },
+    {
+      "id": "2026_11_01_28_0_76_0",
+      "date": "2026-11-01",
+      "lat": 28,
+      "lng": 76,
+      "geoType": 4,
+      "place": "Hindustan, India (general)",
+      "articles": 72,
+      "outlets": 6,
+      "type": "111",
+      "movement": "economy",
+      "category": "economy",
+      "title": "Meghalaya Minister Metbah Lyngdoh Resigns Days After Udp Party 11 Of 12 Mlas Join Bjp Cm Conrad K Sangma Party Npp",
+      "urls": [
+        "https://www.hindustantimes.com/india-news/meghalaya-minister-metbah-lyngdoh-resigns-days-after-udp-party-11-of-12-mlas-join-bjp-cm-conrad-k-sangma-party-npp-101793519351281.html",
+        "https://www.business-standard.com/india-news/india-news-iaf-chief-ashutosh-dixit-tejas-amca-priority-vayu-agenda-126110100299_1.html",
+        "https://www.business-standard.com/markets/ipo/global-beverage-majors-carlsberg-pernod-coca-cola-advance-india-ipo-plans-126110100369_1.html",
+        "https://www.moneycontrol.com/news/business/companies/from-carlsberg-to-coca-cola-global-beverage-giants-gear-up-for-india-ipos-14065471.html"
+      ],
+      "domains": [
+        "hindustantimes.com",
+        "business-standard.com",
+        "moneycontrol.com",
+        "dailypioneer.com",
+        "econotimes.com",
+        "livemint.com"
+      ],
+      "lastSeen": "20261101131500"
+    },
+    {
+      "id": "2026_11_01_27_1_79_4",
+      "date": "2026-11-01",
+      "lat": 27.0529,
+      "lng": 79.3583,
+      "geoType": 4,
+      "place": "Manipur, Uttar Pradesh",
+      "articles": 71,
+      "outlets": 3,
+      "type": "112",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Five Killed In Fresh Ethnic Violence In Indias Manipur State",
+      "urls": [
+        "https://ksevradio.com/five-killed-in-fresh-ethnic-violence-in-indias-manipur-state/",
+        "https://organiser.org/2026/11/01/422985/bharat/fulfilling-duties-towards-society-with-dedication-is-true-karmayoga-alok-kumar-of-vhp-at-karmayogi-award-ceremony/",
+        "https://www.rediff.com/news/report/rift-in-manipur-bjp-as-attacks-on-cong-mp-backfire/20261101.htm"
+      ],
+      "domains": [
+        "ksevradio.com",
+        "organiser.org",
+        "rediff.com"
+      ],
+      "lastSeen": "20261101124500"
+    },
+    {
+      "id": "2026_11_01_25_4_81_8",
+      "date": "2026-11-01",
+      "lat": 25.45,
+      "lng": 81.85,
+      "geoType": 4,
+      "place": "Allahabad, Uttar Pradesh",
+      "articles": 70,
+      "outlets": 5,
+      "type": "111",
+      "movement": "protest",
+      "category": "protest",
+      "title": "Allahabad Hcba Oudh Bar Intervention Justice Arun Deshwal Bar Bench Tensions",
+      "urls": [
+        "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-hcba-oudh-bar-intervention-justice-arun-deshwal-bar-bench-tensions-556800",
+        "https://www.prokerala.com/news/articles/a1831594.html",
+        "https://realty.economictimes.indiatimes.com/news/regulatory/enforcement-directorate-searches-prayag-developers-premises-in-nagpur-seizes-1-95-crore-cash/135421268",
+        "https://www.rediff.com/news/report/bjp-chief-nitin-nabin-criticises-congress-over-india-bloc-protest-1984-anti-sikh-riots/20261101.htm"
+      ],
+      "domains": [
+        "livelaw.in",
+        "prokerala.com",
+        "realty.economictimes.indiatimes.com",
+        "rediff.com",
+        "economictimes.indiatimes.com"
+      ],
+      "lastSeen": "20261101130000"
+    },
+    {
+      "id": "2026_11_01_27_3_80_8",
+      "date": "2026-11-01",
+      "lat": 27.25,
+      "lng": 80.75,
+      "geoType": 5,
+      "place": "Uttar Pradesh, Uttar Pradesh",
+      "articles": 70,
+      "outlets": 7,
+      "type": "112",
+      "movement": "protest",
+      "category": "protest",
+      "title": "India Bloc Holds Mega Rally Against Cec Gyanesh Kumar Demands Resignation Over Sir Bjp Stages Counter March Over 1984 Riots",
+      "urls": [
+        "https://www.moneycontrol.com/news/india/india-bloc-holds-mega-rally-against-cec-gyanesh-kumar-demands-resignation-over-sir-bjp-stages-counter-march-over-1984-riots-14065462.html",
+        "https://www.freepressjournal.in/india/azam-khan-sent-to-14-day-judicial-custody-in-money-laundering-case-linked-to-jauhar-university",
+        "https://www.moneycontrol.com/news/india/chanda-chori-sinners-will-be-destroyed-akhilesh-yadav-targets-bjp-calls-ramlila-maidan-democracy-s-haldighati-14065501.html",
+        "https://www.hindustantimes.com/india-news/rahul-gandhi-says-gyanesh-kumar-will-go-to-jail-warns-modi-shah-bjp-of-legal-action-over-vote-chori-ramlila-maidan-protest-opposition-congress-delhi-101793531062268.html"
+      ],
+      "domains": [
+        "moneycontrol.com",
+        "freepressjournal.in",
+        "hindustantimes.com",
+        "timesofindia.indiatimes.com",
+        "oneindia.com",
+        "business-standard.com",
+        "rediff.com"
+      ],
+      "lastSeen": "20261101124500"
+    },
+    {
+      "id": "2026_11_01_13_3_74_8",
+      "date": "2026-11-01",
+      "lat": 13.35,
+      "lng": 74.75,
+      "geoType": 4,
+      "place": "Udupi, Karnataka",
+      "articles": 65,
+      "outlets": 3,
+      "type": "040",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Meeting On November 3 In Bengaluru To Discuss Inauguration Of New Udupi District Hospital Minister Rizwan Arshad",
+      "urls": [
+        "https://www.mangalorean.com/meeting-on-november-3-in-bengaluru-to-discuss-inauguration-of-new-udupi-district-hospital-minister-rizwan-arshad/",
+        "https://www.gulte.com/political-news/439197/next-48-hours-crucial-pray-for-her-irrespective-of-religion",
+        "https://www.prokerala.com/news/articles/a1831649.html"
+      ],
+      "domains": [
+        "mangalorean.com",
+        "gulte.com",
+        "prokerala.com"
+      ],
+      "lastSeen": "20261101130000"
+    },
+    {
+      "id": "2026_11_01_13_1_80_3",
+      "date": "2026-11-01",
+      "lat": 13.0833,
+      "lng": 80.2833,
+      "geoType": 4,
+      "place": "Chennai, Tamil Nadu",
+      "articles": 59,
+      "outlets": 6,
+      "type": "043",
+      "movement": "economy",
+      "category": "economy",
+      "title": "Ncrtc Explores Transit Oriented Development Growth Hubs Along Namo Bharat Corridors To Attract Private Investment",
+      "urls": [
+        "http://www.bignewsnetwork.com/news/279406588/ncrtc-explores-transit-oriented-development-growth-hubs-along-namo-bharat-corridors-to-attract-private-investment",
+        "https://timesofindia.indiatimes.com/toi-blogs/digital-life/empty-trucks-lost-crores-how-ai-can-cut-indias-logistics-costs/articleshow/135424734.cms",
+        "https://www.hindustantimes.com/india-news/cisf-transitions-to-functional-sector-architecture-to-strengthen-security-101793533222359.html",
+        "https://www.khaama.com/shahrukh-khans-chennai-express-to-get-a-big-release-in-uk-1713/"
+      ],
+      "domains": [
+        "bignewsnetwork.com",
+        "timesofindia.indiatimes.com",
+        "hindustantimes.com",
+        "khaama.com",
+        "thehindu.com",
+        "economictimes.indiatimes.com"
+      ],
+      "lastSeen": "20261101131500"
+    },
+    {
+      "id": "2026_11_01_24_8_94_0",
+      "date": "2026-11-01",
+      "lat": 24.8167,
+      "lng": 93.95,
+      "geoType": 4,
+      "place": "Imphal, Manipur",
+      "articles": 54,
+      "outlets": 2,
+      "type": "190",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Five Killed In Fresh Ethnic Violence In Indias Manipur State",
+      "urls": [
+        "https://ksevradio.com/five-killed-in-fresh-ethnic-violence-in-indias-manipur-state/",
+        "https://www.rediff.com/news/report/rift-in-manipur-bjp-as-attacks-on-cong-mp-backfire/20261101.htm"
+      ],
+      "domains": [
+        "ksevradio.com",
+        "rediff.com"
+      ],
+      "lastSeen": "20261101124500"
+    },
+    {
+      "id": "2026_11_01_14_4_77_7",
+      "date": "2026-11-01",
+      "lat": 14.4333,
+      "lng": 77.7167,
+      "geoType": 4,
+      "place": "Dharmavaram, Andhra Pradesh",
+      "articles": 52,
+      "outlets": 2,
+      "type": "111",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Rgv Defends Sandeep Reddy Vanga As Netizens Criticise His Film In Light Of Shocking Chainsaw Attack",
+      "urls": [
+        "https://ianslive.in/rgv-defends-sandeep-reddy-vanga-as-netizens-criticise-his-film-in-light-of-shocking-chainsaw-attack--20261101161921",
+        "https://www.oneindia.com/india/rejection-of-love-proposal-accused-was-girls-uncle-what-triggered-andhra-school-chainsaw-attack-8247905.html"
+      ],
+      "domains": [
+        "ianslive.in",
+        "oneindia.com"
+      ],
+      "lastSeen": "20261101124500"
     },
     {
       "id": "2026_11_01_26_2_91_7",
@@ -378,6 +613,8 @@
       "place": "Guwahati, Assam",
       "articles": 50,
       "outlets": 1,
+      "type": "046",
+      "movement": "security",
       "category": "security",
       "title": "India And Myanmar Hold Army Staff Talks Discuss Enhancing Military Cooperation",
       "urls": [
@@ -389,30 +626,56 @@
       "lastSeen": "20261101094500"
     },
     {
-      "id": "2026_11_01_28_0_76_0",
+      "id": "2026_11_01_32_7_74_9",
       "date": "2026-11-01",
-      "lat": 28,
-      "lng": 76,
+      "lat": 32.7333,
+      "lng": 74.8667,
       "geoType": 4,
-      "place": "Hindustan, India (general)",
-      "articles": 44,
+      "place": "Jammu, Jammu and Kashmir",
+      "articles": 50,
       "outlets": 4,
-      "category": "economy",
-      "title": "Meghalaya Minister Metbah Lyngdoh Resigns Days After Udp Party 11 Of 12 Mlas Join Bjp Cm Conrad K Sangma Party Npp",
+      "type": "043",
+      "movement": "protest",
+      "category": "protest",
+      "title": "India Bloc Holds Mega Rally Against Cec Gyanesh Kumar Demands Resignation Over Sir Bjp Stages Counter March Over 1984 Riots",
       "urls": [
-        "https://www.hindustantimes.com/india-news/meghalaya-minister-metbah-lyngdoh-resigns-days-after-udp-party-11-of-12-mlas-join-bjp-cm-conrad-k-sangma-party-npp-101793519351281.html",
-        "https://www.business-standard.com/india-news/india-news-iaf-chief-ashutosh-dixit-tejas-amca-priority-vayu-agenda-126110100299_1.html",
-        "https://www.business-standard.com/markets/ipo/global-beverage-majors-carlsberg-pernod-coca-cola-advance-india-ipo-plans-126110100369_1.html",
-        "https://www.moneycontrol.com/news/business/companies/from-carlsberg-to-coca-cola-global-beverage-giants-gear-up-for-india-ipos-14065471.html",
-        "https://dailypioneer.com/india/four-die-of-suspected-suffocation-while-cleaning-waste-chamber-at-ujjain-hotel"
+        "https://www.moneycontrol.com/news/india/india-bloc-holds-mega-rally-against-cec-gyanesh-kumar-demands-resignation-over-sir-bjp-stages-counter-march-over-1984-riots-14065462.html",
+        "https://www.prokerala.com/news/articles/a1831604.html",
+        "https://www.ibtimes.co.in/omar-abdullah-nidhi-razdan-wedding-farooq-abdullah-omar-dance-rahul-gandhi-supriya-sule-kapil-908017",
+        "https://www.dailyexcelsior.com/this-is-indias-constitution-everyone-has-an-equal-vote-farooq-abdullah-at-india-bloc-rally/"
+      ],
+      "domains": [
+        "moneycontrol.com",
+        "prokerala.com",
+        "ibtimes.co.in",
+        "dailyexcelsior.com"
+      ],
+      "lastSeen": "20261101130000"
+    },
+    {
+      "id": "2026_11_01_24_6_77_6",
+      "date": "2026-11-01",
+      "lat": 24.6167,
+      "lng": 77.6,
+      "geoType": 4,
+      "place": "Shahdara, Madhya Pradesh",
+      "articles": 46,
+      "outlets": 3,
+      "type": "073",
+      "movement": "security",
+      "category": "security",
+      "title": "Delhi Police Transfers Rs 5 000 Via Upi To Track Kidnapper Rescues 13 Year Old Within 3 Hours",
+      "urls": [
+        "https://www.hindustantimes.com/cities/delhi-news/delhi-police-transfers-rs-5-000-via-upi-to-track-kidnapper-rescues-13-year-old-within-3-hours-101793527543988.html",
+        "https://economictimes.indiatimes.com/news/new-updates/delhi-mother-receives-call-saying-her-son-has-been-kidnapped-kidnapper-demands-rs-40000-for-release-police-track-his-upi-id-and-rescue-the-boy-within-three-hours/articleshow/135426089.cms",
+        "https://timesofindia.indiatimes.com/city/delhi/rs-5000-upi-trail-cybercafe-cctv-help-delhi-police-rescue-13-year-old-within-3-hours/articleshow/135427484.cms"
       ],
       "domains": [
         "hindustantimes.com",
-        "business-standard.com",
-        "moneycontrol.com",
-        "dailypioneer.com"
+        "economictimes.indiatimes.com",
+        "timesofindia.indiatimes.com"
       ],
-      "lastSeen": "20261101104500"
+      "lastSeen": "20261101131500"
     },
     {
       "id": "2026_11_01_30_7_76_8",
@@ -423,6 +686,8 @@
       "place": "Raipur Kalan, Chandigarh",
       "articles": 44,
       "outlets": 1,
+      "type": "111",
+      "movement": "protest",
       "category": "protest",
       "title": "Amit Shah Slams Rahul Gandhi Over India Bloc Rally On 1984 Anti Sikh Riots Anniversary Says It Rubs Salt Into Victims Wounds",
       "urls": [
@@ -444,6 +709,8 @@
       "place": "Ernakulam, Kerala",
       "articles": 43,
       "outlets": 2,
+      "type": "042",
+      "movement": "security",
       "category": "security",
       "title": "Shailaja Teacher Condemns Online Attack On Maharajas College Student",
       "urls": [
@@ -465,7 +732,9 @@
       "place": "Tamil Nadu, Tamil Nadu",
       "articles": 42,
       "outlets": 4,
-      "category": "education",
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
       "title": "Vote Is Greatest Weapon In Democracy Manickam Tagore Backs Rahul Gandhi Delhi Chalo Call",
       "urls": [
         "http://www.calcuttanews.net/news/279406484/vote-is-greatest-weapon-in-democracy-manickam-tagore-backs-rahul-gandhi-delhi-chalo-call",
@@ -490,7 +759,9 @@
       "place": "Shiv, Rajasthan",
       "articles": 42,
       "outlets": 4,
-      "category": "breaking",
+      "type": "141",
+      "movement": "protest",
+      "category": "protest",
       "title": "Protesters Gather Ramlila Maidan Rahul Gandhi Calls March",
       "urls": [
         "https://www.thedailystar.net/news/world/news/protesters-gather-ramlila-maidan-rahul-gandhi-calls-march-4312656",
@@ -507,29 +778,6 @@
       "lastSeen": "20261101104500"
     },
     {
-      "id": "2026_11_01_25_4_81_8",
-      "date": "2026-11-01",
-      "lat": 25.45,
-      "lng": 81.85,
-      "geoType": 4,
-      "place": "Allahabad, Uttar Pradesh",
-      "articles": 41,
-      "outlets": 3,
-      "category": "politics",
-      "title": "Allahabad Hcba Oudh Bar Intervention Justice Arun Deshwal Bar Bench Tensions",
-      "urls": [
-        "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-hcba-oudh-bar-intervention-justice-arun-deshwal-bar-bench-tensions-556800",
-        "https://www.prokerala.com/news/articles/a1831594.html",
-        "https://realty.economictimes.indiatimes.com/news/regulatory/enforcement-directorate-searches-prayag-developers-premises-in-nagpur-seizes-1-95-crore-cash/135421268"
-      ],
-      "domains": [
-        "livelaw.in",
-        "prokerala.com",
-        "realty.economictimes.indiatimes.com"
-      ],
-      "lastSeen": "20261101103000"
-    },
-    {
       "id": "2026_11_01_23_3_77_4",
       "date": "2026-11-01",
       "lat": 23.2667,
@@ -538,6 +786,8 @@
       "place": "Bhopal, Madhya Pradesh",
       "articles": 41,
       "outlets": 1,
+      "type": "010",
+      "movement": "politics",
       "category": "politics",
       "title": "India 2030 Who Supplies The Next 10 Million",
       "urls": [
@@ -557,6 +807,8 @@
       "place": "Orai, Uttar Pradesh",
       "articles": 41,
       "outlets": 2,
+      "type": "040",
+      "movement": "security",
       "category": "security",
       "title": "Up Advocate Kidnapped Murdered Over Land Dispute 3 Held",
       "urls": [
@@ -578,6 +830,8 @@
       "place": "Rohtak, Haryana",
       "articles": 40,
       "outlets": 2,
+      "type": "043",
+      "movement": "protest",
       "category": "protest",
       "title": "Vote Chori Haryana Congress Slams Bjps Save Democracy Campaign",
       "urls": [
@@ -592,27 +846,6 @@
       "lastSeen": "20261101120000"
     },
     {
-      "id": "2026_11_01_24_6_77_6",
-      "date": "2026-11-01",
-      "lat": 24.6167,
-      "lng": 77.6,
-      "geoType": 4,
-      "place": "Shahdara, Madhya Pradesh",
-      "articles": 40,
-      "outlets": 2,
-      "category": "security",
-      "title": "Delhi Police Transfers Rs 5 000 Via Upi To Track Kidnapper Rescues 13 Year Old Within 3 Hours",
-      "urls": [
-        "https://www.hindustantimes.com/cities/delhi-news/delhi-police-transfers-rs-5-000-via-upi-to-track-kidnapper-rescues-13-year-old-within-3-hours-101793527543988.html",
-        "https://economictimes.indiatimes.com/news/new-updates/delhi-mother-receives-call-saying-her-son-has-been-kidnapped-kidnapper-demands-rs-40000-for-release-police-track-his-upi-id-and-rescue-the-boy-within-three-hours/articleshow/135426089.cms"
-      ],
-      "domains": [
-        "hindustantimes.com",
-        "economictimes.indiatimes.com"
-      ],
-      "lastSeen": "20261101121500"
-    },
-    {
       "id": "2026_11_01_30_0_76_8",
       "date": "2026-11-01",
       "lat": 30,
@@ -621,8 +854,10 @@
       "place": "Kurukshetra, Haryana",
       "articles": 40,
       "outlets": 1,
+      "type": "111",
+      "movement": "politics",
       "category": "politics",
-      "title": "Politics report in Kurukshetra",
+      "title": "News reported in Kurukshetra",
       "urls": [
         "https://www.prokerala.com/news/articles/a1831629.html"
       ],
@@ -640,6 +875,8 @@
       "place": "Nagpur, Maharashtra",
       "articles": 38,
       "outlets": 3,
+      "type": "190",
+      "movement": "politics",
       "category": "politics",
       "title": "India 2030 Who Supplies The Next 10 Million",
       "urls": [
@@ -656,25 +893,6 @@
       "lastSeen": "20261101113000"
     },
     {
-      "id": "2026_11_01_24_8_94_0",
-      "date": "2026-11-01",
-      "lat": 24.8167,
-      "lng": 93.95,
-      "geoType": 4,
-      "place": "Imphal, Manipur",
-      "articles": 37,
-      "outlets": 1,
-      "category": "security",
-      "title": "Five Killed In Fresh Ethnic Violence In Indias Manipur State",
-      "urls": [
-        "https://ksevradio.com/five-killed-in-fresh-ethnic-violence-in-indias-manipur-state/"
-      ],
-      "domains": [
-        "ksevradio.com"
-      ],
-      "lastSeen": "20261101104500"
-    },
-    {
       "id": "2026_11_01_25_6_85_1",
       "date": "2026-11-01",
       "lat": 25.6,
@@ -683,6 +901,8 @@
       "place": "Patna, Bihar",
       "articles": 37,
       "outlets": 2,
+      "type": "112",
+      "movement": "politics",
       "category": "politics",
       "title": "Modi Kahin Nahi Ja Sakte Rahul Gandhi Warns Gyanesh Kumar Will Be Removed Says Modi Shah Next In Line",
       "urls": [
@@ -697,31 +917,6 @@
       "lastSeen": "20261101120000"
     },
     {
-      "id": "2026_11_01_13_1_80_3",
-      "date": "2026-11-01",
-      "lat": 13.0833,
-      "lng": 80.2833,
-      "geoType": 4,
-      "place": "Chennai, Tamil Nadu",
-      "articles": 37,
-      "outlets": 4,
-      "category": "economy",
-      "title": "Ncrtc Explores Transit Oriented Development Growth Hubs Along Namo Bharat Corridors To Attract Private Investment",
-      "urls": [
-        "http://www.bignewsnetwork.com/news/279406588/ncrtc-explores-transit-oriented-development-growth-hubs-along-namo-bharat-corridors-to-attract-private-investment",
-        "https://timesofindia.indiatimes.com/toi-blogs/digital-life/empty-trucks-lost-crores-how-ai-can-cut-indias-logistics-costs/articleshow/135424734.cms",
-        "https://www.hindustantimes.com/india-news/cisf-transitions-to-functional-sector-architecture-to-strengthen-security-101793533222359.html",
-        "https://www.khaama.com/shahrukh-khans-chennai-express-to-get-a-big-release-in-uk-1713/"
-      ],
-      "domains": [
-        "bignewsnetwork.com",
-        "timesofindia.indiatimes.com",
-        "hindustantimes.com",
-        "khaama.com"
-      ],
-      "lastSeen": "20261101121500"
-    },
-    {
       "id": "2026_11_01_12_9_74_8",
       "date": "2026-11-01",
       "lat": 12.8639,
@@ -730,6 +925,8 @@
       "place": "Mangaluru, Karnataka",
       "articles": 37,
       "outlets": 1,
+      "type": "020",
+      "movement": "politics",
       "category": "politics",
       "title": "Captain Chowta Opposes Proposal To Revise Timings Of Gomateshwara Express",
       "urls": [
@@ -749,6 +946,8 @@
       "place": "Hari Nagar, Gujarat",
       "articles": 34,
       "outlets": 4,
+      "type": "141",
+      "movement": "protest",
       "category": "protest",
       "title": "Congress Workers Allegedly Tear Bjp Hoardings On 1984 Anti Sikh Riots Ahead Of Parallel Marches In Delhi",
       "urls": [
@@ -774,6 +973,8 @@
       "place": "Arunachal, Assam",
       "articles": 34,
       "outlets": 1,
+      "type": "043",
+      "movement": "politics",
       "category": "politics",
       "title": "Arunachal Pradesh Hosts Sacred Exposition Of Buddhas Relics Cultural And Spiritual Significance Highlighted By Cm Pema Khandu And Pm Modi",
       "urls": [
@@ -793,6 +994,8 @@
       "place": "Calcutta, West Bengal",
       "articles": 32,
       "outlets": 3,
+      "type": "080",
+      "movement": "politics",
       "category": "politics",
       "title": "Calcutta High Court Rejects Obc Candidates Plea To Reopen Portal For Primary Teacher Recruitment Application",
       "urls": [
@@ -816,7 +1019,9 @@
       "place": "Badrinath, Uttaranchal",
       "articles": 32,
       "outlets": 1,
-      "category": "breaking",
+      "type": "043",
+      "movement": "security",
+      "category": "security",
       "title": "Uttarakhand Sdrf Intensifies Search And Rescue Mission For 8 Missing Trekkers In Uttarkashi20261101145314",
       "urls": [
         "https://aninews.in/news/national/general-news/uttarakhand-sdrf-intensifies-search-and-rescue-mission-for-8-missing-trekkers-in-uttarkashi20261101145314/",
@@ -836,6 +1041,8 @@
       "place": "Hyderabad, Andhra Pradesh",
       "articles": 31,
       "outlets": 4,
+      "type": "043",
+      "movement": "politics",
       "category": "politics",
       "title": "Mob Attacks Tv News Crew Covering Polling In Pulivendula Camera Smashed",
       "urls": [
@@ -861,6 +1068,8 @@
       "place": "Faridabad, Haryana",
       "articles": 30,
       "outlets": 1,
+      "type": "010",
+      "movement": "politics",
       "category": "politics",
       "title": "Woman Found Dead In Faridabad Hotel Room Man Who Accompanied Her Missing",
       "urls": [
@@ -880,8 +1089,10 @@
       "place": "Vizianagaram, Andhra Pradesh",
       "articles": 30,
       "outlets": 1,
+      "type": "110",
+      "movement": "politics",
       "category": "politics",
-      "title": "Politics report in Vizianagaram",
+      "title": "News reported in Vizianagaram",
       "urls": [
         "https://www.telugupeople.com/news/news.asp?newsID=109166"
       ],
@@ -899,6 +1110,8 @@
       "place": "Badlapur, Maharashtra",
       "articles": 30,
       "outlets": 1,
+      "type": "190",
+      "movement": "politics",
       "category": "politics",
       "title": "Man Convicted For Culpable Homicide In Thane Assault Case",
       "urls": [
@@ -910,50 +1123,6 @@
       "lastSeen": "20261101104500"
     },
     {
-      "id": "2026_11_01_27_1_79_4",
-      "date": "2026-11-01",
-      "lat": 27.0529,
-      "lng": 79.3583,
-      "geoType": 4,
-      "place": "Manipur, Uttar Pradesh",
-      "articles": 30,
-      "outlets": 2,
-      "category": "security",
-      "title": "Five Killed In Fresh Ethnic Violence In Indias Manipur State",
-      "urls": [
-        "https://ksevradio.com/five-killed-in-fresh-ethnic-violence-in-indias-manipur-state/",
-        "https://organiser.org/2026/11/01/422985/bharat/fulfilling-duties-towards-society-with-dedication-is-true-karmayoga-alok-kumar-of-vhp-at-karmayogi-award-ceremony/"
-      ],
-      "domains": [
-        "ksevradio.com",
-        "organiser.org"
-      ],
-      "lastSeen": "20261101104500"
-    },
-    {
-      "id": "2026_11_01_32_7_74_9",
-      "date": "2026-11-01",
-      "lat": 32.7333,
-      "lng": 74.8667,
-      "geoType": 4,
-      "place": "Jammu, Jammu and Kashmir",
-      "articles": 30,
-      "outlets": 3,
-      "category": "protest",
-      "title": "India Bloc Holds Mega Rally Against Cec Gyanesh Kumar Demands Resignation Over Sir Bjp Stages Counter March Over 1984 Riots",
-      "urls": [
-        "https://www.moneycontrol.com/news/india/india-bloc-holds-mega-rally-against-cec-gyanesh-kumar-demands-resignation-over-sir-bjp-stages-counter-march-over-1984-riots-14065462.html",
-        "https://www.prokerala.com/news/articles/a1831604.html",
-        "https://www.ibtimes.co.in/omar-abdullah-nidhi-razdan-wedding-farooq-abdullah-omar-dance-rahul-gandhi-supriya-sule-kapil-908017"
-      ],
-      "domains": [
-        "moneycontrol.com",
-        "prokerala.com",
-        "ibtimes.co.in"
-      ],
-      "lastSeen": "20261101114500"
-    },
-    {
       "id": "2026_11_01_12_9_78_0",
       "date": "2026-11-01",
       "lat": 12.8667,
@@ -962,6 +1131,8 @@
       "place": "Masti, Karnataka",
       "articles": 28,
       "outlets": 1,
+      "type": "120",
+      "movement": "economy",
       "category": "economy",
       "title": "Vivek Oberoi Shares Why Sanjay Guptas Demise Feels Deeply Personal",
       "urls": [
@@ -973,6 +1144,27 @@
       "lastSeen": "20261101094500"
     },
     {
+      "id": "2026_11_01_22_3_70_8",
+      "date": "2026-11-01",
+      "lat": 22.3,
+      "lng": 70.7833,
+      "geoType": 4,
+      "place": "Rajkot, Gujarat",
+      "articles": 28,
+      "outlets": 1,
+      "type": "190",
+      "movement": "politics",
+      "category": "politics",
+      "title": "38 Booked For Liquor Consumption After Rajkot Birthday Party Raid",
+      "urls": [
+        "https://www.rediff.com/news/report/38-booked-for-liquor-consumption-after-rajkot-birthday-party-raid/20261101.htm"
+      ],
+      "domains": [
+        "rediff.com"
+      ],
+      "lastSeen": "20261101124500"
+    },
+    {
       "id": "2026_11_01_23_0_93_0",
       "date": "2026-11-01",
       "lat": 23,
@@ -981,6 +1173,8 @@
       "place": "Mizo, Mizoram",
       "articles": 27,
       "outlets": 1,
+      "type": "043",
+      "movement": "politics",
       "category": "politics",
       "title": "Dibrugarh Kuki Zo Community Celebrates Chavang Kut 2026 With Traditional Fervour16020261101172419",
       "urls": [
@@ -1000,7 +1194,9 @@
       "place": "Kanpur, Uttar Pradesh",
       "articles": 25,
       "outlets": 2,
-      "category": "education",
+      "type": "190",
+      "movement": "security",
+      "category": "security",
       "title": "Lucknow Sweet Seller S Son With Iit Degree Lands Rs 2 5 Crore Ai Job In Dubai Building New House For Family",
       "urls": [
         "https://www.moneycontrol.com/news/trends/lucknow-sweet-seller-s-son-with-iit-degree-lands-rs-2-5-crore-ai-job-in-dubai-building-new-house-for-family-14065447.html",
@@ -1021,7 +1217,9 @@
       "place": "Sahibganj, Jharkhand",
       "articles": 25,
       "outlets": 1,
-      "category": "education",
+      "type": "042",
+      "movement": "politics",
+      "category": "politics",
       "title": "Empty Trucks Lost Crores How Ai Can Cut Indias Logistics Costs",
       "urls": [
         "https://timesofindia.indiatimes.com/toi-blogs/digital-life/empty-trucks-lost-crores-how-ai-can-cut-indias-logistics-costs/articleshow/135424734.cms"
@@ -1040,8 +1238,10 @@
       "place": "Uttarakhand, Uttaranchal",
       "articles": 25,
       "outlets": 1,
+      "type": "111",
+      "movement": "politics",
       "category": "politics",
-      "title": "Politics report in Uttarakhand",
+      "title": "News reported in Uttarakhand",
       "urls": [
         "https://www.prokerala.com/news/articles/a1831635.html"
       ],
@@ -1059,7 +1259,9 @@
       "place": "Sewa, Rajasthan",
       "articles": 24,
       "outlets": 1,
-      "category": "general",
+      "type": "100",
+      "movement": "other",
+      "category": "other",
       "title": "Red Green Alliance Of West Exposed How Bharat Foiled Attempts To Turn Public Grievances Into Vested Political Upheaval",
       "urls": [
         "https://organiser.org/2026/11/01/421072/world/red-green-alliance-of-west-exposed-how-bharat-foiled-attempts-to-turn-public-grievances-into-vested-political-upheaval/"
@@ -1070,30 +1272,32 @@
       "lastSeen": "20261101104500"
     },
     {
-      "id": "2026_11_01_27_3_80_8",
+      "id": "2026_11_01_23_5_78_5",
       "date": "2026-11-01",
-      "lat": 27.25,
-      "lng": 80.75,
+      "lat": 23.5,
+      "lng": 78.5,
       "geoType": 5,
-      "place": "Uttar Pradesh, Uttar Pradesh",
-      "articles": 23,
-      "outlets": 4,
+      "place": "Madhya Pradesh, Madhya Pradesh",
+      "articles": 24,
+      "outlets": 5,
+      "type": "173",
+      "movement": "protest",
       "category": "protest",
-      "title": "India Bloc Holds Mega Rally Against Cec Gyanesh Kumar Demands Resignation Over Sir Bjp Stages Counter March Over 1984 Riots",
+      "title": "Royal Enfield Bikes Tractors Among Prizes In Mp Govts Quiz Outreach For Students Farmers",
       "urls": [
-        "https://www.moneycontrol.com/news/india/india-bloc-holds-mega-rally-against-cec-gyanesh-kumar-demands-resignation-over-sir-bjp-stages-counter-march-over-1984-riots-14065462.html",
-        "https://www.freepressjournal.in/india/azam-khan-sent-to-14-day-judicial-custody-in-money-laundering-case-linked-to-jauhar-university",
-        "https://www.moneycontrol.com/news/india/chanda-chori-sinners-will-be-destroyed-akhilesh-yadav-targets-bjp-calls-ramlila-maidan-democracy-s-haldighati-14065501.html",
-        "https://www.hindustantimes.com/india-news/rahul-gandhi-says-gyanesh-kumar-will-go-to-jail-warns-modi-shah-bjp-of-legal-action-over-vote-chori-ramlila-maidan-protest-opposition-congress-delhi-101793531062268.html",
-        "https://timesofindia.indiatimes.com/city/lucknow/three-up-districts-excel-nationally-in-administrative-practices/articleshow/135425777.cms"
+        "https://www.hindustantimes.com/india-news/royal-enfield-bikes-tractors-among-prizes-in-mp-govts-quiz-outreach-for-students-farmers-101793517952899.html",
+        "https://organiser.org/2026/11/01/422994/bharat/dr-br-ambedkar-and-lingustic-states-is-his-warning-on-the-risk-of-provincial-nationalism-coming-true/",
+        "https://economictimes.indiatimes.com/news/politics-and-nation/rs-bypoll-affidavit-wife-wealthier-than-hardeep-singh-puri-owns-geneva-apartment/articleshow/135425884.cms",
+        "https://www.freepressjournal.in/bhopal/rajya-sabha-bypoll-hardeep-singh-puris-wife-wealthier-than-him-owns-geneva-apartment-affidavit-reveals"
       ],
       "domains": [
-        "moneycontrol.com",
-        "freepressjournal.in",
         "hindustantimes.com",
-        "timesofindia.indiatimes.com"
+        "organiser.org",
+        "economictimes.indiatimes.com",
+        "freepressjournal.in",
+        "rediff.com"
       ],
-      "lastSeen": "20261101123000"
+      "lastSeen": "20261101131500"
     },
     {
       "id": "2026_11_01_31_9_77_3",
@@ -1104,6 +1308,8 @@
       "place": "Himachal Pradesh, Himachal Pradesh",
       "articles": 22,
       "outlets": 3,
+      "type": "112",
+      "movement": "protest",
       "category": "protest",
       "title": "India Bloc Holds Mega Rally Against Cec Gyanesh Kumar Demands Resignation Over Sir Bjp Stages Counter March Over 1984 Riots",
       "urls": [
@@ -1127,6 +1333,8 @@
       "place": "Jaipur, Rajasthan",
       "articles": 20,
       "outlets": 2,
+      "type": "090",
+      "movement": "security",
       "category": "security",
       "title": "National Geographic Reveals Its Best Of The World",
       "urls": [
@@ -1148,7 +1356,9 @@
       "place": "Chhattisgarh, Chhattisgarh",
       "articles": 20,
       "outlets": 2,
-      "category": "infrastructure",
+      "type": "013",
+      "movement": "politics",
+      "category": "politics",
       "title": "Chhattisgarh Areas Once Part Of Red Corridor Now Centres Of Peace Pm Modi",
       "urls": [
         "https://www.hindustantimes.com/india-news/chhattisgarh-areas-once-part-of-red-corridor-now-centres-of-peace-pm-modi-101793528686449.html",
@@ -1169,7 +1379,9 @@
       "place": "Joshimath, Uttaranchal",
       "articles": 20,
       "outlets": 1,
-      "category": "breaking",
+      "type": "153",
+      "movement": "security",
+      "category": "security",
       "title": "Uttarakhand Sdrf Intensifies Search And Rescue Mission For 8 Missing Trekkers In Uttarkashi20261101145314",
       "urls": [
         "https://aninews.in/news/national/general-news/uttarakhand-sdrf-intensifies-search-and-rescue-mission-for-8-missing-trekkers-in-uttarkashi20261101145314/",
@@ -1189,7 +1401,9 @@
       "place": "Bhavnagar, Gujarat",
       "articles": 20,
       "outlets": 1,
-      "category": "economy",
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
       "title": "Suryakiran Aerobatic Team Dazzles Bhavnagar With Spectacular Air Show Over Bor Talav",
       "urls": [
         "https://bilkulonline.com/2026/11/01/suryakiran-aerobatic-team-dazzles-bhavnagar-with-spectacular-air-show-over-bor-talav/"
@@ -1200,6 +1414,31 @@
       "lastSeen": "20261101114500"
     },
     {
+      "id": "2026_11_01_25_3_83_0",
+      "date": "2026-11-01",
+      "lat": 25.3333,
+      "lng": 83,
+      "geoType": 4,
+      "place": "Varanasi, Uttar Pradesh",
+      "articles": 20,
+      "outlets": 3,
+      "type": "190",
+      "movement": "security",
+      "category": "security",
+      "title": "Guwahati Delhi In Under 8 Hours Himanta Biswa Sarma Confirms Bullet Train Extension To Assam",
+      "urls": [
+        "https://www.businesstoday.in/india/story/guwahati-delhi-in-under-8-hours-himanta-biswa-sarma-confirms-bullet-train-extension-to-assam-564977-2026-11-01",
+        "https://www.livemint.com/entertainment/priyanka-chopra-nick-jonas-mix-spooky-with-festive-as-malti-marie-joins-their-adorable-diwaloween-celebration-11793522398172.html",
+        "https://indoamerican-news.com/vanvaas-nana-patekar-shines-in-an-overstretched-drama-that-struggles-to-deliver/"
+      ],
+      "domains": [
+        "businesstoday.in",
+        "livemint.com",
+        "indoamerican-news.com"
+      ],
+      "lastSeen": "20261101124500"
+    },
+    {
       "id": "2026_11_01_26_0_94_3",
       "date": "2026-11-01",
       "lat": 26,
@@ -1208,6 +1447,8 @@
       "place": "Nagaland, Nagaland",
       "articles": 19,
       "outlets": 1,
+      "type": "051",
+      "movement": "politics",
       "category": "politics",
       "title": "Dr Br Ambedkar And Lingustic States Is His Warning On The Risk Of Provincial Nationalism Coming True",
       "urls": [
@@ -1227,6 +1468,8 @@
       "place": "Deoband, Uttar Pradesh",
       "articles": 18,
       "outlets": 1,
+      "type": "010",
+      "movement": "politics",
       "category": "politics",
       "title": "Iiad Launches U Lead For Girls Announces Training Program For Women",
       "urls": [
@@ -1246,6 +1489,8 @@
       "place": "Bhubaneswar, Orissa",
       "articles": 17,
       "outlets": 2,
+      "type": "166",
+      "movement": "climate",
       "category": "climate",
       "title": "Red Cross Fund Fraud Odisha Vigilance Arrests Former Revenue Assistant",
       "urls": [
@@ -1259,29 +1504,27 @@
       "lastSeen": "20261101093000"
     },
     {
-      "id": "2026_11_01_23_5_78_5",
+      "id": "2026_11_01_22_3_73_2",
       "date": "2026-11-01",
-      "lat": 23.5,
-      "lng": 78.5,
-      "geoType": 5,
-      "place": "Madhya Pradesh, Madhya Pradesh",
-      "articles": 16,
-      "outlets": 4,
-      "category": "protest",
-      "title": "Royal Enfield Bikes Tractors Among Prizes In Mp Govts Quiz Outreach For Students Farmers",
+      "lat": 22.3,
+      "lng": 73.2,
+      "geoType": 4,
+      "place": "Baroda, Gujarat",
+      "articles": 17,
+      "outlets": 2,
+      "type": "084",
+      "movement": "economy",
+      "category": "economy",
+      "title": "Bank Of Baroda Reviews Overseas Strategy After 39 7 Lending Growth",
       "urls": [
-        "https://www.hindustantimes.com/india-news/royal-enfield-bikes-tractors-among-prizes-in-mp-govts-quiz-outreach-for-students-farmers-101793517952899.html",
-        "https://organiser.org/2026/11/01/422994/bharat/dr-br-ambedkar-and-lingustic-states-is-his-warning-on-the-risk-of-provincial-nationalism-coming-true/",
-        "https://economictimes.indiatimes.com/news/politics-and-nation/rs-bypoll-affidavit-wife-wealthier-than-hardeep-singh-puri-owns-geneva-apartment/articleshow/135425884.cms",
-        "https://www.freepressjournal.in/bhopal/rajya-sabha-bypoll-hardeep-singh-puris-wife-wealthier-than-him-owns-geneva-apartment-affidavit-reveals"
+        "https://econotimes.com/Bank-of-Baroda-Reviews-Overseas-Strategy-After-39-7-Lending-Growth-1768040",
+        "https://www.business-standard.com/finance/insurance/cyber-insurance-claims-surge-past-150-crore-premium-rates-remain-soft-126110100596_1.html"
       ],
       "domains": [
-        "hindustantimes.com",
-        "organiser.org",
-        "economictimes.indiatimes.com",
-        "freepressjournal.in"
+        "econotimes.com",
+        "business-standard.com"
       ],
-      "lastSeen": "20261101123000"
+      "lastSeen": "20261101131500"
     },
     {
       "id": "2026_11_01_28_5_77_0",
@@ -1292,7 +1535,9 @@
       "place": "Gurgaon, Haryana",
       "articles": 16,
       "outlets": 1,
-      "category": "security",
+      "type": "104",
+      "movement": "protest",
+      "category": "protest",
       "title": "Monster Jam At Sirhaul Border Gurgaon Delhi Commuters Stranded For Hours Amid Heavy Police Checking",
       "urls": [
         "https://timesofindia.indiatimes.com/city/gurgaon/monster-jam-at-sirhaul-border-gurgaon-delhi-commuters-stranded-for-hours-amid-heavy-police-checking/articleshow/135423601.cms"
@@ -1311,6 +1556,8 @@
       "place": "Tawang, Arunachal Pradesh",
       "articles": 14,
       "outlets": 1,
+      "type": "042",
+      "movement": "politics",
       "category": "politics",
       "title": "Arunachal Pradesh Hosts Sacred Exposition Of Buddhas Relics Cultural And Spiritual Significance Highlighted By Cm Pema Khandu And Pm Modi",
       "urls": [
@@ -1330,6 +1577,8 @@
       "place": "Ghaziabad, Uttar Pradesh",
       "articles": 14,
       "outlets": 1,
+      "type": "071",
+      "movement": "security",
       "category": "security",
       "title": "Azam Khan Sent To 14 Day Judicial Custody In Money Laundering Case Linked To Jauhar University",
       "urls": [
@@ -1341,6 +1590,29 @@
       "lastSeen": "20261101104500"
     },
     {
+      "id": "2026_11_01_24_1_79_0",
+      "date": "2026-11-01",
+      "lat": 24.1492,
+      "lng": 78.9817,
+      "geoType": 4,
+      "place": "Mohali, Madhya Pradesh",
+      "articles": 14,
+      "outlets": 2,
+      "type": "112",
+      "movement": "security",
+      "category": "security",
+      "title": "Punjab And Haryana High Court Calls Punjab Tree Protection Act Draconian Warns It Could Destroy State",
+      "urls": [
+        "https://www.newsx.com/regionals/punjab-and-haryana-high-court-calls-punjab-tree-protection-act-draconian-warns-it-could-destroy-state-289006/",
+        "https://timesofindia.indiatimes.com/city/delhi/cops-bust-fake-rs-20-coin-racket-four-arrested/articleshow/135427391.cms"
+      ],
+      "domains": [
+        "newsx.com",
+        "timesofindia.indiatimes.com"
+      ],
+      "lastSeen": "20261101131500"
+    },
+    {
       "id": "2026_11_01_29_0_74_8",
       "date": "2026-11-01",
       "lat": 28.9848,
@@ -1349,6 +1621,8 @@
       "place": "Meghana, Rajasthan",
       "articles": 12,
       "outlets": 1,
+      "type": "040",
+      "movement": "politics",
       "category": "politics",
       "title": "Prakash Rajs Wife Says Friends Questioned Their 12 Year Age Gap But It Never Bothered Her She Reveals How The Actor Changed Her Outlook On Life",
       "urls": [
@@ -1368,6 +1642,8 @@
       "place": "Wadala, Maharashtra",
       "articles": 12,
       "outlets": 1,
+      "type": "012",
+      "movement": "politics",
       "category": "politics",
       "title": "Farhan Akhtar Mourns Filmmaker Sanjay Guptas Demise Still Not Fully Processed This Has Happened20261101145935",
       "urls": [
@@ -1379,25 +1655,6 @@
       "lastSeen": "20261101110000"
     },
     {
-      "id": "2026_11_01_14_4_77_7",
-      "date": "2026-11-01",
-      "lat": 14.4333,
-      "lng": 77.7167,
-      "geoType": 4,
-      "place": "Dharmavaram, Andhra Pradesh",
-      "articles": 12,
-      "outlets": 1,
-      "category": "politics",
-      "title": "Rgv Defends Sandeep Reddy Vanga As Netizens Criticise His Film In Light Of Shocking Chainsaw Attack",
-      "urls": [
-        "https://ianslive.in/rgv-defends-sandeep-reddy-vanga-as-netizens-criticise-his-film-in-light-of-shocking-chainsaw-attack--20261101161921"
-      ],
-      "domains": [
-        "ianslive.in"
-      ],
-      "lastSeen": "20261101114500"
-    },
-    {
       "id": "2026_11_01_19_1_72_9",
       "date": "2026-11-01",
       "lat": 19.0667,
@@ -1406,6 +1663,8 @@
       "place": "Tilak Nagar, Maharashtra",
       "articles": 11,
       "outlets": 2,
+      "type": "043",
+      "movement": "protest",
       "category": "protest",
       "title": "Traffic Curbs In West Delhi For Padyatra On Nov",
       "urls": [
@@ -1427,6 +1686,8 @@
       "place": "Punjab, Punjab",
       "articles": 11,
       "outlets": 1,
+      "type": "010",
+      "movement": "protest",
       "category": "protest",
       "title": "Get Ready To Spend Another Five Years In Opposition Amit Shah Tears Into India Bloc Over Ramlila Maidan Rally",
       "urls": [
@@ -1446,6 +1707,8 @@
       "place": "Ujjain, Madhya Pradesh",
       "articles": 10,
       "outlets": 1,
+      "type": "010",
+      "movement": "protest",
       "category": "protest",
       "title": "Royal Enfield Bikes Tractors Among Prizes In Mp Govts Quiz Outreach For Students Farmers",
       "urls": [
@@ -1457,27 +1720,6 @@
       "lastSeen": "20261101084500"
     },
     {
-      "id": "2026_11_01_25_3_83_0",
-      "date": "2026-11-01",
-      "lat": 25.3333,
-      "lng": 83,
-      "geoType": 4,
-      "place": "Varanasi, Uttar Pradesh",
-      "articles": 10,
-      "outlets": 2,
-      "category": "infrastructure",
-      "title": "Guwahati Delhi In Under 8 Hours Himanta Biswa Sarma Confirms Bullet Train Extension To Assam",
-      "urls": [
-        "https://www.businesstoday.in/india/story/guwahati-delhi-in-under-8-hours-himanta-biswa-sarma-confirms-bullet-train-extension-to-assam-564977-2026-11-01",
-        "https://www.livemint.com/entertainment/priyanka-chopra-nick-jonas-mix-spooky-with-festive-as-malti-marie-joins-their-adorable-diwaloween-celebration-11793522398172.html"
-      ],
-      "domains": [
-        "businesstoday.in",
-        "livemint.com"
-      ],
-      "lastSeen": "20261101094500"
-    },
-    {
       "id": "2026_11_01_26_8_82_2",
       "date": "2026-11-01",
       "lat": 26.8,
@@ -1486,6 +1728,8 @@
       "place": "Oudh, Uttar Pradesh",
       "articles": 10,
       "outlets": 1,
+      "type": "112",
+      "movement": "politics",
       "category": "politics",
       "title": "Allahabad Hcba Oudh Bar Intervention Justice Arun Deshwal Bar Bench Tensions",
       "urls": [
@@ -1505,6 +1749,8 @@
       "place": "Chhatrapur, Orissa",
       "articles": 10,
       "outlets": 1,
+      "type": "071",
+      "movement": "economy",
       "category": "economy",
       "title": "Red Cross Fund Fraud Odisha Vigilance Arrests Former Revenue Assistant",
       "urls": [
@@ -1524,7 +1770,9 @@
       "place": "Tihar, Uttar Pradesh",
       "articles": 10,
       "outlets": 1,
-      "category": "breaking",
+      "type": "057",
+      "movement": "protest",
+      "category": "protest",
       "title": "Ramlila Maidans Political History From Jps Emergency Era Rally To Anna Hazares Protest",
       "urls": [
         "https://www.outlookindia.com/national/ramlila-maidans-political-history-from-jps-emergency-era-rally-to-anna-hazares-protest"
@@ -1543,6 +1791,8 @@
       "place": "Nagina, Haryana",
       "articles": 10,
       "outlets": 1,
+      "type": "010",
+      "movement": "politics",
       "category": "politics",
       "title": "Janhvi Kapoor Turns Ichchadhari Naagin For Halloween Recreates Mother Sridevi8217s Iconic Nagina Look20261101144718",
       "urls": [
@@ -1562,6 +1812,8 @@
       "place": "Belagavi, Karnataka",
       "articles": 10,
       "outlets": 1,
+      "type": "120",
+      "movement": "politics",
       "category": "politics",
       "title": "Govt Contemplating Giving Official Status To State Flag Karnataka Cm Dk Shivakumar20261101144607",
       "urls": [
@@ -1581,6 +1833,8 @@
       "place": "Kalipur, Jammu and Kashmir",
       "articles": 10,
       "outlets": 1,
+      "type": "190",
+      "movement": "security",
       "category": "security",
       "title": "Indian November Fiction Two New Collections Of Short Stories And Four Novels For The Festive Season",
       "urls": [
@@ -1600,6 +1854,8 @@
       "place": "Govardhan, Uttar Pradesh",
       "articles": 10,
       "outlets": 1,
+      "type": "051",
+      "movement": "politics",
       "category": "politics",
       "title": "Diwali 2026 Year How Celebrated",
       "urls": [
@@ -1619,6 +1875,8 @@
       "place": "Jalaun, Uttar Pradesh",
       "articles": 10,
       "outlets": 1,
+      "type": "190",
+      "movement": "security",
       "category": "security",
       "title": "Up Advocate Kidnapped Murdered Over Land Dispute 3 Held",
       "urls": [
@@ -1638,6 +1896,8 @@
       "place": "Ganjam, India (general)",
       "articles": 10,
       "outlets": 1,
+      "type": "040",
+      "movement": "climate",
       "category": "climate",
       "title": "Depression Over Bay Of Bengal May Intensify Into Cyclone Murasu Andhra Coast On Alert",
       "urls": [
@@ -1657,6 +1917,8 @@
       "place": "Ambajogai, Maharashtra",
       "articles": 10,
       "outlets": 1,
+      "type": "010",
+      "movement": "politics",
       "category": "politics",
       "title": "Dead On Paper But Breathing The People Who Had To Prove They Were Alive",
       "urls": [
@@ -1668,25 +1930,6 @@
       "lastSeen": "20261101111500"
     },
     {
-      "id": "2026_11_01_24_1_79_0",
-      "date": "2026-11-01",
-      "lat": 24.1492,
-      "lng": 78.9817,
-      "geoType": 4,
-      "place": "Mohali, Madhya Pradesh",
-      "articles": 10,
-      "outlets": 1,
-      "category": "politics",
-      "title": "Punjab And Haryana High Court Calls Punjab Tree Protection Act Draconian Warns It Could Destroy State",
-      "urls": [
-        "https://www.newsx.com/regionals/punjab-and-haryana-high-court-calls-punjab-tree-protection-act-draconian-warns-it-could-destroy-state-289006/"
-      ],
-      "domains": [
-        "newsx.com"
-      ],
-      "lastSeen": "20261101113000"
-    },
-    {
       "id": "2026_11_01_22_5_88_4",
       "date": "2026-11-01",
       "lat": 22.4833,
@@ -1695,7 +1938,9 @@
       "place": "Jadavpur, West Bengal",
       "articles": 10,
       "outlets": 1,
-      "category": "education",
+      "type": "020",
+      "movement": "politics",
+      "category": "politics",
       "title": "Jadavpur University Vc Asks Registrar To Act Upon Student S Sexual Harassment Complaint",
       "urls": [
         "https://www.hindustantimes.com/cities/kolkata-news/jadavpur-university-vc-asks-registrar-to-act-upon-student-s-sexual-harassment-complaint-101793531229970.html"
@@ -1714,6 +1959,8 @@
       "place": "Mukutban, Maharashtra",
       "articles": 10,
       "outlets": 1,
+      "type": "120",
+      "movement": "economy",
       "category": "economy",
       "title": "Birla Corporation September Quarter Revenue Up 9 Cement Sales Grow",
       "urls": [
@@ -1733,6 +1980,8 @@
       "place": "Vizag, Andhra Pradesh",
       "articles": 10,
       "outlets": 1,
+      "type": "010",
+      "movement": "politics",
       "category": "politics",
       "title": "Mayor Rumoured Balayyas Daughter Surprises Sravani",
       "urls": [
@@ -1752,6 +2001,8 @@
       "place": "Panipat, Haryana",
       "articles": 10,
       "outlets": 1,
+      "type": "010",
+      "movement": "economy",
       "category": "economy",
       "title": "Indian Oil Spends 37 Of 32 700 Crore Fy27 Capex Target In First Half",
       "urls": [
@@ -1771,6 +2022,8 @@
       "place": "Godavari, Andhra Pradesh",
       "articles": 10,
       "outlets": 1,
+      "type": "090",
+      "movement": "climate",
       "category": "climate",
       "title": "Nashik Godavari Water Unfit For Bathing Pollution Board Flags Water Quality",
       "urls": [
@@ -1790,6 +2043,8 @@
       "place": "Bahraich, Uttar Pradesh",
       "articles": 10,
       "outlets": 1,
+      "type": "040",
+      "movement": "politics",
       "category": "politics",
       "title": "Three Up Districts Excel Nationally In Administrative Practices",
       "urls": [
@@ -1801,6 +2056,27 @@
       "lastSeen": "20261101123000"
     },
     {
+      "id": "2026_11_01_22_8_70_8",
+      "date": "2026-11-01",
+      "lat": 22.8167,
+      "lng": 70.8333,
+      "geoType": 4,
+      "place": "Morbi, Gujarat",
+      "articles": 10,
+      "outlets": 1,
+      "type": "190",
+      "movement": "security",
+      "category": "security",
+      "title": "38 Booked For Liquor Consumption After Rajkot Birthday Party Raid",
+      "urls": [
+        "https://www.rediff.com/news/report/38-booked-for-liquor-consumption-after-rajkot-birthday-party-raid/20261101.htm"
+      ],
+      "domains": [
+        "rediff.com"
+      ],
+      "lastSeen": "20261101124500"
+    },
+    {
       "id": "2026_11_01_29_7_77_0",
       "date": "2026-11-01",
       "lat": 29.6833,
@@ -1809,8 +2085,10 @@
       "place": "Karnal, Haryana",
       "articles": 9,
       "outlets": 1,
-      "category": "general",
-      "title": "General report in Karnal",
+      "type": "182",
+      "movement": "other",
+      "category": "other",
+      "title": "News reported in Karnal",
       "urls": [
         "https://www.prokerala.com/news/articles/a1831583.html"
       ],
@@ -1828,6 +2106,8 @@
       "place": "Lucknow, Uttar Pradesh",
       "articles": 9,
       "outlets": 1,
+      "type": "036",
+      "movement": "politics",
       "category": "politics",
       "title": "Mark Bennington Says Lucknow Visit Inspired Dear Tillo",
       "urls": [
@@ -1839,6 +2119,27 @@
       "lastSeen": "20261101123000"
     },
     {
+      "id": "2026_11_01_10_0_78_8",
+      "date": "2026-11-01",
+      "lat": 10.0167,
+      "lng": 78.7833,
+      "geoType": 4,
+      "place": "Amaravati, Tamil Nadu",
+      "articles": 9,
+      "outlets": 1,
+      "type": "180",
+      "movement": "security",
+      "category": "security",
+      "title": "News reported in Amaravati",
+      "urls": [
+        "https://www.prokerala.com/news/articles/a1831649.html"
+      ],
+      "domains": [
+        "prokerala.com"
+      ],
+      "lastSeen": "20261101130000"
+    },
+    {
       "id": "2026_11_01_25_4_84_6",
       "date": "2026-11-01",
       "lat": 25.4,
@@ -1847,7 +2148,9 @@
       "place": "Panwar, Bihar",
       "articles": 8,
       "outlets": 1,
-      "category": "breaking",
+      "type": "073",
+      "movement": "economy",
+      "category": "economy",
       "title": "Bodies Of Helicopter Crash Victims In Uttarakhand Airlifted To Aiims Rishikesh Bengaluru Cop Arun Solanki Among 6 Killed20261101145239",
       "urls": [
         "https://aninews.in/news/national/general-news/bodies-of-helicopter-crash-victims-in-uttarakhand-airlifted-to-aiims-rishikesh-bengaluru-cop-arun-solanki-among-6-killed20261101145239/"
@@ -1866,6 +2169,8 @@
       "place": "Gangotri, Uttaranchal",
       "articles": 8,
       "outlets": 1,
+      "type": "073",
+      "movement": "economy",
       "category": "economy",
       "title": "Uttarakhand Sdrf Intensifies Search And Rescue Mission For 8 Missing Trekkers In Uttarkashi20261101145314",
       "urls": [
@@ -1885,6 +2190,8 @@
       "place": "Rishikesh, Uttaranchal",
       "articles": 8,
       "outlets": 1,
+      "type": "073",
+      "movement": "economy",
       "category": "economy",
       "title": "Uttarakhand Sdrf Intensifies Search And Rescue Mission For 8 Missing Trekkers In Uttarkashi20261101145314",
       "urls": [
@@ -1904,6 +2211,8 @@
       "place": "Palk Strait, India (general)",
       "articles": 8,
       "outlets": 1,
+      "type": "173",
+      "movement": "security",
       "category": "security",
       "title": "Sri Lanka Navy Intercepts Indian Trawler Detains Seven Fishermen For Illegal Fishing",
       "urls": [
@@ -1923,6 +2232,8 @@
       "place": "Mirzapur, Uttar Pradesh",
       "articles": 8,
       "outlets": 1,
+      "type": "040",
+      "movement": "politics",
       "category": "politics",
       "title": "Three Up Districts Excel Nationally In Administrative Practices",
       "urls": [
@@ -1942,6 +2253,8 @@
       "place": "Gandhinagar, Gujarat",
       "articles": 7,
       "outlets": 1,
+      "type": "190",
+      "movement": "security",
       "category": "security",
       "title": "Man Beaten To Death Over Liquor Payment In Hyderabad",
       "urls": [
@@ -1953,23 +2266,25 @@
       "lastSeen": "20261101103000"
     },
     {
-      "id": "2026_11_01_22_3_73_2",
+      "id": "2026_11_01_28_5_77_2",
       "date": "2026-11-01",
-      "lat": 22.3,
-      "lng": 73.2,
+      "lat": 28.5,
+      "lng": 77.1833,
       "geoType": 4,
-      "place": "Baroda, Gujarat",
+      "place": "Chhattarpur, Delhi",
       "articles": 7,
       "outlets": 1,
-      "category": "economy",
-      "title": "Bank Of Baroda Reviews Overseas Strategy After 39 7 Lending Growth",
+      "type": "172",
+      "movement": "security",
+      "category": "security",
+      "title": "Interstate Cocaine Racket Busted In Delhi Ghanaian Held",
       "urls": [
-        "https://econotimes.com/Bank-of-Baroda-Reviews-Overseas-Strategy-After-39-7-Lending-Growth-1768040"
+        "https://www.rediff.com/news/report/interstate-cocaine-racket-busted-in-delhi-ghanaian-held/20261101.htm"
       ],
       "domains": [
-        "econotimes.com"
+        "rediff.com"
       ],
-      "lastSeen": "20261101104500"
+      "lastSeen": "20261101124500"
     },
     {
       "id": "2026_11_01_25_1_94_0",
@@ -1980,6 +2295,8 @@
       "place": "Kangpokpi, Manipur",
       "articles": 6,
       "outlets": 1,
+      "type": "112",
+      "movement": "politics",
       "category": "politics",
       "title": "Five Killed In Fresh Ethnic Violence In Indias Manipur State",
       "urls": [
@@ -1999,6 +2316,8 @@
       "place": "Fatehpur, Uttar Pradesh",
       "articles": 6,
       "outlets": 1,
+      "type": "172",
+      "movement": "security",
       "category": "security",
       "title": "Banned Gutkha Pan Masala Worth Rs 43 Lakh Seized In Thane",
       "urls": [
@@ -2018,6 +2337,8 @@
       "place": "Ropar, Punjab",
       "articles": 5,
       "outlets": 1,
+      "type": "045",
+      "movement": "politics",
       "category": "politics",
       "title": "Iit Ropar Incubated Astra Showcases Drone Technologies In New Delhi",
       "urls": [
@@ -2037,6 +2358,8 @@
       "place": "Tripura, Tripura",
       "articles": 5,
       "outlets": 1,
+      "type": "114",
+      "movement": "security",
       "category": "security",
       "title": "Cbi Takes Over Case Of Keralam Man In Tripura State Rifles Missing Since",
       "urls": [
@@ -2056,6 +2379,8 @@
       "place": "Kashmir, Jammu and Kashmir",
       "articles": 5,
       "outlets": 1,
+      "type": "010",
+      "movement": "politics",
       "category": "politics",
       "title": "Kashmir Association Leader Reports Scab Damage As Diwali Demand Favors Grade A Apples",
       "urls": [
@@ -2075,6 +2400,8 @@
       "place": "Nalgonda, Andhra Pradesh",
       "articles": 5,
       "outlets": 1,
+      "type": "051",
+      "movement": "politics",
       "category": "politics",
       "title": "Iiad Launches U Lead For Girls Announces Training Program For Women",
       "urls": [
@@ -2094,6 +2421,8 @@
       "place": "Katol, Maharashtra",
       "articles": 5,
       "outlets": 1,
+      "type": "060",
+      "movement": "economy",
       "category": "economy",
       "title": "Hc Upholds States Decision To Appoint Administrators To Four Nagpur Apmcs",
       "urls": [
@@ -2113,6 +2442,8 @@
       "place": "Paradip, Orissa",
       "articles": 5,
       "outlets": 1,
+      "type": "036",
+      "movement": "economy",
       "category": "economy",
       "title": "Indian Oil Spends 37 Of 32 700 Crore Fy27 Capex Target In First Half",
       "urls": [
@@ -2132,7 +2463,9 @@
       "place": "Siliguri, West Bengal",
       "articles": 4,
       "outlets": 1,
-      "category": "infrastructure",
+      "type": "020",
+      "movement": "politics",
+      "category": "politics",
       "title": "Guwahati Delhi In Under 8 Hours Himanta Biswa Sarma Confirms Bullet Train Extension To Assam",
       "urls": [
         "https://www.businesstoday.in/india/story/guwahati-delhi-in-under-8-hours-himanta-biswa-sarma-confirms-bullet-train-extension-to-assam-564977-2026-11-01"
@@ -2151,6 +2484,8 @@
       "place": "Kadapa, Andhra Pradesh",
       "articles": 4,
       "outlets": 1,
+      "type": "042",
+      "movement": "politics",
       "category": "politics",
       "title": "Mob Attacks Tv News Crew Covering Polling In Pulivendula Camera Smashed",
       "urls": [
@@ -2170,8 +2505,10 @@
       "place": "Patiala, Punjab",
       "articles": 4,
       "outlets": 1,
-      "category": "general",
-      "title": "General report in Patiala",
+      "type": "083",
+      "movement": "other",
+      "category": "other",
+      "title": "News reported in Patiala",
       "urls": [
         "https://www.prokerala.com/news/articles/a1831583.html"
       ],
@@ -2189,6 +2526,8 @@
       "place": "Midnapore, West Bengal",
       "articles": 4,
       "outlets": 1,
+      "type": "193",
+      "movement": "security",
       "category": "security",
       "title": "Durga And Kali Embody The Same Energy Srijita",
       "urls": [
@@ -2208,6 +2547,8 @@
       "place": "Jogeshwari, Maharashtra",
       "articles": 4,
       "outlets": 1,
+      "type": "042",
+      "movement": "politics",
       "category": "politics",
       "title": "Nclt Voids 525 Crore Guarantee Mumbai Land Transfer In Jls Realty Dispute",
       "urls": [
@@ -2227,6 +2568,8 @@
       "place": "Jauhar, Uttar Pradesh",
       "articles": 4,
       "outlets": 1,
+      "type": "071",
+      "movement": "security",
       "category": "security",
       "title": "Azam Khan Sent To 14 Day Judicial Custody In Money Laundering Case Linked To Jauhar University",
       "urls": [
@@ -2246,6 +2589,8 @@
       "place": "Bhiwandi, Maharashtra",
       "articles": 4,
       "outlets": 1,
+      "type": "172",
+      "movement": "security",
       "category": "security",
       "title": "Banned Gutkha Pan Masala Worth Rs 43 Lakh Seized In Thane",
       "urls": [
@@ -2265,6 +2610,8 @@
       "place": "Ahmedabad, Gujarat",
       "articles": 4,
       "outlets": 1,
+      "type": "020",
+      "movement": "politics",
       "category": "politics",
       "title": "Bengal Researcher Bags Pharminnova Honour Shah Calls For Stronger Pharma Rd Push",
       "urls": [
@@ -2284,6 +2631,8 @@
       "place": "Kalpi, Uttar Pradesh",
       "articles": 4,
       "outlets": 1,
+      "type": "181",
+      "movement": "security",
       "category": "security",
       "title": "Chacha Come For Refreshments Up Senior Advocate Lured Into Car Abducted And Murdered",
       "urls": [
@@ -2295,6 +2644,27 @@
       "lastSeen": "20261101114500"
     },
     {
+      "id": "2026_11_01_30_0_77_5",
+      "date": "2026-11-01",
+      "lat": 29.9667,
+      "lng": 77.55,
+      "geoType": 4,
+      "place": "Saharanpur, Uttar Pradesh",
+      "articles": 4,
+      "outlets": 1,
+      "type": "112",
+      "movement": "security",
+      "category": "security",
+      "title": "Cops Bust Fake Rs 20 Coin Racket Four Arrested",
+      "urls": [
+        "https://timesofindia.indiatimes.com/city/delhi/cops-bust-fake-rs-20-coin-racket-four-arrested/articleshow/135427391.cms"
+      ],
+      "domains": [
+        "timesofindia.indiatimes.com"
+      ],
+      "lastSeen": "20261101131500"
+    },
+    {
       "id": "2026_11_01_22_9_77_8",
       "date": "2026-11-01",
       "lat": 22.85,
@@ -2303,6 +2673,8 @@
       "place": "Shahganj, Madhya Pradesh",
       "articles": 3,
       "outlets": 1,
+      "type": "010",
+      "movement": "politics",
       "category": "politics",
       "title": "Dead On Paper But Breathing The People Who Had To Prove They Were Alive",
       "urls": [
@@ -2314,6 +2686,27 @@
       "lastSeen": "20261101111500"
     },
     {
+      "id": "2026_11_01_21_9_74_1",
+      "date": "2026-11-01",
+      "lat": 21.9333,
+      "lng": 74.0833,
+      "geoType": 4,
+      "place": "Devli, Maharashtra",
+      "articles": 3,
+      "outlets": 1,
+      "type": "173",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Interstate Cocaine Racket Busted In Delhi Ghanaian Held",
+      "urls": [
+        "https://www.rediff.com/news/report/interstate-cocaine-racket-busted-in-delhi-ghanaian-held/20261101.htm"
+      ],
+      "domains": [
+        "rediff.com"
+      ],
+      "lastSeen": "20261101124500"
+    },
+    {
       "id": "2026_11_01_30_5_79_1",
       "date": "2026-11-01",
       "lat": 30.5333,
@@ -2322,6 +2715,8 @@
       "place": "Mandakini, India (general)",
       "articles": 2,
       "outlets": 1,
+      "type": "051",
+      "movement": "politics",
       "category": "politics",
       "title": "Priyanka Chopra Nick Jonas Mix Spooky With Festive As Malti Marie Joins Their Adorable Diwaloween Celebration",
       "urls": [
@@ -2341,6 +2736,8 @@
       "place": "Raebareli, Uttar Pradesh",
       "articles": 2,
       "outlets": 1,
+      "type": "083",
+      "movement": "politics",
       "category": "politics",
       "title": "Rahul Gandhi Is Crying Because Names Of Infiltrators Have Been Removed Cm Sarma Leads Bjps Counter Padyatra In Shimla20261101133401",
       "urls": [
@@ -2360,7 +2757,9 @@
       "place": "Chamoli, Uttaranchal",
       "articles": 2,
       "outlets": 1,
-      "category": "breaking",
+      "type": "043",
+      "movement": "politics",
+      "category": "politics",
       "title": "Bodies Of Helicopter Crash Victims In Uttarakhand Airlifted To Aiims Rishikesh Bengaluru Cop Arun Solanki Among 6 Killed20261101145239",
       "urls": [
         "https://aninews.in/news/national/general-news/bodies-of-helicopter-crash-victims-in-uttarakhand-airlifted-to-aiims-rishikesh-bengaluru-cop-arun-solanki-among-6-killed20261101145239/"
@@ -2369,6 +2768,27 @@
         "aninews.in"
       ],
       "lastSeen": "20261101110000"
+    },
+    {
+      "id": "2026_10_25_30_1_78_3",
+      "date": "2026-10-25",
+      "lat": 30.1167,
+      "lng": 78.3167,
+      "geoType": 4,
+      "place": "Rishikesh, Uttaranchal",
+      "articles": 6,
+      "outlets": 1,
+      "type": "057",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Listed Hotel Chains Developers Line Up Nearly 10 000 Room Signings In October",
+      "urls": [
+        "https://www.livemint.com/companies/news/listed-hotel-chains-developers-line-up-nearly-10-000-room-signings-in-october-11793362100109.html"
+      ],
+      "domains": [
+        "livemint.com"
+      ],
+      "lastSeen": "20261101131500"
     }
   ]
 }
