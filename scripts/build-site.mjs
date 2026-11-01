@@ -53,8 +53,8 @@ const jsonld = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebSite", "@id": SITE_URL + "#site", url: SITE_URL, name: "Bharat News Pulse", inLanguage: "en-IN",
-      description: "Real-time interactive geotagged news intelligence network across India — YouTube video broadcasts, X dispatches, and local district news.",
+      "@type": "WebSite", "@id": SITE_URL + "#site", url: SITE_URL, name: "Where India is in the news", inLanguage: "en-IN",
+      description: "Real-time interactive geotagged news tracker across India — YouTube video broadcasts, X dispatches, and local district news.",
       author: { "@type": "Person", name: "Kaushal", url: "https://github.com/kaushalboii" }
     },
     {

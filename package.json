@@ -1,8 +1,8 @@
 {
-  "name": "bharat-news-pulse",
+  "name": "live-news-updated-india",
   "version": "1.0.0",
   "private": true,
-  "description": "Bharat News Pulse: Real-time multi-platform geotagged news intelligence network across India — YouTube video broadcasts, X dispatches, national breaking news, and hyper-local district press. Architected & developed by Kaushal (@kaushalboii).",
+  "description": "Live News Updated India: Real-time multi-platform geotagged news tracker across India — YouTube video broadcasts, X dispatches, national breaking news, and hyper-local district press. Developed by Kaushal (@kaushalboii).",
   "author": "Kaushal (@kaushalboii)",
   "type": "module",
   "scripts": {

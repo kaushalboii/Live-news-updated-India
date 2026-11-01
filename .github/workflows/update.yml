@@ -26,9 +26,6 @@ jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -55,27 +52,13 @@ jobs:
           path: .cache
           key: gdelt-news-state-${{ github.run_id }}-${{ github.run_attempt }}
 
-      - name: Configure GitHub Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
       - name: Build site
         env:
-          SITE_URL: ${{ vars.SITE_URL || steps.pages.outputs.base_url || 'https://kaushalboii.github.io/Live-news-updated-India/' }}
+          SITE_URL: https://kaushalboii.github.io/Live-news-updated-India/
         run: node scripts/build-site.mjs
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-      - name: Deploy to GitHub Pages (Actions mode)
-        id: deploy
-        uses: actions/deploy-pages@v4
-
-      - name: Deploy to gh-pages branch (Branch mode)
+      - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
-        continue-on-error: true
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site

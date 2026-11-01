@@ -628,7 +628,7 @@ async function main() {
   await fs.writeFile(LIVE, JSON.stringify({
     generatedAt: new Date().toISOString(),
     lastGdeltFile: lastOk,
-    source: "Bharat Live Wire: Multi-Platform Real-Time Intelligence (GDELT 2.0 + YouTube Video Wire + X Dispatches + Regional News)",
+    source: "Live News Updated India: Multi-Platform Real-Time Intelligence (GDELT 2.0 + YouTube Video Wire + X Dispatches + Regional News)",
     windowDays: WINDOW_DAYS,
     clusters: pub,
   }, null, 2));
