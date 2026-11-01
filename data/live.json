@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T14:29:00.963Z",
-  "lastGdeltFile": "20261101143000",
+  "generatedAt": "2026-11-01T15:12:25.292Z",
+  "lastGdeltFile": "20261101151500",
   "source": "GDELT 2.0 Global News Event Database",
   "windowDays": 7,
   "clusters": [
@@ -44,7 +44,7 @@
       "lng": 77.2,
       "geoType": 4,
       "place": "New Delhi, Delhi",
-      "articles": 1560,
+      "articles": 1564,
       "outlets": 40,
       "type": "010",
       "movement": "protest",
@@ -68,7 +68,7 @@
         "japanherald.com",
         "atlantaleader.com"
       ],
-      "lastSeen": "20261101143000"
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_19_0_72_8",
@@ -110,8 +110,8 @@
       "lng": 77.5833,
       "geoType": 4,
       "place": "Bengaluru, Karnataka",
-      "articles": 430,
-      "outlets": 21,
+      "articles": 460,
+      "outlets": 22,
       "type": "020",
       "movement": "economy",
       "category": "economy",
@@ -134,7 +134,7 @@
         "siasat.com",
         "dailypioneer.com"
       ],
-      "lastSeen": "20261101130000"
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_29_6_77_0",
@@ -170,6 +170,72 @@
       "lastSeen": "20261101143000"
     },
     {
+      "id": "2026_11_01_18_0_79_5",
+      "date": "2026-11-01",
+      "lat": 18,
+      "lng": 79.5,
+      "geoType": 4,
+      "place": "Telangana, Andhra Pradesh",
+      "articles": 314,
+      "outlets": 14,
+      "type": "042",
+      "movement": "protest",
+      "category": "protest",
+      "title": "Karnataka Lop R Ashok Challenges Congress To Dissolve Assemblies And Face Polls Accuses Party Of Double Standards",
+      "urls": [
+        "http://www.southeastasiapost.com/news/279406029/karnataka-lop-r-ashok-challenges-congress-to-dissolve-assemblies-and-face-polls-accuses-party-of-double-standards",
+        "https://www.deccanchronicle.com/southern-states/telangana/taj-falaknuma-golkonda-hotel-get-notices-2000707",
+        "https://www.hindustantimes.com/cities/delhi-news/delhi-hunkers-down-for-opposition-s-anti-cec-protest-101793490873885.html",
+        "https://www.siasat.com/20-hate-crimes-in-telangana-in-q3-2026-3567666/"
+      ],
+      "domains": [
+        "southeastasiapost.com",
+        "deccanchronicle.com",
+        "hindustantimes.com",
+        "siasat.com",
+        "telugupeople.com",
+        "indiankanoon.org",
+        "educationtimes.com",
+        "oneindia.com",
+        "aninews.in",
+        "thehindu.com"
+      ],
+      "lastSeen": "20261101150000"
+    },
+    {
+      "id": "2026_11_01_13_5_76_0",
+      "date": "2026-11-01",
+      "lat": 13.5,
+      "lng": 76,
+      "geoType": 5,
+      "place": "Karnataka, Karnataka",
+      "articles": 304,
+      "outlets": 16,
+      "type": "036",
+      "movement": "protest",
+      "category": "protest",
+      "title": "Kidwai Doctor Owns Three Diagnostic Centres Despite Service Rules",
+      "urls": [
+        "https://bangaloremirror.indiatimes.com/bangalore/others/kidwai-doctor-owns-three-diagnostic-centres-despite-service-rules/articleshow/135409813.cms",
+        "https://www.livemint.com/news/india/delhi-pollution-curbs-from-nov-1-50-wfh-will-your-car-bike-from-noida-gurugram-ghaziabad-be-allowed-full-guide-11793504801912.html",
+        "http://www.bignewsnetwork.com/news/279406328/credibility-of-constitutional-bodies-completely-eroded-mp-imran-masood-slams-govt-at-india-bloc-rally",
+        "https://scroll.in/article/1096776/cant-watch-the-modi-adani-documentary-read-these-reports-instead"
+      ],
+      "domains": [
+        "bangaloremirror.indiatimes.com",
+        "livemint.com",
+        "bignewsnetwork.com",
+        "scroll.in",
+        "calcuttanews.net",
+        "bilkulonline.com",
+        "deccanchronicle.com",
+        "gulte.com",
+        "thehindu.com",
+        "thenewsminute.com"
+      ],
+      "lastSeen": "20261101150000"
+    },
+    {
       "id": "2026_11_01_27_3_80_8",
       "date": "2026-11-01",
       "lat": 27.25,
@@ -199,72 +265,6 @@
         "asiabulletin.com",
         "aljazeera.com",
         "economictimes.indiatimes.com"
-      ],
-      "lastSeen": "20261101143000"
-    },
-    {
-      "id": "2026_11_01_13_5_76_0",
-      "date": "2026-11-01",
-      "lat": 13.5,
-      "lng": 76,
-      "geoType": 5,
-      "place": "Karnataka, Karnataka",
-      "articles": 296,
-      "outlets": 15,
-      "type": "036",
-      "movement": "protest",
-      "category": "protest",
-      "title": "Kidwai Doctor Owns Three Diagnostic Centres Despite Service Rules",
-      "urls": [
-        "https://bangaloremirror.indiatimes.com/bangalore/others/kidwai-doctor-owns-three-diagnostic-centres-despite-service-rules/articleshow/135409813.cms",
-        "https://www.livemint.com/news/india/delhi-pollution-curbs-from-nov-1-50-wfh-will-your-car-bike-from-noida-gurugram-ghaziabad-be-allowed-full-guide-11793504801912.html",
-        "http://www.bignewsnetwork.com/news/279406328/credibility-of-constitutional-bodies-completely-eroded-mp-imran-masood-slams-govt-at-india-bloc-rally",
-        "https://scroll.in/article/1096776/cant-watch-the-modi-adani-documentary-read-these-reports-instead"
-      ],
-      "domains": [
-        "bangaloremirror.indiatimes.com",
-        "livemint.com",
-        "bignewsnetwork.com",
-        "scroll.in",
-        "calcuttanews.net",
-        "bilkulonline.com",
-        "deccanchronicle.com",
-        "gulte.com",
-        "thehindu.com",
-        "thenewsminute.com"
-      ],
-      "lastSeen": "20261101131500"
-    },
-    {
-      "id": "2026_11_01_18_0_79_5",
-      "date": "2026-11-01",
-      "lat": 18,
-      "lng": 79.5,
-      "geoType": 4,
-      "place": "Telangana, Andhra Pradesh",
-      "articles": 286,
-      "outlets": 14,
-      "type": "010",
-      "movement": "protest",
-      "category": "protest",
-      "title": "Karnataka Lop R Ashok Challenges Congress To Dissolve Assemblies And Face Polls Accuses Party Of Double Standards",
-      "urls": [
-        "http://www.southeastasiapost.com/news/279406029/karnataka-lop-r-ashok-challenges-congress-to-dissolve-assemblies-and-face-polls-accuses-party-of-double-standards",
-        "https://www.deccanchronicle.com/southern-states/telangana/taj-falaknuma-golkonda-hotel-get-notices-2000707",
-        "https://www.hindustantimes.com/cities/delhi-news/delhi-hunkers-down-for-opposition-s-anti-cec-protest-101793490873885.html",
-        "https://www.siasat.com/20-hate-crimes-in-telangana-in-q3-2026-3567666/"
-      ],
-      "domains": [
-        "southeastasiapost.com",
-        "deccanchronicle.com",
-        "hindustantimes.com",
-        "siasat.com",
-        "telugupeople.com",
-        "indiankanoon.org",
-        "educationtimes.com",
-        "oneindia.com",
-        "aninews.in",
-        "thehindu.com"
       ],
       "lastSeen": "20261101143000"
     },
@@ -308,7 +308,7 @@
       "lng": 80.2833,
       "geoType": 4,
       "place": "Chennai, Tamil Nadu",
-      "articles": 243,
+      "articles": 245,
       "outlets": 8,
       "type": "043",
       "movement": "economy",
@@ -330,7 +330,7 @@
         "economictimes.indiatimes.com",
         "prokerala.com"
       ],
-      "lastSeen": "20261101143000"
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_25_2_85_5",
@@ -339,8 +339,8 @@
       "lng": 85.5167,
       "geoType": 4,
       "place": "Bihar, Bihar",
-      "articles": 223,
-      "outlets": 17,
+      "articles": 225,
+      "outlets": 18,
       "type": "010",
       "movement": "protest",
       "category": "protest",
@@ -363,7 +363,7 @@
         "indiagazette.com",
         "timesofindia.indiatimes.com"
       ],
-      "lastSeen": "20261101143000"
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_11_0_78_0",
@@ -495,7 +495,7 @@
       "lng": 78.5,
       "geoType": 5,
       "place": "Madhya Pradesh, Madhya Pradesh",
-      "articles": 168,
+      "articles": 169,
       "outlets": 10,
       "type": "051",
       "movement": "protest",
@@ -519,7 +519,7 @@
         "economictimes.indiatimes.com",
         "rediff.com"
       ],
-      "lastSeen": "20261101131500"
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_22_6_88_4",
@@ -601,6 +601,35 @@
         "aninews.in"
       ],
       "lastSeen": "20261101083000"
+    },
+    {
+      "id": "2026_11_01_26_2_91_7",
+      "date": "2026-11-01",
+      "lat": 26.1833,
+      "lng": 91.7333,
+      "geoType": 4,
+      "place": "Guwahati, Assam",
+      "articles": 110,
+      "outlets": 6,
+      "type": "046",
+      "movement": "economy",
+      "category": "economy",
+      "title": "Assam Takes Giant Leap In Cancer Care As Guwahati To Get India First State Govt Established Proton Therapy Centre",
+      "urls": [
+        "http://www.southeastasiapost.com/news/279405935/assam-takes-giant-leap-in-cancer-care-as-guwahati-to-get-india-first-state-govt-established-proton-therapy-centre",
+        "https://aninews.in/news/national/general-news/isiliye-modi-kahin-nahi-jayega-assam-cm-himanta-sarma-hails-approval-of-delhi8211siliguri-bullet-train-corridor-extension-to-guwahati20261101104951/",
+        "https://www.sentinelassam.com/topheadlines/centre-approves-lgbi-airport-as-export-point-for-agarwood-chips-oil",
+        "https://ianslive.in/india-and-myanmar-hold-army-staff-talks-discuss-enhancing-military-cooperation--20261101141928"
+      ],
+      "domains": [
+        "southeastasiapost.com",
+        "aninews.in",
+        "sentinelassam.com",
+        "ianslive.in",
+        "econotimes.com",
+        "jagranjosh.com"
+      ],
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_23_3_77_4",
@@ -694,32 +723,32 @@
       "lastSeen": "20261101143000"
     },
     {
-      "id": "2026_11_01_26_2_91_7",
+      "id": "2026_11_01_21_1_79_1",
       "date": "2026-11-01",
-      "lat": 26.1833,
-      "lng": 91.7333,
+      "lat": 21.15,
+      "lng": 79.1,
       "geoType": 4,
-      "place": "Guwahati, Assam",
+      "place": "Nagpur, Maharashtra",
       "articles": 102,
       "outlets": 5,
-      "type": "046",
-      "movement": "economy",
-      "category": "economy",
-      "title": "Assam Takes Giant Leap In Cancer Care As Guwahati To Get India First State Govt Established Proton Therapy Centre",
+      "type": "130",
+      "movement": "security",
+      "category": "security",
+      "title": "The Untold Story Of Rss And The Freedom Struggle Of Bharat",
       "urls": [
-        "http://www.southeastasiapost.com/news/279405935/assam-takes-giant-leap-in-cancer-care-as-guwahati-to-get-india-first-state-govt-established-proton-therapy-centre",
-        "https://aninews.in/news/national/general-news/isiliye-modi-kahin-nahi-jayega-assam-cm-himanta-sarma-hails-approval-of-delhi8211siliguri-bullet-train-corridor-extension-to-guwahati20261101104951/",
-        "https://www.sentinelassam.com/topheadlines/centre-approves-lgbi-airport-as-export-point-for-agarwood-chips-oil",
-        "https://ianslive.in/india-and-myanmar-hold-army-staff-talks-discuss-enhancing-military-cooperation--20261101141928"
+        "https://organiser.org/2026/11/01/308223/international/intl-rss-news/the-untold-story-of-rss-and-the-freedom-struggle-of-bharat/",
+        "https://www.thehitavada.com/Encyc/2026/11/1/iitian-dcp-singareddy-earns-medal-for-exposing-pak-based-terror-links.html",
+        "https://www.biospectrumindia.com/features/18/28731/india-2030-who-supplies-the-next-10-million.html",
+        "https://realty.economictimes.indiatimes.com/news/regulatory/enforcement-directorate-searches-prayag-developers-premises-in-nagpur-seizes-1-95-crore-cash/135421268"
       ],
       "domains": [
-        "southeastasiapost.com",
-        "aninews.in",
-        "sentinelassam.com",
-        "ianslive.in",
-        "econotimes.com"
+        "organiser.org",
+        "thehitavada.com",
+        "biospectrumindia.com",
+        "realty.economictimes.indiatimes.com",
+        "rediff.com"
       ],
-      "lastSeen": "20261101143000"
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_10_8_78_7",
@@ -744,6 +773,34 @@
         "thehindu.com"
       ],
       "lastSeen": "20261101130000"
+    },
+    {
+      "id": "2026_11_01_13_3_74_8",
+      "date": "2026-11-01",
+      "lat": 13.35,
+      "lng": 74.7833,
+      "geoType": 4,
+      "place": "Manipal, Karnataka",
+      "articles": 100,
+      "outlets": 5,
+      "type": "040",
+      "movement": "economy",
+      "category": "economy",
+      "title": "Manipal Hospitals Vijayawada Becomes Andhra Pradeshs First Centre For Australian Visa Health Checks",
+      "urls": [
+        "https://indiaeducationdiary.in/manipal-hospitals-vijayawada-becomes-andhra-pradeshs-first-centre-for-australian-visa-health-checks/",
+        "https://www.gulte.com/political-news/439088/minister-lokesh-shares-positive-health-update-on-raptadu-school-girl",
+        "https://www.gulte.com/shorts/439093/good-news-surgeries-successful-for-rapthadu-school-girl",
+        "https://www.mangalorean.com/meeting-on-november-3-in-bengaluru-to-discuss-inauguration-of-new-udupi-district-hospital-minister-rizwan-arshad/"
+      ],
+      "domains": [
+        "indiaeducationdiary.in",
+        "gulte.com",
+        "mangalorean.com",
+        "prokerala.com",
+        "telugupeople.com"
+      ],
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_25_6_85_1",
@@ -800,31 +857,36 @@
       "lastSeen": "20261101114500"
     },
     {
-      "id": "2026_11_01_13_3_74_8",
+      "id": "2026_11_01_28_0_76_0",
       "date": "2026-11-01",
-      "lat": 13.35,
-      "lng": 74.7833,
+      "lat": 28,
+      "lng": 76,
       "geoType": 4,
-      "place": "Manipal, Karnataka",
-      "articles": 92,
-      "outlets": 4,
-      "type": "040",
-      "movement": "economy",
-      "category": "economy",
-      "title": "Manipal Hospitals Vijayawada Becomes Andhra Pradeshs First Centre For Australian Visa Health Checks",
+      "place": "Hindustan, India (general)",
+      "articles": 95,
+      "outlets": 9,
+      "type": "111",
+      "movement": "protest",
+      "category": "protest",
+      "title": "Rafale M Conducts Trials Aboard Ins Vikrant",
       "urls": [
-        "https://indiaeducationdiary.in/manipal-hospitals-vijayawada-becomes-andhra-pradeshs-first-centre-for-australian-visa-health-checks/",
-        "https://www.gulte.com/political-news/439088/minister-lokesh-shares-positive-health-update-on-raptadu-school-girl",
-        "https://www.gulte.com/shorts/439093/good-news-surgeries-successful-for-rapthadu-school-girl",
-        "https://www.mangalorean.com/meeting-on-november-3-in-bengaluru-to-discuss-inauguration-of-new-udupi-district-hospital-minister-rizwan-arshad/"
+        "https://theaviationist.com/2026/10/31/rafale-m-conducts-trials-aboard-ins-vikrant/",
+        "https://www.hindustantimes.com/india-news/drones-ai-and-more-new-iaf-chief-ashutosh-dixit-says-new-technologies-reshaping-nature-of-war-101793511539675.html",
+        "https://www.hindustantimes.com/india-news/meghalaya-minister-metbah-lyngdoh-resigns-days-after-udp-party-11-of-12-mlas-join-bjp-cm-conrad-k-sangma-party-npp-101793519351281.html",
+        "https://www.business-standard.com/india-news/india-news-iaf-chief-ashutosh-dixit-tejas-amca-priority-vayu-agenda-126110100299_1.html"
       ],
       "domains": [
-        "indiaeducationdiary.in",
-        "gulte.com",
-        "mangalorean.com",
-        "prokerala.com"
+        "theaviationist.com",
+        "hindustantimes.com",
+        "business-standard.com",
+        "moneycontrol.com",
+        "dailypioneer.com",
+        "econotimes.com",
+        "livemint.com",
+        "newindianexpress.com",
+        "telugupeople.com"
       ],
-      "lastSeen": "20261101130000"
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_22_7_75_8",
@@ -847,37 +909,6 @@
       ],
       "domains": [
         "freepressjournal.in"
-      ],
-      "lastSeen": "20261101143000"
-    },
-    {
-      "id": "2026_11_01_28_0_76_0",
-      "date": "2026-11-01",
-      "lat": 28,
-      "lng": 76,
-      "geoType": 4,
-      "place": "Hindustan, India (general)",
-      "articles": 91,
-      "outlets": 8,
-      "type": "111",
-      "movement": "protest",
-      "category": "protest",
-      "title": "Rafale M Conducts Trials Aboard Ins Vikrant",
-      "urls": [
-        "https://theaviationist.com/2026/10/31/rafale-m-conducts-trials-aboard-ins-vikrant/",
-        "https://www.hindustantimes.com/india-news/drones-ai-and-more-new-iaf-chief-ashutosh-dixit-says-new-technologies-reshaping-nature-of-war-101793511539675.html",
-        "https://www.hindustantimes.com/india-news/meghalaya-minister-metbah-lyngdoh-resigns-days-after-udp-party-11-of-12-mlas-join-bjp-cm-conrad-k-sangma-party-npp-101793519351281.html",
-        "https://www.business-standard.com/india-news/india-news-iaf-chief-ashutosh-dixit-tejas-amca-priority-vayu-agenda-126110100299_1.html"
-      ],
-      "domains": [
-        "theaviationist.com",
-        "hindustantimes.com",
-        "business-standard.com",
-        "moneycontrol.com",
-        "dailypioneer.com",
-        "econotimes.com",
-        "livemint.com",
-        "newindianexpress.com"
       ],
       "lastSeen": "20261101143000"
     },
@@ -963,33 +994,6 @@
         "newindianexpress.com"
       ],
       "lastSeen": "20261101143000"
-    },
-    {
-      "id": "2026_11_01_21_1_79_1",
-      "date": "2026-11-01",
-      "lat": 21.15,
-      "lng": 79.1,
-      "geoType": 4,
-      "place": "Nagpur, Maharashtra",
-      "articles": 75,
-      "outlets": 4,
-      "type": "190",
-      "movement": "security",
-      "category": "security",
-      "title": "The Untold Story Of Rss And The Freedom Struggle Of Bharat",
-      "urls": [
-        "https://organiser.org/2026/11/01/308223/international/intl-rss-news/the-untold-story-of-rss-and-the-freedom-struggle-of-bharat/",
-        "https://www.thehitavada.com/Encyc/2026/11/1/iitian-dcp-singareddy-earns-medal-for-exposing-pak-based-terror-links.html",
-        "https://www.biospectrumindia.com/features/18/28731/india-2030-who-supplies-the-next-10-million.html",
-        "https://realty.economictimes.indiatimes.com/news/regulatory/enforcement-directorate-searches-prayag-developers-premises-in-nagpur-seizes-1-95-crore-cash/135421268"
-      ],
-      "domains": [
-        "organiser.org",
-        "thehitavada.com",
-        "biospectrumindia.com",
-        "realty.economictimes.indiatimes.com"
-      ],
-      "lastSeen": "20261101113000"
     },
     {
       "id": "2026_11_01_16_9_82_2",
@@ -1098,6 +1102,31 @@
         "newindianexpress.com"
       ],
       "lastSeen": "20261101143000"
+    },
+    {
+      "id": "2026_11_01_15_9_74_5",
+      "date": "2026-11-01",
+      "lat": 15.8667,
+      "lng": 74.5,
+      "geoType": 4,
+      "place": "Belagavi, Karnataka",
+      "articles": 61,
+      "outlets": 3,
+      "type": "120",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Karnataka To Bring Legal Framework For Official State Flag Says D K Shivakumar",
+      "urls": [
+        "https://economictimes.indiatimes.com/news/politics-and-nation/karnataka-to-bring-legal-framework-for-official-state-flag-says-d-k-shivakumar/articleshow/135421254.cms",
+        "https://aninews.in/news/national/politics/govt-contemplating-giving-official-status-to-state-flag-karnataka-cm-dk-shivakumar20261101144607/",
+        "https://www.rediff.com/news/report/kannada-flag-to-be-flown-alongside-tricolour-shivakumar/20261101.htm"
+      ],
+      "domains": [
+        "economictimes.indiatimes.com",
+        "aninews.in",
+        "rediff.com"
+      ],
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_31_6_74_9",
@@ -1577,29 +1606,6 @@
       "lastSeen": "20261101054500"
     },
     {
-      "id": "2026_11_01_15_9_74_5",
-      "date": "2026-11-01",
-      "lat": 15.8667,
-      "lng": 74.5,
-      "geoType": 4,
-      "place": "Belagavi, Karnataka",
-      "articles": 38,
-      "outlets": 2,
-      "type": "120",
-      "movement": "politics",
-      "category": "politics",
-      "title": "Karnataka To Bring Legal Framework For Official State Flag Says D K Shivakumar",
-      "urls": [
-        "https://economictimes.indiatimes.com/news/politics-and-nation/karnataka-to-bring-legal-framework-for-official-state-flag-says-d-k-shivakumar/articleshow/135421254.cms",
-        "https://aninews.in/news/national/politics/govt-contemplating-giving-official-status-to-state-flag-karnataka-cm-dk-shivakumar20261101144607/"
-      ],
-      "domains": [
-        "economictimes.indiatimes.com",
-        "aninews.in"
-      ],
-      "lastSeen": "20261101100000"
-    },
-    {
       "id": "2026_11_01_22_6_83_0",
       "date": "2026-11-01",
       "lat": 22.6,
@@ -2060,6 +2066,27 @@
         "prokerala.com"
       ],
       "lastSeen": "20261101143000"
+    },
+    {
+      "id": "2026_11_01_16_7_81_1",
+      "date": "2026-11-01",
+      "lat": 16.7,
+      "lng": 81.1,
+      "geoType": 4,
+      "place": "West Godavari, Andhra Pradesh",
+      "articles": 30,
+      "outlets": 1,
+      "type": "020",
+      "movement": "politics",
+      "category": "politics",
+      "title": "News reported in West Godavari",
+      "urls": [
+        "https://www.telugupeople.com/news/news.asp?newsID=109170"
+      ],
+      "domains": [
+        "telugupeople.com"
+      ],
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_24_1_88_0",
@@ -3112,6 +3139,29 @@
         "economictimes.indiatimes.com"
       ],
       "lastSeen": "20261101093000"
+    },
+    {
+      "id": "2026_11_01_28_6_75_1",
+      "date": "2026-11-01",
+      "lat": 28.6293,
+      "lng": 75.071,
+      "geoType": 4,
+      "place": "Mahatma, Rajasthan",
+      "articles": 12,
+      "outlets": 2,
+      "type": "042",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Karnataka Lop R Ashok Challenges Congress To Dissolve Assemblies And Face Polls Accuses Party Of Double Standards",
+      "urls": [
+        "http://www.southeastasiapost.com/news/279406029/karnataka-lop-r-ashok-challenges-congress-to-dissolve-assemblies-and-face-polls-accuses-party-of-double-standards",
+        "https://www.rediff.com/news/report/cec-gyanesh-kumar-will-be-jailed-for-treason-rahul-gandhi/20261101.htm"
+      ],
+      "domains": [
+        "southeastasiapost.com",
+        "rediff.com"
+      ],
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_19_1_72_9",
@@ -4243,27 +4293,6 @@
       "lastSeen": "20261101124500"
     },
     {
-      "id": "2026_11_01_28_6_75_1",
-      "date": "2026-11-01",
-      "lat": 28.6293,
-      "lng": 75.071,
-      "geoType": 4,
-      "place": "Mahatma, Rajasthan",
-      "articles": 6,
-      "outlets": 1,
-      "type": "100",
-      "movement": "politics",
-      "category": "politics",
-      "title": "Karnataka Lop R Ashok Challenges Congress To Dissolve Assemblies And Face Polls Accuses Party Of Double Standards",
-      "urls": [
-        "http://www.southeastasiapost.com/news/279406029/karnataka-lop-r-ashok-challenges-congress-to-dissolve-assemblies-and-face-polls-accuses-party-of-double-standards"
-      ],
-      "domains": [
-        "southeastasiapost.com"
-      ],
-      "lastSeen": "20261101001500"
-    },
-    {
       "id": "2026_11_01_23_8_91_3",
       "date": "2026-11-01",
       "lat": 23.8364,
@@ -4705,6 +4734,27 @@
         "hindustantimes.com"
       ],
       "lastSeen": "20261101143000"
+    },
+    {
+      "id": "2026_11_01_10_0_76_2",
+      "date": "2026-11-01",
+      "lat": 9.9667,
+      "lng": 76.2333,
+      "geoType": 4,
+      "place": "Malabar, Kerala",
+      "articles": 5,
+      "outlets": 1,
+      "type": "083",
+      "movement": "politics",
+      "category": "politics",
+      "title": "Some Trustees Thwarting Bid To Grant Powers To Malabar Devaswom Board",
+      "urls": [
+        "https://www.thehindu.com/news/national/kerala/some-trustees-thwarting-bid-to-grant-powers-to-malabar-devaswom-board/article71653106.ece"
+      ],
+      "domains": [
+        "thehindu.com"
+      ],
+      "lastSeen": "20261101150000"
     },
     {
       "id": "2026_11_01_25_5_75_6",
