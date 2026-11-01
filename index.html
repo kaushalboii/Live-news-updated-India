@@ -671,6 +671,54 @@
       vertical-align: 1px;
     }
 
+    .item .tag.multi {
+      border-color: rgba(56, 189, 248, 0.4);
+      background: rgba(56, 189, 248, 0.08);
+      color: #38bdf8;
+    }
+
+    .item .tag.yt {
+      border-color: rgba(248, 113, 113, 0.4);
+      background: rgba(248, 113, 113, 0.08);
+      color: #f87171;
+    }
+
+    .item .tag.soc {
+      border-color: rgba(167, 139, 250, 0.4);
+      background: rgba(167, 139, 250, 0.08);
+      color: #a78bfa;
+    }
+
+    .item .tag.local {
+      border-color: rgba(52, 211, 153, 0.4);
+      background: rgba(52, 211, 153, 0.08);
+      color: #34d399;
+    }
+
+    html[data-theme="light"] .item .tag.multi {
+      border-color: rgba(2, 132, 199, 0.35);
+      background: rgba(2, 132, 199, 0.08);
+      color: #0369a1;
+    }
+
+    html[data-theme="light"] .item .tag.yt {
+      border-color: rgba(220, 38, 38, 0.35);
+      background: rgba(220, 38, 38, 0.08);
+      color: #b91c1c;
+    }
+
+    html[data-theme="light"] .item .tag.soc {
+      border-color: rgba(124, 58, 237, 0.35);
+      background: rgba(124, 58, 237, 0.08);
+      color: #6d28d9;
+    }
+
+    html[data-theme="light"] .item .tag.local {
+      border-color: rgba(5, 150, 105, 0.35);
+      background: rgba(5, 150, 105, 0.08);
+      color: #047857;
+    }
+
     .detail {
       grid-column: 2;
       margin-top: 8px;
@@ -1045,11 +1093,22 @@
 
     /* ---------- Data Conversion ---------- */
     function liveToEvent(c) {
-      const nOut = c.outlets ?? (c.domains || []).length;
+      const nOut = c.outlets ?? (c.domains || []).length ?? 1;
       const mov = c.movement || c.category || "other";
       const type = EVENT_TYPES[c.type] || "News report";
       const pubList = (c.publishers || []).length ? c.publishers : (c.domains || []).map(hostOf);
-      const sources = (c.urls || []).filter(safeUrl).map((u, i) => ({ n: pubList[i] || hostOf(u), u }));
+      const urls = (c.urls || []).filter(safeUrl);
+      const sources = urls.map((u, i) => {
+        let name = pubList[i] || hostOf(u);
+        const isYtUrl = u.includes("youtube.com") || u.includes("youtu.be");
+        const isSocUrl = u.includes("twitter.com") || u.includes("x.com");
+        if (isYtUrl && !name.toLowerCase().includes("youtube")) {
+          name += " (YouTube)";
+        } else if (isSocUrl && !name.toLowerCase().includes("x") && !name.toLowerCase().includes("twitter")) {
+          name += " (X)";
+        }
+        return { n: name, u, isYt: isYtUrl, isSoc: isSocUrl };
+      });
 
       let title = c.title || "";
       if (/^cbmi/i.test(title) || (!title.includes(" ") && title.length > 25)) {
@@ -1060,9 +1119,32 @@
         title = `${movLabel} update in ${(c.place || "India").split(",")[0]}`;
       }
 
-      const isYt = (c.platforms || []).includes("youtube") || c.platform === "youtube";
-      const isSoc = (c.platforms || []).includes("social") || c.platform === "social";
-      const tag = isYt ? "📺 YouTube" : isSoc ? "𝕏 Social" : (nOut === 1 ? "📍 Local report" : "Auto-detected");
+      const hasYtUrl = sources.some(s => s.isYt);
+      const hasSocUrl = sources.some(s => s.isSoc);
+      const hasYtPub = pubList.some(p => p && /youtube/i.test(p));
+      const hasSocPub = pubList.some(p => p && /(twitter|\bx\b|social wire)/i.test(p));
+
+      let tag;
+      let tagClass = "";
+      if (nOut >= 3) {
+        tag = `🌐 ${nOut} News Outlets`;
+        tagClass = "multi";
+      } else if (c.platform === "youtube" || hasYtUrl || (nOut <= 2 && hasYtPub)) {
+        tag = "📺 YouTube";
+        tagClass = "yt";
+      } else if (c.platform === "social" || hasSocUrl || (nOut <= 2 && hasSocPub)) {
+        tag = "𝕏 Social";
+        tagClass = "soc";
+      } else if (nOut === 2) {
+        tag = "🌐 2 News Sources";
+        tagClass = "multi";
+      } else if (c.isLocal || nOut === 1) {
+        tag = "📍 Local District";
+        tagClass = "local";
+      } else {
+        tag = "⚡ Wire Report";
+        tagClass = "wire";
+      }
 
       return {
         id: "g-" + c.id, live: true, weak: nOut < 2,
@@ -1070,6 +1152,7 @@
         date: c.date, city: c.place || "India", venue: "", lat: c.lat, lng: c.lng,
         title,
         tag,
+        tagClass,
         summary: nOut === 1
           ? `Reported via ${pubList[0] || 'local outlet'} (${c.articles} report${c.articles == 1 ? '' : 's'}).`
           : `${type}. Covered across ${c.articles} report${c.articles == 1 ? "" : "s"} from ${nOut} news outlets including ${pubList.slice(0, 3).join(", ")}.`,
@@ -1256,7 +1339,7 @@
         return `<div class="item" role="button" tabindex="0" id="it-${esc(e.id)}" data-id="${esc(e.id)}" aria-expanded="${e.id === selected}">
       <span class="bar" style="background:${colorOf(e.movement)}"></span>
       <span><span class="h">${esc(e.title)}</span>
-      <span class="meta">${esc(e.city)}${e.venue ? ", " + esc(e.venue) : ""} · ${when}${e.ongoing ? '<span class="tag">Ongoing</span>' : ""}${e.tag ? `<span class="tag">${esc(e.tag)}</span>` : ""}</span></span>
+      <span class="meta">${esc(e.city)}${e.venue ? ", " + esc(e.venue) : ""} · ${when}${e.ongoing ? '<span class="tag">Ongoing</span>' : ""}${e.tag ? `<span class="tag ${e.tagClass || ''}">${esc(e.tag)}</span>` : ""}</span></span>
       <span class="detail">
         <p>${esc(e.summary)}</p>
         <p class="src">Source${(e.sources || []).length > 1 ? "s" : ""}: ${srcs || "none given"}</p>

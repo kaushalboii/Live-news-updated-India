@@ -883,7 +883,7 @@ async function main() {
 
     const type = Object.entries(cl.codes).sort((a, b) => b[1] - a[1])[0]?.[0] || "010";
     const formattedSources = cl.domains.map(formatPublisher);
-    const primaryPlatform = (cl.platforms && cl.platforms.length) ? cl.platforms[0] : "web";
+    const primaryPlatform = cl.domains.length >= 3 ? "web" : ((cl.platforms && cl.platforms.length) ? cl.platforms[0] : "web");
 
     return {
       id: cl.id,

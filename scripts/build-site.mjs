@@ -26,22 +26,57 @@ const latestDate = live.clusters.reduce((max, c) => (c.date > max ? c.date : max
 const todayItems = allClean.filter((c) => c.date >= latestDate);
 const otherItems = allClean.filter((c) => c.date < latestDate);
 const items = (todayItems.length > 0 ? todayItems.concat(otherItems) : otherItems).slice(0, 150).map((c) => {
-  const pub = c.publishers?.[0] || (c.urls[0] ? new URL(c.urls[0]).hostname.replace(/^www\./, "") : "Regional wire");
-  const isYt = c.platforms?.includes("youtube") || c.platform === "youtube";
-  const isSoc = c.platforms?.includes("social") || c.platform === "social";
-  const tag = isYt ? "📺 YouTube" : isSoc ? "𝕏 Social" : c.isLocal ? "📍 Local news" : "Auto-detected";
-  const tagClass = isYt ? "yt" : isSoc ? "soc" : c.isLocal ? "local" : "";
+  const nOut = c.outlets || (c.domains || []).length || 1;
+  const pubList = (c.publishers || []).length ? c.publishers : (c.domains || []).map((d) => d);
+  const urls = (c.urls || []).filter((u) => /^https?:/.test(u));
+  const sources = urls.map((u, i) => {
+    let name = pubList[i];
+    try { if (!name) name = new URL(u).hostname.replace(/^www\./, ""); } catch { name = "Source"; }
+    const isYtUrl = u.includes("youtube.com") || u.includes("youtu.be");
+    const isSocUrl = u.includes("twitter.com") || u.includes("x.com");
+    if (isYtUrl && !name.toLowerCase().includes("youtube")) name += " (YouTube)";
+    else if (isSocUrl && !name.toLowerCase().includes("x") && !name.toLowerCase().includes("twitter")) name += " (X)";
+    return { n: name, u, isYt: isYtUrl, isSoc: isSocUrl };
+  });
+
+  const hasYtUrl = sources.some((s) => s.isYt);
+  const hasSocUrl = sources.some((s) => s.isSoc);
+  const hasYtPub = pubList.some((p) => p && /youtube/i.test(p));
+  const hasSocPub = pubList.some((p) => p && /(twitter|\bx\b|social wire)/i.test(p));
+
+  let tag;
+  let tagClass = "";
+  if (nOut >= 3) {
+    tag = `🌐 ${nOut} News Outlets`;
+    tagClass = "multi";
+  } else if (c.platform === "youtube" || hasYtUrl || (nOut <= 2 && hasYtPub)) {
+    tag = "📺 YouTube";
+    tagClass = "yt";
+  } else if (c.platform === "social" || hasSocUrl || (nOut <= 2 && hasSocPub)) {
+    tag = "𝕏 Social";
+    tagClass = "soc";
+  } else if (nOut === 2) {
+    tag = "🌐 2 News Sources";
+    tagClass = "multi";
+  } else if (c.isLocal || nOut === 1) {
+    tag = "📍 Local District";
+    tagClass = "local";
+  } else {
+    tag = "⚡ Wire Report";
+    tagClass = "wire";
+  }
+
+  const pub = pubList[0] || (urls[0] ? new URL(urls[0]).hostname.replace(/^www\./, "") : "Regional wire");
 
   return {
     id: c.id,
     title: c.title,
     place: c.place,
     date: c.date,
-    summary: `${c.articles} report${c.articles > 1 ? "s" : ""} recorded via ${pub}${c.outlets > 1 ? ` and ${c.outlets - 1} other source(s)` : ""}.`,
-    sources: (c.urls || []).map((u, i) => {
-      const p = c.publishers?.[i];
-      try { return { n: p || new URL(u).hostname.replace(/^www\./, ""), u }; } catch { return { n: "Source", u }; }
-    }),
+    summary: nOut === 1
+      ? `Reported via ${pub} (${c.articles} report${c.articles === 1 ? '' : 's'}).`
+      : `Covered across ${c.articles} report${c.articles === 1 ? '' : 's'} from ${nOut} news outlets including ${pubList.slice(0, 3).join(', ')}.`,
+    sources,
     tag,
     tagClass,
     movement: c.movement || "other"
@@ -50,8 +85,8 @@ const items = (todayItems.length > 0 ? todayItems.concat(otherItems) : otherItem
 
 const listHTML = items.map((e) => `<article class="item" data-id="${esc(e.id)}"><span class="bar"></span><span><h2 class="h">${esc(e.title)}</h2>`
   + `<span class="meta">${esc(e.place)} · <time datetime="${e.date}">${fmtDate(e.date)}</time>${e.tag ? `<span class="tag ${e.tagClass}">${esc(e.tag)}</span>` : ""}</span>`
-  + (e.summary ? `<span class="detail" style="display:block"><p>${esc(e.summary)}</p></span>` : "")
-  + `<span class="meta">${e.sources.filter((s) => /^https?:/.test(s.u)).map((s) => `<a href="${esc(s.u)}" target="_blank" rel="noopener nofollow">${esc(s.n)}</a>`).join(", ")}</span></span></article>`).join("");
+  + (e.summary ? `<span class="detail" style="display:block"><p>${esc(e.summary)}</p><p class="src">Source${e.sources.length > 1 ? "s" : ""}: ${e.sources.map((s) => `<a href="${esc(s.u)}" target="_blank" rel="noopener nofollow">${esc(s.n)}</a>`).join(", ")}</p></span>` : "")
+  + `</span></article>`).join("");
 
 const jsonld = {
   "@context": "https://schema.org",
