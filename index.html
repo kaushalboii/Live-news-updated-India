@@ -789,15 +789,15 @@
     <aside>
       <div class="ctrl">
         <div class="seg" role="group" aria-label="Time range">
-          <button data-range="1" aria-pressed="false">Today</button>
-          <button data-range="7" aria-pressed="true">7 days</button>
+          <button data-range="1" aria-pressed="true">Today</button>
+          <button data-range="7" aria-pressed="false">7 days</button>
           <button data-range="30" aria-pressed="false">30 days</button>
           <button data-range="all" aria-pressed="false">2026</button>
         </div>
 
         <div class="toggles">
-          <label><input type="checkbox" id="tLive" checked> News detections</label>
-          <label><input type="checkbox" id="tWeak"> Include single-outlet reports</label>
+          <label><input type="checkbox" id="tLive" checked> Live news detections</label>
+          <label><input type="checkbox" id="tWeak" checked> Include hyper-local & single-source reports</label>
         </div>
 
         <p class="status" id="status"><span class="live-dot"></span><span>Loading live data…</span></p>
@@ -855,7 +855,7 @@
     const todayISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
 
     let curated = [], live = [], liveMeta = null;
-    let range = "7", selected = null, showLive = true, showWeak = false;
+    let range = "1", selected = null, showLive = true, showWeak = true;
     const hidden = new Set();
 
     /* ---------- Map Geometry & Projection ---------- */
@@ -907,27 +907,6 @@
       setVB(zoomAround(vb, f, px, py));
     }, { passive: false });
 
-  let title = c.title || "";
-  if (/^cbmi/i.test(title) || (!title.includes(" ") && title.length > 25)) {
-    title = "";
-  }
-  if (!title) {
-    const movLabel = MOVEMENTS[mov]?.label || "Live news";
-    title = `${movLabel} update in ${(c.place||"India").split(",")[0]}`;
-  }
-
-  return {
-    id: "g-"+c.id, live: true, weak: nOut < 2,
-    movement: MOVEMENTS[mov] ? mov : "other",
-    date: c.date, city: c.place || "India", venue: "", lat: c.lat, lng: c.lng,
-    title,
-    summary: nOut === 1
-      ? `Reported via ${pubList[0] || 'local outlet'} (${c.articles} report${c.articles==1?'':'s'}).`
-      : `${type}. Covered across ${c.articles} report${c.articles==1?"":"s"} from ${nOut} news outlets including ${pubList.slice(0,3).join(", ")}.`,
-    sources, outlets: nOut, articles: c.articles
-  };
-}
-
     /* ---------- Data Conversion ---------- */
     function liveToEvent(c) {
       const nOut = c.outlets ?? (c.domains || []).length;
@@ -936,11 +915,25 @@
       const pubList = (c.publishers || []).length ? c.publishers : (c.domains || []).map(hostOf);
       const sources = (c.urls || []).filter(safeUrl).map((u, i) => ({ n: pubList[i] || hostOf(u), u }));
 
+      let title = c.title || "";
+      if (/^cbmi/i.test(title) || (!title.includes(" ") && title.length > 25)) {
+        title = "";
+      }
+      if (!title) {
+        const movLabel = MOVEMENTS[mov]?.label || "Live news";
+        title = `${movLabel} update in ${(c.place || "India").split(",")[0]}`;
+      }
+
+      const isYt = (c.platforms || []).includes("youtube") || c.platform === "youtube";
+      const isSoc = (c.platforms || []).includes("social") || c.platform === "social";
+      const tag = isYt ? "📺 YouTube" : isSoc ? "𝕏 Social" : (nOut === 1 ? "📍 Local report" : "Auto-detected");
+
       return {
         id: "g-" + c.id, live: true, weak: nOut < 2,
         movement: MOVEMENTS[mov] ? mov : "other",
         date: c.date, city: c.place || "India", venue: "", lat: c.lat, lng: c.lng,
-        title: c.title || `${type} reported in ${(c.place || "India").split(",")[0]}`,
+        title,
+        tag,
         summary: nOut === 1
           ? `Reported via ${pubList[0] || 'local outlet'} (${c.articles} report${c.articles == 1 ? '' : 's'}).`
           : `${type}. Covered across ${c.articles} report${c.articles == 1 ? "" : "s"} from ${nOut} news outlets including ${pubList.slice(0, 3).join(", ")}.`,
@@ -981,9 +974,11 @@
 
     /* ---------- Filtering ---------- */
     function inRange(e) {
+      if (range === "1") {
+        return !e.ongoing && (e.date === todayISO() || ageDays(e.date) <= 1);
+      }
       if (e.ongoing) return true;
       if (range === "all") return e.date >= "2026-01-01";
-      if (range === "1") return e.date === todayISO();
       const a = ageDays(e.date);
       return a <= +range && a > -60;
     }
@@ -991,7 +986,7 @@
     function visible() {
       const pool = curated.concat(showLive ? live.filter(e => showWeak || !e.weak) : []);
       return pool.filter(e => !hidden.has(e.movement) && inRange(e))
-        .sort((a, b) => (a.ongoing ? 1 : 0) - (b.ongoing ? 1 : 0) || b.date.localeCompare(a.date) || (a.live ? 1 : 0) - (b.live ? 1 : 0) || (b.articles || 0) - (a.articles || 0));
+        .sort((a, b) => b.date.localeCompare(a.date) || (b.articles || 0) - (a.articles || 0));
     }
 
     const isRecent = e => !e.ongoing && ageDays(e.date) <= 2;
@@ -1074,12 +1069,19 @@
       const list = document.getElementById("list");
       const checked = all.filter(e => !e.ongoing && !e.live).length, det = all.filter(e => e.live).length, ong = all.filter(e => e.ongoing).length;
       const places = new Set(all.filter(e => !e.ongoing).map(e => e.city.split(",")[0])).size;
-      const parts = [];
-      if (checked) parts.push(`<b>${checked}</b> checked stor${checked > 1 ? "ies" : "y"}`);
-      if (det) parts.push(`<b>${det}</b> news detection${det > 1 ? "s" : ""}`);
-      document.getElementById("count").innerHTML = parts.length
-        ? parts.join(" and ") + ` across <b>${places}</b> place${places > 1 ? "s" : ""}` + (ong ? `, plus ${ong} long-running stor${ong > 1 ? "ies" : "y"}` : "")
-        : "No news in this range.";
+
+      if (range === "1") {
+        document.getElementById("count").innerHTML = ev.length
+          ? `<b>${ev.length}</b> live news detection${ev.length > 1 ? "s" : ""} today across <b>${places}</b> place${places > 1 ? "s" : ""}`
+          : "No live reports recorded today yet.";
+      } else {
+        const parts = [];
+        if (checked) parts.push(`<b>${checked}</b> checked stor${checked > 1 ? "ies" : "y"}`);
+        if (det) parts.push(`<b>${det}</b> news detection${det > 1 ? "s" : ""}`);
+        document.getElementById("count").innerHTML = parts.length
+          ? parts.join(" and ") + ` across <b>${places}</b> place${places > 1 ? "s" : ""}` + (ong ? `, plus ${ong} long-running stor${ong > 1 ? "ies" : "y"}` : "")
+          : "No news in this range.";
+      }
 
       if (!ev.length) {
         list.innerHTML = `<div class="empty">Nothing matches. Widen the time range or turn a topic back on.</div>`;
@@ -1093,12 +1095,13 @@
           const u = safeUrl(s.u);
           return u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer nofollow">${esc(s.n)}</a>` : esc(s.n);
         }).join(", ");
-        const when = e.ongoing ? ("Since " + fmtDate(e.date)) : fmtDate(e.date);
+        const isToday = e.date === todayISO() || ageDays(e.date) <= 1;
+        const when = e.ongoing ? ("Since " + fmtDate(e.date)) : (isToday ? "Today, " + fmtDate(e.date) : fmtDate(e.date));
 
         return `<div class="item" role="button" tabindex="0" id="it-${esc(e.id)}" data-id="${esc(e.id)}" aria-expanded="${e.id === selected}">
       <span class="bar" style="background:${colorOf(e.movement)}"></span>
       <span><span class="h">${esc(e.title)}</span>
-      <span class="meta">${esc(e.city)}${e.venue ? ", " + esc(e.venue) : ""} · ${when}${e.ongoing ? '<span class="tag">Ongoing</span>' : ""}${e.live ? '<span class="tag">Auto-detected</span>' : ""}</span></span>
+      <span class="meta">${esc(e.city)}${e.venue ? ", " + esc(e.venue) : ""} · ${when}${e.ongoing ? '<span class="tag">Ongoing</span>' : ""}${e.tag ? `<span class="tag">${esc(e.tag)}</span>` : ""}</span></span>
       <span class="detail">
         <p>${esc(e.summary)}</p>
         <p class="src">Source${(e.sources || []).length > 1 ? "s" : ""}: ${srcs || "none given"}</p>
