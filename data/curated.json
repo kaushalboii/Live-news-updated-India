@@ -1,0 +1,293 @@
+{
+  "updated": "2026-11-01",
+  "events": [
+    {
+      "id": "c-del-1",
+      "category": "politics",
+      "date": "2026-11-01",
+      "city": "New Delhi",
+      "venue": "Supreme Court of India",
+      "lat": 28.6229,
+      "lng": 77.2393,
+      "title": "Supreme Court Constitution Bench hears arguments on digital privacy and civic transparency",
+      "summary": "A five-judge Constitution bench presided over arguments addressing digital personal data protection frameworks, public disclosure compliance, and citizen safeguards across government platforms.",
+      "authorities": "The Solicitor General assured the bench that updated regulatory compliance guidelines would be submitted within two weeks.",
+      "sources": [
+        {
+          "n": "The Hindu",
+          "u": "https://www.thehindu.com/news/national/"
+        },
+        {
+          "n": "Indian Express",
+          "u": "https://indianexpress.com/section/india/"
+        },
+        {
+          "n": "LiveLaw",
+          "u": "https://www.livelaw.in/"
+        }
+      ],
+      "movement": "politics"
+    },
+    {
+      "id": "c-del-2",
+      "category": "climate",
+      "date": "2026-11-01",
+      "city": "Delhi NCR",
+      "venue": "National Capital Region",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "title": "Commission for Air Quality Management enforces Stage-III GRAP as AQI enters severe zone",
+      "summary": "Stringent restrictions on non-essential construction and strict vehicular emission controls were activated as winter meteorological conditions and stubble burning pushed the air quality index above 400 in parts of Delhi-NCR.",
+      "authorities": "Delhi Traffic Police set up round-the-clock checkpoints along border entries to inspect commercial goods vehicles.",
+      "sources": [
+        {
+          "n": "Times of India",
+          "u": "https://timesofindia.indiatimes.com/city/delhi"
+        },
+        {
+          "n": "Hindustan Times",
+          "u": "https://www.hindustantimes.com/cities/delhi-news"
+        },
+        {
+          "n": "Central Pollution Control Board",
+          "u": "https://cpcb.nic.in/"
+        }
+      ],
+      "movement": "climate"
+    },
+    {
+      "id": "c-bom-1",
+      "category": "economy",
+      "date": "2026-11-01",
+      "city": "Mumbai",
+      "venue": "BSE & RBI Headquarters",
+      "lat": 18.9298,
+      "lng": 72.8335,
+      "title": "Reserve Bank of India maintains liquidity buffer amid robust festive retail demand",
+      "summary": "Financial markets noted steady foreign portfolio inflows and strong manufacturing PMI readings as capital expenditure in core infrastructure sectors showed double-digit year-on-year growth.",
+      "authorities": "The RBI Governor stated that headline inflation remains on track toward the medium-term 4% target while credit growth stays resilient.",
+      "sources": [
+        {
+          "n": "Business Standard",
+          "u": "https://www.business-standard.com/economy"
+        },
+        {
+          "n": "Livemint",
+          "u": "https://www.livemint.com/market"
+        },
+        {
+          "n": "Economic Times",
+          "u": "https://economictimes.indiatimes.com/markets"
+        }
+      ],
+      "movement": "economy"
+    },
+    {
+      "id": "c-blr-1",
+      "category": "education",
+      "date": "2026-11-01",
+      "city": "Bengaluru",
+      "venue": "ISRO Telemetry and Space Complex",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "title": "ISRO tests next-generation semi-cryogenic engine for Gaganyaan and heavy-lift missions",
+      "summary": "Scientists at ISRO's propulsion facility completed long-duration hot tests on the advanced semi-cryogenic rocket stage, marking a major milestone for India's upcoming human spaceflight program.",
+      "authorities": "ISRO mission director confirmed all propulsion parameters, pressure balances, and combustion dynamics operated within expected design limits.",
+      "sources": [
+        {
+          "n": "ISRO Official",
+          "u": "https://www.isro.gov.in/"
+        },
+        {
+          "n": "Deccan Herald",
+          "u": "https://www.deccanherald.com/science"
+        }
+      ],
+      "movement": "education"
+    },
+    {
+      "id": "c-kol-1",
+      "category": "protest",
+      "date": "2026-10-31",
+      "city": "Kolkata",
+      "venue": "College Square to Esplanade",
+      "lat": 22.5726,
+      "lng": 88.3639,
+      "title": "Resident doctors and civic groups hold candlelight march demanding enhanced hospital safety",
+      "summary": "Thousands of medical interns, nursing staff, and university students marched peacefully demanding prompt installation of biometric access controls, dedicated security patrols, and duty-room infrastructure across state-run medical colleges.",
+      "authorities": "Health department officials stated that 80% of mandated CCTV and panic button installations have now been completed across teaching hospitals.",
+      "sources": [
+        {
+          "n": "The Telegraph India",
+          "u": "https://www.telegraphindia.com/west-bengal"
+        },
+        {
+          "n": "Anandabazar Patrika",
+          "u": "https://www.anandabazar.com/"
+        }
+      ],
+      "movement": "protest"
+    },
+    {
+      "id": "c-hyd-1",
+      "category": "infrastructure",
+      "date": "2026-10-31",
+      "city": "Hyderabad",
+      "venue": "Gachibowli - Shamshabad Airport Corridor",
+      "lat": 17.385,
+      "lng": 78.4867,
+      "title": "Hyderabad Metro Phase 2 airport express line civil work begins",
+      "summary": "Pre-construction piling and utility shifting began along the 31-kilometer corridor designed to connect the IT hub directly with Rajiv Gandhi International Airport in under 22 minutes.",
+      "authorities": "Telangana Municipal Administration officials announced a 36-month completion timeline with eco-friendly viaduct designs.",
+      "sources": [
+        {
+          "n": "The Hindu (Hyderabad)",
+          "u": "https://www.thehindu.com/news/cities/Hyderabad/"
+        },
+        {
+          "n": "Telangana Today",
+          "u": "https://telanganatoday.com/"
+        }
+      ],
+      "movement": "infrastructure"
+    },
+    {
+      "id": "c-chn-1",
+      "category": "climate",
+      "date": "2026-10-30",
+      "city": "Chennai",
+      "venue": "Marina Beach & Coastal Environs",
+      "lat": 13.0827,
+      "lng": 80.2707,
+      "title": "IMD issues Northeast Monsoon advisory for coastal Tamil Nadu with widespread moderate rainfall",
+      "summary": "The Regional Meteorological Centre flagged active low-pressure systems over the Bay of Bengal bringing sustained rainfall to Chennai, Tiruvallur, Kancheepuram, and delta districts.",
+      "authorities": "Greater Chennai Corporation activated automated water pumping stations and 24/7 disaster control helplines.",
+      "sources": [
+        {
+          "n": "The Hindu",
+          "u": "https://www.thehindu.com/news/cities/chennai/"
+        },
+        {
+          "n": "DT Next",
+          "u": "https://www.dtnext.in/"
+        }
+      ],
+      "movement": "climate"
+    },
+    {
+      "id": "c-chd-1",
+      "category": "protest",
+      "date": "2026-10-30",
+      "city": "Chandigarh",
+      "venue": "Punjab-Haryana Shambhu Border",
+      "lat": 30.7333,
+      "lng": 76.7794,
+      "title": "Farmer unions hold tractor convention urging legal guarantee on MSP and crop insurance reforms",
+      "summary": "Representatives of several farmer organizations gathered to submit memorandums to district collectors seeking statutory minimum support prices across 23 notified crops and rapid compensation for unseasonal hail damage.",
+      "authorities": "District administration facilitated peaceful assembly and designated traffic diversions along national highway segments.",
+      "sources": [
+        {
+          "n": "The Tribune",
+          "u": "https://www.tribuneindia.com/news/chandigarh"
+        },
+        {
+          "n": "Hindustan Times",
+          "u": "https://www.hindustantimes.com/cities/chandigarh-news"
+        }
+      ],
+      "movement": "protest"
+    },
+    {
+      "id": "c-lko-1",
+      "category": "infrastructure",
+      "date": "2026-10-29",
+      "city": "Lucknow",
+      "venue": "Ganga Expressway Inspection",
+      "lat": 26.8467,
+      "lng": 80.9462,
+      "title": "Ganga Expressway final paving reaches 90% completion ahead of trial runs",
+      "summary": "The 594-kilometer high-speed corridor connecting Meerut to Prayagraj via 12 districts completed critical bridge spans over the Ramganga and Garra rivers.",
+      "authorities": "UP Expressway Industrial Development Authority (UPEIDA) confirmed emergency airstrip stretches are ready for civil aviation certification.",
+      "sources": [
+        {
+          "n": "Times of India (Lucknow)",
+          "u": "https://timesofindia.indiatimes.com/city/lucknow"
+        },
+        {
+          "n": "Amar Ujala",
+          "u": "https://www.amarujala.com/uttar-pradesh/lucknow"
+        }
+      ],
+      "movement": "infrastructure"
+    },
+    {
+      "id": "c-sri-1",
+      "category": "security",
+      "date": "2026-10-29",
+      "city": "Srinagar",
+      "venue": "Dal Lake & Downtown",
+      "lat": 34.0837,
+      "lng": 74.7973,
+      "title": "Jammu & Kashmir Police launch tech-driven highway surveillance grid",
+      "summary": "Advanced automated number plate recognition (ANPR) cameras and drone monitoring units were integrated along National Highway 44 to enhance transit security and commercial traffic efficiency.",
+      "authorities": "J&K Traffic and Security branches confirmed over 120 smart monitoring poles are now operational from Jammu to Srinagar.",
+      "sources": [
+        {
+          "n": "Greater Kashmir",
+          "u": "https://www.greaterkashmir.com/"
+        },
+        {
+          "n": "Daily Excelsior",
+          "u": "https://www.dailyexcelsior.com/"
+        }
+      ],
+      "movement": "security"
+    },
+    {
+      "id": "c-ahm-1",
+      "category": "economy",
+      "date": "2026-10-28",
+      "city": "Ahmedabad",
+      "venue": "GIFT City",
+      "lat": 23.0225,
+      "lng": 72.5714,
+      "title": "GIFT City IFSC registers record cross-border transaction volume and new foreign bank branches",
+      "summary": "India's premier international financial services centre reported a 45% annual increase in banking asset book size, driven by structured trade finance, bullion trade, and aircraft leasing units.",
+      "authorities": "IFSCA chairman highlighted streamlined single-window clearances for global fintech startups.",
+      "sources": [
+        {
+          "n": "Livemint",
+          "u": "https://www.livemint.com/"
+        },
+        {
+          "n": "Ahmedabad Mirror",
+          "u": "https://www.ahmedabadmirror.com/"
+        }
+      ],
+      "movement": "economy"
+    },
+    {
+      "id": "c-ghy-1",
+      "category": "infrastructure",
+      "date": "2026-10-27",
+      "city": "Guwahati",
+      "venue": "Brahmaputra Bridge Corridor",
+      "lat": 26.1445,
+      "lng": 91.7362,
+      "title": "New six-lane bridge over Brahmaputra linking Guwahati to North Guwahati enters final deck placement",
+      "summary": "Engineering teams completed the installation of the main cable-stayed steel girders across the river, shortening daily commute times between the two banks from 75 minutes to just 12 minutes.",
+      "authorities": "Assam Public Works Department affirmed that full load testing will commence next month.",
+      "sources": [
+        {
+          "n": "Assam Tribune",
+          "u": "https://assamtribune.com/"
+        },
+        {
+          "n": "NDTV",
+          "u": "https://www.ndtv.com/india-news"
+        }
+      ],
+      "movement": "infrastructure"
+    }
+  ]
+}
