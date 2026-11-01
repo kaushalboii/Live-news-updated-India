@@ -89,16 +89,22 @@
     }
 
     *, *::before, *::after {
-      box-sizing: inherit;
+      box-sizing: border-box;
     }
 
     html {
       height: 100%;
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
       scroll-padding-top: env(safe-area-inset-top, 0px);
     }
 
     body {
-      height: 100%;
+      min-height: 100%;
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
       margin: 0;
       background: var(--bg);
       color: var(--ink);
@@ -134,6 +140,10 @@
       flex-shrink: 0;
       z-index: 50;
       gap: 16px;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
     }
 
     .topbar-left {
@@ -259,6 +269,10 @@
       display: grid;
       grid-template-columns: minmax(0, 1fr) 420px;
       height: calc(100% - 52px);
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
       overflow: hidden;
     }
 
@@ -267,6 +281,10 @@
       flex-direction: column;
       height: 100%;
       min-height: 0;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
       position: relative;
     }
 
@@ -276,6 +294,10 @@
       overflow: hidden;
       background: var(--sea);
       min-height: 0;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
       transition: background .2s ease;
     }
 
@@ -345,9 +367,14 @@
       background: var(--panel);
       border-top: 1px solid var(--line);
       overflow-x: auto;
+      overscroll-behavior-x: contain;
       scrollbar-width: none;
       -webkit-overflow-scrolling: touch;
       flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
     }
 
     .topic-bar::-webkit-scrollbar {
@@ -533,6 +560,10 @@
       display: flex;
       flex-direction: column;
       min-height: 0;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
       transition: background .2s ease, border-color .2s ease;
     }
 
@@ -540,6 +571,10 @@
       padding: 18px 20px 14px;
       border-bottom: 1px solid var(--line);
       flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
     }
 
     .seg {
@@ -548,10 +583,16 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 3px;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
+      gap: 2px;
     }
 
     .seg button {
-      flex: 1;
+      flex: 1 1 0;
+      min-width: 0;
       border: 0;
       background: transparent;
       padding: 6px 4px;
@@ -560,6 +601,10 @@
       font-size: .86rem;
       font-weight: 600;
       color: var(--muted);
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       transition: all .15s;
     }
 
@@ -581,6 +626,10 @@
       padding: 0 10px;
       margin-top: 10px;
       height: 35px;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
       transition: border-color .15s ease, box-shadow .15s ease;
     }
 
@@ -602,6 +651,8 @@
       color: var(--ink);
       font-size: .84rem;
       width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
     }
 
     .quick-search input::placeholder {
@@ -715,9 +766,14 @@
 
     .list {
       overflow-y: auto;
+      overflow-x: hidden;
       flex: 1;
       padding: 4px 0 24px;
       min-height: 0;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
       scrollbar-width: thin;
       scrollbar-color: var(--line) transparent;
     }
@@ -732,7 +788,7 @@
 
     .item {
       display: grid;
-      grid-template-columns: 10px 1fr;
+      grid-template-columns: 8px minmax(0, 1fr);
       gap: 12px;
       padding: 13px 18px;
       border-bottom: 1px solid var(--line);
@@ -742,6 +798,9 @@
       border-right: 0;
       border-top: 0;
       width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
       text-align: left;
       transition: background .15s ease, transform .15s ease;
     }
@@ -774,6 +833,10 @@
       font-size: 1.05rem;
       line-height: 1.35;
       color: var(--ink);
+      overflow-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+      max-width: 100%;
       transition: color .15s ease;
     }
 
@@ -786,6 +849,9 @@
       font-size: .82rem;
       color: var(--muted);
       margin-top: 4px;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      max-width: 100%;
     }
 
     .item .tag {
@@ -856,6 +922,9 @@
       color: var(--ink);
       line-height: 1.45;
       display: none;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      max-width: 100%;
     }
 
     .item[aria-expanded="true"] .detail {
@@ -864,17 +933,24 @@
 
     .detail p {
       margin: 0 0 8px;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      max-width: 100%;
     }
 
     .detail a {
       color: var(--focus);
       text-decoration: underline;
       text-underline-offset: 2px;
+      word-break: break-word;
     }
 
     .detail .src {
       font-size: .82rem;
       color: var(--muted);
+      overflow-wrap: break-word;
+      word-break: break-word;
+      max-width: 100%;
     }
 
     .empty {
@@ -890,6 +966,12 @@
       color: var(--muted);
       line-height: 1.35;
       flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }
 
     .keys {
@@ -907,9 +989,12 @@
 
     @media (max-width:860px) {
       .topbar {
-        height: 46px;
+        height: 48px;
         padding: 0 12px;
         gap: 8px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
       }
 
       .topbar-center {
@@ -917,7 +1002,8 @@
       }
 
       .brand-title {
-        font-size: .92rem;
+        font-size: .88rem;
+        white-space: nowrap;
       }
 
       .brand-sub {
@@ -928,22 +1014,52 @@
         display: none;
       }
 
+      .theme-btn {
+        padding: 3px 8px;
+        font-size: .72rem;
+      }
+
       .app {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 1fr;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100vw;
+        min-width: 0;
         height: auto;
-        min-height: calc(100% - 46px);
-        overflow: visible;
+        min-height: calc(100% - 48px);
+        overflow-x: hidden;
+        box-sizing: border-box;
       }
 
       .map-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
         height: auto;
+        flex: none;
+        box-sizing: border-box;
       }
 
       .mapwrap {
-        height: 48vh;
-        min-height: 300px;
+        height: 46vh;
+        min-height: 280px;
+        max-height: 420px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
         flex: none;
+        box-sizing: border-box;
+      }
+
+      .zoom {
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .zoom button {
+        width: 32px;
+        height: 32px;
+        font-size: 1.05rem;
       }
 
       .topic-bar {
@@ -951,11 +1067,56 @@
         position: sticky;
         top: 0;
         z-index: 20;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        -webkit-overflow-scrolling: touch;
       }
 
       aside {
         border-left: 0;
         border-top: 1px solid var(--line);
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        flex: 1 1 auto;
+      }
+
+      .ctrl {
+        padding: 12px 14px 10px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      }
+
+      .seg {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      }
+
+      .seg button {
+        padding: 6px 2px;
+        font-size: .8rem;
+      }
+
+      .item {
+        padding: 12px 14px;
+        gap: 10px;
+      }
+
+      .item .h {
+        font-size: .96rem;
+      }
+
+      .foot {
+        padding: 12px 14px;
       }
     }
   </style>
@@ -1281,6 +1442,44 @@
       const [px, py] = toSVG(e.clientX, e.clientY);
       setVB(zoomAround(vb, f, px, py));
     }, { passive: false });
+
+    // Drag to pan, two fingers to pinch zoom (touch and mouse)
+    const ptrs = new Map();
+    let gesture = null;
+    function gestureState() {
+      const p = [...ptrs.values()];
+      const cx = p.reduce((a, b) => a + b.x, 0) / p.length, cy = p.reduce((a, b) => a + b.y, 0) / p.length;
+      const dist = p.length > 1 ? Math.hypot(p[0].x - p[1].x, p[0].y - p[1].y) : 0;
+      return { cx, cy, dist, vb: { ...vb }, n: p.length };
+    }
+    svg.addEventListener("pointerdown", e => {
+      if (e.button > 0) return;
+      cancelAnimationFrame(anim);
+      ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (ptrs.size === 1) dragMoved = false;
+      gesture = gestureState();
+    });
+    window.addEventListener("pointermove", e => {
+      if (!ptrs.has(e.pointerId)) return;
+      ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      const now = gestureState();
+      if (!gesture || now.n !== gesture.n) { gesture = now; return; }
+      if (Math.hypot(now.cx - gesture.cx, now.cy - gesture.cy) > 4 || now.n > 1) dragMoved = true;
+      if (!dragMoved) return;
+      const g0 = gesture.vb, upp = Math.max(g0.w / (svg.clientWidth || 1), g0.h / (svg.clientHeight || 1));
+      let v = { ...g0, x: g0.x - (now.cx - gesture.cx) * upp, y: g0.y - (now.cy - gesture.cy) * upp };
+      if (now.n > 1 && gesture.dist > 0) {
+        const [px, py] = toSVG(now.cx, now.cy, v);
+        v = zoomAround(v, now.dist / gesture.dist, px, py);
+      }
+      setVB(v);
+    });
+    const endPtr = e => {
+      if (!ptrs.delete(e.pointerId)) return;
+      gesture = ptrs.size ? gestureState() : null;
+    };
+    window.addEventListener("pointerup", endPtr);
+    window.addEventListener("pointercancel", endPtr);
 
     /* ---------- Data Conversion ---------- */
     function liveToEvent(c) {
