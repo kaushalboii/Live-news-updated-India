@@ -1,9 +1,1788 @@
 {
-  "generatedAt": "2026-11-08T18:28:26.225Z",
-  "lastGdeltFile": "20261108183000",
+  "generatedAt": "2026-11-08T22:25:48.752Z",
+  "lastGdeltFile": "20261108223000",
   "source": "Live News Updated India: Multi-Platform Real-Time Intelligence (GDELT 2.0 + Climate Wire + Tamil 24/7 + YouTube Video Wire + X Dispatches + Regional News)",
   "windowDays": 7,
   "clusters": [
+    {
+      "id": "clim_2026_11_09_13_1_80_3",
+      "date": "2026-11-09",
+      "lat": 13.0827,
+      "lng": 80.2707,
+      "geoType": 4,
+      "place": "Chennai, Tamil Nadu",
+      "articles": 143,
+      "outlets": 47,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "youtube",
+        "social"
+      ],
+      "title": "20 மாவட்டங்களில் மழை கொட்டித்தீர்க்கும் : முக்கிய வானிலை அப்டேட் imd chennai | tn weather |",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPUGxBWk13WmNacHYtTmE1eUltVV83dlB4Ym9mM20xN0c5UU1TT3F1MUdva0tTQ2hycC1ROVlRR3drTlVoNDJ2OEE0ZnJ4RHNHVm1vZWdnd1ltSjdlUDk4R3R5MFR6SkRET1Z3M0IzN3VqSE1wZURZUmZrT2xEYUxDZGxMNUVJVGU2dnRuUTAyS21VZUdBYVZsNmZOTWM0dGJfYVItamowcG9WNlk5Tkg2aEFLajBmQ3hEWTE3eXA4LXAxa1YyeS1GV05INnI0SmhNcFRXQktQd2szckZZUWhpY0Vmc0tnaC1oZUdrLS1pczlhVVBDVUFEVXRVTHEyYnVmNGh5NzBYSUVEWFHSAZACQVVfeXFMT3U1dG1qSU5GaURDb1BlZjdNVFZld1dvVDNkR1BqV1VPT3Y4MDFuYXRqNF9QZHVMblhtdGVJLTlWUTVGeXBzcDVvNU5vS3BEYUowT1lXbVl3U2hjbDNYNi02Vk1qTjZGZXRqNDJIeHRhRHI4a3MwMGRQd0c4ZUJrV3dLdUcyNjdrU295emNGcXp3dWlFOXpMekd6YURSTWowVUoySVB6UGxnZlRfaWlUdHhCWlNQN3p5Mm16R0R5UXJYSWxsZEtsUU9DRk5iYm9Oc0FiaFY4WV83bWVnTnZwb0xGdVlOYWY2VkxBeE84eWpRQUc0M2w5cjlUbVZYX2J0czFMM05MQk8xSjdRRTNTZWw?oc=5",
+        "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xczdUcVBQZU9YOGFDU0JhTS1HUVo1QUszMWlKQ19pc0JzV3U3V2MyeHRQaV9jN1E0V1UtNUNZM3hVQm0wVHduclN3eHVGS1U4R0E?oc=5",
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTE1aRlNjSWdXbG0wbWV0cVNCWDZCeDBEbmZ3WEktMEdIaFc1RlNRNld6R2pJaV8tb3R6SW5vM3FYNjlqSkdRRFBMSWxpcnlhRkhXRE1ORFFiVkVsaHJtLW8ySDIzWDZVa0pIVUxVT1F1TQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9FejlQWXo1QXZvNGhmSGlXN3V5aVZkTjlQUW5vTFhVM196UHVyc1UtTGZOd1U5ckJoTEppQ1pFMnM4U2NwY25ZamduX2dNcWo0cW5jOXB3?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0SEZLME8zMXFZX1RfYXZjbzdscmpNeTh6aWU1ZFJwNkwxSWVrU1BSNTl0ekJ1LVNQVW9aOTUycHN4ZXVCQWJkZExQNXJPcUxYSV91T3ln?oc=5"
+      ],
+      "domains": [
+        "India Today",
+        "India.com",
+        "Asianet Newsable",
+        "DinaMani",
+        "Facebook",
+        "Daily Thanthi",
+        "Minnambalam",
+        "Maalai Malar",
+        "NewsBytes Tamil",
+        "Dinamalar"
+      ],
+      "publishers": [
+        "India today",
+        "The Tribune",
+        "Asianet newsable",
+        "Dinamani",
+        "Facebook Wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.198Z",
+      "isLocal": false
+    },
+    {
+      "id": "clim_2026_11_09_28_6_77_2",
+      "date": "2026-11-09",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "geoType": 4,
+      "place": "Delhi",
+      "articles": 121,
+      "outlets": 45,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "youtube",
+        "social",
+        "wire"
+      ],
+      "title": "Delhi diwali weather: air turns toxic in national capital, aqi breaches 400 mark; cpcb says...",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiywFBVV95cUxOT3lkMkRLMHA0RHhjZDZiczJscjdpc25zVkpZb2s5QU1IUHpUbm9kcUhSTkF2bVo3d21xTWVsVXpyejhOZ01GRW1tWFNpbk94RFBkVHR2Tl9iNG9XTWhqZTA5ampMSG9jdGx6OFFVYjhzMkl1QTQ3VmtDRWVGUk9DN1pRMGV3dUpsWlFGYlFjSEN3R1Fxd0VmM0pxUDk2QXZDX2FtaUYwV0tLSXU4bnZnanJ4b1ZBNkdySi1hVUV1dXByWERpZmp3TUZ6a9IB0gFBVV95cUxOLWZ4bVpfOU9wcVcxSzZBS05PM3h0b25SNDFYX0pDaDNXdGxpTVhMWmhnY2xvcklEVDQ2Y01NanF6alllM1pmVXZ2R1YySkhEY3B5RmlRVGY1eEN0bURrclNib1JIWmt5dmcyaHRxVTNERTZITUVNbWp6SVB4ZTI2RmIzQ1VyT2o2VGowbnJYYWpITTVXdXNZdVA3VEtvRzdHMmpFTFFQWlFfZnVNeEJVc2pOeG9icHlBMjlSbW1kaDY5bUFMWVdObUdTVzBLZTBWZVE?oc=5",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPQ1JIYnM5QzRBdFdLMERkTXdzSEdEWE9vT2U3akIzTTB3ZERFVmF1NjNiOGpnQV83Smk1NUlZZ05wSmJoU3Z4NFh3NUhyVE1FQVdBTEt2RlNTZGJvWTdXVGRwUVEtd0xfeU0zZnptOXpPUEFGT3luSVRpbG5LSTdVWGNSazhuZ3Bxc0YxcW43RHZvalhwVU16MUxjclpoWTVuYjhtOXlFbGdjU0NTaEc2UDBRN21oY2ZSdVVHYlhJVWkyOXNsc2FGUENZcG8taHpUS1VVaWhlbXhZbTDSAeABQVVfeXFMT1lFSU1jN2g2VUdTM0hXRTJ4b1k4S0kyWjZlZUdKQnhiNnN5RjdRNmF4ZDhaV2pMRkh0X1B0LUVUbDFYRjVqZ2FGWGlWcXFKeWhVNHI4Y1pScXlTV0ZYa0NtX3VwaUd5ZnJQTXdKUGdfNEdhcFo5ck9jeGVua0xJTFM1alhqUV9pRTJWR3d0YkNqNnE5OENLaEpjX3lCczhPLXVQX05iQV9RLW1ldHY4aU5ndUp3T0ZiYTFyR1g5elAxU19jcHlvMkhtVHlveG1ZSTdzZVFuNjlMV25abDQ1dG4?oc=5",
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdlBzMTkyMl90VE42TVM3Z3JzZ1hCRGRvZlVFak0tTDJpcmJLU05DbThjSGdGTWJsTGxqMjE0MjE4clp1a0MwUFB3SkVlRU1vOFpKRnJ3cUlaOHNIcncxdk5ObmNpQlAzZGwxdUZzMEFOMERHeUNleU9ZemFNZGZHVzJXLWtsWFZ1QS1ZenNkaGk0YjF4NGthb0FEUExBNnhpaFdIUlJUQjJXVHVaTkhJUkF1MlZpUEFKUzZ4d0ZGWV85ZjMtNWYwWFdBelVrREM0Mlg4ZXJWdUYtQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaFJmV1BDLTF3V3NtUjREckNFWHUxV0NZUGhxeV9XSmJkXzFVdHBZa2ZKV3hqUmVUdWdxOWp3RmNVNnRYeEVScFVBN0pfeEp3OFYzOXZobkItQjRiRHVlVXNiY2t5Zkh4TzJTYnJXdFJtc19IcGNhRUN1VWZfb2RILUphazFjOTVqNVZ3OHhaUGV6SlRzZ2VwM1FhWjlVaU14d1MzZUJQTnctazM2ZmJDbi1qM19VRFVZUGJvdUlFNURUMXNDQ3J6VG02a01zYnJPR2lISTdCcEdkUUE?oc=5",
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZWNaTnR5UXBEUUJIamxWTVpKSjk5ZVdvMGU3Qkdudm44UnU0empMclJWVGRhNkhpVC1wREkzTGkzc3ZaSGRUY3lSTmpIY2ItSm5lbFZ1eUlBZFkyRWU0MEFpZWxPNmQtc2ozSXhzdkp4TlFpUkVaLXhxNE1lcnlUSThDSnk3bDFUd2V0TjVjbUtIU3RDbHNvSTl0cDBaWWdwTS1odTJFZGFXX3dFUkVTUEh0WUJhV3BfRnItV2ZkUjZ5ekZYMW1lc0wyd194bEwxMWhvM1dCTmkyUQ?oc=5"
+      ],
+      "domains": [
+        "The Times of India",
+        "NDTV",
+        "The New Indian Express",
+        "DW.com",
+        "Telangana Today",
+        "India Today",
+        "Moneycontrol.com",
+        "Rediff",
+        "ANI News",
+        "NDTV Profit"
+      ],
+      "publishers": [
+        "The times of india",
+        "NDTV",
+        "The new indian express",
+        "Dw",
+        "Telangana today"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.196Z",
+      "isLocal": false
+    },
+    {
+      "id": "clim_2026_11_09_11_1_78_7",
+      "date": "2026-11-09",
+      "lat": 11.1271,
+      "lng": 78.6569,
+      "geoType": 4,
+      "place": "Tamil Nadu",
+      "articles": 56,
+      "outlets": 33,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "youtube",
+        "social"
+      ],
+      "title": "தமிழ்நாடு, புதுச்சேரி, காரைக்காலில் கனமழை பெய்யக்கூடும்: இந்திய வானிலை ஆய்வு மையம்",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB5cEh0VmRpTFZIc0dUbTVxaDlsZFpzcWxnc0ZJOWp0dTNyVWtCWGxjblNqUTd1MXFvaWt2UExIam1nODMxSmgtNjRJREV2a2xMWlpUbGQ0R0pkdUtraENYamF4RQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1helpCOEVaY1I1QzRFMlJZVFpZbWJSYzFWdXNCNFJjcktXTWVlaWdjWWxkb1JsSGttSFFWal9kbjZCU0tiNV96MlVXZ3RhdnR5T3A0NWd3V1VOTlpKaGpmSl92RQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE53emhVclVyUHdKUDBjYTdwRmlvUUdKX3pNanlNN0Rjd2xzZFY1b3FMUTNicVhtb2FEMndzYllNWExHUzdadzdVMUhGdE1IaHhFSzBXTERwRzd2c1BwR0Ffam1Lbw?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1aZXk4ODBldG1yMUM0UUgzWkNlUW5OcUlBdGgwcHhSb21DeG43UzBfVGFLSWwwZWZJa2xGb2ZHSmM4WGJmd3ltN0JXUWtNMXRUZ1czMmZqYXNxQjZqXzJ2QS1SWQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5RVUtoQ25kSlNaUGtIWGlpLW5wMUZaNGNvMC1acDRYb1RxTjNqN3NKUkVQZV9HMlpCamhCaHhVZ00zZG1vQk5FdjQ2ZjZIUDg0cTFCbEFB?oc=5"
+      ],
+      "domains": [
+        "Livemint",
+        "India.com",
+        "NewsBytes",
+        "DinaMani",
+        "Asianet News Tamil",
+        "News On AIR",
+        "ETV Bharat",
+        "The News Minute",
+        "NDTV Profit",
+        "The Times of India"
+      ],
+      "publishers": [
+        "Livemint",
+        "The Tribune",
+        "Newsbytes",
+        "Dinamani",
+        "Asianet news tamil"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.201Z",
+      "isLocal": false
+    },
+    {
+      "id": "live_2026_11_09_11_0_77_0",
+      "date": "2026-11-09",
+      "lat": 11.0168,
+      "lng": 76.9558,
+      "geoType": 4,
+      "place": "Coimbatore, Tamil Nadu",
+      "articles": 16,
+      "outlets": 9,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "`கோவை நூலக புத்தகங்களில் ஊழல்; முதல்வர், அமைச்சர்களுக்கும் பங்கா?'",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMigwJBVV95cUxNUVN1ajNTc1pKUGRhX3RIWFZPVVNYSHhvVWpZQ29yMlZ3NVZMa01iOGNLODJjY2dudHVrUG5KRnRDTV9ST2ltWmdTblU2WUVleGlLbDVaT0g2aWpTaEJqRHhyMUxXZkhpZFZnVkdyNlo4RzZqcTJrVjhaUGI3RFp3Wko5czE2WHljNmRoUElULWNMcDUtRkZNaEU4ZGZJcC1hdnJiMEhnZVVPRHdBN3cwYVRFdV85YkltaHZXZUlVd3R3WWY4Rk9hREdCYzMyV25YVHB3MkZibW9xZWZlWmk1WVRBNUtiTEJQRm44aXdNRTc5Ti1WczhLaTljVV91bXF1ZzM0?oc=5",
+        "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5mQmVrRG5GV2JTTjFhRE0zMDRlVUxDZkk5Wm5Wb0RDdjVpRDR4U3BhTVdwSnR5b0ZvVk1PbGRNR1k3dklqU0pMQ19lYjFGOUp0VGFhbmF1TVh0eEtzajBDTkFn?oc=5",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxNenlRMWRhYUVhTXR3dXVFSEZ3SUZxRFZ4eXlLVlM1YTdtX2pIMVhieGxDNGM3OWE2cjN2cTFzOXc2Vnd2Z2FTcVBpTW1nYmVLeWF2Y0E1WnhwR0RmYmV1TnBMUnRVWi1ScVVmdE0zTmhia0dwcEFzbEtzLXhsQ05RbnJsUUVDamI0Ty14OHJCc1dTZ2h0UzhuejRPSFkwZGNraVQ3dVZEQkFUam5zSTdfMURTTm9TM0tPMi16d2JB?oc=5",
+        "https://news.google.com/rss/articles/CBMidEFVX3lxTE9HQmZISXZ3QmRRMVBlSFEzMkdtYVlWWnZ1QVFYMlAyanZ6WHp1aDFnT09ETGZDeEpqOHVYcGQ1OEQ4VWJOcnlhclpJMTJqWlFFbkd5NUtsaDhyVDlQSzJRS25OcXRDOWVyQzZLcWdjYUJ4NlJi?oc=5",
+        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQSmFFVkJjekxNeFdwOWUyWVRpUHdTWGNDQjhkNGY3OC0wTU5WNGxoUEg2MmJlcWVxNGUxMTVENmIyaUZtYkZEM1NlUy05S3hkNHU0UHJzcWpGZ2VUekFHOU16WmhEV1NST1hZZHZUMGd6N3lUUWRuTk81TjFiRXNremkxMlB3ZE5SMW80YjNRQ3BpOUNzSFdJczFPdm5Ta21TOU80Y25BcEEwWGhUak0yYUpNUnFNNThkQ3JFRlEyZmRKZVVZeWtQWWtkeGxUQ3lzWFBmSkVVNnTSAeYBQVVfeXFMTUJOaDZOckNjbTZ6WWljYlVjYzZKTU9aQ1VYQWt0OGFYb2dIZ25mR093T09WT1RpWHB0X3BPdldMOFFreWVweXBURnd3RjZ3T2cxd1dTTndwZ1BEU0xsU1pWTjVtZFN2R19oODNtUm9oQ2RaamliVWt1cXdrTFZnSjlZWVBNVTQ0cm82Y2hrWUpXRzZMWkFqa0wzNHE2MF9KSjRkQ3c4eDlnclQ1QXUtZmZVWGxRbFRSU2Q4cEt2SmpRRVJNUk9KdWRHMTNkUnZ6eEVEd0ZSYlJMOEZEaHBaSGZxOXpjcWc?oc=5"
+      ],
+      "domains": [
+        "Deccan Chronicle",
+        "Urban Acres",
+        "BBC",
+        "Vikatan",
+        "Thanthi TV",
+        "Dinamalar",
+        "Hindu Tamil Thisai",
+        "News18 Tamil",
+        "Minnambalam"
+      ],
+      "publishers": [
+        "Deccan chronicle",
+        "Urban acres",
+        "Bbc",
+        "Ananda Vikatan",
+        "Thanthi tv"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.581Z",
+      "isLocal": false
+    },
+    {
+      "id": "live_2026_11_09_9_9_78_1",
+      "date": "2026-11-09",
+      "lat": 9.9252,
+      "lng": 78.1198,
+      "geoType": 4,
+      "place": "Madurai, Tamil Nadu",
+      "articles": 14,
+      "outlets": 13,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "youtube",
+        "social"
+      ],
+      "title": "Tvk | aiadmk | மதுரை தவெக எம்எல்ஏவிடம் பேரம்? - அதிமுக நிர்வாகி மன்னனிடம் விசாரணை",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBUaEdKNmpPcVNGSGU5U1UwQThUMUJmVGFmaVNRTEVVYjdpazcxZ2t6WjFnRVNYVkhERmloM0FvUHJIZC1TLTJWUEZzRUdNQTBBWDQ4cTFWczZHTUs4UGc?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1CMk53bmNxZ2NWVWtXUkl4NTRFMnhZTTBZb2ZlaUtPc2s1bXFDSm1YN2tEX2QzNkNWU1UzM3prUDhfOVRidXZUYVJyOVFZSGJjcTJwZTZB?oc=5",
+        "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sbXI4QkFvVnQ1UVl3ZTV1bnZRaWJyZE1jbEFzOVZpczctTTJUSmdRYkhyQVNfejV5UkIxMG45U1luOUUzbmNlWnBtOUIxZEtkZUxR?oc=5",
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeFdEcVNFM1I4MXExYVdWeGxab1VUMTQ3c1hveWNka3E3WnFWWk1YcVV4eE9xblhKcWJqSFV2TzRQSWJkcHhXemNSZ1U1OHVTZXlzQWJhM1Y1ZW44T3R2YjhDQUZ5LVE2a2FjaF8wUkNsaXdET2xwa0NlSFBveDRsYUhtOW53dGJ5TkV1MjZsWGRtTHp3MWZkR0k3Vkx6UmYyakc5RHRldk4yQzJL0gG6AUFVX3lxTE1sbVVrYXJQYWFNR1BydDk4SVBkenlfQ29Oa3F0TXhibGFSbldVeEZqUjNpV3JfN0Yzc1BXcERVbEFYUW1CX2xIVjVQdkFFMnAyRU9PeGo4ai1QczVUTF80QVd0YkxFR1ViZm51R1Z0ekV4VC13LUl0NU9WalEyUE0zY1M5NU5iWVlCeEMtLTU4SGoxZ3VvcWpsT1d4LWZsbG5JWXc5VVlhNGs4RDJzR3hUNDdpMlEzbnFKQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbFRQRUhvcXFHdEw1QWVseG8wRGVPWmMzLUxGVUlzS0V2UklhbmNuZzc5eW56d1A0M3VxNXMzRDhMRHNtV2VaaG02QnFnRG9nOE1YN3NkMlA2ZTE5RHdkOFFpcGQ0SW0wd3ZHY29GZ1JKRkplSG5sWHF1ZTlwQ3VJQkoxeWdMTXJ2OWNhU1Nva3BrOFZXdl9MejVaRlNZWW14b3RDSGd30gGzAUFVX3lxTE9yYWEtbWl4NFFpdEd2V1lOVmlFNklWSmlLUGt0QUVyNXVFNEpUb1BjR080ZUxfMnVTTnpSZzV6ejlDbmUyT1AwaVdZaDJsYnNJUGhrTExqczFDY1Y3M2JNSUVJclhVNTZfN0prWkFBd0hUSE5CeDQ4ZUtTazgtNUx2YWN6MlBPMzNNdkVrVmt4ZFdHa0VOVHlpdzdPUi1nUl9URjRnalhjRGNrVkxVaFp1cEVF?oc=5"
+      ],
+      "domains": [
+        "The Times of India",
+        "Catholic Connect",
+        "India Today",
+        "Cinema Express",
+        "The New Indian Express",
+        "Daily Thanthi",
+        "ABP Nadu",
+        "ETV Bharat",
+        "Thanthi TV",
+        "Hindu Tamil Thisai"
+      ],
+      "publishers": [
+        "The times of india",
+        "Catholic connect",
+        "India today",
+        "Cinema express",
+        "The new indian express"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.580Z",
+      "isLocal": false
+    },
+    {
+      "id": "soc_2026_11_09_21_3_81_9",
+      "date": "2026-11-09",
+      "lat": 21.2787,
+      "lng": 81.8661,
+      "geoType": 4,
+      "place": "Chhattisgarh",
+      "articles": 13,
+      "outlets": 2,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social",
+        "web"
+      ],
+      "title": "The supreme court has ruled that compulsory retirement is neither punitive nor an allegation of misconduct against an employee. a bench of justices manmohan and shree chandrashekhar upheld the chhattisgarh government’s decision to compulsorily retir",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQakxObVZlRGpPam1vTURtNHZZdlRIVTB3MXAtbkt3Z005WnRHWTFuay13UlQ3WER6XzByR2gycE1KTG1ZbDZjMUtpY184alBBdk45WmpDLUtyelVEamVlZlFaVVdlQWRKaHFfOXpuM3BDRjNIOEF2OEVhOUh3YldZamZLNGR6N3FHUFVhdDJteF9NNmw5NEh5OVoyX3hFRnBRYkhrQjlrakk5TTVaWEhjUFdSX0RvVkQ1azRzbUxqYVNXWFN1RUlJbw?oc=5",
+        "https://news.google.com/rss/articles/CBMiUkFVX3lxTE11VXZ4amVDbVh4WTRRdzZkVkVLX29kQUJBc0R6bzZleGtEMEdCNXVXRldURmo5WWJjZ0t5SmVwdnRCSWljdFoyQ3RSellpa2UwX0E?oc=5",
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOY2FqSURKb25xa0V2YnZ5eFB0OWIwNENiQkhDeXQ1ZVlma29qQzgyQ2VfaDlCc0lFbWJuQlNGdWdsUDYzLWZDbXNIcHFyUjJweVQ1YTNqRG1WekVLeUVBdDllMFBEZFppeU1PN202NWIzQlZvaXZPSG8xbk1lblhmblVObnBxQTFKczdDSGo4cENxeTBhNTJ4ZUd2MHAycmN6QnBUUVZDYmhfSjRwNFNHOHI2ZGFSeE8xMmxlZTlhSWEydnVSc3FSakVfWGFUbWRrNEVDb2dMUF9Edw?oc=5",
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUEFtNEVSUW5TM0x5UkhjR0R6aVJDcWdmRGFvYVNudVcxdFVCUENhRUJCR0NjeWxDUDVRekQ5bmc1b3lzWXYzSE0wRlVOUThYWHFGM1RTYXk1Wk9IUE9DX3dtZlRYRl9uRmhzYTBEcE5fN2YtRFZKUXpuWGVic0ZkSjVISzJfQTlhRUxmLWlYTXozLTFDNDNjUk1OZFVfZ043STZ4RExmcFJ4cktHeGdNN3o3SFdqc2ktUE1iREFQMjZPNjgybHNjcGQxVUZqMDJNTzNRLXhWNmhtQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZWFxMUltNXotSG9RTk5aczR4ak1iSkc0MEJHNTA5eXdlRExPdWRTNnZ6UzZRSnNvZFVuUE1IS21NZVNNaDZpT2NIRV9iNzFyYzBxbUM5WUlmblRGdV9uZG1Tc1hDU3F0cjQ0SmRMYUxQVU9fbjlVSFZMRTRUOTlwaURCZWJvbXJCWG1QMnJUUlRQZVdzZmo5YlE4dWVaQWx6R0JEeTkxS2RkUlFidG1HMVNoTUJ2aEozMEoxa1RZMnFYakhjalVMODRzREhNYTNITGk3VEtJOGN5WFRl?oc=5"
+      ],
+      "domains": [
+        "Social Wire",
+        "The Kashmir Horizon"
+      ],
+      "publishers": [
+        "Social wire",
+        "The kashmir horizon"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.551Z",
+      "isLocal": false
+    },
+    {
+      "id": "clim_2026_11_09_26_8_82_2",
+      "date": "2026-11-09",
+      "lat": 26.7922,
+      "lng": 82.1998,
+      "geoType": 4,
+      "place": "Ayodhya, Uttar Pradesh",
+      "articles": 12,
+      "outlets": 5,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "youtube",
+        "social"
+      ],
+      "title": "Aaj tak live tv: cm yogi | diwali 2026 | ayodhya",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdGNLX3BIOVVCMkdXV0RvMWdrR1dVMW1yTTM2SG11ci1RYWZpVjktTHc2TTAtSEp0SEo1Wmo1UzJjeTRvS2V3MEVJQ1ZHbmhsdDk4c1MwaTdzSGg1LUlsMEtqLXA0dGRwcENfdTlvSWhzcmhLQjFUOWQzUDN1ZDRaS1VMVm9kZFRXNU5RcXh5dVVzRF9XVHpNU0xhTXZKYnh5TExlMtIBqgFBVV95cUxPbWJPeXZtcnFxdlROc3pvS1BoYkg2NmpIeS1xa25fSzc2ZENIWDJrcnNCcktxbHFHNHN4VVh5eS1SSm5nX1V3S2o0alljZlZ1RHV1Z1RhampDbUpzbGpUb0lpZi1SQk9oV0F4N0d6SGJGdGJiWkUzNHJsbzNrXzlXZTZ0VE0yRF8tOTdPeVlaQjVWNVA2RkFjNXpaaG9nZW0zQVpkZjVEYTVRQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxNODV6ZWNkOGlTX2pmOXR0M01HWW1BZ1ozNGloTURPTHFKdmZNQWN0THlEb2JLYktGTFc1LUNoMmdMdXhKeXJZeWZmOXdwSno1bHdjRXJhQkxiTnNnX3lqTnpiNTZOZ0x4dHJLSDJmakVLbFFCbGd6LVpZdjN0ZmZtSUF4cXZsSk1nNTcwWmozRVFKYWlDbTVfUnJ4ZkQ4NnM0TVhBNXlvQ1VPZVZ2cEl1TkRRNVBjZkNqbnFETmNndw?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB2ZUhXMzRrdXA1cWxSTFJveTc0U0wyYmNGSGFYMnJIZ2puZ3JWNmdRczJrbXNzOHBVeE5WWnBmOGdBdG52ZVhRcWNTNW5KMjdNbEU4eVNVZXRXcFlUWUxjcnQ2RQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pcGpYcklnSkR0UHZNRHpkRlhfZjJiR2NTcXVTVmZtaFZ5SUhTT2xObzM5bnJfbWxhX3JuTjlhUElqczQtTTNYMGFLRk0zVk1jdzNIWFNQdjVDbHJjZ0ZwcQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9teTZiUEFnVGtkTXptM1VZbVh0YnNIam01RlF1M01yNWJmV3FCSGxfNlNkOFpRZGRYUkNfR3QzMnFBQ3BNY1Y2OVlORHN4TkRsQ1B2UEh1SFFrV1J1R1N5QWZ0TQ?oc=5"
+      ],
+      "domains": [
+        "Facebook",
+        "YouTube",
+        "Social Wire",
+        "WION",
+        "ThePrint"
+      ],
+      "publishers": [
+        "Facebook Wire",
+        "YouTube Broadcast",
+        "Social wire",
+        "Wion",
+        "Theprint"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.139Z",
+      "isLocal": false
+    },
+    {
+      "id": "soc_2026_11_09_26_9_75_8",
+      "date": "2026-11-09",
+      "lat": 26.9124,
+      "lng": 75.7873,
+      "geoType": 4,
+      "place": "Jaipur, Rajasthan",
+      "articles": 9,
+      "outlets": 2,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social",
+        "web"
+      ],
+      "title": "Jaipur cafe owner ambushed, beaten with iron rods by attackers",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLUVWd0VIMG5oTUlLZks3ejZHQ3FabVgxcjlQUl9pMmhabG42WXBOQmw0SlRRa0F5VXlYcXNuMVRzZWNmUWdsdDN6MkdoR0NtSjNTSVlVdlF5b3plbHR3UE44ZXliZnFIMG1XS0JRcnZHby10MnlLSS1CSjI4VzlVYWZPZmZ6YW9XdHBsMWxZYXZ4NnN3MGJzZGVwb0ltRDNtenRkWdIBrAFBVV95cUxOTk5iODRCdWplUTBTcUhTNnhzc3BaeTcwUF9lWHVFMk1CY1FpLVhMZmgtMUtZNUJyX0ViUzUtN0ZVaVRCR2U5Vm51V0ZuNmJIRHZRcUFMS29raWZqaE5Db2hsUm1JTDVRQWtBd1NveFFuUUFKYllCU1ZlRWl6bjRpQ290UWlxTHNGWEpLUjR5SURBYkI5aFBFMnFIT3cxTGQwX1ZaMnZGU1BicXR0?oc=5",
+        "https://news.google.com/rss/articles/CBMiugVBVV95cUxQN282eGw2bDRUaDlGRE0tVXUxNE9Qb0p2cTZVTnp1SkNEVzZSWEJ6MVN1UVQ3U3V3aHhKWnV3TkJFZ09RUEJsaUZMRkRZN1NzalJiMU9NRkVlMENIbWNnd0RFMEUzNkNSUS1qMi1vbk1ScS1UZzFNQWFPUXZPNzFKQ2l3dkFoMk5KaXB5c0tDTnRrZllCUWlUd253RndIZ1JlRWRuanJnR3NNQmRSNmJvN1FPTU5rOWZjOGRzVENuRDZvdVZxRXBsMHFJbzB1SEd0RVNNWWsxbDA1SEprT3V6a0tWc1pUbnhQSHNCcjdBWWZveGFqQV9EN2hCTFlHSFJKT0JNQTlLeDNxb0RVMDVGVWVtY3Rjb3ZTSzZmQThzTWJwbkVyVUprbzFjMTE4WmF1Z3RhT0FERUlJT3RvcTNVc2JENjdWcThqYnNBTDhfN1JkTnJtTWR3V1RpYlZHaHhhS2x5aDlOTExRV19NTzRMLUdoWTY4OFZOUzBESjlMeHBxSFFNSExoVTV1UHE4NWpmOE93Q0ZSTll0aTFySDVod0ZkX2tiM3VFaFFobEQ5S3VuX2FJcG0xdzluTENUVDc1SzBjSEk0TVhzNE8xMUs0dnc1WDRqRGdwNEQ3UGtmU29yZGJVSm9CdmpIUWVBdGxubUpuWUhoek45bEpFUmtYdmxRZEJ5VU8xWndjU0FERE9ULW9XOWx5aGdabWJPTTVXTm9NZHdVeTRPR2E1azJYT01OQnR0ZEU5RC1OTFZIRXJBVUx1ZkkxX1YyMURZTDVyUEw4SnpjTTB5NDZSam0tYlpqRndpVE15X05BWDhGLUFCUl9yNGxkbktGdmFSb3BuUl94RloxRXhxQjFua1VmY2R4UXNyU1doX0dZQ2hhSFZSS0pEQndQZUdwdDhWX1hwcHRTX2JHdF8wZw?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE91T3l4dkRYekNGTDhUNnpoNUxycnhRMWdnSkROR2tIWmxsQ1FIRHpSbVVrLUJyaHh1T1E5NE9NaGs3WEs2Z3BDZ0tQZ2NCZ1FuWkxwYk1qOE5ybHU3a1BOQTlJdw?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9OWEZNZERzSE5oaEsteGl2WlB4LUlURVhGQk9iOEtjRHRCa3Vrd1dXMUxlREVNZ1NWc1pEb1ZaQVZSSGNJVmhRanVwOFJ2WWczVFpwNnNnWFlIVWo2OTRtamN2TQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE11TmlqYmNKbUlJVk16V25QUWc1OGpBd1NjMEZWajk1d212ZkVxUEdEWGxZdnVDbzVmUE9BOE9FQU5UQjRKXzJjRUtMdnRNZHEwMTZtSUZTRWI2bS1lQkJhOEx0Zw?oc=5"
+      ],
+      "domains": [
+        "Social Wire",
+        "NDTV"
+      ],
+      "publishers": [
+        "Social wire",
+        "NDTV"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.551Z",
+      "isLocal": false
+    },
+    {
+      "id": "clim_2026_11_09_31_1_75_3",
+      "date": "2026-11-09",
+      "lat": 31.1471,
+      "lng": 75.3412,
+      "geoType": 4,
+      "place": "Punjab",
+      "articles": 8,
+      "outlets": 6,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "youtube",
+        "social"
+      ],
+      "title": "𝐏𝐮𝐧𝐣𝐚𝐛 | 𝟔𝟏𝟔 𝐃𝐚𝐲𝐬 𝐨𝐟 #𝐘𝐮𝐝𝐡𝐍𝐚𝐬𝐡𝐢𝐚𝐧𝐕𝐢𝐫𝐮𝐝𝐡 continuing its sustained crackdown on drug networks, punjab police arrested 129 drug smugglers and recovered 1.3 kg of heroin, 5 kg of poppy husk, 558 intoxicant pills, and ₹400 in drug money. ad - x",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FYzBhZDlUMk9XLXV3WW1kNzZtd0VCcDBTZ1ZmVVZOVWJRQXF6X0ZIdW1TWDZJb2ZTenpJaEFtdUpwWGFiOGxzTF9aa0tqNDlUTS1JMWhMWUdrbnAwVmtHcnR5YWpjNGM?oc=5",
+        "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hZUtJT0xTSlBlenZTWU1RemlvNFMtRnFoX0dVQXVVbjBJeHVEWkppeDdPWkJaSzdNQjBSY2N1Mm5EanRoanZIMGRIX1F4TlplM21zYTBkUzhnTmMtV3F4b1RjalFhNTA?oc=5",
+        "https://news.google.com/rss/articles/CBMickFVX3lxTFA1ZDF5Z2xTWDJ2UENGcWQyN2VSbk8xUlhyQ3k1d21VVHQxRlBxQXY3T2hhRzZsVk1UUDVXX3VQUElKSkhQS05tcHVOcDc1dkswazNGaHBQWE50ZVZZb0JoMWFXbGp3YlN6MnVWdG9LOXh0dw?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1veTRZbUdPOXF3S05vS3JLSHFNaVh4QXNvS0tjWkRWNG1OV3NFRHBhSVNYNC15dFdRd0M2bTVnM1RBNl9ReWpMSzZGaFppNHdXbjBfRUF3?oc=5",
+        "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWWFKVHJWQk9rQndqWjZCMkk4MC1CVE1hUlVpZnVZa2l1czV6UWYxMGw5cGU3T1BwcjU5VEMydy1PbGNkSUlxYTNRYUwyeW81TXlXZktLQjRrdlVSZ0NRazdKYTRmZjVvRG5iemhQUU1RTXExLVAzVC1YelhsTlk0WGFLV1d1YVcxTUxGdUQ0akkySmVZY21oc0RHZFYxWXVlODhNN3IyaGJZUVNSSEF4V3hGanJVS2xCd2c?oc=5"
+      ],
+      "domains": [
+        "NDTV",
+        "News18",
+        "The Hawk",
+        "Cityairnews",
+        "YouTube",
+        "Social Wire"
+      ],
+      "publishers": [
+        "NDTV",
+        "News18 Tamil Nadu",
+        "The hawk",
+        "Cityairnews",
+        "YouTube Broadcast"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.198Z",
+      "isLocal": false
+    },
+    {
+      "id": "yt_2026_11_09_19_8_75_7",
+      "date": "2026-11-09",
+      "lat": 19.7515,
+      "lng": 75.7139,
+      "geoType": 4,
+      "place": "Maharashtra",
+      "articles": 8,
+      "outlets": 2,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "youtube",
+      "platforms": [
+        "youtube",
+        "social"
+      ],
+      "title": "Maharashtra Chief Minister Devendra Fadnavis extended his heartfelt birthday wishes to Bharat Ratna and veteran BJP leader, former Deputy Prime Minister of India, Lal Krishna Advani @Dev_Fadnavis - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9qUDB6SnVjcmVmR3hOc18wR1R5YktXZEJRUC1rb2V0T19pVklENXlyZ01Ic24wYjJhUkhTS3pVZGdadU5OUDFfaVQ0V1BTalR2Q3JMcWhxenZTOWs3Yzl4WHplQzc?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5PYTRqYUh4QVFfSFZMZDNpNTlwOEVuUGtob0g2TmswNWw1RWExX0ppRWJOVXh4bFFKdHNIRGw1WHRJQmMyVnlrRlBKcDBZVXc4Y1plZXdOdWpEY2M3NFBwZWtWOA?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9YampETE9lMmotRy1MQ2lkZENjdk1LaUlzUnZ3TU0xNDh5d2JvbGQxVDFZWmdMQ1BLOEptUGhYbUdzbS1aYzZJZjBRWVZFU3pyX0J6ekNB?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5VZHd2ZmcyUktYaHNKV2diMV9HeUdUUHJsMVhVekZEcUZ5LVhWVTI3bjl0MTVKSkhKd3lJbm1UeThLZ0JUTnYtMFBZMlpvdURET1FjMkFR?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE56UVp2UGhYdXcyTF9EdFhuTWd3RWpkREkydXNSV3A2TTM0M1o2SWZLa2JIWHFiYXdHczlWVVlfWmw1aXJIUk1oR2JoMU52SXE0eUduREh3?oc=5"
+      ],
+      "domains": [
+        "YouTube",
+        "Social Wire"
+      ],
+      "publishers": [
+        "YouTube Broadcast",
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:44.491Z",
+      "isLocal": false
+    },
+    {
+      "id": "live_2026_11_09_10_9_76_3",
+      "date": "2026-11-09",
+      "lat": 10.8505,
+      "lng": 76.2711,
+      "geoType": 4,
+      "place": "Kerala",
+      "articles": 6,
+      "outlets": 3,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "youtube",
+        "social"
+      ],
+      "title": "A controversy over stickers and slogans allegedly glorifying fugitive underworld don Dawood Ibrahim on a private tourist bus from Kerala has triggered protests, police intervention and questions over security checks in Karnataka's Chikkamagaluru district. The - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5vbTBqRjdTb0R4Tmo4bG1oZTVkZjQ5R01vaEdhZ29zSTlYTlhjYnFfU3ZWNi1iVjIxMm9yVFBPVjlSenRWckMycFU0VzIxVm0tWnp2ZE9CaElQMkdveHU1S3c0TQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lQVZsaDB3U0doRjlJX0JkdXRCUUpqdkZ4U08wbGlhUlpsR21zYWRGUnhSVzRvUlhwRmhfZ25YM3NOb2hxVnRlbjRLcHhEajNBT3VGUEdB?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Ya3g2WUhXYkVjYTJ3TGdVWTJYVEl6R1FDUWlGQWstdm1IXzM0ZWZ2REFSZUlYUjJiUXpXdmJpLXNYZUpmeTNzMEZrejgzSWpBRE1sTl9B?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9zV3FpOE5mR3pheW1yVXBsWHh1N3c3TWdpOTU1Sy1vQVZoRDF3NDU3b2RhWTIyQWl6WHB5emtibGlrakJKVnV1NktjMVl5RjlRMEh3aXZB?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAyVWtNbF9LMXlhUktXOXdEVmE1eU9nZWxhU1BfSzBZeHhHczZ6UnpLM0NDam4xY2dNUVNtcWxqRFQ1dktBVEZTdW9xRkdiVl92d2thbWdR?oc=5"
+      ],
+      "domains": [
+        "urbanacres.in",
+        "YouTube",
+        "Social Wire"
+      ],
+      "publishers": [
+        "Urbanacres",
+        "YouTube Broadcast",
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.582Z",
+      "isLocal": false
+    },
+    {
+      "id": "yt_2026_11_09_19_1_72_9",
+      "date": "2026-11-09",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "geoType": 4,
+      "place": "Mumbai, Maharashtra",
+      "articles": 5,
+      "outlets": 2,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
+      "platform": "youtube",
+      "platforms": [
+        "youtube",
+        "social"
+      ],
+      "title": "The national investigation agency (nia) has secured the conviction of accused dr. adnanali sarkar (a-5) in the maharashtra isis terror module case (rc-02/2023/nia/mum). the special court (nia), mumbai, convicted him under sections 13, 18, 20, 38 and 3 - x",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5fWW5qS094RVZUVjQ3Zl94cGlNTklvakNsYXc4Z3B1dV81Uk55Z3RJelBYTnVtTDA4RGRvSS1JeHVsV0dpa2lfRldEd0Itd20wa2xhUGNTTEl4bDFsVzhONzFOUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoU2d2UGdaYmFRc1g0U0pveXotRXBxYUJoemtJbnJ0Z2lJN0hKX0hXRFdReEJhTHh1a1FnRE8xaWpwVFB6MkJEVWpZaHhsYXVOaXRlUTBn?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNMXJzcDhlVFJHNUE4Sk4wMV9MNzRsckFnWEZCUlBHMFBNVnFldm5ReWRfOXFFSHY0c1VlTm05dmp4V1hWaXg3cEdtRzRqaU1xNHBlVzR3?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ic0F6eEVuR0RpdUZkWGY1bTBxMUo3Ung3TXFxV240UWowbXNRWWJtdTFDeldDUXJtUVVSWjVrZ2JOUkhuQ21xTktBdWRTbnRNazlCOG9R?oc=5",
+        "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9mMm5qcGFqWURTVHllZjFSYXU3LVdSYzNzTXVHZk9MdFR1a21zOGt6c1h1SVdDOER5aUlGazFEbUhMM3A1VUc0OXVoMFIzd3piOXQzSA?oc=5"
+      ],
+      "domains": [
+        "YouTube",
+        "Social Wire"
+      ],
+      "publishers": [
+        "YouTube Broadcast",
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:44.487Z",
+      "isLocal": false
+    },
+    {
+      "id": "soc_2026_11_09_22_3_71_2",
+      "date": "2026-11-09",
+      "lat": 22.2587,
+      "lng": 71.1924,
+      "geoType": 4,
+      "place": "Gujarat",
+      "articles": 5,
+      "outlets": 1,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Top headlines | dd india news hour 🔹pm modi to visit gujarat today 🔹india's q2 growth estimated at 7.35 percent 🔹israel election results 2026 🔹binance hacked! 🔹star trek actor patrick stewart dies at 86 🔹fourth t20i: india vs new zealand today #watch:",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPOXZmOWNmTGs2azBaZHRwa255WUxKblNTenVxc2xXYUgtSFgtc3FYRV9ocGdYTjBDUWk2TXRVcVJnZ0xlZG1zcUw4ZUFDTVdVNGtnaHNUa3NHSm4xR0N3SEgzVFE1YVpuV04zU1lmdXdSelJsdDB5MUhOcUliYXBPYVlEdkRJdUsteGtDd1BGQUNzSy1fWjlKb3puWThnLWVUdXRyLVBFcjdCOFhwV3RhMGQySnk4VGNfSVV1bzBlYWw3YXFJYl9UYnhkQUZFUkF1T3JKeE40YTI3UQ?oc=5",
+        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQmhHZkVhM00tQVE1MGNhbldEdkh0eWdvdTE4TkhCaFE5cGk3RWNWV1AzT3IyWWw2N201SFljaUw3bWJCYTZGUXlOYlRKVXY3UmZqN0Z3eW9iNlVVay1IbWY0YU1EUmdQc2Q1eW9IcjR5ck5xZkJQb01SY1FKaF93aEctUkprZzRYZ1V0MXQxM1VUbGlRbFctcWtzZENjT2JQUW96M1FZekZ4OTF2SGU0Ujh4c0F3V2ppTG5BT2YwZ3ltRUZJcmpuVl9pNDkxd0k4MjZMS2VQTnY?oc=5",
+        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcXpYYXNRNG82TWhIVHM1VHJETjFpYThNcXRWMm5wLU81enpKN2lUMkc4WHVLZ2JBWmJ1TVk1azRKN3dma3FDWi1jUnRhU3poajdycWI1cnZnM1dQQ2NXbXhVQ2wxdHlfQ1lEY2F1eVEyRGlRblk4SVowSzdYSzZ5VUpQOEFTZ0hNTFpHM19PVmREeE1IallzQjhDWHR3Z0p2SnZmNFBWeWtycEFscTFVWE9YV053cWQzZHpEVi1wM0dNbmNCSlNJUzFkYU1TcnFnWG5zTmVsQkU?oc=5",
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GVV9NajZmY1hLQ0xIX0pCMlhkYW1UejBOMU1XWWJpNUdhQkViRkF2Zm94MUFtUFRINlZQRXl4MUxiemxGajNPSzZWb185bVU2TTBiOTFtRF9haFRJX0NFXzIxS1V1UGd0WkN4bTFB?oc=5",
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTFBBeWFiMGFlenp5ME82cmtfcDhjQVU1Sll2d0FqR0NxNHJDcUcyRnJmVzcwU1B4cFZNUngwNjQ1UTFlbW9HRWVXTjNNRWlodm44bVRrWmtHQ2RzY21wYTVGbGhsM00xSy16U1o4RnA2aw?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.554Z",
+      "isLocal": true
+    },
+    {
+      "id": "live_2026_11_09_8_7_77_8",
+      "date": "2026-11-09",
+      "lat": 8.7139,
+      "lng": 77.7567,
+      "geoType": 4,
+      "place": "Tirunelveli, Tamil Nadu",
+      "articles": 4,
+      "outlets": 4,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Nellai | crime | மனைவியை கொ*ல செய்து குழந்தையுடன் தப்பிய கணவர் கைது",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTFRBcXZNT1B2d245YlVBT0ROTzJzR0o3LWpQNVYzcUtRWTBkQXBuWUMtQnVQbjVZYUFXVV9wdk8zdE5XbEFNY3hfNzFrNmEtenM3M25PaEh2RmtYZTh3emk1N2FhUUhfbHlMS2JPb2h5NUFBb0VzSWtHUzQycjNla1ZEWjA5OTRRQkliSlBYb2l3NVRqbHBBWGdWNFY5MGFBS3ZGU1JDWlV3Uk1YNGxmQW5ueDVjVGtweDFHbU1nQTZhVFF50gHSAUFVX3lxTE1NMlR5MkhNS3RYcFhBMlZDTmFkYVhEb3FpM0FnZmxFUk5WOUZwRk50b21aQW1tZ3V1NjE3Y2tCUGxZM3cxeERWZTNTOWdCU0ZUYVIxS3FEVl9lU1JmT1AyUHBkSnYwZmhSUHlZSWQwV3dGQnl5ZmhTTzZFdk51T3E4VTBmcTdySk5ORUlfR2x3cWVMMFJ6Q3FxNXRUUzEwaXA5RFZ6NUVXSkZnQTdEV1pfR05SSXdxQnhwWFdTRXd1UWxuanBrU3FaU1J6RGVFcEs3dw?oc=5",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUzdaVU5UOFlmQUExb0hnVnF0QzZaMlFhZ0JzWVJOakU1OVcyY1cwdGN0QU9zckZCT0xfVGRWS1dKMm11d2Z1U3RVOEdLWTZZSTFiNDBFWk82Q0pSY25VdE8yOVVfWEdyYUFCYVYycFc2YTRsN3NhN1NyNWRveUNITVdyRnBWU29LbUcxQWRnSGJxMDVrazJHNDVFNzJ6ZEVmck1OVTBDcmlhRE1VMkHSAbsBQVVfeXFMUFZGcm1rTUJrZmw2SFZRNWNvN2NmTVJQX2xfdTF5c1ozNFJCbmhrcXFYenJCQVMxY0NNb3hxU25Ta25TN0JpaU5XVjNLU3RnV2xRYldpeU9MeWVsUVdWekp1ODlxUDNmb1FhUnZHUUdTWmc4T1AxZkJPUm5yTFVCcUswbm9xLTVRQjljQkR3V2ZjRUF0VUVhOHRYNHIxS0M1VFAwb1ZaZGZwV0NPMG1yQWJpSWM3bXBZSHhkcw?oc=5",
+        "https://news.google.com/rss/articles/CBMiswFBVV95cUxQREZvT2dsckxWUzVnZ0czc1lsMl9PVFNQM1hPRm56SzFtS1VHVk1OSVNNQnlkbjlUaUYwVFNYamtqRHU5SGk3Q3h2UFVEOUVWR21mZElmZ0VJWHg0dFcyd0Z3RlR0dkNPRURfTnd3blZWc0didE45V2lnTlJfRGY1XzBtYzAzTXEwejJfcFlvZkF4RjFPY09aWTBJYmZRUWY5d2FfdmtZbXN3bTgycjNDOVc1d9IBuAFBVV95cUxPUktBYVd0dm1aZENNYUZUNDlrdHdRTFVRMmxwVFhqUUwwVmZGMFpFN0RQbzA2ZG16dDBIVVhacDJINzNpZ29MRFA0c0h4dU5rTVBfQ0hQS2FhNnRxeWh4YWRPajhDdHBmZmpuM1pRbmJ1N3g3V3pjMVN6M2V2ZV9pZjhXSjF1VXE4SC0zOVBGMzBoOFpESDRCQWgzdHdjNHJFVlNYU1FzM2RYVTFpY0FILWpuQ0JrTW1R?oc=5",
+        "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMVQwdmJLaTJkbFhlRVpNZ0lRaHpLc2Q0VUhZUXBBdlplWm5PRWFnd0dVbzlNLThhSVI5WmdnbnBKYV8wVEU3NUcwQlF3cnoxYmhVZmR6Wl9HUzZwZFFNaUY4YVJxcE1MVTRZR1B0UTNuNk1jNm1hYlNtY2VnSnhCN1g0NURQYWpSSDdEX0RCNEdLOHRUSUsyc29ZV2tvcjRZa1BGRW1XTjZna0ZKYWdyakdYRHlRclRxMnfSAccBQVVfeXFMTk10X3hBbFhUWDhJZ25weGZybkxZWWs0X2tOUWJOOFN5ejhoMEhVdHhMdTZ4bHdrS1Mza2xIcHMzREIyV1FKY3lscjVacS1TSEVldGtTdDRSVWs4RDNHaE1udUJmRU1IaHhlWEJtb01XT3kyaXBvdHg5elZxcTd4ZmtKNVpEMlctZWQ5dUR6QmNJbWhkZ1BPdnFUT21qd0dkdk1VX3lrUVBVSjVoNjFWdHdyVWtZdVltZnNlRHUwWmpjWk90VVNlNA?oc=5"
+      ],
+      "domains": [
+        "Daily Thanthi",
+        "ETV Bharat",
+        "Thanthi TV",
+        "Vikatan"
+      ],
+      "publishers": [
+        "Daily thanthi",
+        "Etv bharat",
+        "Thanthi tv",
+        "Ananda Vikatan"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.981Z",
+      "isLocal": false
+    },
+    {
+      "id": "clim_2026_11_09_21_0_85_1",
+      "date": "2026-11-09",
+      "lat": 20.9517,
+      "lng": 85.0985,
+      "geoType": 4,
+      "place": "Odisha",
+      "articles": 3,
+      "outlets": 3,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "youtube",
+        "social"
+      ],
+      "title": "Odisha on high alert: massive restoration post-arnab as cyclone murasu looms",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1WMlp6TTJoT3hKcEJQeC1QaDRFYWxzMnZhbkpubnlobzd5SjdYQzZ1LUdTSF9fS3MyWTZDSmdTTGxZZEtKbGdsLWV5LUtVNTJFazk3amRVOGdvVWVBSm9NUHl1cw?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE01WDNqNGhfN18xcTJQWDJldU9FRlBjWGw4Tmo4OHdjX1lRVWNJbWc4NkdENlZSczJyRjdFUkJuZHZTbC00cFZJWFppWTFwUUxRRVc4SmJR?oc=5",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxPb3NwNUx0RlctTDNUQW81R2FscHd0MGNIWmx6akVoMVNGaUFpYUdHdUh5Mkwwb3NhWFFodjV3MjRVQkRWNzFSR3A1ZjJsR1Z0TEpZcWQ1cEsyQ2w4Yng2OWU2Y3B0dnJXUGhoMWFwNGlBZDRMcW5MOEtPWXM0OEh2NVJCMTgyQXhqbUlIRGk3eC0zUXFKa1Fxa1JrOUJJWWZrc0E?oc=5"
+      ],
+      "domains": [
+        "Pragativadi",
+        "YouTube",
+        "Social Wire"
+      ],
+      "publishers": [
+        "Pragativadi",
+        "YouTube Broadcast",
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.808Z",
+      "isLocal": false
+    },
+    {
+      "id": "clim_2026_11_09_14_0_85_0",
+      "date": "2026-11-09",
+      "lat": 14,
+      "lng": 85,
+      "geoType": 4,
+      "place": "Bay of Bengal",
+      "articles": 3,
+      "outlets": 3,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "social"
+      ],
+      "title": "🌧️ IMD Weather Warning ! A Low Pressure Area over the eastcentral and adjoining southeast Bay of Bengal is likely to intensify into a Depression on 24th October, a Deep Depression on 25th October, and a Cyclonic Storm over the westcentral Bay of Bengal - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9RWk81T1lkMzdCcFZ4WWtxT0lvOERaRjdHOE5RTU8xeEhKbVVjTG1hRzREcFBfdU9RTmRfWTlUZnlXXzJObmUwREE1dDhwVk5DSmxjck80ZjRmdlhpemEtMmRiQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVGxXMndMbHF4U3dIZEY3WW5YTHA3bVhhTUdIVE9Ob1FlM1A2aFVIQkpMYkFCVmYxZG9vd3ZEamtVY3RNNGhZVENCVXc5Znh4S2ZXLVdxdzVYY3p5ZDFiaFZldnRTZTJTQmpVOEZ5R2hzcHA2bWpBSTRjTHVrXzMtbC02alIzeHhKYmt6RnZPWDY0M0pCYnJGeDVwSFg1MFlCMVFGX1VTVVVJYWloYVd3aQ?oc=5",
+        "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTklwRWc5MTRILXdwUXJUbThDMUtJTFVTeEhQZmh5ak5Tdlg5dGcyOFNxTGdFREppUmpVWF9pNXRGSWkwT2c3cGtQNDdCcDBaUmdlSUdmbWtvMU9iUXdiNzNsOTBoVldOWnJkblZXWnJwNndpUnNuRzVITFBoSENQYUJWaVZFeFNVenJqRGtCOFQ5OWI1MG56QTNuUW1kZnhYV3hLYkhR?oc=5"
+      ],
+      "domains": [
+        "Newswire",
+        "Hiru News",
+        "Social Wire"
+      ],
+      "publishers": [
+        "Newswire",
+        "Hiru news",
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.808Z",
+      "isLocal": false
+    },
+    {
+      "id": "live_2026_11_09_11_1_77_3",
+      "date": "2026-11-09",
+      "lat": 11.1085,
+      "lng": 77.3411,
+      "geoType": 4,
+      "place": "Tiruppur, Tamil Nadu",
+      "articles": 3,
+      "outlets": 2,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "youtube"
+      ],
+      "title": "Tamil Nadu News | Diwali Rush: Tiruppur Railway Station Packed as Migrant Workers Head Home",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE14Vmk1WnBIX2daM0xKTTQ4Xy1wSDFqck8zLTYteDA0TlF1QUwtbElyWU5COEJ3TlhBdHhDQWdIcWNmb05IdjNNUzRTQ28zRmhoSzF1QS1B?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE40emJYRnAxVnpaMnNPbXQ3ZTNOY1JMdDJueFhqd2ZzUVkzWjhQLU5ieDUxcHVaem13ZnR5OW9ZZ3ZXMGJzUmlBMVJ6YndUdHhTTlQxQkl3?oc=5",
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaHpmdkJpb1FiRFNLdVBvNmM2TUlaanFNVW5Ock44Y3Z1aXhnQzVnQVYzNHZYLTBFQ3hMX0k0S2R3NURLTFhINm9lRmZuNnNoWTN3NW5HMDcxTDZBelpianB1ZVdqNGQyUURSbzZSOGFpcTNiRkZPdXlTS2FoUGdHRGdmUjVOcEQ4N0NJQU5sejVYUGlHa3d2S2czX2E2Y3R5MzhxdEZjT3lOLU9qZDUtR2U3cnVleXBWSTZDYTJHRVI3Zw?oc=5"
+      ],
+      "domains": [
+        "NDTV",
+        "YouTube"
+      ],
+      "publishers": [
+        "NDTV",
+        "YouTube Broadcast"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.582Z",
+      "isLocal": false
+    },
+    {
+      "id": "yt_2026_11_09_25_1_85_3",
+      "date": "2026-11-09",
+      "lat": 25.0961,
+      "lng": 85.3131,
+      "geoType": 4,
+      "place": "Bihar",
+      "articles": 3,
+      "outlets": 2,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "youtube",
+      "platforms": [
+        "youtube",
+        "social"
+      ],
+      "title": "United News of India - UNI. . Watch | Bihar Health Minister Nishant Kumar shared a video on social media and wrote, \"Last Friday, at the departmental office auditorium, training certificates were presented to 26 newly trained Food Safety Officers, accompanied",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPM25tQ21JYUMyMTY5aHhKNi1pQlNBdGRmTHYtcnJtWUszS3Vzb08zRDJGRWs3d1dMMkhoMENDeHlzS2w3bFlSNVlRTjU4YnNsak1mRDEwYlRVTFV0cEhWLVE4bkRTT1ozbDdzVDR3SElqU24zUjJiUGF1Z2c2LURVTG5UQXNSaElEa0VwaHpETW9XQXhteGVfem5ma0pPQ1RoQ1hfS2tSM2pJbjhTRHAwOHp5NmRQSC1LeTY1VkVLWGxqNXBiY21TeW53MlJkU0JyZTR3Si0xekRoOFQ3?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBicnlJVE5nN2x6dnZJU0ZrajgzdXptU3JrZjJpaEJPNXBYVWJkYjM0aXI1NFRmYTlkRmxELXVOaEkxZ0VjLXBXRU9ZT2ZZODVhcWhaSl9B?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0ydlZJX1BnR0lab01uNmR0ZW9aaDNOZkppZ2hCWUsxNWJ4djFDRFNUOXlOakh5Y015TkxxY2p3LW5scVBrOU8wdnhxS1VXZUhsWlhSLXVn?oc=5"
+      ],
+      "domains": [
+        "YouTube",
+        "Social Wire"
+      ],
+      "publishers": [
+        "YouTube Broadcast",
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:44.489Z",
+      "isLocal": false
+    },
+    {
+      "id": "yt_2026_11_09_28_7_77_5",
+      "date": "2026-11-09",
+      "lat": 28.6692,
+      "lng": 77.4538,
+      "geoType": 4,
+      "place": "Ghaziabad, Uttar Pradesh",
+      "articles": 3,
+      "outlets": 2,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
+      "platform": "youtube",
+      "platforms": [
+        "youtube",
+        "social"
+      ],
+      "title": "United news of india - uni. . watch | ghaziabad police commissioner j ravinder goud said, \"information was received about a blast on the rear wall of vasundhara police outpost under indirapuram police station. at the time, a sub-inspector and a delivery bo",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTjJsdDRwYmY1SGNDRkp2R1l2U1U0ei10bTFWcmU2MVFCR0NWRHRKVW90UThydzdUSlA0aDRLQlM2Y21JdkdaS3JqUDRncVEwaHpFdE5QMC1VaWd1YkpWcUQ2UG50SWtLMy1PbjczbkdzdzN0Zk9qWVQ0LV9oWThZZ3ZYRnZKSkM0Y0RrMnFZUkxyc1NOckFFSTRsWUhUbGdjUnFEclVVbUsyUEJIMHg2Yzh4OUc2OTFTa291eFBaUThoNWdOZG1hWGh2eTJpM01nU0ZZVFpTc3l4alpi?oc=5",
+        "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9nMFFHZzVXYVlGYkNlMXdSQXBoZlpRVlZlTk5kTk1nR2hkVU96aTBOVWVRaVVPVGx6VWNCQ1BBM0M1bVVHaXluU05YbHplaDJTcVo4a2ZielNCWHI4aXBUNVVB?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5WbjI0akc1TGtDcDFPc3N4Q0Q3SXhoV2NBT3NRdWU3MXBpN09sX3J0dDVvSWs0U1Y5M1NsT3JZWW9tbVozVUV6LUVLYU0wNkw2Z3VVVWdn?oc=5"
+      ],
+      "domains": [
+        "YouTube",
+        "Social Wire"
+      ],
+      "publishers": [
+        "YouTube Broadcast",
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:44.492Z",
+      "isLocal": false
+    },
+    {
+      "id": "soc_2026_11_09_27_0_74_2",
+      "date": "2026-11-09",
+      "lat": 27.0238,
+      "lng": 74.2179,
+      "geoType": 4,
+      "place": "Rajasthan",
+      "articles": 3,
+      "outlets": 1,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "India abroad. . rajasthan sees 1.64 million european tourists #rajasthantourism #europeantourists #indiatourism #travelindia #indiaabroad #latestnews #indianews #worldnews #trendingnews #newsupdate #currentaffairs #viralreels #trendingre",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiigVBVV95cUxNa1RSTHlVXzdTQXNmd19BVi1id0JmdDNFTGhaSFE0VkRhR2hFaFgtYWRhdjF5WGZLdzBKRmVjQVdtMGwwWWFMcmhVbm0wS3I5cFVQZFY1ZmY3bzIxQ1hTa1NTRTVUME13MmJidWFtRXY0RUhrdWFlWjljOU12aV8zVkp4bXpTam5KVHhoQWJNMko5R3l2OG4zeUdRLU5PQndWTkN4NHFYV2VxRU1JZ1VjdjVRNFo4SDlyZ1lvSzFxOEtDZTBoQmpNbkpYVFUzb0k1TnpCNWxkdjI1OHR1WEhaUm5KUGlqQjRkbHM5SU9ZLVBQdWZNMnVHa292OVhYUS1rUVFmaFVxdEh5WEFnekdLdzVHZjNVVzBRSGFraEpKWEVreXJUVm9NOWp6anBnTUJWaGtyUThEU09JVWd2dUVaRzF3SE1zNUhtT3pBVGRLczZkclc1a1dvQ1I4NFJEZ1ZETWZRNWNuaDlMZkhHeWdiSHZCRUpwUzZ3NVoyYWwybUNwZHdHOUt4VmpBZndLVVFhdFJMd19rWHB6Q09saEVvS0FodFQ0UnQxTllKY2Rqa2d4ejE3OThXZHhnVE9zQi1zUTczUEdZa2NqaTZGRjJweUQ4cE1tSE9zOHQxTDRfWG1MckxvN05ndm1PV05RYUV2aHNURlllN0cxY1NrY0dEQV9UdlFlVnlrTHpyTFZKZTk3UndLWXI4bnM4Ylh5RVNacTBiS1FKLTEtMGtvb2NzX0U2dVRCZjkyS1ZQVmFYTGdRSmxVMnNTNUh2a1pjWkJhOURlelFRLXNGVnRGSk9BdnNQQ1lmUEc2MEN3LWE3ZV9pWm1TeEg4NXVxWHRHeVJ6SjU4MEtsYnE5Zw?oc=5",
+        "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQk14cFlkczVQSnR5azltMXZMSTJIU0NIZy1BSk9zMjVVOXRYOTdudDA4cGlFSDZoY0lFeU1qOTlvT2VHa18tUDk3TDVHbFNYbXUxeWthcmVGeXZscGRoWklKQVZSekdYcVZkMnN6WmFFQnV6OWJ6RUFPSGZEMlVvNWlRWGo5WHppOV9DLU9OempZZGwwRnY1Rm9wZFpfU2o2N1FyYnpjN3Z3QzVwa1haXy1pWDAwb2ZaUS1iNzZvNmZ4a3ZxT3h2NTFsa3o0cWY4LU9wZDN0OVRVM3dGTWc?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3a0VUb2lGMEhad21ZVUxuZWt2dk9zWG5kb0kySXdVWXlQc01MYll0T1RQRGpSeDg5WExvVkxfLWliUkowZkZpSXFqMXliOXBldW5YVE1FOGpQWVJ2bUtRUHl1bw?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.554Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_21_1_79_1",
+      "date": "2026-11-09",
+      "lat": 21.1458,
+      "lng": 79.0882,
+      "geoType": 4,
+      "place": "Nagpur, Maharashtra",
+      "articles": 3,
+      "outlets": 1,
+      "type": "010",
+      "movement": "protest",
+      "category": "protest",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Women farmers from Lohari Sawanga village in Nagpur district have urged the state government to focus on strengthening farmers financially rather than providing them with free benefits through welfare schemes. They said that if farmers received remunerativ - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBZNXkydFNXcy1QMVZQZzNBaERfRTZ4TUlaSFJkd0hTWmM0b3ROX2p3OXl1VXhVYm9SUnBsZXotS1UyYlF0bWpTSThUenkwcy12ZHc5ZU00cHJJd1A3aW5aODhWVQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1GWnJWbTV4U090S19XLVF1akZOX1l3ZzdtX3BUdkI3dHRadzBjU3M0ODNGSUcwZVA1bGc0R2MxYXFqSXBTVGRia3lmcEhSbWdoSjY2M0d0TWxTXzBUbm5nckptWQ?oc=5",
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0d2xSX1puOVRBNk01Vk9oOVR6Rmo0SzJDeUlETkhvNFNGY1dHV3Fkd29veHhvWlZuODhhSmROSThCVXBxWFJ1aDQzY3MtTk0wTy1nZmEybGNKeHNtcXg2YXVITFp3ejgtSFlHcTV3?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.555Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_26_2_92_9",
+      "date": "2026-11-09",
+      "lat": 26.2006,
+      "lng": 92.9376,
+      "geoType": 4,
+      "place": "Assam",
+      "articles": 3,
+      "outlets": 2,
+      "type": "010",
+      "movement": "economy",
+      "category": "economy",
+      "platform": "social",
+      "platforms": [
+        "social",
+        "web"
+      ],
+      "title": "DD India. . #WATCH | Diwali brings together culture, devotion, and centuries-old traditions across #Assam. From traditional clay diyas crafted by local artisans in the Brahmaputra plains to Barpeta's renowned fireworks industry and the grand celebrations of #K",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMmxETll6R0xROS12YzlMWmJfdU5yODdMZ09hZnJLUDhsd0pxNkVFbXZzRGFGWWN0VDA5dC1CUWJUMTNfYVowUFg0a09CcDZ4VTM3NUJGaVp0X21MTmJwdEJZY08wRDVoWkt0TXFQR3NOX0hVbnQzeHgzMzJ0UEk4MDlTWTNuOXVDaThFVVdDaDBvaFhZU1lJVHZQSjhnZ19zVEdIdVlTRkFUTGR6QWZNVtIBuAFBVV95cUxQOGMzYVQ1T05MYlJRbUItZTU2Q3owY3haaDNJUk85M0lyQ3JpNDItSjdBTlliSVhGWmJMTjZoWlE3dTh0RTVtbmVOWVIxYjNmWWZ3UkRNZVdjTWppOW9zbzJTOU9wTUdvNFUxQUFWNGdrc2NQQXAyaDVhaXVzRmpRenFQUmc1S3VCaVV0aTVQREhNcl9LMHBzQzBjWlJJVGdFTDZ2SkgxallTQnRjNFNiZzhHdWx2cTNY?oc=5",
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxORUZYdXA2enBSRTc2VlJRUnczOWViOWQ1U0kzdUcyZGgxZjlwck4weHpha0xBSWJvQkkxTVBjUHg4S29FR01YOG11NjRiMXBlaERDd0ptc09SUDgtbHdEQXRLei1EOXhsZGh2Q2xpTkx1YnpJS2VpTVh6VUdIbzM3NXB5bjJNNU16OWtIbDEwYkV2NXJ6dWJURm5jOG1yZmRGeVhEalpIS1MzMXVzLTd2UnpxRDloclpZMFN6R19CMHM0V216SjRZOU0zOUNZbnBEbzJyVFJVUVJkdw?oc=5",
+        "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9UQnM0MERvYmhCU2NPV1p1eWhVOE5tNFJ0MmhrVGpwUTg2UUFkeHdlQTFiUm10QlFkNy1manFzR011Um1LTGltdEw5a09NWDNtcEE?oc=5"
+      ],
+      "domains": [
+        "Social Wire",
+        "NDTV"
+      ],
+      "publishers": [
+        "Social wire",
+        "NDTV"
+      ],
+      "lastSeen": "2026-11-08T22:25:46.027Z",
+      "isLocal": false
+    },
+    {
+      "id": "soc_2026_11_09_23_0_78_7",
+      "date": "2026-11-09",
+      "lat": 22.9734,
+      "lng": 78.6569,
+      "geoType": 4,
+      "place": "Madhya Pradesh",
+      "articles": 3,
+      "outlets": 3,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "social",
+        "web"
+      ],
+      "title": "India gets its 100th grandmaster! anuj shrivatri becomes first gm from madhya pradesh",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOTJvOFozUDFWYkJ2QzRLVjhDNjdCRm00d3dMTjlxVm9ob3lrMVBNM2hkeHI4b3d6M0xoV1VaSE1ZWE9iMmplRkp4ajZUYTVMV3NtUTdTYy1lNDRPREIybW5yNzRrV1lBZUhpWUtIMExDSzNDTkc4a19LTndoSGo5eW9xZ3JudnJwcnhBZ1JjX0VfaS1xeThHTUVvdmYzOW1qdVpKbXA0ZllyeXpq?oc=5",
+        "https://news.google.com/rss/articles/CBMi8AFBVV95cUxORFFFdXQ2S281cWMzR3o4cEd2emJTUkZqQzV3OVdJU0djbC0zOU5aLWlLbVRxbS03VmhSZ3ZTOUJPUGFUbkxVUGpVanNFQ0g0OFFRS29jUm45MkFmQXJUdDVkbzZhN3kwLWlFZV9fYnZ0XzRlLXl6azBMd2dFWEJaa0swTnVBOWowMUpIQkVrYjFGZEJMWGM4S1ZEVnNwT2dOMTlSTTlSQkd4YzdwQWFLUUpuYzZWUFBIalR0UTRGVVpmT3BMeHRxUDdTNTVsM2tLdlQ0ZmFZSWp2VkdLcl9BenVsbkZ5Q0Z1a3Y2bHAtQ0TSAfYBQVVfeXFMTnNvNERZTmtuajIwQllsZUlmREJ0UHQ2X2VJSk1XYU1FTi03NHNmX3VUcG05ZG5va2NaT2pQbHVXYkp6ZWNUSURUcVNIRlVVT295Tk83UzVRbmhDTDZiMW5rVFdzMlh6eGIxQ0JvZmZDaTY3ZmJxM01XdXJiZkIxTDFFdTgtSkJpWDc5Y1hjTU9UZkk2QTI1ckIta1pELXktUGhMMGs3LVRwYWN6dzBVWUlBaF9MMlotUTdNZzB4aFdrT0xqUFBLQldJcUhrX1FYMjNqN25QUDhQblNzbkpIQ1JDQUFvYWN1S1Y1MmpNbkpPampvczVB?oc=5",
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNc3poTUNpRnFRYy04QnBvWXNNRXk0X1dRaW9HMUZHYlVfQjY3QXZBS09tMXpkdUJnSXlRWE9DRVBsUFBHd2xSTTk3MGJhNmRfQVd1Z05mc0VLTmYxT0VMdkdXa3pJNFNzLVlaamFwVm9PNVJQbUluY0JIVTFBcFh0cGJTXzhZa1dBWVhsVEdyekFsVkhEaERHVTlUeU96MzV6eEdnOTYweXBZYUhxOUtrY3RsR2NLdk16WHh1eUJlQlVYQVJEVmFVekFLanZaMmkzdV9qWjNtNV81eUVQ?oc=5"
+      ],
+      "domains": [
+        "Social Wire",
+        "The Times of India",
+        "NDTV Sports"
+      ],
+      "publishers": [
+        "Social wire",
+        "The times of india",
+        "Ndtv sports"
+      ],
+      "lastSeen": "2026-11-08T22:25:46.027Z",
+      "isLocal": false
+    },
+    {
+      "id": "clim_2026_11_09_15_9_79_7",
+      "date": "2026-11-09",
+      "lat": 15.9129,
+      "lng": 79.74,
+      "geoType": 4,
+      "place": "Andhra Pradesh",
+      "articles": 2,
+      "outlets": 2,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "social"
+      ],
+      "title": "Andhra cm naidu orders immediate financial aid for cyclone murasu-hit families, steps to curb price rise",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1lcVJBWGZNUTktVUFIZHllcGlZQkhhUGl2T3NUMmJnTlJxQ0x5WGgxNmI3TDN0bWRfQ0FvSEpYOVpXM1dGelBpeUFEdkVhSU1rdDJuaDlrekdtY2tvX0M4b1BUOA?oc=5",
+        "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOS3QwQjRqX0ZGTVgyWllfLXZwMkVVSjVGV2puZkpmUG53WW94c1BHcjdtVTRid25LLVVFdHpfMExwTkdkYnZGYkF0a0ZERnRsQ0F6MG50cmVjekktZThJaG1GeEgyNWE3UG9md2k4dHNyU2FPUG1tSG1PMUdGMXY3bTIzZ3p2MWNBVlB2S2NFMmRaS0pZRlc0c2dwLUY5Y2JkRHhESHZGc3pXd3NzRDJfY204TkFIdEdJdndJOEJsRjBlSEJQc05UT19Vc1Y3UWxQTVdhYXYyRXZIVkxWQjZjNWFxSk5sWURpYnVtaUtPTnRUZjhiQWZwYWtlVjLSAYICQVVfeXFMUFNHeW1Hdnd1anhWV21PcEsyRWxLRTNpazRCbk9ONlVPLTdZTmgtRnlnWjEyMHZPdDJXcmRHcTFZdW94SDNXRmxYcnVwZ0VJQ2RlS19LcS1MNjZfUk1UTVBrRWwxR0ZDT2hEUEZNdzBEc212UGlST1JZNnZyLTlrUGh6X1dWVFpLbUR0MXA0Z0h3OGxuTGJwMWpSZHlyR2dnSGJwV0Y2YnRmekV1SFpwb0o3OER2VTQ4RE9jdUVpVDQxOF84YjZhWGNBNzRCWTdKMnEwdFgtaUxBLWxkM2dyQVphRFdlQS1zalVkTFJxSUJVeHhsRzhGdmJLdXpVWDlra1dR?oc=5"
+      ],
+      "domains": [
+        "The Economic Times",
+        "Social Wire"
+      ],
+      "publishers": [
+        "The economic times",
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.200Z",
+      "isLocal": false
+    },
+    {
+      "id": "clim_2026_11_09_13_0_77_6",
+      "date": "2026-11-09",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "geoType": 4,
+      "place": "Bengaluru, Karnataka",
+      "articles": 2,
+      "outlets": 2,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Karunadotsava | bengaluru, the city that built india’s technology engine",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaGZROHBBT2EzdmNveFpZM2NQTG9kZ09LQm8tVjd2RUtGRE9CZERBdGFiQ3VHSDMteUNjN1k0NElRdzJtMHhpUTdvLVJieFNOeTl6RkE2ZVVfanJIZ0I5b1BxdEo5bEZoNHVZbTBHQUZzNzY2MmtnTXpWVUMtMHp2c2p0TXZvYjBqMXpncGszMTlnSFpYVlhrYzdpbXFGdFR1TWM2cm11SWV5UG9LbUZva2hETkM2RmRYZG9rd2wzWk9XRElJMks2RnlOcw?oc=5",
+        "https://news.google.com/rss/articles/CBMimwdBVV95cUxPVkNrTVF4T19xX212bkdWekQ5MDVTbjhHaDBLM3BpV1l3WF9DR0JXUDh3dGdXVmZ5Y2VYa0t6NjlEUzJhOE1LZElFVmVxbjlKV1hKc2VCYUtuRTFXaVhWVHp4d0tqVzkzbmVqaE1vR1M2dDdIaG5EZFZwOUtDSDV3MkZrTnlVZDNrWVFHUWRiUVJ1QUhPMnhVRlFfXzVfZFo0ZnRJVC1OQk9sMGlTRXNPUTVFUkR1bmV3aVNjQXByeFR5MFpBWmtLR2I0d3dnNjlpU0QxTDFaZExMWlRMNlhySjh0STVvY0pJU2dsNHB2MVBkM1VBa0tETjF6SzVxMHh0aGdDRHc0a1lLQU94ZWhrSWthS3hfalJySXpFUFVUVjZfelJkRjdkVnZJdnZvUTlMX3I0WElJdlp3T0FjMEh4Z3VNTU9JUXh4WGd6UW1CZEUyZFlXcXlwSXJhaTAtb3pQcTJGcm01bnVjUm55OHgtcWFBM3k0X2twQVJ6SV9vaE51QlVvMFZ0RmowV1dyalViWW9hNzFad29TYWVZN2g3X19IUW1QcDV3YS15c3hVdDFjeWVtaEt1TzVVSlhqLWh3aG9PZDh3SEhtSFFZaF9kakRMTDFIV0NKSmlSMUEwbDRmWnc2dU15bTZzZHE4Zll0OHctcm4zR3hSWkJyNFBzVHBDXzhkTUZGQ2JaNXFWQkUwdDVlMy1pU1dnNGI5SERKQnJ3X2pxYmtJWHByU2p1dXllWEVGNXdMRDQwM3FRNzE3dzM4cWxTazVGcnMzRjZtU1FRTGZDRkZPMEI5bERaTGVVa2IxRXl5Z21ScWJkRGRSRF82cEUxRERyeHIxdEhDR1hQcC12N1dGYWF4SUx1aWFFNmNNSHVTWDFGYlQybTZiUV9sdTBpbnRyVWtVRDd0TjFyMFFWZ0JCZXRmaVp1bjJyNW9sV252RUs1bGNRWFBxekVKQmZocFhkMTJhNkJjSXBnZWRxQjFDSFNESGdLaHUtb0VTa2ZZdUMxZkVpUmxXVWs0Zzhhc1h5N1dQMGk2RHI2RlhHQ0RuMGtLOGZCSlNvX0Q0UlB6OHNXeUZLc1pLRjBiVjhUVHRFOC12MGNKaGd0d0ozZGJxZFR2T0h5cjRLUEJ5bjBoaTdyTnRXRi1SdXZqS1VxZjlpalE2ZjQtVWZqU2k1Z3dMaW9UVS1TNUFIRnJxTy1BbTEyQXIxTUVmVkNUV1lJRXVnMA?oc=5"
+      ],
+      "domains": [
+        "Facebook",
+        "Deccan Herald"
+      ],
+      "publishers": [
+        "Facebook Wire",
+        "Deccan herald"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.203Z",
+      "isLocal": false
+    },
+    {
+      "id": "clim_2026_11_09_15_3_75_7",
+      "date": "2026-11-09",
+      "lat": 15.3173,
+      "lng": 75.7139,
+      "geoType": 4,
+      "place": "Karnataka",
+      "articles": 2,
+      "outlets": 2,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Karnataka cabinet approves recruitment of 1,000 doctors: state health minister ut khader",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZFZocXRvUHp6XzA2MVFZRkVkcmcxemtheGZLVEJYaGpadWs1Z1lLcVFBbW1sNXFLV2ZpQ1FKRHRQdU9qUmUzakpFQXY3Q3g1cFRFVzNKdWN3VVo1aWlFRXpTRkFTUXlGNEZRUDZkVjJDZmpWMDRVWEoxQk0tMXlSOUhVWVZVYzIyMEFVV0pYdDU0M3FPaG9LNVdqX2tPREMzRjQ4dTBfTktvZzJDaG1nYWdLbTFzME1PSDhXVDIwYXlqSEREOWlVcTl3?oc=5",
+        "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxUDhlNGNERm1LVHBfNUZVVjRBR2FDM3ktYW5KNlVBbFplOU9LVWJLWmh0OGpVQlg1YzlscXFMbUlJQS0zclhnUXBvRlZ0bnMxcmV3dVN3VVNVMEVjdExmZnpNRVlybERyU1E?oc=5"
+      ],
+      "domains": [
+        "Daijiworld",
+        "https://www.indiagazette.com/"
+      ],
+      "publishers": [
+        "Daijiworld",
+        "Https://www"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.808Z",
+      "isLocal": false
+    },
+    {
+      "id": "live_2026_11_09_11_7_78_1",
+      "date": "2026-11-09",
+      "lat": 11.6643,
+      "lng": 78.146,
+      "geoType": 4,
+      "place": "Salem, Tamil Nadu",
+      "articles": 2,
+      "outlets": 2,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Police make arrest in a deadly shooting at Winston-Salem State during homecoming weekend",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOSTBiQ0tQNXJmTzdpQzVoenh3a0xiZXU3OFlqNlAxQndHdkZGczZVRU1LM2hJYy0tWDBURVdFTHRGS2dEMkhqZ3piTnFQUHJhVkZwOWUyWklneFdaZi1pZDRuR0lyODZZRVg3VDRlRTIxSVJOeldMdGdxTFZTYVRZQTg5cFgtbEFiak5yYWlpemVreVFKWEhZQkc1WnBZOGg4MTdWeGJMalBNVzhtUVpLaWg0Wm1qR2lzd1oxdkxvNThybDhWSlNmMlQ3M0t6ajJKUDl0aXJwOFlmeVFWNUN1SFhDb19FU2IzR04wNDJvZzTSAfYBQVVfeXFMT3A2RWZRQ3hNZmZaaE53UHlySVZnTmhRa1luUFJCUFY4X2hscjlxWl9tNEJYWUMwaU9JRXE2dVpMbnhHcjA4aDh6bUc4RUNoQWk0TWxYalVaeVE0eVluTGZfNG9PS3dVV1NQUk5WamJsRFJUcnppYUp5UXo0aXI1NEg1dXhsRFFHNk9Zc3EtSk5JRV9oel9xalZfN051c0NVQzdwczhWdG9xcEl5RUlqNUpjLVVXLV9wRFFra1NQX3g5cGloMmgwRVNNWnFvMldMNG1kTGZTbG1hS0xpdmtMeXVkUUR2S3pudEpOVi1XdlFWRjRJSnRR?oc=5",
+        "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMGprOE8wVGNCOGMtVFhGMGdrMXB5OGZJM0NPS0ZLUUQ3QUFxdWY0Q0ZJMFVhcFNyT1d0enVaU2hna19xdFBRQ0dMRDBNQ2V2a0V6eFVkOGNHRnhXbkxWS1Y4S2NkMkhKTTFkbzQtWXF0N0twNU9UMEk0cE1kclVhVWExTGt0cHJjSE9SZV9QVlA2cktDYmRDb1ktNS1SU2pSRHVjQkdqeU5ubFBFY2JKM3BMV2JUbk5EV2fSAccBQVVfeXFMUF9fZHh6dEx5RTFDcVF3TTBwVHhuQmRjNHZ3Nk5rOXR3X1RUOGRlWnF2LUZCaGRiSm1NdlZoZkVlbnViMHlpTGJRWUdCeGUtMTdteHI0b3BTMFFMLWJqbDdoc3NqV0o4elg2OFhWQ0lscEZSVi1NRHZ1akRaaGFZVFdRd1ItMmg5UGJiTF9nT2pZcU16cXRJV0tYaUJ1ZzRGV0F6TVFEeDduQjkzLWxLdmRZMGNxRlo5VFdCWDZFN0F5czRLMXZxdw?oc=5"
+      ],
+      "domains": [
+        "Daily Pioneer",
+        "Hindustan Times"
+      ],
+      "publishers": [
+        "Daily pioneer",
+        "Hindustan times"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.581Z",
+      "isLocal": false
+    },
+    {
+      "id": "live_2026_11_09_9_9_76_3",
+      "date": "2026-11-09",
+      "lat": 9.9312,
+      "lng": 76.2673,
+      "geoType": 4,
+      "place": "Kochi, Kerala",
+      "articles": 2,
+      "outlets": 2,
+      "type": "010",
+      "movement": "protest",
+      "category": "protest",
+      "platform": "web",
+      "platforms": [
+        "web",
+        "social"
+      ],
+      "title": "#WATCH | Kochi, Keralam: At Cockroach Janta Party (CJP)'s 'Jantar Mantar at Kochi' protest against SIR, CJP founder Abhijeet Dipke says, \"... As I have said before, Mahatma Gandhi is the soul of India, Dr Babasaheb Ambedkar is the backbone of India, and P - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE84dlllV05yaXkzQVl0MDhYN3UycFJvQWlQQnNFc3FXbzB2Y2JMSWQwd0gxZlJJTFVJbFdzNllBUFhoWG9YSlZQVjRuLUVBQVJneHllWEZuOA?oc=5",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbkhVcWJvanFMU3Fmb2JDN09yWkxPS1NscDF3dWxMM2xxRUh6b1RJbmNpTnUyb21NVnl5WGV6ek90X0ZTSlFodDg3ZDhaMEdNVWR3LVpRNDRYWE5lT29YRjhKd0FMdWk3RHRsYlhkOFo1SjZrazlvVnluX1BIcHpMTkhBSEJKOFJtcFZaeVd5SHNrSWNfMll6WVNkMHV2NXBIVk80SWlwOHhLT0RzNkHSAbABQVVfeXFMTmw3VktvS1FRNld0cHU1bTVuREVRRjV1ckVGY0Y2VW54WkFjX2FrMFlfbTJuLWpZeGxfTkQtTndibmp0VHR1UnZkbUZwUThkNkdBd2dUY1VFS0Mwb3FFLThnR094VHRBU0w1SGtXeE50Z2JINE5sbE9DN1ItS2dMdW9kSENXRE1JdnN0RmpMYmczTXVVMzM2SGlEVjl3MDd1bzJjLUlXMzBTeU9NRmtqT1k?oc=5"
+      ],
+      "domains": [
+        "Rediff",
+        "Social Wire"
+      ],
+      "publishers": [
+        "Rediff",
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.584Z",
+      "isLocal": false
+    },
+    {
+      "id": "yt_2026_11_09_31_6_76_9",
+      "date": "2026-11-09",
+      "lat": 31.5892,
+      "lng": 76.9182,
+      "geoType": 4,
+      "place": "Mandi, Himachal Pradesh",
+      "articles": 2,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "youtube",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Official SGPC LIVE (Audio) | Gurbani Kirtan | Sachkhand Sri Harmandir Sahib, Sri Amritsar 08.11.2026",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BR3p3RjMtbV9GWW12ME5mWGtvcmNvWWozZnB0ZVdNU2xlVkZ1UjBQVmpxaEdpME81UDUyUjZPSXQ0Rl9PRHozRlJ2U1V3T3lWZlpUVE5B?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NLXhHUXB1bmkza2RvN2p6YzFsVFRtMHFOUEpHbHRfYUFKUnZ5NEVDVkJhdnBCU0NEVU9IdnZNZkk4LXRCVjlTaHFTUHZEQUU1R21lM0JR?oc=5"
+      ],
+      "domains": [
+        "YouTube"
+      ],
+      "publishers": [
+        "YouTube Broadcast"
+      ],
+      "lastSeen": "2026-11-08T22:25:44.492Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_18_5_73_9",
+      "date": "2026-11-09",
+      "lat": 18.5204,
+      "lng": 73.8567,
+      "geoType": 4,
+      "place": "Pune, Maharashtra",
+      "articles": 2,
+      "outlets": 2,
+      "type": "010",
+      "movement": "economy",
+      "category": "economy",
+      "platform": "social",
+      "platforms": [
+        "social",
+        "wire"
+      ],
+      "title": "Pune woman laid off by canva on maternity leave shares how severance will help",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNX1BiRWlkRE1yc0lsVjJkRFlqYThISEtSa2hBVWNraW11Q0FJSThPQ3h5YnNibFM3M041aDdGOTVGYmRFZzA5VDdPZnMxNUR2UDRXdVRTd0JjU0I0THBDTGZadlRHN1NobW16dDhMVXYtUFNSS1JlNjlBVThYMzZxZ3R4T0RuaHBSYnBmQldyYmNKVjZPQW85REFQX0RDdFBtbm1iSUFqZG9HTm4xVUgtcGVIc0xDWHo4NkNpcmtrN2MwSXpSeHNvMnN0NHBaU05jM3B5MGtobDRlSXdxcldaZjBxWmtQZ9IB6wFBVV95cUxORHNmeHdJU0JfZUctMVJQV091UkxGcDVkUFNDSndSX2t0bDk4cXNvbXB6TjBZRldqT2FWY2RtRU1ISEd2ZDl4UDU0R3hGcS1sQThKTkRfcHZGUWd5TVRfdnh2SGQ1Nm5BdEc2d0d3NlVXQ1JYR3pYXzJMNXEzNjc4WWQ2RVAtTDJ5RDJfWXBKTlFOQkk2bHdHcWVCMnpOOC12Q0dpbjcwWWFWQ2FxVHl6T1p3OWZqU1E2NmxrRi1DUWVhblA1SGFHczZPQkhDeGswS0dmMW1uazdndks3Y3ZEUDdqd2hSSmpGZlBr?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16VW9lTm1CeVRkNGRNMHRMTnR6d21HdW5JS25ZQTlpRXJGNGRkamtFdFpGYVhVMmxRTnM0cklmUnhUZUUyV3FfYzFlazVnenhrbHZ2WGVqbDlWWFdlOE9yRlhfWQ?oc=5"
+      ],
+      "domains": [
+        "Social Wire",
+        "India Today"
+      ],
+      "publishers": [
+        "Social wire",
+        "India today"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.554Z",
+      "isLocal": false
+    },
+    {
+      "id": "soc_2026_11_09_18_1_79_0",
+      "date": "2026-11-09",
+      "lat": 18.1124,
+      "lng": 79.0193,
+      "geoType": 4,
+      "place": "Telangana",
+      "articles": 2,
+      "outlets": 1,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Two people were killed and several others were seriously injured when an auto-rickshaw carrying a group of workers rammed into a moving tipper truck on the Outer Ring Road (ORR) near APPA Junction, close to the Telangana State Police Academy, today. - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE83WUNHMFQ0am5pMy1HUTliaFNzVG9VUVZHQ3Y0dGtoQXZmNU1raDBOaWRBeGw2dmpmdy02YmRlYzZua19kRy0tZjBlNHBMZnVUb3hXWWttYmNWVUxhY0R2MUpNcw?oc=5",
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTFBESk55RUpOem95eDZHeXhFaGlrZjNKSkx3LXBxbG51TldXQ0dWTnRGSFFmMTJyc2M1OHY3VFA1cy1fX3BQNmlqcFF6aDBXcnFjY3ExREY1MF9ZNDBQbVZyVjhGbGtpVnN3NkFLemJn?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.555Z",
+      "isLocal": true
+    },
+    {
+      "id": "clim_2026_11_09_31_6_74_9",
+      "date": "2026-11-09",
+      "lat": 31.634,
+      "lng": 74.8723,
+      "geoType": 4,
+      "place": "Amritsar, Punjab",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "protest",
+      "category": "protest",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Amritsar: Farmers urged to adopt super seeders to curb stubble burning",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcWRYekNJb1ZTNUhKT29uMWozVEdFLVNHR2FDSEIxTzZYUlhTbHBQS0F5QnBJYXJHRU4xOFM5bUhyN2ZlQmc2RnI5NUp1SW1JZEtrV3ZRMndBenVjOFFaSlNxUGRMMFZmMl9GSmR6N19iQ3FiYW9MY1E0dlJrX2k4ckktTF80RmE0OGs0TXotYXdpSjhHODBlVXpDUVVJMjYwMlVRQXJlTkxoc1NsWmlyQlBrc1RnZDY1OVR5S3FmMlBhbk1zRlZlVUdUSnVUUXJyOHpR0gHTAUFVX3lxTE9xZFh6Q0lvVlM1SEpPb24xajNUR0UtU0dHYUNIQjFPNlhSWFNscFBLQXlCcElhckdFTjE4UzltSHI3ZmVCZzZGcjk1SnVJbUlkS2tXdlEyd0F6dWM4UVpKU3FQZEwwVmYyX0ZKZHo3X2JDcWJhb0xjUTR2UmtfaThySS1MXzRGYTQ4azRNei1hd2lKOEc4MGVVekNRVUkyNjAyVVFBcmVOTGhzU2xaaXJCUGtzVGdkNjU5VHlLcWYyUGFuTXNGVmVVR1RKdVRRcnI4elE?oc=5"
+      ],
+      "domains": [
+        "The Tribune"
+      ],
+      "publishers": [
+        "The tribune"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.201Z",
+      "isLocal": true
+    },
+    {
+      "id": "clim_2026_11_09_22_6_88_4",
+      "date": "2026-11-09",
+      "lat": 22.5726,
+      "lng": 88.3639,
+      "geoType": 4,
+      "place": "Kolkata, West Bengal",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Rain forecast for Kolkata, south Bengal",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMifEFVX3lxTE1qcG5FSUstMlo4b2JwVjIwNDBkUldUZW9QSmJNbFFRMURUWElCbGppYndrc3lUcUg5TTFSMWcxTy1zQTc5YUMxTWZybUVYa3RMVkhDVXN3UXo3bThteWhNamozd0hkYTRldTFJSFRDZm83UWN1d2VYMmtGTi0?oc=5"
+      ],
+      "domains": [
+        "The Hawk"
+      ],
+      "publishers": [
+        "The hawk"
+      ],
+      "lastSeen": "2026-11-08T22:25:41.203Z",
+      "isLocal": true
+    },
+    {
+      "id": "live_2026_11_09_28_9_76_6",
+      "date": "2026-11-09",
+      "lat": 28.8955,
+      "lng": 76.6066,
+      "geoType": 4,
+      "place": "Rohtak, Haryana",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Haryana vs Tamil Nadu at Rohtak, Ranji Trophy Elite, 1-4 Feb 2027",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaDVQX20tYVpzd1Rnb2lYWlltb2lueHN2T2tYcm4xcDFOQkNNOWRNVXRJaWRudnJrQTAtZ0JmZzdtZXN0TExrRVlLOE1FeHljRVh4R0ZCQjF4YmVLdTRvNEZPVWk5d3FfTGk4TXJIZXFvR1V2MXlOdWlERlpJeWRrZ1ZFSHlpQnZOM1JvcGlDbThGUU9hM2hCcHZkRlpsREFLUTZ6YkhzVDBFZWJkenRr?oc=5"
+      ],
+      "domains": [
+        "BCCI"
+      ],
+      "publishers": [
+        "Bcci"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.578Z",
+      "isLocal": true
+    },
+    {
+      "id": "live_2026_11_09_30_7_76_8",
+      "date": "2026-11-09",
+      "lat": 30.7333,
+      "lng": 76.7794,
+      "geoType": 4,
+      "place": "Chandigarh",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "economy",
+      "category": "economy",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Gold Rate Today November 8: Check latest Gold prices in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur, Lucknow, Chandigarh & Other Cities",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiogJBVV95cUxNbHRPMGo2Z1dPNnlsLUxRc1N4aDVNMUZoZ3o0UWNNMFBkb2FRLWUxSXJOM3lhVFlwTjVIZ0dwUjVoOXQ0SzBrcE9XMmdwdzNCZ3Zfa3VjQ0NickswMmxCNkpoS2c1elhMRTNJQ0tLUDhCdHF5TVYxcHpsVlBhX2xWd3pJRGJtNjI4aVo3TTZZNU1qVmVsWGY5RDVadll3c1VIQkxBQ0F1UU9EZDRVNFY5bVp1WUZvdXczek1sRWR3UGxsNEItV0pvQ3pQZWxVR3p1Q1VKazNRSU1MelN4YUNia0dBOE9lcTI0SW9SQU5CdXllYU41VGJzTjBNRkgzaWlSM2twN1JsMVpyZ19WYXNzNlZFaFNfUjBha19PbDNVTXdUUdIBqAJBVV95cUxQNXlBRUYybml1VThXT29GdkpTcDdueW9yR3R4dERQS3EzZlBWM3Ftcjh2VV9xOWhtbVNLSko3X0dMa2t0WjNsa0NZYlhYU0s1eE9tVEQ1aGZCOVdHenZkSEw2dS0zVlF1cWZ2ZGoyNGtRbUlCSVdla1k1U1FHMUNZUER6Yl9vaW5XT1VhWHlISWhVSm1WVU96UkREbVFwV2ltOVFUNjdDWmIxZ0t5V3NYcVBQME95d2swU3BFcU13aXJkZWxkc0djZXlvdnZrVGtwN3psdHVfUS04TjBnLTk4d3VLRGE1UHMzWk9va2Fzb0hTbW4zSkFZcGg2blJqUFhOQzZhVkMwRW54Z0pqcjlJZDlIT1cwS3Q5QjJud0FqbzRYMTNSczkxYQ?oc=5"
+      ],
+      "domains": [
+        "BusinessLine"
+      ],
+      "publishers": [
+        "Businessline"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.580Z",
+      "isLocal": true
+    },
+    {
+      "id": "live_2026_11_09_11_7_79_8",
+      "date": "2026-11-09",
+      "lat": 11.748,
+      "lng": 79.7714,
+      "geoType": 4,
+      "place": "Cuddalore, Tamil Nadu",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Tamil Nadu: 7 injured in firecracker shop blaze in Cuddalore",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOc3J5TjZfUDlqV1lPclpOQ1BUajBpRDVrM0RyZXVGQ3lMQTdUZktmcnZGRno5M1VNV0hwUzRwYUt2RkF1WmdrenNGWm90TjFQVWxhbmFZM0VCYk5oWXlQd3JVUkM1T2tuODE1SmhkRGdvRkxmdFBBVGpSS3ktZElwbW1jbnRleFVncmc1cU9sZmpDd3V3a2tmUGNTUVd5SmtJalNGcUZBZ3haTW9pQ2w1bkpEVEpjVGZ2R0Z6NFg2b3M?oc=5"
+      ],
+      "domains": [
+        "ANI News"
+      ],
+      "publishers": [
+        "Ani news"
+      ],
+      "lastSeen": "2026-11-08T22:25:42.583Z",
+      "isLocal": true
+    },
+    {
+      "id": "yt_2026_11_09_10_8_79_6",
+      "date": "2026-11-09",
+      "lat": 10.7725,
+      "lng": 79.6365,
+      "geoType": 4,
+      "place": "Tiruvarur, Tamil Nadu",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "youtube",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Thiruvarur Heavy Rain",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBGbjBCYmhRQ1VhNzdXd1V1MXdCN29LUUJ2VnpWeVJlYmExOWJibmtKdDZKN0ZHcHI2Z3RvbjBQQ2NKSlhjRFI4YzJWNUQ2ek1GSGNBYjRn?oc=5"
+      ],
+      "domains": [
+        "YouTube"
+      ],
+      "publishers": [
+        "YouTube Broadcast"
+      ],
+      "lastSeen": "2026-11-08T22:25:43.457Z",
+      "isLocal": true
+    },
+    {
+      "id": "yt_2026_11_09_11_3_77_7",
+      "date": "2026-11-09",
+      "lat": 11.341,
+      "lng": 77.7172,
+      "geoType": 4,
+      "place": "Erode, Tamil Nadu",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "youtube",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "வானில் வெடித்த வண்ண வண்ண பட்டாசுகள்! பருந்துப் பார்வையில் ஜொலித்த ஈரோடு!",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ibzFrakpFcDlDX1ZXLVlNUmNucUZIemF6b2JLMXMzc284aDJ5UjYzSjFNdVR4bGtQX3haZ0J3SEhCSWJiRWxiWUNSOE5xV2RQWDZpaklR?oc=5"
+      ],
+      "domains": [
+        "YouTube"
+      ],
+      "publishers": [
+        "YouTube Broadcast"
+      ],
+      "lastSeen": "2026-11-08T22:25:43.459Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_28_0_73_3",
+      "date": "2026-11-09",
+      "lat": 28.0229,
+      "lng": 73.3119,
+      "geoType": 4,
+      "place": "Bikaner, Rajasthan",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Political developments in Bikaner",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA1ZWdEWXZPTGJlcG5rMFNuMFJENWIxZ2dqcGVqMERGQXluNF9FcFlCdGc4N3htQi1VZmdWZEJuZWtXUHlDbVJaemtEamNvMmFpRklPdUFyQnJIejZJWWU5Z2pIWQ?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.552Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_26_2_73_0",
+      "date": "2026-11-09",
+      "lat": 26.2389,
+      "lng": 73.0243,
+      "geoType": 4,
+      "place": "Jodhpur, Rajasthan",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Regional news in Jodhpur",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1OMFZ4MHVGV2wtazZ2YmlqVl9JREY3bUlfTXI3YjlrYk5BLS1acFdVSnhEX0VfYVN4dGV1MHloYUlRRkhQVUlscnZTelVKTHZMRDU2LVRqdlgtdWpqZ19xSy1lTQ?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.555Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_25_2_75_9",
+      "date": "2026-11-09",
+      "lat": 25.2138,
+      "lng": 75.8648,
+      "geoType": 4,
+      "place": "Kota, Rajasthan",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Lok Sabha Speaker Om Birla extended his heartfelt birthday wishes to Chief Minister Telangana Revanth Reddy @ombirlakota | @revanth_anumula - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE93bURuSXhJY3BpQVp1UzMwLVE3WmFCMGg2czZOOTZBSjcyVUd6VldWTGpxcHQzNkZ2ZU9MSy1WRE9ETm9iNDR6SldneGRCanRSOFhqellSQ0lka1ZwYXNGaDBETQ?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.556Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_25_6_85_1",
+      "date": "2026-11-09",
+      "lat": 25.5941,
+      "lng": 85.1376,
+      "geoType": 4,
+      "place": "Patna, Bihar",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Bihar Chief Minister Samrat Choudhary today celebrated Diwali with residents of a Mahadalit settlement on Digha-Ashiana Road in Patna, interacted with local people, extended festive greetings and distributed gifts. Earlier, the Chief Minister offered prayers b - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBsTGRxMjNoeVdzaENWak51Y3V4SngxMDBudlZNREgtZTNRTzBRS3U2U0FxODBqSmNTSk96bEZCRzFfV3l5MTcyX0o0eVFINi1NSVJGZWFpQmdWZTdDbTMxc1pGaw?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.556Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_26_4_80_3",
+      "date": "2026-11-09",
+      "lat": 26.4499,
+      "lng": 80.3319,
+      "geoType": 4,
+      "place": "Kanpur, Uttar Pradesh",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Alert! Uttar Pradesh Chief Minister Yogi Adityanath took cognisance of the accident in Panki, Kanpur, and directed officials to immediately reach the spot and expedite relief operations. He expressed condolences to the bereaved families, instructed offici - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBJTWMwTGs2RnFqVGtpWTRaTFFEVXdIWGJuX05NR2xMdENwVDRYZ1JwQV9yV1BobkNTTUFZMVlDdzRDcHc4ZlQ1R2FTbGFyT19FZjU1TkZjci1qZl95bnc?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.556Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_32_7_74_9",
+      "date": "2026-11-09",
+      "lat": 32.7266,
+      "lng": 74.857,
+      "geoType": 4,
+      "place": "Jammu, Jammu & Kashmir",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "On the occasion of Diwali, numerous citizens and public delegations called on the Chief Minister at his residence in Jammu to convey warm festive greetings. Extending his heartfelt wishes in return, the Chief Minister interacted with the visitors and wished ever - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5PMVhaTWJ3X2owRXZSbmFFR3ZxckNjdVM4QkR4M1pfRzZxckpqZC1hMUdyLWpfQzNqQks5dkRyZjJSZFlGby1mWTZVOC1pVnFkUDlMRXYyYXFBZFR5b3FiVTJsUQ?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.556Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_23_0_87_9",
+      "date": "2026-11-09",
+      "lat": 22.9868,
+      "lng": 87.855,
+      "geoType": 4,
+      "place": "West Bengal",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "All India Weather warning for next 7 days (i) Under the influence of Low Pressure Area over southeast Jharkhand & neighbourhood, isolated heavy to very heavy rainfall likely over Gangetic West Bengal, north Odisha and Jharkhand during next 4 days with iso - X",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE94VWlLSlU2Sm5GdjIwcVg4S05vRWtQQzZFeXJFUUxEdmJMZHpfYjRjZ1htRkJ5OFJ2Wkt0V2hIb3ZZaUNBWF9aNjVLb3czZV9JMEV3WE5wUmxFZ1MtWmZuNWlkTTc3emRjeFV1cXln?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.557Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_26_8_83_4",
+      "date": "2026-11-09",
+      "lat": 26.7606,
+      "lng": 83.3732,
+      "geoType": 4,
+      "place": "Gorakhpur, Uttar Pradesh",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Political developments in Gorakhpur",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8xMDhkRUVIcmgwQmNlc3RrV1MtR2l3Tm55dWFxWnBSY2Nia1JaRWdVNzlhTlk0eVlsT2xNV3ZnbDB0emN1SHlnRjJET2JOWnlUeHI5OFNXMnVaaWVNMFpFMVB1aWUzUQ?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:45.559Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_27_2_78_0",
+      "date": "2026-11-09",
+      "lat": 27.1767,
+      "lng": 78.0081,
+      "geoType": 4,
+      "place": "Agra, Uttar Pradesh",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "India records nearly 1.95 lakh social media blocking orders in five months! Instagram, Facebook & YouTube face government directions. #IndiaNews #Instagram #SocialMedia #ContentBlocking #ViquarEDeccanNews BreakingNews",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQajluSFVwdVVNdXlpZkV3MXhpYzI0WkJCbGpIbXNIaEVObUthZnFrNnRhY3drVFFNM3R3WllSNWJsa1kzWHZwMXJPeWNzYWpqekFYQTBGVWstX1dmb211dWRMSmo4Yy1Zb3ZRQzUwMlBwbXdWRUl2SjZ1QnhxT0hjWnZqMFJLV1RkUFJiMlZVSFFEXy1uVzA1dGFrRi1kU0VHYWJtODhXdHRCNldsT2pCV3I3SE5wN1RlODhkRkNjaFZtNXNDZ05Uc3EyZGNNVDNvdVUwd19lbnZHT1cwYld2LTFR?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:46.026Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_28_4_77_3",
+      "date": "2026-11-09",
+      "lat": 28.4089,
+      "lng": 77.3178,
+      "geoType": 4,
+      "place": "Faridabad, Haryana",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "A Parking Dispute. A Dog Poop Argument. A Life Lost! 💔 Former Tech Mahindra Asia-Pacific regional head Paramjeet Dhankhar was allegedly shot dead by his neighbour in Faridabad after repeated disputes over car parking and a pet dog defecating in the sh",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA0N0F4ekpFbXVhT2tQeHU5VGsyZFRjV3dQdnV5LTkyWHFTZGwtUXMyZDVKUEhqWDJoWG5ZVlhkRFE0QloyRDRhLWkwa1RHUmtpc3c?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:46.028Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_30_1_79_0",
+      "date": "2026-11-09",
+      "lat": 30.0668,
+      "lng": 79.0193,
+      "geoType": 4,
+      "place": "Uttarakhand",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Major Fire Breaks Out on Mountainside Near Badrinath Dham in Uttarakhand A major fire has broken out on a mountainside near Badrinath Dham in Chamoli district of Uttarakhand. The cause of the fire remains unknown. However, a possible link to Diwali fire",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNeHRoZTdKYTFzZHlJZ0RLOGlBOElWRld1XzlpRFdXblNwU1lJUkNQSjQ4NWhxc1d5TERMcElmUjdFVFRoZW12U0hCSGNyQllEWXg5cjc3aktRM3I0eE83dnQ5X0xrSm5GV052S3l4b0t6a1d3ZkVHQmRCZ0NsQWlkX01ZLUlXd0tMaWJ6d09xcmw1NVI5VkZRN243bHIzWVZSd2h2NTEyOHJwamw5WjExenlkWUt5a1h5ZmNwR1V3Y0lRSkxQRUJPSEI2bFlBRmZXaXFtMl9vT09hTUhfTjlUa2wzbw?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:46.029Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_27_5_94_9",
+      "date": "2026-11-09",
+      "lat": 27.4728,
+      "lng": 94.912,
+      "geoType": 4,
+      "place": "Dibrugarh, Assam",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "Tinsukia_forever. Jatin Saroha · Breaking News. Massive Fire Breaks Out at Oil India’s Tengakhat Tank Farm in Dibrugarh; Several Injured #news #assam #breakingnews",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQaDlVUUkyV2FGYS1KbnpQWDhzcTRhNDNRRkNIOVl3Z0dsRUk0OXl2TVV3NUl6cWZuY21IWEdkVnBFR3d5MW5JWkM5b3ZCOE4tMmlXYXBpb1hEb1V4eWpybFRJbDI5RGVCaEFtLVc5YUNPWkhNVlVPYnQwVGluUWp0bHZySzNaMFo5aFE1RmVZMXk3cW5EeHJoTVE1dHdQXzVlOC1aNC1UWWs1RS0tUEFDbFpYT05ad2xwbXptVVEybUJVOUhwaUV0ZGJhSlE4ZmgtT09JS2ZtcGpYOThCUy1v?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:46.030Z",
+      "isLocal": true
+    },
+    {
+      "id": "soc_2026_11_09_34_2_77_6",
+      "date": "2026-11-09",
+      "lat": 34.1526,
+      "lng": 77.5771,
+      "geoType": 4,
+      "place": "Ladakh",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "social",
+      "platforms": [
+        "social"
+      ],
+      "title": "DD India. . Top Headlines: DD India Newshour 🔹National Party Takes Slim Lead in New Zealand Elections 🔹IAF Makes Historic Landing at High-Altitude Airstrip in Ladakh 🔹U.S. offers $20 million Iran uke reward 🔹PM Modi extends Diwali wishes #WATCH 🔗",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNSnZnMDJXQmZmMHRmWUhKM0xIbDFpdHVyc1ZzcmgxVllfb1d2UnpvWk1ld1VXa2loeDR1TThYcDZwcV9zNk5YeGZUeEM0eDhqSE9XTmFRNWxaWUtVcmZSWi12UFlELU5XbmZLMzFpOUYxVGFfbWp1RXNaZmI2aTZ5TnJSX3Z5d1dZTnIzckFLOG4wcUxNT2xDVUVpME55N1l4RFZabVppMzQ4TTJobnlNQlp2SnpmWHJGMHlfN0FyYUk4dVZRakM1ZVBCaXhRcGlnRW11N0VvMlpQZw?oc=5"
+      ],
+      "domains": [
+        "Social Wire"
+      ],
+      "publishers": [
+        "Social wire"
+      ],
+      "lastSeen": "2026-11-08T22:25:46.031Z",
+      "isLocal": true
+    },
+    {
+      "id": "live_2026_11_09_22_3_70_8",
+      "date": "2026-11-09",
+      "lat": 22.3039,
+      "lng": 70.8022,
+      "geoType": 4,
+      "place": "Rajkot, Gujarat",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "From Golden Temple to Rajkot, India sparkles with lights and fireworks on Diwali night",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQOEE5Y2F4UzBqaE8zalpGSWJScWZRUHRwZVd6T1NMb2RFOVN1NzB2MEpvTzJoZUNOaE1iZ1FFWUdZdEhIcUlrZVpkZ3IzUHpscjZvMmZ1cGVZWmdjUm9rdW1FbnJBdUpoQ0FyMDZmZTB3a0Q5dU5oUU5CYWZ5SGd2NEo4RUdFV29zWWFmYnBaSHd5dzdyOGdfdG5peFUxd3FvRnFmd2JZR0taYWNyRGY3ZDRlc2V0NGFNVTRNY2hfc2xRTHNBcUk0bDFIbmE2a2g0Q1FGMjB3RHVIc0p3UkxIUUQwTdIB6AFBVV95cUxPRk5EdmdFR2RBRTlLamRudHpZZmxWQmxQaWlYSDlCUVowWlJPejY4QUM4UGhNSGZaTU5kc05YRkgtV19iZ2VJeElSTTFCakQtd0RTcVJMNWRFbkxkYjFOZmdOTWN2WVNhZnUyT1VmWktJQ1VQMEZvcFlrOTZURnlqNFpNbjNSeV8wSmNqX1NYZmcwQ2VKU1BXZ0lQWjl1d2dzZndfbFpaUnpaRnVBa3F4eXR1RlRJZWZJZjNOS2xsdjJJTlFhcVRrbTBBa0NvZDR3aFAzX1dCNTZ4RVVkSWJRUTJHM1phV04z?oc=5"
+      ],
+      "domains": [
+        "Telegraph India"
+      ],
+      "publishers": [
+        "Telegraph india"
+      ],
+      "lastSeen": "2026-11-08T22:25:46.440Z",
+      "isLocal": true
+    },
+    {
+      "id": "live_2026_11_09_15_3_74_1",
+      "date": "2026-11-09",
+      "lat": 15.2993,
+      "lng": 74.124,
+      "geoType": 4,
+      "place": "Goa",
+      "articles": 1,
+      "outlets": 1,
+      "type": "010",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Video: Whale Washes Ashore In Goa's Mandrem Beach, Released Into Sea",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc2MwVXdQNGh1OWN1NmJ3LW95ZTktSmpobF9FU1JXSWQ1UWk1ZzV3eW5ER1ZkZHpVTThLU2Z6ZlJEWDNmRzlpMElvZmdTSXVVeFRadklwOGdfNkFRMkpQSk5BNDlLYjRpVGhxRTEyU3dWUTdkZ2NhcnlGZ2NiUUtlYndTTldBSHF2bjRpWVRBcmRFNzNJd25LWW9kNmk0anZPb0F1YjFFNUVkUdIBsgFBVV95cUxOTUtDeTFkOWotY2diZldHSWwxU3JhVW9nNlRucVhBTnNOYnp0dTFGWU93aWxwRks1SEpLSUlMV2VCWlRtdVNSOVJJaFZBRWNtNERGcVBDNkFSYjdJbmdsTTd6QWJnb1lsLUdJTkppQjdrbjNCZVZINGRxaFprVnVYYUtFb2dIbDFHQmFBNzBmYmtBWXBuZmREbURTME5wblgyQTB1VXAzWnF0bFhsekEwUEln?oc=5"
+      ],
+      "domains": [
+        "NDTV"
+      ],
+      "publishers": [
+        "NDTV"
+      ],
+      "lastSeen": "2026-11-08T22:25:46.443Z",
+      "isLocal": true
+    },
     {
       "id": "clim_2026_11_08_28_6_77_2",
       "date": "2026-11-08",
@@ -11,7 +1790,7 @@
       "lng": 77.209,
       "geoType": 4,
       "place": "Delhi",
-      "articles": 1403,
+      "articles": 1437,
       "outlets": 63,
       "type": "051",
       "movement": "climate",
@@ -50,53 +1829,7 @@
         "Business standard",
         "The indian express"
       ],
-      "lastSeen": "20261108174500",
-      "isLocal": false
-    },
-    {
-      "id": "2026_11_08_28_7_77_2",
-      "date": "2026-11-08",
-      "lat": 28.6667,
-      "lng": 77.2167,
-      "geoType": 4,
-      "place": "Delhi, Delhi",
-      "articles": 1022,
-      "outlets": 36,
-      "type": "051",
-      "movement": "climate",
-      "category": "climate",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "New updates delhi aqi today national capital wakes up to toxic air on diwali over 24 stations record aqi over 400 check imds weather forecast and more articleshow 135649701",
-      "urls": [
-        "https://www.tribuneindia.com/news/jalandhar/music-rangolis-festive-cheer-mark-diwali-across-city-schools-colleges/",
-        "https://www.tribuneindia.com/news/delhi/delhi-bjp-leaders-urge-residents-to-celebrate-eco-friendly-diwali/",
-        "https://www.dailyexcelsior.com/a-diya-for-the-defender-pms-diwali-sojourn-with-armed-forces/",
-        "https://indiankanoon.org/doc/139095831/",
-        "https://www.hindustantimes.com/cities/delhi-news/old-delhi-collapse-toll-jumps-to-6-owner-held-101794099302025.html"
-      ],
-      "domains": [
-        "tribuneindia.com",
-        "dailyexcelsior.com",
-        "indiankanoon.org",
-        "hindustantimes.com",
-        "fairobserver.com",
-        "moneycontrol.com",
-        "economictimes.indiatimes.com",
-        "aninews.in",
-        "prokerala.com",
-        "livemint.com"
-      ],
-      "publishers": [
-        "The Tribune",
-        "Daily Excelsior",
-        "Indiankanoon",
-        "Hindustan Times",
-        "Fairobserver"
-      ],
-      "lastSeen": "20261108183000",
+      "lastSeen": "20261108223000",
       "isLocal": false
     },
     {
@@ -106,9 +1839,9 @@
       "lng": 72.8258,
       "geoType": 4,
       "place": "Mumbai, Maharashtra",
-      "articles": 952,
-      "outlets": 30,
-      "type": "043",
+      "articles": 1148,
+      "outlets": 32,
+      "type": "051",
       "movement": "security",
       "category": "security",
       "platform": "web",
@@ -142,7 +1875,53 @@
         "Free Press Journal",
         "X (Twitter) Dispatch"
       ],
-      "lastSeen": "20261108174500",
+      "lastSeen": "20261108221500",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_28_7_77_2",
+      "date": "2026-11-08",
+      "lat": 28.6667,
+      "lng": 77.2167,
+      "geoType": 4,
+      "place": "Delhi, Delhi",
+      "articles": 1145,
+      "outlets": 40,
+      "type": "010",
+      "movement": "climate",
+      "category": "climate",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "New updates delhi aqi today national capital wakes up to toxic air on diwali over 24 stations record aqi over 400 check imds weather forecast and more articleshow 135649701",
+      "urls": [
+        "https://www.tribuneindia.com/news/jalandhar/music-rangolis-festive-cheer-mark-diwali-across-city-schools-colleges/",
+        "https://www.tribuneindia.com/news/delhi/delhi-bjp-leaders-urge-residents-to-celebrate-eco-friendly-diwali/",
+        "https://www.dailyexcelsior.com/a-diya-for-the-defender-pms-diwali-sojourn-with-armed-forces/",
+        "https://indiankanoon.org/doc/139095831/",
+        "https://www.hindustantimes.com/cities/delhi-news/old-delhi-collapse-toll-jumps-to-6-owner-held-101794099302025.html"
+      ],
+      "domains": [
+        "tribuneindia.com",
+        "dailyexcelsior.com",
+        "indiankanoon.org",
+        "hindustantimes.com",
+        "fairobserver.com",
+        "moneycontrol.com",
+        "economictimes.indiatimes.com",
+        "aninews.in",
+        "prokerala.com",
+        "livemint.com"
+      ],
+      "publishers": [
+        "The Tribune",
+        "Daily Excelsior",
+        "Indiankanoon",
+        "Hindustan Times",
+        "Fairobserver"
+      ],
+      "lastSeen": "20261108221500",
       "isLocal": false
     },
     {
@@ -201,8 +1980,8 @@
       "lng": 82.1998,
       "geoType": 4,
       "place": "Ayodhya, Uttar Pradesh",
-      "articles": 493,
-      "outlets": 27,
+      "articles": 503,
+      "outlets": 28,
       "type": "051",
       "movement": "politics",
       "category": "politics",
@@ -240,7 +2019,7 @@
         "NDTV",
         "The Tribune"
       ],
-      "lastSeen": "20261108154500",
+      "lastSeen": "20261108193000",
       "isLocal": false
     },
     {
@@ -250,8 +2029,8 @@
       "lng": 80.75,
       "geoType": 5,
       "place": "Uttar Pradesh, Uttar Pradesh",
-      "articles": 407,
-      "outlets": 21,
+      "articles": 443,
+      "outlets": 22,
       "type": "010",
       "movement": "politics",
       "category": "politics",
@@ -286,7 +2065,54 @@
         "Indiagazette",
         "Prokerala"
       ],
-      "lastSeen": "20261108183000",
+      "lastSeen": "20261108221500",
+      "isLocal": false
+    },
+    {
+      "id": "soc_2026_11_08_22_6_88_4",
+      "date": "2026-11-08",
+      "lat": 22.5726,
+      "lng": 88.3639,
+      "geoType": 4,
+      "place": "Kolkata, West Bengal",
+      "articles": 397,
+      "outlets": 21,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "social",
+        "web"
+      ],
+      "title": "Former West Bengal Cm Mamata Banerjee Accuses Bjp Of Hooliganism After Clash Outside Abhisheks Home",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMifEFVX3lxTE1qcG5FSUstMlo4b2JwVjIwNDBkUldUZW9QSmJNbFFRMURUWElCbGppYndrc3lUcUg5TTFSMWcxTy1zQTc5YUMxTWZybUVYa3RMVkhDVXN3UXo3bThteWhNamozd0hkYTRldTFJSFRDZm83UWN1d2VYMmtGTi0?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2QklEbExUcWtWUkdXRnhqaXlpX3V2NXl0VUZPNU8xYk14M2FEN05SZ2hRVHdMV29tR1MtNVVyOHpaRWtOVGZOUjdqcDFNYURiNmF3enJn?oc=5",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbkJuSVJROXpJOGtUeXQ0NnI2X2FNS2pZSUZfVGQ4bkFBbWs2LW1TVXdMZlVETEFBcWpFT3JOOXNEdmUyR2FvSGVmRjEyR2hxNEV2ZkdFRXB1OTVhVjNYa1hCVFd4eEtXeE5HLVB4MTJYSWl3X2RPT0ZTeEwwZ3ZPREZKTDVCWEVpOXVna2x1d1dHVHdkTHA0QmNyUlhHYjFPTm1UX1lWNlg4YlZaaERuQWdDamFvd1diZXBQOFZwQ25pdG15XzJFa1J3bHB4MjJSM05ZbEhjNnRyTEE?oc=5",
+        "https://indiankanoon.org/doc/196255375/",
+        "https://www.livemint.com/mint-lounge/ideas/sandip-roy-diwali-no-fireworks-kali-puja-11793982511667.html"
+      ],
+      "domains": [
+        "Social Wire",
+        "indiankanoon.org",
+        "livemint.com",
+        "orissapost.com",
+        "freepressjournal.in",
+        "indiagazette.com",
+        "aninews.in",
+        "sahilonline.org",
+        "timesofindia.indiatimes.com",
+        "hindustantimes.com"
+      ],
+      "publishers": [
+        "Social wire",
+        "Indiankanoon",
+        "Livemint",
+        "Orissapost",
+        "Free Press Journal"
+      ],
+      "lastSeen": "20261108203000",
       "isLocal": false
     },
     {
@@ -296,7 +2122,7 @@
       "lng": 78,
       "geoType": 5,
       "place": "State Of Tamil Nadu, Tamil Nadu",
-      "articles": 321,
+      "articles": 325,
       "outlets": 16,
       "type": "020",
       "movement": "politics",
@@ -332,54 +2158,7 @@
         "Prokerala",
         "Hindustan Times"
       ],
-      "lastSeen": "20261108181500",
-      "isLocal": false
-    },
-    {
-      "id": "soc_2026_11_08_22_6_88_4",
-      "date": "2026-11-08",
-      "lat": 22.5726,
-      "lng": 88.3639,
-      "geoType": 4,
-      "place": "Kolkata, West Bengal",
-      "articles": 320,
-      "outlets": 18,
-      "type": "043",
-      "movement": "politics",
-      "category": "politics",
-      "platform": "web",
-      "platforms": [
-        "social",
-        "web"
-      ],
-      "title": "Former West Bengal Cm Mamata Banerjee Accuses Bjp Of Hooliganism After Clash Outside Abhisheks Home",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMifEFVX3lxTE1qcG5FSUstMlo4b2JwVjIwNDBkUldUZW9QSmJNbFFRMURUWElCbGppYndrc3lUcUg5TTFSMWcxTy1zQTc5YUMxTWZybUVYa3RMVkhDVXN3UXo3bThteWhNamozd0hkYTRldTFJSFRDZm83UWN1d2VYMmtGTi0?oc=5",
-        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2QklEbExUcWtWUkdXRnhqaXlpX3V2NXl0VUZPNU8xYk14M2FEN05SZ2hRVHdMV29tR1MtNVVyOHpaRWtOVGZOUjdqcDFNYURiNmF3enJn?oc=5",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbkJuSVJROXpJOGtUeXQ0NnI2X2FNS2pZSUZfVGQ4bkFBbWs2LW1TVXdMZlVETEFBcWpFT3JOOXNEdmUyR2FvSGVmRjEyR2hxNEV2ZkdFRXB1OTVhVjNYa1hCVFd4eEtXeE5HLVB4MTJYSWl3X2RPT0ZTeEwwZ3ZPREZKTDVCWEVpOXVna2x1d1dHVHdkTHA0QmNyUlhHYjFPTm1UX1lWNlg4YlZaaERuQWdDamFvd1diZXBQOFZwQ25pdG15XzJFa1J3bHB4MjJSM05ZbEhjNnRyTEE?oc=5",
-        "https://indiankanoon.org/doc/196255375/",
-        "https://www.livemint.com/mint-lounge/ideas/sandip-roy-diwali-no-fireworks-kali-puja-11793982511667.html"
-      ],
-      "domains": [
-        "Social Wire",
-        "indiankanoon.org",
-        "livemint.com",
-        "orissapost.com",
-        "freepressjournal.in",
-        "indiagazette.com",
-        "aninews.in",
-        "sahilonline.org",
-        "timesofindia.indiatimes.com",
-        "hindustantimes.com"
-      ],
-      "publishers": [
-        "Social wire",
-        "Indiankanoon",
-        "Livemint",
-        "Orissapost",
-        "Free Press Journal"
-      ],
-      "lastSeen": "20261108181500",
+      "lastSeen": "20261108193000",
       "isLocal": false
     },
     {
@@ -389,7 +2168,7 @@
       "lng": 77.5946,
       "geoType": 4,
       "place": "Bengaluru, Karnataka",
-      "articles": 276,
+      "articles": 304,
       "outlets": 24,
       "type": "010",
       "movement": "security",
@@ -427,7 +2206,7 @@
         "Times of India",
         "Bangaloremirror"
       ],
-      "lastSeen": "20261108183000",
+      "lastSeen": "20261108201500",
       "isLocal": false
     },
     {
@@ -474,6 +2253,53 @@
         "Idrw"
       ],
       "lastSeen": "20261108173000",
+      "isLocal": false
+    },
+    {
+      "id": "soc_2026_11_08_18_5_73_9",
+      "date": "2026-11-08",
+      "lat": 18.5204,
+      "lng": 73.8567,
+      "geoType": 4,
+      "place": "Pune, Maharashtra",
+      "articles": 265,
+      "outlets": 11,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "social",
+        "wire"
+      ],
+      "title": "Pune pune crime 27 year old stabbed to death in kothrud on eve of diwali 2 arrested within hours",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNX1BiRWlkRE1yc0lsVjJkRFlqYThISEtSa2hBVWNraW11Q0FJSThPQ3h5YnNibFM3M041aDdGOTVGYmRFZzA5VDdPZnMxNUR2UDRXdVRTd0JjU0I0THBDTGZadlRHN1NobW16dDhMVXYtUFNSS1JlNjlBVThYMzZxZ3R4T0RuaHBSYnBmQldyYmNKVjZPQW85REFQX0RDdFBtbm1iSUFqZG9HTm4xVUgtcGVIc0xDWHo4NkNpcmtrN2MwSXpSeHNvMnN0NHBaU05jM3B5MGtobDRlSXdxcldaZjBxWmtQZ9IB6wFBVV95cUxORHNmeHdJU0JfZUctMVJQV091UkxGcDVkUFNDSndSX2t0bDk4cXNvbXB6TjBZRldqT2FWY2RtRU1ISEd2ZDl4UDU0R3hGcS1sQThKTkRfcHZGUWd5TVRfdnh2SGQ1Nm5BdEc2d0d3NlVXQ1JYR3pYXzJMNXEzNjc4WWQ2RVAtTDJ5RDJfWXBKTlFOQkk2bHdHcWVCMnpOOC12Q0dpbjcwWWFWQ2FxVHl6T1p3OWZqU1E2NmxrRi1DUWVhblA1SGFHczZPQkhDeGswS0dmMW1uazdndks3Y3ZEUDdqd2hSSmpGZlBr?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16VW9lTm1CeVRkNGRNMHRMTnR6d21HdW5JS25ZQTlpRXJGNGRkamtFdFpGYVhVMmxRTnM0cklmUnhUZUUyV3FfYzFlazVnenhrbHZ2WGVqbDlWWFdlOE9yRlhfWQ?oc=5",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNTHU4ZUNESHVZWmx6VE1VVm1fWmNkQzQ2MDN3eHdjUEpGN211dWJYVEg2SlpCaUp2SVRnVWNCTC1QbmktVkJCQ19kUXp2dmVyNXQtRlhqTjNpZy1DRDQ2Z0I3ZDVQWUZMcHBIVnFEazUwRHZacUJ3LVBkQ01LZzFsNDRNNWs4aHZRZUlmcFBITUgwZlBBT1hDVVczUE1lSlN6R1ZicjFCYWM0bG0wWGxxdzRTcnNiR25WOVBVc0RDdkpYbW1NZV9raDJ5QTdJNlh5QUVwdXllUWZ5VjQ?oc=5",
+        "https://scroll.in/latest/1096950/hc-quashes-maharashtra-order-to-acquire-tata-powers-land-for-ayurvedic-wellness-project",
+        "https://www.newsx.com/regionals/cybercriminals-change-pune-sweet-shops-contact-take-advance-payment-from-customers-for-orders-that-never-came-how-did-it-happen-290738/"
+      ],
+      "domains": [
+        "Social Wire",
+        "scroll.in",
+        "newsx.com",
+        "hindustantimes.com",
+        "news.webindia123.com",
+        "aninews.in",
+        "freepressjournal.in",
+        "bignewsnetwork.com",
+        "rediff.com",
+        "India Today"
+      ],
+      "publishers": [
+        "Social wire",
+        "Scroll.in",
+        "X (Twitter) Dispatch",
+        "Hindustan Times",
+        "News"
+      ],
+      "lastSeen": "20261108203000",
       "isLocal": false
     },
     {
@@ -612,50 +2438,49 @@
       "isLocal": false
     },
     {
-      "id": "soc_2026_11_08_18_5_73_9",
+      "id": "2026_11_08_18_0_79_5",
       "date": "2026-11-08",
-      "lat": 18.5204,
-      "lng": 73.8567,
+      "lat": 18,
+      "lng": 79.5,
       "geoType": 4,
-      "place": "Pune, Maharashtra",
+      "place": "Telangana, Andhra Pradesh",
       "articles": 206,
-      "outlets": 10,
-      "type": "010",
-      "movement": "security",
-      "category": "security",
+      "outlets": 11,
+      "type": "036",
+      "movement": "politics",
+      "category": "politics",
       "platform": "web",
       "platforms": [
-        "social",
-        "wire"
+        "web"
       ],
-      "title": "Pune pune crime 27 year old stabbed to death in kothrud on eve of diwali 2 arrested within hours",
+      "title": "Telangana Bjp Threatens Black Flag Protest During Rahul Gandhi S November 14 Visit",
       "urls": [
-        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNX1BiRWlkRE1yc0lsVjJkRFlqYThISEtSa2hBVWNraW11Q0FJSThPQ3h5YnNibFM3M041aDdGOTVGYmRFZzA5VDdPZnMxNUR2UDRXdVRTd0JjU0I0THBDTGZadlRHN1NobW16dDhMVXYtUFNSS1JlNjlBVThYMzZxZ3R4T0RuaHBSYnBmQldyYmNKVjZPQW85REFQX0RDdFBtbm1iSUFqZG9HTm4xVUgtcGVIc0xDWHo4NkNpcmtrN2MwSXpSeHNvMnN0NHBaU05jM3B5MGtobDRlSXdxcldaZjBxWmtQZ9IB6wFBVV95cUxORHNmeHdJU0JfZUctMVJQV091UkxGcDVkUFNDSndSX2t0bDk4cXNvbXB6TjBZRldqT2FWY2RtRU1ISEd2ZDl4UDU0R3hGcS1sQThKTkRfcHZGUWd5TVRfdnh2SGQ1Nm5BdEc2d0d3NlVXQ1JYR3pYXzJMNXEzNjc4WWQ2RVAtTDJ5RDJfWXBKTlFOQkk2bHdHcWVCMnpOOC12Q0dpbjcwWWFWQ2FxVHl6T1p3OWZqU1E2NmxrRi1DUWVhblA1SGFHczZPQkhDeGswS0dmMW1uazdndks3Y3ZEUDdqd2hSSmpGZlBr?oc=5",
-        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16VW9lTm1CeVRkNGRNMHRMTnR6d21HdW5JS25ZQTlpRXJGNGRkamtFdFpGYVhVMmxRTnM0cklmUnhUZUUyV3FfYzFlazVnenhrbHZ2WGVqbDlWWFdlOE9yRlhfWQ?oc=5",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNTHU4ZUNESHVZWmx6VE1VVm1fWmNkQzQ2MDN3eHdjUEpGN211dWJYVEg2SlpCaUp2SVRnVWNCTC1QbmktVkJCQ19kUXp2dmVyNXQtRlhqTjNpZy1DRDQ2Z0I3ZDVQWUZMcHBIVnFEazUwRHZacUJ3LVBkQ01LZzFsNDRNNWs4aHZRZUlmcFBITUgwZlBBT1hDVVczUE1lSlN6R1ZicjFCYWM0bG0wWGxxdzRTcnNiR25WOVBVc0RDdkpYbW1NZV9raDJ5QTdJNlh5QUVwdXllUWZ5VjQ?oc=5",
-        "https://scroll.in/latest/1096950/hc-quashes-maharashtra-order-to-acquire-tata-powers-land-for-ayurvedic-wellness-project",
-        "https://www.newsx.com/regionals/cybercriminals-change-pune-sweet-shops-contact-take-advance-payment-from-customers-for-orders-that-never-came-how-did-it-happen-290738/"
+        "http://www.bangladeshsun.com/news/279418987/rahul-gandhi-is-anarchist-supporter-and-protector-of-regime-change-mos-home-nityanand-rai",
+        "https://timesofindia.indiatimes.com/city/hyderabad/hyderabad-building-rules-20-ft-plot-width-restriction-sparks-protests-govt-eases-permissions-for-old-buildings/articleshow/135650215.cms",
+        "https://www.siasat.com/bandi-sajay-pays-fee-for-10959-students-in-karimnagar-3571490/",
+        "https://www.moneycontrol.com/news/politics/telangana-bjp-threatens-black-flag-protest-during-rahul-gandhi-s-november-14-visit-14074765.html",
+        "https://www.prokerala.com/news/articles/a1834305.html"
       ],
       "domains": [
-        "Social Wire",
-        "scroll.in",
-        "newsx.com",
-        "hindustantimes.com",
-        "news.webindia123.com",
+        "bangladeshsun.com",
+        "timesofindia.indiatimes.com",
+        "siasat.com",
+        "moneycontrol.com",
+        "prokerala.com",
         "aninews.in",
-        "freepressjournal.in",
-        "bignewsnetwork.com",
-        "rediff.com",
-        "India Today"
+        "deccanchronicle.com",
+        "greentechlead.com",
+        "orissapost.com",
+        "ianslive.in"
       ],
       "publishers": [
-        "Social wire",
-        "Scroll.in",
-        "X (Twitter) Dispatch",
-        "Hindustan Times",
-        "News"
+        "Bangladeshsun",
+        "Times of India",
+        "Siasat",
+        "Moneycontrol",
+        "Prokerala"
       ],
-      "lastSeen": "20261108114500",
+      "lastSeen": "20261108193000",
       "isLocal": false
     },
     {
@@ -705,48 +2530,46 @@
       "isLocal": false
     },
     {
-      "id": "2026_11_08_18_0_79_5",
+      "id": "2026_11_08_26_9_82_5",
       "date": "2026-11-08",
-      "lat": 18,
-      "lng": 79.5,
+      "lat": 26.9333,
+      "lng": 82.5,
       "geoType": 4,
-      "place": "Telangana, Andhra Pradesh",
-      "articles": 194,
-      "outlets": 9,
-      "type": "036",
-      "movement": "politics",
-      "category": "politics",
+      "place": "Karanpur, Uttar Pradesh",
+      "articles": 195,
+      "outlets": 7,
+      "type": "051",
+      "movement": "security",
+      "category": "security",
       "platform": "web",
       "platforms": [
         "web"
       ],
-      "title": "Telangana Bjp Threatens Black Flag Protest During Rahul Gandhi S November 14 Visit",
+      "title": "Diwali In Bastar Pm Modi Pays Tribute To Fallen Soldiers Joins Security Forces Dancing To Tribal Songs20261108141451",
       "urls": [
-        "http://www.bangladeshsun.com/news/279418987/rahul-gandhi-is-anarchist-supporter-and-protector-of-regime-change-mos-home-nityanand-rai",
-        "https://timesofindia.indiatimes.com/city/hyderabad/hyderabad-building-rules-20-ft-plot-width-restriction-sparks-protests-govt-eases-permissions-for-old-buildings/articleshow/135650215.cms",
-        "https://www.siasat.com/bandi-sajay-pays-fee-for-10959-students-in-karimnagar-3571490/",
-        "https://www.moneycontrol.com/news/politics/telangana-bjp-threatens-black-flag-protest-during-rahul-gandhi-s-november-14-visit-14074765.html",
-        "https://www.prokerala.com/news/articles/a1834305.html"
+        "https://www.prokerala.com/news/articles/a1834334.html",
+        "https://aninews.in/news/national/general-news/diwali-in-bastar-pm-modi-pays-tribute-to-fallen-soldiers-joins-security-forces-dancing-to-tribal-songs20261108141451/",
+        "https://www.siasat.com/pm-modi-says-dimagi-naxals-threaten-constitution-democracy-3571758/",
+        "https://www.hindustantimes.com/india-news/armed-maoists-eliminated-but-dimagi-naxals-remain-a-threat-pm-modi-101794131447721.html",
+        "https://www.moneycontrol.com/news/india/armed-naxals-eliminated-but-dimagi-naxals-remain-pm-modi-warns-of-ideological-threat-alleges-infiltration-into-political-parties-14074900.html"
       ],
       "domains": [
-        "bangladeshsun.com",
-        "timesofindia.indiatimes.com",
-        "siasat.com",
-        "moneycontrol.com",
         "prokerala.com",
         "aninews.in",
-        "deccanchronicle.com",
-        "greentechlead.com",
-        "orissapost.com"
+        "siasat.com",
+        "hindustantimes.com",
+        "moneycontrol.com",
+        "news.webindia123.com",
+        "kashmirreader.com"
       ],
       "publishers": [
-        "Bangladeshsun",
-        "Times of India",
+        "Prokerala",
+        "ANI News",
         "Siasat",
-        "Moneycontrol",
-        "Prokerala"
+        "Hindustan Times",
+        "Moneycontrol"
       ],
-      "lastSeen": "20261108150000",
+      "lastSeen": "20261108223000",
       "isLocal": false
     },
     {
@@ -845,45 +2668,50 @@
       "isLocal": false
     },
     {
-      "id": "2026_11_08_26_9_82_5",
+      "id": "soc_2026_11_08_17_4_78_5",
       "date": "2026-11-08",
-      "lat": 26.9333,
-      "lng": 82.5,
+      "lat": 17.385,
+      "lng": 78.4867,
       "geoType": 4,
-      "place": "Karanpur, Uttar Pradesh",
-      "articles": 185,
-      "outlets": 6,
-      "type": "051",
+      "place": "Hyderabad, Telangana",
+      "articles": 173,
+      "outlets": 13,
+      "type": "043",
       "movement": "security",
       "category": "security",
       "platform": "web",
       "platforms": [
-        "web"
+        "social",
+        "wire"
       ],
-      "title": "Diwali In Bastar Pm Modi Pays Tribute To Fallen Soldiers Joins Security Forces Dancing To Tribal Songs20261108141451",
+      "title": "Aniket Kothale Case Explained How A 26 Year Old Died In Sangli Police Custody Why The Nov 20 Verdict Matters",
       "urls": [
-        "https://www.prokerala.com/news/articles/a1834334.html",
-        "https://aninews.in/news/national/general-news/diwali-in-bastar-pm-modi-pays-tribute-to-fallen-soldiers-joins-security-forces-dancing-to-tribal-songs20261108141451/",
-        "https://www.siasat.com/pm-modi-says-dimagi-naxals-threaten-constitution-democracy-3571758/",
-        "https://www.hindustantimes.com/india-news/armed-maoists-eliminated-but-dimagi-naxals-remain-a-threat-pm-modi-101794131447721.html",
-        "https://www.moneycontrol.com/news/india/armed-naxals-eliminated-but-dimagi-naxals-remain-pm-modi-warns-of-ideological-threat-alleges-infiltration-into-political-parties-14074900.html"
+        "https://news.google.com/rss/articles/CBMifEFVX3lxTE80VTlXME9aeF9MRUY3d05Rd3ZDOEtoVGxJazliTmV6MTR1WklNN3BsSk9uNkJJMnZPclFlSTlfVTV0YlU0RFNNLVI1Ti15Nmd3OFQwY3BXVmt4aHk0Y1E5NUNGSmdpenp2VnV4Z3BSQWg0UTJOdjNfd040Sk8?oc=5",
+        "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbnRKMy1GbGFaRlNjeWUxMUF0dUk3OHNjNGRJNmpkekF1c3NPQ2pRdWZmY0t1dzVRSmxoTmtycGQtUjgyS3d3eUpKWXF5SkVSV0EwaXlWUEFGRm03NmxNekxjWGs2NFEydnUtd0R1X29NZlRsUGZ1TW85bW9CTDJ4SFhYdEgtbzFVWWQyeWM2aUpNQnlzS1FiUHB5Zkl6UGRPWnRROTcwWFdqN0V5N2hIOFNaYXVMeUNmUnBCSzdfM1F0REFCN3BXNkZKangwVk1EamVSUWwxRG8xSXIybUE?oc=5",
+        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTkV3eFoyYWllZ2hhQzV1bkxIUkdXV1BVU2t3dHlmM2tSTGdfdVdjUmNoVHgzMEtHNVYzNVpXWk45djZ5czNjUWZmTENKNVhHNENIR2pRZ01QNG9iTklpWFVNSjd2Y2ExQXF0X1ZLM0k0Y1FsU3NCc0VlQU42SXFBZDRvVHRveXZWQkdJLVAtOEhPU1lHNE1BSng3NXE3SU83VlJ2ekJQaHI4NUl6c3JGTmJRNmdmZ0tib0tiNmgwQ0FiR2R1MEJLdlBIWFRKajdqV2RUYWpjdFdkUQ?oc=5",
+        "https://www.telugupeople.com/news/news.asp?newsID=109257",
+        "https://timesofindia.indiatimes.com/city/hyderabad/from-mason-to-rs-670-crore-scam-how-hyderabad-man-duped-7400-investors/articleshow/135651465.cms"
       ],
       "domains": [
+        "Social Wire",
+        "telugupeople.com",
+        "timesofindia.indiatimes.com",
         "prokerala.com",
-        "aninews.in",
+        "idrw.org",
+        "freepressjournal.in",
+        "deccanchronicle.com",
         "siasat.com",
-        "hindustantimes.com",
-        "moneycontrol.com",
-        "news.webindia123.com"
+        "tv.rediff.com",
+        "dominicanrepublicpost.com"
       ],
       "publishers": [
+        "Social wire",
+        "Telugupeople",
+        "Times of India",
         "Prokerala",
-        "ANI News",
-        "Siasat",
-        "Hindustan Times",
-        "Moneycontrol"
+        "Idrw"
       ],
-      "lastSeen": "20261108164500",
+      "lastSeen": "20261108220000",
       "isLocal": false
     },
     {
@@ -1018,53 +2846,6 @@
       "isLocal": false
     },
     {
-      "id": "soc_2026_11_08_17_4_78_5",
-      "date": "2026-11-08",
-      "lat": 17.385,
-      "lng": 78.4867,
-      "geoType": 4,
-      "place": "Hyderabad, Telangana",
-      "articles": 153,
-      "outlets": 12,
-      "type": "040",
-      "movement": "security",
-      "category": "security",
-      "platform": "web",
-      "platforms": [
-        "social",
-        "wire"
-      ],
-      "title": "Aniket Kothale Case Explained How A 26 Year Old Died In Sangli Police Custody Why The Nov 20 Verdict Matters",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMifEFVX3lxTE80VTlXME9aeF9MRUY3d05Rd3ZDOEtoVGxJazliTmV6MTR1WklNN3BsSk9uNkJJMnZPclFlSTlfVTV0YlU0RFNNLVI1Ti15Nmd3OFQwY3BXVmt4aHk0Y1E5NUNGSmdpenp2VnV4Z3BSQWg0UTJOdjNfd040Sk8?oc=5",
-        "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbnRKMy1GbGFaRlNjeWUxMUF0dUk3OHNjNGRJNmpkekF1c3NPQ2pRdWZmY0t1dzVRSmxoTmtycGQtUjgyS3d3eUpKWXF5SkVSV0EwaXlWUEFGRm03NmxNekxjWGs2NFEydnUtd0R1X29NZlRsUGZ1TW85bW9CTDJ4SFhYdEgtbzFVWWQyeWM2aUpNQnlzS1FiUHB5Zkl6UGRPWnRROTcwWFdqN0V5N2hIOFNaYXVMeUNmUnBCSzdfM1F0REFCN3BXNkZKangwVk1EamVSUWwxRG8xSXIybUE?oc=5",
-        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTkV3eFoyYWllZ2hhQzV1bkxIUkdXV1BVU2t3dHlmM2tSTGdfdVdjUmNoVHgzMEtHNVYzNVpXWk45djZ5czNjUWZmTENKNVhHNENIR2pRZ01QNG9iTklpWFVNSjd2Y2ExQXF0X1ZLM0k0Y1FsU3NCc0VlQU42SXFBZDRvVHRveXZWQkdJLVAtOEhPU1lHNE1BSng3NXE3SU83VlJ2ekJQaHI4NUl6c3JGTmJRNmdmZ0tib0tiNmgwQ0FiR2R1MEJLdlBIWFRKajdqV2RUYWpjdFdkUQ?oc=5",
-        "https://www.telugupeople.com/news/news.asp?newsID=109257",
-        "https://timesofindia.indiatimes.com/city/hyderabad/from-mason-to-rs-670-crore-scam-how-hyderabad-man-duped-7400-investors/articleshow/135651465.cms"
-      ],
-      "domains": [
-        "Social Wire",
-        "telugupeople.com",
-        "timesofindia.indiatimes.com",
-        "prokerala.com",
-        "idrw.org",
-        "freepressjournal.in",
-        "deccanchronicle.com",
-        "siasat.com",
-        "tv.rediff.com",
-        "dominicanrepublicpost.com"
-      ],
-      "publishers": [
-        "Social wire",
-        "Telugupeople",
-        "Times of India",
-        "Prokerala",
-        "Idrw"
-      ],
-      "lastSeen": "20261108161500",
-      "isLocal": false
-    },
-    {
       "id": "2026_11_08_22_5_89_0",
       "date": "2026-11-08",
       "lat": 22.4667,
@@ -1180,6 +2961,52 @@
       "isLocal": false
     },
     {
+      "id": "2026_11_08_33_9_76_7",
+      "date": "2026-11-08",
+      "lat": 33.9167,
+      "lng": 76.6667,
+      "geoType": 5,
+      "place": "Kashmir, Jammu and Kashmir",
+      "articles": 118,
+      "outlets": 10,
+      "type": "051",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Pm Modi To Celebrate Diwali With Security Officials In Chhattisgarhs Bastar",
+      "urls": [
+        "https://www.orissapost.com/pm-modi-to-celebrate-diwali-with-security-officials-in-chhattisgarhs-bastar/",
+        "https://kashmirlife.net/jammu-kashmir-high-court-seeks-ut-wide-fire-station-audit-asks-govt-to-disclose-shortfall-460243/",
+        "https://timesofindia.indiatimes.com/education/news/jk-notifies-private-university-rules-reserves-25-seats-and-jobs-for-locals/articleshow/135654683.cms",
+        "https://www.prokerala.com/news/articles/a1834375.html",
+        "https://organiser.org/2026/11/08/425074/bharat/voice-for-gaza-silence-for-kashmiri-hindus-exposing-selective-humanity-aligarh-jamia-millia-universities/"
+      ],
+      "domains": [
+        "orissapost.com",
+        "kashmirlife.net",
+        "timesofindia.indiatimes.com",
+        "prokerala.com",
+        "organiser.org",
+        "morungexpress.com",
+        "news.webindia123.com",
+        "aninews.in",
+        "dailyexcelsior.com",
+        "kashmirreader.com"
+      ],
+      "publishers": [
+        "Orissapost",
+        "Kashmirlife",
+        "Times of India",
+        "Prokerala",
+        "Organiser"
+      ],
+      "lastSeen": "20261108223000",
+      "isLocal": false
+    },
+    {
       "id": "2026_11_08_21_0_72_9",
       "date": "2026-11-08",
       "lat": 20.9667,
@@ -1231,7 +3058,7 @@
       "lng": 77.4333,
       "geoType": 4,
       "place": "Ghaziabad, Uttar Pradesh",
-      "articles": 108,
+      "articles": 115,
       "outlets": 6,
       "type": "042",
       "movement": "security",
@@ -1263,7 +3090,7 @@
         "Times of India",
         "Rediff"
       ],
-      "lastSeen": "20261108153000",
+      "lastSeen": "20261108200000",
       "isLocal": false
     },
     {
@@ -1352,47 +3179,46 @@
       "isLocal": false
     },
     {
-      "id": "2026_11_08_33_9_76_7",
+      "id": "2026_11_08_25_3_83_0",
       "date": "2026-11-08",
-      "lat": 33.9167,
-      "lng": 76.6667,
-      "geoType": 5,
-      "place": "Kashmir, Jammu and Kashmir",
-      "articles": 97,
-      "outlets": 8,
-      "type": "051",
+      "lat": 25.3333,
+      "lng": 83,
+      "geoType": 4,
+      "place": "Varanasi, Uttar Pradesh",
+      "articles": 104,
+      "outlets": 7,
+      "type": "042",
       "movement": "politics",
       "category": "politics",
       "platform": "web",
       "platforms": [
         "web"
       ],
-      "title": "Pm Modi To Celebrate Diwali With Security Officials In Chhattisgarhs Bastar",
+      "title": "Modi Yogi Two Yogis Following Ideals Of Lord Ram Vice President Radhakrishnan",
       "urls": [
-        "https://www.orissapost.com/pm-modi-to-celebrate-diwali-with-security-officials-in-chhattisgarhs-bastar/",
-        "https://kashmirlife.net/jammu-kashmir-high-court-seeks-ut-wide-fire-station-audit-asks-govt-to-disclose-shortfall-460243/",
-        "https://timesofindia.indiatimes.com/education/news/jk-notifies-private-university-rules-reserves-25-seats-and-jobs-for-locals/articleshow/135654683.cms",
-        "https://www.prokerala.com/news/articles/a1834375.html",
-        "https://organiser.org/2026/11/08/425074/bharat/voice-for-gaza-silence-for-kashmiri-hindus-exposing-selective-humanity-aligarh-jamia-millia-universities/"
+        "https://www.dailyexcelsior.com/modi-yogi-two-yogis-following-ideals-of-lord-ram-vice-president-radhakrishnan/",
+        "https://www.tribuneindia.com/news/india/akhilesh-yadav-slams-bjp-after-part-of-bismillah-khans-house-razed/",
+        "https://avenuemail.in/ayodhyas-deepotsav-show-recreates-ramayana-scenes/",
+        "https://aninews.in/news/world/asia/indian-consulate-celebrates-diwali-with-tamil-community-in-shanghai20261108110914/",
+        "https://www.moneycontrol.com/entertainment/priyanka-chopra-stuns-in-red-ethnic-outfit-for-diwali-nick-jonas-and-daughter-malti-complement-her-in-traditional-attire-article-14074885.html"
       ],
       "domains": [
-        "orissapost.com",
-        "kashmirlife.net",
-        "timesofindia.indiatimes.com",
-        "prokerala.com",
-        "organiser.org",
-        "morungexpress.com",
-        "news.webindia123.com",
-        "aninews.in"
+        "dailyexcelsior.com",
+        "tribuneindia.com",
+        "avenuemail.in",
+        "aninews.in",
+        "moneycontrol.com",
+        "gulte.com",
+        "pakistantoday.com.pk"
       ],
       "publishers": [
-        "Orissapost",
-        "Kashmirlife",
-        "Times of India",
-        "Prokerala",
-        "Organiser"
+        "Daily Excelsior",
+        "The Tribune",
+        "Avenuemail",
+        "ANI News",
+        "Moneycontrol"
       ],
-      "lastSeen": "20261108174500",
+      "lastSeen": "20261108220000",
       "isLocal": false
     },
     {
@@ -1402,8 +3228,8 @@
       "lng": 80.9167,
       "geoType": 4,
       "place": "Lucknow, Uttar Pradesh",
-      "articles": 95,
-      "outlets": 6,
+      "articles": 101,
+      "outlets": 7,
       "type": "120",
       "movement": "climate",
       "category": "climate",
@@ -1425,7 +3251,8 @@
         "businesstoday.in",
         "mudgeeguardian.com.au",
         "timesofindia.indiatimes.com",
-        "hindustantimes.com"
+        "hindustantimes.com",
+        "rediff.com"
       ],
       "publishers": [
         "Moneycontrol",
@@ -1434,8 +3261,83 @@
         "Mudgeeguardian",
         "Times of India"
       ],
-      "lastSeen": "20261108161500",
+      "lastSeen": "20261108210000",
       "isLocal": false
+    },
+    {
+      "id": "2026_11_08_23_5_78_5",
+      "date": "2026-11-08",
+      "lat": 23.5,
+      "lng": 78.5,
+      "geoType": 5,
+      "place": "Madhya Pradesh, Madhya Pradesh",
+      "articles": 99,
+      "outlets": 10,
+      "type": "120",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "The bench and the bar sc quashes hc sex harassment panel strips justice gangele of duties in gwalior judge sex harassment case 20141218 5449",
+      "urls": [
+        "https://tv.rediff.com/news/beed-police-nab-historysheeter-with-countrymade-pistol/412422",
+        "https://www.newindianexpress.com/magazine/2026/Nov/08/the-rise-fall-and-rise-of-rahul-gandhi",
+        "https://news.webindia123.com/news/Articles/India/20261108/4517231.html",
+        "https://www.freepressjournal.in/bhopal/madhya-pradesh-political-punch-minister-in-a-bind-baba-draws-flak-locked-room-scenario-more",
+        "http://www.indiagazette.com/news/279419026/agniveer-extension-centre-calls-it-second-tour-of-duty-opposition-cries-election-gimmick-as-experts-term-it-win-win"
+      ],
+      "domains": [
+        "tv.rediff.com",
+        "newindianexpress.com",
+        "news.webindia123.com",
+        "freepressjournal.in",
+        "indiagazette.com",
+        "prokerala.com",
+        "indiankanoon.org",
+        "rediff.com",
+        "livelaw.in",
+        "legallyindia.com"
+      ],
+      "publishers": [
+        "Tv",
+        "Indian Express",
+        "News",
+        "Free Press Journal",
+        "Indiagazette"
+      ],
+      "lastSeen": "20261108221500",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_23_0_74_0",
+      "date": "2026-11-08",
+      "lat": 23,
+      "lng": 74,
+      "geoType": 4,
+      "place": "Panchmahal, Gujarat",
+      "articles": 92,
+      "outlets": 1,
+      "type": "035",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Six Sentenced To 7 Years In Jail For Parading Woman Naked In Panchmahal",
+      "urls": [
+        "https://timesofindia.indiatimes.com/city/vadodara/six-sentenced-to-7-years-in-jail-for-parading-woman-naked-in-panchmahal/articleshow/135662538.cms"
+      ],
+      "domains": [
+        "timesofindia.indiatimes.com"
+      ],
+      "publishers": [
+        "Times of India"
+      ],
+      "lastSeen": "20261108184500",
+      "isLocal": true
     },
     {
       "id": "2026_11_08_29_6_77_0",
@@ -1559,45 +3461,74 @@
       "isLocal": false
     },
     {
-      "id": "2026_11_08_25_3_83_0",
+      "id": "2026_11_08_24_3_74_0",
       "date": "2026-11-08",
-      "lat": 25.3333,
-      "lng": 83,
+      "lat": 24.2833,
+      "lng": 74.0167,
       "geoType": 4,
-      "place": "Varanasi, Uttar Pradesh",
-      "articles": 80,
-      "outlets": 6,
+      "place": "Gomati, India (general)",
+      "articles": 84,
+      "outlets": 1,
       "type": "042",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Tripura Cm Exchanges Diwali Greetings With Security Personnel20261109021407",
+      "urls": [
+        "https://aninews.in/news/national/general-news/tripura-cm-manik-saha-attends-grand-diwali-celebrations-at-matabari-temple20261108210314/",
+        "https://aninews.in/news/national/general-news/tripura-cm-exchanges-diwali-greetings-with-security-personnel20261109021407/"
+      ],
+      "domains": [
+        "aninews.in"
+      ],
+      "publishers": [
+        "ANI News"
+      ],
+      "lastSeen": "20261108220000",
+      "isLocal": true
+    },
+    {
+      "id": "2026_11_08_17_1_77_6",
+      "date": "2026-11-08",
+      "lat": 17.1,
+      "lng": 77.6333,
+      "geoType": 4,
+      "place": "Kodangal, Andhra Pradesh",
+      "articles": 80,
+      "outlets": 5,
+      "type": "051",
       "movement": "politics",
       "category": "politics",
       "platform": "web",
       "platforms": [
         "web"
       ],
-      "title": "Modi Yogi Two Yogis Following Ideals Of Lord Ram Vice President Radhakrishnan",
+      "title": "Ktr Drove Sister Out Of Home Cm Revanth Targets Brs Leader Over Womens Welfare",
       "urls": [
-        "https://www.dailyexcelsior.com/modi-yogi-two-yogis-following-ideals-of-lord-ram-vice-president-radhakrishnan/",
-        "https://www.tribuneindia.com/news/india/akhilesh-yadav-slams-bjp-after-part-of-bismillah-khans-house-razed/",
-        "https://avenuemail.in/ayodhyas-deepotsav-show-recreates-ramayana-scenes/",
-        "https://aninews.in/news/world/asia/indian-consulate-celebrates-diwali-with-tamil-community-in-shanghai20261108110914/",
-        "https://www.moneycontrol.com/entertainment/priyanka-chopra-stuns-in-red-ethnic-outfit-for-diwali-nick-jonas-and-daughter-malti-complement-her-in-traditional-attire-article-14074885.html"
+        "https://www.telugupeople.com/news/news.asp?newsID=109257",
+        "https://www.telugupeople.com/news/news.asp?newsId=109260",
+        "https://www.siasat.com/daylight-robbery-ktr-on-kodangal-lift-irrigation-scheme-tender-3571589/",
+        "https://www.newindianexpress.com/states/telangana/2026/Nov/08/ktr-drove-sister-out-of-home-cm-revanth-targets-brs-leader-over-womens-welfare",
+        "https://www.thehindu.com/news/national/telangana/revanth-celebrates-deepavali-with-indiramma-house-beneficiary/article71681093.ece"
       ],
       "domains": [
-        "dailyexcelsior.com",
-        "tribuneindia.com",
-        "avenuemail.in",
-        "aninews.in",
-        "moneycontrol.com",
-        "gulte.com"
+        "telugupeople.com",
+        "siasat.com",
+        "newindianexpress.com",
+        "thehindu.com",
+        "ianslive.in"
       ],
       "publishers": [
-        "Daily Excelsior",
-        "The Tribune",
-        "Avenuemail",
-        "ANI News",
-        "Moneycontrol"
+        "Telugupeople",
+        "Siasat",
+        "Indian Express",
+        "The Hindu",
+        "IANS Live"
       ],
-      "lastSeen": "20261108141500",
+      "lastSeen": "20261108191500",
       "isLocal": false
     },
     {
@@ -1724,87 +3655,85 @@
       "isLocal": false
     },
     {
-      "id": "2026_11_08_17_1_77_6",
+      "id": "2026_11_08_25_6_85_1",
       "date": "2026-11-08",
-      "lat": 17.1,
-      "lng": 77.6333,
+      "lat": 25.6,
+      "lng": 85.1167,
       "geoType": 4,
-      "place": "Kodangal, Andhra Pradesh",
-      "articles": 72,
-      "outlets": 4,
-      "type": "112",
+      "place": "Patna, Bihar",
+      "articles": 68,
+      "outlets": 7,
+      "type": "020",
       "movement": "politics",
       "category": "politics",
       "platform": "web",
       "platforms": [
-        "web"
+        "web",
+        "social"
       ],
-      "title": "Ktr Drove Sister Out Of Home Cm Revanth Targets Brs Leader Over Womens Welfare",
+      "title": "Bihar Chief Minister Samrat Choudhary today celebrated Diwali with residents of a Mahadalit settlement on Digha-Ashiana Road in Patna, interacted with local people, extended festive greetings and distributed gifts. Earlier, the Chief Minister offered prayers b - X",
       "urls": [
-        "https://www.telugupeople.com/news/news.asp?newsID=109257",
-        "https://www.telugupeople.com/news/news.asp?newsId=109260",
-        "https://www.siasat.com/daylight-robbery-ktr-on-kodangal-lift-irrigation-scheme-tender-3571589/",
-        "https://www.newindianexpress.com/states/telangana/2026/Nov/08/ktr-drove-sister-out-of-home-cm-revanth-targets-brs-leader-over-womens-welfare",
-        "https://www.thehindu.com/news/national/telangana/revanth-celebrates-deepavali-with-indiramma-house-beneficiary/article71681093.ece"
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBsTGRxMjNoeVdzaENWak51Y3V4SngxMDBudlZNREgtZTNRTzBRS3U2U0FxODBqSmNTSk96bEZCRzFfV3l5MTcyX0o0eVFINi1NSVJGZWFpQmdWZTdDbTMxc1pGaw?oc=5",
+        "https://indiankanoon.org/doc/134370852/",
+        "https://www.freepressjournal.in/india/aicc-member-seeks-inclusion-of-minority-corporation-loan-cases-in-lok-adalat-on-nov-12",
+        "https://timesofindia.indiatimes.com/india/from-india-to-pakistan-everyone-invited-anant-singh-on-daughters-grand-wedding/articleshow/135654969.cms",
+        "https://www.prokerala.com/news/articles/a1834444.html"
       ],
       "domains": [
-        "telugupeople.com",
-        "siasat.com",
+        "indiankanoon.org",
+        "freepressjournal.in",
+        "timesofindia.indiatimes.com",
+        "Social Wire",
+        "prokerala.com",
         "newindianexpress.com",
-        "thehindu.com"
+        "aninews.in"
       ],
       "publishers": [
-        "Telugupeople",
-        "Siasat",
-        "Indian Express",
-        "The Hindu"
+        "Indiankanoon",
+        "Free Press Journal",
+        "Times of India",
+        "Social wire",
+        "Prokerala"
       ],
-      "lastSeen": "20261108164500",
+      "lastSeen": "20261108200000",
       "isLocal": false
     },
     {
-      "id": "2026_11_08_23_5_78_5",
+      "id": "2026_11_08_25_4_81_8",
       "date": "2026-11-08",
-      "lat": 23.5,
-      "lng": 78.5,
-      "geoType": 5,
-      "place": "Madhya Pradesh, Madhya Pradesh",
-      "articles": 66,
-      "outlets": 9,
-      "type": "120",
-      "movement": "politics",
-      "category": "politics",
+      "lat": 25.45,
+      "lng": 81.85,
+      "geoType": 4,
+      "place": "Allahabad, Uttar Pradesh",
+      "articles": 67,
+      "outlets": 4,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
       "platform": "web",
       "platforms": [
         "web"
       ],
-      "title": "The Rise Fall And Rise Of Rahul Gandhi",
+      "title": "Shameful And Routine Why Allahabad Hc Is Furious With Up Police Over Missing Cctv In Illegal Detention Cases",
       "urls": [
-        "https://tv.rediff.com/news/beed-police-nab-historysheeter-with-countrymade-pistol/412422",
-        "https://www.newindianexpress.com/magazine/2026/Nov/08/the-rise-fall-and-rise-of-rahul-gandhi",
-        "https://news.webindia123.com/news/Articles/India/20261108/4517231.html",
-        "https://www.freepressjournal.in/bhopal/madhya-pradesh-political-punch-minister-in-a-bind-baba-draws-flak-locked-room-scenario-more",
-        "http://www.indiagazette.com/news/279419026/agniveer-extension-centre-calls-it-second-tour-of-duty-opposition-cries-election-gimmick-as-experts-term-it-win-win"
+        "https://indiankanoon.org/doc/177487887/",
+        "https://www.newsx.com/regionals/shameful-and-routine-why-allahabad-hc-is-furious-with-up-police-over-missing-cctv-in-illegal-detention-cases-290759/",
+        "https://www.geo.tv/latest/690285-hated-in-india-who-is-afraid-of-allama-iqbal-in-pakistan",
+        "https://www.radio.gov.pk/08-11-2026/nation-to-celebrate-149th-birth-anniversary-of-dr-allama-iqbal-on-monday"
       ],
       "domains": [
-        "tv.rediff.com",
-        "newindianexpress.com",
-        "news.webindia123.com",
-        "freepressjournal.in",
-        "indiagazette.com",
-        "prokerala.com",
         "indiankanoon.org",
-        "rediff.com",
-        "livelaw.in"
+        "newsx.com",
+        "geo.tv",
+        "radio.gov.pk"
       ],
       "publishers": [
-        "Tv",
-        "Indian Express",
-        "News",
-        "Free Press Journal",
-        "Indiagazette"
+        "Indiankanoon",
+        "X (Twitter) Dispatch",
+        "Geo",
+        "Radio"
       ],
-      "lastSeen": "20261108104500",
+      "lastSeen": "20261108190000",
       "isLocal": false
     },
     {
@@ -1847,6 +3776,39 @@
         "Moneycontrol"
       ],
       "lastSeen": "20261108164500",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_20_6_83_7",
+      "date": "2026-11-08",
+      "lat": 20.6167,
+      "lng": 83.7167,
+      "geoType": 4,
+      "place": "Udaipur, Orissa",
+      "articles": 62,
+      "outlets": 2,
+      "type": "043",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Tripura Cm Exchanges Diwali Greetings With Security Personnel20261109021407",
+      "urls": [
+        "https://www.prokerala.com/news/articles/a1834405.html",
+        "https://aninews.in/news/national/general-news/tripura-cm-manik-saha-attends-grand-diwali-celebrations-at-tripura-sundari-temple20261108191902/",
+        "https://aninews.in/news/national/general-news/tripura-cm-exchanges-diwali-greetings-with-security-personnel20261109021407/"
+      ],
+      "domains": [
+        "prokerala.com",
+        "aninews.in"
+      ],
+      "publishers": [
+        "Prokerala",
+        "ANI News"
+      ],
+      "lastSeen": "20261108220000",
       "isLocal": false
     },
     {
@@ -1935,46 +3897,42 @@
       "isLocal": false
     },
     {
-      "id": "2026_11_08_25_6_85_1",
+      "id": "2026_11_08_19_1_72_8",
       "date": "2026-11-08",
-      "lat": 25.6,
-      "lng": 85.1167,
+      "lat": 19.0667,
+      "lng": 72.8333,
       "geoType": 4,
-      "place": "Patna, Bihar",
-      "articles": 58,
-      "outlets": 6,
-      "type": "020",
-      "movement": "politics",
-      "category": "politics",
+      "place": "Bandra, Maharashtra",
+      "articles": 59,
+      "outlets": 4,
+      "type": "071",
+      "movement": "security",
+      "category": "security",
       "platform": "web",
       "platforms": [
-        "web",
-        "social"
+        "web"
       ],
-      "title": "Bihar Chief Minister Samrat Choudhary today celebrated Diwali with residents of a Mahadalit settlement on Digha-Ashiana Road in Patna, interacted with local people, extended festive greetings and distributed gifts. Earlier, the Chief Minister offered prayers b - X",
+      "title": "Mumbai Airport Crime 3 Arrested For Posing As Customs Dri Officers Targeting Dubai Based Passenger At Parking Lot",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBsTGRxMjNoeVdzaENWak51Y3V4SngxMDBudlZNREgtZTNRTzBRS3U2U0FxODBqSmNTSk96bEZCRzFfV3l5MTcyX0o0eVFINi1NSVJGZWFpQmdWZTdDbTMxc1pGaw?oc=5",
-        "https://indiankanoon.org/doc/134370852/",
-        "https://www.freepressjournal.in/india/aicc-member-seeks-inclusion-of-minority-corporation-loan-cases-in-lok-adalat-on-nov-12",
-        "https://timesofindia.indiatimes.com/india/from-india-to-pakistan-everyone-invited-anant-singh-on-daughters-grand-wedding/articleshow/135654969.cms",
-        "https://www.prokerala.com/news/articles/a1834444.html"
+        "https://www.khaama.com/shahrukh-khans-children-embarrassed-angered-by-his-stardom-1738/",
+        "https://www.freepressjournal.in/mumbai/mumbai-airport-crime-3-arrested-for-posing-as-customs-dri-officers-targeting-dubai-based-passenger-at-parking-lot",
+        "https://economictimes.indiatimes.com/news/new-updates/81-year-old-bengaluru-ca-helps-8-companies-send-rs-200-crore-overseas-seeks-protection-from-arrest-blames-staff-misused-his-digital-signature/articleshow/135655233.cms",
+        "https://www.freepressjournal.in/mumbai/mumbai-family-of-4-booked-for-allegedly-duping-15-investors-of-4869-lakh",
+        "https://www.newindianexpress.com/states/maharashtra/2026/Nov/08/bachchans-bulletproof-glass-cover-reflects-failure-of-modi-fadnavis-governments-congress"
       ],
       "domains": [
-        "indiankanoon.org",
+        "khaama.com",
         "freepressjournal.in",
-        "timesofindia.indiatimes.com",
-        "Social Wire",
-        "prokerala.com",
+        "economictimes.indiatimes.com",
         "newindianexpress.com"
       ],
       "publishers": [
-        "Indiankanoon",
+        "Khaama",
         "Free Press Journal",
-        "Times of India",
-        "Social wire",
-        "Prokerala"
+        "Economic Times",
+        "Indian Express"
       ],
-      "lastSeen": "20261108143000",
+      "lastSeen": "20261108221500",
       "isLocal": false
     },
     {
@@ -2124,6 +4082,51 @@
         "Mangalorean"
       ],
       "lastSeen": "20261108173000",
+      "isLocal": false
+    },
+    {
+      "id": "yt_2026_11_08_19_1_72_9",
+      "date": "2026-11-08",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "geoType": 4,
+      "place": "Mumbai, Maharashtra",
+      "articles": 55,
+      "outlets": 6,
+      "type": "040",
+      "movement": "economy",
+      "category": "economy",
+      "platform": "web",
+      "platforms": [
+        "youtube",
+        "web",
+        "social",
+        "wire"
+      ],
+      "title": "Diwali festivities light up mumbai; special stock market session today",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQcW12SzBwMmoxQl9nMVBYR1o0MEVuYlFYSTVRalgzdE5uWm5rdUlWUXdKeGtjSm9nbG1BTko4ejJNV3FtejVTLWpqcld6U0pxYVJKcnFUd051MWNpclNOYjJQdDZFMGtqV3R1d21JRHRNM3ZqaXRINUVjNU9YUDVWS0pFRlBvdFJkdWJTZGdrUmU0MGZiajc3WjhuQ2diaHN0M0dPc1JiTWRBa08xT0hrODAtdkFfR3NzeFRYd2plaTJVOWpHeXNBWFE2NmJULXpPdzhOeWFtNVRfbDZ0ZW5r0gHmAUFVX3lxTE9FRWJmRUx1cm8wVm9fbnBxblBKZy03X3Jxc2xCYmhKUGFCT0ozWUp0aWRZbm1pSWtnY2RyT01XMEdaQ0dOc19GV29kdkYtNURhRXFoR1UyeGhwUG9zeHhtUkY1MDJ6SzF1MGxYMTZGZlZrOGktN255dXV4MTBtTU83T2MwS29wYi00ZTcyUnJ3ejlzU3lWb2RLOGJ3Rm1TMDZ5dUNQejZ1Y005MHZoRjBZNTJad2ZRaDN1VGpUYVJSeFNHdUhfQW1vOS10UENQT1ptRzhkTGdSeDVEWEZQb0R5N1Vac3Bn?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ic0F6eEVuR0RpdUZkWGY1bTBxMUo3Ung3TXFxV240UWowbXNRWWJtdTFDeldDUXJtUVVSWjVrZ2JOUkhuQ21xTktBdWRTbnRNazlCOG9R?oc=5",
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5fWW5qS094RVZUVjQ3Zl94cGlNTklvakNsYXc4Z3B1dV81Uk55Z3RJelBYTnVtTDA4RGRvSS1JeHVsV0dpa2lfRldEd0Itd20wa2xhUGNTTEl4bDFsVzhONzFOUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoU2d2UGdaYmFRc1g0U0pveXotRXBxYUJoemtJbnJ0Z2lJN0hKX0hXRFdReEJhTHh1a1FnRE8xaWpwVFB6MkJEVWpZaHhsYXVOaXRlUTBn?oc=5",
+        "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9mMm5qcGFqWURTVHllZjFSYXU3LVdSYzNzTXVHZk9MdFR1a21zOGt6c1h1SVdDOER5aUlGazFEbUhMM3A1VUc0OXVoMFIzd3piOXQzSA?oc=5"
+      ],
+      "domains": [
+        "YouTube",
+        "BCCI",
+        "Social Wire",
+        "indiankanoon.org",
+        "The Hindu",
+        "timesofindia.indiatimes.com"
+      ],
+      "publishers": [
+        "YouTube Broadcast",
+        "Bcci",
+        "Social wire",
+        "Indiankanoon",
+        "The hindu"
+      ],
+      "lastSeen": "20261108200000",
       "isLocal": false
     },
     {
@@ -2298,38 +4301,6 @@
       "isLocal": false
     },
     {
-      "id": "2026_11_08_20_6_83_7",
-      "date": "2026-11-08",
-      "lat": 20.6167,
-      "lng": 83.7167,
-      "geoType": 4,
-      "place": "Udaipur, Orissa",
-      "articles": 50,
-      "outlets": 2,
-      "type": "043",
-      "movement": "politics",
-      "category": "politics",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Tripura Cm Manik Saha Attends Grand Diwali Celebrations At Tripura Sundari Temple20261108191902",
-      "urls": [
-        "https://www.prokerala.com/news/articles/a1834405.html",
-        "https://aninews.in/news/national/general-news/tripura-cm-manik-saha-attends-grand-diwali-celebrations-at-tripura-sundari-temple20261108191902/"
-      ],
-      "domains": [
-        "prokerala.com",
-        "aninews.in"
-      ],
-      "publishers": [
-        "Prokerala",
-        "ANI News"
-      ],
-      "lastSeen": "20261108153000",
-      "isLocal": false
-    },
-    {
       "id": "2026_11_08_17_7_83_3",
       "date": "2026-11-08",
       "lat": 17.7,
@@ -2425,6 +4396,41 @@
         "Starofmysore"
       ],
       "lastSeen": "20261108161500",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_9_4_77_8",
+      "date": "2026-11-08",
+      "lat": 9.45,
+      "lng": 77.8167,
+      "geoType": 4,
+      "place": "Sivakasi, Tamil Nadu",
+      "articles": 47,
+      "outlets": 3,
+      "type": "010",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Gunpowder Diyas And The Supreme Courts Damp Match",
+      "urls": [
+        "https://www.businesstoday.in/india/story/diwali-2026-from-royal-paintings-to-prayer-rooms-how-raja-ravi-varma-brought-goddess-lakshmi-into-millions-of-indian-homes-566033-2026-11-08",
+        "https://www.freepressjournal.in/lifestyle/diwali-2026-can-green-crackers-balance-clean-air-and-sivakasis-livelihoods",
+        "https://www.barandbench.com/columns/litigation-columns/gunpowder-diyas-and-the-supreme-courts-damp-match"
+      ],
+      "domains": [
+        "businesstoday.in",
+        "freepressjournal.in",
+        "barandbench.com"
+      ],
+      "publishers": [
+        "Businesstoday",
+        "Free Press Journal",
+        "Barandbench"
+      ],
+      "lastSeen": "20261108184500",
       "isLocal": false
     },
     {
@@ -2554,41 +4560,6 @@
         "Indiankanoon"
       ],
       "lastSeen": "20261108080000",
-      "isLocal": false
-    },
-    {
-      "id": "2026_11_08_19_1_72_8",
-      "date": "2026-11-08",
-      "lat": 19.0667,
-      "lng": 72.8333,
-      "geoType": 4,
-      "place": "Bandra, Maharashtra",
-      "articles": 42,
-      "outlets": 3,
-      "type": "100",
-      "movement": "security",
-      "category": "security",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Mumbai Airport Crime 3 Arrested For Posing As Customs Dri Officers Targeting Dubai Based Passenger At Parking Lot",
-      "urls": [
-        "https://www.khaama.com/shahrukh-khans-children-embarrassed-angered-by-his-stardom-1738/",
-        "https://www.freepressjournal.in/mumbai/mumbai-airport-crime-3-arrested-for-posing-as-customs-dri-officers-targeting-dubai-based-passenger-at-parking-lot",
-        "https://economictimes.indiatimes.com/news/new-updates/81-year-old-bengaluru-ca-helps-8-companies-send-rs-200-crore-overseas-seeks-protection-from-arrest-blames-staff-misused-his-digital-signature/articleshow/135655233.cms"
-      ],
-      "domains": [
-        "khaama.com",
-        "freepressjournal.in",
-        "economictimes.indiatimes.com"
-      ],
-      "publishers": [
-        "Khaama",
-        "Free Press Journal",
-        "Economic Times"
-      ],
-      "lastSeen": "20261108110000",
       "isLocal": false
     },
     {
@@ -2761,50 +4732,6 @@
       "isLocal": true
     },
     {
-      "id": "yt_2026_11_08_19_1_72_9",
-      "date": "2026-11-08",
-      "lat": 19.076,
-      "lng": 72.8777,
-      "geoType": 4,
-      "place": "Mumbai, Maharashtra",
-      "articles": 40,
-      "outlets": 5,
-      "type": "040",
-      "movement": "economy",
-      "category": "economy",
-      "platform": "web",
-      "platforms": [
-        "youtube",
-        "web",
-        "social",
-        "wire"
-      ],
-      "title": "Diwali festivities light up mumbai; special stock market session today",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQcW12SzBwMmoxQl9nMVBYR1o0MEVuYlFYSTVRalgzdE5uWm5rdUlWUXdKeGtjSm9nbG1BTko4ejJNV3FtejVTLWpqcld6U0pxYVJKcnFUd051MWNpclNOYjJQdDZFMGtqV3R1d21JRHRNM3ZqaXRINUVjNU9YUDVWS0pFRlBvdFJkdWJTZGdrUmU0MGZiajc3WjhuQ2diaHN0M0dPc1JiTWRBa08xT0hrODAtdkFfR3NzeFRYd2plaTJVOWpHeXNBWFE2NmJULXpPdzhOeWFtNVRfbDZ0ZW5r0gHmAUFVX3lxTE9FRWJmRUx1cm8wVm9fbnBxblBKZy03X3Jxc2xCYmhKUGFCT0ozWUp0aWRZbm1pSWtnY2RyT01XMEdaQ0dOc19GV29kdkYtNURhRXFoR1UyeGhwUG9zeHhtUkY1MDJ6SzF1MGxYMTZGZlZrOGktN255dXV4MTBtTU83T2MwS29wYi00ZTcyUnJ3ejlzU3lWb2RLOGJ3Rm1TMDZ5dUNQejZ1Y005MHZoRjBZNTJad2ZRaDN1VGpUYVJSeFNHdUhfQW1vOS10UENQT1ptRzhkTGdSeDVEWEZQb0R5N1Vac3Bn?oc=5",
-        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ic0F6eEVuR0RpdUZkWGY1bTBxMUo3Ung3TXFxV240UWowbXNRWWJtdTFDeldDUXJtUVVSWjVrZ2JOUkhuQ21xTktBdWRTbnRNazlCOG9R?oc=5",
-        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5fWW5qS094RVZUVjQ3Zl94cGlNTklvakNsYXc4Z3B1dV81Uk55Z3RJelBYTnVtTDA4RGRvSS1JeHVsV0dpa2lfRldEd0Itd20wa2xhUGNTTEl4bDFsVzhONzFOUQ?oc=5",
-        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoU2d2UGdaYmFRc1g0U0pveXotRXBxYUJoemtJbnJ0Z2lJN0hKX0hXRFdReEJhTHh1a1FnRE8xaWpwVFB6MkJEVWpZaHhsYXVOaXRlUTBn?oc=5",
-        "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9mMm5qcGFqWURTVHllZjFSYXU3LVdSYzNzTXVHZk9MdFR1a21zOGt6c1h1SVdDOER5aUlGazFEbUhMM3A1VUc0OXVoMFIzd3piOXQzSA?oc=5"
-      ],
-      "domains": [
-        "YouTube",
-        "BCCI",
-        "Social Wire",
-        "indiankanoon.org",
-        "The Hindu"
-      ],
-      "publishers": [
-        "YouTube Broadcast",
-        "Bcci",
-        "Social wire",
-        "Indiankanoon",
-        "The hindu"
-      ],
-      "lastSeen": "20261108004500",
-      "isLocal": false
-    },
-    {
       "id": "2026_11_08_27_4_83_1",
       "date": "2026-11-08",
       "lat": 27.45,
@@ -2838,38 +4765,71 @@
       "isLocal": false
     },
     {
-      "id": "2026_11_08_25_4_81_8",
+      "id": "2026_11_08_23_1_72_7",
       "date": "2026-11-08",
-      "lat": 25.45,
-      "lng": 81.85,
+      "lat": 23.0833,
+      "lng": 72.6667,
       "geoType": 4,
-      "place": "Allahabad, Uttar Pradesh",
-      "articles": 37,
-      "outlets": 3,
-      "type": "010",
-      "movement": "security",
-      "category": "security",
+      "place": "Naroda, Gujarat",
+      "articles": 39,
+      "outlets": 2,
+      "type": "130",
+      "movement": "politics",
+      "category": "politics",
       "platform": "web",
       "platforms": [
         "web"
       ],
-      "title": "Shameful And Routine Why Allahabad Hc Is Furious With Up Police Over Missing Cctv In Illegal Detention Cases",
+      "title": "Bachchans Bulletproof Glass Cover Reflects Failure Of Modi Fadnavis Governments Congress",
       "urls": [
-        "https://indiankanoon.org/doc/177487887/",
-        "https://www.newsx.com/regionals/shameful-and-routine-why-allahabad-hc-is-furious-with-up-police-over-missing-cctv-in-illegal-detention-cases-290759/",
-        "https://www.geo.tv/latest/690285-hated-in-india-who-is-afraid-of-allama-iqbal-in-pakistan"
+        "https://timesofindia.indiatimes.com/city/ahmedabad/dinner-dispute-turns-fatal-wife-stabs-ex-army-man-to-death-in-ahmedabad/articleshow/135645081.cms",
+        "https://timesofindia.indiatimes.com/city/ahmedabad/wife-stabs-ex-army-man-to-death-how-a-question-about-vegetable-cooked-for-dinner-escalated-into-murder-in-ahmedabad/articleshow/135649521.cms",
+        "https://www.newindianexpress.com/states/maharashtra/2026/Nov/08/bachchans-bulletproof-glass-cover-reflects-failure-of-modi-fadnavis-governments-congress"
       ],
       "domains": [
-        "indiankanoon.org",
-        "newsx.com",
-        "geo.tv"
+        "timesofindia.indiatimes.com",
+        "newindianexpress.com"
       ],
       "publishers": [
-        "Indiankanoon",
-        "X (Twitter) Dispatch",
-        "Geo"
+        "Times of India",
+        "Indian Express"
       ],
-      "lastSeen": "20261108183000",
+      "lastSeen": "20261108221500",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_26_2_91_7",
+      "date": "2026-11-08",
+      "lat": 26.1833,
+      "lng": 91.7333,
+      "geoType": 4,
+      "place": "Guwahati, Assam",
+      "articles": 38,
+      "outlets": 3,
+      "type": "112",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Only For Selling Books Bjps Kishore Upadhyay On Sonia Gandhis Emergency A Mistake Remark16020261108192122",
+      "urls": [
+        "https://www.prokerala.com/news/articles/a1834405.html",
+        "https://aninews.in/news/national/general-news/only-for-selling-books-bjps-kishore-upadhyay-on-sonia-gandhis-emergency-a-mistake-remark16020261108192122/",
+        "https://timesofindia.indiatimes.com/city/guwahati/guwahati-schools-shine-at-literary-fest/articleshow/135664313.cms"
+      ],
+      "domains": [
+        "prokerala.com",
+        "aninews.in",
+        "timesofindia.indiatimes.com"
+      ],
+      "publishers": [
+        "Prokerala",
+        "ANI News",
+        "Times of India"
+      ],
+      "lastSeen": "20261108190000",
       "isLocal": false
     },
     {
@@ -3008,36 +4968,6 @@
         "Siasat"
       ],
       "lastSeen": "20261108173000",
-      "isLocal": true
-    },
-    {
-      "id": "2026_11_08_23_1_72_7",
-      "date": "2026-11-08",
-      "lat": 23.0833,
-      "lng": 72.6667,
-      "geoType": 4,
-      "place": "Naroda, Gujarat",
-      "articles": 35,
-      "outlets": 1,
-      "type": "100",
-      "movement": "security",
-      "category": "security",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Dinner Dispute Turns Fatal Wife Stabs Ex Army Man To Death In Ahmedabad",
-      "urls": [
-        "https://timesofindia.indiatimes.com/city/ahmedabad/dinner-dispute-turns-fatal-wife-stabs-ex-army-man-to-death-in-ahmedabad/articleshow/135645081.cms",
-        "https://timesofindia.indiatimes.com/city/ahmedabad/wife-stabs-ex-army-man-to-death-how-a-question-about-vegetable-cooked-for-dinner-escalated-into-murder-in-ahmedabad/articleshow/135649521.cms"
-      ],
-      "domains": [
-        "timesofindia.indiatimes.com"
-      ],
-      "publishers": [
-        "Times of India"
-      ],
-      "lastSeen": "20261108031500",
       "isLocal": true
     },
     {
@@ -3233,6 +5163,47 @@
         "Livelaw"
       ],
       "lastSeen": "20261108104500",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_22_7_75_8",
+      "date": "2026-11-08",
+      "lat": 22.7167,
+      "lng": 75.8333,
+      "geoType": 4,
+      "place": "Indore, Madhya Pradesh",
+      "articles": 32,
+      "outlets": 5,
+      "type": "141",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Mp High Court Holds Special Hearing On Diwali Allows 14 Year Old Rape Survivor To Terminate 26 Week Pregnancy",
+      "urls": [
+        "https://tv.rediff.com/news/beed-police-nab-historysheeter-with-countrymade-pistol/412422",
+        "https://www.freepressjournal.in/pune/aniket-kothale-case-explained-how-a-26-year-old-died-in-sangli-police-custody-why-the-nov-20-verdict-matters",
+        "https://www.freepressjournal.in/bhopal/mp-high-court-holds-special-hearing-on-diwali-allows-14-year-old-rape-survivor-to-terminate-26-week-pregnancy",
+        "https://greentechlead.com/electric-vehicle/electric-bus-charging-infrastructure-in-india-%E2%82%B957613-crore-pm-ebus-sewa-scheme-drives-depot-charger-and-grid-investment-56430",
+        "https://organiser.org/2026/11/08/425022/bharat/rss-abkm-2026-when-the-righteous-stay-silent-anarchic-forces-grow-louder-dattatreya-hosabale/"
+      ],
+      "domains": [
+        "tv.rediff.com",
+        "freepressjournal.in",
+        "greentechlead.com",
+        "organiser.org",
+        "rediff.com"
+      ],
+      "publishers": [
+        "Tv",
+        "Free Press Journal",
+        "Greentechlead",
+        "Organiser",
+        "Rediff"
+      ],
+      "lastSeen": "20261108210000",
       "isLocal": false
     },
     {
@@ -3502,45 +5473,6 @@
       "isLocal": true
     },
     {
-      "id": "2026_11_08_22_7_75_8",
-      "date": "2026-11-08",
-      "lat": 22.7167,
-      "lng": 75.8333,
-      "geoType": 4,
-      "place": "Indore, Madhya Pradesh",
-      "articles": 29,
-      "outlets": 4,
-      "type": "141",
-      "movement": "politics",
-      "category": "politics",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Mp High Court Holds Special Hearing On Diwali Allows 14 Year Old Rape Survivor To Terminate 26 Week Pregnancy",
-      "urls": [
-        "https://tv.rediff.com/news/beed-police-nab-historysheeter-with-countrymade-pistol/412422",
-        "https://www.freepressjournal.in/pune/aniket-kothale-case-explained-how-a-26-year-old-died-in-sangli-police-custody-why-the-nov-20-verdict-matters",
-        "https://www.freepressjournal.in/bhopal/mp-high-court-holds-special-hearing-on-diwali-allows-14-year-old-rape-survivor-to-terminate-26-week-pregnancy",
-        "https://greentechlead.com/electric-vehicle/electric-bus-charging-infrastructure-in-india-%E2%82%B957613-crore-pm-ebus-sewa-scheme-drives-depot-charger-and-grid-investment-56430",
-        "https://organiser.org/2026/11/08/425022/bharat/rss-abkm-2026-when-the-righteous-stay-silent-anarchic-forces-grow-louder-dattatreya-hosabale/"
-      ],
-      "domains": [
-        "tv.rediff.com",
-        "freepressjournal.in",
-        "greentechlead.com",
-        "organiser.org"
-      ],
-      "publishers": [
-        "Tv",
-        "Free Press Journal",
-        "Greentechlead",
-        "Organiser"
-      ],
-      "lastSeen": "20261108173000",
-      "isLocal": false
-    },
-    {
       "id": "2026_11_08_26_8_83_4",
       "date": "2026-11-08",
       "lat": 26.755,
@@ -3570,38 +5502,6 @@
         "Times of India"
       ],
       "lastSeen": "20261108161500",
-      "isLocal": false
-    },
-    {
-      "id": "2026_11_08_9_4_77_8",
-      "date": "2026-11-08",
-      "lat": 9.45,
-      "lng": 77.8167,
-      "geoType": 4,
-      "place": "Sivakasi, Tamil Nadu",
-      "articles": 28,
-      "outlets": 2,
-      "type": "010",
-      "movement": "climate",
-      "category": "climate",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Diwali 2026 Can Green Crackers Balance Clean Air And Sivakasis Livelihoods",
-      "urls": [
-        "https://www.businesstoday.in/india/story/diwali-2026-from-royal-paintings-to-prayer-rooms-how-raja-ravi-varma-brought-goddess-lakshmi-into-millions-of-indian-homes-566033-2026-11-08",
-        "https://www.freepressjournal.in/lifestyle/diwali-2026-can-green-crackers-balance-clean-air-and-sivakasis-livelihoods"
-      ],
-      "domains": [
-        "businesstoday.in",
-        "freepressjournal.in"
-      ],
-      "publishers": [
-        "Businesstoday",
-        "Free Press Journal"
-      ],
-      "lastSeen": "20261108050000",
       "isLocal": false
     },
     {
@@ -4345,6 +6245,35 @@
       "isLocal": true
     },
     {
+      "id": "2026_11_08_24_4_81_9",
+      "date": "2026-11-08",
+      "lat": 24.4167,
+      "lng": 81.8833,
+      "geoType": 4,
+      "place": "Sidhi, Madhya Pradesh",
+      "articles": 20,
+      "outlets": 1,
+      "type": "090",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "The bench and the bar sc quashes hc sex harassment panel strips justice gangele of duties in gwalior judge sex harassment case 20141218 5449",
+      "urls": [
+        "https://www.legallyindia.com/the-bench-and-the-bar/sc-quashes-hc-sex-harassment-panel-strips-justice-gangele-of-duties-in-gwalior-judge-sex-harassment-case-20141218-5449/"
+      ],
+      "domains": [
+        "legallyindia.com"
+      ],
+      "publishers": [
+        "Legallyindia"
+      ],
+      "lastSeen": "20261108221500",
+      "isLocal": true
+    },
+    {
       "id": "2026_11_08_19_4_73_3",
       "date": "2026-11-08",
       "lat": 19.45,
@@ -4575,38 +6504,6 @@
       "isLocal": false
     },
     {
-      "id": "2026_11_08_26_2_91_7",
-      "date": "2026-11-08",
-      "lat": 26.1833,
-      "lng": 91.7333,
-      "geoType": 4,
-      "place": "Guwahati, Assam",
-      "articles": 18,
-      "outlets": 2,
-      "type": "112",
-      "movement": "politics",
-      "category": "politics",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Only For Selling Books Bjps Kishore Upadhyay On Sonia Gandhis Emergency A Mistake Remark16020261108192122",
-      "urls": [
-        "https://www.prokerala.com/news/articles/a1834405.html",
-        "https://aninews.in/news/national/general-news/only-for-selling-books-bjps-kishore-upadhyay-on-sonia-gandhis-emergency-a-mistake-remark16020261108192122/"
-      ],
-      "domains": [
-        "prokerala.com",
-        "aninews.in"
-      ],
-      "publishers": [
-        "Prokerala",
-        "ANI News"
-      ],
-      "lastSeen": "20261108153000",
-      "isLocal": false
-    },
-    {
       "id": "2026_11_08_23_8_88_3",
       "date": "2026-11-08",
       "lat": 23.8,
@@ -4723,6 +6620,70 @@
       "isLocal": true
     },
     {
+      "id": "2026_11_08_18_2_73_3",
+      "date": "2026-11-08",
+      "lat": 18.1667,
+      "lng": 73.3,
+      "geoType": 4,
+      "place": "Goregaon, Maharashtra",
+      "articles": 18,
+      "outlets": 2,
+      "type": "040",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Three Mumbai High Rises Hit By Fires No Injuries Reported",
+      "urls": [
+        "https://www.siasat.com/three-mumbai-high-rises-hit-by-fires-no-injuries-reported-3571459/",
+        "https://ianslive.in/aditi-rao-hydari-explains-the-novelty-of-working-with-actor-writer-on-parivarik-manuranjan--20261108235734"
+      ],
+      "domains": [
+        "siasat.com",
+        "ianslive.in"
+      ],
+      "publishers": [
+        "Siasat",
+        "IANS Live"
+      ],
+      "lastSeen": "20261108191500",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_26_4_79_2",
+      "date": "2026-11-08",
+      "lat": 26.3521,
+      "lng": 79.2158,
+      "geoType": 4,
+      "place": "Tihar, Uttar Pradesh",
+      "articles": 18,
+      "outlets": 2,
+      "type": "070",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Diwali 2026 Festival Of Lights Global Tourism Opportunities",
+      "urls": [
+        "https://www.prokerala.com/news/articles/a1834273.html",
+        "https://eturbonews.com/diwali-2026-festival-of-lights-global-tourism-opportunities/"
+      ],
+      "domains": [
+        "prokerala.com",
+        "eturbonews.com"
+      ],
+      "publishers": [
+        "Prokerala",
+        "Eturbonews"
+      ],
+      "lastSeen": "20261108194500",
+      "isLocal": false
+    },
+    {
       "id": "2026_11_08_30_0_80_0",
       "date": "2026-11-08",
       "lat": 30,
@@ -4821,6 +6782,38 @@
         "The times of india"
       ],
       "lastSeen": "2026-11-07T20:09:48.552Z",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_30_4_76_8",
+      "date": "2026-11-08",
+      "lat": 30.3783,
+      "lng": 76.7808,
+      "geoType": 4,
+      "place": "Ambala, Haryana",
+      "articles": 17,
+      "outlets": 2,
+      "type": "010",
+      "movement": "economy",
+      "category": "economy",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Ambala City Of Scientific Instruments And Leading Market Of Asia",
+      "urls": [
+        "https://organiser.org/2026/11/08/424998/bharat/ambala-city-of-scientific-instruments-and-leading-market-of-asia/",
+        "https://www.pakistantoday.com.pk/2026/11/09/iqbals-academia"
+      ],
+      "domains": [
+        "organiser.org",
+        "pakistantoday.com.pk"
+      ],
+      "publishers": [
+        "Organiser",
+        "Pakistantoday"
+      ],
+      "lastSeen": "20261108220000",
       "isLocal": false
     },
     {
@@ -4979,6 +6972,64 @@
       "isLocal": false
     },
     {
+      "id": "2026_11_08_23_1_87_3",
+      "date": "2026-11-08",
+      "lat": 23.0833,
+      "lng": 87.3167,
+      "geoType": 4,
+      "place": "Bishnupur, West Bengal",
+      "articles": 16,
+      "outlets": 1,
+      "type": "051",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Imphal Nov 8 Director General Of Police Mukesh Singh On November 8 Celebrated Diwali With Personnel Of The 2nd",
+      "urls": [
+        "https://www.thesangaiexpress.com/Encyc/2026/11/8/imphal-nov-8-director-general-of-police-mukesh-singh-on-november-8-celebrated-diwali-with-personnel-of-the-2nd.html"
+      ],
+      "domains": [
+        "thesangaiexpress.com"
+      ],
+      "publishers": [
+        "Thesangaiexpress"
+      ],
+      "lastSeen": "20261108184500",
+      "isLocal": true
+    },
+    {
+      "id": "2026_11_08_23_1_84_5",
+      "date": "2026-11-08",
+      "lat": 23.05,
+      "lng": 84.55,
+      "geoType": 4,
+      "place": "Gumla, Chhattisgarh",
+      "articles": 16,
+      "outlets": 1,
+      "type": "010",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Nisha Bhagat Death Case Father Alleges Conspiracy Fir Names Two",
+      "urls": [
+        "https://www.freepressjournal.in/india/nisha-bhagat-death-case-father-alleges-conspiracy-fir-names-two"
+      ],
+      "domains": [
+        "freepressjournal.in"
+      ],
+      "publishers": [
+        "Free Press Journal"
+      ],
+      "lastSeen": "20261108194500",
+      "isLocal": true
+    },
+    {
       "id": "2026_11_08_24_8_78_9",
       "date": "2026-11-08",
       "lat": 24.8252,
@@ -5106,6 +7157,70 @@
       ],
       "lastSeen": "20261108153000",
       "isLocal": true
+    },
+    {
+      "id": "2026_11_08_12_8_77_4",
+      "date": "2026-11-08",
+      "lat": 12.8167,
+      "lng": 77.4,
+      "geoType": 4,
+      "place": "Bidadi, Karnataka",
+      "articles": 15,
+      "outlets": 2,
+      "type": "051",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Cm Hassan Dc Deny Hdks Bribery Allegations",
+      "urls": [
+        "https://www.thehindu.com/news/national/karnataka/women-make-up-585-of-kmfs-milk-suppliers-benefit-from-price-hike/article71678378.ece",
+        "https://timesofindia.indiatimes.com/city/bengaluru/cm-hassan-dc-deny-hdks-bribery-allegations/articleshow/135665277.cms"
+      ],
+      "domains": [
+        "thehindu.com",
+        "timesofindia.indiatimes.com"
+      ],
+      "publishers": [
+        "The Hindu",
+        "Times of India"
+      ],
+      "lastSeen": "20261108203000",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_26_0_94_3",
+      "date": "2026-11-08",
+      "lat": 26,
+      "lng": 94.25,
+      "geoType": 5,
+      "place": "Nagaland, Nagaland",
+      "articles": 15,
+      "outlets": 2,
+      "type": "173",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Morung Legal Digest Kohima Bench Rules On Pwd Salaries And Landownership Based Appointment Claims",
+      "urls": [
+        "https://aninews.in/news/national/politics/rajnath-singh-celebrates-diwali-with-troops-in-sikkim-says-because-of-you-diwali-lamps-look-even-brighter20261108120724/",
+        "https://www.morungexpress.com/morung-legal-digest-kohima-bench-rules-on-pwd-salaries-and-landownership-based-appointment-claims"
+      ],
+      "domains": [
+        "aninews.in",
+        "morungexpress.com"
+      ],
+      "publishers": [
+        "ANI News",
+        "Morungexpress"
+      ],
+      "lastSeen": "20261108193000",
+      "isLocal": false
     },
     {
       "id": "2026_11_08_17_8_73_2",
@@ -5262,35 +7377,6 @@
       "isLocal": true
     },
     {
-      "id": "2026_11_08_12_8_77_4",
-      "date": "2026-11-08",
-      "lat": 12.8167,
-      "lng": 77.4,
-      "geoType": 4,
-      "place": "Bidadi, Karnataka",
-      "articles": 13,
-      "outlets": 1,
-      "type": "051",
-      "movement": "politics",
-      "category": "politics",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Women Make Up 585 Of Kmfs Milk Suppliers Benefit From Price Hike",
-      "urls": [
-        "https://www.thehindu.com/news/national/karnataka/women-make-up-585-of-kmfs-milk-suppliers-benefit-from-price-hike/article71678378.ece"
-      ],
-      "domains": [
-        "thehindu.com"
-      ],
-      "publishers": [
-        "The Hindu"
-      ],
-      "lastSeen": "20261108013000",
-      "isLocal": true
-    },
-    {
       "id": "2026_11_08_30_4_79_3",
       "date": "2026-11-08",
       "lat": 30.4,
@@ -5388,6 +7474,38 @@
         "News on air"
       ],
       "lastSeen": "2026-11-07T20:09:49.944Z",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_19_3_72_8",
+      "date": "2026-11-08",
+      "lat": 19.2833,
+      "lng": 72.7833,
+      "geoType": 4,
+      "place": "Dongri, Maharashtra",
+      "articles": 13,
+      "outlets": 2,
+      "type": "130",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Section Of False Ceiling Collapses Outside Mumbai Airports T2 One Visitor Injured",
+      "urls": [
+        "https://www.freepressjournal.in/mumbai/section-of-false-ceiling-collapses-outside-mumbai-airports-t2-one-visitor-injured",
+        "https://aninews.in/news/national/general-news/odisha-fire-breaks-out-at-sericulture-office-in-bhubaneswar-fire-tenders-deployed20261109023541/"
+      ],
+      "domains": [
+        "freepressjournal.in",
+        "aninews.in"
+      ],
+      "publishers": [
+        "Free Press Journal",
+        "ANI News"
+      ],
+      "lastSeen": "20261108220000",
       "isLocal": false
     },
     {
@@ -6292,35 +8410,6 @@
       "isLocal": true
     },
     {
-      "id": "2026_11_08_30_4_76_8",
-      "date": "2026-11-08",
-      "lat": 30.3783,
-      "lng": 76.7808,
-      "geoType": 4,
-      "place": "Ambala, Haryana",
-      "articles": 10,
-      "outlets": 1,
-      "type": "010",
-      "movement": "economy",
-      "category": "economy",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Ambala City Of Scientific Instruments And Leading Market Of Asia",
-      "urls": [
-        "https://organiser.org/2026/11/08/424998/bharat/ambala-city-of-scientific-instruments-and-leading-market-of-asia/"
-      ],
-      "domains": [
-        "organiser.org"
-      ],
-      "publishers": [
-        "Organiser"
-      ],
-      "lastSeen": "20261108173000",
-      "isLocal": true
-    },
-    {
       "id": "2026_11_08_28_9_78_5",
       "date": "2026-11-08",
       "lat": 28.9167,
@@ -6376,6 +8465,183 @@
         "Business Standard"
       ],
       "lastSeen": "20261108181500",
+      "isLocal": true
+    },
+    {
+      "id": "2026_11_08_23_4_85_3",
+      "date": "2026-11-08",
+      "lat": 23.35,
+      "lng": 85.3333,
+      "geoType": 4,
+      "place": "Ranchi, Jharkhand",
+      "articles": 10,
+      "outlets": 2,
+      "type": "080",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Nisha Bhagat Death Case Father Alleges Conspiracy Fir Names Two",
+      "urls": [
+        "https://indiankanoon.org/doc/157096160/",
+        "https://www.freepressjournal.in/india/nisha-bhagat-death-case-father-alleges-conspiracy-fir-names-two"
+      ],
+      "domains": [
+        "indiankanoon.org",
+        "freepressjournal.in"
+      ],
+      "publishers": [
+        "Indiankanoon",
+        "Free Press Journal"
+      ],
+      "lastSeen": "20261108194500",
+      "isLocal": false
+    },
+    {
+      "id": "2026_11_08_26_1_94_3",
+      "date": "2026-11-08",
+      "lat": 26.1,
+      "lng": 94.2667,
+      "geoType": 4,
+      "place": "Wokha, Nagaland",
+      "articles": 10,
+      "outlets": 1,
+      "type": "070",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Morung Legal Digest Kohima Bench Rules On Pwd Salaries And Landownership Based Appointment Claims",
+      "urls": [
+        "https://www.morungexpress.com/morung-legal-digest-kohima-bench-rules-on-pwd-salaries-and-landownership-based-appointment-claims"
+      ],
+      "domains": [
+        "morungexpress.com"
+      ],
+      "publishers": [
+        "Morungexpress"
+      ],
+      "lastSeen": "20261108193000",
+      "isLocal": true
+    },
+    {
+      "id": "2026_11_08_30_1_78_3",
+      "date": "2026-11-08",
+      "lat": 30.1167,
+      "lng": 78.3167,
+      "geoType": 4,
+      "place": "Rishikesh, Uttaranchal",
+      "articles": 10,
+      "outlets": 1,
+      "type": "036",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Diwali 2026 Festival Of Lights Global Tourism Opportunities",
+      "urls": [
+        "https://eturbonews.com/diwali-2026-festival-of-lights-global-tourism-opportunities/"
+      ],
+      "domains": [
+        "eturbonews.com"
+      ],
+      "publishers": [
+        "Eturbonews"
+      ],
+      "lastSeen": "20261108194500",
+      "isLocal": true
+    },
+    {
+      "id": "2026_11_08_28_9_77_1",
+      "date": "2026-11-08",
+      "lat": 28.85,
+      "lng": 77.1,
+      "geoType": 4,
+      "place": "Narela, Delhi",
+      "articles": 10,
+      "outlets": 1,
+      "type": "190",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Fire Breaks Out At Rubber Factory In Delhis Narela20261109010121",
+      "urls": [
+        "https://aninews.in/news/national/general-news/fire-breaks-out-at-rubber-factory-in-delhis-narela20261109010121/"
+      ],
+      "domains": [
+        "aninews.in"
+      ],
+      "publishers": [
+        "ANI News"
+      ],
+      "lastSeen": "20261108200000",
+      "isLocal": true
+    },
+    {
+      "id": "2026_11_08_27_1_81_4",
+      "date": "2026-11-08",
+      "lat": 27.0833,
+      "lng": 81.4167,
+      "geoType": 4,
+      "place": "Ramnagar, Uttar Pradesh",
+      "articles": 10,
+      "outlets": 1,
+      "type": "114",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Woman Among 4 Injured After Man Throws Acid Like Liquid Arrested",
+      "urls": [
+        "https://timesofindia.indiatimes.com/city/pune/woman-among-4-injured-after-man-throws-acid-like-liquid-arrested/articleshow/135665036.cms"
+      ],
+      "domains": [
+        "timesofindia.indiatimes.com"
+      ],
+      "publishers": [
+        "Times of India"
+      ],
+      "lastSeen": "20261108200000",
+      "isLocal": true
+    },
+    {
+      "id": "2026_11_08_29_5_77_7",
+      "date": "2026-11-08",
+      "lat": 29.4667,
+      "lng": 77.6833,
+      "geoType": 4,
+      "place": "Muzaffarnagar, Uttar Pradesh",
+      "articles": 10,
+      "outlets": 1,
+      "type": "012",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Son Of Soil A Tale Of State And Its Leader",
+      "urls": [
+        "https://www.legallyindia.com/Blogs/son-of-soil-a-tale-of-state-and-its-leader/"
+      ],
+      "domains": [
+        "legallyindia.com"
+      ],
+      "publishers": [
+        "Legallyindia"
+      ],
+      "lastSeen": "20261108221500",
       "isLocal": true
     },
     {
@@ -6633,35 +8899,6 @@
       "isLocal": true
     },
     {
-      "id": "2026_11_08_18_2_73_3",
-      "date": "2026-11-08",
-      "lat": 18.1667,
-      "lng": 73.3,
-      "geoType": 4,
-      "place": "Goregaon, Maharashtra",
-      "articles": 8,
-      "outlets": 1,
-      "type": "190",
-      "movement": "security",
-      "category": "security",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Three Mumbai High Rises Hit By Fires No Injuries Reported",
-      "urls": [
-        "https://www.siasat.com/three-mumbai-high-rises-hit-by-fires-no-injuries-reported-3571459/"
-      ],
-      "domains": [
-        "siasat.com"
-      ],
-      "publishers": [
-        "Siasat"
-      ],
-      "lastSeen": "20261108044500",
-      "isLocal": true
-    },
-    {
       "id": "2026_11_08_18_0_79_6",
       "date": "2026-11-08",
       "lat": 18.0167,
@@ -6876,6 +9113,64 @@
       "isLocal": true
     },
     {
+      "id": "2026_11_08_15_8_77_3",
+      "date": "2026-11-08",
+      "lat": 15.85,
+      "lng": 77.2667,
+      "geoType": 4,
+      "place": "Kosgi, Andhra Pradesh",
+      "articles": 8,
+      "outlets": 1,
+      "type": "051",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Telangana Cm Celebrates Diwali With Indiramma House Beneficiary",
+      "urls": [
+        "https://ianslive.in/telangana-cm-celebrates-diwali-with-indiramma-house-beneficiary--20261108222628"
+      ],
+      "domains": [
+        "ianslive.in"
+      ],
+      "publishers": [
+        "IANS Live"
+      ],
+      "lastSeen": "20261108191500",
+      "isLocal": true
+    },
+    {
+      "id": "2026_11_08_25_2_85_0",
+      "date": "2026-11-08",
+      "lat": 25.2,
+      "lng": 84.9833,
+      "geoType": 4,
+      "place": "Jamuna, India (general)",
+      "articles": 8,
+      "outlets": 1,
+      "type": "051",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "2026 11 09 iqbals academia",
+      "urls": [
+        "https://www.pakistantoday.com.pk/2026/11/09/iqbals-academia"
+      ],
+      "domains": [
+        "pakistantoday.com.pk"
+      ],
+      "publishers": [
+        "Pakistantoday"
+      ],
+      "lastSeen": "20261108220000",
+      "isLocal": true
+    },
+    {
       "id": "live_2026_11_08_10_8_78_7",
       "date": "2026-11-08",
       "lat": 10.7905,
@@ -7077,6 +9372,35 @@
       "isLocal": false
     },
     {
+      "id": "2026_11_08_14_0_74_6",
+      "date": "2026-11-08",
+      "lat": 13.9667,
+      "lng": 74.5667,
+      "geoType": 4,
+      "place": "Bhatkal, Karnataka",
+      "articles": 7,
+      "outlets": 1,
+      "type": "141",
+      "movement": "protest",
+      "category": "protest",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Sdpi Stages Protest In Kumta Against Rising Prices Ksrtc Fare Hike",
+      "urls": [
+        "https://sahilonline.org/sdpi-stages-protest-in-kumta-against-rising-prices-ksrtc-fare-hike"
+      ],
+      "domains": [
+        "sahilonline.org"
+      ],
+      "publishers": [
+        "Sahilonline"
+      ],
+      "lastSeen": "20261108194500",
+      "isLocal": true
+    },
+    {
       "id": "2026_11_08_22_6_85_8",
       "date": "2026-11-08",
       "lat": 22.5667,
@@ -7095,35 +9419,6 @@
       "title": "Doc 134370852",
       "urls": [
         "https://indiankanoon.org/doc/134370852/"
-      ],
-      "domains": [
-        "indiankanoon.org"
-      ],
-      "publishers": [
-        "Indiankanoon"
-      ],
-      "lastSeen": "20261108004500",
-      "isLocal": true
-    },
-    {
-      "id": "2026_11_08_23_4_85_3",
-      "date": "2026-11-08",
-      "lat": 23.35,
-      "lng": 85.3333,
-      "geoType": 4,
-      "place": "Ranchi, Jharkhand",
-      "articles": 6,
-      "outlets": 1,
-      "type": "080",
-      "movement": "politics",
-      "category": "politics",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Doc 157096160",
-      "urls": [
-        "https://indiankanoon.org/doc/157096160/"
       ],
       "domains": [
         "indiankanoon.org"
@@ -7411,6 +9706,35 @@
       "isLocal": true
     },
     {
+      "id": "2026_11_08_17_7_74_0",
+      "date": "2026-11-08",
+      "lat": 17.6833,
+      "lng": 73.9833,
+      "geoType": 4,
+      "place": "Satara, Maharashtra",
+      "articles": 6,
+      "outlets": 1,
+      "type": "164",
+      "movement": "other",
+      "category": "other",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Godfather Beer Has A Name Sanjay Dutts Glenwalk Cant Keep",
+      "urls": [
+        "https://openthemagazine.com/business/godfather-beer-has-a-name-sanjay-dutts-glenwalk-cant-keep"
+      ],
+      "domains": [
+        "openthemagazine.com"
+      ],
+      "publishers": [
+        "Openthemagazine"
+      ],
+      "lastSeen": "20261108204500",
+      "isLocal": true
+    },
+    {
       "id": "live_2026_11_08_21_2_72_8",
       "date": "2026-11-08",
       "lat": 21.1702,
@@ -7681,35 +10005,6 @@
       ],
       "publishers": [
         "Indiankanoon"
-      ],
-      "lastSeen": "20261108080000",
-      "isLocal": true
-    },
-    {
-      "id": "2026_11_08_26_0_94_3",
-      "date": "2026-11-08",
-      "lat": 26,
-      "lng": 94.25,
-      "geoType": 5,
-      "place": "Nagaland, Nagaland",
-      "articles": 5,
-      "outlets": 1,
-      "type": "062",
-      "movement": "economy",
-      "category": "economy",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Rajnath Singh Celebrates Diwali With Troops In Sikkim Says Because Of You Diwali Lamps Look Even Brighter20261108120724",
-      "urls": [
-        "https://aninews.in/news/national/politics/rajnath-singh-celebrates-diwali-with-troops-in-sikkim-says-because-of-you-diwali-lamps-look-even-brighter20261108120724/"
-      ],
-      "domains": [
-        "aninews.in"
-      ],
-      "publishers": [
-        "ANI News"
       ],
       "lastSeen": "20261108080000",
       "isLocal": true
@@ -8370,6 +10665,35 @@
       "isLocal": true
     },
     {
+      "id": "2026_11_08_24_8_94_0",
+      "date": "2026-11-08",
+      "lat": 24.8167,
+      "lng": 93.95,
+      "geoType": 4,
+      "place": "Imphal, Manipur",
+      "articles": 4,
+      "outlets": 1,
+      "type": "051",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Imphal Nov 8 Director General Of Police Mukesh Singh On November 8 Celebrated Diwali With Personnel Of The 2nd",
+      "urls": [
+        "https://www.thesangaiexpress.com/Encyc/2026/11/8/imphal-nov-8-director-general-of-police-mukesh-singh-on-november-8-celebrated-diwali-with-personnel-of-the-2nd.html"
+      ],
+      "domains": [
+        "thesangaiexpress.com"
+      ],
+      "publishers": [
+        "Thesangaiexpress"
+      ],
+      "lastSeen": "20261108184500",
+      "isLocal": true
+    },
+    {
       "id": "soc_2026_11_08_10_0_77_5",
       "date": "2026-11-08",
       "lat": 10.0104,
@@ -8791,6 +11115,35 @@
       ],
       "lastSeen": "2026-11-08T13:14:35.452Z",
       "isLocal": false
+    },
+    {
+      "id": "2026_11_08_13_0_75_8",
+      "date": "2026-11-08",
+      "lat": 12.9667,
+      "lng": 75.7833,
+      "geoType": 4,
+      "place": "Sakleshpur, Karnataka",
+      "articles": 3,
+      "outlets": 1,
+      "type": "016",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Cm Hassan Dc Deny Hdks Bribery Allegations",
+      "urls": [
+        "https://timesofindia.indiatimes.com/city/bengaluru/cm-hassan-dc-deny-hdks-bribery-allegations/articleshow/135665277.cms"
+      ],
+      "domains": [
+        "timesofindia.indiatimes.com"
+      ],
+      "publishers": [
+        "Times of India"
+      ],
+      "lastSeen": "20261108203000",
+      "isLocal": true
     },
     {
       "id": "clim_2026_11_08_10_8_79_1",
@@ -9405,6 +11758,64 @@
       "isLocal": true
     },
     {
+      "id": "2026_11_08_18_8_76_1",
+      "date": "2026-11-08",
+      "lat": 18.8167,
+      "lng": 76.1167,
+      "geoType": 4,
+      "place": "Dharur, Maharashtra",
+      "articles": 2,
+      "outlets": 1,
+      "type": "051",
+      "movement": "politics",
+      "category": "politics",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Telangana Cm Celebrates Diwali With Indiramma House Beneficiary",
+      "urls": [
+        "https://ianslive.in/telangana-cm-celebrates-diwali-with-indiramma-house-beneficiary--20261108222628"
+      ],
+      "domains": [
+        "ianslive.in"
+      ],
+      "publishers": [
+        "IANS Live"
+      ],
+      "lastSeen": "20261108191500",
+      "isLocal": true
+    },
+    {
+      "id": "2026_11_08_24_1_78_4",
+      "date": "2026-11-08",
+      "lat": 24.0733,
+      "lng": 78.4127,
+      "geoType": 4,
+      "place": "Dhanori, Madhya Pradesh",
+      "articles": 2,
+      "outlets": 1,
+      "type": "173",
+      "movement": "security",
+      "category": "security",
+      "platform": "web",
+      "platforms": [
+        "web"
+      ],
+      "title": "Why Bengalis In Pune Have Been Flying In Delicately Packed Kolkata Biryani Periodically Especially During Festive Season For An Authentic Taste Of Home",
+      "urls": [
+        "https://timesofindia.indiatimes.com/city/pune/why-bengalis-in-pune-have-been-flying-in-delicately-packed-kolkata-biryani-periodically-especially-during-festive-season-for-an-authentic-taste-of-home/articleshow/135665200.cms"
+      ],
+      "domains": [
+        "timesofindia.indiatimes.com"
+      ],
+      "publishers": [
+        "Times of India"
+      ],
+      "lastSeen": "20261108203000",
+      "isLocal": true
+    },
+    {
       "id": "live_2026_11_08_12_9_79_3",
       "date": "2026-11-08",
       "lat": 12.9229,
@@ -9518,35 +11929,6 @@
         "Kashmirlife"
       ],
       "lastSeen": "20261108034500",
-      "isLocal": true
-    },
-    {
-      "id": "2026_11_08_26_4_79_2",
-      "date": "2026-11-08",
-      "lat": 26.3521,
-      "lng": 79.2158,
-      "geoType": 4,
-      "place": "Tihar, Uttar Pradesh",
-      "articles": 1,
-      "outlets": 1,
-      "type": "070",
-      "movement": "economy",
-      "category": "economy",
-      "platform": "web",
-      "platforms": [
-        "web"
-      ],
-      "title": "Articles a1834273",
-      "urls": [
-        "https://www.prokerala.com/news/articles/a1834273.html"
-      ],
-      "domains": [
-        "prokerala.com"
-      ],
-      "publishers": [
-        "Prokerala"
-      ],
-      "lastSeen": "20261108041500",
       "isLocal": true
     },
     {
