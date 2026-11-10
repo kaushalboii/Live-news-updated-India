@@ -8,6 +8,7 @@
   <meta name="description"
     content="A live map of news reports, events, and hyper-local updates across India, updated every 30 minutes. Every pin links to its source.">
   <meta name="author" content="Kaushal (@kaushalboii)">
+  <base href="__SITE_URL__">
   <link rel="canonical" href="__SITE_URL__">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#0b0f17">
@@ -313,16 +314,270 @@
       cursor: grabbing;
     }
 
+    /* State Outline Radar & Map Interactions */
     .state {
       fill: var(--land);
       stroke: var(--border);
       stroke-width: .85;
       vector-effect: non-scaling-stroke;
-      transition: fill .15s ease, stroke .15s ease;
+      transition: fill .2s ease, stroke .2s ease, filter .2s ease;
+      cursor: pointer;
     }
 
     .state:hover {
       fill: var(--land-hover);
+      stroke: var(--focus);
+      stroke-width: 1.2;
+    }
+
+    /* Isolated State Outline Radar Mode */
+    #states.isolated .state:not(.active) {
+      display: none !important;
+    }
+
+    #states.isolated .state.active {
+      fill: rgba(30, 41, 59, 0.55);
+      stroke: var(--focus, #38bdf8);
+      stroke-width: 2.2;
+      filter: drop-shadow(0 0 16px rgba(56, 189, 248, 0.45));
+      cursor: default;
+    }
+
+    [data-theme="light"] #states.isolated .state.active {
+      fill: rgba(226, 232, 240, 0.65);
+      stroke: #0284c7;
+      stroke-width: 2.2;
+      filter: drop-shadow(0 0 14px rgba(2, 132, 199, 0.4));
+    }
+
+    /* State Selector in Topbar */
+    .state-nav-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 6px;
+    }
+
+    .state-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 12px 4px 9px;
+      color: var(--ink);
+      font-size: .82rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .15s ease;
+      white-space: nowrap;
+    }
+
+    .state-nav-btn:hover {
+      background: var(--chip-hover);
+      border-color: var(--focus);
+    }
+
+    .state-nav-btn.active-state {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: var(--focus);
+      color: var(--focus);
+    }
+
+    .state-nav-pin {
+      font-size: .88rem;
+    }
+
+    .state-nav-label {
+      max-width: 130px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .state-nav-caret {
+      font-size: .75rem;
+      color: var(--muted);
+      transition: transform .15s ease;
+    }
+
+    .state-nav-btn[aria-expanded="true"] .state-nav-caret {
+      transform: rotate(180deg);
+    }
+
+    /* State Dropdown */
+    .state-dropdown {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      width: 270px;
+      max-height: 380px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: dropdownFadeIn .15s ease-out;
+    }
+
+    @keyframes dropdownFadeIn {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .state-dropdown[hidden] {
+      display: none !important;
+    }
+
+    .state-dropdown-search {
+      padding: 10px 10px 8px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    .state-dropdown-search input {
+      width: 100%;
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: .82rem;
+      color: var(--ink);
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    .state-dropdown-search input:focus {
+      border-color: var(--focus);
+    }
+
+    .state-dropdown-list {
+      flex: 1;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      padding: 4px;
+      max-height: 310px;
+    }
+
+    .state-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .12s ease;
+    }
+
+    .state-item:hover, .state-item:focus-visible {
+      background: var(--chip-hover);
+      outline: none;
+    }
+
+    .state-item.selected {
+      background: rgba(56, 189, 248, 0.14);
+      color: var(--focus);
+      font-weight: 700;
+    }
+
+    .state-item-count {
+      font-size: .72rem;
+      padding: 1px 6px;
+      border-radius: 999px;
+      background: var(--chip);
+      color: var(--muted);
+      border: 1px solid var(--line);
+    }
+
+    .state-item.selected .state-item-count {
+      background: rgba(56, 189, 248, 0.2);
+      color: var(--focus);
+      border-color: rgba(56, 189, 248, 0.35);
+    }
+
+    /* Sidebar State Radar Banner */
+    .state-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(15, 23, 42, 0.2));
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    [data-theme="light"] .state-banner {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.1), rgba(241, 245, 249, 0.8));
+      border-color: rgba(2, 132, 199, 0.3);
+    }
+
+    .state-banner-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .state-banner-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: .65rem;
+      font-weight: 800;
+      color: var(--focus);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .state-banner-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--ink);
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .state-banner-stats {
+      font-size: .78rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .clear-state-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--ink);
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all .15s ease;
+    }
+
+    .clear-state-btn:hover {
+      background: var(--panel);
+      border-color: var(--focus);
+      color: var(--focus);
+      transform: translateY(-1px);
     }
 
     .zoom {
@@ -1188,6 +1443,19 @@
         <h1 class="brand-title">INDIA NEWS RADAR</h1>
         <span class="brand-sub">Real-Time Geotagged Intelligence</span>
       </div>
+      <div class="state-nav-wrap">
+        <button id="stateNavBtn" class="state-nav-btn" type="button" aria-haspopup="listbox" aria-expanded="false" title="Filter by State or Union Territory">
+          <span class="state-nav-pin">📍</span>
+          <span id="stateNavLabel" class="state-nav-label">All India</span>
+          <span class="state-nav-caret">▾</span>
+        </button>
+        <div id="stateDropdown" class="state-dropdown" hidden>
+          <div class="state-dropdown-search">
+            <input type="text" id="stateSearchInput" placeholder="Filter 37 states & UTs…" autocomplete="off" spellcheck="false">
+          </div>
+          <div class="state-dropdown-list" id="stateDropdownList"></div>
+        </div>
+      </div>
     </div>
 
     <div class="topbar-center" id="topbarTicker">
@@ -1222,6 +1490,14 @@
       <div class="topic-bar" id="legend" aria-label="Filter by topic"></div>
     </div>
     <aside>
+      <div id="stateBanner" class="state-banner" style="display:none">
+        <div class="state-banner-content">
+          <div class="state-banner-badge">STATE OUTLINE RADAR</div>
+          <h2 class="state-banner-title" id="stateBannerName">Tamil Nadu</h2>
+          <div class="state-banner-stats" id="stateBannerStats">0 live updates</div>
+        </div>
+        <button id="clearStateBtn" class="clear-state-btn" type="button" title="View Full India Map">✕ All India</button>
+      </div>
       <div class="ctrl">
         <div class="seg" role="group" aria-label="Time range">
           <button data-range="1" aria-pressed="true">Today</button>
@@ -1341,9 +1617,98 @@
     const todayISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
 
     let curated = [], live = [], liveMeta = null;
+    let statesData = [];
+    let activeState = null;
     let range = "1", selected = null, showLive = true, showWeak = true;
     let searchQuery = "";
     const hidden = new Set();
+
+    /* ---------- State Lookup & Detection ---------- */
+    function findStateBySlug(query) {
+      if (!query || !statesData || !statesData.length) return null;
+      const q = String(query).toLowerCase().trim().replace(/[^a-z0-9]/g, "");
+      if (!q) return null;
+      for (const s of statesData) {
+        if (s.slug.replace(/[^a-z0-9]/g, "") === q) return s;
+        for (const a of (s.aliases || [])) {
+          if (a.toLowerCase().replace(/[^a-z0-9]/g, "") === q) return s;
+        }
+      }
+      return null;
+    }
+
+    function detectStateFromURL() {
+      try {
+        const loc = window.location;
+        const params = new URLSearchParams(loc.search);
+        const qState = params.get("state");
+        if (qState) {
+          const match = findStateBySlug(qState);
+          if (match) return match;
+        }
+        let path = loc.pathname || "";
+        path = path.replace(/^\/Live-news-updated-India\/?/i, "/");
+        const parts = path.split("/").map(s => s.trim().toLowerCase()).filter(Boolean);
+        for (const part of parts) {
+          if (part === "index.html" || part === "index" || part === "404.html" || part === "data") continue;
+          const cleanPart = part.replace(/\.html$/, "");
+          const match = findStateBySlug(cleanPart);
+          if (match) return match;
+        }
+      } catch (_) {}
+      return null;
+    }
+
+    function eventMatchesState(e, st) {
+      if (!st) return true;
+      const place = (e.place || e.city || "").toLowerCase();
+      const title = (e.title || "").toLowerCase();
+      const sName = st.name.toLowerCase();
+
+      // 1. Direct state name in place (e.g. "Chennai, Tamil Nadu")
+      if (place.includes(sName)) return true;
+
+      // 2. City / District keyword in place (e.g. "Chennai", "Coimbatore", "Thoothukudi")
+      for (const kw of (st.keywords || [])) {
+        if (kw.length >= 3 && place.includes(kw)) return true;
+      }
+
+      // 3. Geocoordinates inside state bounds
+      if (Number.isFinite(e.lat) && Number.isFinite(e.lng) && st.bounds) {
+        const b = st.bounds;
+        if (e.lat >= b.latMin && e.lat <= b.latMax && e.lng >= b.lngMin && e.lng <= b.lngMax) {
+          const hasOtherStateInPlace = (statesData || []).some(os => os.name !== st.name && place.includes(os.name.toLowerCase()));
+          if (!hasOtherStateInPlace) return true;
+        }
+      }
+
+      // 4. Mention of state in title, but ONLY if place does not explicitly name another state
+      const hasOtherStateInPlace = (statesData || []).some(os => os.name !== st.name && place.includes(os.name.toLowerCase()));
+      if (!hasOtherStateInPlace && (title.includes(sName) || (st.slug === "tamilnadu" && (title.includes("tamil nadu") || title.includes("tamilnadu"))))) {
+        return true;
+      }
+
+      return false;
+    }
+
+    function getStateViewBox(st) {
+      if (!st || !st.bbox) return { ...VB0 };
+      const padFactor = 1.35;
+      const targetW = st.bbox.w * padFactor;
+      const targetH = st.bbox.h * padFactor;
+      const aspect = VB0.w / VB0.h;
+      let w, h;
+      if (targetW / targetH > aspect) {
+        w = targetW;
+        h = w / aspect;
+      } else {
+        h = targetH;
+        w = h * aspect;
+      }
+      const cx = st.bbox.x + st.bbox.w / 2;
+      const cy = st.bbox.y + st.bbox.h / 2;
+      return { x: cx - w / 2, y: cy - h / 2, w, h };
+    }
 
     /* ---------- Map Geometry & Projection ---------- */
     const P = { k: 1957.4916130195534, x0: 1.1889182864585373, y0: -0.6975184730426562 };
@@ -1356,9 +1721,12 @@
     const unitsPerPx = () => Math.max(vb.w / (svg.clientWidth || 1), vb.h / (svg.clientHeight || 1));
 
     function clampVB(v) {
-      const w = Math.min(VB0.w, Math.max(VB0.w / MAXZ, v.w)), h = w * VB0.h / VB0.w;
-      const cx = Math.min(VB0.x + VB0.w * 1.1, Math.max(VB0.x - VB0.w * .1, v.x + v.w / 2));
-      const cy = Math.min(VB0.y + VB0.h * 1.1, Math.max(VB0.y - VB0.h * .1, v.y + v.h / 2));
+      const currentBase = activeState ? getStateViewBox(activeState) : VB0;
+      const maxW = activeState ? currentBase.w * 2.2 : VB0.w;
+      const minW = VB0.w / MAXZ;
+      const w = Math.min(maxW, Math.max(minW, v.w)), h = w * VB0.h / VB0.w;
+      const cx = Math.min(currentBase.x + currentBase.w * 1.5, Math.max(currentBase.x - currentBase.w * 0.5, v.x + v.w / 2));
+      const cy = Math.min(currentBase.y + currentBase.h * 1.5, Math.max(currentBase.y - currentBase.h * 0.5, v.y + v.h / 2));
       return { x: cx - w / 2, y: cy - h / 2, w, h };
     }
     function setVB(v) {
@@ -1583,6 +1951,7 @@
     function visible() {
       const pool = curated.concat(showLive ? live.filter(e => showWeak || !e.weak) : []);
       return pool.filter(e => {
+        if (activeState && !eventMatchesState(e, activeState)) return false;
         if (!inRange(e)) return false;
         if (hidden.has(e.movement)) return false;
         if (searchQuery) {
@@ -1689,6 +2058,13 @@
       gMarks.replaceChildren(...frag);
       scaleMarks(); renderList(placeFilter ? groups.get(placeFilter).events : ev, ev); renderLegend();
       updateTicker(ev);
+      if (activeState) {
+        const places = new Set(ev.map(e => (e.city || "").split(",")[0].trim())).size;
+        const bannerStats = document.getElementById("stateBannerStats");
+        if (bannerStats) {
+          bannerStats.textContent = `${ev.length} live detection${ev.length === 1 ? "" : "s"} across ${places} place${places === 1 ? "" : "s"}`;
+        }
+      }
     }
 
     function renderList(ev, all) {
@@ -1843,7 +2219,7 @@
     const zoomCenter = f => animateTo(zoomAround(vb, f, vb.x + vb.w / 2, vb.y + vb.h / 2), 250);
     document.getElementById("zin").onclick = () => zoomCenter(1.6);
     document.getElementById("zout").onclick = () => zoomCenter(1 / 1.6);
-    document.getElementById("zreset").onclick = () => animateTo(VB0);
+    document.getElementById("zreset").onclick = () => activeState ? animateTo(getStateViewBox(activeState)) : animateTo(VB0);
     window.addEventListener("resize", () => { clearTimeout(window._rt); window._rt = setTimeout(render, 120); });
 
     (function suggestLink() {
@@ -1855,16 +2231,254 @@
       a.href = `https://github.com/${repo}/issues/new?template=suggest-news.yml`; a.hidden = false;
     })();
 
+    /* ---------- State Navigation & Radar Controls ---------- */
+    function setState(st, pushURL = true) {
+      activeState = st;
+      placeFilter = null;
+      const gStates = document.getElementById("states");
+      const banner = document.getElementById("stateBanner");
+      const navBtn = document.getElementById("stateNavBtn");
+      const navLabel = document.getElementById("stateNavLabel");
+
+      if (gStates) {
+        for (const el of gStates.querySelectorAll(".state.active")) {
+          el.classList.remove("active");
+        }
+      }
+
+      if (st) {
+        if (gStates) {
+          gStates.classList.add("isolated");
+          const targetPath = gStates.querySelector(`.state[data-name="${st.name}"]`);
+          if (targetPath) targetPath.classList.add("active");
+        }
+
+        if (banner) {
+          banner.style.display = "flex";
+          document.getElementById("stateBannerName").textContent = st.name;
+        }
+        if (navBtn) navBtn.classList.add("active-state");
+        if (navLabel) navLabel.textContent = st.name;
+
+        document.title = `Where ${st.name} is in the news: live events & updates across ${st.name}`;
+
+        if (pushURL) {
+          const isGH = window.location.pathname.startsWith("/Live-news-updated-India");
+          const root = isGH ? "/Live-news-updated-India/" : "/";
+          history.pushState({ stateSlug: st.slug }, "", root + st.slug);
+        }
+
+        animateTo(getStateViewBox(st), 400);
+      } else {
+        if (gStates) gStates.classList.remove("isolated");
+        if (banner) banner.style.display = "none";
+        if (navBtn) navBtn.classList.remove("active-state");
+        if (navLabel) navLabel.textContent = "All India";
+
+        document.title = "Where India is in the news: live news tracker across India";
+
+        if (pushURL) {
+          const isGH = window.location.pathname.startsWith("/Live-news-updated-India");
+          const root = isGH ? "/Live-news-updated-India/" : "/";
+          history.pushState({ stateSlug: null }, "", root);
+        }
+
+        animateTo(VB0, 400);
+      }
+
+      render();
+      updateDropdownActiveState();
+    }
+
+    function updateDropdownActiveState() {
+      const items = document.querySelectorAll("#stateDropdownList .state-item");
+      items.forEach(it => {
+        const slug = it.getAttribute("data-slug");
+        const isSel = (!activeState && slug === "__all__") || (activeState && activeState.slug === slug);
+        it.classList.toggle("selected", Boolean(isSel));
+      });
+    }
+
+    function populateStateDropdown() {
+      const list = document.getElementById("stateDropdownList");
+      if (!list || !statesData || !statesData.length) return;
+      const allEv = curated.concat(live);
+
+      const counts = new Map();
+      for (const s of statesData) {
+        const cnt = allEv.filter(e => eventMatchesState(e, s)).length;
+        counts.set(s.slug, cnt);
+      }
+
+      let html = `
+        <div class="state-item ${!activeState ? 'selected' : ''}" data-slug="__all__">
+          <span>🇮🇳 All India (National Radar)</span>
+          <span class="state-item-count">${allEv.length}</span>
+        </div>
+      `;
+
+      const sortedStates = [...statesData].sort((a, b) => a.name.localeCompare(b.name));
+      for (const s of sortedStates) {
+        const isSel = Boolean(activeState && activeState.slug === s.slug);
+        const cnt = counts.get(s.slug) || 0;
+        html += `
+          <div class="state-item ${isSel ? 'selected' : ''}" data-slug="${s.slug}">
+            <span>${esc(s.name)}</span>
+            <span class="state-item-count">${cnt}</span>
+          </div>
+        `;
+      }
+      list.innerHTML = html;
+    }
+
+    function closeStateDropdown() {
+      const dropdown = document.getElementById("stateDropdown");
+      const navBtn = document.getElementById("stateNavBtn");
+      if (dropdown) dropdown.setAttribute("hidden", "");
+      if (navBtn) navBtn.setAttribute("aria-expanded", "false");
+      const input = document.getElementById("stateSearchInput");
+      if (input) {
+        input.value = "";
+        const items = document.querySelectorAll("#stateDropdownList .state-item");
+        items.forEach(it => it.style.display = "flex");
+      }
+    }
+
+    function initRoutingAndInteractions() {
+      const initSt = detectStateFromURL() || (window.__INITIAL_STATE__ ? findStateBySlug(window.__INITIAL_STATE__) : null);
+      if (initSt) {
+        vb = getStateViewBox(initSt);
+        svg.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+        setState(initSt, false);
+      } else {
+        render();
+      }
+      populateStateDropdown();
+
+      const gStates = document.getElementById("states");
+      if (gStates) {
+        gStates.addEventListener("click", e => {
+          if (dragMoved) return;
+          const path = e.target.closest(".state");
+          if (!path) return;
+          const name = path.getAttribute("data-name");
+          if (!name) return;
+          const st = statesData.find(s => s.name.toLowerCase() === name.toLowerCase());
+          if (st) {
+            if (activeState && activeState.name === st.name) return;
+            setState(st, true);
+          }
+        });
+
+        let hoveredState = null;
+        gStates.addEventListener("mousemove", e => {
+          if (dragMoved) return;
+          const path = e.target.closest(".state");
+          if (!path) {
+            if (hoveredState && !activeState) {
+              tip.style.display = "none";
+              hoveredState = null;
+            }
+            return;
+          }
+          const name = path.getAttribute("data-name");
+          if (!name) return;
+          if (activeState && activeState.name.toLowerCase() === name.toLowerCase()) return;
+          hoveredState = name;
+          const st = statesData.find(s => s.name.toLowerCase() === name.toLowerCase());
+          const count = st ? curated.concat(live).filter(ev => eventMatchesState(ev, st)).length : 0;
+          tip.textContent = `${name} · ${count} live update${count === 1 ? '' : 's'} (click to isolate)`;
+          tip.style.display = "block";
+          const rect = svg.getBoundingClientRect();
+          tip.style.left = (e.clientX - rect.left) + "px";
+          tip.style.top = (e.clientY - rect.top) + "px";
+        });
+        gStates.addEventListener("mouseleave", () => {
+          if (hoveredState) {
+            tip.style.display = "none";
+            hoveredState = null;
+          }
+        });
+      }
+
+      const navBtn = document.getElementById("stateNavBtn");
+      const dropdown = document.getElementById("stateDropdown");
+      if (navBtn && dropdown) {
+        navBtn.addEventListener("click", e => {
+          e.stopPropagation();
+          const isHidden = dropdown.hasAttribute("hidden");
+          if (isHidden) {
+            dropdown.removeAttribute("hidden");
+            navBtn.setAttribute("aria-expanded", "true");
+            populateStateDropdown();
+            setTimeout(() => {
+              const input = document.getElementById("stateSearchInput");
+              if (input) input.focus();
+            }, 60);
+          } else {
+            closeStateDropdown();
+          }
+        });
+
+        document.getElementById("stateDropdownList")?.addEventListener("click", e => {
+          const item = e.target.closest(".state-item");
+          if (!item) return;
+          const slug = item.getAttribute("data-slug");
+          if (slug === "__all__") {
+            setState(null, true);
+          } else {
+            const st = statesData.find(s => s.slug === slug);
+            if (st) setState(st, true);
+          }
+          closeStateDropdown();
+        });
+
+        document.getElementById("stateSearchInput")?.addEventListener("input", e => {
+          const q = e.target.value.toLowerCase().trim();
+          const items = document.querySelectorAll("#stateDropdownList .state-item");
+          items.forEach(it => {
+            const text = it.textContent.toLowerCase();
+            it.style.display = text.includes(q) ? "flex" : "none";
+          });
+        });
+      }
+
+      document.addEventListener("click", e => {
+        if (!e.target.closest(".state-nav-wrap")) closeStateDropdown();
+      });
+
+      document.addEventListener("keydown", e => {
+        if (e.key === "Escape") closeStateDropdown();
+      });
+
+      const clearBtn = document.getElementById("clearStateBtn");
+      if (clearBtn) {
+        clearBtn.addEventListener("click", () => setState(null, true));
+      }
+
+      window.addEventListener("popstate", () => {
+        const st = detectStateFromURL();
+        setState(st, false);
+      });
+    }
+
     (async () => {
       initTheme();
       updateClock();
       setInterval(updateClock, 30000);
       let boot = null;
       try { boot = JSON.parse(document.getElementById("boot").textContent); } catch (_) { }
+      statesData = boot?.states || [];
+      if (!statesData.length) {
+        try { statesData = await loadJSON("data/states.json"); } catch (_) { statesData = []; }
+      }
       try {
         curated = (boot?.curated || await loadJSON("data/curated.json")).events || [];
       } catch (_) { curated = []; }
-      if (boot?.live) { setLive(boot.live); renderStatus(); render(); }
+      if (boot?.live) { setLive(boot.live); renderStatus(); }
+
+      initRoutingAndInteractions();
+
       refreshLive();
       setInterval(refreshLive, LIVE_REFRESH_MIN * 6e4);
       setInterval(renderStatus, 6e4);
