@@ -1,0 +1,1351 @@
+[
+  {
+    "name": "Tamil Nadu",
+    "slug": "tamilnadu",
+    "aliases": [
+      "tamil-nadu",
+      "tamil",
+      "tn",
+      "tamil_nadu",
+      "தமிழ்நாடு"
+    ],
+    "keywords": [
+      "tamil nadu",
+      "tamilnadu",
+      "chennai",
+      "madurai",
+      "coimbatore",
+      "trichy",
+      "tiruchirappalli",
+      "salem",
+      "tirunelveli",
+      "nellai",
+      "vellore",
+      "erode",
+      "thanjavur",
+      "dindigul",
+      "kanyakumari",
+      "tuticorin",
+      "thoothukudi",
+      "tiruppur",
+      "kanchipuram",
+      "cuddalore",
+      "karur",
+      "namakkal",
+      "krishnagiri",
+      "dharmapuri",
+      "nagapattinam",
+      "pudukkottai",
+      "ramanathapuram",
+      "sivaganga",
+      "theni",
+      "thiruvarur",
+      "tiruvannamalai",
+      "nilgiris",
+      "ooty",
+      "virudhunagar",
+      "ariyalur",
+      "perambalur",
+      "kallakurichi",
+      "tenkasi",
+      "chengalpattu",
+      "ranipet",
+      "tirupathur",
+      "mayiladuthurai",
+      "சென்னை",
+      "மதுரை",
+      "கோவை",
+      "திருச்சி",
+      "சேலம்",
+      "நெல்லை",
+      "தமிழ்நாடு"
+    ],
+    "bounds": {
+      "latMin": 8,
+      "latMax": 13.6,
+      "lngMin": 76.2,
+      "lngMax": 80.4
+    },
+    "bbox": {
+      "x": 277.8,
+      "y": 897.7,
+      "w": 140,
+      "h": 190.70000000000005
+    }
+  },
+  {
+    "name": "Karnataka",
+    "slug": "karnataka",
+    "aliases": [
+      "karnataka",
+      "ka",
+      "bangalore",
+      "bengaluru",
+      "ಕರ್ನಾಟಕ"
+    ],
+    "keywords": [
+      "karnataka",
+      "bengaluru",
+      "bangalore",
+      "mysuru",
+      "mysore",
+      "hubballi",
+      "hubli",
+      "dharwad",
+      "mangaluru",
+      "mangalore",
+      "belagavi",
+      "belgaum",
+      "kalaburagi",
+      "gulbarga",
+      "davanagere",
+      "ballari",
+      "bellary",
+      "vijayapura",
+      "bijapur",
+      "shivamogga",
+      "shimoga",
+      "tumakuru",
+      "tumkur",
+      "raichur",
+      "bidar",
+      "hassan",
+      "udupi",
+      "chikkamagaluru",
+      "kolar"
+    ],
+    "bounds": {
+      "latMin": 11.5,
+      "latMax": 18.5,
+      "lngMin": 74,
+      "lngMax": 78.6
+    },
+    "bbox": {
+      "x": 204,
+      "y": 723.9,
+      "w": 153,
+      "h": 241.70000000000005
+    }
+  },
+  {
+    "name": "Kerala",
+    "slug": "kerala",
+    "aliases": [
+      "kerala",
+      "kl",
+      "ker",
+      "കേരളം"
+    ],
+    "keywords": [
+      "kerala",
+      "thiruvananthapuram",
+      "trivandrum",
+      "kochi",
+      "cochin",
+      "kozhikode",
+      "calicut",
+      "thrissur",
+      "kollam",
+      "kannur",
+      "alappuzha",
+      "palakkad",
+      "malappuram",
+      "kottayam",
+      "kasaragod",
+      "pathanamthitta",
+      "idukki",
+      "wayanad",
+      "ernakulam"
+    ],
+    "bounds": {
+      "latMin": 8.2,
+      "latMax": 12.8,
+      "lngMin": 74.8,
+      "lngMax": 77.4
+    },
+    "bbox": {
+      "x": 230.6,
+      "y": 925.4,
+      "w": 85.4,
+      "h": 155.80000000000007
+    }
+  },
+  {
+    "name": "Maharashtra",
+    "slug": "maharashtra",
+    "aliases": [
+      "maharashtra",
+      "mh",
+      "mumbai",
+      "महाराष्ट्र"
+    ],
+    "keywords": [
+      "maharashtra",
+      "mumbai",
+      "pune",
+      "nagpur",
+      "thane",
+      "nashik",
+      "aurangabad",
+      "chhatrapati sambhajinagar",
+      "solapur",
+      "kolhapur",
+      "amravati",
+      "navi mumbai",
+      "akola",
+      "latur",
+      "dhule",
+      "ahmednagar",
+      "chandrapur",
+      "parbhani",
+      "jalgaon",
+      "nanded",
+      "satara",
+      "ratnagiri"
+    ],
+    "bounds": {
+      "latMin": 15.6,
+      "latMax": 22.1,
+      "lngMin": 72.6,
+      "lngMax": 80.9
+    },
+    "bbox": {
+      "x": 154.8,
+      "y": 593.8,
+      "w": 281.8,
+      "h": 231.60000000000002
+    }
+  },
+  {
+    "name": "Delhi",
+    "slug": "delhi",
+    "aliases": [
+      "delhi",
+      "new-delhi",
+      "newdelhi",
+      "dl",
+      "ncr",
+      "दिल्ली"
+    ],
+    "keywords": [
+      "delhi",
+      "new delhi",
+      "ncr",
+      "dwarka",
+      "rohini",
+      "saket",
+      "chandni chowk",
+      "connaught place",
+      "lajpat nagar"
+    ],
+    "bounds": {
+      "latMin": 28.4,
+      "latMax": 28.9,
+      "lngMin": 76.8,
+      "lngMax": 77.4
+    },
+    "bbox": {
+      "x": 297.9,
+      "y": 334.8,
+      "w": 17.400000000000034,
+      "h": 14.800000000000011
+    }
+  },
+  {
+    "name": "Andhra Pradesh",
+    "slug": "andhrapradesh",
+    "aliases": [
+      "andhra-pradesh",
+      "andhra",
+      "ap",
+      "ఆంధ్రప్రదేశ్"
+    ],
+    "keywords": [
+      "andhra pradesh",
+      "andhra",
+      "visakhapatnam",
+      "vizag",
+      "vijayawada",
+      "guntur",
+      "nellore",
+      "kurnool",
+      "kakinada",
+      "tirupati",
+      "kadapa",
+      "anantapur",
+      "rajamahendravaram",
+      "ongole",
+      "eluru",
+      "srikakulam",
+      "vizianagaram"
+    ],
+    "bounds": {
+      "latMin": 12.6,
+      "latMax": 19.1,
+      "lngMin": 76.7,
+      "lngMax": 84.8
+    },
+    "bbox": {
+      "x": 295.5,
+      "y": 699.7,
+      "w": 273,
+      "h": 230.5999999999999
+    }
+  },
+  {
+    "name": "Telangana",
+    "slug": "telangana",
+    "aliases": [
+      "telangana",
+      "tg",
+      "ts",
+      "hyderabad",
+      "తెలంగాణ"
+    ],
+    "keywords": [
+      "telangana",
+      "hyderabad",
+      "warangal",
+      "nizamabad",
+      "khammam",
+      "karimnagar",
+      "ramagundam",
+      "mahbubnagar",
+      "nalgonda",
+      "adilabad",
+      "suryapet",
+      "secunderabad",
+      "siddipet"
+    ],
+    "bounds": {
+      "latMin": 15.8,
+      "latMax": 19.9,
+      "lngMin": 77.2,
+      "lngMax": 81.8
+    },
+    "bbox": {
+      "x": 313.3,
+      "y": 674.3,
+      "w": 137.3,
+      "h": 142.9000000000001
+    }
+  },
+  {
+    "name": "Uttar Pradesh",
+    "slug": "uttarpradesh",
+    "aliases": [
+      "uttar-pradesh",
+      "up",
+      "uttar_pradesh",
+      "उत्तर प्रदेश"
+    ],
+    "keywords": [
+      "uttar pradesh",
+      "lucknow",
+      "kanpur",
+      "varanasi",
+      "banaras",
+      "kashi",
+      "prayagraj",
+      "allahabad",
+      "ayodhya",
+      "agra",
+      "meerut",
+      "bareilly",
+      "aligarh",
+      "moradabad",
+      "gorakhpur",
+      "firozabad",
+      "jhansi",
+      "muzaffarnagar",
+      "mathura",
+      "noida",
+      "greater noida",
+      "ghaziabad"
+    ],
+    "bounds": {
+      "latMin": 23.8,
+      "latMax": 30.4,
+      "lngMin": 77,
+      "lngMax": 84.7
+    },
+    "bbox": {
+      "x": 306.8,
+      "y": 274.3,
+      "w": 256.90000000000003,
+      "h": 250.90000000000003
+    }
+  },
+  {
+    "name": "West Bengal",
+    "slug": "westbengal",
+    "aliases": [
+      "west-bengal",
+      "wb",
+      "bengal",
+      "পশ্চিমবঙ্গ"
+    ],
+    "keywords": [
+      "west bengal",
+      "bengal",
+      "kolkata",
+      "calcutta",
+      "howrah",
+      "siliguri",
+      "asansol",
+      "durgapur",
+      "bardhaman",
+      "malda",
+      "darjeeling",
+      "kharagpur",
+      "haldia",
+      "jalpaiguri",
+      "alipurduar"
+    ],
+    "bounds": {
+      "latMin": 21.5,
+      "latMax": 27.3,
+      "lngMin": 85.8,
+      "lngMax": 89.9
+    },
+    "bbox": {
+      "x": 604.7,
+      "y": 398.7,
+      "w": 138.39999999999998,
+      "h": 210.2
+    }
+  },
+  {
+    "name": "Gujarat",
+    "slug": "gujarat",
+    "aliases": [
+      "gujarat",
+      "gj",
+      "ગુજરાત"
+    ],
+    "keywords": [
+      "gujarat",
+      "ahmedabad",
+      "surat",
+      "vadodara",
+      "baroda",
+      "rajkot",
+      "bhavnagar",
+      "jamnagar",
+      "junagadh",
+      "gandhinagar",
+      "anand",
+      "navsari",
+      "morbi",
+      "nadiad",
+      "surendranagar",
+      "bharuch",
+      "porbandar",
+      "kutch",
+      "bhuj",
+      "mehsana"
+    ],
+    "bounds": {
+      "latMin": 20.1,
+      "latMax": 24.7,
+      "lngMin": 68.1,
+      "lngMax": 74.5
+    },
+    "bbox": {
+      "x": 0,
+      "y": 493.7,
+      "w": 216.6,
+      "h": 169.7
+    }
+  },
+  {
+    "name": "Rajasthan",
+    "slug": "rajasthan",
+    "aliases": [
+      "rajasthan",
+      "rj",
+      "राजस्थान"
+    ],
+    "keywords": [
+      "rajasthan",
+      "jaipur",
+      "jodhpur",
+      "kota",
+      "bikaner",
+      "ajmer",
+      "udaipur",
+      "bhilwara",
+      "alwar",
+      "bharatpur",
+      "sikar",
+      "pali",
+      "sri ganganagar",
+      "barmer",
+      "jaisalmer",
+      "chittorgarh",
+      "jhunjhunu"
+    ],
+    "bounds": {
+      "latMin": 23,
+      "latMax": 30.2,
+      "lngMin": 69.5,
+      "lngMax": 78.3
+    },
+    "bbox": {
+      "x": 47.5,
+      "y": 282.2,
+      "w": 297.6,
+      "h": 273.2
+    }
+  },
+  {
+    "name": "Punjab",
+    "slug": "punjab",
+    "aliases": [
+      "punjab",
+      "pb",
+      "ਪੰਜਾਬ"
+    ],
+    "keywords": [
+      "punjab",
+      "amritsar",
+      "ludhiana",
+      "jalandhar",
+      "patiala",
+      "bathinda",
+      "mohali",
+      "sas nagar",
+      "pathankot",
+      "hoshiarpur",
+      "batala",
+      "moga",
+      "abohar",
+      "malerkotla",
+      "khanna",
+      "phagwara",
+      "ferozepur"
+    ],
+    "bounds": {
+      "latMin": 29.5,
+      "latMax": 32.5,
+      "lngMin": 73.8,
+      "lngMax": 77
+    },
+    "bbox": {
+      "x": 196.8,
+      "y": 189.8,
+      "w": 104.19999999999999,
+      "h": 117.59999999999997
+    }
+  },
+  {
+    "name": "Haryana",
+    "slug": "haryana",
+    "aliases": [
+      "haryana",
+      "hr",
+      "हरियाणा"
+    ],
+    "keywords": [
+      "haryana",
+      "gurugram",
+      "gurgaon",
+      "faridabad",
+      "panipat",
+      "ambala",
+      "yamunanagar",
+      "rohtak",
+      "hisar",
+      "karnal",
+      "sonipat",
+      "panchkula",
+      "bhiwani",
+      "sirsa",
+      "bahadurgarh",
+      "jind",
+      "rewari",
+      "kurukshetra"
+    ],
+    "bounds": {
+      "latMin": 27.6,
+      "latMax": 30.9,
+      "lngMin": 74.4,
+      "lngMax": 77.6
+    },
+    "bbox": {
+      "x": 219,
+      "y": 254.5,
+      "w": 104.5,
+      "h": 126.10000000000002
+    }
+  },
+  {
+    "name": "Bihar",
+    "slug": "bihar",
+    "aliases": [
+      "bihar",
+      "br",
+      "बिहार"
+    ],
+    "keywords": [
+      "bihar",
+      "patna",
+      "gaya",
+      "bhagalpur",
+      "muzaffarpur",
+      "purnia",
+      "darbhanga",
+      "bihar sharif",
+      "arrah",
+      "begusarai",
+      "katihar",
+      "munger",
+      "chhapra",
+      "danapur",
+      "saharsa",
+      "sasaram",
+      "hajipur",
+      "dehri",
+      "siwan",
+      "motihari"
+    ],
+    "bounds": {
+      "latMin": 24.3,
+      "latMax": 27.5,
+      "lngMin": 83.3,
+      "lngMax": 88.3
+    },
+    "bbox": {
+      "x": 520.3,
+      "y": 386.8,
+      "w": 168.5,
+      "h": 122.69999999999999
+    }
+  },
+  {
+    "name": "Odisha",
+    "slug": "odisha",
+    "aliases": [
+      "odisha",
+      "orissa",
+      "od",
+      "ଓଡ଼ିଶା"
+    ],
+    "keywords": [
+      "odisha",
+      "orissa",
+      "bhubaneswar",
+      "cuttack",
+      "rourkela",
+      "berhampur",
+      "sambalpur",
+      "puri",
+      "balasore",
+      "bhadrak",
+      "baripada",
+      "jharsuguda",
+      "angul"
+    ],
+    "bounds": {
+      "latMin": 17.8,
+      "latMax": 22.6,
+      "lngMin": 81.4,
+      "lngMax": 87.5
+    },
+    "bbox": {
+      "x": 453.7,
+      "y": 573.5,
+      "w": 208.09999999999997,
+      "h": 173
+    }
+  },
+  {
+    "name": "Madhya Pradesh",
+    "slug": "madhyapradesh",
+    "aliases": [
+      "madhya-pradesh",
+      "mp",
+      "madhya_pradesh",
+      "मध्य प्रदेश"
+    ],
+    "keywords": [
+      "madhya pradesh",
+      "bhopal",
+      "indore",
+      "jabalpur",
+      "gwalior",
+      "ujjain",
+      "sagar",
+      "dewas",
+      "satna",
+      "ratlam",
+      "rewa",
+      "murwara",
+      "katni",
+      "singrauli",
+      "burhanpur",
+      "khandwa",
+      "bhind",
+      "chhindwara",
+      "guna",
+      "shivpuri",
+      "vidisha",
+      "damoh"
+    ],
+    "bounds": {
+      "latMin": 21.3,
+      "latMax": 26.9,
+      "lngMin": 74,
+      "lngMax": 82.8
+    },
+    "bbox": {
+      "x": 205,
+      "y": 413.3,
+      "w": 296.9,
+      "h": 215.40000000000003
+    }
+  },
+  {
+    "name": "Assam",
+    "slug": "assam",
+    "aliases": [
+      "assam",
+      "as",
+      "অসম"
+    ],
+    "keywords": [
+      "assam",
+      "guwahati",
+      "silchar",
+      "dibrugarh",
+      "jorhat",
+      "nagaon",
+      "tinsukia",
+      "tezpur",
+      "bongaigaon",
+      "dhubri",
+      "diphu",
+      "north lakhimpur",
+      "karimganj",
+      "sivasagar",
+      "goalpara"
+    ],
+    "bounds": {
+      "latMin": 24.1,
+      "latMax": 28.2,
+      "lngMin": 89.7,
+      "lngMax": 96
+    },
+    "bbox": {
+      "x": 738,
+      "y": 369.8,
+      "w": 213.5,
+      "h": 145.3
+    }
+  },
+  {
+    "name": "Jharkhand",
+    "slug": "jharkhand",
+    "aliases": [
+      "jharkhand",
+      "jh",
+      "झारखंड"
+    ],
+    "keywords": [
+      "jharkhand",
+      "ranchi",
+      "jamshedpur",
+      "dhanbad",
+      "bokaro",
+      "deoghar",
+      "phiruzabad",
+      "hazaribagh",
+      "giridih",
+      "ramgarh",
+      "medininagar",
+      "chirkunda"
+    ],
+    "bounds": {
+      "latMin": 21.9,
+      "latMax": 25.4,
+      "lngMin": 83.3,
+      "lngMax": 87.9
+    },
+    "bbox": {
+      "x": 519.6,
+      "y": 470.3,
+      "w": 158.19999999999993,
+      "h": 125.40000000000003
+    }
+  },
+  {
+    "name": "Chhattisgarh",
+    "slug": "chhattisgarh",
+    "aliases": [
+      "chhattisgarh",
+      "cg",
+      "छत्तीसगढ़"
+    ],
+    "keywords": [
+      "chhattisgarh",
+      "raipur",
+      "bhilai",
+      "bilaspur",
+      "korba",
+      "rajnandgaon",
+      "raigarh",
+      "jagdalpur",
+      "ambikapur",
+      "dhamtari",
+      "mahasamund"
+    ],
+    "bounds": {
+      "latMin": 17.8,
+      "latMax": 24.1,
+      "lngMin": 80.2,
+      "lngMax": 84.4
+    },
+    "bbox": {
+      "x": 415.1,
+      "y": 516.6,
+      "w": 141.10000000000002,
+      "h": 230.60000000000002
+    }
+  },
+  {
+    "name": "Himachal Pradesh",
+    "slug": "himachalpradesh",
+    "aliases": [
+      "himachal-pradesh",
+      "himachal",
+      "hp",
+      "हिमाचल प्रदेश"
+    ],
+    "keywords": [
+      "himachal pradesh",
+      "himachal",
+      "shimla",
+      "dharamshala",
+      "solan",
+      "mandi",
+      "kullu",
+      "manali",
+      "baddi",
+      "nahan",
+      "paonta sahib",
+      "sundernagar",
+      "chamba",
+      "una"
+    ],
+    "bounds": {
+      "latMin": 30.4,
+      "latMax": 33.2,
+      "lngMin": 75.6,
+      "lngMax": 79
+    },
+    "bbox": {
+      "x": 256.9,
+      "y": 159.7,
+      "w": 110.70000000000005,
+      "h": 115.40000000000003
+    }
+  },
+  {
+    "name": "Uttarakhand",
+    "slug": "uttarakhand",
+    "aliases": [
+      "uttarakhand",
+      "uk",
+      "uttaranchal",
+      "उत्तराखंड"
+    ],
+    "keywords": [
+      "uttarakhand",
+      "dehradun",
+      "haridwar",
+      "roorkee",
+      "haldwani",
+      "rudrapur",
+      "kashipur",
+      "rishikesh",
+      "nainital",
+      "almora",
+      "pithoragarh"
+    ],
+    "bounds": {
+      "latMin": 28.7,
+      "latMax": 31.5,
+      "lngMin": 77.6,
+      "lngMax": 81.1
+    },
+    "bbox": {
+      "x": 323.2,
+      "y": 232.5,
+      "w": 117.90000000000003,
+      "h": 107.80000000000001
+    }
+  },
+  {
+    "name": "Goa",
+    "slug": "goa",
+    "aliases": [
+      "goa",
+      "ga"
+    ],
+    "keywords": [
+      "goa",
+      "panaji",
+      "margao",
+      "vasco da gama",
+      "mapusa",
+      "ponda"
+    ],
+    "bounds": {
+      "latMin": 14.9,
+      "latMax": 15.8,
+      "lngMin": 73.6,
+      "lngMax": 74.4
+    },
+    "bbox": {
+      "x": 190,
+      "y": 820.7,
+      "w": 22.19999999999999,
+      "h": 29.799999999999955
+    }
+  },
+  {
+    "name": "Jammu & Kashmir",
+    "slug": "jammukashmir",
+    "aliases": [
+      "jammu-kashmir",
+      "jammu_kashmir",
+      "kashmir",
+      "jk",
+      "जम्मू और कश्मीर"
+    ],
+    "keywords": [
+      "jammu & kashmir",
+      "jammu and kashmir",
+      "kashmir",
+      "srinagar",
+      "jammu",
+      "anantnag",
+      "baramulla",
+      "udhampur",
+      "sopore",
+      "kathua",
+      "rajouri",
+      "pulwama",
+      "kupwara"
+    ],
+    "bounds": {
+      "latMin": 32.3,
+      "latMax": 35.5,
+      "lngMin": 73.8,
+      "lngMax": 76.8
+    },
+    "bbox": {
+      "x": 180.7,
+      "y": 82.5,
+      "w": 114.80000000000001,
+      "h": 114.6
+    }
+  },
+  {
+    "name": "Ladakh",
+    "slug": "ladakh",
+    "aliases": [
+      "ladakh",
+      "leh",
+      "la",
+      "लद्दाख"
+    ],
+    "keywords": [
+      "ladakh",
+      "leh",
+      "kargil",
+      "nubra",
+      "drass",
+      "zanskar",
+      "changthang"
+    ],
+    "bounds": {
+      "latMin": 32.3,
+      "latMax": 36,
+      "lngMin": 75.5,
+      "lngMax": 80.5
+    },
+    "bbox": {
+      "x": 150.7,
+      "y": 0,
+      "w": 266.5,
+      "h": 195.5
+    }
+  },
+  {
+    "name": "Tripura",
+    "slug": "tripura",
+    "aliases": [
+      "tripura",
+      "tr",
+      "ত্রিপুরা"
+    ],
+    "keywords": [
+      "tripura",
+      "agartala",
+      "dharmanagar",
+      "udaipur",
+      "kailashahar",
+      "belonia",
+      "khowai"
+    ],
+    "bounds": {
+      "latMin": 22.9,
+      "latMax": 24.5,
+      "lngMin": 91.1,
+      "lngMax": 92.4
+    },
+    "bbox": {
+      "x": 787.2,
+      "y": 501.6,
+      "w": 39.89999999999998,
+      "h": 57.10000000000002
+    }
+  },
+  {
+    "name": "Meghalaya",
+    "slug": "meghalaya",
+    "aliases": [
+      "meghalaya",
+      "ml"
+    ],
+    "keywords": [
+      "meghalaya",
+      "shillong",
+      "tura",
+      "nongstoin",
+      "jowai",
+      "cherrapunji",
+      "sohra"
+    ],
+    "bounds": {
+      "latMin": 25,
+      "latMax": 26.1,
+      "lngMin": 89.8,
+      "lngMax": 92.8
+    },
+    "bbox": {
+      "x": 742.4,
+      "y": 442.7,
+      "w": 100.39999999999998,
+      "h": 39
+    }
+  },
+  {
+    "name": "Manipur",
+    "slug": "manipur",
+    "aliases": [
+      "manipur",
+      "mn"
+    ],
+    "keywords": [
+      "manipur",
+      "imphal",
+      "churachandpur",
+      "thoubal",
+      "bishnupur",
+      "kakching",
+      "ukhrul"
+    ],
+    "bounds": {
+      "latMin": 23.8,
+      "latMax": 25.7,
+      "lngMin": 93,
+      "lngMax": 94.8
+    },
+    "bbox": {
+      "x": 849.7,
+      "y": 457.1,
+      "w": 59.799999999999955,
+      "h": 68.89999999999998
+    }
+  },
+  {
+    "name": "Nagaland",
+    "slug": "nagaland",
+    "aliases": [
+      "nagaland",
+      "nl"
+    ],
+    "keywords": [
+      "nagaland",
+      "kohima",
+      "dimapur",
+      "mokokchung",
+      "tuensang",
+      "wohka",
+      "zunheboto"
+    ],
+    "bounds": {
+      "latMin": 25.2,
+      "latMax": 27,
+      "lngMin": 93.3,
+      "lngMax": 95.3
+    },
+    "bbox": {
+      "x": 862,
+      "y": 405.6,
+      "w": 64.20000000000005,
+      "h": 68.5
+    }
+  },
+  {
+    "name": "Mizoram",
+    "slug": "mizoram",
+    "aliases": [
+      "mizoram",
+      "mz"
+    ],
+    "keywords": [
+      "mizoram",
+      "aizawl",
+      "lunglei",
+      "champhai",
+      "serchhip",
+      "kolasib"
+    ],
+    "bounds": {
+      "latMin": 21.9,
+      "latMax": 24.5,
+      "lngMin": 92.2,
+      "lngMax": 93.5
+    },
+    "bbox": {
+      "x": 825.1,
+      "y": 504.6,
+      "w": 39.89999999999998,
+      "h": 90
+    }
+  },
+  {
+    "name": "Arunachal Pradesh",
+    "slug": "arunachalpradesh",
+    "aliases": [
+      "arunachal-pradesh",
+      "arunachal",
+      "ar"
+    ],
+    "keywords": [
+      "arunachal pradesh",
+      "arunachal",
+      "itanagar",
+      "naharlagun",
+      "pasighat",
+      "tawang",
+      "ziro",
+      "bomdila"
+    ],
+    "bounds": {
+      "latMin": 26.6,
+      "latMax": 29.5,
+      "lngMin": 91.5,
+      "lngMax": 97.4
+    },
+    "bbox": {
+      "x": 800.8,
+      "y": 311.4,
+      "w": 199.20000000000005,
+      "h": 107.60000000000002
+    }
+  },
+  {
+    "name": "Sikkim",
+    "slug": "sikkim",
+    "aliases": [
+      "sikkim",
+      "sk"
+    ],
+    "keywords": [
+      "sikkim",
+      "gangtok",
+      "namchi",
+      "gyalshing",
+      "mangan",
+      "pelling"
+    ],
+    "bounds": {
+      "latMin": 27,
+      "latMax": 28.1,
+      "lngMin": 88,
+      "lngMax": 88.9
+    },
+    "bbox": {
+      "x": 679.5,
+      "y": 364.8,
+      "w": 31.100000000000023,
+      "h": 38.89999999999998
+    }
+  },
+  {
+    "name": "Puducherry",
+    "slug": "puducherry",
+    "aliases": [
+      "puducherry",
+      "pondicherry",
+      "py",
+      "புதுச்சேரி"
+    ],
+    "keywords": [
+      "puducherry",
+      "pondicherry",
+      "karaikal",
+      "mahe",
+      "yanam"
+    ],
+    "bounds": {
+      "latMin": 11.8,
+      "latMax": 12.1,
+      "lngMin": 79.7,
+      "lngMax": 79.9
+    },
+    "bbox": {
+      "x": 396,
+      "y": 953.8,
+      "w": 4.399999999999977,
+      "h": 4.2000000000000455
+    }
+  },
+  {
+    "name": "Chandigarh",
+    "slug": "chandigarh",
+    "aliases": [
+      "chandigarh",
+      "ch"
+    ],
+    "keywords": [
+      "chandigarh"
+    ],
+    "bounds": {
+      "latMin": 30.6,
+      "latMax": 30.8,
+      "lngMin": 76.7,
+      "lngMax": 76.9
+    },
+    "bbox": {
+      "x": 293.5,
+      "y": 260,
+      "w": 4.399999999999977,
+      "h": 3.6000000000000227
+    }
+  },
+  {
+    "name": "Andaman & Nicobar",
+    "slug": "andamannicobar",
+    "aliases": [
+      "andaman-nicobar",
+      "andaman",
+      "nicobar",
+      "an"
+    ],
+    "keywords": [
+      "andaman & nicobar",
+      "andaman and nicobar",
+      "port blair",
+      "havelock",
+      "neil island"
+    ],
+    "bounds": {
+      "latMin": 6.7,
+      "latMax": 13.7,
+      "lngMin": 92.2,
+      "lngMax": 94
+    },
+    "bbox": {
+      "x": 828.8,
+      "y": 897.4,
+      "w": 52.60000000000002,
+      "h": 236.19999999999993
+    }
+  },
+  {
+    "name": "Dadra & Nagar Haveli",
+    "slug": "dadranagarhaveli",
+    "aliases": [
+      "dadra-nagar-haveli",
+      "dnh",
+      "silvassa"
+    ],
+    "keywords": [
+      "dadra and nagar haveli",
+      "dadra & nagar haveli",
+      "silvassa"
+    ],
+    "bounds": {
+      "latMin": 20,
+      "latMax": 20.4,
+      "lngMin": 72.8,
+      "lngMax": 73.2
+    },
+    "bbox": {
+      "x": 163.6,
+      "y": 657.2,
+      "w": 10.300000000000011,
+      "h": 8.799999999999955
+    }
+  },
+  {
+    "name": "Daman & Diu",
+    "slug": "damandiu",
+    "aliases": [
+      "daman-diu",
+      "daman",
+      "diu",
+      "dd"
+    ],
+    "keywords": [
+      "daman & diu",
+      "daman and diu",
+      "daman",
+      "diu"
+    ],
+    "bounds": {
+      "latMin": 20.3,
+      "latMax": 20.8,
+      "lngMin": 70.8,
+      "lngMax": 73
+    },
+    "bbox": {
+      "x": 160.6,
+      "y": 650.7,
+      "w": 1.3000000000000114,
+      "h": 3.599999999999909
+    }
+  },
+  {
+    "name": "Lakshadweep",
+    "slug": "lakshadweep",
+    "aliases": [
+      "lakshadweep",
+      "kavaratti",
+      "ld"
+    ],
+    "keywords": [
+      "lakshadweep",
+      "kavaratti",
+      "agatti",
+      "minicoy"
+    ],
+    "bounds": {
+      "latMin": 8.2,
+      "latMax": 12.4,
+      "lngMin": 71.5,
+      "lngMax": 74
+    },
+    "bbox": {
+      "x": 168.4,
+      "y": 1081.2,
+      "w": 0.6999999999999886,
+      "h": 0.7000000000000455
+    }
+  }
+]

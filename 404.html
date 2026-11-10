@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to India News Radar…</title>
+  <script>
+    (function() {
+      var repo = "Live-news-updated-India";
+      var p = window.location.pathname;
+      var s = window.location.search;
+      var h = window.location.hash;
+      var clean = p.replace(new RegExp("^/?" + repo + "/?", "i"), "/").replace(/^\//, "").replace(/\/$/, "");
+      var target = "/" + repo + "/";
+      if (clean) {
+        target += "?state=" + encodeURIComponent(clean) + (s ? "&" + s.slice(1) : "") + h;
+      } else {
+        target += s + h;
+      }
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body style="background:#0b0f17;color:#f8fafc;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;">
+  <p>Connecting to India News Radar…</p>
+</body>
+</html>
