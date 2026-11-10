@@ -74,7 +74,6 @@ const items = (todayItems.length > 0 ? todayItems.concat(otherItems) : otherItem
 
   let title = c.title || "";
   if (/^cbmi/i.test(title) || (!title.includes(" ") && title.length > 25)) title = "";
-  if (/[\u0900-\u097F\u0C00-\u0C7F\u0980-\u09FF\u0A80-\u0AFF]/.test(title)) title = "";
   if (/[\u0B80-\u0BFF]/.test(title) && !isTamilSource) title = "";
   if (!title) {
     title = `Live news update in ${(c.place || "India").split(",")[0]}`;
@@ -97,7 +96,7 @@ const items = (todayItems.length > 0 ? todayItems.concat(otherItems) : otherItem
 
 const listHTML = items.map((e) => `<article class="item" data-id="${esc(e.id)}"><span class="bar"></span><span><h2 class="h">${esc(e.title)}</h2>`
   + `<span class="meta">${esc(e.place)} · <time datetime="${e.date}">${fmtDate(e.date)}</time>${e.tag ? `<span class="tag ${e.tagClass}">${esc(e.tag)}</span>` : ""}</span>`
-  + (e.summary ? `<span class="detail" style="display:block"><p>${esc(e.summary)}</p><p class="src">Source${e.sources.length > 1 ? "s" : ""}: ${e.sources.map((s) => `<a href="${esc(s.u)}" target="_blank" rel="noopener nofollow">${esc(s.n)}</a>`).join(", ")}</p></span>` : "")
+  + (e.summary ? `<span class="detail" style="display:block"><p>${esc(e.summary)}</p><p class="src">Source${e.sources.length > 1 ? "s" : ""}: ${e.sources.map((s) => `<a href="${esc(s.u)}" target="_blank" rel="noopener nofollow" class="source-link">${esc(s.n)} ↗</a>`).join(", ")}</p>${e.sources[0]?.u ? `<p class="open-story"><a href="${esc(e.sources[0].u)}" target="_blank" rel="noopener nofollow" class="open-story-btn">Read full story on ${esc(e.sources[0].n)} ↗</a></p>` : ""}</span>` : "")
   + `</span></article>`).join("");
 
 const jsonld = {

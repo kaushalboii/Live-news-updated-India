@@ -80,6 +80,49 @@ const KNOWN_PUBLISHERS = {
   "assamtribune.com": "Assam Tribune",
   "pratidintime.com": "Pratidin Time",
   "downtoearth.org.in": "Down To Earth (Climate)",
+  "indiatoday.in": "India Today",
+  "zeenews.india.com": "Zee News",
+  "news18.com": "News18",
+  "abplive.com": "ABP Live",
+  "wionews.com": "WION",
+  "republicworld.com": "Republic TV",
+  "financialexpress.com": "Financial Express",
+  "firstpost.com": "Firstpost",
+  "thequint.com": "The Quint",
+  "theprint.in": "The Print",
+  "deccanchronicle.com": "Deccan Chronicle",
+  "livelaw.in": "Live Law",
+  "barandbench.com": "Bar & Bench",
+  "ptinews.com": "PTI News",
+  "pib.gov.in": "PIB India",
+  "mid-day.com": "Mid-Day",
+  "oneindia.com": "Oneindia",
+  "rediff.com": "Rediff News",
+  "sentinelassam.com": "The Sentinel Assam",
+  "orissapost.com": "Orissa Post",
+  "siasat.com": "The Siasat Daily",
+  "dailypioneer.com": "The Pioneer",
+  "businesstoday.in": "Business Today",
+  "cnbctv18.com": "CNBC-TV18",
+  "etnownews.com": "ET Now",
+  "patrika.com": "Rajasthan Patrika",
+  "punjabkesari.in": "Punjab Kesari",
+  "livehindustan.com": "Live Hindustan",
+  "andhrajyothy.com": "Andhra Jyothy",
+  "asianetnews.com": "Asianet News",
+  "prajavani.net": "Prajavani",
+  "vijayavani.net": "Vijayavani",
+  "kannadaprabha.com": "Kannada Prabha",
+  "loksatta.com": "Loksatta",
+  "maharashtratimes.com": "Maharashtra Times",
+  "sangbadpratidin.in": "Sangbad Pratidin",
+  "bartamanpatrika.com": "Bartaman",
+  "sambad.in": "Sambad",
+  "prameyanews.com": "Prameya",
+  "thestatesman.com": "The Statesman",
+  "kashmirlife.net": "Kashmir Life",
+  "risingkashmir.com": "Rising Kashmir",
+  "news.google.com": "Google News India",
   "youtube.com": "YouTube Broadcast",
   "youtu.be": "YouTube Broadcast",
   "x.com": "X (Twitter) Dispatch",
@@ -405,7 +448,44 @@ const GEO_DICT = {
   "வங்கக்கடல்": [14.0000, 85.0000, "Bay of Bengal"],
   "arabian sea": [16.0000, 68.0000, "Arabian Sea"],
 
+  // National & Nationwide (Mapped to Capital / National Hub)
+  "india": [28.6139, 77.2090, "New Delhi (National), Delhi"],
+  "indian": [28.6139, 77.2090, "New Delhi (National), Delhi"],
+  "nationwide": [28.6139, 77.2090, "New Delhi (Nationwide), Delhi"],
+  "national": [28.6139, 77.2090, "New Delhi (National), Delhi"],
+  "centre": [28.6139, 77.2090, "New Delhi (Centre), Delhi"],
+  "central government": [28.6139, 77.2090, "New Delhi (Centre), Delhi"],
+  "parliament": [28.6139, 77.2090, "New Delhi (Parliament), Delhi"],
+  "lok sabha": [28.6139, 77.2090, "New Delhi (Lok Sabha), Delhi"],
+  "rajya sabha": [28.6139, 77.2090, "New Delhi (Rajya Sabha), Delhi"],
+  "supreme court": [28.6139, 77.2090, "New Delhi (Supreme Court), Delhi"],
+  "election commission": [28.6139, 77.2090, "New Delhi (ECI), Delhi"],
+  "pm modi": [28.6139, 77.2090, "New Delhi, Delhi"],
+  "narendra modi": [28.6139, 77.2090, "New Delhi, Delhi"],
+  "modi": [28.6139, 77.2090, "New Delhi, Delhi"],
+  "bharat": [28.6139, 77.2090, "New Delhi (National), Delhi"],
+  "भारत": [28.6139, 77.2090, "New Delhi (National), Delhi"],
+  "isro": [12.9716, 77.5946, "Bengaluru (ISRO), Karnataka"],
+  "rbi": [19.0760, 72.8777, "Mumbai (RBI), Maharashtra"],
+  "sensex": [19.0760, 72.8777, "Mumbai (BSE Sensex), Maharashtra"],
+  "nifty": [19.0760, 72.8777, "Mumbai (NSE Nifty), Maharashtra"],
+
   // States & Regional Descriptors
+  "uttar pradesh": [26.8467, 80.9462, "Uttar Pradesh"],
+  "उत्तर प्रदेश": [26.8467, 80.9462, "Uttar Pradesh"],
+  "andhra pradesh": [15.9129, 79.7400, "Andhra Pradesh"],
+  "himachal pradesh": [31.1048, 77.1734, "Himachal Pradesh"],
+  "manipur": [24.6637, 93.9063, "Manipur"],
+  "meghalaya": [25.4670, 91.3662, "Meghalaya"],
+  "mizoram": [23.1645, 92.9376, "Mizoram"],
+  "nagaland": [26.1584, 94.5624, "Nagaland"],
+  "tripura": [23.9408, 91.9882, "Tripura"],
+  "arunachal pradesh": [28.2180, 94.7278, "Arunachal Pradesh"],
+  "arunachal": [28.2180, 94.7278, "Arunachal Pradesh"],
+  "sikkim": [27.5330, 88.5122, "Sikkim"],
+  "kashmir": [34.0837, 74.7973, "Kashmir, Jammu & Kashmir"],
+  "jammu": [32.7266, 74.8570, "Jammu, Jammu & Kashmir"],
+  "ladakh": [34.1526, 77.5771, "Ladakh"],
   "punjab": [31.1471, 75.3412, "Punjab"],
   "kerala": [10.8505, 76.2711, "Kerala"],
   "assam": [26.2006, 92.9376, "Assam"],
@@ -611,17 +691,14 @@ function selectBestTitle(cl, mov) {
     }
   }
 
-  // Strictly enforce language rule: only Tamil sources show Tamil; all other sources show exact original English
+  // Filter Tamil: only allow Tamil script if story originates from a Tamil source or region
   const filtered = candidates.filter(cand => {
-    // Reject Hindi / Devanagari and other non-Tamil Indic scripts
-    if (/[\u0900-\u097F\u0C00-\u0C7F\u0980-\u09FF\u0A80-\u0AFF]/.test(cand)) return false;
-    // For Tamil script, only keep if the story originates from a Tamil source or region
     if (/[\u0B80-\u0BFF]/.test(cand)) return isTamil;
     return true;
   });
 
-  const pool = filtered.length > 0 ? filtered : candidates.filter(cand => !/[\u0900-\u097F]/.test(cand));
-  if (pool.length === 0) return "";
+  const pool = filtered.length > 0 ? filtered : candidates;
+  if (pool.length === 0) return cl.title || "";
 
   const rules = MOVEMENT_RULES.find(([m]) => m === mov)?.[1] || [];
   let best = pool[0];
@@ -734,40 +811,73 @@ async function download(stamp) {
 }
 
 // Multi-Source Live Feed Ingestion Engine (Climate & AQI, Tamil 24/7, YouTube, X, Social, National Wires & Hyper-Local Press)
+const GEO_ENTRIES = Object.entries(GEO_DICT).sort((a, b) => b[0].length - a[0].length);
+
+function matchLocation(text) {
+  if (!text) return null;
+  const clean = text.toLowerCase();
+  for (const [kw, geo] of GEO_ENTRIES) {
+    const k = kw.toLowerCase();
+    if (/[\u0B80-\u0BFF\u0900-\u097F]/.test(k)) {
+      if (clean.includes(k)) return geo;
+    } else {
+      const regex = new RegExp(`(?:^|[^a-z0-9])${k.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&")}(?:[^a-z0-9]|$)`, "i");
+      if (regex.test(clean)) return geo;
+    }
+  }
+  return null;
+}
+
 async function fetchMultiPlatformStreams(clusters) {
   const feeds = [
-    // 1. Climate, AQI & Extreme Weather Intelligence (Live 24/7 across India)
+    // 1. National Breaking Wire & Top Stories (India 24/7)
+    { url: "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en", platform: "wire" },
+    { url: `https://news.google.com/rss/search?q=${encodeURIComponent("when:24h india")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "web" },
+    { url: "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55YXpBU0FtVnpLQUFQAQ?hl=en-IN&gl=IN&ceid=IN:en", platform: "web" },
+    { url: "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdObkVnVndkQzFDVWhvQ0tBQSoqCAAqIQgKIhtDQkFTRGdvSUwyMHZNRGx6TVdObkVsVnRkQzFDVWhvQ0tBQSoq?hl=en-IN&gl=IN&ceid=IN:en", platform: "web" },
+
+    // 2. National Major Newspaper RSS Feeds
+    { url: "https://www.thehindu.com/news/national/feeder/default.rss", platform: "web" },
+    { url: "https://feeds.feedburner.com/ndtvnews-top-stories", platform: "web" },
+    { url: "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", platform: "web" },
+    { url: "https://indianexpress.com/section/india/feed/", platform: "web" },
+    { url: "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", platform: "web" },
+    { url: "https://www.indiatoday.in/rss/1206584", platform: "web" },
+
+    // 3. Climate, AQI & Extreme Weather Intelligence (Live 24/7 across India)
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(AQI OR pollution OR smog OR cyclone OR weather OR rain OR IMD OR stubble) when:24h india")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "climate" },
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Delhi AQI OR smog OR GRAP OR toxic air OR stubble burning) when:24h")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "climate" },
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Cyclone Murasu OR Bay of Bengal depression OR heavy rain alert OR flood warning) when:24h")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "climate" },
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(மழை OR புயல் OR வானிலை OR வெள்ளம் OR காற்று) when:24h")}&hl=ta&gl=IN&ceid=IN:ta`, platform: "climate" },
 
-    // 2. Tamil Nadu 24/7 Live News (Top Live News Channels & Regional Papers)
+    // 4. Regional News across India (North, West, South, East, Central)
+    { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Delhi OR 'Uttar Pradesh' OR Lucknow OR Punjab OR Haryana OR Rajasthan OR Jaipur OR Bihar OR Patna OR Kashmir) when:24h")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "web" },
+    { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Mumbai OR Maharashtra OR Pune OR Gujarat OR Ahmedabad OR 'Madhya Pradesh' OR Bhopal) when:24h")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "web" },
+    { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Bengaluru OR Karnataka OR Hyderabad OR Telangana OR 'Andhra Pradesh' OR Kerala OR Kochi) when:24h")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "web" },
+    { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Kolkata OR 'West Bengal' OR Odisha OR Bhubaneswar OR Assam OR Guwahati OR Manipur) when:24h")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "web" },
+
+    // 5. Tamil Nadu 24/7 Live News
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Tamil Nadu OR Chennai OR Madurai OR Coimbatore OR Tiruchirappalli OR Salem OR Tirunelveli) when:24h")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "tamil" },
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(தமிழ்நாடு OR சென்னை OR மதுரை OR கோவை OR திருச்சி OR சேலம் OR நெல்லை) when:24h")}&hl=ta&gl=IN&ceid=IN:ta`, platform: "tamil" },
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("site:youtube.com (News18 Tamil Nadu OR Thanthi TV OR Puthiya Thalaimurai OR Polimer News OR News7 Tamil OR Sun News)")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "youtube" },
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(Dinamalar OR Dinamani OR Daily Thanthi OR Hindu Tamil Thisai OR Polimer News OR Thanthi TV) when:24h")}&hl=ta&gl=IN&ceid=IN:ta`, platform: "tamil" },
     { url: "https://news.google.com/rss?hl=ta&gl=IN&ceid=IN:ta", platform: "tamil" },
 
-    // 3. YouTube Live News Broadcasts & Video Dispatches
+    // 6. YouTube Live News Broadcasts & Video Dispatches
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("site:youtube.com india breaking news")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "youtube" },
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("site:youtube.com india news today")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "youtube" },
 
-    // 4. X (Twitter) Breaking Dispatches & Verified Alerts
+    // 7. X (Twitter) Breaking Dispatches & Verified Alerts
     { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(site:x.com OR site:twitter.com) (india news OR police OR alert OR protest OR weather)")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "social" },
 
-    // 5. Instagram / Facebook Social Media Updates
-    { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(site:instagram.com OR site:facebook.com) india news")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "social" },
-
-    // 6. Mainstream National Breaking Wire (English)
-    { url: `https://news.google.com/rss/search?q=${encodeURIComponent("when:24h india")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "web" },
-    { url: "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en", platform: "wire" }
+    // 8. Instagram / Facebook Social Media Updates
+    { url: `https://news.google.com/rss/search?q=${encodeURIComponent("(site:instagram.com OR site:facebook.com) india news")}&hl=en-IN&gl=IN&ceid=IN:en`, platform: "social" }
   ];
 
   // Current date in Indian Standard Time (IST = UTC+5:30)
   const istNow = new Date(Date.now() + 5.5 * 3600 * 1000);
   const today = istNow.toISOString().slice(0, 10);
-  console.log(`Ingesting ${feeds.length} live multi-platform streams (Climate, Tamil 24/7, YouTube, X, Social, Regional)...`);
+  console.log(`Ingesting ${feeds.length} live multi-platform streams (National Wires, Newspapers, Climate, Tamil 24/7, YouTube, X, Social, Regional)...`);
 
   for (const { url, platform } of feeds) {
     try {
@@ -784,6 +894,9 @@ async function fetchMultiPlatformStreams(clusters) {
 
         const link = (item.match(/<link>([\s\S]*?)<\/link>/)?.[1] || "").trim();
         let source = (item.match(/<source[^>]*>([\s\S]*?)<\/source>/)?.[1] || "").trim();
+        if (!source && link) {
+          source = formatPublisher(hostOf(link));
+        }
         if (platform === "youtube") source = source || "YouTube Broadcast";
         else if (platform === "social") {
           source = link.includes("x.com") || link.includes("twitter.com") ? "X (Twitter) Dispatch" : "Social Wire";
@@ -792,11 +905,18 @@ async function fetchMultiPlatformStreams(clusters) {
         } else if (platform === "tamil") {
           source = source || "Tamil Nadu 24/7 Wire";
         }
+        source = source || "News Wire";
 
-        const lower = cleanTitle.toLowerCase();
-        let matchedGeo = null;
-        for (const [kw, geo] of Object.entries(GEO_DICT)) {
-          if (lower.includes(kw.toLowerCase())) { matchedGeo = geo; break; }
+        let matchedGeo = matchLocation(cleanTitle);
+        if (!matchedGeo) {
+          const rawDesc = item.match(/<description>([\s\S]*?)<\/description>/)?.[1] || "";
+          const cleanDesc = cleanRssTitle(rawDesc);
+          if (cleanDesc) matchedGeo = matchLocation(cleanDesc);
+        }
+        // If no specific city is mentioned, but it is from a national India feed,
+        // map it to the national capital rather than dropping the headline!
+        if (!matchedGeo && (platform === "wire" || platform === "web" || platform === "climate" || platform === "youtube" || platform === "social")) {
+          matchedGeo = [28.6139, 77.2090, "New Delhi (National), Delhi"];
         }
         if (!matchedGeo) continue;
 
@@ -845,36 +965,41 @@ async function main() {
     if (cl.title && /^cbmi/i.test(cl.title)) {
       cl.title = undefined;
     }
-    // Purge Hindi titles so English sources show exact English titles
-    if (cl.title && /[\u0900-\u097F]/.test(cl.title)) {
-      cl.title = undefined;
-    }
     if (cl.date >= cutoff && cl.key) clusters.set(cl.key, cl);
   }
 
-  const latest = await latestStamp();
-  const todo = stampsToProcess(latest, state.lastStamp);
-  console.log(`Latest GDELT file ${latest}; ${todo.length} new file(s) since ${state.lastStamp || "fresh start"}`);
+  let lastOk = state.lastStamp;
+  try {
+    const latest = await latestStamp();
+    const todo = stampsToProcess(latest, state.lastStamp);
+    console.log(`Latest GDELT file ${latest}; ${todo.length} new file(s) since ${state.lastStamp || "fresh start"}`);
 
-  let processed = 0, lastOk = state.lastStamp;
-  for (let i = 0; i < todo.length; i += CONCURRENCY) {
-    const batch = todo.slice(i, i + CONCURRENCY);
-    const results = await Promise.allSettled(batch.map(download));
-    let failed = false;
-    for (let j = 0; j < batch.length; j++) {
-      const r = results[j];
-      if (r.status === "rejected") {
-        console.warn(`Stopping at ${batch[j]}: ${r.reason.message}. Will retry next run.`);
-        failed = true; break;
+    let processed = 0;
+    for (let i = 0; i < todo.length; i += CONCURRENCY) {
+      const batch = todo.slice(i, i + CONCURRENCY);
+      const results = await Promise.allSettled(batch.map(download));
+      let failed = false;
+      for (let j = 0; j < batch.length; j++) {
+        const r = results[j];
+        if (r.status === "rejected") {
+          console.warn(`Stopping at ${batch[j]}: ${r.reason.message}. Will retry next run.`);
+          failed = true; break;
+        }
+        for (const line of r.value.split("\n")) if (line) addRow(clusters, line.split("\t"), cutoff);
+        lastOk = batch[j]; processed++;
       }
-      for (const line of r.value.split("\n")) if (line) addRow(clusters, line.split("\t"), cutoff);
-      lastOk = batch[j]; processed++;
+      if (failed) break;
     }
-    if (failed) break;
+  } catch (err) {
+    console.warn("GDELT ingestion temporarily unreachable:", err.message);
   }
 
-  // Ingest multi-platform streams (Climate, Tamil 24/7, YouTube, X, Social, Regional wires)
-  await fetchMultiPlatformStreams(clusters);
+  // Ingest multi-platform streams (National Wires, Newspapers, Climate, Tamil 24/7, YouTube, X, Social, Regional)
+  try {
+    await fetchMultiPlatformStreams(clusters);
+  } catch (err) {
+    console.warn("Multi-platform streams ingestion failed:", err.message);
+  }
 
   const all = [...clusters.values()]
     .sort((a, b) => b.date.localeCompare(a.date) || b.articles - a.articles)
