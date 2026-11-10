@@ -16,6 +16,11 @@ const readJSON = async (p, fb) => { try { return JSON.parse(await fs.readFile(p,
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const inlineJSON = (o) => JSON.stringify(o).replace(/</g, "\\u003c");
 const fmtDate = (d) => new Date(d + "T00:00:00Z").toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+const cleanUrl = (u) => {
+  if (!u) return "";
+  let clean = String(u).trim().replace(/^<!\[CDATA\[([\s\S]*?)\]\]>$/i, "$1").trim();
+  return /^https?:\/\//i.test(clean) ? clean : "";
+};
 
 const curated = await readJSON("data/curated.json", { events: [] });
 const live = await readJSON("data/live.json", { generatedAt: null, clusters: [] });
@@ -26,18 +31,35 @@ const latestDate = live.clusters.reduce((max, c) => (c.date > max ? c.date : max
 const todayItems = allClean.filter((c) => c.date >= latestDate);
 const otherItems = allClean.filter((c) => c.date < latestDate);
 const items = (todayItems.length > 0 ? todayItems.concat(otherItems) : otherItems).slice(0, 150).map((c) => {
-  const nOut = c.outlets || (c.domains || []).length || 1;
-  const pubList = (c.publishers || []).length ? c.publishers : (c.domains || []).map((d) => d);
-  const urls = (c.urls || []).filter((u) => /^https?:/.test(u));
-  const sources = urls.map((u, i) => {
-    let name = pubList[i];
-    try { if (!name) name = new URL(u).hostname.replace(/^www\./, ""); } catch { name = "Source"; }
-    const isYtUrl = u.includes("youtube.com") || u.includes("youtu.be");
-    const isSocUrl = u.includes("twitter.com") || u.includes("x.com");
-    if (isYtUrl && !name.toLowerCase().includes("youtube")) name += " (YouTube)";
-    else if (isSocUrl && !name.toLowerCase().includes("x") && !name.toLowerCase().includes("twitter")) name += " (X)";
-    return { n: name, u, isYt: isYtUrl, isSoc: isSocUrl };
-  });
+  let sources = [];
+  if (Array.isArray(c.sources) && c.sources.length) {
+    sources = c.sources.filter(s => s && s.u && cleanUrl(s.u)).map(s => {
+      let name = s.n || "News Source";
+      const u = cleanUrl(s.u);
+      const isYtUrl = u.includes("youtube.com") || u.includes("youtu.be");
+      const isSocUrl = u.includes("twitter.com") || u.includes("x.com");
+      if (isYtUrl && !name.toLowerCase().includes("youtube")) name += " (YouTube)";
+      else if (isSocUrl && !name.toLowerCase().includes("x") && !name.toLowerCase().includes("twitter")) name += " (X)";
+      return { n: name, u, isYt: isYtUrl, isSoc: isSocUrl };
+    });
+  } else {
+    const urls = (c.urls || []).map(cleanUrl).filter(Boolean);
+    sources = urls.map((u, i) => {
+      let name = (c.publishers && c.publishers[i]) || "News Source";
+      try {
+        const host = new URL(u).hostname.replace(/^www\./, "");
+        if (host && !host.includes("google.com")) name = host.split(".")[0];
+      } catch {}
+      const isYtUrl = u.includes("youtube.com") || u.includes("youtu.be");
+      const isSocUrl = u.includes("twitter.com") || u.includes("x.com");
+      if (isYtUrl && !name.toLowerCase().includes("youtube")) name += " (YouTube)";
+      else if (isSocUrl && !name.toLowerCase().includes("x") && !name.toLowerCase().includes("twitter")) name += " (X)";
+      return { n: name, u, isYt: isYtUrl, isSoc: isSocUrl };
+    });
+  }
+
+  const nOut = sources.length || c.outlets || 1;
+  const pubList = sources.map(s => s.n);
 
   const hasYtUrl = sources.some((s) => s.isYt);
   const hasSocUrl = sources.some((s) => s.isSoc);
@@ -66,7 +88,13 @@ const items = (todayItems.length > 0 ? todayItems.concat(otherItems) : otherItem
     tagClass = "wire";
   }
 
-  const pub = pubList[0] || (urls[0] ? new URL(urls[0]).hostname.replace(/^www\./, "") : "Regional wire");
+  let pubHost = "Regional wire";
+  try {
+    const rawU = c.sources?.[0]?.u || c.urls?.[0];
+    const u = cleanUrl(rawU);
+    if (u) pubHost = new URL(u).hostname.replace(/^www\./, "");
+  } catch {}
+  const pub = pubList[0] || pubHost;
 
   const isTamilSource = (c.place || "").includes("Tamil Nadu") ||
     (c.publishers || []).some((p) => /dinamalar|dinamani|thanthi|tamil|polimer|puthiya|vikatan|sun news/i.test(p)) ||

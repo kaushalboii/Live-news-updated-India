@@ -1295,7 +1295,48 @@
     const fmtDate = d => new Date(d + "T00:00:00").toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
     const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
     const safeUrl = u => typeof u === "string" && /^https?:\/\//i.test(u.trim()) ? u.trim() : null;
-    const hostOf = u => { try { return new URL(u).hostname.replace(/^www./, ""); } catch (_) { return "News Wire"; } };
+    const hostOf = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (_) { return "News Wire"; } };
+    const KNOWN_PUBLISHERS = {
+      "thehindu.com": "The Hindu", "timesofindia.indiatimes.com": "Times of India", "indianexpress.com": "Indian Express",
+      "hindustantimes.com": "Hindustan Times", "ndtv.com": "NDTV", "business-standard.com": "Business Standard",
+      "livemint.com": "Livemint", "deccanherald.com": "Deccan Herald", "tribuneindia.com": "The Tribune",
+      "economictimes.indiatimes.com": "Economic Times", "freepressjournal.in": "Free Press Journal", "aninews.in": "ANI News",
+      "moneycontrol.com": "Moneycontrol", "amarujala.com": "Amar Ujala", "dainikbhaskar.com": "Dainik Bhaskar",
+      "jagran.com": "Dainik Jagran", "navbharattimes.indiatimes.com": "Navbharat Times", "telegraphindia.com": "The Telegraph",
+      "greaterkashmir.com": "Greater Kashmir", "dailyexcelsior.com": "Daily Excelsior", "telanganatoday.com": "Telangana Today",
+      "ianslive.in": "IANS Live", "thewire.in": "The Wire", "scroll.in": "Scroll.in", "prokerala.com": "Prokerala",
+      "dtnext.in": "DT Next", "millenniumpost.in": "Millennium Post", "dinamalar.com": "Dinamalar", "dinamani.com": "Dinamani",
+      "dailythanthi.com": "Daily Thanthi", "hindutamil.in": "Hindu Tamil Thisai", "polimernews.com": "Polimer News",
+      "thanthitv.com": "Thanthi TV", "puthiyathalaimurai.com": "Puthiya Thalaimurai", "news7tamil.live": "News7 Tamil",
+      "news18tamil.com": "News18 Tamil Nadu", "vikatan.com": "Ananda Vikatan", "sunnews.in": "Sun News", "eenadu.net": "Eenadu",
+      "sakshi.com": "Sakshi", "mathrubhumi.com": "Mathrubhumi", "manoramaonline.com": "Manorama Online", "lokmat.com": "Lokmat",
+      "esakal.com": "Sakal", "anandabazar.com": "Anandabazar Patrika", "assamtribune.com": "Assam Tribune",
+      "pratidintime.com": "Pratidin Time", "downtoearth.org.in": "Down To Earth", "indiatoday.in": "India Today",
+      "zeenews.india.com": "Zee News", "news18.com": "News18", "abplive.com": "ABP Live", "wionews.com": "WION",
+      "republicworld.com": "Republic TV", "financialexpress.com": "Financial Express", "firstpost.com": "Firstpost",
+      "thequint.com": "The Quint", "theprint.in": "The Print", "deccanchronicle.com": "Deccan Chronicle",
+      "livelaw.in": "Live Law", "barandbench.com": "Bar & Bench", "ptinews.com": "PTI News", "pib.gov.in": "PIB India",
+      "mid-day.com": "Mid-Day", "oneindia.com": "Oneindia", "rediff.com": "Rediff News", "sentinelassam.com": "The Sentinel Assam",
+      "orissapost.com": "Orissa Post", "siasat.com": "The Siasat Daily", "dailypioneer.com": "The Pioneer",
+      "businesstoday.in": "Business Today", "cnbctv18.com": "CNBC-TV18", "etnownews.com": "ET Now",
+      "patrika.com": "Rajasthan Patrika", "punjabkesari.in": "Punjab Kesari", "livehindustan.com": "Live Hindustan",
+      "andhrajyothy.com": "Andhra Jyothy", "asianetnews.com": "Asianet News", "prajavani.net": "Prajavani",
+      "vijayavani.net": "Vijayavani", "kannadaprabha.com": "Kannada Prabha", "loksatta.com": "Loksatta",
+      "maharashtratimes.com": "Maharashtra Times", "sangbadpratidin.in": "Sangbad Pratidin", "bartamanpatrika.com": "Bartaman",
+      "sambad.in": "Sambad", "prameyanews.com": "Prameya", "thestatesman.com": "The Statesman",
+      "youtube.com": "YouTube Broadcast", "youtu.be": "YouTube Broadcast", "x.com": "X (Twitter) Dispatch",
+      "twitter.com": "X (Twitter) Dispatch", "news.google.com": "Google News India"
+    };
+    function formatPublisher(host) {
+      if (!host) return "News Source";
+      const h = host.toLowerCase().replace(/^www\./, "");
+      if (KNOWN_PUBLISHERS[h]) return KNOWN_PUBLISHERS[h];
+      for (const [k, v] of Object.entries(KNOWN_PUBLISHERS)) {
+        if (h.includes(k) || k.includes(h)) return v;
+      }
+      const base = h.split(".")[0];
+      return base.charAt(0).toUpperCase() + base.slice(1);
+    }
     const ageDays = d => (Date.now() - new Date(d + "T00:00:00").getTime()) / DAY;
     const todayISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
 
@@ -1393,22 +1434,36 @@
 
     /* ---------- Data Conversion ---------- */
     function liveToEvent(c) {
-      const nOut = c.outlets ?? (c.domains || []).length ?? 1;
       const mov = c.movement || c.category || "other";
       const type = EVENT_TYPES[c.type] || "News report";
-      const pubList = (c.publishers || []).length ? c.publishers : (c.domains || []).map(hostOf);
-      const urls = (c.urls || []).filter(u => Boolean(safeUrl(u)));
-      const sources = urls.map((u, i) => {
-        let name = pubList[i] || hostOf(u);
-        const isYtUrl = u.includes("youtube.com") || u.includes("youtu.be");
-        const isSocUrl = u.includes("twitter.com") || u.includes("x.com");
-        if (isYtUrl && !name.toLowerCase().includes("youtube")) {
-          name += " (YouTube)";
-        } else if (isSocUrl && !name.toLowerCase().includes("x") && !name.toLowerCase().includes("twitter")) {
-          name += " (X)";
-        }
-        return { n: name, u, isYt: isYtUrl, isSoc: isSocUrl };
-      });
+      let sources = [];
+
+      if (Array.isArray(c.sources) && c.sources.length) {
+        sources = c.sources.filter(s => s && s.u && safeUrl(s.u)).map(s => {
+          const u = safeUrl(s.u);
+          const isYtUrl = u.includes("youtube.com") || u.includes("youtu.be");
+          const isSocUrl = u.includes("twitter.com") || u.includes("x.com");
+          let name = s.n || formatPublisher(hostOf(u));
+          if (isYtUrl && !name.toLowerCase().includes("youtube")) name += " (YouTube)";
+          else if (isSocUrl && !name.toLowerCase().includes("x") && !name.toLowerCase().includes("twitter")) name += " (X)";
+          return { n: name, u, isYt: isYtUrl, isSoc: isSocUrl };
+        });
+      } else {
+        const urls = (c.urls || []).filter(u => Boolean(safeUrl(u)));
+        sources = urls.map((u, i) => {
+          const host = hostOf(u);
+          let name = (c.publishers && c.publishers[i] && host.includes("google.com")) ? c.publishers[i] : formatPublisher(host);
+          if (host && !host.includes("google.com")) name = formatPublisher(host);
+          const isYtUrl = u.includes("youtube.com") || u.includes("youtu.be");
+          const isSocUrl = u.includes("twitter.com") || u.includes("x.com");
+          if (isYtUrl && !name.toLowerCase().includes("youtube")) name += " (YouTube)";
+          else if (isSocUrl && !name.toLowerCase().includes("x") && !name.toLowerCase().includes("twitter")) name += " (X)";
+          return { n: name, u, isYt: isYtUrl, isSoc: isSocUrl };
+        });
+      }
+
+      const nOut = sources.length || c.outlets || 1;
+      const pubList = sources.map(s => s.n);
 
       let title = c.title || "";
       if (/^cbmi/i.test(title) || (!title.includes(" ") && title.length > 25)) {

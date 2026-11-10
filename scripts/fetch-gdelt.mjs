@@ -514,6 +514,69 @@ const fromStamp = (s) =>
   new Date(Date.UTC(+s.slice(0, 4), +s.slice(4, 6) - 1, +s.slice(6, 8), +s.slice(8, 10), +s.slice(10, 12)));
 const isoDate = (yyyymmdd) => `${yyyymmdd.slice(0, 4)}-${yyyymmdd.slice(4, 6)}-${yyyymmdd.slice(6, 8)}`;
 
+// Stop words ignored during headline topical matching (including generic place/institution names that occur across different stories)
+const STOP_WORDS = new Set([
+  "a", "an", "the", "and", "or", "in", "on", "at", "to", "for", "of", "with", "by", "from",
+  "is", "are", "was", "were", "be", "been", "being", "have", "has", "had", "do", "does", "did",
+  "will", "would", "shall", "should", "can", "could", "may", "might", "must",
+  "this", "that", "these", "those", "it", "its", "as", "into", "after", "before", "over", "under",
+  "about", "against", "between", "through", "during", "than", "no", "not", "only", "own", "same",
+  "so", "then", "too", "very", "just", "now", "says", "said", "new", "all", "out", "up", "down",
+  "more", "today", "live", "news", "updates", "update", "latest", "breaking", "watch", "video",
+  "exclusive", "report", "reports", "top", "big", "articleshow", "over", "day", "days", "week",
+  "year", "years", "time", "one", "two", "three", "first", "last", "amid", "back", "backs",
+  // Generic geographic and institutional terms that appear across many unrelated stories at that place
+  "india", "indian", "national", "state", "city", "district", "govt", "government",
+  "tamil", "nadu", "delhi", "mumbai", "chennai", "kolkata", "bengaluru", "bangalore",
+  "karnataka", "hyderabad", "telangana", "andhra", "pradesh", "punjab", "haryana",
+  "rajasthan", "bihar", "patna", "kerala", "gujarat", "odisha", "assam", "uttar", "lucknow",
+  "court", "police", "centre", "high"
+]);
+
+// Distinctive high-specificity entities that confirm topic match on single occurrence
+const DISTINCTIVE_ENTITIES = new Set([
+  "stalin", "modi", "vijay", "bjp", "congress", "isro", "sebi", "rbi", "adani", "tata",
+  "caqm", "grap", "cpcb", "rahul", "kharge", "edappadi", "annamalai", "seeman", "mamata",
+  "kejriwal", "revanth", "siddaramaiah", "shinde", "fadnavis", "yogi", "adityanath"
+]);
+
+function getSignificantKeywords(text) {
+  if (!text) return new Set();
+  const words = text
+    .toLowerCase()
+    .replace(/[^a-z0-9\u0B80-\u0BFF\u0900-\u097F]+/g, " ")
+    .split(/\s+/)
+    .filter(w => w.length >= 3 && !STOP_WORDS.has(w));
+  return new Set(words);
+}
+
+function calculateKeywordOverlap(wordsA, wordsB) {
+  if (!wordsA || !wordsB || !wordsA.size || !wordsB.size) return { count: 0, hasEntity: false };
+  let count = 0;
+  let hasEntity = false;
+  for (const w of wordsA) {
+    if (wordsB.has(w)) {
+      count++;
+      if (DISTINCTIVE_ENTITIES.has(w)) hasEntity = true;
+    }
+  }
+  return { count, hasEntity };
+}
+
+function isTopicalMatch(wordsA, wordsB) {
+  const { count, hasEntity } = calculateKeywordOverlap(wordsA, wordsB);
+  if (count >= 2) return true;
+  if (count >= 1 && hasEntity) return true;
+  return false;
+}
+
+function slugify(text) {
+  return String(text || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 async function readJSON(path, fallback) {
   try { return JSON.parse(await fs.readFile(path, "utf8")); } catch { return fallback; }
 }
@@ -744,7 +807,9 @@ function cleanPlace(raw) {
   return raw.replace(/, India$/, "").replace(/, Republic of India$/, "").trim();
 }
 
-function addRow(clusters, c, cutoffDate) {
+let gClusterSeq = 1;
+
+function addRow(clusters, geoStoryIndex, c, cutoffDate) {
   if (c[COL.geoCountry] !== "IN") return;
   const geoType = Number(c[COL.geoType]);
   if (geoType < 2) return;
@@ -755,39 +820,81 @@ function addRow(clusters, c, cutoffDate) {
   const date = isoDate(c[COL.sqlDate]);
   if (date < cutoffDate) return;
 
-  const key = `${date}|${lat.toFixed(1)}|${lng.toFixed(1)}`;
   const url = c[COL.url];
+  if (!url) return;
   const host = hostOf(url);
   const rootCode = c[COL.rootCode];
   const baseCode = c[COL.baseCode];
-
-  let cl = clusters.get(key);
-  if (!cl) {
-    cl = {
-      id: key.replace(/[^0-9a-z]+/gi, "_"),
-      key, date, lat, lng, geoType,
-      place: cleanPlace(c[COL.geoName]),
-      articles: 0, codes: {}, urls: [], domains: [], slugs: [],
-      platforms: ["web"],
-      firstSeen: c[COL.dateAdded], lastSeen: c[COL.dateAdded],
-    };
-    clusters.set(key, cl);
-  }
-
-  if (geoType > cl.geoType && geoType !== 5) {
-    Object.assign(cl, { lat, lng, geoType, place: cleanPlace(c[COL.geoName]) });
-  }
-
-  cl.articles += Number(c[COL.numArticles]) || 1;
   const base = (baseCode || "").slice(0, 3) || "010";
-  cl.codes[base] = (cl.codes[base] || 0) + 1;
-  cl.rootCode = rootCode;
+  const numArt = Number(c[COL.numArticles]) || 1;
+  const place = cleanPlace(c[COL.geoName]);
+  const pubName = formatPublisher(host);
 
-  if (url && !cl.urls.includes(url) && cl.urls.length < 8) cl.urls.push(url);
-  if (host && !cl.domains.includes(host) && cl.domains.length < 40) cl.domains.push(host);
-  const tk = tokens(url);
-  if (tk && cl.slugs.length < 20 && !cl.slugs.includes(tk)) cl.slugs.push(tk);
-  if (c[COL.dateAdded] > cl.lastSeen) cl.lastSeen = c[COL.dateAdded];
+  const title = titleFromUrl(url);
+  if (!title || title.length < 10) return;
+  const titleWords = getSignificantKeywords(title);
+  if (titleWords.size < 2) return;
+
+  const geoKey = `${lat.toFixed(1)}|${lng.toFixed(1)}`;
+  const candidates = geoStoryIndex.get(geoKey) || [];
+
+  // Find matching story cluster in same location
+  let bestCl = null;
+  let maxOverlap = 0;
+  for (const cl of candidates) {
+    if (cl.date === date || Math.abs(new Date(cl.date) - new Date(date)) <= 864e5) {
+      const { count } = calculateKeywordOverlap(titleWords, cl.titleKeywords);
+      if (isTopicalMatch(titleWords, cl.titleKeywords) && count > maxOverlap) {
+        maxOverlap = count;
+        bestCl = cl;
+      }
+    }
+  }
+
+  if (bestCl) {
+    bestCl.articles += numArt;
+    bestCl.codes[base] = (bestCl.codes[base] || 0) + 1;
+    if (url && !bestCl.urls.includes(url) && bestCl.urls.length < 5) {
+      bestCl.sources.push({ n: pubName, u: url });
+      bestCl.urls.push(url);
+      bestCl.publishers.push(pubName);
+    }
+    if (host && !bestCl.domains.includes(host)) bestCl.domains.push(host);
+    if (c[COL.dateAdded] > bestCl.lastSeen) bestCl.lastSeen = c[COL.dateAdded];
+    return;
+  }
+
+  // If no match found, create a new story cluster if headline is substantial
+  if (title.length >= 15 && title.split(" ").length >= 3) {
+    const clId = `gd_${date}_${lat.toFixed(1)}_${lng.toFixed(1)}_${gClusterSeq++}`.replace(/[^0-9a-z]+/gi, "_");
+    const clKey = `${date}|${lat.toFixed(1)}|${lng.toFixed(1)}|${slugify(title).slice(0, 35)}`;
+    const cl = {
+      id: clId,
+      key: clKey,
+      geoKey,
+      date,
+      lat,
+      lng,
+      geoType,
+      place,
+      title: cleanCandidateTitle(title),
+      titleKeywords: titleWords,
+      articles: numArt,
+      codes: { [base]: 1 },
+      rootCode,
+      sources: [{ n: pubName, u: url }],
+      urls: [url],
+      publishers: [pubName],
+      domains: [host],
+      platforms: ["web"],
+      slugs: [title.toLowerCase()],
+      firstSeen: c[COL.dateAdded] || new Date().toISOString(),
+      lastSeen: c[COL.dateAdded] || new Date().toISOString()
+    };
+    clusters.set(cl.id, cl);
+    if (!geoStoryIndex.has(geoKey)) geoStoryIndex.set(geoKey, []);
+    geoStoryIndex.get(geoKey).push(cl);
+  }
 }
 
 function unzipSingle(buf) {
@@ -828,7 +935,7 @@ function matchLocation(text) {
   return null;
 }
 
-async function fetchMultiPlatformStreams(clusters) {
+async function fetchMultiPlatformStreams(clusters, geoStoryIndex) {
   const feeds = [
     // 1. National Breaking Wire & Top Stories (India 24/7)
     { url: "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en", platform: "wire" },
@@ -892,8 +999,8 @@ async function fetchMultiPlatformStreams(clusters) {
         if (!cleanTitle || cleanTitle.length < 8) continue;
         if (/^cbmi/i.test(cleanTitle)) continue;
 
-        const link = (item.match(/<link>([\s\S]*?)<\/link>/)?.[1] || "").trim();
-        let source = (item.match(/<source[^>]*>([\s\S]*?)<\/source>/)?.[1] || "").trim();
+        let link = (item.match(/<link>([\s\S]*?)<\/link>/)?.[1] || "").trim().replace(/^<!\[CDATA\[([\s\S]*?)\]\]>$/i, "$1").trim();
+        let source = (item.match(/<source[^>]*>([\s\S]*?)<\/source>/)?.[1] || "").trim().replace(/^<!\[CDATA\[([\s\S]*?)\]\]>$/i, "$1").trim();
         if (!source && link) {
           source = formatPublisher(hostOf(link));
         }
@@ -921,32 +1028,68 @@ async function fetchMultiPlatformStreams(clusters) {
         if (!matchedGeo) continue;
 
         const [lat, lng, place] = matchedGeo;
-        const key = `${today}|${lat.toFixed(1)}|${lng.toFixed(1)}`;
-        let cl = clusters.get(key);
+        const geoKey = `${lat.toFixed(1)}|${lng.toFixed(1)}`;
         const effectivePlatform = (platform === "climate" || platform === "tamil") ? "web" : platform;
+        const titleWords = getSignificantKeywords(cleanTitle);
 
-        if (!cl) {
-          cl = {
-            id: (platform === "youtube" ? "yt_" : (platform === "social" ? "soc_" : (platform === "climate" ? "clim_" : "live_"))) + key.replace(/[^0-9a-z]+/gi, "_"),
-            key, date: today, lat, lng, geoType: 4, place,
-            title: cleanTitle, // ALWAYS explicitly store clean title!
-            articles: 1, codes: { "010": 1 }, urls: link ? [link] : [],
+        const candidates = geoStoryIndex.get(geoKey) || [];
+        let bestCl = null;
+        let maxOverlap = 0;
+
+        for (const cl of candidates) {
+          if (cl.date === today) {
+            const { count } = calculateKeywordOverlap(titleWords, cl.titleKeywords);
+            if (isTopicalMatch(titleWords, cl.titleKeywords) && count > maxOverlap) {
+              maxOverlap = count;
+              bestCl = cl;
+            }
+          }
+        }
+
+        if (bestCl) {
+          bestCl.articles += 1;
+          if (!bestCl.platforms.includes(effectivePlatform)) bestCl.platforms.push(effectivePlatform);
+          if (link && !bestCl.urls.includes(link) && bestCl.urls.length < 5) {
+            bestCl.sources.push({ n: source, u: link });
+            bestCl.urls.push(link);
+            bestCl.publishers.push(source);
+          }
+          if (source && !bestCl.domains.includes(source)) bestCl.domains.push(source);
+          if (!bestCl.slugs.includes(cleanTitle.toLowerCase())) bestCl.slugs.push(cleanTitle.toLowerCase());
+          // Update title if new one is cleaner/longer
+          if (cleanTitle.length > bestCl.title.length && !cleanTitle.includes(" - ") && !/^cbmi/i.test(cleanTitle)) {
+            bestCl.title = cleanTitle;
+            for (const w of titleWords) bestCl.titleKeywords.add(w);
+          }
+        } else {
+          const idPrefix = platform === "youtube" ? "yt_" : (platform === "social" ? "soc_" : (platform === "climate" ? "clim_" : "live_"));
+          const clId = `${idPrefix}${today}_${lat.toFixed(1)}_${lng.toFixed(1)}_${gClusterSeq++}`.replace(/[^0-9a-z]+/gi, "_");
+          const clKey = `${today}|${lat.toFixed(1)}|${lng.toFixed(1)}|${slugify(cleanTitle).slice(0, 35)}`;
+          const cl = {
+            id: clId,
+            key: clKey,
+            geoKey,
+            date: today,
+            lat,
+            lng,
+            geoType: 4,
+            place,
+            title: cleanTitle,
+            titleKeywords: titleWords,
+            articles: 1,
+            codes: { "010": 1 },
+            sources: link ? [{ n: source, u: link }] : [],
+            urls: link ? [link] : [],
+            publishers: source ? [source] : [],
             domains: source ? [source] : [platform],
             platforms: [effectivePlatform],
             slugs: [cleanTitle.toLowerCase()],
-            firstSeen: new Date().toISOString(), lastSeen: new Date().toISOString()
+            firstSeen: new Date().toISOString(),
+            lastSeen: new Date().toISOString()
           };
-          clusters.set(key, cl);
-        } else {
-          if (!cl.platforms) cl.platforms = ["web"];
-          if (!cl.platforms.includes(effectivePlatform)) cl.platforms.push(effectivePlatform);
-          if (!cl.title || /^cbmi/i.test(cl.title) || (cleanTitle.length > cl.title.length && !cl.title.includes(" - "))) {
-            cl.title = cleanTitle;
-          }
-          if (link && !cl.urls.includes(link)) cl.urls.unshift(link);
-          if (source && !cl.domains.includes(source)) cl.domains.push(source);
-          if (!cl.slugs.includes(cleanTitle.toLowerCase())) cl.slugs.push(cleanTitle.toLowerCase());
-          cl.articles += 1;
+          clusters.set(cl.id, cl);
+          if (!geoStoryIndex.has(geoKey)) geoStoryIndex.set(geoKey, []);
+          geoStoryIndex.get(geoKey).push(cl);
         }
       }
     } catch(e) {
@@ -960,14 +1103,47 @@ async function main() {
 
   const cutoff = new Date(Date.now() - WINDOW_DAYS * 864e5).toISOString().slice(0, 10);
   const clusters = new Map();
+  const geoStoryIndex = new Map();
+
   for (const cl of state.clusters || []) {
-    // Purge any corrupted Cbmi title from cache
-    if (cl.title && /^cbmi/i.test(cl.title)) {
-      cl.title = undefined;
+    if (!cl || !cl.date || cl.date < cutoff) continue;
+    // Reject old corrupted clusters that lumped too many outlets without 1-to-1 sources
+    if (cl.title && /^cbmi/i.test(cl.title)) continue;
+    if (cl.outlets > 15 || cl.articles > 150) continue;
+    if (!cl.title || cl.title.length < 8) continue;
+
+    // Ensure valid sources
+    const alignedSources = [];
+    if (Array.isArray(cl.sources) && cl.sources.length) {
+      for (const s of cl.sources) {
+        if (s && s.u) alignedSources.push({ n: s.n || formatPublisher(hostOf(s.u)), u: s.u });
+      }
+    } else if (Array.isArray(cl.urls) && cl.urls.length) {
+      cl.urls.forEach((u, i) => {
+        if (u) alignedSources.push({ n: (cl.publishers && cl.publishers[i]) || formatPublisher(hostOf(u)), u });
+      });
     }
-    if (cl.date >= cutoff && cl.key) clusters.set(cl.key, cl);
+
+    cl.sources = alignedSources;
+    cl.urls = alignedSources.map(s => s.u);
+    cl.publishers = alignedSources.map(s => s.n);
+    cl.titleKeywords = getSignificantKeywords(cl.title);
+    const geoKey = `${Number(cl.lat).toFixed(1)}|${Number(cl.lng).toFixed(1)}`;
+    cl.geoKey = geoKey;
+
+    clusters.set(cl.id, cl);
+    if (!geoStoryIndex.has(geoKey)) geoStoryIndex.set(geoKey, []);
+    geoStoryIndex.get(geoKey).push(cl);
   }
 
+  // 1. Ingest multi-platform streams first for highest headline fidelity
+  try {
+    await fetchMultiPlatformStreams(clusters, geoStoryIndex);
+  } catch (err) {
+    console.warn("Multi-platform streams ingestion failed:", err.message);
+  }
+
+  // 2. Ingest GDELT files
   let lastOk = state.lastStamp;
   try {
     const latest = await latestStamp();
@@ -985,20 +1161,13 @@ async function main() {
           console.warn(`Stopping at ${batch[j]}: ${r.reason.message}. Will retry next run.`);
           failed = true; break;
         }
-        for (const line of r.value.split("\n")) if (line) addRow(clusters, line.split("\t"), cutoff);
+        for (const line of r.value.split("\n")) if (line) addRow(clusters, geoStoryIndex, line.split("\t"), cutoff);
         lastOk = batch[j]; processed++;
       }
       if (failed) break;
     }
   } catch (err) {
     console.warn("GDELT ingestion temporarily unreachable:", err.message);
-  }
-
-  // Ingest multi-platform streams (National Wires, Newspapers, Climate, Tamil 24/7, YouTube, X, Social, Regional)
-  try {
-    await fetchMultiPlatformStreams(clusters);
-  } catch (err) {
-    console.warn("Multi-platform streams ingestion failed:", err.message);
   }
 
   const all = [...clusters.values()]
@@ -1010,7 +1179,7 @@ async function main() {
 
   const pub = all.map((cl) => {
     const mov = classify(cl.slugs, cl.rootCode);
-    let title = selectBestTitle(cl, mov);
+    let title = cl.title || selectBestTitle(cl, mov);
 
     if (!title || /^cbmi/i.test(title)) {
       const movLabel = mov === "climate" ? "Climate & weather alerts" : (mov === "protest" ? "Public demonstrations" : (mov === "politics" ? "Political developments" : (mov === "economy" ? "Economic news" : (mov === "security" ? "Security operations" : "Regional news"))));
@@ -1018,7 +1187,10 @@ async function main() {
     }
 
     const type = Object.entries(cl.codes).sort((a, b) => b[1] - a[1])[0]?.[0] || "010";
-    const formattedSources = cl.domains.map(formatPublisher);
+
+    const alignedSources = (cl.sources || []).filter(s => s && s.u).slice(0, 5);
+    const alignedUrls = alignedSources.map(s => s.u);
+    const alignedPublishers = alignedSources.map(s => s.n);
     const primaryPlatform = cl.domains.length >= 3 ? "web" : ((cl.platforms && cl.platforms.length) ? cl.platforms[0] : "web");
 
     return {
@@ -1029,18 +1201,19 @@ async function main() {
       geoType: cl.geoType,
       place: cl.place,
       articles: cl.articles,
-      outlets: cl.domains.length,
+      outlets: alignedSources.length,
       type,
       movement: mov,
       category: mov,
       platform: primaryPlatform,
       platforms: cl.platforms || ["web"],
       title,
-      urls: cl.urls.slice(0, 5),
-      domains: cl.domains.slice(0, 10),
-      publishers: formattedSources.slice(0, 5),
+      sources: alignedSources,
+      urls: alignedUrls,
+      publishers: alignedPublishers,
+      domains: [...new Set(alignedSources.map(s => hostOf(s.u)).concat(cl.domains || []))].slice(0, 10),
       lastSeen: cl.lastSeen,
-      isLocal: cl.domains.length === 1
+      isLocal: alignedSources.length === 1
     };
   });
 
